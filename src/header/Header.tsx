@@ -44,17 +44,17 @@ const Header = ({
   const mainMenuDropdowns = !isLibrary ? [
     {
       id: `${intl.formatMessage(messages['header.links.content'])}-dropdown-menu`,
-      buttonTitle: 'Files and additional pages',
+      buttonTitle: 'Файлы и дополнительные страницы',
       items: contentMenuItems,
     },
     {
       id: `${intl.formatMessage(messages['header.links.settings'])}-dropdown-menu`,
-      buttonTitle: 'Settings',
+      buttonTitle: 'Настройки',
       items: settingMenuItems,
     },
     {
       id: `${intl.formatMessage(messages['header.links.tools'])}-dropdown-menu`,
-      buttonTitle: 'Import/Export courses',
+      buttonTitle: 'Импорт/Экспорт курса',
       items: toolsMenuItems,
     },
   ] : [];
