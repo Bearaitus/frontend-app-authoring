@@ -8,7 +8,7 @@ import messages from './messages';
 const Head = ({ intl }) => (
   <Helmet>
     <title>
-    Courses Editor
+    Редактор курсов
     </title>
     <link rel="shortcut icon" href={getConfig().FAVICON_URL} type="image/x-icon" />
   </Helmet>

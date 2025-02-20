@@ -16,7 +16,7 @@ const SubHeader = ({
 }) => (
   <div className={`${!hideBorder && 'border-bottom border-light-400'} mb-3`}>
     <header className="sub-header">
-      <h2 className="sub-header-title">Courses Editor
+      <h2 className="sub-header-title">Редактор курсов
 
       </h2>
       {headerActions && (

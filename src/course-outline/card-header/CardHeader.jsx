@@ -172,13 +172,13 @@ const CardHeader = ({
                 disabled={isDisabledPublish}
                 onClick={onClickPublish}
               >
-                Update
+                Обновить
               </Dropdown.Item>
               <Dropdown.Item
                 data-testid={`${namePrefix}-card-header__menu-configure-button`}
                 onClick={onClickConfigure}
               >
-                Configure
+                Настроить
               </Dropdown.Item>
 
 
@@ -191,7 +191,7 @@ const CardHeader = ({
                   data-testid={`${namePrefix}-card-header__menu-delete-button`}
                   onClick={onClickDelete}
                 >
-                  Delete
+                  Удалить
                 </Dropdown.Item>
               )}
             </Dropdown.Menu>

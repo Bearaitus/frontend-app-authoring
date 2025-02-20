@@ -13,11 +13,11 @@ export const useContentMenuItems = courseId => {
 
     {
       href: getPagePath(courseId, 'true', 'tabs'),
-      title: 'Additional pages',
+      title: 'Дополнительные страницы',
     },
     {
       href: `${studioBaseUrl}/assets/${courseId}`,
-      title: 'Uploaded files',
+      title: 'Обновлённые файлы',
     },
   ];
   if (getConfig().ENABLE_VIDEO_UPLOAD_PAGE_LINK_IN_CONTENT_DROPDOWN === 'true') {
@@ -39,13 +39,13 @@ export const useSettingMenuItems = courseId => {
 
     {
       href: `${studioBaseUrl}/settings/grading/${courseId}`,
-      title: 'Grading',
+      title: 'Оценка',
     },
 
     ...(canAccessAdvancedSettings === true
       ? [{
         href: `${studioBaseUrl}/settings/advanced/${courseId}`,
-        title: 'Advanced settings',
+        title: 'Дополнительные настройки',
       }] : []
     ),
   ];
@@ -60,11 +60,11 @@ export const useToolsMenuItems = courseId => {
   const items = [
     {
       href: `${studioBaseUrl}/import/${courseId}`,
-      title: 'Import Course',
+      title: 'Импорт курса',
     },
     {
       href: `${studioBaseUrl}/export/${courseId}`,
-      title: 'Export Course',
+      title: 'Экспорт курса',
     },
 
   ];

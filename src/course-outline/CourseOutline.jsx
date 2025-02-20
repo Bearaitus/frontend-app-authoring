@@ -236,7 +236,7 @@ const CourseOutline = ({ courseId }) => {
   return (
     <>
       <Helmet>
-        <title>Course content</title>
+        <title>Содержание курса</title>
       </Helmet>
       <Container size="xl" className="px-4">
         <section className="course-outline-container mb-4 mt-5">
@@ -418,7 +418,7 @@ const CourseOutline = ({ courseId }) => {
                                 iconBefore={IconAdd}
                                 block
                               >
-                                New module
+                                Новый модуль
                               </Button>
                             )}
                           </>
