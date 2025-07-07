@@ -100,7 +100,7 @@ const CourseXBlock = ({
           actions={(
             <ActionRow className="mr-2">
               <IconButton
-                alt={intl.formatMessage(messages.blockAltButtonEdit)}
+                alt={messages.blockAltButtonEdit.defaultMessage}
                 iconAs={EditIcon}
                 onClick={handleEdit}
               />
@@ -109,26 +109,26 @@ const CourseXBlock = ({
                   id={id}
                   as={IconButton}
                   src={MoveVertIcon}
-                  alt={intl.formatMessage(messages.blockActionsDropdownAlt)}
+                  alt={messages.blockActionsDropdownAlt.defaultMessage}
                   iconAs={Icon}
                 />
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={() => unitXBlockActions.handleDuplicate(id)}>
-                    {intl.formatMessage(messages.blockLabelButtonDuplicate)}
+                    {messages.blockLabelButtonDuplicate.defaultMessage}
                   </Dropdown.Item>
                   <Dropdown.Item>
-                    {intl.formatMessage(messages.blockLabelButtonMove)}
+                    {messages.blockLabelButtonMove.defaultMessage}
                   </Dropdown.Item>
                   {canEdit && (
                     <Dropdown.Item onClick={() => dispatch(copyToClipboard(id))}>
-                      {intl.formatMessage(messages.blockLabelButtonCopyToClipboard)}
+                      {messages.blockLabelButtonCopyToClipboard.defaultMessage}
                     </Dropdown.Item>
                   )}
                   <Dropdown.Item onClick={openConfigureModal}>
-                    {intl.formatMessage(messages.blockLabelButtonManageAccess)}
+                    {messages.blockLabelButtonManageAccess.defaultMessage}
                   </Dropdown.Item>
                   <Dropdown.Item onClick={openDeleteModal}>
-                    {intl.formatMessage(messages.blockLabelButtonDelete)}
+                    {messages.blockLabelButtonDelete.defaultMessage}
                   </Dropdown.Item>
                 </Dropdown.Menu>
               </Dropdown>

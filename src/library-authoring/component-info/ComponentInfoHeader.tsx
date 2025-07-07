@@ -44,9 +44,9 @@ const ComponentInfoHeader = () => {
             display_name: newDisplayName,
           },
         }).then(() => {
-          showToast(intl.formatMessage(messages.updateComponentSuccessMsg));
+          showToast(messages.updateComponentSuccessMsg.defaultMessage);
         }).catch(() => {
-          showToast(intl.formatMessage(messages.updateComponentErrorMsg));
+          showToast(messages.updateComponentErrorMsg.defaultMessage);
         });
       }
       setIsActive(false);
@@ -90,7 +90,7 @@ const ComponentInfoHeader = () => {
               <IconButton
                 src={Edit}
                 iconAs={Icon}
-                alt={intl.formatMessage(messages.editNameButtonAlt)}
+                alt={messages.editNameButtonAlt.defaultMessage}
                 onClick={handleClick}
                 size="inline"
               />

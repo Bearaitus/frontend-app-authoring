@@ -44,7 +44,7 @@ const Breadcrumbs = () => {
             src={ChevronRightIcon}
             size="md"
             className="text-primary mx-2"
-            alt={intl.formatMessage(messages.altIconChevron)}
+            alt={messages.altIconChevron.defaultMessage}
           />
         </li>
         <li className="d-flex">

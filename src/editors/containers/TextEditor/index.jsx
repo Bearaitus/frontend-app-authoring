@@ -86,7 +86,7 @@ const TextEditor = ({
     >
       <div className="editor-body h-75 overflow-auto">
         <Toast show={blockFailed} onClose={hooks.nullMethod}>
-          { intl.formatMessage(messages.couldNotLoadTextContext) }
+          { messages.couldNotLoadTextContext.defaultMessage }
         </Toast>
 
         {(!blockFinished)
@@ -95,7 +95,7 @@ const TextEditor = ({
               <Spinner
                 animation="border"
                 className="m-3"
-                screenreadertext={intl.formatMessage(messages.spinnerScreenReaderText)}
+                screenreadertext={messages.spinnerScreenReaderText.defaultMessage}
               />
             </div>
           ) : (selectEditor())}

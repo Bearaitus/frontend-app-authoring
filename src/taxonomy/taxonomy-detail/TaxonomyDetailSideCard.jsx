@@ -10,15 +10,15 @@ const TaxonomyDetailSideCard = ({ taxonomy }) => {
   const intl = useIntl();
   return (
     <Card>
-      <Card.Header title={intl.formatMessage(messages.taxonomyDetailsHeader)} />
-      <Card.Section title={intl.formatMessage(messages.taxonomyDetailsName)}>
+      <Card.Header title={messages.taxonomyDetailsHeader.defaultMessage} />
+      <Card.Section title={messages.taxonomyDetailsName.defaultMessage}>
         {taxonomy.name}
       </Card.Section>
       <Card.Divider className="ml-3 mr-3" />
-      <Card.Section title={intl.formatMessage(messages.taxonomyDetailsDescription)}>
+      <Card.Section title={messages.taxonomyDetailsDescription.defaultMessage}>
         {taxonomy.description}
       </Card.Section>
-      <Card.Section title={intl.formatMessage(messages.taxonomyDetailsExportID)}>
+      <Card.Section title={messages.taxonomyDetailsExportID.defaultMessage}>
         {taxonomy.exportId}
       </Card.Section>
     </Card>

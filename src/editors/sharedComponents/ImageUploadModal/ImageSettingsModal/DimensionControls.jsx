@@ -45,21 +45,21 @@ const DimensionControls = ({
         value={value.width}
         onChange={hooks.onInputChange(setWidth)}
         onBlur={updateDimensions}
-        floatingLabel={intl.formatMessage(messages.widthFloatingLabel)}
+        floatingLabel={messages.widthFloatingLabel.defaultMessage}
       />
       <Form.Control
         className="dimension-input"
         value={value.height}
         onChange={hooks.onInputChange(setHeight)}
         onBlur={updateDimensions}
-        floatingLabel={intl.formatMessage(messages.heightFloatingLabel)}
+        floatingLabel={messages.heightFloatingLabel.defaultMessage}
       />
       <IconButton
         className="d-inline-block"
         alt={
           isLocked
-            ? intl.formatMessage(messages.unlockDimensionsLabel)
-            : intl.formatMessage(messages.lockDimensionsLabel)
+            ? messages.unlockDimensionsLabel.defaultMessage
+            : messages.lockDimensionsLabel.defaultMessage
         }
         iconAs={Icon}
         src={isLocked ? Locked : Unlocked}

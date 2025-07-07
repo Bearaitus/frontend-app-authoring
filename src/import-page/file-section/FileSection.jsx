@@ -26,7 +26,7 @@ const FileSection = ({ intl, courseId }) => {
     <Card>
       <Card.Header
         className="h3 px-3 text-black"
-        title={intl.formatMessage(messages.headingTitle)}
+        title={messages.headingTitle.defaultMessage}
         subtitle={fileName && intl.formatMessage(messages.fileChosen, { fileName })}
       />
       <Card.Section className="px-3 pt-2 pb-4">

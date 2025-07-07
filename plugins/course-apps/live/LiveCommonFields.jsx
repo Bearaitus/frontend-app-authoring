@@ -10,25 +10,25 @@ const LiveCommonFields = ({
   values,
 }) => (
   <>
-    <p className="pb-2">{intl.formatMessage(messages.formInstructions)}</p>
+    <p className="pb-2">{messages.formInstructions.defaultMessage}</p>
     <FormikControl
       name="consumerKey"
       value={values.consumerKey}
-      floatingLabel={intl.formatMessage(messages.consumerKey)}
+      floatingLabel={messages.consumerKey.defaultMessage}
       className="pb-1"
       type="input"
     />
     <FormikControl
       name="consumerSecret"
       value={values.consumerSecret}
-      floatingLabel={intl.formatMessage(messages.consumerSecret)}
+      floatingLabel={messages.consumerSecret.defaultMessage}
       className="pb-1"
       type="password"
     />
     <FormikControl
       name="launchUrl"
       value={values.launchUrl}
-      floatingLabel={intl.formatMessage(messages.launchUrl)}
+      floatingLabel={messages.launchUrl.defaultMessage}
       className="pb-1"
       type="input"
     />

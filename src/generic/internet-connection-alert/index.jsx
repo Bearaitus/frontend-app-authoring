@@ -51,8 +51,8 @@ const InternetConnectionAlert = ({
       show={showAlert}
       variant="danger"
       icon={WarningIcon}
-      title={intl.formatMessage(messages.offlineWarningTitle)}
-      description={intl.formatMessage(messages.offlineWarningDescription)}
+      title={messages.offlineWarningTitle.defaultMessage}
+      description={messages.offlineWarningDescription.defaultMessage}
       aria-hidden="true"
       aria-labelledby={intl.formatMessage(
         messages.offlineWarningTitleAriaLabelledBy,

@@ -236,7 +236,7 @@ const SubsectionCard = ({
                 {enableCopyPasteUnits && showPasteUnit && (
                   <PasteComponent
                     className="mt-4"
-                    text={intl.formatMessage(messages.pasteButton)}
+                    text={messages.pasteButton.defaultMessage}
                     clipboardData={sharedClipboardData}
                     onClick={handlePasteButtonClick}
                   />

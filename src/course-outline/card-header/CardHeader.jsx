@@ -132,7 +132,7 @@ const CardHeader = ({
             <IconButton
               className="item-card-edit-icon"
               data-testid={`${namePrefix}-edit-button`}
-              alt={intl.formatMessage(messages.altButtonEdit)}
+              alt={messages.altButtonEdit.defaultMessage}
               iconAs={EditIcon}
               onClick={onClickEdit}
             />
@@ -162,9 +162,9 @@ const CardHeader = ({
                   target="_blank"
                   destination={fullProctoringExamConfigurationLink()}
                   href={fullProctoringExamConfigurationLink()}
-                  externalLinkTitle={intl.formatMessage(messages.proctoringLinkTooltip)}
+                  externalLinkTitle={messages.proctoringLinkTooltip.defaultMessage}
                 >
-                  {intl.formatMessage(messages.menuProctoringLinkText)}
+                  {messages.menuProctoringLinkText.defaultMessage}
                 </Dropdown.Item>
               )}
               <Dropdown.Item

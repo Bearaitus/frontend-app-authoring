@@ -43,28 +43,28 @@ const OrganizationSection = ({ intl }) => {
   return (
     <div className="organization-section">
       <h3 className="organization-section-title">
-        {intl.formatMessage(messages.organizationTitle)}
+        {messages.organizationTitle.defaultMessage}
       </h3>
       <Form.Group className="organization-section-form d-flex align-items-baseline">
         <FormLabel isInline className="organization-section-form-label">
-          {intl.formatMessage(messages.organizationLabel)}
+          {messages.organizationLabel.defaultMessage}
         </FormLabel>
         <TypeaheadDropdown
           readOnly={false}
           name="organizationSearch"
           value={inputValue}
           options={organizations}
-          placeholder={intl.formatMessage(messages.organizationInputPlaceholder)}
+          placeholder={messages.organizationInputPlaceholder.defaultMessage}
           handleBlur={(e) => setInputValue(e.target.value)}
           handleChange={(value) => setInputValue(value)}
-          noOptionsMessage={intl.formatMessage(messages.organizationInputNoOptions)}
+          noOptionsMessage={messages.organizationInputNoOptions.defaultMessage}
           helpMessage=""
           errorMessage=""
           floatingLabel=""
         />
       </Form.Group>
       <Button onClick={handleSubmit}>
-        {intl.formatMessage(messages.organizationSubmitBtnText)}
+        {messages.organizationSubmitBtnText.defaultMessage}
       </Button>
     </div>
   );

@@ -34,12 +34,12 @@ const CertificateSignatories = ({
 
   return (
     <CertificateSection
-      title={intl.formatMessage(messages.signatoriesSectionTitle)}
+      title={messages.signatoriesSectionTitle.defaultMessage}
       className="certificate-signatories"
     >
       <div>
         <p className="mb-4.5">
-          {intl.formatMessage(messages.signatoriesRecommendation)}
+          {messages.signatoriesRecommendation.defaultMessage}
         </p>
         <Stack gap="4.5">
           {signatories.map(({
@@ -79,10 +79,10 @@ const CertificateSignatories = ({
         {isForm && (
           <>
             <Button variant="outline-primary" onClick={handleAddSignatory} className="w-100 mt-4">
-              {intl.formatMessage(messages.addSignatoryButton)}
+              {messages.addSignatoryButton.defaultMessage}
             </Button>
             <Form.Control.Feedback>
-              <span className="x-small">{intl.formatMessage(messages.addSignatoryButtonDescription)}</span>
+              <span className="x-small">{messages.addSignatoryButtonDescription.defaultMessage}</span>
             </Form.Control.Feedback>
           </>
         )}

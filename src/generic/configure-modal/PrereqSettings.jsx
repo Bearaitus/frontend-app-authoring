@@ -35,7 +35,7 @@ const PrereqSettings = ({
         <Form.Text><FormattedMessage {...messages.limitAccessDescription} /></Form.Text>
         <Form.Group controlId="prereqForm.select">
           <Form.Label>
-            {intl.formatMessage(messages.prerequisiteSelectLabel)}
+            {messages.prerequisiteSelectLabel.defaultMessage}
           </Form.Label>
           <Form.Control
             as="select"
@@ -44,7 +44,7 @@ const PrereqSettings = ({
             role="combobox"
           >
             <option value="">
-              {intl.formatMessage(messages.noPrerequisiteOption)}
+              {messages.noPrerequisiteOption.defaultMessage}
             </option>
             {prereqs.map((prereqOption) => (
               <option
@@ -61,7 +61,7 @@ const PrereqSettings = ({
             <FormikControl
               name="prereqMinScore"
               value={prereqMinScore}
-              label={<Form.Label>{intl.formatMessage(messages.minScoreLabel)}</Form.Label>}
+              label={<Form.Label>{messages.minScoreLabel.defaultMessage}</Form.Label>}
               controlClassName="text-right"
               controlClasses="w-7rem"
               type="number"
@@ -70,7 +70,7 @@ const PrereqSettings = ({
             <FormikControl
               name="prereqMinCompletion"
               value={prereqMinCompletion}
-              label={<Form.Label>{intl.formatMessage(messages.minCompletionLabel)}</Form.Label>}
+              label={<Form.Label>{messages.minCompletionLabel.defaultMessage}</Form.Label>}
               controlClassName="text-right"
               controlClasses="w-7rem"
               type="number"

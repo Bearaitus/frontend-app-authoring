@@ -66,14 +66,14 @@ const DivisionByGroupFields = ({ intl }) => {
   return (
     <>
       <h5 className="text-gray-500 mb-4 mt-4">
-        {intl.formatMessage(messages.divisionByGroup)}
+        {messages.divisionByGroup.defaultMessage}
       </h5>
       {!cohortsEnabled
       && (
         <Alert className="bg-light-200 font-weight-normal h5" id="alert">
-          {intl.formatMessage(messages.cohortsEnabled)}
+          {messages.cohortsEnabled.defaultMessage}
           <Hyperlink destination={learningCourseURL} target="_blank">
-            {intl.formatMessage(messages.instructorDashboard)}
+            {messages.instructorDashboard.defaultMessage}
           </Hyperlink>
         </Alert>
       )}
@@ -83,8 +83,8 @@ const DivisionByGroupFields = ({ intl }) => {
         onBlur={handleBlur}
         id="divideByCohorts"
         checked={cohortsEnabled === false ? cohortsEnabled : divideByCohorts}
-        label={intl.formatMessage(messages.divideByCohortsLabel)}
-        helpText={intl.formatMessage(messages.divideByCohortsHelp)}
+        label={messages.divideByCohortsLabel.defaultMessage}
+        helpText={messages.divideByCohortsHelp.defaultMessage}
         disabled={!cohortsEnabled}
       />
       <TransitionReplace>
@@ -97,8 +97,8 @@ const DivisionByGroupFields = ({ intl }) => {
               className="ml-4 mt-3"
               id="divideCourseTopicsByCohorts"
               checked={divideCourseTopicsByCohorts}
-              label={intl.formatMessage(messages.divideCourseTopicsByCohortsLabel)}
-              helpText={intl.formatMessage(messages.divideCourseTopicsByCohortsHelp)}
+              label={messages.divideCourseTopicsByCohortsLabel.defaultMessage}
+              helpText={messages.divideCourseTopicsByCohortsHelp.defaultMessage}
             />
             <TransitionReplace>
               {divideCourseTopicsByCohorts ? (

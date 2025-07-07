@@ -78,7 +78,7 @@ export const LibraryBlock = ({ onBlockNotification, usageKey, version }: Library
     >
       <iframe
         ref={iframeRef}
-        title={intl.formatMessage(messages.iframeTitle)}
+        title={messages.iframeTitle.defaultMessage}
         src={`${studioBaseUrl}/xblocks/v2/${usageKey}/embed/student_view/${queryStr}`}
         data-testid="block-preview"
         style={{

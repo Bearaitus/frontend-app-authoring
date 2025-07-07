@@ -24,24 +24,24 @@ const RequirementsSection = ({
   const selectedItem = possiblePreRequisiteCourses?.find(
     (course) => course.courseKey === preRequisiteCourses[0],
   );
-  const formattedSelectedItem = selectedItem?.displayName || intl.formatMessage(messages.dropdownEmptyText);
+  const formattedSelectedItem = selectedItem?.displayName || messages.dropdownEmptyText.defaultMessage;
 
   const renderPrerequisiteDropdown = () => (
     <Form.Group
       className="form-group-custom dropdown-prerequisite"
       controlId="prerequisiteDropdown"
     >
-      <Form.Label>{intl.formatMessage(messages.dropdownLabel)}</Form.Label>
+      <Form.Label>{messages.dropdownLabel.defaultMessage}</Form.Label>
       <Dropdown className="bg-white">
         <Dropdown.Toggle id="prerequisiteDropdown" variant="outline-primary">
           {formattedSelectedItem}
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item
-            key={intl.formatMessage(messages.dropdownEmptyText)}
+            key={messages.dropdownEmptyText.defaultMessage}
             onClick={() => onChange([], 'preRequisiteCourses')}
           >
-            {intl.formatMessage(messages.dropdownEmptyText)}
+            {messages.dropdownEmptyText.defaultMessage}
           </Dropdown.Item>
           {possiblePreRequisiteCourses.map((course) => (
             <Dropdown.Item
@@ -54,7 +54,7 @@ const RequirementsSection = ({
         </Dropdown.Menu>
       </Dropdown>
       <Form.Control.Feedback>
-        {intl.formatMessage(messages.dropdownHelpText)}
+        {messages.dropdownHelpText.defaultMessage}
       </Form.Control.Feedback>
     </Form.Group>
   );
@@ -62,13 +62,13 @@ const RequirementsSection = ({
   return (
     <section className="section-container requirements-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.requirementsTitle)}
-        description={intl.formatMessage(messages.requirementsDescription)}
+        title={messages.requirementsTitle.defaultMessage}
+        description={messages.requirementsDescription.defaultMessage}
       />
       {aboutPageEditable && (
         <Form.Group className="form-group-custom">
           <Form.Label>
-            {intl.formatMessage(messages.timepickerLabel)}
+            {messages.timepickerLabel.defaultMessage}
           </Form.Label>
           <Form.Control
             value={effort || ''}
@@ -76,7 +76,7 @@ const RequirementsSection = ({
             onChange={(e) => onChange(e.target.value, 'effort')}
           />
           <Form.Control.Feedback>
-            {intl.formatMessage(messages.timepickerHelpText)}
+            {messages.timepickerHelpText.defaultMessage}
           </Form.Control.Feedback>
         </Form.Group>
       )}

@@ -29,7 +29,7 @@ const ModalContainer = ({
         <ActionRow>
           <ActionRow.Spacer />
           <Button variant="tertiary" onClick={handleClose}>
-            {intl.formatMessage(messages.modalContainerCancelBtnText)}
+            {messages.modalContainerCancelBtnText.defaultMessage}
           </Button>
           <Button onClick={handleSubmit} disabled={hasValue}>
             {btnText}

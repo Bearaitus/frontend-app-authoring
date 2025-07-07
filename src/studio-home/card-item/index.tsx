@@ -100,7 +100,7 @@ const CardItem: React.FC<Props> = ({
                   </Dropdown.Item>
                 )}
                 <Dropdown.Item href={lmsLink}>
-                  {intl.formatMessage(messages.viewLiveBtnText)}
+                  {messages.viewLiveBtnText.defaultMessage}
                 </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
@@ -112,7 +112,7 @@ const CardItem: React.FC<Props> = ({
                   destination={trimSlashes(rerunLink ?? '')}
                   key={`action-row-rerunLink-${courseKey}`}
                 >
-                  {intl.formatMessage(messages.btnReRunText)}
+                  {messages.btnReRunText.defaultMessage}
                 </Hyperlink>
               )}
               <Hyperlink
@@ -120,7 +120,7 @@ const CardItem: React.FC<Props> = ({
                 destination={lmsLink ?? ''}
                 key={`action-row-lmsLink-${courseKey}`}
               >
-                {intl.formatMessage(messages.viewLiveBtnText)}
+                {messages.viewLiveBtnText.defaultMessage}
               </Hyperlink>
             </ActionRow>
           )

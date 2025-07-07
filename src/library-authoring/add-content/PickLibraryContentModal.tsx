@@ -62,10 +62,10 @@ export const PickLibraryContentModal: React.FC<PickLibraryContentModalProps> = (
     onClose();
     updateComponentsMutation.mutateAsync(usageKeys)
       .then(() => {
-        showToast(intl.formatMessage(messages.successAssociateComponentMessage));
+        showToast(messages.successAssociateComponentMessage.defaultMessage);
       })
       .catch(() => {
-        showToast(intl.formatMessage(messages.errorAssociateComponentMessage));
+        showToast(messages.errorAssociateComponentMessage.defaultMessage);
       });
   }, [selectedComponents]);
 

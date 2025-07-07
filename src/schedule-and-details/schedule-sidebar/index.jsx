@@ -14,10 +14,10 @@ const ScheduleSidebar = ({ courseId, proctoredExamSettingsUrl }) => {
       showOtherSettings
     >
       <h4 className="help-sidebar-about-title">
-        {intl.formatMessage(messages.scheduleSidebarTitle)}
+        {messages.scheduleSidebarTitle.defaultMessage}
       </h4>
       <p className="help-sidebar-about-descriptions">
-        {intl.formatMessage(messages.scheduleSidebarAbout)}
+        {messages.scheduleSidebarAbout.defaultMessage}
       </p>
     </HelpSidebar>
   );

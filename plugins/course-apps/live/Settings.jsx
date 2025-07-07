@@ -51,15 +51,15 @@ const LiveSettings = ({
     enabled: Yup.boolean(),
     consumerKey: Yup.string().when(['provider', 'tierType'], {
       is: (provider, tier) => provider === 'zoom' || (provider === 'big_blue_button' && tier === bbbPlanTypes.commercial),
-      then: Yup.string().required(intl.formatMessage(messages.consumerKeyRequired)),
+      then: Yup.string().required(messages.consumerKeyRequired.defaultMessage),
     }),
     consumerSecret: Yup.string().when(['provider', 'tierType'], {
       is: (provider, tier) => provider === 'zoom' || (provider === 'big_blue_button' && tier === bbbPlanTypes.commercial),
-      then: Yup.string().notRequired(intl.formatMessage(messages.consumerSecretRequired)),
+      then: Yup.string().notRequired(messages.consumerSecretRequired.defaultMessage),
     }),
     launchUrl: Yup.string().when(['provider', 'tierType'], {
       is: (provider, tier) => provider === 'zoom' || (provider === 'big_blue_button' && tier === bbbPlanTypes.commercial),
-      then: Yup.string().required(intl.formatMessage(messages.launchUrlRequired)),
+      then: Yup.string().required(messages.launchUrlRequired.defaultMessage),
     }),
     launchEmail: Yup.string(),
   };
@@ -81,10 +81,10 @@ const LiveSettings = ({
   return (
     <AppSettingsModal
       appId="live"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableLiveHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableLiveLabel)}
-      learnMoreText={intl.formatMessage(messages.enableLiveLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableLiveHelp.defaultMessage}
+      enableAppLabel={messages.enableLiveLabel.defaultMessage}
+      learnMoreText={messages.enableLiveLink.defaultMessage}
       onClose={onClose}
       initialValues={liveConfiguration}
       validationSchema={validationSchema}
@@ -97,7 +97,7 @@ const LiveSettings = ({
           <Loading />
         ) : (
           <>
-            <h4 className="my-3">{intl.formatMessage(messages.selectProvider)}</h4>
+            <h4 className="my-3">{messages.selectProvider.defaultMessage}</h4>
             <SelectableBox.Set
               type="checkbox"
               value={values.provider}

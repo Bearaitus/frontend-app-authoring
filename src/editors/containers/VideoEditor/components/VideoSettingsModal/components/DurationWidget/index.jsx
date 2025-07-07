@@ -37,7 +37,7 @@ const DurationWidget = ({
   return (
     <CollapsibleFormWidget
       fontSize="x-small"
-      title={intl.formatMessage(messages.durationTitle)}
+      title={messages.durationTitle.defaultMessage}
       subtitle={getTotalLabel({
         durationString: duration,
         subtitle: true,
@@ -48,7 +48,7 @@ const DurationWidget = ({
       <Form.Row className="mt-4.5">
         <Form.Group as={Col}>
           <Form.Control
-            floatingLabel={intl.formatMessage(messages.startTimeLabel)}
+            floatingLabel={messages.startTimeLabel.defaultMessage}
             onBlur={onBlur(timeKeys.startTime)}
             onChange={onChange(timeKeys.startTime)}
             onKeyDown={onKeyDown(timeKeys.startTime)}
@@ -60,7 +60,7 @@ const DurationWidget = ({
         </Form.Group>
         <Form.Group as={Col}>
           <Form.Control
-            floatingLabel={intl.formatMessage(messages.stopTimeLabel)}
+            floatingLabel={messages.stopTimeLabel.defaultMessage}
             onBlur={onBlur(timeKeys.stopTime)}
             onChange={onChange(timeKeys.stopTime)}
             onKeyDown={onKeyDown(timeKeys.stopTime)}

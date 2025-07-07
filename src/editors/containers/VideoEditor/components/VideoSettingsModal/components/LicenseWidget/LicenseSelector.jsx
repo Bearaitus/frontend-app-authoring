@@ -40,7 +40,7 @@ const LicenseSelector = ({
           ref={ref}
           defaultValue={license}
           disabled={level === LicenseLevel.course}
-          floatingLabel={intl.formatMessage(messages.licenseTypeLabel)}
+          floatingLabel={messages.licenseTypeLabel.defaultMessage}
           onChange={(e) => onLicenseChange(e.target.value)}
         >
           {Object.entries(LicenseNames).map(([key, text]) => {

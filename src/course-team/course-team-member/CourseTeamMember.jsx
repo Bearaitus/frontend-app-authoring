@@ -32,10 +32,10 @@ const CourseTeamMember = ({
       <div className="member-info">
         <Badge className={`badge-current-user bg-${badgeColor} text-light-100`}>
           {isAdminRole
-            ? intl.formatMessage(messages.roleAdmin)
-            : intl.formatMessage(messages.roleStaff)}
+            ? messages.roleAdmin.defaultMessage
+            : messages.roleStaff.defaultMessage}
           {currentUserEmail === email && (
-            <span className="badge-current-user x-small text-light-500">{intl.formatMessage(messages.roleYou)}</span>
+            <span className="badge-current-user x-small text-light-500">{messages.roleYou.defaultMessage}</span>
           )}
         </Badge>
         <span className="member-info-name font-weight-bold">{userName}</span>
@@ -50,20 +50,20 @@ const CourseTeamMember = ({
               size="sm"
               onClick={() => onChangeRole(email, isAdminRole ? USER_ROLES.staff : USER_ROLES.admin)}
             >
-              {isAdminRole ? intl.formatMessage(messages.removeButton) : intl.formatMessage(messages.addButton)}
+              {isAdminRole ? messages.removeButton.defaultMessage : messages.addButton.defaultMessage}
             </Button>
             <IconButtonWithTooltip
               src={DeleteOutline}
-              tooltipContent={intl.formatMessage(messages.deleteUserButton)}
+              tooltipContent={messages.deleteUserButton.defaultMessage}
               onClick={() => onDelete(email)}
               iconAs={Icon}
-              alt={intl.formatMessage(messages.deleteUserButton)}
+              alt={messages.deleteUserButton.defaultMessage}
               data-testid="delete-button"
             />
           </div>
         ) : (
           <div className="member-hint text-right">
-            <span>{intl.formatMessage(messages.hint)}</span>
+            <span>{messages.hint.defaultMessage}</span>
           </div>
         )
       )}

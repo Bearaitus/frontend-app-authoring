@@ -31,7 +31,7 @@ const CodeEditor = ({
       {showBtnEscapeHTML && (
         <Button
           variant="tertiary"
-          aria-label={intl.formatMessage(messages.escapeHTMLButtonLabel)}
+          aria-label={messages.escapeHTMLButtonLabel.defaultMessage}
           ref={btnRef}
           onClick={() => hooks.escapeHTMLSpecialChars({ ref: innerRef, hideBtn })}
         >

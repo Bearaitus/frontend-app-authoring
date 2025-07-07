@@ -70,22 +70,22 @@ const TaxonomyMenu = ({
     */
   let menuItems = {
     import: {
-      title: intl.formatMessage(messages.importMenu),
+      title: messages.importMenu.defaultMessage,
       action: importModalOpen,
       show: taxonomy.canChangeTaxonomy && !taxonomy.systemDefined,
     },
     export: {
-      title: intl.formatMessage(messages.exportMenu),
+      title: messages.exportMenu.defaultMessage,
       action: exportModalOpen,
       show: true, // if we can view the taxonomy, we can export it
     },
     delete: {
-      title: intl.formatMessage(messages.deleteMenu),
+      title: messages.deleteMenu.defaultMessage,
       action: deleteDialogOpen,
       show: taxonomy.canDeleteTaxonomy && !taxonomy.systemDefined,
     },
     manageOrgs: {
-      title: intl.formatMessage(messages.manageOrgsMenu),
+      title: messages.manageOrgsMenu.defaultMessage,
       action: manageOrgsModalOpen,
       show: taxonomy.canChangeTaxonomy,
     },
@@ -148,7 +148,7 @@ const TaxonomyMenu = ({
         data-testid="taxonomy-menu-button"
         disabled={Object.keys(menuItems).length === 0}
       >
-        {intl.formatMessage(messages.actionsButtonLabel)}
+        {messages.actionsButtonLabel.defaultMessage}
       </Dropdown.Toggle>
       <Dropdown.Menu data-testid="taxonomy-menu">
         {Object.keys(menuItems).map((key) => (

@@ -25,9 +25,9 @@ const AddUserForm = ({ onSubmit, onCancel }) => {
         {({ handleSubmit, values }) => (
           <>
             <Form.Group size="sm" className="form-field">
-              <h3 className="form-title">{intl.formatMessage(messages.formTitle)}</h3>
+              <h3 className="form-title">{messages.formTitle.defaultMessage}</h3>
               <Form.Label size="sm" className="form-label font-weight-bold">
-                {intl.formatMessage(messages.formLabel)}
+                {messages.formLabel.defaultMessage}
               </Form.Label>
               <FormikControl
                 name="email"
@@ -35,12 +35,12 @@ const AddUserForm = ({ onSubmit, onCancel }) => {
                 placeholder={intl.formatMessage(messages.formPlaceholder, { email: EXAMPLE_USER_EMAIL })}
               />
               <Form.Control.Feedback className="form-helper-text">
-                {intl.formatMessage(messages.formHelperText)}
+                {messages.formHelperText.defaultMessage}
               </Form.Control.Feedback>
             </Form.Group>
             <ActionRow>
               <Button variant="tertiary" size="sm" onClick={onCancel}>
-                {intl.formatMessage(messages.cancelButton)}
+                {messages.cancelButton.defaultMessage}
               </Button>
               <Button
                 size="sm"
@@ -48,7 +48,7 @@ const AddUserForm = ({ onSubmit, onCancel }) => {
                 disabled={!values.email.length}
                 type="submit"
               >
-                {intl.formatMessage(messages.addUserButton)}
+                {messages.addUserButton.defaultMessage}
               </Button>
             </ActionRow>
           </>

@@ -43,7 +43,7 @@ const ThreePlayMediaForm = ({
             value={data.threePlayTurnaround}
             options={turnaroundOptions}
             handleSelect={(value) => setData({ ...data, threePlayTurnaround: value })}
-            placeholderText={intl.formatMessage(messages.threePlayMediaTurnaroundPlaceholder)}
+            placeholderText={messages.threePlayMediaTurnaroundPlaceholder.defaultMessage}
           />
         </Form.Group>
         <Form.Group size="sm">
@@ -54,7 +54,7 @@ const ThreePlayMediaForm = ({
             value={data.videoSourceLanguage}
             options={sourceLangaugeOptions}
             handleSelect={(value) => setData({ ...data, videoSourceLanguage: value, preferredLanguages: [] })}
-            placeholderText={intl.formatMessage(messages.threePlayMediaSourceLanguagePlaceholder)}
+            placeholderText={messages.threePlayMediaSourceLanguagePlaceholder.defaultMessage}
           />
         </Form.Group>
         <TransitionReplace>
@@ -80,7 +80,7 @@ const ThreePlayMediaForm = ({
                     }
                   }
                 }}
-                placeholderText={intl.formatMessage(messages.threePlayMediaTranscriptLanguagePlaceholder)}
+                placeholderText={messages.threePlayMediaTranscriptLanguagePlaceholder.defaultMessage}
               />
               <Form.Control.Feedback>
                 <ul className="m-0 p-0">

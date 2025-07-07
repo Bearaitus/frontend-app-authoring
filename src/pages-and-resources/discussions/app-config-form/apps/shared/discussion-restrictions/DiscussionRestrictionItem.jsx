@@ -49,7 +49,7 @@ const DiscussionRestrictionItem = ({
   const getHeading = useCallback((isOpen) => (
     <CollapseCardHeading
       isOpen={isOpen}
-      expandHeadingText={intl.formatMessage(messages.configureRestrictedDates)}
+      expandHeadingText={messages.configureRestrictedDates.defaultMessage}
       collapseHeadingText={formatRestrictedDates(restrictedDate)}
       badgeVariant={badgeVariant[restrictedDate.status]}
       badgeStatus={intl.formatMessage(messages.restrictedDatesStatus, {
@@ -70,13 +70,13 @@ const DiscussionRestrictionItem = ({
     return (
       <ConfirmationPopup
         label={restrictedDate.status === constants.ACTIVE
-          ? intl.formatMessage(messages.activeRestrictedDatesDeletionLabel)
-          : intl.formatMessage(messages.restrictedDatesDeletionLabel)}
+          ? messages.activeRestrictedDatesDeletionLabel.defaultMessage
+          : messages.restrictedDatesDeletionLabel.defaultMessage}
         bodyText={intl.formatMessage(deleteRestrictedDatesHelperText[restrictedDate.status])}
         onConfirm={onDelete}
-        confirmLabel={intl.formatMessage(messages.deleteButton)}
+        confirmLabel={messages.deleteButton.defaultMessage}
         onCancel={handleCancelDeletePopup}
-        cancelLabel={intl.formatMessage(messages.cancelButton)}
+        cancelLabel={messages.cancelButton.defaultMessage}
         confirmVariant="plain"
         confirmButtonClass="text-danger-500 border-gray-300 rounded-0"
       />
@@ -89,9 +89,9 @@ const DiscussionRestrictionItem = ({
       onToggle={handleToggle}
       title={getHeading(collapseIsOpen)}
       onDelete={handleShowDeletePopup}
-      expandAlt={intl.formatMessage(messages.expandAltText)}
-      collapseAlt={intl.formatMessage(messages.collapseAltText)}
-      deleteAlt={intl.formatMessage(messages.deleteAltText)}
+      expandAlt={messages.expandAltText.defaultMessage}
+      collapseAlt={messages.collapseAltText.defaultMessage}
+      deleteAlt={messages.deleteAltText.defaultMessage}
       data-testid={restrictedDate.id}
       onClose={handleOnClose}
     >
@@ -99,8 +99,8 @@ const DiscussionRestrictionItem = ({
         <RestrictDatesInput
           value={restrictedDate.startDate}
           type="date"
-          label={intl.formatMessage(messages.startDateLabel)}
-          helpText={intl.formatMessage(messages.restrictedStartDateHelp)}
+          label={messages.startDateLabel.defaultMessage}
+          helpText={messages.restrictedStartDateHelp.defaultMessage}
           fieldName="startDate"
           formGroupClasses="pl-md-0"
           fieldClasses="pr-md-2"
@@ -111,7 +111,7 @@ const DiscussionRestrictionItem = ({
           value={restrictedDate.startTime}
           type="time"
           label={intl.formatMessage(messages.startTimeLabel, { zone: 'UTC' })}
-          helpText={intl.formatMessage(messages.restrictedStartTimeHelp)}
+          helpText={messages.restrictedStartTimeHelp.defaultMessage}
           fieldName="startTime"
           formGroupClasses="pr-md-0"
           fieldClasses="ml-md-2"
@@ -125,8 +125,8 @@ const DiscussionRestrictionItem = ({
         <RestrictDatesInput
           value={restrictedDate.endDate}
           type="date"
-          label={intl.formatMessage(messages.endDateLabel)}
-          helpText={intl.formatMessage(messages.restrictedEndDateHelp)}
+          label={messages.endDateLabel.defaultMessage}
+          helpText={messages.restrictedEndDateHelp.defaultMessage}
           fieldName="endDate"
           formGroupClasses="pl-md-0"
           fieldClasses="pr-md-2"
@@ -137,7 +137,7 @@ const DiscussionRestrictionItem = ({
           value={restrictedDate.endTime}
           type="time"
           label={intl.formatMessage(messages.endTimeLabel, { zone: 'UTC' })}
-          helpText={intl.formatMessage(messages.restrictedEndTimeHelp)}
+          helpText={messages.restrictedEndTimeHelp.defaultMessage}
           fieldName="endTime"
           formGroupClasses="pr-md-0"
           fieldClasses="ml-md-2"

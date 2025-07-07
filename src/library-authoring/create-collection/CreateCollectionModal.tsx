@@ -30,15 +30,15 @@ const CreateCollectionModal = () => {
     create.mutateAsync(values).then((data) => {
       closeCreateCollectionModal();
       navigate(`/library/${libraryId}/collection/${data.key}`);
-      showToast(intl.formatMessage(messages.createCollectionSuccess));
+      showToast(messages.createCollectionSuccess.defaultMessage);
     }).catch(() => {
-      showToast(intl.formatMessage(messages.createCollectionError));
+      showToast(messages.createCollectionError.defaultMessage);
     });
   }, []);
 
   return (
     <ModalDialog
-      title={intl.formatMessage(messages.createCollectionModalTitle)}
+      title={messages.createCollectionModalTitle.defaultMessage}
       isOpen={isCreateCollectionModalOpen}
       onClose={closeCreateCollectionModal}
       size="xl"
@@ -47,7 +47,7 @@ const CreateCollectionModal = () => {
     >
       <ModalDialog.Header>
         <ModalDialog.Title>
-          {intl.formatMessage(messages.createCollectionModalTitle)}
+          {messages.createCollectionModalTitle.defaultMessage}
         </ModalDialog.Title>
       </ModalDialog.Header>
 
@@ -59,7 +59,7 @@ const CreateCollectionModal = () => {
         validationSchema={
           Yup.object().shape({
             title: Yup.string()
-              .required(intl.formatMessage(messages.createCollectionModalNameInvalid)),
+              .required(messages.createCollectionModalNameInvalid.defaultMessage),
             description: Yup.string(),
           })
         }
@@ -73,11 +73,11 @@ const CreateCollectionModal = () => {
                   name="title"
                   label={(
                     <Form.Label className="font-weight-bold h3">
-                      {intl.formatMessage(messages.createCollectionModalNameLabel)}
+                      {messages.createCollectionModalNameLabel.defaultMessage}
                     </Form.Label>
                   )}
                   value={formikProps.values.title}
-                  placeholder={intl.formatMessage(messages.createCollectionModalNamePlaceholder)}
+                  placeholder={messages.createCollectionModalNamePlaceholder.defaultMessage}
                   controlClasses="pb-2"
                 />
                 <FormikControl
@@ -85,14 +85,14 @@ const CreateCollectionModal = () => {
                   as="textarea"
                   label={(
                     <Form.Label className="font-weight-bold h3">
-                      {intl.formatMessage(messages.createCollectionModalDescriptionLabel)}
+                      {messages.createCollectionModalDescriptionLabel.defaultMessage}
                     </Form.Label>
                   )}
                   value={formikProps.values.description}
-                  placeholder={intl.formatMessage(messages.createCollectionModalDescriptionPlaceholder)}
+                  placeholder={messages.createCollectionModalDescriptionPlaceholder.defaultMessage}
                   help={(
                     <Form.Text>
-                      {intl.formatMessage(messages.createCollectionModalDescriptionDetails)}
+                      {messages.createCollectionModalDescriptionDetails.defaultMessage}
                     </Form.Text>
                   )}
                   controlClasses="pb-2"
@@ -103,14 +103,14 @@ const CreateCollectionModal = () => {
             <ModalDialog.Footer>
               <ActionRow>
                 <ModalDialog.CloseButton variant="tertiary">
-                  {intl.formatMessage(messages.createCollectionModalCancel)}
+                  {messages.createCollectionModalCancel.defaultMessage}
                 </ModalDialog.CloseButton>
                 <Button
                   variant="primary"
                   onClick={formikProps.submitForm}
                   disabled={formikProps.isSubmitting || !formikProps.isValid || !formikProps.dirty}
                 >
-                  {intl.formatMessage(messages.createCollectionModalCreate)}
+                  {messages.createCollectionModalCreate.defaultMessage}
                 </Button>
               </ActionRow>
             </ModalDialog.Footer>

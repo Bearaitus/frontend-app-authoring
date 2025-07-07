@@ -16,14 +16,14 @@ const EditConfirmationButtons = ({
     <ButtonGroup>
       <IconButtonWithTooltip
         tooltipPlacement="left"
-        tooltipContent={intl.formatMessage(messages.saveTitleEdit)}
+        tooltipContent={messages.saveTitleEdit.defaultMessage}
         src={Check}
         iconAs={Icon}
         onClick={updateTitle}
       />
       <IconButtonWithTooltip
         tooltipPlacement="right"
-        tooltipContent={intl.formatMessage(messages.cancelTitleEdit)}
+        tooltipContent={messages.cancelTitleEdit.defaultMessage}
         src={Close}
         iconAs={Icon}
         onClick={cancelEdit}

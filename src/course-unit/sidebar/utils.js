@@ -24,7 +24,7 @@ export const getPublishInfo = (intl, hasChanges, editedBy, editedOn, publishedBy
   } else if (publishedOn && publishedBy) {
     publishInfoText = intl.formatMessage(messages.publishLastPublished, { publishedOn, publishedBy });
   } else {
-    publishInfoText = intl.formatMessage(messages.publishInfoPreviouslyPublished);
+    publishInfoText = messages.publishInfoPreviouslyPublished.defaultMessage;
   }
 
   return publishInfoText;
@@ -48,7 +48,7 @@ export const getReleaseInfo = (intl, releaseDate, releaseDateFrom) => {
   }
   return {
     isScheduled: false,
-    message: intl.formatMessage(messages.releaseInfoUnscheduled),
+    message: messages.releaseInfoUnscheduled.defaultMessage,
   };
 };
 
@@ -62,10 +62,10 @@ export const getReleaseInfo = (intl, releaseDate, releaseDateFrom) => {
  */
 export const getVisibilityTitle = (intl, releasedToStudents, published, hasChanges) => {
   if (releasedToStudents && published && !hasChanges) {
-    return intl.formatMessage(messages.visibilityIsVisibleToTitle);
+    return messages.visibilityIsVisibleToTitle.defaultMessage;
   }
 
-  return intl.formatMessage(messages.visibilityWillBeVisibleToTitle);
+  return messages.visibilityWillBeVisibleToTitle.defaultMessage;
 };
 
 /**

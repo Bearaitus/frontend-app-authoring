@@ -22,7 +22,7 @@ const AppListNextButton = ({ intl }) => {
       variant="primary"
       onClick={handleStartConfig}
     >
-      {intl.formatMessage(messages.nextButton)}
+      {messages.nextButton.defaultMessage}
     </Button>
   );
 };

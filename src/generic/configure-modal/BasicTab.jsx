@@ -37,14 +37,14 @@ const BasicTab = ({
               <DatepickerControl
                 type={DATEPICKER_TYPES.date}
                 value={releaseDate}
-                label={intl.formatMessage(messages.releaseDate)}
+                label={messages.releaseDate.defaultMessage}
                 controlName="state-date"
                 onChange={(val) => setFieldValue('releaseDate', val)}
               />
               <DatepickerControl
                 type={DATEPICKER_TYPES.time}
                 value={releaseDate}
-                label={intl.formatMessage(messages.releaseTimeUTC)}
+                label={messages.releaseTimeUTC.defaultMessage}
                 controlName="start-time"
                 onChange={(val) => setFieldValue('releaseDate', val)}
               />
@@ -66,7 +66,7 @@ const BasicTab = ({
                 data-testid="grader-type-select"
               >
                 <option key="notgraded" value="notgraded">
-                  {intl.formatMessage(messages.notGradedTypeOption)}
+                  {messages.notGradedTypeOption.defaultMessage}
                 </option>
                 {createOptions()}
               </Form.Control>
@@ -77,7 +77,7 @@ const BasicTab = ({
                   <DatepickerControl
                     type={DATEPICKER_TYPES.date}
                     value={dueDate}
-                    label={intl.formatMessage(messages.dueDate)}
+                    label={messages.dueDate.defaultMessage}
                     controlName="state-date"
                     onChange={(val) => setFieldValue('dueDate', val)}
                     data-testid="due-date-picker"
@@ -85,7 +85,7 @@ const BasicTab = ({
                   <DatepickerControl
                     type={DATEPICKER_TYPES.time}
                     value={dueDate}
-                    label={intl.formatMessage(messages.dueTimeUTC)}
+                    label={messages.dueTimeUTC.defaultMessage}
                     controlName="start-time"
                     onChange={(val) => setFieldValue('dueDate', val)}
                   />

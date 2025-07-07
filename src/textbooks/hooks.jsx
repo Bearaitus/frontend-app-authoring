@@ -34,11 +34,11 @@ const useTextbooks = (courseId) => {
 
   const breadcrumbs = [
     {
-      label: intl.formatMessage(messages.breadcrumbContent),
+      label: messages.breadcrumbContent.defaultMessage,
       href: `${config.STUDIO_BASE_URL}/course/${courseId}`,
     },
     {
-      label: intl.formatMessage(messages.breadcrumbPagesAndResources),
+      label: messages.breadcrumbPagesAndResources.defaultMessage,
       href: `/course/${courseId}/pages-and-resources`,
     },
     {

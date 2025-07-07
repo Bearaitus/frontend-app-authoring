@@ -41,11 +41,11 @@ const GradingTypeAndDueDate = ({
   const gradingTypeDiv = () => (
     <div className="d-flex align-items-center mr-1" data-testid="grading-type-div">
       <span className="sr-only status-grading-label">
-        {intl.formatMessage(messages.gradedAsScreenReaderLabel)}
+        {messages.gradedAsScreenReaderLabel.defaultMessage}
       </span>
       <Icon className="mr-1" size="sm" src={CheckIcon} />
       <span className="status-grading-value">
-        {gradingType || intl.formatMessage(messages.ungradedText)}
+        {gradingType || messages.ungradedText.defaultMessage}
       </span>
     </div>
   );
@@ -54,7 +54,7 @@ const GradingTypeAndDueDate = ({
     if (dueDate && isInstructorPaced) {
       return (
         <div className="status-grading-date" data-testid="due-date-div">
-          {intl.formatMessage(messages.dueLabel)} {dueDate}
+          {messages.dueLabel.defaultMessage} {dueDate}
         </div>
       );
     }

@@ -60,7 +60,7 @@ const VideoSourceWidget = ({
   return (
     <CollapsibleFormWidget
       fontSize="x-small"
-      title={intl.formatMessage(messages.titleLabel)}
+      title={messages.titleLabel.defaultMessage}
     >
       <ErrorAlert
         dismissError={videoIdChangeAlert.dismiss}
@@ -73,7 +73,7 @@ const VideoSourceWidget = ({
       <div className="border-primary-100 border-bottom pb-4">
         <Form.Group>
           <Form.Control
-            floatingLabel={intl.formatMessage(messages.videoIdLabel)}
+            floatingLabel={messages.videoIdLabel.defaultMessage}
             onChange={videoId.onChange}
             onBlur={updateVideoId}
             value={videoId.local}
@@ -84,7 +84,7 @@ const VideoSourceWidget = ({
         </Form.Group>
         <Form.Group>
           <Form.Control
-            floatingLabel={intl.formatMessage(messages.videoUrlLabel)}
+            floatingLabel={messages.videoUrlLabel.defaultMessage}
             onChange={source.onChange}
             onBlur={(e) => updateVideoURL(e, videoId.local)}
             value={source.local}
@@ -104,7 +104,7 @@ const VideoSourceWidget = ({
         <Form.Row className="mt-3.5 mx-0 flex-nowrap">
           <Form.Group>
             <Form.Control
-              floatingLabel={intl.formatMessage(messages.fallbackVideoLabel)}
+              floatingLabel={messages.fallbackVideoLabel.defaultMessage}
               onChange={fallbackVideos.onChange(index)}
               value={fallbackVideos.local[index]}
               onBlur={fallbackVideos.onBlur(index)}
@@ -112,10 +112,10 @@ const VideoSourceWidget = ({
             <IconButtonWithTooltip
               key={`top-delete-${videoUrl}`}
               tooltipPlacement="top"
-              tooltipContent={intl.formatMessage(messages.deleteFallbackVideo)}
+              tooltipContent={messages.deleteFallbackVideo.defaultMessage}
               src={DeleteOutline}
               iconAs={Icon}
-              alt={intl.formatMessage(messages.deleteFallbackVideo)}
+              alt={messages.deleteFallbackVideo.defaultMessage}
               onClick={() => deleteFallbackVideo(videoUrl)}
             />
           </Form.Group>

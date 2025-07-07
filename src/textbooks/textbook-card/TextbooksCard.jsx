@@ -76,21 +76,21 @@ const TextbookCard = ({
               actions={(
                 <ActionRow>
                   <IconButtonWithTooltip
-                    tooltipContent={intl.formatMessage(messages.buttonView)}
+                    tooltipContent={messages.buttonView.defaultMessage}
                     src={ViewIcon}
                     iconAs={Icon}
                     data-testid="textbook-view-button"
                     onClick={onPreviewTextbookClick}
                   />
                   <IconButtonWithTooltip
-                    tooltipContent={intl.formatMessage(messages.buttonEdit)}
+                    tooltipContent={messages.buttonEdit.defaultMessage}
                     src={EditIcon}
                     iconAs={Icon}
                     data-testid="textbook-edit-button"
                     onClick={openTextbookForm}
                   />
                   <IconButtonWithTooltip
-                    tooltipContent={intl.formatMessage(messages.buttonDelete)}
+                    tooltipContent={messages.buttonDelete.defaultMessage}
                     src={DeleteIcon}
                     iconAs={Icon}
                     data-testid="textbook-delete-button"
@@ -120,7 +120,7 @@ const TextbookCard = ({
         isOpen={isDeleteModalOpen}
         close={closeDeleteModal}
         title={intl.formatMessage(messages.deleteModalTitle, { textbookTitle: textbook.tabTitle })}
-        description={intl.formatMessage(messages.deleteModalDescription)}
+        description={messages.deleteModalDescription.defaultMessage}
         onDeleteSubmit={handleDeleteButtonSubmit}
       />
     </>

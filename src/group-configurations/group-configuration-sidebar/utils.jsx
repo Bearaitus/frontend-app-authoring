@@ -16,24 +16,24 @@ const getSidebarData = ({
   if (shouldShowEnrollmentTrackGroup) {
     groups.push({
       urlKey: 'enrollmentTracks',
-      title: intl.formatMessage(messages.about_3_title),
+      title: messages.about_3_title.defaultMessage,
       paragraphs: [
-        intl.formatMessage(messages.about_3_description_1),
-        intl.formatMessage(messages.about_3_description_2),
-        intl.formatMessage(messages.about_3_description_3),
+        messages.about_3_description_1.defaultMessage,
+        messages.about_3_description_2.defaultMessage,
+        messages.about_3_description_3.defaultMessage,
       ],
     });
   }
   if (shouldShowContentGroup) {
     groups.push({
       urlKey: 'contentGroups',
-      title: intl.formatMessage(messages.aboutTitle),
+      title: messages.aboutTitle.defaultMessage,
       paragraphs: [
-        intl.formatMessage(messages.aboutDescription_1),
-        intl.formatMessage(messages.aboutDescription_2),
+        messages.aboutDescription_1.defaultMessage,
+        messages.aboutDescription_2.defaultMessage,
         intl.formatMessage(messages.aboutDescription_3, {
-          strongText: <strong>{intl.formatMessage(messages.aboutDescription_3_strong)}</strong>,
-          strongText2: <strong>{intl.formatMessage(messages.aboutDescription_strong_edit)}</strong>,
+          strongText: <strong>{messages.aboutDescription_3_strong.defaultMessage}</strong>,
+          strongText2: <strong>{messages.aboutDescription_strong_edit.defaultMessage}</strong>,
         }),
       ],
     });
@@ -41,12 +41,12 @@ const getSidebarData = ({
   if (shouldShowExperimentGroups) {
     groups.push({
       urlKey: 'groupConfigurations',
-      title: intl.formatMessage(messages.about_2_title),
+      title: messages.about_2_title.defaultMessage,
       paragraphs: [
-        intl.formatMessage(messages.about_2_description_1),
+        messages.about_2_description_1.defaultMessage,
         intl.formatMessage(messages.about_2_description_2, {
-          strongText: <strong>{intl.formatMessage(messages.about_2_description_2_strong)}</strong>,
-          strongText2: <strong>{intl.formatMessage(messages.aboutDescription_strong_edit)}</strong>,
+          strongText: <strong>{messages.about_2_description_2_strong.defaultMessage}</strong>,
+          strongText2: <strong>{messages.aboutDescription_strong_edit.defaultMessage}</strong>,
         }),
       ],
     });

@@ -27,15 +27,15 @@ const CertificateDisplayRow = ({
   const dropdownOptions = [
     {
       id: CERTIFICATE_DISPLAY_BEHAVIOR.earlyNoInfo,
-      label: intl.formatMessage(messages.certificateBehaviorDropdownOption1),
+      label: messages.certificateBehaviorDropdownOption1.defaultMessage,
     },
     {
       id: CERTIFICATE_DISPLAY_BEHAVIOR.end,
-      label: intl.formatMessage(messages.certificateBehaviorDropdownOption2),
+      label: messages.certificateBehaviorDropdownOption2.defaultMessage,
     },
     {
       id: CERTIFICATE_DISPLAY_BEHAVIOR.endWithDate,
-      label: intl.formatMessage(messages.certificateBehaviorDropdownOption3),
+      label: messages.certificateBehaviorDropdownOption3.defaultMessage,
     },
   ];
 
@@ -63,7 +63,7 @@ const CertificateDisplayRow = ({
   );
 
   const certificateDisplayValue = getLabelById(dropdownOptions, formattedCertificateBehavior)
-    || intl.formatMessage(messages.certificateBehaviorDropdownEmpty);
+    || messages.certificateBehaviorDropdownEmpty.defaultMessage;
 
   const showAvailableDate = formattedCertificateBehavior === CERTIFICATE_DISPLAY_BEHAVIOR.endWithDate;
 
@@ -99,7 +99,7 @@ const CertificateDisplayRow = ({
       <Collapsible.Advanced>
         <Collapsible.Trigger className="d-flex small text-primary-500 align-items-center mt-3">
           <Icon className="mr-1" src={InfoOutline} />
-          {intl.formatMessage(messages.certificateDisplayBehaviorToggleTitle)}
+          {messages.certificateDisplayBehaviorToggleTitle.defaultMessage}
         </Collapsible.Trigger>
         <Collapsible.Body className="mt-2.5">
           <p className="x-small text-gray-500">
@@ -123,7 +123,7 @@ const CertificateDisplayRow = ({
       <div className="schedule-date-item-container">
         <Form.Group className="form-group-custom">
           <Form.Label>
-            {intl.formatMessage(messages.certificateBehaviorLabel)}
+            {messages.certificateBehaviorLabel.defaultMessage}
           </Form.Label>
           <Dropdown claswsName="bg-white">
             <Dropdown.Toggle id="certificate-behavior-dropdown" variant="outline-primary">
@@ -138,11 +138,11 @@ const CertificateDisplayRow = ({
             </Dropdown.Menu>
           </Dropdown>
           <Form.Control.Feedback>
-            {intl.formatMessage(messages.certificateBehaviorHelpText)}
+            {messages.certificateBehaviorHelpText.defaultMessage}
           </Form.Control.Feedback>
           {showAvailableDate && (
             <DatepickerControl
-              label={intl.formatMessage(messages.certificateAvailableDateLabel)}
+              label={messages.certificateAvailableDateLabel.defaultMessage}
               value={certificateAvailableDate}
               type={DATEPICKER_TYPES.date}
               onChange={(date) => onChange(date, 'certificateAvailableDate')}

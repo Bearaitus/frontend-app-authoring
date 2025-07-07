@@ -55,8 +55,8 @@ const InstructorsSection = ({ instructors, onChange }) => {
   return (
     <section className="section-container instructors-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.instructorsTitle)}
-        description={intl.formatMessage(messages.instructorsDescription)}
+        title={messages.instructorsTitle.defaultMessage}
+        description={messages.instructorsDescription.defaultMessage}
       />
       <ul className="instructors-list">
         {instructors.map((instructor, idx) => (
@@ -70,7 +70,7 @@ const InstructorsSection = ({ instructors, onChange }) => {
         ))}
       </ul>
       <Button iconBefore={AddIcon} variant="primary" onClick={handleAdd}>
-        {intl.formatMessage(messages.instructorAdd)}
+        {messages.instructorAdd.defaultMessage}
       </Button>
     </section>
   );

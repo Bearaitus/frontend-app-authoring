@@ -54,17 +54,17 @@ const BasicSection = ({
 
   const courseBasicInfo = [
     {
-      label: `${intl.formatMessage(messages.courseOrganization)}`,
+      label: `${messages.courseOrganization.defaultMessage}`,
       prefix: 'basic-organization',
       value: org,
     },
     {
-      label: `${intl.formatMessage(messages.courseNumber)}`,
+      label: `${messages.courseNumber.defaultMessage}`,
       prefix: 'basic-course-number',
       value: courseNumber,
     },
     {
-      label: `${intl.formatMessage(messages.courseRun)}`,
+      label: `${messages.courseRun.defaultMessage}`,
       prefix: 'basic-course-run',
       value: run,
     },
@@ -84,9 +84,9 @@ const BasicSection = ({
       onDismiss={() => setShowPageBanner(false)}
       className="align-items-start"
     >
-      <h4 className="text-black">{intl.formatMessage(messages.basicBannerTitle)}</h4>
+      <h4 className="text-black">{messages.basicBannerTitle.defaultMessage}</h4>
       <span className="text text-gray-700 text-left">
-        {intl.formatMessage(messages.basicBannerText)}
+        {messages.basicBannerText.defaultMessage}
       </span>
     </PageBanner>
   );
@@ -117,7 +117,7 @@ const BasicSection = ({
           data-testid={INVITE_STUDENTS_LINK_ID}
         >
           <Button variant="outline-primary" iconBefore={EmailIcon} size="sm">
-            {intl.formatMessage(messages.basicPromotionButton)}
+            {messages.basicPromotionButton.defaultMessage}
           </Button>
         </MailtoLink>
       </Card.Footer>
@@ -127,8 +127,8 @@ const BasicSection = ({
   return (
     <section className="section-container basic-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.basicTitle)}
-        description={intl.formatMessage(messages.basicDescription)}
+        title={messages.basicTitle.defaultMessage}
+        description={messages.basicDescription.defaultMessage}
       />
       <ul className="basic-info-list">
         {courseBasicInfo.map(renderBasicInfo)}

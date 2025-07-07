@@ -40,9 +40,9 @@ const SavingErrorAlert = ({
       show={showAlert}
       variant="danger"
       icon={WarningIcon}
-      title={intl.formatMessage(messages.warningTitle)}
+      title={messages.warningTitle.defaultMessage}
       description={
-        errorMessage || intl.formatMessage(messages.warningDescription)
+        errorMessage || messages.warningDescription.defaultMessage
       }
       aria-hidden="true"
       aria-labelledby={intl.formatMessage(

@@ -26,8 +26,8 @@ const MainLayout = ({ courseId, showHeaderButtons, children }) => {
         <div className="mt-5" />
         <SubHeader
           hideBorder
-          title={intl.formatMessage(messages.headingTitle)}
-          subtitle={intl.formatMessage(messages.headingSubtitle)}
+          title={messages.headingTitle.defaultMessage}
+          subtitle={messages.headingSubtitle.defaultMessage}
           headerActions={showHeaderButtons && <HeaderButtons />}
         />
         <section>

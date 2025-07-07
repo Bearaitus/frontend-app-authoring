@@ -56,32 +56,32 @@ const OpenedXConfigForm = ({
     restrictedDates: Yup.array(
       Yup.object().shape({
         startDate: Yup.string()
-          .checkFormat(intl.formatMessage(messages.restrictedStartDateInValidFormat), 'date')
-          .required(intl.formatMessage(messages.restrictedStartDateRequired)),
+          .checkFormat(messages.restrictedStartDateInValidFormat.defaultMessage, 'date')
+          .required(messages.restrictedStartDateRequired.defaultMessage),
         endDate: Yup.string()
-          .checkFormat(intl.formatMessage(messages.restrictedEndDateInValidFormat), 'date')
-          .required(intl.formatMessage(messages.restrictedEndDateRequired))
+          .checkFormat(messages.restrictedEndDateInValidFormat.defaultMessage, 'date')
+          .required(messages.restrictedEndDateRequired.defaultMessage)
           .when('startDate', {
             is: (startDate) => startDate,
-            then: Yup.string().compare(intl.formatMessage(messages.restrictedEndDateInPast), 'date'),
+            then: Yup.string().compare(messages.restrictedEndDateInPast.defaultMessage, 'date'),
           }),
         startTime: Yup.string().checkFormat(
-          intl.formatMessage(messages.restrictedStartTimeInValidFormat),
+          messages.restrictedStartTimeInValidFormat.defaultMessage,
           'time',
         ),
         endTime: Yup.string()
-          .checkFormat(intl.formatMessage(messages.restrictedEndTimeInValidFormat), 'time')
+          .checkFormat(messages.restrictedEndTimeInValidFormat.defaultMessage, 'time')
           .when('startTime', {
             is: (startTime) => startTime,
-            then: Yup.string().compare(intl.formatMessage(messages.restrictedEndTimeInPast), 'time'),
+            then: Yup.string().compare(messages.restrictedEndTimeInPast.defaultMessage, 'time'),
           }),
       }),
     ),
     // eslint-disable-next-line react/forbid-prop-types
     discussionTopics: Yup.array(
       Yup.object({
-        name: Yup.string().required(intl.formatMessage(messages.discussionTopicRequired)),
-      }).uniqueObjectProperty('name', intl.formatMessage(messages.discussionTopicNameAlreadyExist)),
+        name: Yup.string().required(messages.discussionTopicRequired.defaultMessage),
+      }).uniqueObjectProperty('name', messages.discussionTopicNameAlreadyExist.defaultMessage),
     ),
     ...additionalFields,
   });

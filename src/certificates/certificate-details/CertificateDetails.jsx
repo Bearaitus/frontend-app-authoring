@@ -35,7 +35,7 @@ const CertificateDetails = ({
 
   return (
     <CertificateSection
-      title={intl.formatMessage(messages.detailsSectionTitle)}
+      title={messages.detailsSectionTitle.defaultMessage}
       className="certificate-details"
       data-testid="certificate-details"
       actions={(
@@ -60,29 +60,29 @@ const CertificateDetails = ({
       <Stack>
         <Stack direction="horizontal" gap="1.5" className="certificate-details__info">
           <p className="certificate-details__info-paragraph">
-            <strong>{intl.formatMessage(messages.detailsCourseTitle)}:</strong> {detailsCourseTitle}
+            <strong>{messages.detailsCourseTitle.defaultMessage}:</strong> {detailsCourseTitle}
           </p>
           <p className="certificate-details__info-paragraph-course-number">
-            <strong>{intl.formatMessage(messages.detailsCourseNumber)}:</strong> {detailsCourseNumber}
+            <strong>{messages.detailsCourseNumber.defaultMessage}:</strong> {detailsCourseNumber}
           </p>
         </Stack>
         <Stack direction="horizontal" gap="1.5" className="certificate-details__info">
           {courseTitleOverride && (
             <p className="certificate-details__info-paragraph">
-              <strong>{intl.formatMessage(messages.detailsCourseTitleOverride)}:</strong> {courseTitleOverride}
+              <strong>{messages.detailsCourseTitleOverride.defaultMessage}:</strong> {courseTitleOverride}
             </p>
           )}
           {courseNumberOverride && (
             <p className="certificate-details__info-paragraph text-right">
-              <strong>{intl.formatMessage(messages.detailsCourseNumberOverride)}:</strong> {courseNumberOverride}
+              <strong>{messages.detailsCourseNumberOverride.defaultMessage}:</strong> {courseNumberOverride}
             </p>
           )}
         </Stack>
       </Stack>
       <ModalNotification
         isOpen={isEditModalOpen}
-        title={intl.formatMessage(messages.editCertificateConfirmationTitle)}
-        message={intl.formatMessage(messages.editCertificateMessage)}
+        title={messages.editCertificateConfirmationTitle.defaultMessage}
+        message={messages.editCertificateMessage.defaultMessage}
         actionButtonText={intl.formatMessage(commonMessages.editTooltip)}
         cancelButtonText={intl.formatMessage(commonMessages.cardCancel)}
         handleCancel={editModalClose}
@@ -93,8 +93,8 @@ const CertificateDetails = ({
       />
       <ModalNotification
         isOpen={isConfirmOpen}
-        title={intl.formatMessage(messages.deleteCertificateConfirmationTitle)}
-        message={intl.formatMessage(messages.deleteCertificateMessage)}
+        title={messages.deleteCertificateConfirmationTitle.defaultMessage}
+        message={messages.deleteCertificateMessage.defaultMessage}
         actionButtonText={intl.formatMessage(commonMessages.deleteTooltip)}
         cancelButtonText={intl.formatMessage(commonMessages.cardCancel)}
         handleCancel={confirmClose}

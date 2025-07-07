@@ -12,13 +12,13 @@ const useAccessibility = (initialValues, intl) => {
   const [isFormFilled, setFormFilled] = useState(false);
   const validationSchema = Yup.object().shape({
     name: Yup.string().required(
-      intl.formatMessage(messages.accessibilityPolicyFormValidName),
+      messages.accessibilityPolicyFormValidName.defaultMessage,
     ),
     email: Yup.string()
-      .email(intl.formatMessage(messages.accessibilityPolicyFormValidEmail))
-      .required(intl.formatMessage(messages.accessibilityPolicyFormValidEmail)),
+      .email(messages.accessibilityPolicyFormValidEmail.defaultMessage)
+      .required(messages.accessibilityPolicyFormValidEmail.defaultMessage),
     message: Yup.string().required(
-      intl.formatMessage(messages.accessibilityPolicyFormValidMessage),
+      messages.accessibilityPolicyFormValidMessage.defaultMessage,
     ),
   });
 

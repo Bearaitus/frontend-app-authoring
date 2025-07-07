@@ -16,7 +16,7 @@ const TimerCard = ({
 
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.timerSettingsTitle)}
+      title={messages.timerSettingsTitle.defaultMessage}
       summary={intl.formatMessage(messages.timerSummary, { time: timeBetween })}
     >
       <div className="spacedMessage">
@@ -30,7 +30,7 @@ const TimerCard = ({
           min={0}
           value={timeBetween}
           onChange={handleChange}
-          floatingLabel={intl.formatMessage(messages.timerInputLabel)}
+          floatingLabel={messages.timerInputLabel.defaultMessage}
         />
       </Form.Group>
     </SettingsOption>

@@ -40,7 +40,7 @@ const ExplanationWidget = ({
         editorContentHtml={solutionContent}
         setEditorRef={setEditorRef}
         minHeight={150}
-        placeholder={intl.formatMessage(messages.placeholder)}
+        placeholder={messages.placeholder.defaultMessage}
         {...{
           images,
           isLibrary,

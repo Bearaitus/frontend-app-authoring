@@ -89,7 +89,7 @@ const TagsSidebarBody = () => {
             )}
 
           <Button className="mt-3 ml-2" variant="outline-primary" size="sm" onClick={() => setShowManageTags(true)}>
-            {intl.formatMessage(messages.manageTagsButton)}
+            {messages.manageTagsButton.defaultMessage}
           </Button>
         </Stack>
       </Card.Body>

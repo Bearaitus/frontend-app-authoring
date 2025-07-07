@@ -126,14 +126,14 @@ const ContentTagsDropDownSelector = ({
   // Returns the state of the tag as a string: [Unchecked/Implicit/Checked]
   const getTagState = (tag) => {
     if (isApplied(tag) || isStagedExplicit(tag)) {
-      return intl.formatMessage(messages.taxonomyTagChecked);
+      return messages.taxonomyTagChecked.defaultMessage;
     }
 
     if (isImplicit(tag)) {
-      return intl.formatMessage(messages.taxonomyTagImplicit);
+      return messages.taxonomyTagImplicit.defaultMessage;
     }
 
-    return intl.formatMessage(messages.taxonomyTagUnchecked);
+    return messages.taxonomyTagUnchecked.defaultMessage;
   };
 
   const isTopOfTagTreeDropdown = (index) => index === 0 && level === 0;
@@ -235,7 +235,7 @@ const ContentTagsDropDownSelector = ({
           <Spinner
             animation="border"
             size="xl"
-            screenReaderText={intl.formatMessage(messages.loadingTagsDropdownMessage)}
+            screenReaderText={messages.loadingTagsDropdownMessage.defaultMessage}
           />
         </div>
       ) : null }

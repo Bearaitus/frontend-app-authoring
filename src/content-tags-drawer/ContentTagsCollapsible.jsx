@@ -56,7 +56,7 @@ const CustomMenu = (props) => {
           type="checkbox"
           name="tags"
           columns={1}
-          ariaLabel={intl.formatMessage(messages.taxonomyTagsAriaLabel)}
+          ariaLabel={messages.taxonomyTagsAriaLabel.defaultMessage}
           className="taxonomy-tags-selectable-box-set"
           onChange={handleSelectableBoxChange}
           value={checkedTags}
@@ -81,7 +81,7 @@ const CustomMenu = (props) => {
               className="tags-drawer-cancel-button"
               onClick={handleCancelStagedTags}
             >
-              { intl.formatMessage(messages.collapsibleCancelStagedTagsButtonText) }
+              { messages.collapsibleCancelStagedTagsButtonText.defaultMessage }
             </Button>
             <Button
               tabIndex={0}
@@ -91,7 +91,7 @@ const CustomMenu = (props) => {
               disabled={!(value && value.length)}
               onClick={handleCommitStagedTags}
             >
-              { intl.formatMessage(messages.collapsibleAddStagedTagsButtonText) }
+              { messages.collapsibleAddStagedTagsButtonText.defaultMessage }
             </Button>
           </div>
         </div>
@@ -113,7 +113,7 @@ const CustomLoadingIndicator = () => {
     <Spinner
       animation="border"
       size="xl"
-      screenReaderText={intl.formatMessage(messages.loadingMessage)}
+      screenReaderText={messages.loadingMessage.defaultMessage}
     />
   );
 };
@@ -143,7 +143,7 @@ const CustomIndicatorsContainer = (props) => {
             tabIndex={0}
             onKeyDown={disableActionKeys} // To prevent navigating staged tags when button focused
           >
-            { intl.formatMessage(messages.collapsibleInlineAddStagedTagsButtonText) }
+            { messages.collapsibleInlineAddStagedTagsButtonText.defaultMessage }
           </Button>
         )) || null
       }
@@ -392,7 +392,7 @@ const ContentTagsCollapsible = ({
           { Object.keys(appliedContentTagsTree).length === 0 && !isEditMode
             && (
               <div className="mb-3" key={taxonomyId}>
-                <p className="text-gray-500">{intl.formatMessage(messages.collapsibleNoTagsAddedText)}
+                <p className="text-gray-500">{messages.collapsibleNoTagsAddedText.defaultMessage}
                   {canTagObject && (
                     <Button
                       tabIndex={0}
@@ -402,7 +402,7 @@ const ContentTagsCollapsible = ({
                       className="text-info-500 add-tags-button"
                       onClick={toEditMode}
                     >
-                      { intl.formatMessage(messages.collapsibleAddStagedTagsButtonText) }
+                      { messages.collapsibleAddStagedTagsButtonText.defaultMessage }
                     </Button>
                   )}
                 </p>
@@ -439,7 +439,7 @@ const ContentTagsCollapsible = ({
                 isLoading={updateTags.isLoading}
                 isDisabled={updateTags.isLoading}
                 name="tags-select"
-                placeholder={intl.formatMessage(messages.collapsibleAddTagsPlaceholderText)}
+                placeholder={messages.collapsibleAddTagsPlaceholderText.defaultMessage}
                 isSearchable
                 className="d-flex flex-column flex-fill"
                 classNamePrefix="react-select-add-tags"

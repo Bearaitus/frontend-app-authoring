@@ -33,9 +33,9 @@ const CollectionMenu = ({ collectionHit } : CollectionMenuProps) => {
   const restoreCollection = useCallback(() => {
     restoreCollectionMutation.mutateAsync()
       .then(() => {
-        showToast(intl.formatMessage(messages.undoDeleteCollectionToastMessage));
+        showToast(messages.undoDeleteCollectionToastMessage.defaultMessage);
       }).catch(() => {
-        showToast(intl.formatMessage(messages.undoDeleteCollectionToastFailed));
+        showToast(messages.undoDeleteCollectionToastFailed.defaultMessage);
       });
   }, []);
 
@@ -50,14 +50,14 @@ const CollectionMenu = ({ collectionHit } : CollectionMenuProps) => {
     deleteCollectionMutation.mutateAsync()
       .then(() => {
         showToast(
-          intl.formatMessage(messages.deleteCollectionSuccess),
+          messages.deleteCollectionSuccess.defaultMessage,
           {
-            label: intl.formatMessage(messages.undoDeleteCollectionToastAction),
+            label: messages.undoDeleteCollectionToastAction.defaultMessage,
             onClick: restoreCollection,
           },
         );
       }).catch(() => {
-        showToast(intl.formatMessage(messages.deleteCollectionFailed));
+        showToast(messages.deleteCollectionFailed.defaultMessage);
       }).finally(() => {
         setConfirmBtnState('default');
         closeDeleteModal();
@@ -73,7 +73,7 @@ const CollectionMenu = ({ collectionHit } : CollectionMenuProps) => {
           src={MoreVert}
           iconAs={Icon}
           variant="primary"
-          alt={intl.formatMessage(messages.collectionCardMenuAlt)}
+          alt={messages.collectionCardMenuAlt.defaultMessage}
           data-testid="collection-card-menu-toggle"
         />
         <Dropdown.Menu>

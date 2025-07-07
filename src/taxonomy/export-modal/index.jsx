@@ -28,7 +28,7 @@ const ExportModal = ({
   return (
     <Container onClick={(e) => e.stopPropagation() /* This prevents calling onClick handler from the parent */}>
       <ModalDialog
-        title={intl.formatMessage(messages.exportModalTitle)}
+        title={messages.exportModalTitle.defaultMessage}
         isOpen={isOpen}
         onClose={onClose}
         size="lg"
@@ -38,13 +38,13 @@ const ExportModal = ({
       >
         <ModalDialog.Header>
           <ModalDialog.Title>
-            {intl.formatMessage(messages.exportModalTitle)}
+            {messages.exportModalTitle.defaultMessage}
           </ModalDialog.Title>
         </ModalDialog.Header>
         <ModalDialog.Body className="pb-5 mt-2">
           <Form.Group>
             <Form.Label>
-              {intl.formatMessage(messages.exportModalBodyDescription)}
+              {messages.exportModalBodyDescription.defaultMessage}
             </Form.Label>
             <Form.RadioSet
               name="export-format"
@@ -55,13 +55,13 @@ const ExportModal = ({
                 key={`export-csv-format-${taxonomyId}`}
                 value="csv"
               >
-                {intl.formatMessage(messages.taxonomyCSVFormat)}
+                {messages.taxonomyCSVFormat.defaultMessage}
               </Form.Radio>
               <Form.Radio
                 key={`export-json-format-${taxonomyId}`}
                 value="json"
               >
-                {intl.formatMessage(messages.taxonomyJSONFormat)}
+                {messages.taxonomyJSONFormat.defaultMessage}
               </Form.Radio>
             </Form.RadioSet>
           </Form.Group>
@@ -69,14 +69,14 @@ const ExportModal = ({
         <ModalDialog.Footer>
           <ActionRow>
             <ModalDialog.CloseButton variant="tertiary">
-              {intl.formatMessage(messages.taxonomyModalsCancelLabel)}
+              {messages.taxonomyModalsCancelLabel.defaultMessage}
             </ModalDialog.CloseButton>
             <Button
               variant="primary"
               onClick={onClickExport}
               data-testid={`export-button-${taxonomyId}`}
             >
-              {intl.formatMessage(messages.exportModalSubmitButtonLabel)}
+              {messages.exportModalSubmitButtonLabel.defaultMessage}
             </Button>
           </ActionRow>
         </ModalDialog.Footer>

@@ -38,7 +38,7 @@ const AdvanceTypeSelect: React.FC<Props> = ({
           <IconButton
             src={ArrowBack}
             iconAs={Icon}
-            alt={intl.formatMessage(messages.advanceMenuGoBack)}
+            alt={messages.advanceMenuGoBack.defaultMessage}
             onClick={() => setSelected(ProblemTypeKeys.SINGLESELECT)}
           />
           <ActionRow.Spacer />

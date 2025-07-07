@@ -121,22 +121,22 @@ const AppConfigForm = ({
         hasCloseButton={false}
         isOpen={confirmationDialogVisible}
         onClose={() => setConfirmationDialogVisible(false)}
-        title={intl.formatMessage(messages.ok)}
+        title={messages.ok.defaultMessage}
       >
         <ModalDialog.Header className="pt-4">
           <ModalDialog.Title className="h4 m-0" style={{ fontSize: '1.125rem' }}>
-            {intl.formatMessage(messages.confirmConfigurationChange)}
+            {messages.confirmConfigurationChange.defaultMessage}
           </ModalDialog.Title>
         </ModalDialog.Header>
         <ModalDialog.Body className="overflow-hidden text-primary-700">
-          {intl.formatMessage(messages.configurationChangeConsequence)}
+          {messages.configurationChangeConsequence.defaultMessage}
         </ModalDialog.Body>
         <ModalDialog.Footer>
           <ActionRow>
             <ModalDialog.CloseButton variant="tertiary">
-              {intl.formatMessage(messages.cancel)}
+              {messages.cancel.defaultMessage}
             </ModalDialog.CloseButton>
-            <AppConfigFormSaveButton labelText={intl.formatMessage(messages.ok)} />
+            <AppConfigFormSaveButton labelText={messages.ok.defaultMessage} />
           </ActionRow>
         </ModalDialog.Footer>
       </ModalDialog>

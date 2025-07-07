@@ -12,16 +12,16 @@ const GradingSidebar = ({ intl, courseId, proctoredExamSettingsUrl }) => (
     proctoredExamSettingsUrl={proctoredExamSettingsUrl}
   >
     <h4 className="help-sidebar-about-title">
-      {intl.formatMessage(messages.gradingSidebarTitle)}
+      {messages.gradingSidebarTitle.defaultMessage}
     </h4>
     <p className="help-sidebar-about-descriptions">
-      {intl.formatMessage(messages.gradingSidebarAbout1)}
+      {messages.gradingSidebarAbout1.defaultMessage}
     </p>
     <p className="help-sidebar-about-descriptions">
-      {intl.formatMessage(messages.gradingSidebarAbout2)}
+      {messages.gradingSidebarAbout2.defaultMessage}
     </p>
     <p className="help-sidebar-about-descriptions">
-      {intl.formatMessage(messages.gradingSidebarAbout3)}
+      {messages.gradingSidebarAbout3.defaultMessage}
     </p>
   </HelpSidebar>
 );

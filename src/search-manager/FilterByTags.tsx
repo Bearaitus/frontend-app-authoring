@@ -199,10 +199,10 @@ const FilterByTags: React.FC<Record<never, never>> = () => {
           onClear={() => setTagSearchKeywords('')}
           value={tagSearchKeywords}
           screenReaderText={{
-            label: intl.formatMessage(messages.searchTagsByKeywordPlaceholder),
-            submitButton: intl.formatMessage(messages.submitSearchTagsByKeyword),
+            label: messages.searchTagsByKeywordPlaceholder.defaultMessage,
+            submitButton: messages.submitSearchTagsByKeyword.defaultMessage,
           }}
-          placeholder={intl.formatMessage(messages.searchTagsByKeywordPlaceholder)}
+          placeholder={messages.searchTagsByKeywordPlaceholder.defaultMessage}
           className="mx-3 mb-1"
         />
         <Menu className="filter-by-refinement-menu" style={{ boxShadow: 'none' }}>

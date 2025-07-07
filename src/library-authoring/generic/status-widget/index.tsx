@@ -128,19 +128,19 @@ const StatusWidget = ({
     // Entity is never published (new)
     isNew = numBlocks != null && numBlocks === 0; // allow discarding if components are added
     isPublished = false;
-    statusMessage = intl.formatMessage(messages.draftStatusLabel);
-    extraStatusMessage = intl.formatMessage(messages.neverPublishedLabel);
+    statusMessage = messages.draftStatusLabel.defaultMessage;
+    extraStatusMessage = messages.neverPublishedLabel.defaultMessage;
     bodyMessage = (<DraftBodyMessage {...{ lastDraftCreatedBy, lastDraftCreated, created }} />);
   } else if (hasUnpublishedChanges || hasUnpublishedDeletes) {
     // Entity is on Draft state
     isPublished = false;
-    statusMessage = intl.formatMessage(messages.draftStatusLabel);
-    extraStatusMessage = intl.formatMessage(messages.unpublishedStatusLabel);
+    statusMessage = messages.draftStatusLabel.defaultMessage;
+    extraStatusMessage = messages.unpublishedStatusLabel.defaultMessage;
     bodyMessage = (<DraftBodyMessage {...{ lastDraftCreatedBy, lastDraftCreated, created }} />);
   } else {
     // Entity is published
     isPublished = true;
-    statusMessage = intl.formatMessage(messages.publishedStatusLabel);
+    statusMessage = messages.publishedStatusLabel.defaultMessage;
     if (publishedBy) {
       bodyMessage = (
         <FormattedMessage
@@ -188,13 +188,13 @@ const StatusWidget = ({
           </span>
           {onCommit && (
             <Button disabled={isPublished} onClick={onCommit}>
-              {intl.formatMessage(messages.publishButtonLabel)}
+              {messages.publishButtonLabel.defaultMessage}
             </Button>
           )}
           {onRevert && (
             <div className="d-flex justify-content-end">
               <Button disabled={isPublished || isNew} variant="link" onClick={onRevert}>
-                {intl.formatMessage(messages.discardChangesButtonLabel)}
+                {messages.discardChangesButtonLabel.defaultMessage}
               </Button>
             </div>
           )}

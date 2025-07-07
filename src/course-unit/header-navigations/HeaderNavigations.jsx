@@ -14,13 +14,13 @@ const HeaderNavigations = ({ headerNavigationsActions }) => {
         variant="outline-primary"
         onClick={handleViewLive}
       >
-        {intl.formatMessage(messages.viewLiveButton)}
+        {messages.viewLiveButton.defaultMessage}
       </Button>
       <Button
         variant="outline-primary"
         onClick={handlePreview}
       >
-        {intl.formatMessage(messages.previewButton)}
+        {messages.previewButton.defaultMessage}
       </Button>
     </nav>
   );

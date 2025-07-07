@@ -32,7 +32,7 @@ const AltTextControls = ({
     <Form.Control
       className="mt-4.5"
       disabled={isDecorative}
-      floatingLabel={intl.formatMessage(messages.altTextFloatingLabel)}
+      floatingLabel={messages.altTextFloatingLabel.defaultMessage}
       isInvalid={validation.show}
       onChange={hooks.onInputChange(setValue)}
       type="input"

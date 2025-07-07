@@ -47,13 +47,13 @@ const CertificateCreateForm = ({ courseId }) => {
             </Card.Section>
             <Card.Footer className="justify-content-start">
               <Button type="submit">
-                {intl.formatMessage(messages.cardCreate)}
+                {messages.cardCreate.defaultMessage}
               </Button>
               <Button
                 variant="tertiary"
                 onClick={() => handleFormCancel(resetForm)}
               >
-                {intl.formatMessage(messages.cardCancel)}
+                {messages.cardCancel.defaultMessage}
               </Button>
             </Card.Footer>
           </Card>

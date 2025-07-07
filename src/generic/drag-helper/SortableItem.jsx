@@ -66,7 +66,7 @@ const SortableItem = ({
         <button
           ref={setActivatorNodeRef}
           key="drag-to-reorder-icon"
-          aria-label={intl.formatMessage(messages.tooltipContent)}
+          aria-label={messages.tooltipContent.defaultMessage}
           className="btn-icon btn-icon-secondary btn-icon-md"
           type="button"
           {...attributes}

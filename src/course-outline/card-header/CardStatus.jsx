@@ -18,7 +18,7 @@ const CardStatus = ({
     <>
       {showDiscussionsEnabledBadge && (
         <StatusBadge
-          text={intl.formatMessage(messages.discussionEnabledBadgeText)}
+          text={messages.discussionEnabledBadgeText.defaultMessage}
         />
       )}
       {badgeTitle && (

@@ -119,7 +119,7 @@ const ProblemFilterItem = ({ count, handleCheckboxChange } : ProblemFilterItemPr
               src={KeyboardArrowRight}
               onClick={openProblemItem}
               data-testid="open-problem-item-button"
-              alt={intl.formatMessage(messages.openProblemSubmenuAlt)}
+              alt={messages.openProblemSubmenuAlt.defaultMessage}
             />
           )}
         </div>

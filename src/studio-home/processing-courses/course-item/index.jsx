@@ -38,7 +38,7 @@ const CourseItem = ({ course }) => {
               <ActionRow>
                 <Icon src={RotateRightIcon} className="spinner-icon" />
                 <ActionRow.Spacer />
-                <span className="small">{intl.formatMessage(messages.itemInProgressActionText)}</span>
+                <span className="small">{messages.itemInProgressActionText.defaultMessage}</span>
               </ActionRow>
             )}
           />
@@ -47,7 +47,7 @@ const CourseItem = ({ course }) => {
             {intl.formatMessage(messages.itemInProgressFooterText, {
               refresh: (
                 <Hyperlink destination="/home">
-                  {intl.formatMessage(messages.itemInProgressFooterHyperlink)}
+                  {messages.itemInProgressFooterHyperlink.defaultMessage}
                 </Hyperlink>
               ),
             })}
@@ -64,20 +64,20 @@ const CourseItem = ({ course }) => {
             actions={(
               <ActionRow>
                 <Icon src={WarningIcon} className="text-danger-500" />
-                <span className="small">{intl.formatMessage(messages.itemIsFailedActionText)}</span>
+                <span className="small">{messages.itemIsFailedActionText.defaultMessage}</span>
               </ActionRow>
             )}
           />
           <Card.Divider />
           <Card.Footer className="p-3.5 small text-gray-700 bg-danger-100 align-content-between">
-            <span className="w-75 mr-auto">{intl.formatMessage(messages.itemFailedFooterText)}</span>
+            <span className="w-75 mr-auto">{messages.itemFailedFooterText.defaultMessage}</span>
             <Button
               onClick={() => dispatch(handleDeleteNotificationQuery(dismissLink))}
               iconBefore={CloseIcon}
               variant="tertiary"
               size="sm"
             >
-              {intl.formatMessage(messages.itemFailedFooterButton)}
+              {messages.itemFailedFooterButton.defaultMessage}
             </Button>
           </Card.Footer>
         </Card>

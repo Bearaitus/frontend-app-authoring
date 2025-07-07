@@ -62,7 +62,7 @@ export const getLettersOnLongScale = (idx, letters, gradingSegments) => {
  * @returns {string} - Segment display name.
  */
 export const getLettersOnShortScale = (idx, letters, intl) => {
-  const END_OF_SCALE_NAME = intl.formatMessage(messages.segmentFailGradingText);
+  const END_OF_SCALE_NAME = messages.segmentFailGradingText.defaultMessage;
 
   return (idx === 1 ? letters[idx - 1] : END_OF_SCALE_NAME);
 };

@@ -16,13 +16,13 @@ const SettingsSidebar = ({ intl, courseId, proctoredExamSettingsUrl }) => (
     showOtherSettings
   >
     <h4 className="help-sidebar-about-title">
-      {intl.formatMessage(messages.about)}
+      {messages.about.defaultMessage}
     </h4>
     <p className="help-sidebar-about-descriptions">
-      {intl.formatMessage(messages.aboutDescription1)}
+      {messages.aboutDescription1.defaultMessage}
     </p>
     <p className="help-sidebar-about-descriptions">
-      {intl.formatMessage(messages.aboutDescription2)}
+      {messages.aboutDescription2.defaultMessage}
     </p>
     <p className="help-sidebar-about-descriptions">
       <FormattedMessage

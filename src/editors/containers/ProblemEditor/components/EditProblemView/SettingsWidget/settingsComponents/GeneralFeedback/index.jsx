@@ -15,7 +15,7 @@ export const GeneralFeedbackCard = ({
   const { summary, handleChange } = generalFeedbackHooks(generalFeedback, updateSettings);
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.generalFeebackSettingTitle)}
+      title={messages.generalFeebackSettingTitle.defaultMessage}
       summary={summary.intl ? intl.formatMessage(summary.message) : summary.message}
       none={!generalFeedback}
     >
@@ -28,7 +28,7 @@ export const GeneralFeedbackCard = ({
         <Form.Control
           value={generalFeedback}
           onChange={handleChange}
-          floatingLabel={intl.formatMessage(messages.generalFeedbackInputLabel)}
+          floatingLabel={messages.generalFeedbackInputLabel.defaultMessage}
         />
       </Form.Group>
     </SettingsOption>

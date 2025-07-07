@@ -21,27 +21,27 @@ const getInfoModalSettings = (modalType, currentEmail, errorMessage, courseName,
   switch (modalType) {
     case MODAL_TYPES.delete:
       return {
-        title: intl.formatMessage(messages.deleteModalTitle),
+        title: messages.deleteModalTitle.defaultMessage,
         message: intl.formatMessage(messages.deleteModalMessage, { email: currentEmail, courseName }),
         variant: '',
-        closeButtonText: intl.formatMessage(messages.deleteModalCancelButton),
-        submitButtonText: intl.formatMessage(messages.deleteModalDeleteButton),
+        closeButtonText: messages.deleteModalCancelButton.defaultMessage,
+        submitButtonText: messages.deleteModalDeleteButton.defaultMessage,
         closeButtonVariant: 'tertiary',
       };
     case MODAL_TYPES.error:
       return {
-        title: intl.formatMessage(messages.errorModalTitle),
+        title: messages.errorModalTitle.defaultMessage,
         message: errorMessage,
         variant: 'danger',
-        closeButtonText: intl.formatMessage(messages.errorModalOkButton),
+        closeButtonText: messages.errorModalOkButton.defaultMessage,
         closeButtonVariant: 'primary',
       };
     case MODAL_TYPES.warning:
       return {
-        title: intl.formatMessage(messages.warningModalTitle),
+        title: messages.warningModalTitle.defaultMessage,
         message: intl.formatMessage(messages.warningModalMessage, { email: currentEmail, courseName }),
         variant: 'warning',
-        closeButtonText: intl.formatMessage(messages.warningModalReturnButton),
+        closeButtonText: messages.warningModalReturnButton.defaultMessage,
         mainButtonVariant: 'primary',
       };
     default:

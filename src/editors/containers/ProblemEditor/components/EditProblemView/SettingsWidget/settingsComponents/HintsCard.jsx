@@ -24,7 +24,7 @@ const HintsCard = ({
 
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.hintSettingTitle)}
+      title={messages.hintSettingTitle.defaultMessage}
       summary={intl.formatMessage(summary.message, { ...summary.values })}
       none={!hints.length}
       hasExpandableTextArea

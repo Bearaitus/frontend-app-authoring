@@ -64,13 +64,13 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
         // New members are created as Readers
         accessLevel: LibraryRole.Reader.toString() as LibraryAccessLevel,
       }).then(() => {
-        showToast(intl.formatMessage(messages.addMemberSuccess));
+        showToast(messages.addMemberSuccess.defaultMessage);
       }).catch((addMemberError) => {
         const errorData = typeof addMemberError === 'object' ? addMemberError.response?.data : undefined;
         if (errorData && 'email' in errorData) {
-          showToast(intl.formatMessage(messages.addMemberEmailError));
+          showToast(messages.addMemberEmailError.defaultMessage);
         } else {
-          showToast(intl.formatMessage(messages.addMemberError));
+          showToast(messages.addMemberError.defaultMessage);
         }
       });
       closeAddLibraryTeamMember();
@@ -86,9 +86,9 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
         username,
         accessLevel: role.toString() as LibraryAccessLevel,
       }).then(() => {
-        showToast(intl.formatMessage(messages.updateMemberSuccess));
+        showToast(messages.updateMemberSuccess.defaultMessage);
       }).catch(() => {
-        showToast(intl.formatMessage(messages.updateMemberError));
+        showToast(messages.updateMemberError.defaultMessage);
       });
     },
     [libraryId, libraryTeamMembers],
@@ -101,9 +101,9 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
         libraryId,
         username,
       }).then(() => {
-        showToast(intl.formatMessage(messages.deleteMemberSuccess));
+        showToast(messages.deleteMemberSuccess.defaultMessage);
       }).catch(() => {
-        showToast(intl.formatMessage(messages.deleteMemberError));
+        showToast(messages.deleteMemberError.defaultMessage);
       });
     },
     [libraryId, libraryTeamMembers],
@@ -118,9 +118,9 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
           id: libraryId,
           allow_public_read: allowPublicRead,
         }).then(() => {
-          showToast(intl.formatMessage(messages.updateLibrarySuccess));
+          showToast(messages.updateLibrarySuccess.defaultMessage);
         }).catch(() => {
-          showToast(intl.formatMessage(messages.updateLibraryError));
+          showToast(messages.updateLibraryError.defaultMessage);
         });
       }
     },
@@ -160,7 +160,7 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
             <Form.Switch
               id="form-allow-public-read"
               aria-describedby="form-allow-public-read-help"
-              aria-label={intl.formatMessage(messages.allowPublicReadLabel)}
+              aria-label={messages.allowPublicReadLabel.defaultMessage}
               checked={libraryData && libraryData.allowPublicRead}
               onChange={onChangeAllowPublicRead}
               disabled={!canChangeRoles}
@@ -170,7 +170,7 @@ const LibraryTeam: React.FC<Record<never, never>> = () => {
               </label>
             </Form.Switch>
             <Form.Text className="form-helper-text" id="form-allow-public-read-help">
-              <span className="small">{intl.formatMessage(messages.allowPublicReadHelperText)}</span>
+              <span className="small">{messages.allowPublicReadHelperText.defaultMessage}</span>
             </Form.Text>
           </Form.Group>
           {canChangeRoles && (

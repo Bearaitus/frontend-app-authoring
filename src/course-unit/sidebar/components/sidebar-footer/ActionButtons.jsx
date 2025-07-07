@@ -23,7 +23,7 @@ const ActionButtons = ({ openDiscardModal, handlePublishing }) => {
     <>
       {(!published || hasChanges) && (
         <Button size="sm" className="mt-3.5" variant="outline-primary" onClick={handlePublishing}>
-          {intl.formatMessage(messages.actionButtonPublishTitle)}
+          {messages.actionButtonPublishTitle.defaultMessage}
         </Button>
       )}
       {(published && hasChanges) && (
@@ -33,7 +33,7 @@ const ActionButtons = ({ openDiscardModal, handlePublishing }) => {
           onClick={openDiscardModal}
           className="course-unit-sidebar-footer__discard-changes__btn mt-2"
         >
-          {intl.formatMessage(messages.actionButtonDiscardChangesTitle)}
+          {messages.actionButtonDiscardChangesTitle.defaultMessage}
         </Button>
       )}
       {enableCopyPasteUnits && canEdit && (
@@ -44,7 +44,7 @@ const ActionButtons = ({ openDiscardModal, handlePublishing }) => {
             variant="outline-primary"
             size="sm"
           >
-            {intl.formatMessage(messages.actionButtonCopyUnitTitle)}
+            {messages.actionButtonCopyUnitTitle.defaultMessage}
           </Button>
         </>
       )}

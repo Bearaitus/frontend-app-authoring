@@ -92,11 +92,11 @@ const LibraryTeamMember = ({
 
           <IconButtonWithTooltip
             src={DeleteOutline}
-            tooltipContent={intl.formatMessage(messages.deleteMember)}
+            tooltipContent={messages.deleteMember.defaultMessage}
             onClick={() => onDeleteRole(username)}
             iconAs={Icon}
-            alt={intl.formatMessage(messages.deleteMember)}
-            title={intl.formatMessage(messages.deleteMember)}
+            alt={messages.deleteMember.defaultMessage}
+            title={messages.deleteMember.defaultMessage}
           />
         </div>
       ) : (

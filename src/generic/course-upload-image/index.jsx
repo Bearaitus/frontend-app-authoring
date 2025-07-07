@@ -60,7 +60,7 @@ const CourseUploadImage = ({
     <div className="image-preview">
       <Image
         src={imageAbsolutePath().href}
-        alt={intl.formatMessage(messages.uploadImageDropzoneAlt)}
+        alt={messages.uploadImageDropzoneAlt.defaultMessage}
         fluid
       />
     </div>
@@ -71,7 +71,7 @@ const CourseUploadImage = ({
         src={FileUploadIcon}
         iconAs={Icon}
         variant="secondary"
-        alt={intl.formatMessage(messages.uploadImageDropzoneAlt)}
+        alt={messages.uploadImageDropzoneAlt.defaultMessage}
       />
       <p>
         {intl.formatMessage(messages.uploadImageDropzoneText, {
@@ -92,7 +92,7 @@ const CourseUploadImage = ({
               target="_blank"
               showLaunchIcon={false}
             >
-              {intl.formatMessage(messages.uploadImageFilesAndUploads)}
+              {messages.uploadImageFilesAndUploads.defaultMessage}
             </Hyperlink>
           ),
         }}
@@ -100,7 +100,7 @@ const CourseUploadImage = ({
     </span>
   ) : (
     <span className="x-small text-gray-700">
-      {intl.formatMessage(messages.uploadImageEmpty)}
+      {messages.uploadImageEmpty.defaultMessage}
     </span>
   );
 

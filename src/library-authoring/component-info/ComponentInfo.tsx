@@ -54,7 +54,7 @@ const AddComponentWidget = () => {
           onComponentSelected({ usageKey, blockType: getBlockType(usageKey) });
         }}
       >
-        {intl.formatMessage(messages.componentPickerSingleSelect)}
+        {messages.componentPickerSingleSelect.defaultMessage}
       </Button>
     );
   }
@@ -79,7 +79,7 @@ const AddComponentWidget = () => {
         iconBefore={isChecked ? CheckBoxIcon : CheckBoxOutlineBlank}
         onClick={handleChange}
       >
-        {intl.formatMessage(messages.componentPickerMultipleSelect)}
+        {messages.componentPickerMultipleSelect.defaultMessage}
       </Button>
     );
   }
@@ -131,9 +131,9 @@ const ComponentInfo = () => {
   const publish = React.useCallback(() => {
     publishComponent.mutateAsync()
       .then(() => {
-        showToast(intl.formatMessage(messages.publishSuccessMsg));
+        showToast(messages.publishSuccessMsg.defaultMessage);
       }).catch(() => {
-        showToast(intl.formatMessage(messages.publishErrorMsg));
+        showToast(messages.publishErrorMsg.defaultMessage);
       });
   }, [publishComponent, showToast, intl]);
 
@@ -146,10 +146,10 @@ const ComponentInfo = () => {
             variant="outline-primary"
             className="m-1 text-nowrap flex-grow-1"
           >
-            {intl.formatMessage(messages.editComponentButtonTitle)}
+            {messages.editComponentButtonTitle.defaultMessage}
           </Button>
           <Button disabled={publishComponent.isLoading || !canPublish} onClick={publish} variant="outline-primary" className="m-1 text-nowrap flex-grow-1">
-            {intl.formatMessage(messages.publishComponentButtonTitle)}
+            {messages.publishComponentButtonTitle.defaultMessage}
           </Button>
           <ComponentMenu usageKey={usageKey} />
         </div>
@@ -161,13 +161,13 @@ const ComponentInfo = () => {
         activeKey={tab}
         onSelect={(k: string) => setTab(k)}
       >
-        <Tab eventKey="preview" title={intl.formatMessage(messages.previewTabTitle)}>
+        <Tab eventKey="preview" title={messages.previewTabTitle.defaultMessage}>
           <ComponentPreview />
         </Tab>
-        <Tab eventKey="manage" title={intl.formatMessage(messages.manageTabTitle)}>
+        <Tab eventKey="manage" title={messages.manageTabTitle.defaultMessage}>
           <ComponentManagement />
         </Tab>
-        <Tab eventKey="details" title={intl.formatMessage(messages.detailsTabTitle)}>
+        <Tab eventKey="details" title={messages.detailsTabTitle.defaultMessage}>
           <ComponentDetails />
         </Tab>
       </Tabs>

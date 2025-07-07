@@ -22,13 +22,13 @@ const CourseUpdate = ({
         <span className="course-update-header__date small font-weight-bold">{dateForUpdate}</span>
         {!isDateForUpdateValid(dateForUpdate) && (
           <div className="course-update-header__error">
-            <Icon src={ErrorIcon} alt={intl.formatMessage(messages.errorMessage)} />
-            <p className="message-error small m-0">{intl.formatMessage(messages.errorMessage)}</p>
+            <Icon src={ErrorIcon} alt={messages.errorMessage.defaultMessage} />
+            <p className="message-error small m-0">{messages.errorMessage.defaultMessage}</p>
           </div>
         )}
         <div className="course-update-header__action">
           <IconButtonWithTooltip
-            tooltipContent={intl.formatMessage(messages.editButton)}
+            tooltipContent={messages.editButton.defaultMessage}
             src={EditOutline}
             iconAs={Icon}
             disabled={isDisabledButtons}
@@ -36,7 +36,7 @@ const CourseUpdate = ({
             onClick={onEdit}
           />
           <IconButtonWithTooltip
-            tooltipContent={intl.formatMessage(messages.deleteButton)}
+            tooltipContent={messages.deleteButton.defaultMessage}
             src={DeleteOutline}
             iconAs={Icon}
             disabled={isDisabledButtons}

@@ -37,7 +37,7 @@ const CreditSection = ({
       })}
     >
       <Form.Label className="grading-label">
-        {intl.formatMessage(messages.creditEligibilityLabel)}
+        {messages.creditEligibilityLabel.defaultMessage}
       </Form.Label>
       <Form.Control
         data-testid="minimum-grade-credit-input"
@@ -48,11 +48,11 @@ const CreditSection = ({
         onChange={handleCreditChange}
       />
       <Form.Control.Feedback className="grading-description">
-        {intl.formatMessage(messages.creditEligibilityDescription)}
+        {messages.creditEligibilityDescription.defaultMessage}
       </Form.Control.Feedback>
       {errorEffort && (
         <Form.Control.Feedback className="feedback-error" type="invalid">
-          {intl.formatMessage(messages.creditEligibilityErrorMsg)} {eligibleGrade}.
+          {messages.creditEligibilityErrorMsg.defaultMessage} {eligibleGrade}.
         </Form.Control.Feedback>
       )}
     </Form.Group>

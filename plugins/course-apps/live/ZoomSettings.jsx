@@ -29,7 +29,7 @@ const ZoomSettings = ({
         <FormikControl
           name="launchEmail"
           value={values.launchEmail}
-          floatingLabel={intl.formatMessage(messages.launchEmail)}
+          floatingLabel={messages.launchEmail.defaultMessage}
           type="input"
         />
       </>

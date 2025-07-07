@@ -25,7 +25,7 @@ const useCertificates = ({ courseId }) => {
 
   const isLoading = useMemo(() => loadingStatus === RequestStatus.IN_PROGRESS, [loadingStatus]);
 
-  const pageHeadTitle = getPageHeadTitle(courseTitle, intl.formatMessage(messages.headingTitleTabText));
+  const pageHeadTitle = getPageHeadTitle(courseTitle, messages.headingTitleTabText.defaultMessage);
 
   useEffect(() => {
     if (!hasCertificateModes) {

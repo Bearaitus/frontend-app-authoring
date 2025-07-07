@@ -40,7 +40,7 @@ const SequenceNavigationDropdown = ({
           iconBefore={PlusIcon}
           onClick={handleAddNewSequenceUnit}
         >
-          {intl.formatMessage(messages.newUnitBtnText)}
+          {messages.newUnitBtnText.defaultMessage}
         </Button>
         {showPasteUnit && (
           <Button
@@ -49,7 +49,7 @@ const SequenceNavigationDropdown = ({
             iconBefore={ContentPasteGoIcon}
             onClick={handlePasteNewSequenceUnit}
           >
-            {intl.formatMessage(messages.pasteAsNewUnitLink)}
+            {messages.pasteAsNewUnitLink.defaultMessage}
           </Button>
         )}
       </Dropdown.Menu>

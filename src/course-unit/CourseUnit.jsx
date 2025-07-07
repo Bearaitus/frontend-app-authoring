@@ -136,7 +136,7 @@ const CourseUnit = ({ courseId }) => {
               {currentlyVisibleToStudents && (
                 <AlertMessage
                   className="course-unit__alert"
-                  title={intl.formatMessage(messages.alertUnpublishedVersion)}
+                  title={messages.alertUnpublishedVersion.defaultMessage}
                   variant="warning"
                   icon={WarningIcon}
                 />
@@ -186,7 +186,7 @@ const CourseUnit = ({ courseId }) => {
                 <PasteComponent
                   clipboardData={sharedClipboardData}
                   onClick={handleCreateNewCourseXBlock}
-                  text={intl.formatMessage(messages.pasteButtonText)}
+                  text={messages.pasteButtonText.defaultMessage}
                 />
               )}
             </Layout.Element>

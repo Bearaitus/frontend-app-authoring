@@ -37,33 +37,33 @@ const useCreateOrRerunCourse = (initialValues) => {
   const { specialCharsRule, noSpaceRule } = REGEX_RULES;
   const validationSchema = Yup.object().shape({
     displayName: Yup.string().required(
-      intl.formatMessage(messages.requiredFieldError),
+      messages.requiredFieldError.defaultMessage,
     ),
     org: Yup.string()
-      .required(intl.formatMessage(messages.requiredFieldError))
+      .required(messages.requiredFieldError.defaultMessage)
       .matches(
         specialCharsRule,
-        intl.formatMessage(messages.disallowedCharsError),
+        messages.disallowedCharsError.defaultMessage,
       )
-      .matches(noSpaceRule, intl.formatMessage(messages.noSpaceError)),
+      .matches(noSpaceRule, messages.noSpaceError.defaultMessage),
     number: Yup.string()
-      .required(intl.formatMessage(messages.requiredFieldError))
+      .required(messages.requiredFieldError.defaultMessage)
       .matches(
         specialCharsRule,
-        intl.formatMessage(messages.disallowedCharsError),
+        messages.disallowedCharsError.defaultMessage,
       )
-      .matches(noSpaceRule, intl.formatMessage(messages.noSpaceError)),
+      .matches(noSpaceRule, messages.noSpaceError.defaultMessage),
     run: Yup.string()
-      .required(intl.formatMessage(messages.requiredFieldError))
+      .required(messages.requiredFieldError.defaultMessage)
       .matches(
         specialCharsRule,
-        intl.formatMessage(messages.disallowedCharsError),
+        messages.disallowedCharsError.defaultMessage,
       )
-      .matches(noSpaceRule, intl.formatMessage(messages.noSpaceError)),
-  }).test(TOTAL_LENGTH_KEY, intl.formatMessage(messages.totalLengthError), function validateTotalLength() {
+      .matches(noSpaceRule, messages.noSpaceError.defaultMessage),
+  }).test(TOTAL_LENGTH_KEY, messages.totalLengthError.defaultMessage, function validateTotalLength() {
     const { org, number, run } = this?.options.originalValue || {};
     if ((org?.length || 0) + (number?.length || 0) + (run?.length || 0) > MAX_TOTAL_LENGTH) {
-      return this.createError({ path: TOTAL_LENGTH_KEY, message: intl.formatMessage(messages.totalLengthError) });
+      return this.createError({ path: TOTAL_LENGTH_KEY, message: messages.totalLengthError.defaultMessage });
     }
     return true;
   });

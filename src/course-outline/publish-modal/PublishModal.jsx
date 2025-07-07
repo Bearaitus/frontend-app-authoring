@@ -70,13 +70,13 @@ const PublishModal = ({
       <ModalDialog.Footer className="pt-1">
         <ActionRow>
           <ModalDialog.CloseButton variant="tertiary">
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </ModalDialog.CloseButton>
           <Button
             data-testid="publish-confirm-button"
             onClick={onPublishSubmit}
           >
-            {intl.formatMessage(messages.publishButton)}
+            {messages.publishButton.defaultMessage}
           </Button>
         </ActionRow>
       </ModalDialog.Footer>

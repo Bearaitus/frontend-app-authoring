@@ -30,7 +30,7 @@ const EditFileErrors = ({
       isError={addFileStatus === RequestStatus.FAILED}
     >
       <Alert.Heading>
-        {intl.formatMessage(messages.uploadErrorAlertTitle)}
+        {messages.uploadErrorAlertTitle.defaultMessage}
       </Alert.Heading>
       <ul className="p-0">
         {errorMessages.add.map(message => (

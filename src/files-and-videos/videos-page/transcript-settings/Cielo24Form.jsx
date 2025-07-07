@@ -34,7 +34,7 @@ const Cielo24Form = ({
             value={data.cielo24Turnaround}
             options={turnaroundOptions}
             handleSelect={(value) => setData({ ...data, cielo24Turnaround: value })}
-            placeholderText={intl.formatMessage(messages.cieloTurnaroundPlaceholder)}
+            placeholderText={messages.cieloTurnaroundPlaceholder.defaultMessage}
           />
         </Form.Group>
         <Form.Group size="sm">
@@ -45,7 +45,7 @@ const Cielo24Form = ({
             value={data.cielo24Fidelity}
             options={fidelityOptions}
             handleSelect={(value) => setData({ ...data, cielo24Fidelity: value, videoSourceLanguage: '' })}
-            placeholderText={intl.formatMessage(messages.cieloFidelityPlaceholder)}
+            placeholderText={messages.cieloFidelityPlaceholder.defaultMessage}
           />
         </Form.Group>
         <TransitionReplace>
@@ -58,7 +58,7 @@ const Cielo24Form = ({
                 value={data.videoSourceLanguage}
                 options={sourceLanguageOptions}
                 handleSelect={(value) => setData({ ...data, videoSourceLanguage: value, preferredLanguages: [] })}
-                placeholderText={intl.formatMessage(messages.cieloSourceLanguagePlaceholder)}
+                placeholderText={messages.cieloSourceLanguagePlaceholder.defaultMessage}
               />
             </Form.Group>
           )}
@@ -73,7 +73,7 @@ const Cielo24Form = ({
                 value={selectedLanguage}
                 options={languages}
                 handleSelect={(value) => setData({ ...data, preferredLanguages: [value] })}
-                placeholderText={intl.formatMessage(messages.cieloTranscriptLanguagePlaceholder)}
+                placeholderText={messages.cieloTranscriptLanguagePlaceholder.defaultMessage}
               />
             </Form.Group>
           )}

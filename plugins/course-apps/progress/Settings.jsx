@@ -19,10 +19,10 @@ const ProgressSettings = ({ intl, onClose }) => {
   return (
     <AppSettingsModal
       appId="progress"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableProgressHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableProgressLabel)}
-      learnMoreText={intl.formatMessage(messages.enableProgressLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableProgressHelp.defaultMessage}
+      enableAppLabel={messages.enableProgressLabel.defaultMessage}
+      learnMoreText={messages.enableProgressLink.defaultMessage}
       onClose={onClose}
       initialValues={{ enableProgressGraph: !disableProgressGraph }}
       validationSchema={{ enableProgressGraph: Yup.boolean() }}
@@ -34,8 +34,8 @@ const ProgressSettings = ({ intl, onClose }) => {
             <FormSwitchGroup
               id="enable-progress-graph"
               name="enableProgressGraph"
-              label={intl.formatMessage(messages.enableGraphLabel)}
-              helpText={intl.formatMessage(messages.enableGraphHelp)}
+              label={messages.enableGraphLabel.defaultMessage}
+              helpText={messages.enableGraphHelp.defaultMessage}
               onChange={handleChange}
               onBlur={handleBlur}
               checked={values.enableProgressGraph}

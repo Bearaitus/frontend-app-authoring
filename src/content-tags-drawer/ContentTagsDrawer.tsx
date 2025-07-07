@@ -62,7 +62,7 @@ const TaxonomyList = ({ contentId }: TaxonomyListProps) => {
               className="text-info-500 p-0 enable-taxonomies-button"
               onClick={() => navigate('/taxonomies')}
             >
-              { intl.formatMessage(messages.emptyDrawerContentLink) }
+              { messages.emptyDrawerContentLink.defaultMessage }
             </Button>
           ),
         }}
@@ -89,7 +89,7 @@ const ContentTagsDrawerTitle = () => {
             <Spinner
               animation="border"
               size="xl"
-              screenReaderText={intl.formatMessage(messages.loadingMessage)}
+              screenReaderText={messages.loadingMessage.defaultMessage}
             />
           </div>
         )}
@@ -149,7 +149,7 @@ const ContentTagsDrawerVariantFooter = ({ onClose, readOnly }: ContentTagsDrawer
             <Spinner
               animation="border"
               size="xl"
-              screenReaderText={intl.formatMessage(messages.loadingMessage)}
+              screenReaderText={messages.loadingMessage.defaultMessage}
             />
           )}
       </div>
@@ -182,14 +182,14 @@ const ContentTagsComponentVariantFooter = ({ readOnly = false }: ContentTagsComp
                 variant="tertiary"
                 onClick={toReadMode}
               >
-                {intl.formatMessage(messages.tagsDrawerCancelButtonText)}
+                {messages.tagsDrawerCancelButtonText.defaultMessage}
               </Button>
               <Button
                 className="rounded-0"
                 onClick={commitGlobalStagedTags}
                 block
               >
-                {intl.formatMessage(messages.tagsDrawerSaveButtonText)}
+                {messages.tagsDrawerSaveButtonText.defaultMessage}
               </Button>
             </Stack>
           ) : (
@@ -197,7 +197,7 @@ const ContentTagsComponentVariantFooter = ({ readOnly = false }: ContentTagsComp
               <Spinner
                 animation="border"
                 size="xl"
-                screenReaderText={intl.formatMessage(messages.loadingMessage)}
+                screenReaderText={messages.loadingMessage.defaultMessage}
               />
             </div>
           )}
@@ -208,7 +208,7 @@ const ContentTagsComponentVariantFooter = ({ readOnly = false }: ContentTagsComp
           onClick={toEditMode}
           block
         >
-          {intl.formatMessage(messages.manageTagsButton)}
+          {messages.manageTagsButton.defaultMessage}
         </Button>
       )}
     </div>
@@ -351,17 +351,17 @@ const ContentTagsDrawer = ({
           >
             {variant === 'drawer' && (
               <p className="h4 text-gray-500 font-weight-bold">
-                {intl.formatMessage(messages.headerSubtitle)}
+                {messages.headerSubtitle.defaultMessage}
               </p>
             )}
             <TaxonomyList contentId={contentId} />
             {otherTaxonomies.length !== 0 && (
               <div>
                 <p className="h4 text-gray-500 font-weight-bold">
-                  {intl.formatMessage(messages.otherTagsHeader)}
+                  {messages.otherTagsHeader.defaultMessage}
                 </p>
                 <p className="other-description text-gray-500">
-                  {intl.formatMessage(messages.otherTagsDescription)}
+                  {messages.otherTagsDescription.defaultMessage}
                 </p>
                 { isTaxonomyListLoaded && isContentTaxonomyTagsLoaded && (
                   otherTaxonomies.map((data) => (

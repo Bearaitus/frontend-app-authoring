@@ -40,7 +40,7 @@ const GroupConfigurationSidebar = ({
               href={urls[urlKey]}
               className="mt-2 mb-3.5 sidebar-link"
             >
-              {intl.formatMessage(messages.learnMoreBtn)}
+              {messages.learnMoreBtn.defaultMessage}
             </Hyperlink>
             {idx !== sidebarData.length - 1 && <hr />}
           </Fragment>

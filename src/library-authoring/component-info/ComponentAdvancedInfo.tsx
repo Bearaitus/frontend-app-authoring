@@ -117,7 +117,7 @@ export const ComponentAdvancedInfo: React.FC<Record<never, never>> = () => {
   return (
     <Collapsible
       styling="basic"
-      title={intl.formatMessage(messages.advancedDetailsTitle)}
+      title={messages.advancedDetailsTitle.defaultMessage}
     >
       <ComponentAdvancedInfoInner />
     </Collapsible>

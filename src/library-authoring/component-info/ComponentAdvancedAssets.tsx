@@ -70,7 +70,7 @@ export const ComponentAdvancedAssets: React.FC<Record<never, never>> = () => {
           <li key={a.path}>
             <a href={a.url}>{a.path}</a>{' '}
             (<FormattedNumber value={a.size} notation="compact" unit="byte" unitDisplay="narrow" />)
-            <Button variant="link" size="sm" iconBefore={Delete} onClick={() => { setConfirmDeleteAsset(a.path); }} title={intl.formatMessage(messages.advancedDetailsAssetsDeleteButton)}>
+            <Button variant="link" size="sm" iconBefore={Delete} onClick={() => { setConfirmDeleteAsset(a.path); }} title={messages.advancedDetailsAssetsDeleteButton.defaultMessage}>
               <span className="sr-only"><FormattedMessage {...messages.advancedDetailsAssetsDeleteButton} /></span>
             </Button>
           </li>
@@ -90,7 +90,7 @@ export const ComponentAdvancedAssets: React.FC<Record<never, never>> = () => {
         isOpen={filePathToDelete !== ''}
         close={() => { setConfirmDeleteAsset(''); }}
         variant="warning"
-        title={intl.formatMessage(messages.advancedDetailsAssetsDeleteFileTitle)}
+        title={messages.advancedDetailsAssetsDeleteFileTitle.defaultMessage}
         description={`Are you sure you want to delete ${filePathToDelete}?`}
         onDeleteSubmit={deleteFile}
         btnState="default"

@@ -33,7 +33,7 @@ const SidebarBody = ({
         {displayUnitLocation ? (
           <span>
             <h5 className="course-unit-sidebar-date-stage m-0">
-              {intl.formatMessage(messages.unitLocationTitle)}
+              {messages.unitLocationTitle.defaultMessage}
             </h5>
             <p className="m-0 font-weight-bold">
               {locationId}
@@ -51,7 +51,7 @@ const SidebarBody = ({
               <ReleaseInfoComponent />
             </span>
             <p className="mt-3.5 mb-0">
-              {intl.formatMessage(messages.sidebarBodyNote)}
+              {messages.sidebarBodyNote.defaultMessage}
             </p>
           </>
         )}

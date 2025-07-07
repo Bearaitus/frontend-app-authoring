@@ -92,7 +92,7 @@ const SettingsModalBase = ({
     <ModalDialog.Footer className="p-4">
       <ActionRow>
         <ModalDialog.CloseButton variant="tertiary">
-          {intl.formatMessage(messages.cancel)}
+          {messages.cancel.defaultMessage}
         </ModalDialog.CloseButton>
         {footer}
       </ActionRow>
@@ -165,9 +165,9 @@ const ResetUnitsButton = ({
       <StatefulButton
         className="reset-units-button"
         labels={{
-          default: intl.formatMessage(messages.resetAllUnits),
+          default: messages.resetAllUnits.defaultMessage,
           pending: '',
-          finish: intl.formatMessage(messages.reset),
+          finish: messages.reset.defaultMessage,
         }}
         icons={{
           default: <Icon src={ResetIcon} />,
@@ -316,9 +316,9 @@ const SettingsModal = ({
               footer={(
                 <StatefulButton
                   labels={{
-                    default: intl.formatMessage(messages.save),
-                    pending: intl.formatMessage(messages.saving),
-                    complete: intl.formatMessage(messages.saved),
+                    default: messages.save.defaultMessage,
+                    pending: messages.saving.defaultMessage,
+                    complete: messages.saved.defaultMessage,
                   }}
                   state={submitButtonState}
                   onClick={handleFormikSubmit(formikProps)}
@@ -329,9 +329,9 @@ const SettingsModal = ({
               {saveError && (
                 <Alert variant="danger" icon={Info} ref={alertRef}>
                   <Alert.Heading>
-                    {formikProps.errors.enabled?.title || intl.formatMessage(messages.errorSavingTitle)}
+                    {formikProps.errors.enabled?.title || messages.errorSavingTitle.defaultMessage}
                   </Alert.Heading>
-                  {formikProps.errors.enabled?.message || intl.formatMessage(messages.errorSavingMessage)}
+                  {formikProps.errors.enabled?.message || messages.errorSavingMessage.defaultMessage}
                 </Alert>
               )}
               <FormSwitchGroup
@@ -345,7 +345,7 @@ const SettingsModal = ({
                     {enableAppLabel}
                     {formikProps.values.enabled && (
                       <Badge className="ml-2" variant="success" data-testid="enable-badge">
-                        {intl.formatMessage(messages.enabled)}
+                        {messages.enabled.defaultMessage}
                       </Badge>
                     )}
                   </div>

@@ -51,13 +51,13 @@ const DiscussionTopics = ({ intl }) => {
   return (
     <>
       <h5 className="text-gray-500 mt-4 mb-2">
-        {intl.formatMessage(messages.discussionTopics)}
+        {messages.discussionTopics.defaultMessage}
       </h5>
       <label className="text-primary-500 mb-1 h4">
-        {intl.formatMessage(messages.discussionTopicsLabel)}
+        {messages.discussionTopicsLabel.defaultMessage}
       </label>
       <div className="small mb-4 text-muted">
-        {intl.formatMessage(messages.discussionTopicsHelp)}
+        {messages.discussionTopicsHelp.defaultMessage}
       </div>
       <div>
         <FieldArray
@@ -81,7 +81,7 @@ const DiscussionTopics = ({ intl }) => {
                   iconBefore={Add}
                   className="text-primary-500 p-0"
                 >
-                  {intl.formatMessage(messages.addTopicButton)}
+                  {messages.addTopicButton.defaultMessage}
                 </Button>
               </div>
             </div>

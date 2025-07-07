@@ -38,11 +38,11 @@ const SortableItem = ({
       <IconButtonWithTooltip
         key="drag-to-reorder-icon"
         tooltipPlacement="top"
-        tooltipContent={intl.formatMessage(messages.tooltipContent)}
+        tooltipContent={messages.tooltipContent.defaultMessage}
         src={DragIndicator}
         iconAs={Icon}
         variant="secondary"
-        alt={intl.formatMessage(messages.tooltipContent)}
+        alt={messages.tooltipContent.defaultMessage}
         {...attributes}
         {...listeners}
       />

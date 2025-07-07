@@ -13,7 +13,7 @@ const SaveFormConnectionErrorAlert = ({ intl }) => (
       values={{
         supportLink: (
           <Alert.Link href={getConfig().SUPPORT_URL}>
-            {intl.formatMessage(messages.supportText)}
+            {messages.supportText.defaultMessage}
           </Alert.Link>
         ),
       }}

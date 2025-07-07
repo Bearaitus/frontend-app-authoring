@@ -39,7 +39,7 @@ const ExportStepper = ({ intl, courseId }) => {
     return () => clearInterval(id);
   });
 
-  let successTitle = intl.formatMessage(messages.stepperSuccessTitle);
+  let successTitle = messages.stepperSuccessTitle.defaultMessage;
   const localizedSuccessDate = successDate ? (
     <FormattedDate
       value={successDate}
@@ -62,27 +62,27 @@ const ExportStepper = ({ intl, courseId }) => {
 
   const steps = [
     {
-      title: intl.formatMessage(messages.stepperPreparingTitle),
-      description: intl.formatMessage(messages.stepperPreparingDescription),
+      title: messages.stepperPreparingTitle.defaultMessage,
+      description: messages.stepperPreparingDescription.defaultMessage,
       key: EXPORT_STAGES.PREPARING,
     }, {
-      title: intl.formatMessage(messages.stepperExportingTitle),
-      description: intl.formatMessage(messages.stepperExportingDescription),
+      title: messages.stepperExportingTitle.defaultMessage,
+      description: messages.stepperExportingDescription.defaultMessage,
       key: EXPORT_STAGES.EXPORTING,
     }, {
-      title: intl.formatMessage(messages.stepperCompressingTitle),
-      description: intl.formatMessage(messages.stepperCompressingDescription),
+      title: messages.stepperCompressingTitle.defaultMessage,
+      description: messages.stepperCompressingDescription.defaultMessage,
       key: EXPORT_STAGES.COMPRESSING,
     }, {
       title: successTitle,
-      description: intl.formatMessage(messages.stepperSuccessDescription),
+      description: messages.stepperSuccessDescription.defaultMessage,
       key: EXPORT_STAGES.SUCCESS,
     },
   ];
 
   return (
     <div>
-      <h3 className="mt-4">{intl.formatMessage(messages.stepperHeaderTitle)}</h3>
+      <h3 className="mt-4">{messages.stepperHeaderTitle.defaultMessage}</h3>
       <CourseStepper
         courseId={courseId}
         steps={steps}
@@ -90,7 +90,7 @@ const ExportStepper = ({ intl, courseId }) => {
         errorMessage={errorMessage}
         hasError={!!errorMessage}
       />
-      {downloadPath && currentStage === EXPORT_STAGES.SUCCESS && <Button className="ml-5.5 mt-n2.5" href={downloadPath} download>{intl.formatMessage(messages.downloadCourseButtonTitle)}</Button>}
+      {downloadPath && currentStage === EXPORT_STAGES.SUCCESS && <Button className="ml-5.5 mt-n2.5" href={downloadPath} download>{messages.downloadCourseButtonTitle.defaultMessage}</Button>}
     </div>
   );
 };

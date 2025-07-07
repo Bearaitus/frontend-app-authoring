@@ -109,7 +109,7 @@ const TabsSection = ({
         <Tab
           key={TABS_LIST.archived}
           eventKey={TABS_LIST.archived}
-          title={intl.formatMessage(messages.archivedTabTitle)}
+          title={messages.archivedTabTitle.defaultMessage}
         >
           <ArchivedTab
             archivedCoursesData={archivedCourses}

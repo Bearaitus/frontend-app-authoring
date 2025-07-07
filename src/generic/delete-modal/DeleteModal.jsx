@@ -25,8 +25,8 @@ const DeleteModal = ({
 
   const modalTitle = title || intl.formatMessage(messages.title, { category });
   const modalDescription = description || intl.formatMessage(messages.description, { category });
-  const defaultBtnLabel = btnDefaultLabel || intl.formatMessage(messages.deleteButton);
-  const pendingBtnLabel = btnPendingLabel || intl.formatMessage(messages.pendingDeleteButton);
+  const defaultBtnLabel = btnDefaultLabel || messages.deleteButton.defaultMessage;
+  const pendingBtnLabel = btnPendingLabel || messages.pendingDeleteButton.defaultMessage;
 
   return (
     <AlertModal
@@ -44,7 +44,7 @@ const DeleteModal = ({
               close();
             }}
           >
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <StatefulButton
             data-testid="delete-confirm-button"

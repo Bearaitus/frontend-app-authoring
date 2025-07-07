@@ -36,12 +36,12 @@ const SearchSort = ({
         <Form.Control
           autoFocus
           onChange={onSearchChange}
-          placeholder={intl.formatMessage(messages.searchPlaceholder)}
+          placeholder={messages.searchPlaceholder.defaultMessage}
           trailingElement={
             searchString
               ? (
                 <IconButton
-                  alt={intl.formatMessage(messages.clearSearch)}
+                  alt={messages.clearSearch.defaultMessage}
                   iconAs={Icon}
                   invertColors
                   isActive

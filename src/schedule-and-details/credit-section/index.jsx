@@ -9,9 +9,9 @@ const CreditSection = ({ creditRequirements }) => {
   const intl = useIntl();
 
   const CREDIT_REQUIREMENTS_TYPES = {
-    grade: intl.formatMessage(messages.creditMinimumGrade),
-    proctoredExam: intl.formatMessage(messages.creditProctoredExam),
-    reverification: intl.formatMessage(messages.creditVerification),
+    grade: messages.creditMinimumGrade.defaultMessage,
+    proctoredExam: messages.creditProctoredExam.defaultMessage,
+    reverification: messages.creditVerification.defaultMessage,
   };
 
   const renderRequirementValue = (requirementValue, key) => {
@@ -44,16 +44,16 @@ const CreditSection = ({ creditRequirements }) => {
         </ul>
       );
     }
-    return <p>{intl.formatMessage(messages.creditNotFound)}</p>;
+    return <p>{messages.creditNotFound.defaultMessage}</p>;
   };
 
   return (
     <section className="section-container credit-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.creditTitle)}
-        description={intl.formatMessage(messages.creditDescription)}
+        title={messages.creditTitle.defaultMessage}
+        description={messages.creditDescription.defaultMessage}
       />
-      <p className="credit-help-text">{intl.formatMessage(messages.creditHelp)}</p>
+      <p className="credit-help-text">{messages.creditHelp.defaultMessage}</p>
       {renderCreditRequirements(creditRequirements)}
     </section>
   );

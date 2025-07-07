@@ -37,7 +37,7 @@ const HeaderTitle = ({
     if (selectedPartitionIndex !== -1 && !Number.isNaN(selectedPartitionIndex) && selectedGroupsLabel) {
       message = intl.formatMessage(messages.definedVisibilityMessage, { selectedGroupsLabel });
     } else if (currentItemData.hasPartitionGroupComponents) {
-      message = intl.formatMessage(messages.commonVisibilityMessage);
+      message = messages.commonVisibilityMessage.defaultMessage;
     }
 
     return message ? (<p className="header-title__visibility-message mb-0">{message}</p>) : null;
@@ -58,7 +58,7 @@ const HeaderTitle = ({
               value={titleValue}
               name="displayName"
               onChange={(e) => setTitleValue(e.target.value)}
-              aria-label={intl.formatMessage(messages.ariaLabelButtonEdit)}
+              aria-label={messages.ariaLabelButtonEdit.defaultMessage}
               onBlur={() => handleTitleEditSubmit(titleValue)}
               onKeyDown={(e) => {
                 if (e.key === 'Enter') {
@@ -69,13 +69,13 @@ const HeaderTitle = ({
           </Form.Group>
         ) : unitTitle}
         <IconButton
-          alt={intl.formatMessage(messages.altButtonEdit)}
+          alt={messages.altButtonEdit.defaultMessage}
           className="ml-1 flex-shrink-0"
           iconAs={EditIcon}
           onClick={handleTitleEdit}
         />
         <IconButton
-          alt={intl.formatMessage(messages.altButtonSettings)}
+          alt={messages.altButtonSettings.defaultMessage}
           className="flex-shrink-0"
           iconAs={SettingsIcon}
           onClick={openConfigureModal}

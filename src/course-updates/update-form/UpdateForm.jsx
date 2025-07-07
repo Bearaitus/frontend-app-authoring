@@ -62,13 +62,13 @@ const UpdateForm = ({
             {(requestType !== REQUEST_TYPES.edit_handouts) && (
               <Form.Group className="mb-4 datepicker-field datepicker-custom">
                 <Form.Control.Feedback className="datepicker-float-labels">
-                  {intl.formatMessage(messages.updateFormDate)}
+                  {messages.updateFormDate.defaultMessage}
                 </Form.Control.Feedback>
                 <div className="position-relative">
                   <Icon
                     src={CalendarIcon}
                     className="datepicker-custom-control-icon"
-                    alt={intl.formatMessage(messages.updateFormCalendarAltText)}
+                    alt={messages.updateFormCalendarAltText.defaultMessage}
                   />
                   <DatePicker
                     name="date"
@@ -91,8 +91,8 @@ const UpdateForm = ({
                 </div>
                 {!isValid && (
                   <div className="datepicker-field-error">
-                    <Icon src={ErrorIcon} className="text-danger-500" alt={intl.formatMessage(messages.updateFormErrorAltText)} />
-                    <span className="message-error">{intl.formatMessage(messages.updateFormInValid)}</span>
+                    <Icon src={ErrorIcon} className="text-danger-500" alt={messages.updateFormErrorAltText.defaultMessage} />
+                    <span className="message-error">{messages.updateFormInValid.defaultMessage}</span>
                   </div>
                 )}
               </Form.Group>
@@ -110,7 +110,7 @@ const UpdateForm = ({
             </Form.Group>
             <ActionRow>
               <Button variant="tertiary" type="button" onClick={close}>
-                {intl.formatMessage(messages.cancelButton)}
+                {messages.cancelButton.defaultMessage}
               </Button>
               <Button onClick={handleSubmit} type="submit" disabled={!isValid}>
                 {submitButtonText}

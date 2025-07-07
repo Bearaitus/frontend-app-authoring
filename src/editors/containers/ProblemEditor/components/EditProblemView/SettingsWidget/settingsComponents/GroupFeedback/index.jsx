@@ -17,7 +17,7 @@ const GroupFeedbackCard = ({
   const { summary, handleAdd } = groupFeedbackCardHooks(groupFeedbacks, updateSettings, answers);
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.groupFeedbackSettingTitle)}
+      title={messages.groupFeedbackSettingTitle.defaultMessage}
       summary={intl.formatMessage(summary.message, { ...summary.values })}
       none={!groupFeedbacks.length}
       hasExpandableTextArea

@@ -32,27 +32,27 @@ const AddLibraryTeamMember = ({ onSubmit, onCancel }: {
         {({ handleSubmit, values }) => (
           <Form onSubmit={handleSubmit}>
             <Form.Group size="sm" className="form-field">
-              <h3 className="form-title">{intl.formatMessage(messages.addMemberFormTitle)}</h3>
+              <h3 className="form-title">{messages.addMemberFormTitle.defaultMessage}</h3>
               <FormikControl
                 name="email"
                 value={values.email}
-                label={<Form.Label>{intl.formatMessage(messages.addMemberFormEmailLabel)}</Form.Label>}
+                label={<Form.Label>{messages.addMemberFormEmailLabel.defaultMessage}</Form.Label>}
                 placeholder={intl.formatMessage(messages.addMemberFormEmailPlaceholder, { email: EXAMPLE_USER_EMAIL })}
               />
               <Form.Control.Feedback className="form-helper-text">
-                {intl.formatMessage(messages.addMemberFormEmailHelperText)}
+                {messages.addMemberFormEmailHelperText.defaultMessage}
               </Form.Control.Feedback>
             </Form.Group>
             <ActionRow>
               <Button variant="tertiary" size="sm" onClick={onCancel}>
-                {intl.formatMessage(messages.cancelButton)}
+                {messages.cancelButton.defaultMessage}
               </Button>
               <Button
                 size="sm"
                 type="submit"
                 disabled={!values.email.length}
               >
-                {intl.formatMessage(messages.addMemberFormSubmitButton)}
+                {messages.addMemberFormSubmitButton.defaultMessage}
               </Button>
             </ActionRow>
           </Form>

@@ -23,7 +23,7 @@ const TagsSidebarHeader = () => {
       direction="horizontal"
     >
       <h3 className="course-unit-sidebar-header-title m-0">
-        {intl.formatMessage(messages.tagsSidebarTitle)}
+        {messages.tagsSidebarTitle.defaultMessage}
       </h3>
       { isContentTagsCountLoaded
         && <TagCount count={contentTagsCount} />}

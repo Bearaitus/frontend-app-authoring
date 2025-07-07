@@ -32,9 +32,9 @@ const CollapsibleStateWithAction = ({ state, className }) => {
 
   const requestButtonStates = {
     labels: {
-      default: intl.formatMessage(messages.unrequestedCollapsibleDefaultButton),
-      pending: intl.formatMessage(messages.unrequestedCollapsiblePendingButton),
-      error: intl.formatMessage(messages.unrequestedCollapsibleFailedButton),
+      default: messages.unrequestedCollapsibleDefaultButton.defaultMessage,
+      pending: messages.unrequestedCollapsiblePendingButton.defaultMessage,
+      error: messages.unrequestedCollapsibleFailedButton.defaultMessage,
     },
     disabledStates: [STATEFUL_BUTTON_STATES.pending, STATEFUL_BUTTON_STATES.error],
   };
@@ -49,13 +49,13 @@ const CollapsibleStateWithAction = ({ state, className }) => {
   function getTextForStatus() {
     const matchTextAction = {
       [COURSE_CREATOR_STATES.denied]: {
-        title: intl.formatMessage(messages.deniedCollapsibleTitle),
+        title: messages.deniedCollapsibleTitle.defaultMessage,
         description: intl.formatMessage(messages.deniedCollapsibleDescription, {
           studioName,
           platformName,
         }),
-        stateName: intl.formatMessage(messages.deniedCollapsibleState),
-        actionTitle: intl.formatMessage(messages.deniedCollapsibleActionTitle),
+        stateName: messages.deniedCollapsibleState.defaultMessage,
+        actionTitle: messages.deniedCollapsibleActionTitle.defaultMessage,
         actionText: intl.formatMessage(messages.deniedCollapsibleActionText, {
           platformName,
         }),
@@ -70,13 +70,13 @@ const CollapsibleStateWithAction = ({ state, className }) => {
         ),
       },
       [COURSE_CREATOR_STATES.pending]: {
-        title: intl.formatMessage(messages.pendingCollapsibleTitle),
+        title: messages.pendingCollapsibleTitle.defaultMessage,
         description: intl.formatMessage(
           messages.pendingCollapsibleDescription,
           { studioName, platformName },
         ),
-        stateName: intl.formatMessage(messages.pendingCollapsibleState),
-        actionTitle: intl.formatMessage(messages.pendingCollapsibleActionTitle),
+        stateName: messages.pendingCollapsibleState.defaultMessage,
+        actionTitle: messages.pendingCollapsibleActionTitle.defaultMessage,
         actionText: intl.formatMessage(messages.pendingCollapsibleActionText, {
           platformName,
         }),

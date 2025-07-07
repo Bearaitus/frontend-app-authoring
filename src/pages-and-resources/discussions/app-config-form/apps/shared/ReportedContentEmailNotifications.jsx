@@ -14,15 +14,15 @@ const ReportedContentEmailNotifications = ({ intl }) => {
 
   return (
     <div>
-      <h5 className="text-gray-500 mt-4 mb-2 ">{intl.formatMessage(messages.reportedContentEmailNotifications)}</h5>
+      <h5 className="text-gray-500 mt-4 mb-2 ">{messages.reportedContentEmailNotifications.defaultMessage}</h5>
       <FormSwitchGroup
         className="mb-4"
         onChange={handleChange}
         onBlur={handleBlur}
         id="reportedContentEmailNotifications"
         checked={values.reportedContentEmailNotifications}
-        label={intl.formatMessage(messages.reportedContentEmailNotificationsLabel)}
-        helpText={intl.formatMessage(messages.reportedContentEmailNotificationsHelp)}
+        label={messages.reportedContentEmailNotificationsLabel.defaultMessage}
+        helpText={messages.reportedContentEmailNotificationsHelp.defaultMessage}
       />
       <AppConfigFormDivider thick />
     </div>

@@ -19,13 +19,13 @@ const EmptyCertificatesWithModes = () => {
     <Card>
       <Card.Section>
         <ActionRow>
-          <span className="small">{intl.formatMessage(messages.noCertificatesText)}</span>
+          <span className="small">{messages.noCertificatesText.defaultMessage}</span>
           <ActionRow.Spacer />
           <Button
             iconBefore={AddIcon}
             onClick={handleCreateMode}
           >
-            {intl.formatMessage(messages.setupCertificateBtn)}
+            {messages.setupCertificateBtn.defaultMessage}
           </Button>
         </ActionRow>
       </Card.Section>

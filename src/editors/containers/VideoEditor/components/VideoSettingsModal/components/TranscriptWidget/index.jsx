@@ -103,7 +103,7 @@ const TranscriptWidget = ({
       fontSize="x-small"
       isError={Object.keys(error).length !== 0}
       subtitle={fullTextLanguages}
-      title={intl.formatMessage(messages.title)}
+      title={messages.title.defaultMessage}
     >
       <ErrorAlert
         hideHeading

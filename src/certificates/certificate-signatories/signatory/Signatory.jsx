@@ -24,11 +24,11 @@ const Signatory = ({
   return (
     <div className="bg-light-200 p-2.5 signatory" data-testid="signatory">
       <Stack className="signatory__header" gap={3}>
-        <h3 className="section-title m-0">{`${intl.formatMessage(messages.signatoryTitle)} ${index + 1}`}</h3>
+        <h3 className="section-title m-0">{`${messages.signatoryTitle.defaultMessage} ${index + 1}`}</h3>
         <Stack className="signatory__text-fields-stack">
-          <p className="signatory__text"><b>{intl.formatMessage(messages.nameLabel)}</b> {name}</p>
-          <p className="signatory__text"><b>{intl.formatMessage(messages.titleLabel)}</b> {title}</p>
-          <p className="signatory__text"><b>{intl.formatMessage(messages.organizationLabel)}</b> {organization}</p>
+          <p className="signatory__text"><b>{messages.nameLabel.defaultMessage}</b> {name}</p>
+          <p className="signatory__text"><b>{messages.titleLabel.defaultMessage}</b> {title}</p>
+          <p className="signatory__text"><b>{messages.organizationLabel.defaultMessage}</b> {organization}</p>
         </Stack>
       </Stack>
 
@@ -45,7 +45,7 @@ const Signatory = ({
           <Image
             src={`${getConfig().STUDIO_BASE_URL}${signatureImagePath}`}
             fluid
-            alt={intl.formatMessage(messages.imageLabel)}
+            alt={messages.imageLabel.defaultMessage}
             className="signatory__image"
           />
         )}

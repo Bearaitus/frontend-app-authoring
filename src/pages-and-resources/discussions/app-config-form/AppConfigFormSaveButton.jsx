@@ -35,9 +35,9 @@ const AppConfigFormSaveButton = ({ intl, labelText }) => {
     canSubmit && (
       <StatefulButton
         labels={{
-          default: labelText || intl.formatMessage(messages.saveButton),
-          pending: intl.formatMessage(messages.savingButton),
-          complete: intl.formatMessage(messages.savedButton),
+          default: labelText || messages.saveButton.defaultMessage,
+          pending: messages.savingButton.defaultMessage,
+          complete: messages.savedButton.defaultMessage,
         }}
         state={submitButtonState}
         onClick={handleSave}

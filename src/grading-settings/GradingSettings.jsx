@@ -45,7 +45,7 @@ const GradingSettings = ({ intl, courseId }) => {
   const [eligibleGrade, setEligibleGrade] = useState(null);
 
   const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle));
+  document.title = getPageHeadTitle(courseDetails?.name, messages.headingTitle.defaultMessage);
 
   const {
     graders,
@@ -107,8 +107,8 @@ const GradingSettings = ({ intl, courseId }) => {
 
   const updateValuesButtonState = {
     labels: {
-      default: intl.formatMessage(messages.buttonSaveText),
-      pending: intl.formatMessage(messages.buttonSavingText),
+      default: messages.buttonSaveText.defaultMessage,
+      pending: messages.buttonSavingText.defaultMessage,
     },
     disabledStates: [RequestStatus.PENDING],
   };
@@ -121,10 +121,10 @@ const GradingSettings = ({ intl, courseId }) => {
             show={showSuccessAlert}
             variant="success"
             icon={CheckCircle}
-            title={intl.formatMessage(messages.alertSuccess)}
+            title={messages.alertSuccess.defaultMessage}
             aria-hidden="true"
-            aria-labelledby={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
-            aria-describedby={intl.formatMessage(messages.alertSuccessAriaDescribedby)}
+            aria-labelledby={messages.alertSuccessAriaLabelledby.defaultMessage}
+            aria-describedby={messages.alertSuccessAriaDescribedby.defaultMessage}
           />
         </div>
         <div>
@@ -139,10 +139,10 @@ const GradingSettings = ({ intl, courseId }) => {
               <Layout.Element>
                 <article>
                   <SubHeader
-                    title={intl.formatMessage(messages.headingTitle)}
-                    subtitle={intl.formatMessage(messages.headingSubtitle)}
-                    contentTitle={intl.formatMessage(messages.policy)}
-                    description={intl.formatMessage(messages.policiesDescription)}
+                    title={messages.headingTitle.defaultMessage}
+                    subtitle={messages.headingSubtitle.defaultMessage}
+                    contentTitle={messages.policy.defaultMessage}
+                    description={messages.policiesDescription.defaultMessage}
                   />
                   <section>
                     <GradingScale
@@ -161,8 +161,8 @@ const GradingSettings = ({ intl, courseId }) => {
                   {courseSettingsData.creditEligibilityEnabled && courseSettingsData.isCreditCourse && (
                     <section>
                       <SectionSubHeader
-                        title={intl.formatMessage(messages.creditEligibilitySectionTitle)}
-                        description={intl.formatMessage(messages.creditEligibilitySectionDescription)}
+                        title={messages.creditEligibilitySectionTitle.defaultMessage}
+                        description={messages.creditEligibilitySectionDescription.defaultMessage}
                       />
                       <CreditSection
                         eligibleGrade={eligibleGrade}
@@ -175,8 +175,8 @@ const GradingSettings = ({ intl, courseId }) => {
                   )}
                   <section>
                     <SectionSubHeader
-                      title={intl.formatMessage(messages.gradingRulesPoliciesSectionTitle)}
-                      description={intl.formatMessage(messages.gradingRulesPoliciesSectionDescription)}
+                      title={messages.gradingRulesPoliciesSectionTitle.defaultMessage}
+                      description={messages.gradingRulesPoliciesSectionDescription.defaultMessage}
                     />
                     <DeadlineSection
                       setShowSavePrompt={setShowSavePrompt}
@@ -188,10 +188,10 @@ const GradingSettings = ({ intl, courseId }) => {
                   <section>
                     <header className="row justify-content-between align-items-center mt-4 mx-0 mb-2">
                       <h2 className="lead">
-                        {intl.formatMessage(messages.assignmentTypeSectionTitle)}
+                        {messages.assignmentTypeSectionTitle.defaultMessage}
                       </h2>
                       <span className="small text-gray-700">
-                        {intl.formatMessage(messages.assignmentTypeSectionDescription)}
+                        {messages.assignmentTypeSectionDescription.defaultMessage}
                       </span>
                     </header>
                     <AssignmentSection
@@ -207,7 +207,7 @@ const GradingSettings = ({ intl, courseId }) => {
                       iconBefore={IconAdd}
                       onClick={handleAddAssignment}
                     >
-                      {intl.formatMessage(messages.addNewAssignmentTypeBtn)}
+                      {messages.addNewAssignmentTypeBtn.defaultMessage}
                     </Button>
                   </section>
                 </article>
@@ -235,14 +235,14 @@ const GradingSettings = ({ intl, courseId }) => {
         <AlertMessage
           show={showSavePrompt}
           aria-hidden={!showSavePrompt}
-          aria-labelledby={intl.formatMessage(messages.alertWarningAriaLabelledby)}
-          aria-describedby={intl.formatMessage(messages.alertWarningAriaDescribedby)}
+          aria-labelledby={messages.alertWarningAriaLabelledby.defaultMessage}
+          aria-describedby={messages.alertWarningAriaDescribedby.defaultMessage}
           data-testid="grading-settings-save-alert"
           role="dialog"
           actions={[
             !isQueryPending && (
               <Button variant="tertiary" onClick={handleResetPageData}>
-                {intl.formatMessage(messages.buttonCancelText)}
+                {messages.buttonCancelText.defaultMessage}
               </Button>
             ),
             <StatefulButton
@@ -254,8 +254,8 @@ const GradingSettings = ({ intl, courseId }) => {
           ].filter(Boolean)}
           variant="warning"
           icon={Warning}
-          title={intl.formatMessage(messages.alertWarning)}
-          description={intl.formatMessage(messages.alertWarningDescriptions)}
+          title={messages.alertWarning.defaultMessage}
+          description={messages.alertWarningDescriptions.defaultMessage}
         />
       </div>
     </>

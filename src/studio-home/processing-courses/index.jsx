@@ -14,7 +14,7 @@ const ProcessingCourses = () => {
   return (
     <>
       <div className="text-gray-500 small" data-testid="processing-courses-title">
-        {intl.formatMessage(messages.processingTitle)}
+        {messages.processingTitle.defaultMessage}
       </div>
       <hr />
       <Stack gap={3} className="border-bottom border-light-400 mb-4 px-4 pt-3">

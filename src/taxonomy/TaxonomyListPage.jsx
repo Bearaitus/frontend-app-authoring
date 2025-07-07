@@ -48,7 +48,7 @@ const TaxonomyListHeaderButtons = ({ canAddTaxonomy }) => {
         placement="top"
         overlay={(
           <Tooltip id="download-template-tooltip">
-            {intl.formatMessage(messages.downloadTemplateButtonHint)}
+            {messages.downloadTemplateButtonHint.defaultMessage}
           </Tooltip>
         )}
       >
@@ -58,20 +58,20 @@ const TaxonomyListHeaderButtons = ({ canAddTaxonomy }) => {
             variant="outline-primary"
             data-testid="taxonomy-download-template"
           >
-            {intl.formatMessage(messages.downloadTemplateButtonLabel)}
+            {messages.downloadTemplateButtonLabel.defaultMessage}
           </Dropdown.Toggle>
           <Dropdown.Menu>
             <Dropdown.Item
               href={apiUrls.taxonomyTemplate('csv')}
               data-testid="taxonomy-download-template-csv"
             >
-              {intl.formatMessage(messages.downloadTemplateButtonCSVLabel)}
+              {messages.downloadTemplateButtonCSVLabel.defaultMessage}
             </Dropdown.Item>
             <Dropdown.Item
               href={apiUrls.taxonomyTemplate('json')}
               data-testid="taxonomy-download-template-json"
             >
-              {intl.formatMessage(messages.downloadTemplateButtonJSONLabel)}
+              {messages.downloadTemplateButtonJSONLabel.defaultMessage}
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
@@ -82,7 +82,7 @@ const TaxonomyListHeaderButtons = ({ canAddTaxonomy }) => {
         data-testid="taxonomy-import-button"
         disabled={!canAddTaxonomy}
       >
-        {intl.formatMessage(messages.importButtonLabel)}
+        {messages.importButtonLabel.defaultMessage}
       </Button>
     </>
   );
@@ -104,8 +104,8 @@ const OrganizationFilterSelector = ({
       onClick={() => setSelectedOrgFilter(ALL_TAXONOMIES)}
     >
       { isOrgSelected(ALL_TAXONOMIES)
-        ? intl.formatMessage(messages.orgInputSelectDefaultValue)
-        : intl.formatMessage(messages.orgAllValue)}
+        ? messages.orgInputSelectDefaultValue.defaultMessage
+        : messages.orgAllValue.defaultMessage}
     </MenuItem>,
     <MenuItem
       key="unassigned-taxonomies"
@@ -113,7 +113,7 @@ const OrganizationFilterSelector = ({
       iconAfter={() => isOrgSelected(UNASSIGNED)}
       onClick={() => setSelectedOrgFilter(UNASSIGNED)}
     >
-      { intl.formatMessage(messages.orgUnassignedValue) }
+      { messages.orgUnassignedValue.defaultMessage }
     </MenuItem>,
   ];
 
@@ -136,7 +136,7 @@ const OrganizationFilterSelector = ({
     <SelectMenu
       className="flex-d x-small taxonomy-orgs-filter-selector"
       variant="tertiary"
-      defaultMessage={intl.formatMessage(messages.orgInputSelectDefaultValue)}
+      defaultMessage={messages.orgInputSelectDefaultValue.defaultMessage}
       data-testid="taxonomy-orgs-filter-selector"
     >
       { isOrganizationListLoaded
@@ -145,7 +145,7 @@ const OrganizationFilterSelector = ({
           <Spinner
             animation="border"
             size="xl"
-            screenReaderText={intl.formatMessage(messages.usageLoadingMessage)}
+            screenReaderText={messages.usageLoadingMessage.defaultMessage}
           />
         )}
     </SelectMenu>
@@ -180,12 +180,12 @@ const TaxonomyListPage = () => {
   return (
     <>
       <Helmet>
-        <title>{getPageHeadTitle('', intl.formatMessage(messages.headerTitle))}</title>
+        <title>{getPageHeadTitle('', messages.headerTitle.defaultMessage)}</title>
       </Helmet>
       <div className="pt-4.5 pr-4.5 pl-4.5 pb-2 bg-light-100 box-shadow-down-2">
         <Container size="xl">
           <SubHeader
-            title={intl.formatMessage(messages.headerTitle)}
+            title={messages.headerTitle.defaultMessage}
             titleActions={getOrgSelect()}
             headerActions={<TaxonomyListHeaderButtons canAddTaxonomy={canAddTaxonomy} />}
             hideBorder
@@ -233,7 +233,7 @@ const TaxonomyListPage = () => {
               <Spinner
                 animation="border"
                 size="xl"
-                screenReaderText={intl.formatMessage(messages.usageLoadingMessage)}
+                screenReaderText={messages.usageLoadingMessage.defaultMessage}
               />
             </Container>
           )}

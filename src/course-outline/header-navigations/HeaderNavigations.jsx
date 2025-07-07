@@ -30,8 +30,8 @@ const HeaderNavigations = ({
         <OverlayTrigger
           placement="bottom"
           overlay={(
-            <Tooltip id={intl.formatMessage(messages.newSectionButtonTooltip)}>
-              {intl.formatMessage(messages.newSectionButtonTooltip)}
+            <Tooltip id={messages.newSectionButtonTooltip.defaultMessage}>
+              {messages.newSectionButtonTooltip.defaultMessage}
             </Tooltip>
           )}
         >
@@ -48,8 +48,8 @@ const HeaderNavigations = ({
         <OverlayTrigger
           placement="bottom"
           overlay={!isDisabledReindexButton ? (
-            <Tooltip id={intl.formatMessage(messages.reindexButtonTooltip)}>
-              {intl.formatMessage(messages.reindexButtonTooltip)}
+            <Tooltip id={messages.reindexButtonTooltip.defaultMessage}>
+              {messages.reindexButtonTooltip.defaultMessage}
             </Tooltip>
           ) : <React.Fragment key="reindex close" />}
         >

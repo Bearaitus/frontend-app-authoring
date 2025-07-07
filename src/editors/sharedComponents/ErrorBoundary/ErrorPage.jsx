@@ -32,7 +32,7 @@ const ErrorPage = ({
       <Row>
         <Col>
           <p className="text-muted">
-            {intl.formatMessage(messages.unexpectedError)}
+            {messages.unexpectedError.defaultMessage}
           </p>
           {message && (
             <div role="alert" className="my-4">
@@ -42,7 +42,7 @@ const ErrorPage = ({
           <Row className="justify-content-center">
             {learningContextId && (unitUrl && outlineType !== 'library' ? (
               <Button className="mr-2" variant="outline-primary" onClick={() => navigateTo(unitUrl)}>
-                {intl.formatMessage(messages.returnToUnitPageLabel)}
+                {messages.returnToUnitPageLabel.defaultMessage}
               </Button>
             ) : (
               <Button className="mr-2" variant="outline-primary" onClick={() => navigateTo(outlineUrl)}>
@@ -50,7 +50,7 @@ const ErrorPage = ({
               </Button>
             ))}
             <Button className="ml-2" onClick={() => global.location.reload()}>
-              {intl.formatMessage(messages.unexpectedErrorButtonLabel)}
+              {messages.unexpectedErrorButtonLabel.defaultMessage}
             </Button>
           </Row>
         </Col>

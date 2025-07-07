@@ -12,9 +12,9 @@ const CourseHandouts = ({ contentForHandouts, onEdit, isDisabledButtons }) => {
   return (
     <div className="course-handouts" data-testid="course-handouts">
       <div className="course-handouts-header">
-        <h2 className="course-handouts-header__title lead">{intl.formatMessage(messages.handoutsTitle)}</h2>
+        <h2 className="course-handouts-header__title lead">{messages.handoutsTitle.defaultMessage}</h2>
         <IconButtonWithTooltip
-          tooltipContent={intl.formatMessage(messages.editButton)}
+          tooltipContent={messages.editButton.defaultMessage}
           src={EditOutline}
           iconAs={Icon}
           disabled={isDisabledButtons}

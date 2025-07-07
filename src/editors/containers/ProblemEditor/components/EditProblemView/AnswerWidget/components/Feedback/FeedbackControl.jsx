@@ -33,7 +33,7 @@ const FeedbackControl = ({
       id={`${type}Feedback-${answer.id}`}
       value={feedback}
       setContent={onChange}
-      placeholder={intl.formatMessage(messages.feedbackPlaceholder)}
+      placeholder={messages.feedbackPlaceholder.defaultMessage}
       {...{
         images,
         isLibrary,

@@ -15,10 +15,10 @@ const CalculatorSettings = ({ onClose }) => {
   return (
     <AppSettingsModal
       appId="calculator"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableCalculatorHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableCalculatorLabel)}
-      learnMoreText={intl.formatMessage(messages.enableCalculatorLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableCalculatorHelp.defaultMessage}
+      enableAppLabel={messages.enableCalculatorLabel.defaultMessage}
+      learnMoreText={messages.enableCalculatorLink.defaultMessage}
       onClose={onClose}
     />
   );

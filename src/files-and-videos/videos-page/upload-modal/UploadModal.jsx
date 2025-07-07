@@ -27,7 +27,7 @@ const UploadModal = ({
 
   return (
     <ModalDialog
-      title={intl.formatMessage(messages.videoUploadTrackerModalTitle)}
+      title={messages.videoUploadTrackerModalTitle.defaultMessage}
       isOpen={isUploadTrackerOpen}
       onClose={handleUploadCancel}
       isBlocking
@@ -36,25 +36,25 @@ const UploadModal = ({
     >
       <ModalDialog.Header>
         <ModalDialog.Title className="mb-3">
-          {intl.formatMessage(messages.videoUploadTrackerModalTitle)}
+          {messages.videoUploadTrackerModalTitle.defaultMessage}
         </ModalDialog.Title>
         <Alert
           variant="warning"
           icon={WarningFilled}
         >
           <Alert.Heading>
-            {intl.formatMessage(messages.videoUploadTrackerAlertTitle)}
+            {messages.videoUploadTrackerAlertTitle.defaultMessage}
           </Alert.Heading>
-          {intl.formatMessage(messages.videoUploadTrackerAlertBodyMessage)}
+          {messages.videoUploadTrackerAlertBodyMessage.defaultMessage}
           <div className="mt-3">
             <span className="font-weight-bold">
-              {intl.formatMessage(messages.videoUploadTrackerAlertEditMessage)}
+              {messages.videoUploadTrackerAlertEditMessage.defaultMessage}
             </span>
             <Hyperlink
               className="ml-2"
               destination={videosPagePath}
               target="_blank"
-              content={intl.formatMessage(messages.videoUploadTrackerAlertEditHyperlinkLabel)}
+              content={messages.videoUploadTrackerAlertEditHyperlinkLabel.defaultMessage}
             />
           </div>
         </Alert>
@@ -73,7 +73,7 @@ const UploadModal = ({
       <ModalDialog.Footer>
         <ActionRow>
           <Button onClick={handleUploadCancel} disabled={cancelIsDisabled}>
-            {intl.formatMessage(messages.videoUploadTrackerAlertCancelLabel)}
+            {messages.videoUploadTrackerAlertCancelLabel.defaultMessage}
           </Button>
         </ActionRow>
       </ModalDialog.Footer>

@@ -51,7 +51,7 @@ const LicenseWidget = ({
           <div className="x-small mt-2">{levelDescription}</div>
         </div>
       )}
-      title={intl.formatMessage(messages.title)}
+      title={messages.title.defaultMessage}
     >
       <Stack gap={4}>
         {license ? (

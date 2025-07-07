@@ -170,11 +170,11 @@ const VideosPage = ({
     filter: 'exactTextCase',
     filterChoices: [
       {
-        name: intl.formatMessage(messages.transcribedCheckboxLabel),
+        name: messages.transcribedCheckboxLabel.defaultMessage,
         value: 'transcribed',
       },
       {
-        name: intl.formatMessage(messages.notTranscribedCheckboxLabel),
+        name: messages.notTranscribedCheckboxLabel.defaultMessage,
         value: 'notTranscribed',
       },
     ],
@@ -187,8 +187,8 @@ const VideosPage = ({
     Filter: CheckboxFilter,
     filter: 'exactTextCase',
     filterChoices: [
-      { name: intl.formatMessage(messages.activeCheckboxLabel), value: 'active' },
-      { name: intl.formatMessage(messages.inactiveCheckboxLabel), value: 'inactive' },
+      { name: messages.activeCheckboxLabel.defaultMessage, value: 'active' },
+      { name: messages.inactiveCheckboxLabel.defaultMessage, value: 'inactive' },
     ],
   };
   const durationColumn = {
@@ -207,9 +207,9 @@ const VideosPage = ({
     Cell: ({ row }) => StatusColumn({ row }),
     Filter: CheckboxFilter,
     filterChoices: [
-      { name: intl.formatMessage(messages.processingCheckboxLabel), value: 'Processing' },
+      { name: messages.processingCheckboxLabel.defaultMessage, value: 'Processing' },
 
-      { name: intl.formatMessage(messages.failedCheckboxLabel), value: 'Failed' },
+      { name: messages.failedCheckboxLabel.defaultMessage, value: 'Failed' },
     ],
   };
   const videoThumbnailColumn = {
@@ -240,7 +240,7 @@ const VideosPage = ({
   return (
     <VideosPageProvider courseId={courseId}>
       <Helmet>
-        <title>{getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.heading))}</title>
+        <title>{getPageHeadTitle(courseDetails?.name, messages.heading.defaultMessage)}</title>
       </Helmet>
       <Container size="xl" className="p-4 pt-4.5">
         <EditFileErrors

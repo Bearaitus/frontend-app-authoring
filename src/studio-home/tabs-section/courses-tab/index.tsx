@@ -126,7 +126,7 @@ const CoursesTab: React.FC<Props> = ({
         description={(
           <Row className="m-0 align-items-center">
             <Icon src={Error} className="text-danger-500 mr-1" />
-            <span data-testid="error-failed-message">{intl.formatMessage(messages.courseTabErrorMessage)}</span>
+            <span data-testid="error-failed-message">{messages.courseTabErrorMessage.defaultMessage}</span>
           </Row>
         )}
       />
@@ -183,13 +183,13 @@ const CoursesTab: React.FC<Props> = ({
         {isFiltered && !hasCourses && !isLoading && (
           <Alert className="mt-4">
             <Alert.Heading>
-              {intl.formatMessage(messages.coursesTabCourseNotFoundAlertTitle)}
+              {messages.coursesTabCourseNotFoundAlertTitle.defaultMessage}
             </Alert.Heading>
             <p data-testid="courses-not-found-alert">
-              {intl.formatMessage(messages.coursesTabCourseNotFoundAlertMessage)}
+              {messages.coursesTabCourseNotFoundAlertMessage.defaultMessage}
             </p>
             <Button variant="primary" onClick={handleCleanFilters}>
-              {intl.formatMessage(messages.coursesTabCourseNotFoundAlertCleanFiltersButton)}
+              {messages.coursesTabCourseNotFoundAlertCleanFiltersButton.defaultMessage}
             </Button>
           </Alert>
         )}

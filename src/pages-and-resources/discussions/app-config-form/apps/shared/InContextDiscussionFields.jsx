@@ -25,20 +25,20 @@ const InContextDiscussionFields = ({
 
   return (
     <>
-      <h5 className="text-gray-500 mt-4">{intl.formatMessage(messages.visibilityInContext)}</h5>
+      <h5 className="text-gray-500 mt-4">{messages.visibilityInContext.defaultMessage}</h5>
       {showPopup
         ? (
           <ConfirmationPopup
             label={values.enableGradedUnits
-              ? intl.formatMessage(messages.cancelEnableDiscussionsLabel)
-              : intl.formatMessage(messages.confirmEnableDiscussionsLabel)}
+              ? messages.cancelEnableDiscussionsLabel.defaultMessage
+              : messages.confirmEnableDiscussionsLabel.defaultMessage}
             bodyText={values.enableGradedUnits
-              ? intl.formatMessage(messages.cancelEnableDiscussions)
-              : intl.formatMessage(messages.confirmEnableDiscussions)}
+              ? messages.cancelEnableDiscussions.defaultMessage
+              : messages.confirmEnableDiscussions.defaultMessage}
             onConfirm={handleConfirmation}
-            confirmLabel={intl.formatMessage(messages.confirm)}
+            confirmLabel={messages.confirm.defaultMessage}
             onCancel={() => setShowPopup(false)}
-            cancelLabel={intl.formatMessage(messages.cancelButton)}
+            cancelLabel={messages.cancelButton.defaultMessage}
           />
         )
         : (
@@ -47,8 +47,8 @@ const InContextDiscussionFields = ({
             onBlur={onBlur}
             id="enableGradedUnits"
             checked={values.enableGradedUnits}
-            label={intl.formatMessage(messages.gradedUnitPagesLabel)}
-            helpText={intl.formatMessage(messages.gradedUnitPagesHelp)}
+            label={messages.gradedUnitPagesLabel.defaultMessage}
+            helpText={messages.gradedUnitPagesHelp.defaultMessage}
           />
         )}
       <AppConfigFormDivider />
@@ -57,8 +57,8 @@ const InContextDiscussionFields = ({
         onBlur={onBlur}
         id="groupAtSubsection"
         checked={values.groupAtSubsection}
-        label={intl.formatMessage(messages.groupInContextSubsectionLabel)}
-        helpText={intl.formatMessage(messages.groupInContextSubsectionHelp)}
+        label={messages.groupInContextSubsectionLabel.defaultMessage}
+        helpText={messages.groupInContextSubsectionHelp.defaultMessage}
       />
     </>
   );

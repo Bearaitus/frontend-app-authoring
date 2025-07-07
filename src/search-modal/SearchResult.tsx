@@ -193,7 +193,7 @@ const SearchResult: React.FC<{ hit: ContentHit }> = ({ hit }) => {
         src={OpenInNew}
         iconAs={Icon}
         onClick={openContextInNewWindow}
-        alt={intl.formatMessage(messages.openInNewWindow)}
+        alt={messages.openInNewWindow.defaultMessage}
       />
     </Stack>
   );

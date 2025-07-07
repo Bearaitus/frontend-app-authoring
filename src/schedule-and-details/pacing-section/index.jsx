@@ -15,13 +15,13 @@ const PacingSection = ({
   return (
     <section className="section-container pacing-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.pacingTitle)}
-        description={intl.formatMessage(messages.pacingDescription)}
+        title={messages.pacingTitle.defaultMessage}
+        description={messages.pacingDescription.defaultMessage}
       />
       <Form.Group>
         {!canTogglePace && (
           <Form.Label className="text pt-3">
-            {intl.formatMessage(messages.pacingRestriction)}
+            {messages.pacingRestriction.defaultMessage}
           </Form.Label>
         )}
         <Form.RadioSet
@@ -31,17 +31,17 @@ const PacingSection = ({
         >
           <Form.Radio
             value="false"
-            description={intl.formatMessage(messages.pacingTypeInstructorDescription)}
+            description={messages.pacingTypeInstructorDescription.defaultMessage}
             disabled={!canTogglePace}
           >
-            {intl.formatMessage(messages.pacingTypeInstructorLabel)}
+            {messages.pacingTypeInstructorLabel.defaultMessage}
           </Form.Radio>
           <Form.Radio
             value="true"
-            description={intl.formatMessage(messages.pacingTypeSelfDescription)}
+            description={messages.pacingTypeSelfDescription.defaultMessage}
             disabled={!canTogglePace}
           >
-            {intl.formatMessage(messages.pacingTypeSelfLabel)}
+            {messages.pacingTypeSelfLabel.defaultMessage}
           </Form.Radio>
         </Form.RadioSet>
       </Form.Group>

@@ -69,7 +69,7 @@ const SettingCard = ({
                   onClick={open}
                   src={InfoOutline}
                   iconAs={Icon}
-                  alt={intl.formatMessage(messages.helpButtonText)}
+                  alt={messages.helpButtonText.defaultMessage}
                   variant="primary"
                   className="flex-shrink-0 ml-1 mr-2"
                 />
@@ -106,7 +106,7 @@ const SettingCard = ({
         </Card.Body>
         {deprecated && (
           <Card.Status icon={Warning} variant="danger">
-            {intl.formatMessage(messages.deprecated)}
+            {messages.deprecated.defaultMessage}
           </Card.Status>
         )}
       </Card>

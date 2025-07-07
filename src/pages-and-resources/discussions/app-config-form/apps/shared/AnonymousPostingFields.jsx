@@ -12,15 +12,15 @@ const AnonymousPostingFields = ({
   values,
 }) => (
   <>
-    <h5 className="mt-4 text-gray-500">{intl.formatMessage(messages.anonymousPosting)}</h5>
+    <h5 className="mt-4 text-gray-500">{messages.anonymousPosting.defaultMessage}</h5>
     <AppConfigFormDivider />
     <FormSwitchGroup
       onChange={onChange}
       onBlur={onBlur}
       id="allowAnonymousPostsPeers"
       checked={values.allowAnonymousPostsPeers}
-      label={intl.formatMessage(messages.allowAnonymousPostsPeersLabel)}
-      helpText={intl.formatMessage(messages.allowAnonymousPostsPeersHelp)}
+      label={messages.allowAnonymousPostsPeersLabel.defaultMessage}
+      helpText={messages.allowAnonymousPostsPeersHelp.defaultMessage}
     />
   </>
 );

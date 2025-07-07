@@ -46,7 +46,7 @@ const CourseChecklist = ({
       <Helmet>
         <title>
           {intl.formatMessage(messages.pageTitle, {
-            headingTitle: intl.formatMessage(messages.headingTitle),
+            headingTitle: messages.headingTitle.defaultMessage,
             courseName: courseDetails?.name,
             siteName: process.env.SITE_NAME,
           })}
@@ -54,8 +54,8 @@ const CourseChecklist = ({
       </Helmet>
       <Container size="xl" className="p-4 pt-4.5">
         <SubHeader
-          title={intl.formatMessage(messages.headingTitle)}
-          subtitle={intl.formatMessage(messages.headingSubtitle)}
+          title={messages.headingTitle.defaultMessage}
+          subtitle={messages.headingSubtitle.defaultMessage}
         />
         <AriaLiveRegion
           {...{
@@ -66,7 +66,7 @@ const CourseChecklist = ({
         />
         <Stack gap={4}>
           <ChecklistSection
-            dataHeading={intl.formatMessage(messages.launchChecklistLabel)}
+            dataHeading={messages.launchChecklistLabel.defaultMessage}
             data={launchData}
             idPrefix="launchChecklist"
             isLoading={isCourseLaunchChecklistLoading}
@@ -74,7 +74,7 @@ const CourseChecklist = ({
           />
           {enableQuality && (
             <ChecklistSection
-              dataHeading={intl.formatMessage(messages.bestPracticesChecklistLabel)}
+              dataHeading={messages.bestPracticesChecklistLabel.defaultMessage}
               data={bestPracticeData}
               idPrefix="bestPracticesChecklist"
               isLoading={isCourseBestPracticeChecklistLoading}

@@ -15,10 +15,10 @@ const NotesSettings = ({ onClose }) => {
   return (
     <AppSettingsModal
       appId="edxnotes"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableNotesHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableNotesLabel)}
-      learnMoreText={intl.formatMessage(messages.enableNotesLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableNotesHelp.defaultMessage}
+      enableAppLabel={messages.enableNotesLabel.defaultMessage}
+      learnMoreText={messages.enableNotesLink.defaultMessage}
       onClose={onClose}
     />
   );

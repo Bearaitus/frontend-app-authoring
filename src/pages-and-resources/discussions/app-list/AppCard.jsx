@@ -16,8 +16,8 @@ const AppCard = ({
 }) => {
   const { canChangeProviders } = useSelector(state => state.courseDetail);
   const supportText = app.hasFullSupport
-    ? intl.formatMessage(messages.appFullSupport)
-    : intl.formatMessage(messages.appBasicSupport);
+    ? messages.appFullSupport.defaultMessage
+    : messages.appBasicSupport.defaultMessage;
 
   return (
     <Card

@@ -20,71 +20,71 @@ const InstructorContainer = ({
           <Form.Row>
             <Form.Group as={Col} className="form-group-custom">
               <Form.Label>
-                {intl.formatMessage(messages.instructorNameLabel)}
+                {messages.instructorNameLabel.defaultMessage}
               </Form.Label>
               <Form.Control
                 value={instructor?.name}
-                placeholder={intl.formatMessage(messages.instructorNameInputPlaceholder)}
+                placeholder={messages.instructorNameInputPlaceholder.defaultMessage}
                 onChange={(e) => onChange(e.target.value, idx, 'name')}
               />
               <Form.Text>
-                {intl.formatMessage(messages.instructorNameHelpText)}
+                {messages.instructorNameHelpText.defaultMessage}
               </Form.Text>
             </Form.Group>
 
             <Form.Group as={Col} className="form-group-custom">
               <Form.Label>
-                {intl.formatMessage(messages.instructorTitleLabel)}
+                {messages.instructorTitleLabel.defaultMessage}
               </Form.Label>
               <Form.Control
                 value={instructor?.title}
-                placeholder={intl.formatMessage(messages.instructorTitleInputPlaceholder)}
+                placeholder={messages.instructorTitleInputPlaceholder.defaultMessage}
                 onChange={(e) => onChange(e.target.value, idx, 'title')}
               />
               <Form.Text>
-                {intl.formatMessage(messages.instructorTitleHelpText)}
+                {messages.instructorTitleHelpText.defaultMessage}
               </Form.Text>
             </Form.Group>
 
             <Form.Group as={Col} className="form-group-custom">
               <Form.Label>
-                {intl.formatMessage(messages.instructorOrganizationLabel)}
+                {messages.instructorOrganizationLabel.defaultMessage}
               </Form.Label>
               <Form.Control
                 value={instructor?.organization}
-                placeholder={intl.formatMessage(messages.instructorOrganizationInputPlaceholder)}
+                placeholder={messages.instructorOrganizationInputPlaceholder.defaultMessage}
                 onChange={(e) => onChange(e.target.value, idx, 'organization')}
               />
               <Form.Text>
-                {intl.formatMessage(messages.instructorOrganizationHelpText)}
+                {messages.instructorOrganizationHelpText.defaultMessage}
               </Form.Text>
             </Form.Group>
           </Form.Row>
           <Form.Row>
             <Form.Group as={Col} className="form-group-custom">
               <Form.Label>
-                {intl.formatMessage(messages.instructorBioLabel)}
+                {messages.instructorBioLabel.defaultMessage}
               </Form.Label>
               <Form.Control
                 as={TextareaAutosize}
                 value={instructor?.bio}
-                placeholder={intl.formatMessage(messages.instructorBioInputPlaceholder)}
+                placeholder={messages.instructorBioInputPlaceholder.defaultMessage}
                 onChange={(e) => onChange(e.target.value, idx, 'bio')}
               />
               <Form.Text>
-                {intl.formatMessage(messages.instructorBioHelpText)}
+                {messages.instructorBioHelpText.defaultMessage}
               </Form.Text>
             </Form.Group>
           </Form.Row>
           <Form.Row className="pl-1 pr-2.5">
             <CourseUploadImage
-              label={intl.formatMessage(messages.instructorPhotoLabel)}
+              label={messages.instructorPhotoLabel.defaultMessage}
               assetImagePath={instructor?.image}
               assetImageField="image"
               customInputPlaceholder={intl.formatMessage(
                 messages.instructorPhotoInputPlaceholder,
               )}
-              customHelpText={intl.formatMessage(messages.instructorPhotoHelpText)}
+              customHelpText={messages.instructorPhotoHelpText.defaultMessage}
               onChange={(value, field) => onChange(value, idx, field)}
             />
           </Form.Row>
@@ -93,7 +93,7 @@ const InstructorContainer = ({
       <Card.Divider />
       <Card.Footer className="p-0 mt-2.5">
         <Button variant="outline-primary" onClick={() => onDelete(idx)}>
-          {intl.formatMessage(messages.instructorDelete)}
+          {messages.instructorDelete.defaultMessage}
         </Button>
       </Card.Footer>
     </Card>

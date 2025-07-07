@@ -9,7 +9,7 @@ import { hooks as transcriptHooks } from '../TranscriptWidget';
 const LanguageNamesWidget = ({ transcripts, intl }) => {
   let icon = ClosedCaptionOff;
   const hasTranscripts = transcriptHooks.hasTranscripts(transcripts);
-  let message = intl.formatMessage(messages.noTranscriptsAdded);
+  let message = messages.noTranscriptsAdded.defaultMessage;
 
   if (hasTranscripts) {
     message = transcriptHooks.transcriptLanguages(transcripts, intl);

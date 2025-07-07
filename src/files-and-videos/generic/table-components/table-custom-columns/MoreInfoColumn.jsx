@@ -63,7 +63,7 @@ const MoreInfoColumn = ({
                 close();
               }}
             >
-              {intl.formatMessage(messages.copyVideoIdTitle)}
+              {messages.copyVideoIdTitle.defaultMessage}
             </MenuItem>
           ) : (
             <>
@@ -75,7 +75,7 @@ const MoreInfoColumn = ({
                   close();
                 }}
               >
-                {intl.formatMessage(messages.copyStudioUrlTitle)}
+                {messages.copyStudioUrlTitle.defaultMessage}
               </MenuItem>
               <MenuItem
                 as={Button}
@@ -85,14 +85,14 @@ const MoreInfoColumn = ({
                   close();
                 }}
               >
-                {intl.formatMessage(messages.copyWebUrlTitle)}
+                {messages.copyWebUrlTitle.defaultMessage}
               </MenuItem>
               <MenuItem
                 as={Button}
                 variant="tertiary"
                 onClick={() => handleLock(id, !locked)}
               >
-                {locked ? intl.formatMessage(messages.unlockMenuTitle) : intl.formatMessage(messages.lockMenuTitle)}
+                {locked ? messages.unlockMenuTitle.defaultMessage : messages.lockMenuTitle.defaultMessage}
               </MenuItem>
             </>
           )}
@@ -103,14 +103,14 @@ const MoreInfoColumn = ({
               [{ original: { id, displayName, downloadLink } }],
             )}
           >
-            {intl.formatMessage(messages.downloadTitle)}
+            {messages.downloadTitle.defaultMessage}
           </MenuItem>
           <MenuItem
             as={Button}
             variant="tertiary"
             onClick={() => handleOpenFileInfo(row.original)}
           >
-            {intl.formatMessage(messages.infoTitle)}
+            {messages.infoTitle.defaultMessage}
           </MenuItem>
           <hr className="my-2" />
           <MenuItem
@@ -122,7 +122,7 @@ const MoreInfoColumn = ({
               close();
             }}
           >
-            {intl.formatMessage(messages.deleteTitle)}
+            {messages.deleteTitle.defaultMessage}
           </MenuItem>
         </Menu>
       </ModalPopup>

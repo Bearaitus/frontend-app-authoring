@@ -48,7 +48,7 @@ const AnswerOption = ({
         <ExpandableTextArea
           value={answer.title}
           setContent={setAnswerTitle}
-          placeholder={intl.formatMessage(messages.answerTextboxPlaceholder)}
+          placeholder={messages.answerTextboxPlaceholder.defaultMessage}
           id={`answer-${answer.id}`}
           {...{
             images,
@@ -67,7 +67,7 @@ const AnswerOption = ({
           rows={1}
           value={answer.title}
           onChange={setAnswerTitle}
-          placeholder={intl.formatMessage(messages.answerTextboxPlaceholder)}
+          placeholder={messages.answerTextboxPlaceholder.defaultMessage}
         />
       );
     }
@@ -81,7 +81,7 @@ const AnswerOption = ({
           rows={1}
           value={answer.title}
           onChange={setAnswerTitle}
-          placeholder={intl.formatMessage(messages.answerRangeTextboxPlaceholder)}
+          placeholder={messages.answerRangeTextboxPlaceholder.defaultMessage}
         />
         <div className="pgn__form-switch-helper-text">
           <FormattedMessage {...messages.answerRangeHelperText} />
@@ -126,13 +126,13 @@ const AnswerOption = ({
         <Collapsible.Trigger aria-label="Toggle feedback" className="btn-icon btn-icon-primary btn-icon-md align-items-center">
           <Icon
             src={FeedbackOutline}
-            alt={intl.formatMessage(messages.feedbackToggleIconAltText)}
+            alt={messages.feedbackToggleIconAltText.defaultMessage}
           />
         </Collapsible.Trigger>
         <IconButton
           src={DeleteOutline}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.answerDeleteIconAltText)}
+          alt={messages.answerDeleteIconAltText.defaultMessage}
           onClick={removeAnswer}
           variant="primary"
         />

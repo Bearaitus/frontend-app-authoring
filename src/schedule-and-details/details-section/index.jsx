@@ -12,17 +12,17 @@ const DetailsSection = ({
   const intl = useIntl();
   const formattedLanguage = () => {
     const result = languageOptions.find((arr) => arr[0] === language);
-    return result ? result[1] : intl.formatMessage(messages.dropdownEmpty);
+    return result ? result[1] : messages.dropdownEmpty.defaultMessage;
   };
 
   return (
     <section className="section-container details-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.detailsTitle)}
-        description={intl.formatMessage(messages.detailsDescription)}
+        title={messages.detailsTitle.defaultMessage}
+        description={messages.detailsDescription.defaultMessage}
       />
       <Form.Group className="form-group-custom dropdown-language">
-        <Form.Label>{intl.formatMessage(messages.dropdownLabel)}</Form.Label>
+        <Form.Label>{messages.dropdownLabel.defaultMessage}</Form.Label>
         <Dropdown className="bg-white">
           <Dropdown.Toggle variant="outline-primary" id="languageDropdown">
             {formattedLanguage()}
@@ -39,7 +39,7 @@ const DetailsSection = ({
           </Dropdown.Menu>
         </Dropdown>
         <Form.Control.Feedback>
-          {intl.formatMessage(messages.dropdownHelpText)}
+          {messages.dropdownHelpText.defaultMessage}
         </Form.Control.Feedback>
       </Form.Group>
     </section>

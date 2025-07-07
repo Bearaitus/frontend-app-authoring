@@ -19,7 +19,7 @@ const ModalComponentPreview = ({ isOpen, close, usageKey }: ModalComponentPrevie
 
   return (
     <StandardModal
-      title={intl.formatMessage(messages.previewModalTitle)}
+      title={messages.previewModalTitle.defaultMessage}
       isOpen={isOpen}
       onClose={close}
       isOverflowVisible={false}
@@ -57,7 +57,7 @@ const ComponentPreview = () => {
           onClick={openModal}
           className="position-absolute right-0 zindex-1 m-1"
         >
-          {intl.formatMessage(messages.previewExpandButtonTitle)}
+          {messages.previewExpandButtonTitle.defaultMessage}
         </Button>
         {
           // key=modified below is used to auto-refresh the preview when changes are made, e.g. via OLX editor

@@ -29,15 +29,15 @@ const HeaderButtons = () => {
         target="_blank"
         showLaunchIcon={false}
       >
-        {intl.formatMessage(messages.headingActionsPreview)}
+        {messages.headingActionsPreview.defaultMessage}
       </Button>
       <Button
         variant="outline-primary"
         onClick={handleActivationStatus}
       >
         {isCertificateActive
-          ? intl.formatMessage(messages.headingActionsDeactivate)
-          : intl.formatMessage(messages.headingActionsActivate)}
+          ? messages.headingActionsDeactivate.defaultMessage
+          : messages.headingActionsActivate.defaultMessage}
       </Button>
     </>
   );

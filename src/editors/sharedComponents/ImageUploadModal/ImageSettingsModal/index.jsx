@@ -52,7 +52,7 @@ const ImageSettingsModal = ({
         </Button>
       )}
       isOpen={isOpen}
-      title={intl.formatMessage(messages.titleLabel)}
+      title={messages.titleLabel.defaultMessage}
     >
       <ErrorAlert
         dismissError={altText.error.dismiss}

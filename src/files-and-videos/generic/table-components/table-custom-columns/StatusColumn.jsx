@@ -10,7 +10,7 @@ const StatusColumn = ({ row }) => {
   const isUploaded = status === 'Success';
   const isFailed = VIDEO_FAILURE_STATUSES.includes(status);
   const intl = useIntl();
-  const failedText = intl.formatMessage(messages.failedLabel);
+  const failedText = messages.failedLabel.defaultMessage;
 
   if (isUploaded) {
     return null;

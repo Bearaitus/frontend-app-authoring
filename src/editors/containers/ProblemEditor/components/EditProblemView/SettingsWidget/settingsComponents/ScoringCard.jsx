@@ -32,14 +32,14 @@ const ScoringCard = ({
     let summary = intl.formatMessage(messages.weightSummary, { weight });
     summary += ` ${String.fromCharCode(183)} `;
     summary += unlimited
-      ? intl.formatMessage(messages.unlimitedAttemptsSummary)
+      ? messages.unlimitedAttemptsSummary.defaultMessage
       : intl.formatMessage(messages.attemptsSummary, { attempts: attempts || defaultValue });
     return summary;
   };
 
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.scoringSettingsTitle)}
+      title={messages.scoringSettingsTitle.defaultMessage}
       summary={getScoringSummary(scoring.weight, scoring.attempts.number, scoring.attempts.unlimited)}
       className="scoringCard"
     >
@@ -53,7 +53,7 @@ const ScoringCard = ({
           step={0.1}
           value={scoring.weight}
           onChange={handleWeightChange}
-          floatingLabel={intl.formatMessage(messages.scoringWeightInputLabel)}
+          floatingLabel={messages.scoringWeightInputLabel.defaultMessage}
         />
         <Form.Control.Feedback>
           <FormattedMessage {...messages.weightHint} />
@@ -66,7 +66,7 @@ const ScoringCard = ({
           value={attemptDisplayValue}
           onChange={handleOnChange}
           onBlur={handleMaxAttemptChange}
-          floatingLabel={intl.formatMessage(messages.scoringAttemptsInputLabel)}
+          floatingLabel={messages.scoringAttemptsInputLabel.defaultMessage}
           disabled={scoring.attempts.unlimited}
         />
         <Form.Control.Feedback>

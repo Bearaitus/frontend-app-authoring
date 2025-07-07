@@ -14,13 +14,13 @@ const DeleteModal = ({ isOpen, close, onDeleteSubmit }) => {
 
   return (
     <AlertModal
-      title={intl.formatMessage(messages.deleteModalTitle)}
+      title={messages.deleteModalTitle.defaultMessage}
       isOpen={isOpen}
       onClose={close}
       footerNode={(
         <ActionRow>
           <Button variant="tertiary" onClick={close}>
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <Button
             onClick={(e) => {
@@ -28,12 +28,12 @@ const DeleteModal = ({ isOpen, close, onDeleteSubmit }) => {
               onDeleteSubmit();
             }}
           >
-            {intl.formatMessage(messages.deleteButton)}
+            {messages.deleteButton.defaultMessage}
           </Button>
         </ActionRow>
       )}
     >
-      <p>{intl.formatMessage(messages.deleteModalDescription)}</p>
+      <p>{messages.deleteModalDescription.defaultMessage}</p>
     </AlertModal>
   );
 };

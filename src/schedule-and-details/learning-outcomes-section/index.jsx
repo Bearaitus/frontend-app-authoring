@@ -33,18 +33,18 @@ const LearningOutcomesSection = ({ learningInfo, onChange }) => {
       key={idx}
     >
       <Form.Label isInline>
-        {intl.formatMessage(messages.outcomesLabelIncrement)} {idx + 1}
+        {messages.outcomesLabelIncrement.defaultMessage} {idx + 1}
       </Form.Label>
       <Form.Control
         value={text}
-        placeholder={intl.formatMessage(messages.outcomesInputPlaceholder)}
+        placeholder={messages.outcomesInputPlaceholder.defaultMessage}
         onChange={(e) => handleInputChange(e.target.value, idx)}
       />
       <Button
         variant="outline-primary"
         onClick={() => handleDelete(idx)}
       >
-        {intl.formatMessage(messages.outcomesDelete)}
+        {messages.outcomesDelete.defaultMessage}
       </Button>
     </Form.Group>
   );
@@ -52,14 +52,14 @@ const LearningOutcomesSection = ({ learningInfo, onChange }) => {
   return (
     <section className="section-container learning-outcomes-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.outcomesTitle)}
-        description={intl.formatMessage(messages.outcomesDescription)}
+        title={messages.outcomesTitle.defaultMessage}
+        description={messages.outcomesDescription.defaultMessage}
       />
       <ul className="learning-outcomes-list">
         {learningInfo.map(renderLearningOutcomeItem)}
       </ul>
       <Button iconBefore={AddIcon} variant="primary" onClick={handleAdd}>
-        {intl.formatMessage(messages.outcomesAdd)}
+        {messages.outcomesAdd.defaultMessage}
       </Button>
     </section>
   );

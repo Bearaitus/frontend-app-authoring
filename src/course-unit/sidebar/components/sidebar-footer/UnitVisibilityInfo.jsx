@@ -34,7 +34,7 @@ const UnitVisibilityInfo = ({ openVisibleModal, visibleToStaffOnly }) => {
       {visibleToStaffOnly ? (
         <>
           <h6 className="course-unit-sidebar-visibility-copy">
-            {intl.formatMessage(messages.visibilityStaffOnlyTitle)}
+            {messages.visibilityStaffOnlyTitle.defaultMessage}
           </h6>
           {!hasExplicitStaffLock && (
             <span className="course-unit-sidebar-visibility-section mb-2">
@@ -44,7 +44,7 @@ const UnitVisibilityInfo = ({ openVisibleModal, visibleToStaffOnly }) => {
         </>
       ) : (
         <h6 className="course-unit-sidebar-visibility-copy">
-          {intl.formatMessage(messages.visibilityStaffAndLearnersTitle)}
+          {messages.visibilityStaffAndLearnersTitle.defaultMessage}
         </h6>
       )}
       <Form.Checkbox
@@ -53,7 +53,7 @@ const UnitVisibilityInfo = ({ openVisibleModal, visibleToStaffOnly }) => {
         onChange={hasExplicitStaffLock ? null : handleCourseUnitVisibility}
         onClick={hasExplicitStaffLock ? openVisibleModal : null}
       >
-        {intl.formatMessage(messages.visibilityCheckboxTitle)}
+        {messages.visibilityCheckboxTitle.defaultMessage}
       </Form.Checkbox>
     </>
   );

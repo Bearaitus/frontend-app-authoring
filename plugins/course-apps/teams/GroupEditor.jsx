@@ -46,14 +46,14 @@ const GroupEditor = ({
       {isDeleting
         ? (
           <div className="d-flex flex-column card rounded mb-3 px-4 py-2 p-4" key="isDeleting">
-            <h4 className="mb-3">{intl.formatMessage(messages.groupDeleteHeading)}</h4>
-            {intl.formatMessage(messages.groupDeleteBody).split('\n').map(text => <p>{text}</p>)}
+            <h4 className="mb-3">{messages.groupDeleteHeading.defaultMessage}</h4>
+            {messages.groupDeleteBody.defaultMessage.split('\n').map(text => <p>{text}</p>)}
             <div className="d-flex flex-row justify-content-end">
               <Button variant="muted" size="sm" onClick={cancelDeletion}>
-                {intl.formatMessage(messages.cancel)}
+                {messages.cancel.defaultMessage}
               </Button>
               <Button variant="outline-danger" size="sm" onClick={() => onDelete(group)}>
-                {intl.formatMessage(messages.delete)}
+                {messages.delete.defaultMessage}
               </Button>
             </div>
           </div>
@@ -65,14 +65,14 @@ const GroupEditor = ({
             open={isOpen}
             onToggle={handleToggle}
             onDelete={initiateDeletion}
-            deleteAlt={intl.formatMessage(messages.deleteAlt)}
-            expandAlt={intl.formatMessage(messages.expandAlt)}
-            collapseAlt={intl.formatMessage(messages.collapseAlt)}
+            deleteAlt={messages.deleteAlt.defaultMessage}
+            expandAlt={messages.expandAlt.defaultMessage}
+            collapseAlt={messages.collapseAlt.defaultMessage}
             title={
               isOpen
                 ? (
                   <div className="d-flex flex-column flex-shrink-1 h4 p-0 m-0">
-                    {intl.formatMessage(messages.configureGroup)}
+                    {messages.configureGroup.defaultMessage}
                   </div>
                 ) : (
                   <div className="d-flex flex-column flex-shrink-1 small mw-100">
@@ -86,15 +86,15 @@ const GroupEditor = ({
             <FormikControl
               name={`${fieldNameCommonBase}.name`}
               value={group.name}
-              floatingLabel={intl.formatMessage(messages.groupFormNameLabel)}
-              help={intl.formatMessage(messages.groupFormNameHelp)}
+              floatingLabel={messages.groupFormNameLabel.defaultMessage}
+              help={messages.groupFormNameHelp.defaultMessage}
               className={`${formGroupClasses} mt-2.5`}
             />
             <FormikControl
               name={`${fieldNameCommonBase}.description`}
               value={group.description}
-              floatingLabel={intl.formatMessage(messages.groupFormDescriptionLabel)}
-              help={intl.formatMessage(messages.groupFormDescriptionHelp)}
+              floatingLabel={messages.groupFormDescriptionLabel.defaultMessage}
+              help={messages.groupFormDescriptionHelp.defaultMessage}
               as="textarea"
               rows={4}
               style={{ minHeight: '2.5rem' }}
@@ -102,7 +102,7 @@ const GroupEditor = ({
             />
             <Form.Group className={formGroupClasses}>
               <Form.Label className="h4 my-3">
-                {intl.formatMessage(messages.groupFormTypeLabel)}
+                {messages.groupFormTypeLabel.defaultMessage}
               </Form.Label>
               <Form.RadioSet
                 name={`${fieldNameCommonBase}.type`}
@@ -127,10 +127,10 @@ const GroupEditor = ({
             <FormikControl
               type="number"
               name={`${fieldNameCommonBase}.maxTeamSize`}
-              floatingLabel={intl.formatMessage(messages.groupFormMaxSizeLabel)}
+              floatingLabel={messages.groupFormMaxSizeLabel.defaultMessage}
               value={group.maxTeamSize}
-              help={intl.formatMessage(messages.groupFormMaxSizeHelp)}
-              label={<Form.Label className="h4 pb-4">{intl.formatMessage(messages.teamSize)}</Form.Label>}
+              help={messages.groupFormMaxSizeHelp.defaultMessage}
+              label={<Form.Label className="h4 pb-4">{messages.teamSize.defaultMessage}</Form.Label>}
               className="mx-2"
               placeholder={TeamSizes.DEFAULT}
             />

@@ -15,35 +15,35 @@ const ImportSidebar = ({ intl, courseId }) => {
   const { importCourse: importLearnMoreUrl } = useHelpUrls(['importCourse']);
   return (
     <HelpSidebar courseId={courseId}>
-      <h4 className="help-sidebar-about-title">{intl.formatMessage(messages.title1)}</h4>
+      <h4 className="help-sidebar-about-title">{messages.title1.defaultMessage}</h4>
       <p className="help-sidebar-about-descriptions">
         {intl.formatMessage(messages.description1, { studioShortName: getConfig().STUDIO_SHORT_NAME })}
       </p>
       <hr />
-      <h4 className="help-sidebar-about-title">{intl.formatMessage(messages.importedContent)}</h4>
-      <p className="help-sidebar-about-descriptions">{intl.formatMessage(messages.importedContentHeading)}</p>
+      <h4 className="help-sidebar-about-title">{messages.importedContent.defaultMessage}</h4>
+      <p className="help-sidebar-about-descriptions">{messages.importedContentHeading.defaultMessage}</p>
       <ul className="px-3">
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content1)}</li>
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content2)}</li>
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content3)}</li>
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content4)}</li>
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content5)}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content1.defaultMessage}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content2.defaultMessage}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content3.defaultMessage}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content4.defaultMessage}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content5.defaultMessage}</li>
       </ul>
-      <p className="help-sidebar-about-descriptions">{intl.formatMessage(messages.notImportedContent)}</p>
+      <p className="help-sidebar-about-descriptions">{messages.notImportedContent.defaultMessage}</p>
       <ul className="px-3">
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content6)}</li>
-        <li className="help-sidebar-about-descriptions">{intl.formatMessage(messages.content7)}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content6.defaultMessage}</li>
+        <li className="help-sidebar-about-descriptions">{messages.content7.defaultMessage}</li>
       </ul>
       <hr />
-      <h4 className="help-sidebar-about-title">{intl.formatMessage(messages.warningTitle)}</h4>
-      <p className="help-sidebar-about-descriptions">{intl.formatMessage(messages.warningDescription)}</p>
+      <h4 className="help-sidebar-about-title">{messages.warningTitle.defaultMessage}</h4>
+      <p className="help-sidebar-about-descriptions">{messages.warningDescription.defaultMessage}</p>
       <hr />
       <Hyperlink
         className="small"
         href={importLearnMoreUrl}
         target="_blank"
       >
-        {intl.formatMessage(messages.learnMoreButtonTitle)}
+        {messages.learnMoreButtonTitle.defaultMessage}
       </Hyperlink>
     </HelpSidebar>
   );

@@ -27,7 +27,7 @@ const GroupFeedbackRow = ({
         <IconButton
           src={DeleteOutline}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.settingsDeleteIconAltText)}
+          alt={messages.settingsDeleteIconAltText.defaultMessage}
           onClick={handleDelete}
           variant="primary"
         />

@@ -81,7 +81,7 @@ const StatusBar = ({
   return (
     <>
       <Stack direction="horizontal" gap={3.5} className="d-flex align-items-stretch outline-status-bar" data-testid="outline-status-bar">
-        <StatusBarItem title={intl.formatMessage(messages.startDateTitle)}>
+        <StatusBarItem title={messages.startDateTitle.defaultMessage}>
           <Hyperlink
             className="small"
             destination={scheduleDestination()}
@@ -99,20 +99,20 @@ const StatusBar = ({
             ) : courseReleaseDate}
           </Hyperlink>
         </StatusBarItem>
-        <StatusBarItem title={intl.formatMessage(messages.pacingTypeTitle)}>
+        <StatusBarItem title={messages.pacingTypeTitle.defaultMessage}>
           <span className="small">
             {isSelfPaced
-              ? intl.formatMessage(messages.pacingTypeSelfPaced)
-              : intl.formatMessage(messages.pacingTypeInstructorPaced)}
+              ? messages.pacingTypeSelfPaced.defaultMessage
+              : messages.pacingTypeInstructorPaced.defaultMessage}
           </span>
         </StatusBarItem>
-        <StatusBarItem title={intl.formatMessage(messages.checklistTitle)}>
+        <StatusBarItem title={messages.checklistTitle.defaultMessage}>
           <Hyperlink
             className="small"
             destination={checklistDestination()}
             showLaunchIcon={false}
           >
-            {checkListTitle} {intl.formatMessage(messages.checklistCompleted)}
+            {checkListTitle} {messages.checklistCompleted.defaultMessage}
           </Hyperlink>
         </StatusBarItem>
         {videoSharingEnabled && (
@@ -122,7 +122,7 @@ const StatusBar = ({
           >
             <Form.Label
               className="h5"
-            >{intl.formatMessage(messages.videoSharingTitle)}
+            >{messages.videoSharingTitle.defaultMessage}
             </Form.Label>
             <div className="d-flex align-items-center">
               <Form.Control
@@ -145,7 +145,7 @@ const StatusBar = ({
                 target="_blank"
                 showLaunchIcon={false}
               >
-                {intl.formatMessage(messages.videoSharingLink)}
+                {messages.videoSharingLink.defaultMessage}
               </Hyperlink>
             </div>
           </Form.Group>

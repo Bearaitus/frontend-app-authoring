@@ -91,7 +91,7 @@ const LibrariesV2Filters: React.FC<LibrariesV2FiltersProps> = ({
           onChange={handleSearchLibrariesV2}
           value={search}
           className="mr-4"
-          placeholder={intl.formatMessage(messages.librariesV2TabLibrarySearchPlaceholder)}
+          placeholder={messages.librariesV2TabLibrarySearchPlaceholder.defaultMessage}
         />
         {isLoading && (
           <span className="search-field-loading">

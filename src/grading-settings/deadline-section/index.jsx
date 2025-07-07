@@ -45,7 +45,7 @@ const DeadlineSection = ({
     })}
     >
       <Form.Label className="grading-label">
-        {intl.formatMessage(messages.gracePeriodOnDeadlineLabel)}
+        {messages.gracePeriodOnDeadlineLabel.defaultMessage}
       </Form.Label>
       <Form.Control
         data-testid="deadline-period-input"
@@ -54,7 +54,7 @@ const DeadlineSection = ({
         placeholder={TIME_FORMAT.toUpperCase()}
       />
       <Form.Control.Feedback className="grading-description">
-        {intl.formatMessage(messages.gracePeriodOnDeadlineDescription)}
+        {messages.gracePeriodOnDeadlineDescription.defaultMessage}
       </Form.Control.Feedback>
       {isError && (
         <Form.Control.Feedback className="feedback-error" type="invalid">

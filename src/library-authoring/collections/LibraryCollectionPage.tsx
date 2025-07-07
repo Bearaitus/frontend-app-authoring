@@ -51,7 +51,7 @@ const HeaderActions = () => {
         variant="primary rounded-0"
         onClick={openAddContentSidebar}
       >
-        {intl.formatMessage(messages.newContentButton)}
+        {messages.newContentButton.defaultMessage}
       </Button>
     </div>
   );
@@ -77,7 +77,7 @@ const SubHeaderTitle = ({
         <IconButton
           src={InfoOutline}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.collectionInfoButton)}
+          alt={messages.collectionInfoButton.defaultMessage}
           onClick={infoClickHandler}
           variant="primary"
         />
@@ -85,7 +85,7 @@ const SubHeaderTitle = ({
       {showReadOnlyBadge && (
         <div>
           <Badge variant="primary" style={{ fontSize: '50%' }}>
-            {intl.formatMessage(messages.readOnlyBadge)}
+            {messages.readOnlyBadge.defaultMessage}
           </Badge>
         </div>
       )}
@@ -140,14 +140,14 @@ const LibraryCollectionPage = () => {
 
   const breadcumbs = !componentPickerMode ? (
     <Breadcrumb
-      ariaLabel={intl.formatMessage(messages.breadcrumbsAriaLabel)}
+      ariaLabel={messages.breadcrumbsAriaLabel.defaultMessage}
       links={[
         {
           label: libraryData.title,
           to: `/library/${libraryId}`,
         },
         {
-          label: intl.formatMessage(messages.allCollections),
+          label: messages.allCollections.defaultMessage,
           to: `/library/${libraryId}/collections`,
         },
         // Adding empty breadcrumb to add the last `>` spacer.
@@ -160,14 +160,14 @@ const LibraryCollectionPage = () => {
     />
   ) : (
     <Breadcrumb
-      ariaLabel={intl.formatMessage(messages.breadcrumbsAriaLabel)}
+      ariaLabel={messages.breadcrumbsAriaLabel.defaultMessage}
       links={[
         {
           label: '',
           to: '',
         },
         {
-          label: intl.formatMessage(messages.returnToLibrary),
+          label: messages.returnToLibrary.defaultMessage,
           onClick: () => { setCollectionId(undefined); },
         },
       ]}
@@ -207,7 +207,7 @@ const LibraryCollectionPage = () => {
               breadcrumbs={breadcumbs}
               headerActions={<HeaderActions />}
             />
-            <SearchKeywordsField className="w-50" placeholder={intl.formatMessage(messages.searchPlaceholder)} />
+            <SearchKeywordsField className="w-50" placeholder={messages.searchPlaceholder.defaultMessage} />
             <div className="d-flex mt-3 mb-4 align-items-center">
               <FilterByTags />
               <FilterByBlockType />

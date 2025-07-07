@@ -26,26 +26,26 @@ const geUpdateFormSettings = (requestType, courseUpdatesInitialValues, intl) => 
     case REQUEST_TYPES.edit_handouts:
       return {
         currentContent: courseUpdatesInitialValues.data,
-        formTitle: intl.formatMessage(messages.editHandoutsTitle),
+        formTitle: messages.editHandoutsTitle.defaultMessage,
         validationSchema: Yup.object().shape(),
         contentFieldName: 'data',
-        submitButtonText: intl.formatMessage(messages.saveButton),
+        submitButtonText: messages.saveButton.defaultMessage,
       };
     case REQUEST_TYPES.add_new_update:
       return {
         currentContent: courseUpdatesInitialValues.content,
-        formTitle: intl.formatMessage(messages.addNewUpdateTitle),
+        formTitle: messages.addNewUpdateTitle.defaultMessage,
         validationSchema: updatesValidationSchema,
         contentFieldName: 'content',
-        submitButtonText: intl.formatMessage(messages.postButton),
+        submitButtonText: messages.postButton.defaultMessage,
       };
     case REQUEST_TYPES.edit_update:
       return {
         currentContent: courseUpdatesInitialValues.content,
-        formTitle: intl.formatMessage(messages.editUpdateTitle),
+        formTitle: messages.editUpdateTitle.defaultMessage,
         validationSchema: updatesValidationSchema,
         contentFieldName: 'content',
-        submitButtonText: intl.formatMessage(messages.postButton),
+        submitButtonText: messages.postButton.defaultMessage,
       };
     default:
       return '';

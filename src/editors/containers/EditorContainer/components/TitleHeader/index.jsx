@@ -16,7 +16,7 @@ const TitleHeader = ({
   // injected
   intl,
 }) => {
-  if (!isInitialized) { return intl.formatMessage(messages.loading); }
+  if (!isInitialized) { return messages.loading.defaultMessage; }
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const dispatch = useDispatch();
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -53,7 +53,7 @@ const TitleHeader = ({
         {title}
       </Truncate>
       <IconButton
-        alt={intl.formatMessage(messages.editTitleLabel)}
+        alt={messages.editTitleLabel.defaultMessage}
         iconAs={Icon}
         className="mx-2"
         onClick={startEditing}

@@ -37,15 +37,15 @@ const SocialShareWidget = ({
 
   const getSubtitle = () => {
     if (allowVideoSharing.value) {
-      return intl.formatMessage(messages.enabledSubtitle);
+      return messages.enabledSubtitle.defaultMessage;
     }
-    return intl.formatMessage(messages.disabledSubtitle);
+    return messages.disabledSubtitle.defaultMessage;
   };
 
   return (videoSharingEnabled ? (
     <CollapsibleFormWidget
       fontSize="x-small"
-      title={intl.formatMessage(messages.title)}
+      title={messages.title.defaultMessage}
       subtitle={getSubtitle()}
     >
       <div>
@@ -58,7 +58,7 @@ const SocialShareWidget = ({
         onChange={onSocialSharingCheckboxChange}
       >
         <div className="small text-gray-700">
-          {intl.formatMessage(messages.socialSharingCheckboxLabel)}
+          {messages.socialSharingCheckboxLabel.defaultMessage}
         </div>
       </Form.Checkbox>
       {isSetByCourse && (
@@ -73,7 +73,7 @@ const SocialShareWidget = ({
       )}
       <div className="mt-3">
         <Hyperlink className="text-primary-500" destination={learnMoreLink} target="_blank">
-          {intl.formatMessage(messages.learnMoreLinkLabel)}
+          {messages.learnMoreLinkLabel.defaultMessage}
         </Hyperlink>
       </div>
     </CollapsibleFormWidget>

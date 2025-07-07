@@ -39,7 +39,7 @@ const DatepickerControl = ({
         {label}
         {showUTC && (
           <span className="h6 font-weight-normal text-gray-500 mb-0">
-            ({intl.formatMessage(messages.datepickerUTC)})
+            ({messages.datepickerUTC.defaultMessage})
           </span>
         )}
       </Form.Label>
@@ -48,7 +48,7 @@ const DatepickerControl = ({
           <Icon
             src={Calendar}
             className="datepicker-custom-control-icon"
-            alt={intl.formatMessage(messages.calendarAltText)}
+            alt={messages.calendarAltText.defaultMessage}
           />
         )}
         <DatePicker

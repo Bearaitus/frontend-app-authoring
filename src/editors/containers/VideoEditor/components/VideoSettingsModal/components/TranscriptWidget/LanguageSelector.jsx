@@ -77,7 +77,7 @@ const LanguageSelector = ({
     }
     return (
       <ActionRow>
-        {intl.formatMessage(messages.languageSelectPlaceholder)}
+        {messages.languageSelectPlaceholder.defaultMessage}
         <ActionRow.Spacer />
       </ActionRow>
     );
@@ -91,7 +91,7 @@ const LanguageSelector = ({
       >
         <Dropdown.Toggle
           iconAs={Button}
-          aria-label={intl.formatMessage(messages.languageSelectLabel)}
+          aria-label={messages.languageSelectLabel.defaultMessage}
           block
           id={`selectLanguage-form-${index}`}
           className="w-100"

@@ -22,7 +22,7 @@ const SidebarHeader = ({ title, visibilityState, displayUnitLocation }) => {
         />
       )}
       <h3 className="course-unit-sidebar-header-title m-0">
-        {displayUnitLocation ? intl.formatMessage(messages.sidebarHeaderUnitLocationTitle) : title}
+        {displayUnitLocation ? messages.sidebarHeaderUnitLocationTitle.defaultMessage : title}
       </h3>
     </Stack>
   );

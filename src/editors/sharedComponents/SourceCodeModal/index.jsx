@@ -34,7 +34,7 @@ const SourceCodeModal = ({
         </Button>
             )}
       isOpen={isOpen}
-      title={intl.formatMessage(messages.titleLabel)}
+      title={messages.titleLabel.defaultMessage}
       bodyStyle={{ maxHeight: (height - 180) }}
     >
       <div className="px-4.5 pt-2.5">

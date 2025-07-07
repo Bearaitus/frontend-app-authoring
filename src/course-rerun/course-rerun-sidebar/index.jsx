@@ -24,21 +24,21 @@ const CourseRerunSideBar = () => {
 
   const sidebarMessages = [
     {
-      title: intl.formatMessage(messages.sectionTitle1),
-      description: `${intl.formatMessage(messages.sectionDescription1)}`,
+      title: messages.sectionTitle1.defaultMessage,
+      description: `${messages.sectionDescription1.defaultMessage}`,
       date: localizedCourseDate,
     },
     {
-      title: intl.formatMessage(messages.sectionTitle2),
-      description: intl.formatMessage(messages.sectionDescription2),
+      title: messages.sectionTitle2.defaultMessage,
+      description: messages.sectionDescription2.defaultMessage,
     },
     {
-      title: intl.formatMessage(messages.sectionTitle3),
-      description: intl.formatMessage(messages.sectionDescription3),
+      title: messages.sectionTitle3.defaultMessage,
+      description: messages.sectionDescription3.defaultMessage,
     },
     {
       link: {
-        text: intl.formatMessage(messages.sectionLink4),
+        text: messages.sectionLink4.defaultMessage,
         href: learnMoreUrl,
       },
     },

@@ -40,9 +40,9 @@ export const getSummary = ({ tolerance, intl }) => {
     case ToleranceTypes.number.type:
       return `± ${tolerance.value}`;
     case ToleranceTypes.none.type:
-      return intl.formatMessage(messages.noneToleranceSummary);
+      return messages.noneToleranceSummary.defaultMessage;
     default:
-      return intl.formatMessage(messages.noneToleranceSummary);
+      return messages.noneToleranceSummary.defaultMessage;
   }
 };
 
@@ -58,7 +58,7 @@ const ToleranceCard = ({
   useEffect(() => { summary = getSummary({ tolerance, intl }); }, [tolerance]);
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.toleranceSettingTitle)}
+      title={messages.toleranceSettingTitle.defaultMessage}
       summary={summary}
       none={tolerance.type === ToleranceTypes.none.type}
     >
@@ -100,7 +100,7 @@ const ToleranceCard = ({
             step={0.1}
             value={tolerance.value}
             onChange={handleToleranceValueChange({ updateSettings, tolerance, answers })}
-            floatingLabel={intl.formatMessage(messages.toleranceValueInputLabel)}
+            floatingLabel={messages.toleranceValueInputLabel.defaultMessage}
           />
           )}
       </Form.Group>

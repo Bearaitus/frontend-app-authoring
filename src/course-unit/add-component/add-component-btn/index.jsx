@@ -15,7 +15,7 @@ const AddComponentButton = ({ type, displayName, onClick }) => {
       onClick={onClick}
     >
       <AddComponentIcon type={type} />
-      <span className="sr-only">{intl.formatMessage(messages.buttonText)}</span>
+      <span className="sr-only">{messages.buttonText.defaultMessage}</span>
       <span className="small mt-2">{displayName}</span>
     </Button>
   );

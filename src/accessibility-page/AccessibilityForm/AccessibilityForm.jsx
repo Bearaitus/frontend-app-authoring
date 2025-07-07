@@ -31,17 +31,17 @@ const AccessibilityForm = ({
 
   const formFields = [
     {
-      label: intl.formatMessage(messages.accessibilityPolicyFormEmailLabel),
+      label: messages.accessibilityPolicyFormEmailLabel.defaultMessage,
       name: 'email',
       value: values.email,
     },
     {
-      label: intl.formatMessage(messages.accessibilityPolicyFormNameLabel),
+      label: messages.accessibilityPolicyFormNameLabel.defaultMessage,
       name: 'name',
       value: values.name,
     },
     {
-      label: intl.formatMessage(messages.accessibilityPolicyFormMessageLabel),
+      label: messages.accessibilityPolicyFormMessageLabel.defaultMessage,
       name: 'message',
       value: values.message,
     },
@@ -49,8 +49,8 @@ const AccessibilityForm = ({
 
   const createButtonState = {
     labels: {
-      default: intl.formatMessage(messages.accessibilityPolicyFormSubmitLabel),
-      pending: intl.formatMessage(messages.accessibilityPolicyFormSubmittingFeedbackLabel),
+      default: messages.accessibilityPolicyFormSubmitLabel.defaultMessage,
+      pending: messages.accessibilityPolicyFormSubmittingFeedbackLabel.defaultMessage,
     },
     disabledStates: [STATEFUL_BUTTON_STATES.pending],
   };

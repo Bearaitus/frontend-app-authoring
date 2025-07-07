@@ -52,7 +52,7 @@ const CustomPages = ({
   const [isOpen, open, close] = useToggle(false);
 
   const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.heading));
+  document.title = getPageHeadTitle(courseDetails?.name, messages.heading.defaultMessage);
 
   const { config } = useContext(AppContext);
   const learningCourseURL = `${config.LEARNING_BASE_URL}/course/${courseId}`;
@@ -88,8 +88,8 @@ const CustomPages = ({
 
   const addPageStateProps = {
     labels: {
-      default: intl.formatMessage(messages.addPageBodyLabel),
-      pending: intl.formatMessage(messages.addingPageBodyLabel),
+      default: messages.addPageBodyLabel.defaultMessage,
+      pending: messages.addingPageBodyLabel.defaultMessage,
     },
     icons: {
       default: <Icon src={Add} />,
@@ -234,7 +234,7 @@ const CustomPages = ({
           isOpen={isOpen}
           onClose={close}
           size="lg"
-          title={intl.formatMessage(messages.studentViewModalTitle)}
+          title={messages.studentViewModalTitle.defaultMessage}
         >
           <ModalDialog.Header>
             <ModalDialog.Title>

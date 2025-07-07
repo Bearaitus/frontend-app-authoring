@@ -48,32 +48,32 @@ const getItemStatusBadgeContent = (status, messages, intl) => {
   switch (status) {
     case ITEM_BADGE_STATUS.gated:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgeGated),
+        badgeTitle: messages.statusBadgeGated.defaultMessage,
         badgeIcon: LockIcon,
       };
     case ITEM_BADGE_STATUS.live:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgeLive),
+        badgeTitle: messages.statusBadgeLive.defaultMessage,
         badgeIcon: CheckCircleIcon,
       };
     case ITEM_BADGE_STATUS.publishedNotLive:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgePublishedNotLive),
+        badgeTitle: messages.statusBadgePublishedNotLive.defaultMessage,
         badgeIcon: null,
       };
     case ITEM_BADGE_STATUS.staffOnly:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgeStaffOnly),
+        badgeTitle: messages.statusBadgeStaffOnly.defaultMessage,
         badgeIcon: LockIcon,
       };
     case ITEM_BADGE_STATUS.unpublishedChanges:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgeUnpublishedChanges),
+        badgeTitle: messages.statusBadgeUnpublishedChanges.defaultMessage,
         badgeIcon: DraftIcon,
       };
     case ITEM_BADGE_STATUS.draft:
       return {
-        badgeTitle: intl.formatMessage(messages.statusBadgeDraft),
+        badgeTitle: messages.statusBadgeDraft.defaultMessage,
         badgeIcon: DraftIcon,
       };
     default:
@@ -196,11 +196,11 @@ const scrollToElement = (target, alignWithTop = false) => {
 const getVideoSharingOptionText = (id, messages, intl) => {
   switch (id) {
     case VIDEO_SHARING_OPTIONS.perVideo:
-      return intl.formatMessage(messages.videoSharingPerVideoText);
+      return messages.videoSharingPerVideoText.defaultMessage;
     case VIDEO_SHARING_OPTIONS.allOn:
-      return intl.formatMessage(messages.videoSharingAllOnText);
+      return messages.videoSharingAllOnText.defaultMessage;
     case VIDEO_SHARING_OPTIONS.allOff:
-      return intl.formatMessage(messages.videoSharingAllOffText);
+      return messages.videoSharingAllOffText.defaultMessage;
     default:
       return '';
   }

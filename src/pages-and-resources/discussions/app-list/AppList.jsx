@@ -105,7 +105,7 @@ const AppList = ({ intl }) => {
   if (status === LOADED && apps.length === 0) {
     return (
       <Container className="mt-5">
-        <p>{intl.formatMessage(messages.noApps)}</p>
+        <p>{messages.noApps.defaultMessage}</p>
       </Container>
     );
   }
@@ -124,7 +124,7 @@ const AppList = ({ intl }) => {
     <div className="my-sm-4" data-testid="appList">
       <div className={!isOnSmallScreen ? 'd-flex flex-row justify-content-between align-items-center' : 'mb-4'}>
         <h3 className={isOnSmallScreen ? 'mb-3' : 'm-0'}>
-          {intl.formatMessage(messages.heading)}
+          {messages.heading.defaultMessage}
         </h3>
         <Form.Switch
           floatLabelLeft
@@ -134,7 +134,7 @@ const AppList = ({ intl }) => {
           checked={!enabled}
           data-testid="hide-discussion"
         >
-          {intl.formatMessage(messages.hideDiscussionTab)}
+          {messages.hideDiscussionTab.defaultMessage}
         </Form.Switch>
       </div>
       <CardGrid
@@ -150,7 +150,7 @@ const AppList = ({ intl }) => {
       </CardGrid>
       <Responsive minWidth={breakpoints.small.minWidth}>
         <h3 className="my-sm-5 my-4">
-          {intl.formatMessage(messages.supportedFeatures)}
+          {messages.supportedFeatures.defaultMessage}
         </h3>
         <div className="app-list-data-table">
           <FeaturesTable
@@ -160,7 +160,7 @@ const AppList = ({ intl }) => {
         </div>
       </Responsive>
       <AlertModal
-        title={intl.formatMessage(messages.hideDiscussionTabTitle)}
+        title={messages.hideDiscussionTabTitle.defaultMessage}
         isOpen={enabled && !discussionTabToggle}
         onClose={handleClose}
         isBlocking
@@ -168,11 +168,11 @@ const AppList = ({ intl }) => {
         footerNode={(
           <ActionRow>
             <Button variant="link" className="text-decoration-none bg-black" onClick={handleClose}>
-              {intl.formatMessage(messages.hideDiscussionCancelButton)}
+              {messages.hideDiscussionCancelButton.defaultMessage}
             </Button>
             <StatefulButton
               labels={{
-                default: intl.formatMessage(messages.hideDiscussionOkButton),
+                default: messages.hideDiscussionOkButton.defaultMessage,
               }}
               state={saveStatus === SAVING ? 'pending' : 'default'}
               className="ml-2"
@@ -183,7 +183,7 @@ const AppList = ({ intl }) => {
         )}
       >
         <p className="bg-black">
-          {intl.formatMessage(messages.hideDiscussionTabMessage)}
+          {messages.hideDiscussionTabMessage.defaultMessage}
         </p>
       </AlertModal>
     </div>

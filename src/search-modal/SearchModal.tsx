@@ -7,7 +7,7 @@ import SearchUI from './SearchUI';
 
 const SearchModal: React.FC<{ courseId?: string, isOpen: boolean, onClose: () => void }> = ({ courseId, ...props }) => {
   const intl = useIntl();
-  const title = intl.formatMessage(messages.title);
+  const title = messages.title.defaultMessage;
 
   return (
     <ModalDialog

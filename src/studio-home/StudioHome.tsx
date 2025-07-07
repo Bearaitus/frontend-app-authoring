@@ -69,7 +69,7 @@ const StudioHome = () => {
 
     if (isShowEmailStaff) {
       headerButtons.push(
-        <MailtoLink to={studioRequestEmail}>{intl.formatMessage(messages.emailStaffBtnText)}</MailtoLink>,
+        <MailtoLink to={studioRequestEmail}>{messages.emailStaffBtnText.defaultMessage}</MailtoLink>,
       );
     }
 
@@ -118,7 +118,7 @@ const StudioHome = () => {
           description={(
             <Row className="m-0 align-items-center">
               <Icon src={Error} className="text-danger-500 mr-1" />
-              <span>{intl.formatMessage(messages.homePageLoadFailedMessage)}</span>
+              <span>{messages.homePageLoadFailedMessage.defaultMessage}</span>
             </Row>
           )}
         />

@@ -63,7 +63,7 @@ const DiscussionsSettings = ({ courseId, intl }) => {
     return (
       <FullscreenModal
         className="bg-light-200"
-        title={intl.formatMessage(messages.configure)}
+        title={messages.configure.defaultMessage}
         onClose={handleClose}
         isOpen
       >
@@ -76,7 +76,7 @@ const DiscussionsSettings = ({ courseId, intl }) => {
     return (
       <FullscreenModal
         className="bg-light-200"
-        title={intl.formatMessage(messages.configure)}
+        title={messages.configure.defaultMessage}
         onClose={handleClose}
         isOpen
       >
@@ -92,7 +92,7 @@ const DiscussionsSettings = ({ courseId, intl }) => {
           <FullscreenModal
             className="bg-light-200"
             modalBodyClassName="px-sm-4"
-            title={intl.formatMessage(messages.configure)}
+            title={messages.configure.defaultMessage}
             onClose={handleClose}
             isOpen
             beforeBodyNode={<Stepper.Header className="border-bottom border-light" />}
@@ -108,7 +108,7 @@ const DiscussionsSettings = ({ courseId, intl }) => {
                       variant="outline-primary"
                       onClick={handleBack}
                     >
-                      {intl.formatMessage(messages.backButton)}
+                      {messages.backButton.defaultMessage}
                     </Button>
                     <AppConfigForm.SaveButton />
                   </div>
@@ -118,12 +118,12 @@ const DiscussionsSettings = ({ courseId, intl }) => {
           >
             <Stepper.Step
               eventKey={SELECTION_STEP}
-              title={intl.formatMessage(messages.providerSelection)}
+              title={messages.providerSelection.defaultMessage}
             >
               {
                 !canChangeProviders && (
                   <Alert variant="warning">
-                    {intl.formatMessage(messages.noProviderSwitchAfterCourseStarted)}
+                    {messages.noProviderSwitchAfterCourseStarted.defaultMessage}
                   </Alert>
                 )
               }
@@ -131,8 +131,8 @@ const DiscussionsSettings = ({ courseId, intl }) => {
             </Stepper.Step>
             <Stepper.Step
               eventKey={SETTINGS_STEP}
-              title={intl.formatMessage(messages.settings)}
-              description={hasValidationError ? intl.formatMessage(messages.Incomplete) : ''}
+              title={messages.settings.defaultMessage}
+              description={hasValidationError ? messages.Incomplete.defaultMessage : ''}
               hasError={hasValidationError}
             >
               <AppConfigForm

@@ -53,7 +53,7 @@ const CourseExportPage = ({ intl, courseId }) => {
       <Helmet>
         <title>
           {intl.formatMessage(messages.pageTitle, {
-            headingTitle: intl.formatMessage(messages.headingTitle),
+            headingTitle: messages.headingTitle.defaultMessage,
             courseName: courseDetails?.name,
             siteName: process.env.SITE_NAME,
           })}
@@ -71,15 +71,15 @@ const CourseExportPage = ({ intl, courseId }) => {
             <Layout.Element>
               <article>
                 <SubHeader
-                  title={intl.formatMessage(messages.headingTitle)}
-                  subtitle={intl.formatMessage(messages.headingSubtitle)}
+                  title={messages.headingTitle.defaultMessage}
+                  subtitle={messages.headingSubtitle.defaultMessage}
                 />
                 <p className="small">{intl.formatMessage(messages.description1, { studioShortName: getConfig().STUDIO_SHORT_NAME })}</p>
-                <p className="small">{intl.formatMessage(messages.description2)}</p>
+                <p className="small">{messages.description2.defaultMessage}</p>
                 <Card>
                   <Card.Header
                     className="h3 px-3 text-black mb-4"
-                    title={intl.formatMessage(messages.titleUnderButton)}
+                    title={messages.titleUnderButton.defaultMessage}
                   />
                   {isShowExportButton && (
                     <Card.Section className="px-3 py-1">
@@ -90,7 +90,7 @@ const CourseExportPage = ({ intl, courseId }) => {
                         onClick={() => dispatch(startExportingCourse(courseId))}
                         iconBefore={ArrowCircleDownIcon}
                       >
-                        {intl.formatMessage(messages.buttonTitle)}
+                        {messages.buttonTitle.defaultMessage}
                       </Button>
                     </Card.Section>
                   )}

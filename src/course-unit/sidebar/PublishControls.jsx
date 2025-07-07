@@ -58,23 +58,23 @@ const PublishControls = ({ blockId }) => {
         visibleToStaffOnly={visibleToStaffOnly}
       />
       <ModalNotification
-        title={intl.formatMessage(messages.modalDiscardUnitChangesTitle)}
+        title={messages.modalDiscardUnitChangesTitle.defaultMessage}
         isOpen={isDiscardModalOpen}
-        actionButtonText={intl.formatMessage(messages.modalDiscardUnitChangesActionButtonText)}
-        cancelButtonText={intl.formatMessage(messages.modalDiscardUnitChangesCancelButtonText)}
+        actionButtonText={messages.modalDiscardUnitChangesActionButtonText.defaultMessage}
+        cancelButtonText={messages.modalDiscardUnitChangesCancelButtonText.defaultMessage}
         handleAction={handleCourseUnitDiscardChanges}
         handleCancel={closeDiscardModal}
-        message={intl.formatMessage(messages.modalDiscardUnitChangesDescription)}
+        message={messages.modalDiscardUnitChangesDescription.defaultMessage}
         icon={InfoOutlineIcon}
       />
       <ModalNotification
-        title={intl.formatMessage(messages.modalMakeVisibilityTitle)}
+        title={messages.modalMakeVisibilityTitle.defaultMessage}
         isOpen={isVisibleModalOpen}
-        actionButtonText={intl.formatMessage(messages.modalMakeVisibilityActionButtonText)}
-        cancelButtonText={intl.formatMessage(messages.modalMakeVisibilityCancelButtonText)}
+        actionButtonText={messages.modalMakeVisibilityActionButtonText.defaultMessage}
+        cancelButtonText={messages.modalMakeVisibilityCancelButtonText.defaultMessage}
         handleAction={handleCourseUnitVisibility}
         handleCancel={closeVisibleModal}
-        message={intl.formatMessage(messages.modalMakeVisibilityDescription)}
+        message={messages.modalMakeVisibilityDescription.defaultMessage}
         icon={InfoOutlineIcon}
       />
     </>

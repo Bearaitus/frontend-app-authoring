@@ -127,11 +127,11 @@ const CourseOutline = ({ courseId }) => {
   useEffect(() => {
     // Wait for the course data to load before exporting tags.
     if (courseId && courseName && location.hash === '#export-tags') {
-      setToastMessage(intl.formatMessage(messages.exportTagsCreatingToastMessage));
+      setToastMessage(messages.exportTagsCreatingToastMessage.defaultMessage);
       getTagsExportFile(courseId, courseName).then(() => {
-        setToastMessage(intl.formatMessage(messages.exportTagsSuccessToastMessage));
+        setToastMessage(messages.exportTagsSuccessToastMessage.defaultMessage);
       }).catch(() => {
-        setToastMessage(intl.formatMessage(messages.exportTagsErrorToastMessage));
+        setToastMessage(messages.exportTagsErrorToastMessage.defaultMessage);
       });
 
       // Delete `#export-tags` from location
@@ -257,21 +257,21 @@ const CourseOutline = ({ courseId }) => {
           <TransitionReplace>
             {showSuccessAlert ? (
               <AlertMessage
-                key={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
+                key={messages.alertSuccessAriaLabelledby.defaultMessage}
                 show={showSuccessAlert}
                 variant="success"
                 icon={CheckCircleIcon}
-                title={intl.formatMessage(messages.alertSuccessTitle)}
-                description={intl.formatMessage(messages.alertSuccessDescription)}
+                title={messages.alertSuccessTitle.defaultMessage}
+                description={messages.alertSuccessDescription.defaultMessage}
                 aria-hidden="true"
-                aria-labelledby={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
-                aria-describedby={intl.formatMessage(messages.alertSuccessAriaDescribedby)}
+                aria-labelledby={messages.alertSuccessAriaLabelledby.defaultMessage}
+                aria-describedby={messages.alertSuccessAriaDescribedby.defaultMessage}
               />
             ) : null}
           </TransitionReplace>
           <SubHeader
-            title={intl.formatMessage(messages.headingTitle)}
-            subtitle={intl.formatMessage(messages.headingSubtitle)}
+            title={messages.headingTitle.defaultMessage}
+            subtitle={messages.headingSubtitle.defaultMessage}
             headerActions={(
               <HeaderNavigations
                 isReIndexShow={isReIndexShow}

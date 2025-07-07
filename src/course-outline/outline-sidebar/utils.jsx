@@ -18,47 +18,47 @@ const getFormattedSidebarMessages = (docsLinks, intl) => {
 
   return [
     {
-      title: intl.formatMessage(messages.section_1_title),
+      title: messages.section_1_title.defaultMessage,
       descriptions: [
-        intl.formatMessage(messages.section_1_descriptions_1),
-        intl.formatMessage(messages.section_1_descriptions_2),
+        messages.section_1_descriptions_1.defaultMessage,
+        messages.section_1_descriptions_2.defaultMessage,
       ],
     },
     {
-      title: intl.formatMessage(messages.section_2_title),
+      title: messages.section_2_title.defaultMessage,
       descriptions: [
-        intl.formatMessage(messages.section_2_descriptions_1),
+        messages.section_2_descriptions_1.defaultMessage,
       ],
       link: {
-        text: intl.formatMessage(messages.section_2_link),
+        text: messages.section_2_link.defaultMessage,
         href: learnMoreOutlineUrl,
       },
     },
     {
-      title: intl.formatMessage(messages.section_3_title),
+      title: messages.section_3_title.defaultMessage,
       descriptions: [
-        intl.formatMessage(messages.section_3_descriptions_1),
+        messages.section_3_descriptions_1.defaultMessage,
       ],
       link: {
-        text: intl.formatMessage(messages.section_3_link),
+        text: messages.section_3_link.defaultMessage,
         href: learnMoreGradingUrl,
       },
     },
     {
-      title: intl.formatMessage(messages.section_4_title),
+      title: messages.section_4_title.defaultMessage,
       descriptions: [
-        intl.formatMessage(messages.section_4_descriptions_1),
+        messages.section_4_descriptions_1.defaultMessage,
         intl.formatMessage(
           messages.section_4_descriptions_2,
-          { hide: <strong>{intl.formatMessage(messages.section_4_descriptions_2_hide)}</strong> },
+          { hide: <strong>{messages.section_4_descriptions_2_hide.defaultMessage}</strong> },
         ),
         intl.formatMessage(
           messages.section_4_descriptions_3,
-          { hide: <strong>{intl.formatMessage(messages.section_4_descriptions_3_hide)}</strong> },
+          { hide: <strong>{messages.section_4_descriptions_3_hide.defaultMessage}</strong> },
         ),
       ],
       link: {
-        text: intl.formatMessage(messages.section_4_link),
+        text: messages.section_4_link.defaultMessage,
         href: learnMoreVisibilityUrl,
       },
     },

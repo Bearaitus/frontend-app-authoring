@@ -17,7 +17,7 @@ export const LibraryTeamModal: React.FC<Record<never, never>> = () => {
   // Show Library Team modal in full screen
   return (
     <StandardModal
-      title={intl.formatMessage(messages.modalTitle)}
+      title={messages.modalTitle.defaultMessage}
       isOpen={isLibraryTeamModalOpen}
       onClose={closeLibraryTeamModal}
       size="lg"

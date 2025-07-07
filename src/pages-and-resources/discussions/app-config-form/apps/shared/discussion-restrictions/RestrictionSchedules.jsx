@@ -71,7 +71,7 @@ const RestrictionSchedules = () => {
                 className="text-primary-500 p-0"
                 style={{ height: 28 }}
               >
-                {intl.formatMessage(messages.addRestrictedDatesButton)}
+                {messages.addRestrictedDatesButton.defaultMessage}
               </Button>
             </div>
           </div>

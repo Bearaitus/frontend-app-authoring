@@ -42,7 +42,7 @@ export const durationWidget = ({ duration, updateField }) => {
     getTotalLabel: ({ durationString, subtitle, intl }) => {
       if (!durationString.stopTime) {
         if (!durationString.startTime) {
-          return intl.formatMessage(messages.fullVideoLength);
+          return messages.fullVideoLength.defaultMessage;
         }
         if (subtitle) {
           return intl.formatMessage(

@@ -10,7 +10,7 @@ const ModalError = ({
   intl, isError, handleUndoChanges, showErrorModal, errorList, settingsData,
 }) => (
   <AlertModal
-    title={intl.formatMessage(messages.modalErrorTitle)}
+    title={messages.modalErrorTitle.defaultMessage}
     isOpen={isError}
     variant="danger"
     footerNode={(
@@ -19,10 +19,10 @@ const ModalError = ({
           variant="tertiary"
           onClick={() => showErrorModal(!isError)}
         >
-          {intl.formatMessage(messages.modalErrorButtonChangeManually)}
+          {messages.modalErrorButtonChangeManually.defaultMessage}
         </Button>
         <Button onClick={handleUndoChanges}>
-          {intl.formatMessage(messages.modalErrorButtonUndoChanges)}
+          {messages.modalErrorButtonUndoChanges.defaultMessage}
         </Button>
       </ActionRow>
     )}

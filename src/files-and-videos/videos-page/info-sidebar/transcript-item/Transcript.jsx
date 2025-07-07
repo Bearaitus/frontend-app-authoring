@@ -87,7 +87,7 @@ const Transcript = ({
           <LanguageSelect
             options={languages}
             value={newLanguage}
-            placeholderText={intl.formatMessage(messages.languageSelectPlaceholder)}
+            placeholderText={messages.languageSelectPlaceholder.defaultMessage}
             previousSelection={previousSelection}
             handleSelect={updateLangauge}
           />

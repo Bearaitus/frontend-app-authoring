@@ -48,7 +48,7 @@ const CourseImportPage = ({ intl, courseId }) => {
       <Helmet>
         <title>
           {intl.formatMessage(messages.pageTitle, {
-            headingTitle: intl.formatMessage(messages.headingTitle),
+            headingTitle: messages.headingTitle.defaultMessage,
             courseName: courseDetails?.name,
             siteName: process.env.SITE_NAME,
           })}
@@ -66,12 +66,12 @@ const CourseImportPage = ({ intl, courseId }) => {
             <Layout.Element>
               <article>
                 <SubHeader
-                  title={intl.formatMessage(messages.headingTitle)}
-                  subtitle={intl.formatMessage(messages.headingSubtitle)}
+                  title={messages.headingTitle.defaultMessage}
+                  subtitle={messages.headingSubtitle.defaultMessage}
                 />
-                <p className="small">{intl.formatMessage(messages.description1)}</p>
-                <p className="small">{intl.formatMessage(messages.description2)}</p>
-                <p className="small">{intl.formatMessage(messages.description3)}</p>
+                <p className="small">{messages.description1.defaultMessage}</p>
+                <p className="small">{messages.description2.defaultMessage}</p>
+                <p className="small">{messages.description3.defaultMessage}</p>
                 <FileSection courseId={courseId} />
                 {importTriggered && <ImportStepper courseId={courseId} />}
               </article>

@@ -13,17 +13,17 @@ const CoursesTypesFilterMenu = ({ onItemMenuSelected }) => {
     () => [
       {
         id: 'all-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuAllCurses),
+        name: messages.coursesTypesFilterMenuAllCurses.defaultMessage,
         value: 'allCourses',
       },
       {
         id: 'active-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuActiveCurses),
+        name: messages.coursesTypesFilterMenuActiveCurses.defaultMessage,
         value: 'activeCourses',
       },
       {
         id: 'archived-courses',
-        name: intl.formatMessage(messages.coursesTypesFilterMenuArchivedCurses),
+        name: messages.coursesTypesFilterMenuArchivedCurses.defaultMessage,
         value: 'archivedCourses',
       },
     ],
@@ -39,7 +39,7 @@ const CoursesTypesFilterMenu = ({ onItemMenuSelected }) => {
       id="dropdown-toggle-course-type-menu"
       menuItems={courseTypes}
       onItemMenuSelected={handleCourseTypeSelected}
-      defaultItemSelectedText={intl.formatMessage(messages.coursesTypesFilterMenuAllCurses)}
+      defaultItemSelectedText={messages.coursesTypesFilterMenuAllCurses.defaultMessage}
     />
   );
 };

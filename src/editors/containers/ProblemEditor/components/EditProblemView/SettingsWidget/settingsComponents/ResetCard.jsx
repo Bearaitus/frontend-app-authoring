@@ -21,9 +21,9 @@ const ResetCard = ({
   const currentResetButton = showResetButton !== null ? showResetButton : defaultValue;
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.resetSettingsTitle)}
+      title={messages.resetSettingsTitle.defaultMessage}
       summary={currentResetButton
-        ? intl.formatMessage(messages.resetSettingsTrue) : intl.formatMessage(messages.resetSettingsFalse)}
+        ? messages.resetSettingsTrue.defaultMessage : messages.resetSettingsFalse.defaultMessage}
       className="resetCard"
     >
       <div className="halfSpacedMessage">

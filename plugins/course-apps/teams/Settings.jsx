@@ -46,17 +46,17 @@ const TeamSettings = ({
     });
   };
   const enableAppError = {
-    title: intl.formatMessage(messages.noGroupsErrorTitle),
-    message: intl.formatMessage(messages.noGroupsErrorMessage),
+    title: messages.noGroupsErrorTitle.defaultMessage,
+    message: messages.noGroupsErrorMessage.defaultMessage,
   };
 
   return (
     <AppSettingsModal
       appId="teams"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableTeamsHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableTeamsLabel)}
-      learnMoreText={intl.formatMessage(messages.enableTeamsLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableTeamsHelp.defaultMessage}
+      enableAppLabel={messages.enableTeamsLabel.defaultMessage}
+      learnMoreText={messages.enableTeamsLink.defaultMessage}
       onClose={onClose}
       bodyClassName="bg-light-200"
       // Topic is supported for backwards compatibility, the new field is team_sets:
@@ -73,8 +73,8 @@ const TeamSettings = ({
             (value, context) => (!value || context.parent.groups.length > 0),
           ),
         maxTeamSize: Yup.number()
-          .required(intl.formatMessage(messages.maxTeamSizeEmpty))
-          .min(TeamSizes.MIN, intl.formatMessage(messages.maxTeamSizeInvalid))
+          .required(messages.maxTeamSizeEmpty.defaultMessage)
+          .min(TeamSizes.MIN, messages.maxTeamSizeInvalid.defaultMessage)
           .max(
             TeamSizes.MAX,
             intl.formatMessage(messages.maxTeamSizeTooHigh, {
@@ -85,15 +85,15 @@ const TeamSettings = ({
           Yup.object({
             id: Yup.string().nullable(),
             name: Yup.string()
-              .required(intl.formatMessage(messages.groupFormNameEmpty))
+              .required(messages.groupFormNameEmpty.defaultMessage)
               .trim(),
             type: Yup.string().oneOf(Object.values(GroupTypes)),
             description: Yup.string()
-              .required(intl.formatMessage(messages.groupFormDescriptionError))
+              .required(messages.groupFormDescriptionError.defaultMessage)
               .trim(),
             maxTeamSize: Yup.number()
               .nullable()
-              .min(TeamSizes.MIN, intl.formatMessage(messages.maxTeamSizeInvalid))
+              .min(TeamSizes.MIN, messages.maxTeamSizeInvalid.defaultMessage)
               .max(
                 TeamSizes.MAX,
                 intl.formatMessage(messages.maxTeamSizeTooHigh, {
@@ -108,7 +108,7 @@ const TeamSettings = ({
             then: Yup.array().min(1),
           })
           .default([])
-          .uniqueProperty('name', intl.formatMessage(messages.groupFormNameExists)),
+          .uniqueProperty('name', messages.groupFormNameExists.defaultMessage),
       }}
       onSettingsSave={handleSettingsSave}
       configureBeforeEnable
@@ -118,18 +118,18 @@ const TeamSettings = ({
           handleChange, handleBlur, values, errors,
         }) => (
           <>
-            <h4 className="my-3 pb-2">{intl.formatMessage(messages.teamSize)}</h4>
+            <h4 className="my-3 pb-2">{messages.teamSize.defaultMessage}</h4>
             <FormikControl
               name="maxTeamSize"
               value={values.maxTeamSize}
-              floatingLabel={intl.formatMessage(messages.maxTeamSize)}
-              help={intl.formatMessage(messages.maxTeamSizeHelp)}
+              floatingLabel={messages.maxTeamSize.defaultMessage}
+              help={messages.maxTeamSizeHelp.defaultMessage}
               className="pb-1"
               type="number"
             />
             <div className="bg-light-200 d-flex flex-column mx-n4 px-4 py-4 border border-top mb-n3.5">
-              <h4>{intl.formatMessage(messages.groups)}</h4>
-              <Form.Text className="mb-3">{intl.formatMessage(messages.groupsHelp)}</Form.Text>
+              <h4>{messages.groups.defaultMessage}</h4>
+              <Form.Text className="mb-3">{messages.groupsHelp.defaultMessage}</Form.Text>
               <FieldArray name="groups">
                 {({ push, remove }) => (
                   <>
@@ -150,7 +150,7 @@ const TeamSettings = ({
                       iconBefore={Add}
                       onClick={() => push(blankNewGroup)}
                     >
-                      {intl.formatMessage(messages.addGroup)}
+                      {messages.addGroup.defaultMessage}
                     </Button>
                   </>
                 )}

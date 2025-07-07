@@ -64,7 +64,7 @@ const SequenceNavigationTabs = ({
             iconBefore={PlusIcon}
             onClick={handleAddNewSequenceUnit}
           >
-            {intl.formatMessage(messages.newUnitBtnText)}
+            {messages.newUnitBtnText.defaultMessage}
           </Button>
           {showPasteUnit && (
             <Button
@@ -73,7 +73,7 @@ const SequenceNavigationTabs = ({
               iconBefore={ContentPasteGoIcon}
               onClick={handlePasteNewSequenceUnit}
             >
-              {intl.formatMessage(messages.pasteAsNewUnitLink)}
+              {messages.pasteAsNewUnitLink.defaultMessage}
             </Button>
           )}
         </div>

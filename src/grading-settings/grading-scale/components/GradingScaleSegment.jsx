@@ -54,7 +54,7 @@ const GradingScaleSegment = ({
         type="button"
         onClick={() => removeGradingSegment(idx)}
       >
-        {intl.formatMessage(messages.removeSegmentButtonText)}
+        {messages.removeSegmentButtonText.defaultMessage}
       </Button>
     )}
   </div>

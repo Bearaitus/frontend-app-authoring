@@ -95,7 +95,7 @@ const TagListTable = ({ taxonomyId }) => {
         )}
         columns={[
           {
-            Header: intl.formatMessage(messages.tagListColumnValueHeader),
+            Header: messages.tagListColumnValueHeader.defaultMessage,
             Cell: TagValue,
           },
           {
@@ -106,7 +106,7 @@ const TagListTable = ({ taxonomyId }) => {
         ]}
       >
         <DataTable.Table />
-        <DataTable.EmptyTable content={intl.formatMessage(messages.noResultsFoundMessage)} />
+        <DataTable.EmptyTable content={messages.noResultsFoundMessage.defaultMessage} />
         {tagList?.numPages !== undefined && tagList?.numPages > 1
           && <DataTable.TableFooter />}
       </DataTable>

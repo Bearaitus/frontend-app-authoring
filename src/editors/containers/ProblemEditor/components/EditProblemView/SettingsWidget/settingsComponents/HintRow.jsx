@@ -27,7 +27,7 @@ const HintRow = ({
       <ExpandableTextArea
         value={value}
         setContent={handleChange}
-        placeholder={intl.formatMessage(messages.hintInputLabel)}
+        placeholder={messages.hintInputLabel.defaultMessage}
         id={`hint-${id}`}
         {...{
           images,
@@ -40,7 +40,7 @@ const HintRow = ({
       <IconButton
         src={DeleteOutline}
         iconAs={Icon}
-        alt={intl.formatMessage(messages.settingsDeleteIconAltText)}
+        alt={messages.settingsDeleteIconAltText.defaultMessage}
         onClick={handleDelete}
         variant="primary"
       />

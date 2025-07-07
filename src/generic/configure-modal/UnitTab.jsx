@@ -75,8 +75,8 @@ const UnitTab = ({
           >
             <option value="-1" key="-1">
               {userPartitionInfo.selectedPartitionIndex === -1
-                ? intl.formatMessage(messages.unitSelectGroupType)
-                : intl.formatMessage(messages.unitAllLearnersAndStaff)}
+                ? messages.unitSelectGroupType.defaultMessage
+                : messages.unitAllLearnersAndStaff.defaultMessage}
             </option>
             {userPartitionInfo.selectablePartitions.map((partition, index) => (
               <option
@@ -119,7 +119,7 @@ const UnitTab = ({
                       </Form.Label>
                       {group.deleted && (
                         <Form.Control.Feedback type="invalid" hasIcon={false}>
-                          {intl.formatMessage(messages.unitSelectDeletedGroupErrorMessage)}
+                          {messages.unitSelectDeletedGroupErrorMessage.defaultMessage}
                         </Form.Control.Feedback>
                       )}
                     </div>

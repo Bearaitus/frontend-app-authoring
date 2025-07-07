@@ -10,7 +10,7 @@ import { convertGradeData, MAXIMUM_SCALE_LENGTH } from './utils';
 import { GradingScaleTicks, GradingScaleHandle, GradingScaleSegment } from './components';
 
 const DEFAULT_LETTERS = ['A', 'B', 'C', 'D'];
-const getDefaultPassText = intl => intl.formatMessage(messages.defaultPassText);
+const getDefaultPassText = intl => messages.defaultPassText.defaultMessage;
 
 const GradingScale = ({
   intl,
@@ -190,13 +190,13 @@ const GradingScale = ({
     <div className="grading-scale">
       <IconButtonWithTooltip
         tooltipPlacement="top"
-        tooltipContent={intl.formatMessage(messages.addNewSegmentButtonAltText)}
+        tooltipContent={messages.addNewSegmentButtonAltText.defaultMessage}
         disabled={gradingSegments.length >= 5}
         data-testid="grading-scale-btn-add-segment"
         className="mr-3"
         src={IconAdd}
         iconAs={Icon}
-        alt={intl.formatMessage(messages.addNewSegmentButtonAltText)}
+        alt={messages.addNewSegmentButtonAltText.defaultMessage}
         onClick={addNewGradingSegment}
       />
       <div className="grading-scale-segments-and-ticks" {...getTrackProps()}>

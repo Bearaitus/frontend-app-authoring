@@ -219,7 +219,7 @@ const FileTable = ({
             onProcessUpload={handleDropzoneAsset}
             maxSize={maxFileSize}
             errorMessages={{
-              invalidSize: intl.formatMessage(messages.fileSizeError),
+              invalidSize: messages.fileSizeError.defaultMessage,
               multipleDragged: 'Dropzone can only upload a single file.',
             }}
           />
@@ -229,13 +229,13 @@ const FileTable = ({
             <hr className="mb-5 border-light-700" />
             { currentView === 'card' && <CardView CardComponent={fileCard} columnSizes={columnSizes} selectionPlacement="left" skeletonCardCount={6} /> }
             { currentView === 'list' && <DataTable.Table /> }
-            <DataTable.EmptyTable content={intl.formatMessage(messages.noResultsFoundMessage)} />
+            <DataTable.EmptyTable content={messages.noResultsFoundMessage.defaultMessage} />
             <Footer />
           </div>
         )}
 
         <ApiStatusToast
-          actionType={intl.formatMessage(messages.apiStatusDeletingAction)}
+          actionType={messages.apiStatusDeletingAction.defaultMessage}
           selectedRowCount={selectedRows.length}
           isOpen={isDeleteOpen}
           setClose={setDeleteClose}
@@ -245,7 +245,7 @@ const FileTable = ({
 
         {fileType === 'files' && (
           <ApiStatusToast
-            actionType={intl.formatMessage(messages.apiStatusAddingAction)}
+            actionType={messages.apiStatusAddingAction.defaultMessage}
             selectedRowCount={selectedRows.length}
             isOpen={isAddOpen}
             setClose={setAddClose}
@@ -255,7 +255,7 @@ const FileTable = ({
         )}
 
         <ApiStatusToast
-          actionType={intl.formatMessage(messages.apiStatusDownloadingAction)}
+          actionType={messages.apiStatusDownloadingAction.defaultMessage}
           selectedRowCount={selectedRows.length}
           isOpen={isDownloadOpen}
           setClose={setDownloadClose}

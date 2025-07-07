@@ -52,7 +52,7 @@ const UsageMetricsMessage = ({
           animation="border"
           size="sm"
           className="mie-3"
-          screenReaderText={intl.formatMessage(messages.usageLoadingMessage)}
+          screenReaderText={messages.usageLoadingMessage.defaultMessage}
         />
         <FormattedMessage {...messages.usageLoadingMessage} />
       </>

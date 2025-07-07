@@ -54,8 +54,8 @@ const CustomPageCard = ({
 
   const deletePageStateProps = {
     labels: {
-      default: intl.formatMessage(messages.deletePageLabel),
-      pending: intl.formatMessage(messages.deletingPageBodyLabel),
+      default: messages.deletePageLabel.defaultMessage,
+      pending: messages.deletingPageBodyLabel.defaultMessage,
     },
     icons: {
       pending: <Icon src={SpinnerSimple} className="icon-spin" />,
@@ -67,54 +67,54 @@ const CustomPageCard = ({
     <>
       <ActionRow>
         <div className="h4" data-testid="card-title">
-          {page?.name || intl.formatMessage(messages.newPageTitle)}
+          {page?.name || messages.newPageTitle.defaultMessage}
         </div>
         <ActionRow.Spacer />
         <IconButtonWithTooltip
-          key={intl.formatMessage(messages.editTooltipContent)}
+          key={messages.editTooltipContent.defaultMessage}
           tooltipPlacement="top"
-          tooltipContent={intl.formatMessage(messages.editTooltipContent)}
+          tooltipContent={messages.editTooltipContent.defaultMessage}
           src={EditOutline}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.editTooltipContent)}
+          alt={messages.editTooltipContent.defaultMessage}
           onClick={handleEditOpen}
           data-testid="edit-modal-icon"
         />
         <IconButtonWithTooltip
-          key={intl.formatMessage(messages.visibilityTooltipContent)}
+          key={messages.visibilityTooltipContent.defaultMessage}
           tooltipPlacement="top"
-          tooltipContent={intl.formatMessage(messages.visibilityTooltipContent)}
+          tooltipContent={messages.visibilityTooltipContent.defaultMessage}
           src={page.courseStaffOnly ? VisibilityOff : Visibility}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.visibilityTooltipContent)}
+          alt={messages.visibilityTooltipContent.defaultMessage}
           onClick={toggleVisibility}
           data-testid="visibility-toggle-icon"
         />
         <IconButtonWithTooltip
-          key={intl.formatMessage(messages.deleteTooltipContent)}
+          key={messages.deleteTooltipContent.defaultMessage}
           tooltipPlacement="top"
-          tooltipContent={intl.formatMessage(messages.deleteTooltipContent)}
+          tooltipContent={messages.deleteTooltipContent.defaultMessage}
           src={DeleteOutline}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.deleteTooltipContent)}
+          alt={messages.deleteTooltipContent.defaultMessage}
           onClick={openDeleteConfirmation}
           data-testid="delete-modal-icon"
         />
       </ActionRow>
       <AlertModal
-        title={intl.formatMessage(messages.deleteConfirmationTitle)}
+        title={messages.deleteConfirmationTitle.defaultMessage}
         isOpen={isDeleteConfirmationOpen}
         onClose={closeDeleteConfirmation}
         footerNode={(
           <ActionRow>
             <Button variant="tertiary" onClick={closeDeleteConfirmation}>
-              {intl.formatMessage(messages.cancelButtonLabel)}
+              {messages.cancelButtonLabel.defaultMessage}
             </Button>
             <StatefulButton onClick={handleDelete} state={deletePageStatus} {...deletePageStateProps} />
           </ActionRow>
         )}
       >
-        {intl.formatMessage(messages.deleteConfirmationMessage)}
+        {messages.deleteConfirmationMessage.defaultMessage}
       </AlertModal>
     </>
   );

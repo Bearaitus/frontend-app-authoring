@@ -58,7 +58,7 @@ const DiscussionRestriction = () => {
   return (
     <div className="discussion-restriction">
       <h5 className="text-gray-500 mt-4 mb-3 line-height-20">
-        {intl.formatMessage(messages.discussionRestrictionLabel)}
+        {messages.discussionRestrictionLabel.defaultMessage}
       </h5>
       <ButtonGroup className="mb-2 w-100" toggle size="sm">
         {discussionRestrictionButtons}
@@ -70,12 +70,12 @@ const DiscussionRestriction = () => {
         && selectedRestrictionOption === discussionRestriction.ENABLED
       ) && (
         <ConfirmationPopup
-          label={intl.formatMessage(messages.enableRestrictedDatesConfirmationLabel)}
-          bodyText={intl.formatMessage(messages.enableRestrictedDatesConfirmationHelp)}
+          label={messages.enableRestrictedDatesConfirmationLabel.defaultMessage}
+          bodyText={messages.enableRestrictedDatesConfirmationHelp.defaultMessage}
           onCancel={handleCancel}
           onConfirm={handleConfirmation}
-          confirmLabel={intl.formatMessage(messages.ok)}
-          cancelLabel={intl.formatMessage(messages.cancelButton)}
+          confirmLabel={messages.ok.defaultMessage}
+          cancelLabel={messages.cancelButton.defaultMessage}
           confirmVariant="plain"
           confirmButtonClass="bg-primary-500 text-white rounded-0 action-btn"
           cancelButtonClass="rounded-0 action-btn w-92"

@@ -13,10 +13,10 @@ const SystemDefinedBadge = ({ taxonomyId }) => {
   const getToolTip = () => (
     <Popover id={`system-defined-tooltip-${taxonomyId}`} className="mw-300px">
       <Popover.Title as="h5">
-        {intl.formatMessage(messages.systemTaxonomyPopoverTitle)}
+        {messages.systemTaxonomyPopoverTitle.defaultMessage}
       </Popover.Title>
       <Popover.Content>
-        {intl.formatMessage(messages.systemTaxonomyPopoverBody)}
+        {messages.systemTaxonomyPopoverBody.defaultMessage}
       </Popover.Content>
     </Popover>
   );
@@ -28,7 +28,7 @@ const SystemDefinedBadge = ({ taxonomyId }) => {
       overlay={getToolTip()}
     >
       <Badge variant="light" className="p-1.5 font-weight-normal system-defined-badge">
-        {intl.formatMessage(messages.systemDefinedBadge)}
+        {messages.systemDefinedBadge.defaultMessage}
       </Badge>
     </OverlayTrigger>
   );

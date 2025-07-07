@@ -84,14 +84,14 @@ const BbbSettings = ({
         <AppConfigFormDivider thick marginAdj={{ default: 0, sm: 2 }} />
         {isPiiDisabled ? (
           <p data-testid="help-request-pii-sharing">
-            {intl.formatMessage(messages.piiSharingEnableHelpTextBbb)}
+            {messages.piiSharingEnableHelpTextBbb.defaultMessage}
           </p>
         ) : (
           <>
             {bbbPlan === bbbPlanTypes.commercial && <LiveCommonFields values={values} />}
             {bbbPlan === bbbPlanTypes.free && (
               <span data-testid="free-plan-message">
-                {intl.formatMessage(messages.freePlanMessage)}
+                {messages.freePlanMessage.defaultMessage}
                 <Hyperlink
                   destination="https://bigbluebutton.org/privacy-policy/"
                   target="_blank"
@@ -99,7 +99,7 @@ const BbbSettings = ({
                   showLaunchIcon
                   className="text-gray-700 ml-1"
                 >
-                  {intl.formatMessage(messages.privacyPolicy)}
+                  {messages.privacyPolicy.defaultMessage}
                 </Hyperlink>
               </span>
             )}

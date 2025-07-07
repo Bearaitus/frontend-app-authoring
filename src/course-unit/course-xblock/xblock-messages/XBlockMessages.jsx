@@ -24,7 +24,7 @@ const XBlockMessages = ({ validationMessages }) => {
       icon={alertIcon}
     >
       <Alert.Heading>
-        {intl.formatMessage(messages.validationSummary)}
+        {messages.validationSummary.defaultMessage}
       </Alert.Heading>
       <ul>
         {validationMessages.map(({ text }) => (

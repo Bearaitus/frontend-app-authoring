@@ -39,9 +39,9 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
   } = useFormik({
     initialValues: ltiAppConfig,
     validationSchema: Yup.object().shape({
-      consumerKey: Yup.string().required(intl.formatMessage(messages.consumerKeyRequired)),
-      consumerSecret: Yup.string().required(intl.formatMessage(messages.consumerSecretRequired)),
-      launchUrl: Yup.string().required(intl.formatMessage(messages.launchUrlRequired)),
+      consumerKey: Yup.string().required(messages.consumerKeyRequired.defaultMessage),
+      consumerSecret: Yup.string().required(messages.consumerSecretRequired.defaultMessage),
+      launchUrl: Yup.string().required(messages.launchUrlRequired.defaultMessage),
       piiShareUsername: Yup.bool(),
       piiShareEmail: Yup.bool(),
     }),
@@ -95,7 +95,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
         </p>
         {(showLTIConfig && piiConfig.piiSharing) && (
           <>
-            <p>{intl.formatMessage(messages.formInstructions)}</p>
+            <p>{messages.formInstructions.defaultMessage}</p>
             <Form.Group
               controlId="consumerKey"
               isInvalid={isInvalidConsumerKey}
@@ -103,7 +103,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
               data-testid="ltiConfigFields"
             >
               <Form.Control
-                floatingLabel={intl.formatMessage(messages.consumerKey)}
+                floatingLabel={messages.consumerKey.defaultMessage}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.consumerKey}
@@ -120,7 +120,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
               className="mb-4"
             >
               <Form.Control
-                floatingLabel={intl.formatMessage(messages.consumerSecret)}
+                floatingLabel={messages.consumerSecret.defaultMessage}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.consumerSecret}
@@ -133,7 +133,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
             </Form.Group>
             <Form.Group controlId="launchUrl" isInvalid={isInvalidLaunchUrl}>
               <Form.Control
-                floatingLabel={intl.formatMessage(messages.launchUrl)}
+                floatingLabel={messages.launchUrl.defaultMessage}
                 onChange={handleChange}
                 onBlur={handleBlur}
                 value={values.launchUrl}
@@ -148,7 +148,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
         )}
         {(enablePIISharing) && (
           <div data-testid="piiSharingFields">
-            <Form.Text className="my-2">{intl.formatMessage(messages.piiSharing)}</Form.Text>
+            <Form.Text className="my-2">{messages.piiSharing.defaultMessage}</Form.Text>
             <Form.Group controlId="piiSharing">
               <Form.Check
                 type="checkbox"
@@ -156,7 +156,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 checked={values.piiShareUsername}
-                label={intl.formatMessage(messages.piiShareUsername)}
+                label={messages.piiShareUsername.defaultMessage}
               />
               <Form.Check
                 type="checkbox"
@@ -164,7 +164,7 @@ const LtiConfigForm = ({ onSubmit, intl, formRef }) => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 checked={values.piiShareEmail}
-                label={intl.formatMessage(messages.piiShareEmail)}
+                label={messages.piiShareEmail.defaultMessage}
               />
             </Form.Group>
           </div>

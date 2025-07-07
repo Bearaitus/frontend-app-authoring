@@ -14,17 +14,17 @@ const TextbookSidebar = ({ courseId }) => {
   return (
     <HelpSidebar courseId={courseId} className="pt-4">
       <h4 className="help-sidebar-about-title">
-        {intl.formatMessage(messages.section_1_title)}
+        {messages.section_1_title.defaultMessage}
       </h4>
       <p className="help-sidebar-about-descriptions">
-        {intl.formatMessage(messages.section_1_descriptions)}
+        {messages.section_1_descriptions.defaultMessage}
       </p>
       <hr className="my-3.5" />
       <h4 className="help-sidebar-about-title">
-        {intl.formatMessage(messages.section_2_title)}
+        {messages.section_2_title.defaultMessage}
       </h4>
       <p className="help-sidebar-about-descriptions">
-        {intl.formatMessage(messages.section_2_descriptions)}
+        {messages.section_2_descriptions.defaultMessage}
       </p>
       <Hyperlink
         className="small"
@@ -32,7 +32,7 @@ const TextbookSidebar = ({ courseId }) => {
         target="_blank"
         showLaunchIcon={false}
       >
-        {intl.formatMessage(messages.sectionLink)}
+        {messages.sectionLink.defaultMessage}
       </Hyperlink>
     </HelpSidebar>
   );

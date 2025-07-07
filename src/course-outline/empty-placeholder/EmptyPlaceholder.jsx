@@ -14,13 +14,13 @@ const EmptyPlaceholder = ({
 
   return (
     <div className="outline-empty-placeholder bg-gray-100" data-testid="empty-placeholder">
-      <p className="mb-0 text-gray-500">{intl.formatMessage(messages.title)}</p>
+      <p className="mb-0 text-gray-500">{messages.title.defaultMessage}</p>
       {childAddable && (
         <OverlayTrigger
           placement="bottom"
           overlay={(
-            <Tooltip id={intl.formatMessage(messages.tooltip)}>
-              {intl.formatMessage(messages.tooltip)}
+            <Tooltip id={messages.tooltip.defaultMessage}>
+              {messages.tooltip.defaultMessage}
             </Tooltip>
           )}
         >
@@ -30,7 +30,7 @@ const EmptyPlaceholder = ({
             iconBefore={IconAdd}
             onClick={onCreateNewSection}
           >
-            {intl.formatMessage(messages.button)}
+            {messages.button.defaultMessage}
           </Button>
         </OverlayTrigger>
       )}

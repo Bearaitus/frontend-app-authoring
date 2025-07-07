@@ -39,7 +39,7 @@ const AdvancedSettings = ({ intl, courseId }) => {
   const [hasInternetConnectionError, setInternetConnectionError] = useState(false);
 
   const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle));
+  document.title = getPageHeadTitle(courseDetails?.name, messages.headingTitle.defaultMessage);
 
   useEffect(() => {
     dispatch(fetchCourseAppSettings(courseId));
@@ -55,8 +55,8 @@ const AdvancedSettings = ({ intl, courseId }) => {
   const isLoading = loadingSettingsStatus === RequestStatus.IN_PROGRESS;
   const updateSettingsButtonState = {
     labels: {
-      default: intl.formatMessage(messages.buttonSaveText),
-      pending: intl.formatMessage(messages.buttonSavingText),
+      default: messages.buttonSaveText.defaultMessage,
+      pending: messages.buttonSavingText.defaultMessage,
     },
     disabledStates: ['pending'],
   };
@@ -137,22 +137,22 @@ const AdvancedSettings = ({ intl, courseId }) => {
               icon={Info}
               proctoringErrorsData={proctoringErrors}
               aria-hidden="true"
-              aria-labelledby={intl.formatMessage(messages.alertProctoringAriaLabelledby)}
-              aria-describedby={intl.formatMessage(messages.alertProctoringDescribedby)}
+              aria-labelledby={messages.alertProctoringAriaLabelledby.defaultMessage}
+              aria-describedby={messages.alertProctoringDescribedby.defaultMessage}
             />
           )}
           <TransitionReplace>
             {showSuccessAlert ? (
               <AlertMessage
-                key={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
+                key={messages.alertSuccessAriaLabelledby.defaultMessage}
                 show={showSuccessAlert}
                 variant="success"
                 icon={CheckCircle}
-                title={intl.formatMessage(messages.alertSuccess)}
-                description={intl.formatMessage(messages.alertSuccessDescriptions)}
+                title={messages.alertSuccess.defaultMessage}
+                description={messages.alertSuccessDescriptions.defaultMessage}
                 aria-hidden="true"
-                aria-labelledby={intl.formatMessage(messages.alertSuccessAriaLabelledby)}
-                aria-describedby={intl.formatMessage(messages.alertSuccessAriaDescribedby)}
+                aria-labelledby={messages.alertSuccessAriaLabelledby.defaultMessage}
+                aria-describedby={messages.alertSuccessAriaDescribedby.defaultMessage}
               />
             ) : null}
           </TransitionReplace>
@@ -167,9 +167,9 @@ const AdvancedSettings = ({ intl, courseId }) => {
           >
             <Layout.Element>
               <SubHeader
-                subtitle={intl.formatMessage(messages.headingSubtitle)}
-                title={intl.formatMessage(messages.headingTitle)}
-                contentTitle={intl.formatMessage(messages.policy)}
+                subtitle={messages.headingSubtitle.defaultMessage}
+                title={messages.headingTitle.defaultMessage}
+                contentTitle={messages.policy.defaultMessage}
               />
               <article>
                 <div>
@@ -192,8 +192,8 @@ const AdvancedSettings = ({ intl, courseId }) => {
                           defaultMessage="{visibility} deprecated settings"
                           values={{
                             visibility:
-                                    showDeprecated ? intl.formatMessage(messages.deprecatedButtonHideText)
-                                      : intl.formatMessage(messages.deprecatedButtonShowText),
+                                    showDeprecated ? messages.deprecatedButtonHideText.defaultMessage
+                                      : messages.deprecatedButtonShowText.defaultMessage,
                           }}
                         />
                       </Button>
@@ -244,13 +244,13 @@ const AdvancedSettings = ({ intl, courseId }) => {
         <AlertMessage
           show={saveSettingsPrompt}
           aria-hidden={saveSettingsPrompt}
-          aria-labelledby={intl.formatMessage(messages.alertWarningAriaLabelledby)}
-          aria-describedby={intl.formatMessage(messages.alertWarningAriaDescribedby)}
+          aria-labelledby={messages.alertWarningAriaLabelledby.defaultMessage}
+          aria-describedby={messages.alertWarningAriaDescribedby.defaultMessage}
           role="dialog"
           actions={[
             !isQueryPending && (
               <Button variant="tertiary" onClick={handleResetSettingsValues}>
-                {intl.formatMessage(messages.buttonCancelText)}
+                {messages.buttonCancelText.defaultMessage}
               </Button>
             ),
             <StatefulButton
@@ -262,8 +262,8 @@ const AdvancedSettings = ({ intl, courseId }) => {
           ].filter(Boolean)}
           variant="warning"
           icon={Warning}
-          title={intl.formatMessage(messages.alertWarning)}
-          description={intl.formatMessage(messages.alertWarningDescriptions)}
+          title={messages.alertWarning.defaultMessage}
+          description={messages.alertWarningDescriptions.defaultMessage}
         />
       </div>
       <ModalError

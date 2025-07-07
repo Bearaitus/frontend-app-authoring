@@ -22,7 +22,7 @@ const DeleteDialog = ({
 }) => {
   const intl = useIntl();
   const [deleteButtonDisabled, setDeleteButtonDisabled] = useState(true);
-  const deleteLabel = intl.formatMessage(messages.deleteDialogConfirmDeleteLabel);
+  const deleteLabel = messages.deleteDialogConfirmDeleteLabel.defaultMessage;
 
   const handleInputChange = useCallback((event) => {
     if (event.target.value === deleteLabel) {
@@ -72,7 +72,7 @@ const DeleteDialog = ({
         <ModalDialog.Footer>
           <ActionRow>
             <ModalDialog.CloseButton variant="tertiary">
-              {intl.formatMessage(messages.deleteDialogCancelLabel)}
+              {messages.deleteDialogCancelLabel.defaultMessage}
             </ModalDialog.CloseButton>
             <Button
               variant="primary"
@@ -80,7 +80,7 @@ const DeleteDialog = ({
               onClick={onClickDelete}
               data-testid="delete-button"
             >
-              {intl.formatMessage(messages.deleteDialogDeleteLabel)}
+              {messages.deleteDialogDeleteLabel.defaultMessage}
             </Button>
           </ActionRow>
         </ModalDialog.Footer>

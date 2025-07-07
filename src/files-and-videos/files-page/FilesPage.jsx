@@ -40,7 +40,7 @@ const FilesPage = ({
 }) => {
   const dispatch = useDispatch();
   const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.heading));
+  document.title = getPageHeadTitle(courseDetails?.name, messages.heading.defaultMessage);
 
   useEffect(() => {
     dispatch(fetchAssets(courseId));
@@ -100,8 +100,8 @@ const FilesPage = ({
     Filter: CheckboxFilter,
     filter: 'exactTextCase',
     filterChoices: [
-      { name: intl.formatMessage(messages.activeCheckboxLabel), value: 'active' },
-      { name: intl.formatMessage(messages.inactiveCheckboxLabel), value: 'inactive' },
+      { name: messages.activeCheckboxLabel.defaultMessage, value: 'active' },
+      { name: messages.inactiveCheckboxLabel.defaultMessage, value: 'inactive' },
     ],
   };
   const accessColumn = {
@@ -111,8 +111,8 @@ const FilesPage = ({
     Cell: ({ row }) => AccessColumn({ row }),
     Filter: CheckboxFilter,
     filterChoices: [
-      { name: intl.formatMessage(messages.lockedCheckboxLabel), value: 'locked' },
-      { name: intl.formatMessage(messages.publicCheckboxLabel), value: 'public' },
+      { name: messages.lockedCheckboxLabel.defaultMessage, value: 'locked' },
+      { name: messages.publicCheckboxLabel.defaultMessage, value: 'public' },
     ],
   };
   const thumbnailColumn = {
@@ -144,23 +144,23 @@ const FilesPage = ({
       filter: 'includesValue',
       filterChoices: [
         {
-          name: intl.formatMessage(messages.codeCheckboxLabel),
+          name: messages.codeCheckboxLabel.defaultMessage,
           value: 'code',
         },
         {
-          name: intl.formatMessage(messages.imageCheckboxLabel),
+          name: messages.imageCheckboxLabel.defaultMessage,
           value: 'image',
         },
         {
-          name: intl.formatMessage(messages.documentCheckboxLabel),
+          name: messages.documentCheckboxLabel.defaultMessage,
           value: 'document',
         },
         {
-          name: intl.formatMessage(messages.audioCheckboxLabel),
+          name: messages.audioCheckboxLabel.defaultMessage,
           value: 'audio',
         },
         {
-          name: intl.formatMessage(messages.otherCheckboxLabel),
+          name: messages.otherCheckboxLabel.defaultMessage,
           value: 'other',
         },
       ],

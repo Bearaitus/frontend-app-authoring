@@ -13,22 +13,22 @@ const CoursesOrderFilterMenu = ({ onItemMenuSelected }) => {
     () => [
       {
         id: 'az-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuAscendantCurses),
+        name: messages.coursesOrderFilterMenuAscendantCurses.defaultMessage,
         value: 'azCourses',
       },
       {
         id: 'za-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuDescendantCurses),
+        name: messages.coursesOrderFilterMenuDescendantCurses.defaultMessage,
         value: 'zaCourses',
       },
       {
         id: 'newest-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuNewestCurses),
+        name: messages.coursesOrderFilterMenuNewestCurses.defaultMessage,
         value: 'newestCourses',
       },
       {
         id: 'oldest-courses',
-        name: intl.formatMessage(messages.coursesOrderFilterMenuOldestCurses),
+        name: messages.coursesOrderFilterMenuOldestCurses.defaultMessage,
         value: 'oldestCourses',
       },
     ],
@@ -44,7 +44,7 @@ const CoursesOrderFilterMenu = ({ onItemMenuSelected }) => {
       id="dropdown-toggle-courses-order-menu"
       menuItems={courseOrders}
       onItemMenuSelected={handleCourseTypeSelected}
-      defaultItemSelectedText={intl.formatMessage(messages.coursesOrderFilterMenuAscendantCurses)}
+      defaultItemSelectedText={messages.coursesOrderFilterMenuAscendantCurses.defaultMessage}
     />
   );
 };

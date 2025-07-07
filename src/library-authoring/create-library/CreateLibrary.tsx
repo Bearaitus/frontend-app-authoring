@@ -55,7 +55,7 @@ const CreateLibrary = () => {
       <Header isHiddenMainMenu />
       <Container size="xl" className="p-4 mt-3">
         <SubHeader
-          title={intl.formatMessage(messages.createLibrary)}
+          title={messages.createLibrary.defaultMessage}
         />
         <Formik
           initialValues={{
@@ -66,19 +66,19 @@ const CreateLibrary = () => {
           validationSchema={
             Yup.object().shape({
               title: Yup.string()
-                .required(intl.formatMessage(messages.requiredFieldError)),
+                .required(messages.requiredFieldError.defaultMessage),
               org: Yup.string()
-                .required(intl.formatMessage(messages.requiredFieldError))
+                .required(messages.requiredFieldError.defaultMessage)
                 .matches(
                   specialCharsRule,
-                  intl.formatMessage(messages.disallowedCharsError),
+                  messages.disallowedCharsError.defaultMessage,
                 )
-                .matches(noSpaceRule, intl.formatMessage(messages.noSpaceError)),
+                .matches(noSpaceRule, messages.noSpaceError.defaultMessage),
               slug: Yup.string()
-                .required(intl.formatMessage(messages.requiredFieldError))
+                .required(messages.requiredFieldError.defaultMessage)
                 .matches(
                   validSlugIdRegex,
-                  intl.formatMessage(messages.invalidSlugError),
+                  messages.invalidSlugError.defaultMessage,
                 ),
             })
           }
@@ -88,35 +88,35 @@ const CreateLibrary = () => {
             <Form onSubmit={formikProps.handleSubmit}>
               <FormikControl
                 name="title"
-                label={<Form.Label>{intl.formatMessage(messages.titleLabel)}</Form.Label>}
+                label={<Form.Label>{messages.titleLabel.defaultMessage}</Form.Label>}
                 value={formikProps.values.title}
-                placeholder={intl.formatMessage(messages.titlePlaceholder)}
-                help={intl.formatMessage(messages.titleHelp)}
+                placeholder={messages.titlePlaceholder.defaultMessage}
+                help={messages.titleHelp.defaultMessage}
                 className=""
                 controlClasses="pb-2"
               />
               <Form.Group>
-                <Form.Label>{intl.formatMessage(messages.orgLabel)}</Form.Label>
+                <Form.Label>{messages.orgLabel.defaultMessage}</Form.Label>
                 <Form.Autosuggest
                   name="org"
                   isLoading={isOrganizationListLoading}
                   onChange={(event) => formikProps.setFieldValue('org', event.selectionId)}
-                  placeholder={intl.formatMessage(messages.orgPlaceholder)}
+                  placeholder={messages.orgPlaceholder.defaultMessage}
                 >
                   {organizationListData ? organizationListData.map((org) => (
                     <Form.AutosuggestOption key={org} id={org}>{org}</Form.AutosuggestOption>
                   )) : []}
                 </Form.Autosuggest>
                 <FormikErrorFeedback name="org">
-                  <Form.Text>{intl.formatMessage(messages.orgHelp)}</Form.Text>
+                  <Form.Text>{messages.orgHelp.defaultMessage}</Form.Text>
                 </FormikErrorFeedback>
               </Form.Group>
               <FormikControl
                 name="slug"
-                label={<Form.Label>{intl.formatMessage(messages.slugLabel)}</Form.Label>}
+                label={<Form.Label>{messages.slugLabel.defaultMessage}</Form.Label>}
                 value={formikProps.values.slug}
-                placeholder={intl.formatMessage(messages.slugPlaceholder)}
-                help={intl.formatMessage(messages.slugHelp)}
+                placeholder={messages.slugPlaceholder.defaultMessage}
+                help={messages.slugHelp.defaultMessage}
                 className=""
                 controlClasses="pb-2"
               />
@@ -125,7 +125,7 @@ const CreateLibrary = () => {
                   variant="outline-primary"
                   onClick={handleOnClickCancel}
                 >
-                  {intl.formatMessage(messages.cancelCreateLibraryButton)}
+                  {messages.cancelCreateLibraryButton.defaultMessage}
                 </Button>
                 <StatefulButton
                   type="submit"
@@ -134,8 +134,8 @@ const CreateLibrary = () => {
                   state={isLoading ? 'disabled' : 'enabled'}
                   disabledStates={['disabled']}
                   labels={{
-                    enabled: intl.formatMessage(messages.createLibraryButton),
-                    disabled: intl.formatMessage(messages.createLibraryButtonPending),
+                    enabled: messages.createLibraryButton.defaultMessage,
+                    disabled: messages.createLibraryButtonPending.defaultMessage,
                   }}
                 />
               </ActionRow>

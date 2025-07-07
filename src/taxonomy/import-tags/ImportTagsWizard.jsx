@@ -51,7 +51,7 @@ const ExportStep = ({ taxonomy }) => {
             onClick={() => getTaxonomyExportFile(taxonomy.id, 'csv')}
             data-testid="export-csv-button"
           >
-            {intl.formatMessage(messages.importWizardStepExportCSVButton)}
+            {messages.importWizardStepExportCSVButton.defaultMessage}
           </Button>
           <Button
             iconBefore={Download}
@@ -59,7 +59,7 @@ const ExportStep = ({ taxonomy }) => {
             onClick={() => getTaxonomyExportFile(taxonomy.id, 'json')}
             data-testid="export-json-button"
           >
-            {intl.formatMessage(messages.importWizardStepExportJSONButton)}
+            {messages.importWizardStepExportJSONButton.defaultMessage}
           </Button>
         </Stack>
       </Stack>
@@ -80,11 +80,11 @@ const UploadStep = ({
   const intl = useIntl();
 
   const csvTemplateUrl = (
-    <a href={apiUrls.taxonomyTemplate('csv')} download>{intl.formatMessage(messages.csvTemplateTitle)}</a>
+    <a href={apiUrls.taxonomyTemplate('csv')} download>{messages.csvTemplateTitle.defaultMessage}</a>
   );
 
   const jsonTemplateUrl = (
-    <a href={apiUrls.taxonomyTemplate('json')} download>{intl.formatMessage(messages.jsonTemplateTitle)}</a>
+    <a href={apiUrls.taxonomyTemplate('json')} download>{messages.jsonTemplateTitle.defaultMessage}</a>
   );
 
   /** @type {(args: {fileData: FormData}) => void} */
@@ -140,7 +140,7 @@ const UploadStep = ({
               <IconButton
                 src={DeleteOutline}
                 iconAs={Icon}
-                alt={intl.formatMessage(messages.importWizardStepUploadClearFile)}
+                alt={messages.importWizardStepUploadClearFile.defaultMessage}
                 variant="secondary"
                 className="ml-auto"
                 onClick={clearFile}
@@ -194,11 +194,11 @@ const PopulateStep = ({
     <Stepper.Step eventKey="populate" title="populate">
       <Stack gap={3} data-testid="populate-step">
         <Form.Group>
-          <Form.Label>{ intl.formatMessage(messages.importWizardStepPopulateTaxonomyName) }</Form.Label>
+          <Form.Label>{ messages.importWizardStepPopulateTaxonomyName.defaultMessage }</Form.Label>
           <Form.Control value={taxonomyPopulateData.taxonomyName} onChange={handleNameChange} />
         </Form.Group>
         <Form.Group>
-          <Form.Label>{ intl.formatMessage(messages.importWizardStepPopulateTaxonomyDesc) }</Form.Label>
+          <Form.Label>{ messages.importWizardStepPopulateTaxonomyDesc.defaultMessage }</Form.Label>
           <Form.Control
             as="textarea"
             autoResize
@@ -230,7 +230,7 @@ const PlanStep = ({ importPlan }) => {
           {importPlan?.length ? (
             importPlan.map((line) => <li key={line} data-testid="plan-action">{line}</li>)
           ) : (
-            <li>{intl.formatMessage(messages.importWizardStepPlanNoChanges)}</li>
+            <li>{messages.importWizardStepPlanNoChanges.defaultMessage}</li>
           )}
         </ul>
       </Stack>
@@ -319,7 +319,7 @@ const ImportTagsWizard = ({
       const alertProps = {
         variant: 'danger',
         icon: ErrorIcon,
-        title: intl.formatMessage(messages.importTaxonomyErrorAlert),
+        title: messages.importTaxonomyErrorAlert.defaultMessage,
         description: error.message,
       };
 
@@ -373,7 +373,7 @@ const ImportTagsWizard = ({
       const alertProps = {
         variant: 'danger',
         icon: ErrorIcon,
-        title: intl.formatMessage(messages.importTaxonomyErrorAlert),
+        title: messages.importTaxonomyErrorAlert.defaultMessage,
         description: error.message,
       };
 
@@ -394,17 +394,17 @@ const ImportTagsWizard = ({
     ),
     upload: (
       <DefaultModalHeader>
-        {intl.formatMessage(messages.importWizardStepUploadTitle)}
+        {messages.importWizardStepUploadTitle.defaultMessage}
       </DefaultModalHeader>
     ),
     populate: (
       <DefaultModalHeader>
-        {intl.formatMessage(messages.importWizardStepPopulateTitle)}
+        {messages.importWizardStepPopulateTitle.defaultMessage}
       </DefaultModalHeader>
     ),
     plan: (
       <DefaultModalHeader>
-        {intl.formatMessage(messages.importWizardStepPlanTitle)}
+        {messages.importWizardStepPlanTitle.defaultMessage}
       </DefaultModalHeader>
     ),
     confirm: (
@@ -462,10 +462,10 @@ const ImportTagsWizard = ({
 
             <Stepper.ActionRow eventKey="export">
               <Button variant="tertiary" onClick={onClose} data-testid="cancel-button">
-                {intl.formatMessage(messages.importWizardButtonCancel)}
+                {messages.importWizardButtonCancel.defaultMessage}
               </Button>
               <Button onClick={() => setCurrentStep('upload')} data-testid="next-button">
-                {intl.formatMessage(messages.importWizardButtonNext)}
+                {messages.importWizardButtonNext.defaultMessage}
               </Button>
             </Stepper.ActionRow>
 
@@ -474,13 +474,13 @@ const ImportTagsWizard = ({
                 reimport
                 && (
                   <Button variant="outline-primary" onClick={() => setCurrentStep('export')} data-testid="back-button">
-                    {intl.formatMessage(messages.importWizardButtonPrevious)}
+                    {messages.importWizardButtonPrevious.defaultMessage}
                   </Button>
                 )
               }
               <Stepper.ActionRow.Spacer />
               <Button variant="tertiary" onClick={onClose}>
-                {intl.formatMessage(messages.importWizardButtonCancel)}
+                {messages.importWizardButtonCancel.defaultMessage}
               </Button>
               {
                 importPlanResult.isLoading ? <LoadingSpinner />
@@ -488,8 +488,8 @@ const ImportTagsWizard = ({
                     <LoadingButton
                       label={
                         reimport
-                          ? intl.formatMessage(messages.importWizardButtonImport)
-                          : intl.formatMessage(messages.importWizardButtonContinue)
+                          ? messages.importWizardButtonImport.defaultMessage
+                          : messages.importWizardButtonContinue.defaultMessage
                       }
                       disabled={!file || importPlanResult.isLoading || !!importPlanResult.error}
                       onClick={reimport ? generatePlan : populateData}
@@ -500,14 +500,14 @@ const ImportTagsWizard = ({
 
             <Stepper.ActionRow eventKey="populate">
               <Button variant="outline-primary" onClick={() => setCurrentStep('upload')} data-testid="back-button">
-                {intl.formatMessage(messages.importWizardButtonPrevious)}
+                {messages.importWizardButtonPrevious.defaultMessage}
               </Button>
               <Stepper.ActionRow.Spacer />
               <Button variant="tertiary" onClick={onClose}>
-                {intl.formatMessage(messages.importWizardButtonCancel)}
+                {messages.importWizardButtonCancel.defaultMessage}
               </Button>
               <LoadingButton
-                label={intl.formatMessage(messages.importWizardButtonImport)}
+                label={messages.importWizardButtonImport.defaultMessage}
                 disabled={!taxonomyPopulateData.taxonomyName || !taxonomyPopulateData.taxonomyDesc}
                 onClick={importNewTaxonomy}
                 data-testid="import-button"
@@ -517,14 +517,14 @@ const ImportTagsWizard = ({
 
             <Stepper.ActionRow eventKey="plan">
               <Button variant="outline-primary" onClick={() => setCurrentStep('upload')} data-testid="back-button">
-                {intl.formatMessage(messages.importWizardButtonPrevious)}
+                {messages.importWizardButtonPrevious.defaultMessage}
               </Button>
               <Stepper.ActionRow.Spacer />
               <Button variant="tertiary" onClick={onClose}>
-                {intl.formatMessage(messages.importWizardButtonCancel)}
+                {messages.importWizardButtonCancel.defaultMessage}
               </Button>
               <Button disabled={!importPlan?.length} onClick={() => setCurrentStep('confirm')} data-testid="continue-button">
-                {intl.formatMessage(messages.importWizardButtonContinue)}
+                {messages.importWizardButtonContinue.defaultMessage}
               </Button>
             </Stepper.ActionRow>
 
@@ -533,16 +533,16 @@ const ImportTagsWizard = ({
                 reimport
                 && (
                   <Button variant="outline-primary" onClick={() => setCurrentStep('plan')} data-testid="back-button">
-                    {intl.formatMessage(messages.importWizardButtonPrevious)}
+                    {messages.importWizardButtonPrevious.defaultMessage}
                   </Button>
                 )
               }
               <Stepper.ActionRow.Spacer />
               <Button variant="tertiary" onClick={onClose}>
-                {intl.formatMessage(messages.importWizardButtonCancel)}
+                {messages.importWizardButtonCancel.defaultMessage}
               </Button>
               <LoadingButton
-                label={intl.formatMessage(messages.importWizardButtonConfirm)}
+                label={messages.importWizardButtonConfirm.defaultMessage}
                 onClick={confirmImportTags}
               />
             </Stepper.ActionRow>

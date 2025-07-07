@@ -22,7 +22,7 @@ const VideoInfoModalSidebar = ({
     activeKey={activeTab}
     onSelect={(tab) => setActiveTab(tab)}
   >
-    <Tab eventKey="fileInfo" title={intl.formatMessage(messages.infoTabTitle)}>
+    <Tab eventKey="fileInfo" title={messages.infoTabTitle.defaultMessage}>
       <InfoTab {...{ video }} />
     </Tab>
     <Tab
@@ -33,7 +33,7 @@ const VideoInfoModalSidebar = ({
       )}
       notification={TRANSCRIPT_FAILURE_STATUSES.includes(video.transcriptionStatus) && (
         <span>
-          <span className="sr-only">{intl.formatMessage(messages.notificationScreenReaderText)}</span>
+          <span className="sr-only">{messages.notificationScreenReaderText.defaultMessage}</span>
         </span>
       )}
     >

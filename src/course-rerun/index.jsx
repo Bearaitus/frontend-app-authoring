@@ -50,13 +50,13 @@ const CourseRerun = () => {
               <header className="d-flex">
                 <Stack>
                   <h2>
-                    {intl.formatMessage(messages.rerunTitle)} {displayName}
+                    {messages.rerunTitle.defaultMessage} {displayName}
                   </h2>
                   <span className="large">{originalCourseData}</span>
                 </Stack>
                 <ActionRow className="ml-auto">
                   <Button variant="outline-primary" size="sm" onClick={handleRerunCourseCancel}>
-                    {intl.formatMessage(messages.cancelButton)}
+                    {messages.cancelButton.defaultMessage}
                   </Button>
                 </ActionRow>
               </header>

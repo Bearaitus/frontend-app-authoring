@@ -45,7 +45,7 @@ const IntroducingSection = ({
             target="_blank"
             showLaunchIcon={false}
           >
-            {intl.formatMessage(messages.courseAboutHyperlink)}
+            {messages.courseAboutHyperlink.defaultMessage}
           </Hyperlink>
         ),
       }}
@@ -63,7 +63,7 @@ const IntroducingSection = ({
             target="_blank"
             showLaunchIcon={false}
           >
-            {intl.formatMessage(messages.courseAboutHyperlink)}
+            {messages.courseAboutHyperlink.defaultMessage}
           </Hyperlink>
         ),
       }}
@@ -74,8 +74,8 @@ const IntroducingSection = ({
     <section className="section-container introducing-section">
       {aboutPageEditable && (
         <SectionSubHeader
-          title={intl.formatMessage(messages.introducingTitle)}
-          description={intl.formatMessage(messages.introducingDescription)}
+          title={messages.introducingTitle.defaultMessage}
+          description={messages.introducingDescription.defaultMessage}
         />
       )}
       {enableExtendedCourseDetails && (
@@ -90,7 +90,7 @@ const IntroducingSection = ({
       {shortDescriptionEditable && (
         <Form.Group className="form-group-custom">
           <Form.Label>
-            {intl.formatMessage(messages.courseShortDescriptionLabel)}
+            {messages.courseShortDescriptionLabel.defaultMessage}
           </Form.Label>
           <Form.Control
             as="textarea"
@@ -103,14 +103,14 @@ const IntroducingSection = ({
             maxLength={150}
           />
           <Form.Control.Feedback>
-            {intl.formatMessage(messages.courseShortDescriptionHelpText)}
+            {messages.courseShortDescriptionHelpText.defaultMessage}
           </Form.Control.Feedback>
         </Form.Group>
       )}
       {aboutPageEditable && (
         <>
           <Form.Group className="form-group-custom">
-            <Form.Label>{intl.formatMessage(messages.courseOverviewLabel)}</Form.Label>
+            <Form.Label>{messages.courseOverviewLabel.defaultMessage}</Form.Label>
             <WysiwygEditor
               initialValue={overview}
               onChange={(value) => onChange(value, 'overview')}
@@ -119,7 +119,7 @@ const IntroducingSection = ({
           </Form.Group>
           {sidebarHtmlEnabled && (
             <Form.Group className="form-group-custom">
-              <Form.Label>{intl.formatMessage(messages.courseAboutSidebarLabel)}</Form.Label>
+              <Form.Label>{messages.courseAboutSidebarLabel.defaultMessage}</Form.Label>
               <WysiwygEditor
                 initialValue={aboutSidebarHtml}
                 onChange={(value) => onChange(value, 'aboutSidebarHtml')}
@@ -128,8 +128,8 @@ const IntroducingSection = ({
             </Form.Group>
           )}
           <CourseUploadImage
-            label={intl.formatMessage(messages.courseCardImageLabel)}
-            identifierFieldText={intl.formatMessage(messages.courseCardImageIdentifierText)}
+            label={messages.courseCardImageLabel.defaultMessage}
+            identifierFieldText={messages.courseCardImageIdentifierText.defaultMessage}
             assetImagePath={courseImageAssetPath}
             assetImageField="courseImageAssetPath"
             imageNameField="courseImageName"
@@ -141,8 +141,8 @@ const IntroducingSection = ({
       {enableExtendedCourseDetails && (
         <>
           <CourseUploadImage
-            label={intl.formatMessage(messages.courseBannerImageLabel)}
-            identifierFieldText={intl.formatMessage(messages.courseBannerImageInsertText)}
+            label={messages.courseBannerImageLabel.defaultMessage}
+            identifierFieldText={messages.courseBannerImageInsertText.defaultMessage}
             assetImagePath={bannerImageAssetPath}
             assetImageField="bannerImageAssetPath"
             imageNameField="bannerImageName"
@@ -150,8 +150,8 @@ const IntroducingSection = ({
             onChange={onChange}
           />
           <CourseUploadImage
-            label={intl.formatMessage(messages.courseVideoThumbnailLabel)}
-            identifierFieldText={intl.formatMessage(messages.courseVideoThumbnailInsertText)}
+            label={messages.courseVideoThumbnailLabel.defaultMessage}
+            identifierFieldText={messages.courseVideoThumbnailInsertText.defaultMessage}
             assetImagePath={videoThumbnailImageAssetPath}
             assetImageField="videoThumbnailImageAssetPath"
             imageNameField="videoThumbnailImageName"

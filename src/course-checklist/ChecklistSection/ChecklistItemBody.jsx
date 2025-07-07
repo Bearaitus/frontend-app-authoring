@@ -25,14 +25,14 @@ const ChecklistItemBody = ({
           src={CheckCircle}
           className="text-success"
           style={{ height: '32px', width: '32px' }}
-          screenReaderText={intl.formatMessage(messages.completedItemLabel)}
+          screenReaderText={messages.completedItemLabel.defaultMessage}
         />
       ) : (
         <Icon
           data-testid="uncompleted-icon"
           src={RadioButtonUnchecked}
           style={{ height: '32px', width: '32px' }}
-          screenReaderText={intl.formatMessage(messages.uncompletedItemLabel)}
+          screenReaderText={messages.uncompletedItemLabel.defaultMessage}
         />
       )}
     </div>

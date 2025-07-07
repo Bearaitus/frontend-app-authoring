@@ -35,12 +35,12 @@ const PastNotificationAlert = ({ staticFileNotices, courseId }) => {
         <AlertMessage
           data-testid="has-conflicting-errors-alert"
           className="course-unit__alert"
-          title={intl.formatMessage(messages.hasConflictingErrorsTitle)}
+          title={messages.hasConflictingErrorsTitle.defaultMessage}
           onClose={() => handleCloseNotificationAlert('conflictingFilesAlert')}
           description={(
             <AlertContent
               fileList={conflictingFiles}
-              text={intl.formatMessage(messages.hasConflictingErrorsDescription)}
+              text={messages.hasConflictingErrorsDescription.defaultMessage}
             />
           )}
           variant="warning"
@@ -49,7 +49,7 @@ const PastNotificationAlert = ({ staticFileNotices, courseId }) => {
           actions={[
             <ActionButton
               courseId={courseId}
-              title={intl.formatMessage(messages.hasConflictingErrorsButtonText)}
+              title={messages.hasConflictingErrorsButtonText.defaultMessage}
             />,
           ]}
         />
@@ -58,12 +58,12 @@ const PastNotificationAlert = ({ staticFileNotices, courseId }) => {
         <AlertMessage
           data-testid="has-error-files-alert"
           className="course-unit__alert"
-          title={intl.formatMessage(messages.hasErrorsTitle)}
+          title={messages.hasErrorsTitle.defaultMessage}
           onClose={() => handleCloseNotificationAlert('errorFilesAlert')}
           description={(
             <AlertContent
               fileList={errorFiles}
-              text={intl.formatMessage(messages.hasErrorsDescription)}
+              text={messages.hasErrorsDescription.defaultMessage}
             />
           )}
           variant="danger"
@@ -75,12 +75,12 @@ const PastNotificationAlert = ({ staticFileNotices, courseId }) => {
         <AlertMessage
           data-testid="has-new-files-alert"
           className="course-unit__alert"
-          title={intl.formatMessage(messages.hasNewFilesTitle)}
+          title={messages.hasNewFilesTitle.defaultMessage}
           onClose={() => handleCloseNotificationAlert('newFilesAlert')}
           description={(
             <AlertContent
               fileList={newFiles}
-              text={intl.formatMessage(messages.hasNewFilesDescription)}
+              text={messages.hasNewFilesDescription.defaultMessage}
             />
           )}
           variant="info"
@@ -89,7 +89,7 @@ const PastNotificationAlert = ({ staticFileNotices, courseId }) => {
           actions={[
             <ActionButton
               courseId={courseId}
-              title={intl.formatMessage(messages.hasNewFilesButtonText)}
+              title={messages.hasNewFilesButtonText.defaultMessage}
             />,
           ]}
         />

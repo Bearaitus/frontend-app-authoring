@@ -19,7 +19,7 @@ const AssignmentTypeName = ({
       })}
       >
         <Form.Label className="grading-label">
-          {intl.formatMessage(messages.assignmentTypeNameTitle)}
+          {messages.assignmentTypeNameTitle.defaultMessage}
         </Form.Label>
         <Form.Control
           data-testid="assignment-type-name-input"
@@ -30,11 +30,11 @@ const AssignmentTypeName = ({
           isInvalid={Boolean(errorEffort)}
         />
         <Form.Control.Feedback className="grading-description">
-          {intl.formatMessage(messages.assignmentTypeNameDescription)}
+          {messages.assignmentTypeNameDescription.defaultMessage}
         </Form.Control.Feedback>
         {errorEffort && errorEffort !== DUPLICATE_ASSIGNMENT_NAME && (
           <Form.Control.Feedback className="feedback-error" type="invalid">
-            {intl.formatMessage(messages.assignmentTypeNameErrorMessage1)}
+            {messages.assignmentTypeNameErrorMessage1.defaultMessage}
           </Form.Control.Feedback>
         )}
         {value !== initialAssignmentName.current && initialAssignmentName.current !== '' && (
@@ -47,7 +47,7 @@ const AssignmentTypeName = ({
         )}
         {errorEffort === DUPLICATE_ASSIGNMENT_NAME && (
           <Form.Control.Feedback className="feedback-error" type="invalid">
-            {intl.formatMessage(messages.assignmentTypeNameErrorMessage3)}
+            {messages.assignmentTypeNameErrorMessage3.defaultMessage}
           </Form.Control.Feedback>
         )}
       </Form.Group>

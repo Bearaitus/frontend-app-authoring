@@ -55,7 +55,7 @@ const HighlightsModal = ({
                 {intl.formatMessage(messages.description, {
                   documentation: (
                     <Hyperlink destination={contentHighlightsUrl} target="_blank" showLaunchIcon={false}>
-                      {intl.formatMessage(messages.documentationLink)}
+                      {messages.documentationLink.defaultMessage}
                     </Hyperlink>),
                 })}
               </p>
@@ -73,10 +73,10 @@ const HighlightsModal = ({
             <ModalDialog.Footer className="pt-1">
               <ActionRow>
                 <ModalDialog.CloseButton variant="tertiary">
-                  {intl.formatMessage(messages.cancelButton)}
+                  {messages.cancelButton.defaultMessage}
                 </ModalDialog.CloseButton>
                 <Button disabled={!dirty} onClick={handleSubmit}>
-                  {intl.formatMessage(messages.saveButton)}
+                  {messages.saveButton.defaultMessage}
                 </Button>
               </ActionRow>
             </ModalDialog.Footer>

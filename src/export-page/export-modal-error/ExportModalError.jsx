@@ -23,7 +23,7 @@ const ExportModalError = ({
   return (
     <ModalNotification
       isOpen={isErrorModalOpen}
-      title={intl.formatMessage(messages.errorTitle)}
+      title={messages.errorTitle.defaultMessage}
       message={
         intl.formatMessage(
           unitErrorUrl

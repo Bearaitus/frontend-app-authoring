@@ -64,7 +64,7 @@ const AddComponent = ({ blockId, handleCreateNewCourseXBlock }) => {
 
   return (
     <div className="py-4">
-      <h5 className="h3 mb-4 text-center">{intl.formatMessage(messages.title)}</h5>
+      <h5 className="h3 mb-4 text-center">{messages.title.defaultMessage}</h5>
       <ul className="new-component-type list-unstyled m-0 d-flex flex-wrap justify-content-center">
         {componentTemplates.map((component) => {
           const { type, displayName } = component;

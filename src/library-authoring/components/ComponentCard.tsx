@@ -51,9 +51,9 @@ export const ComponentMenu = ({ usageKey }: { usageKey: string }) => {
     updateClipboard(usageKey)
       .then((clipboardData) => {
         clipboardBroadcastChannel.postMessage(clipboardData);
-        showToast(intl.formatMessage(messages.copyToClipboardSuccess));
+        showToast(messages.copyToClipboardSuccess.defaultMessage);
       })
-      .catch(() => showToast(intl.formatMessage(messages.copyToClipboardError)));
+      .catch(() => showToast(messages.copyToClipboardError.defaultMessage));
   };
 
   const removeFromCollection = () => {
@@ -62,9 +62,9 @@ export const ComponentMenu = ({ usageKey }: { usageKey: string }) => {
         // Close sidebar if current component is open
         closeLibrarySidebar();
       }
-      showToast(intl.formatMessage(messages.removeComponentSucess));
+      showToast(messages.removeComponentSucess.defaultMessage);
     }).catch(() => {
-      showToast(intl.formatMessage(messages.removeComponentFailure));
+      showToast(messages.removeComponentFailure.defaultMessage);
     });
   };
 
@@ -80,7 +80,7 @@ export const ComponentMenu = ({ usageKey }: { usageKey: string }) => {
         src={MoreVert}
         iconAs={Icon}
         variant="primary"
-        alt={intl.formatMessage(messages.componentCardMenuAlt)}
+        alt={messages.componentCardMenuAlt.defaultMessage}
         data-testid="component-card-menu-toggle"
       />
       <Dropdown.Menu>
@@ -168,7 +168,7 @@ const AddComponentWidget = ({ usageKey, blockType }: AddComponentWidgetProps) =>
         iconBefore={isChecked ? CheckBoxIcon : CheckBoxOutlineBlank}
         onClick={handleChange}
       >
-        {intl.formatMessage(messages.componentPickerMultipleSelectTitle)}
+        {messages.componentPickerMultipleSelectTitle.defaultMessage}
       </Button>
     );
   }

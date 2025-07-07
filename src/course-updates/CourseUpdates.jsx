@@ -71,14 +71,14 @@ const CourseUpdates = ({ courseId }) => {
     <>
       <Helmet>
         <title>
-          {getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle))}
+          {getPageHeadTitle(courseDetails?.name, messages.headingTitle.defaultMessage)}
         </title>
       </Helmet>
       <Container size="xl" className="px-4 pt-4">
         <section className="setting-items mb-4">
           {errors.loadingUpdates && (
             <AlertMessage
-              title={intl.formatMessage(messages.loadingUpdatesErrorTitle)}
+              title={messages.loadingUpdatesErrorTitle.defaultMessage}
               description={intl.formatMessage(messages.loadingUpdatesErrorDescription, { courseId })}
               variant="danger"
               icon={ErrorIcon}
@@ -86,7 +86,7 @@ const CourseUpdates = ({ courseId }) => {
           )}
           {errors.loadingHandouts && (
             <AlertMessage
-              title={intl.formatMessage(messages.loadingHandoutsErrorTitle)}
+              title={messages.loadingHandoutsErrorTitle.defaultMessage}
               description={intl.formatMessage(messages.loadingHandoutsErrorDescription, { courseId })}
               variant="danger"
               icon={ErrorIcon}
@@ -94,32 +94,32 @@ const CourseUpdates = ({ courseId }) => {
           )}
           {errors.creatingUpdate && (
             <AlertMessage
-              title={intl.formatMessage(messages.savingUpdatesErrorTitle)}
-              description={intl.formatMessage(messages.savingNewUpdateErrorAlertDescription)}
+              title={messages.savingUpdatesErrorTitle.defaultMessage}
+              description={messages.savingNewUpdateErrorAlertDescription.defaultMessage}
               variant="danger"
               icon={ErrorIcon}
             />
           )}
           {errors.savingUpdates && (
             <AlertMessage
-              title={intl.formatMessage(messages.savingUpdatesErrorTitle)}
-              description={intl.formatMessage(messages.savingUpdatesErrorDescription)}
+              title={messages.savingUpdatesErrorTitle.defaultMessage}
+              description={messages.savingUpdatesErrorDescription.defaultMessage}
               variant="danger"
               icon={ErrorIcon}
             />
           )}
           {errors.deletingUpdates && (
             <AlertMessage
-              title={intl.formatMessage(messages.deletingUpdatesErrorTitle)}
-              description={intl.formatMessage(messages.deletingUpdatesErrorDescription)}
+              title={messages.deletingUpdatesErrorTitle.defaultMessage}
+              description={messages.deletingUpdatesErrorDescription.defaultMessage}
               variant="danger"
               icon={ErrorIcon}
             />
           )}
           {errors.savingHandouts && (
             <AlertMessage
-              title={intl.formatMessage(messages.savingHandoutsErrorTitle)}
-              description={intl.formatMessage(messages.savingHandoutsErrorDescription)}
+              title={messages.savingHandoutsErrorTitle.defaultMessage}
+              description={messages.savingHandoutsErrorDescription.defaultMessage}
               variant="danger"
               icon={ErrorIcon}
             />
@@ -135,9 +135,9 @@ const CourseUpdates = ({ courseId }) => {
               <article>
                 <div>
                   <SubHeader
-                    title={intl.formatMessage(messages.headingTitle)}
-                    subtitle={intl.formatMessage(messages.headingSubtitle)}
-                    instruction={intl.formatMessage(messages.sectionInfo)}
+                    title={messages.headingTitle.defaultMessage}
+                    subtitle={messages.headingSubtitle.defaultMessage}
+                    instruction={messages.sectionInfo.defaultMessage}
                     headerActions={(
                       <Button
                         variant="primary"
@@ -146,7 +146,7 @@ const CourseUpdates = ({ courseId }) => {
                         onClick={() => handleOpenUpdateForm(REQUEST_TYPES.add_new_update)}
                         disabled={isUpdateFormOpen || errors.loadingUpdates}
                       >
-                        {intl.formatMessage(messages.newUpdateButton)}
+                        {messages.newUpdateButton.defaultMessage}
                       </Button>
                     )}
                   />
@@ -190,7 +190,7 @@ const CourseUpdates = ({ courseId }) => {
                         <ActionRow>
                           <ActionRow.Spacer />
                           <span className="small mr-2">
-                            {intl.formatMessage(messages.noCourseUpdates)}
+                            {messages.noCourseUpdates.defaultMessage}
                           </span>
                           <Button
                             variant="primary"
@@ -199,7 +199,7 @@ const CourseUpdates = ({ courseId }) => {
                             onClick={() => handleOpenUpdateForm(REQUEST_TYPES.add_new_update)}
                             disabled={isUpdateFormOpen || errors.loadingUpdates}
                           >
-                            {intl.formatMessage(messages.firstUpdateButton)}
+                            {messages.firstUpdateButton.defaultMessage}
                           </Button>
                           <ActionRow.Spacer />
                         </ActionRow>

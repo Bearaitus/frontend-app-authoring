@@ -21,7 +21,7 @@ export const RandomizationCard = ({
   });
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.randomizationSettingTitle)}
+      title={messages.randomizationSettingTitle.defaultMessage}
       summary={intl.formatMessage(summary.message)}
       none={!randomization}
     >

@@ -43,7 +43,7 @@ const StatusMessages = ({
     } else if (hasPartitionGroupComponents) {
       statusMessages.push({
         icon: GroupsIcon,
-        text: intl.formatMessage(messages.restrictedUnitAccessToSomeContent),
+        text: messages.restrictedUnitAccessToSomeContent.defaultMessage,
       });
     }
   }

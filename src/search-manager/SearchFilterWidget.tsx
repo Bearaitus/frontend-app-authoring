@@ -73,7 +73,7 @@ const SearchFilterWidget: React.FC<{
                   variant="link"
                   className="text-info-500 text-decoration-none clear-filter-button"
                 >
-                  { intl.formatMessage(messages.clearFilter) }
+                  { messages.clearFilter.defaultMessage }
                 </Button>
               </div>
             )

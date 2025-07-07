@@ -63,7 +63,7 @@ const SortAndFilterModal = ({
 
   return (
     <ModalDialog
-      title={intl.formatMessage(messages.modalTitle)}
+      title={messages.modalTitle.defaultMessage}
       isOpen={isSortOpen}
       onClose={closeSort}
       size="lg"

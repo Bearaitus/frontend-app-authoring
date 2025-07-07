@@ -37,7 +37,7 @@ const QuestionWidget = ({
         editorContentHtml={questionContent}
         setEditorRef={setEditorRef}
         minHeight={150}
-        placeholder={intl.formatMessage(messages.placeholder)}
+        placeholder={messages.placeholder.defaultMessage}
         {...{
           images,
           isLibrary,

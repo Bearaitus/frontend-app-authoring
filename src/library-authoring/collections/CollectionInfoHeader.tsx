@@ -41,9 +41,9 @@ const CollectionInfoHeader = () => {
         updateMutation.mutateAsync({
           title: newTitle,
         }).then(() => {
-          showToast(intl.formatMessage(messages.updateCollectionSuccessMsg));
+          showToast(messages.updateCollectionSuccessMsg.defaultMessage);
         }).catch(() => {
-          showToast(intl.formatMessage(messages.updateCollectionErrorMsg));
+          showToast(messages.updateCollectionErrorMsg.defaultMessage);
         }).finally(() => {
           setIsActive(false);
         });
@@ -94,7 +94,7 @@ const CollectionInfoHeader = () => {
               <IconButton
                 src={Edit}
                 iconAs={Icon}
-                alt={intl.formatMessage(messages.editTitleButtonAlt)}
+                alt={messages.editTitleButtonAlt.defaultMessage}
                 onClick={handleClick}
                 size="inline"
               />

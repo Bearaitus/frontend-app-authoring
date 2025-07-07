@@ -36,37 +36,37 @@ const FileMenu = ({
         <Dropdown.Item
           onClick={() => navigator.clipboard.writeText(id)}
         >
-          {intl.formatMessage(messages.copyVideoIdTitle)}
+          {messages.copyVideoIdTitle.defaultMessage}
         </Dropdown.Item>
       ) : (
         <>
           <Dropdown.Item
             onClick={() => navigator.clipboard.writeText(portableUrl)}
           >
-            {intl.formatMessage(messages.copyStudioUrlTitle)}
+            {messages.copyStudioUrlTitle.defaultMessage}
           </Dropdown.Item>
           <Dropdown.Item
             onClick={() => navigator.clipboard.writeText(externalUrl)}
           >
-            {intl.formatMessage(messages.copyWebUrlTitle)}
+            {messages.copyWebUrlTitle.defaultMessage}
           </Dropdown.Item>
           <Dropdown.Item onClick={handleLock}>
-            {locked ? intl.formatMessage(messages.unlockMenuTitle) : intl.formatMessage(messages.lockMenuTitle)}
+            {locked ? messages.unlockMenuTitle.defaultMessage : messages.lockMenuTitle.defaultMessage}
           </Dropdown.Item>
         </>
       )}
       <Dropdown.Item onClick={onDownload}>
-        {intl.formatMessage(messages.downloadTitle)}
+        {messages.downloadTitle.defaultMessage}
       </Dropdown.Item>
       <Dropdown.Item onClick={openAssetInfo}>
-        {intl.formatMessage(messages.infoTitle)}
+        {messages.infoTitle.defaultMessage}
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
         data-testid="open-delete-confirmation-button"
         onClick={openDeleteConfirmation}
       >
-        {intl.formatMessage(messages.deleteTitle)}
+        {messages.deleteTitle.defaultMessage}
       </Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>

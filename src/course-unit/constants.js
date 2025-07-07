@@ -2,9 +2,9 @@ import messages from './sidebar/messages';
 import addComponentMessages from './add-component/messages';
 
 export const getUnitReleaseStatus = (intl) => ({
-  release: intl.formatMessage(messages.releaseStatusTitle),
-  released: intl.formatMessage(messages.releasedStatusTitle),
-  scheduled: intl.formatMessage(messages.scheduledStatusTitle),
+  release: messages.releaseStatusTitle.defaultMessage,
+  released: messages.releasedStatusTitle.defaultMessage,
+  scheduled: messages.scheduledStatusTitle.defaultMessage,
 });
 
 export const UNIT_VISIBILITY_STATES = {

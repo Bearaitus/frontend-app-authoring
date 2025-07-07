@@ -19,7 +19,7 @@ const TitleButton = ({
   namePrefix,
 }) => {
   const intl = useIntl();
-  const titleTooltipMessage = intl.formatMessage(messages.expandTooltip);
+  const titleTooltipMessage = messages.expandTooltip.defaultMessage;
 
   return (
     <OverlayTrigger

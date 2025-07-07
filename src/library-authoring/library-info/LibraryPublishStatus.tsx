@@ -23,9 +23,9 @@ const LibraryPublishStatus = () => {
     if (libraryData) {
       commitLibraryChanges.mutateAsync(libraryData.id)
         .then(() => {
-          showToast(intl.formatMessage(messages.publishSuccessMsg));
+          showToast(messages.publishSuccessMsg.defaultMessage);
         }).catch(() => {
-          showToast(intl.formatMessage(messages.publishErrorMsg));
+          showToast(messages.publishErrorMsg.defaultMessage);
         });
     }
   }, [libraryData]);
@@ -35,9 +35,9 @@ const LibraryPublishStatus = () => {
       setConfirmBtnState('pending');
       revertLibraryChanges.mutateAsync(libraryData.id)
         .then(() => {
-          showToast(intl.formatMessage(messages.revertSuccessMsg));
+          showToast(messages.revertSuccessMsg.defaultMessage);
         }).catch(() => {
-          showToast(intl.formatMessage(messages.revertErrorMsg));
+          showToast(messages.revertErrorMsg.defaultMessage);
         }).finally(() => {
           setConfirmBtnState('default');
           closeConfirmModal();
@@ -60,12 +60,12 @@ const LibraryPublishStatus = () => {
         isOpen={isConfirmModalOpen}
         close={closeConfirmModal}
         variant="warning"
-        title={intl.formatMessage(messages.discardChangesTitle)}
-        description={intl.formatMessage(messages.discardChangesDescription)}
+        title={messages.discardChangesTitle.defaultMessage}
+        description={messages.discardChangesDescription.defaultMessage}
         onDeleteSubmit={revert}
         btnState={confirmBtnState}
-        btnDefaultLabel={intl.formatMessage(messages.discardChangesDefaultBtnLabel)}
-        btnPendingLabel={intl.formatMessage(messages.discardChangesDefaultBtnLabel)}
+        btnDefaultLabel={messages.discardChangesDefaultBtnLabel.defaultMessage}
+        btnPendingLabel={messages.discardChangesDefaultBtnLabel.defaultMessage}
       />
     </>
   );

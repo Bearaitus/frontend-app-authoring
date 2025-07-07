@@ -23,8 +23,8 @@ const LicenseSection = ({ license, onChange }) => {
   return (
     <section className="section-container license-section">
       <SectionSubHeader
-        title={intl.formatMessage(messages.licenseTitle)}
-        description={intl.formatMessage(messages.licenseDescription)}
+        title={messages.licenseTitle.defaultMessage}
+        description={messages.licenseDescription.defaultMessage}
       />
       <LicenseSelector
         licenseType={licenseType}

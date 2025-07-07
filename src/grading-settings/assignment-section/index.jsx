@@ -86,8 +86,8 @@ const AssignmentSection = ({
               />
               <AssignmentItem
                 className="course-grading-assignment-abbreviation"
-                title={intl.formatMessage(messages.abbreviationTitle)}
-                descriptions={intl.formatMessage(messages.abbreviationDescription)}
+                title={messages.abbreviationTitle.defaultMessage}
+                descriptions={messages.abbreviationDescription.defaultMessage}
                 type="text"
                 name="shortLabel"
                 value={gradeField.shortLabel}
@@ -95,12 +95,12 @@ const AssignmentSection = ({
               />
               <AssignmentItem
                 className="course-grading-assignment-total-grade"
-                title={intl.formatMessage(messages.weightOfTotalGradeTitle)}
-                descriptions={intl.formatMessage(messages.weightOfTotalGradeDescription)}
+                title={messages.weightOfTotalGradeTitle.defaultMessage}
+                descriptions={messages.weightOfTotalGradeDescription.defaultMessage}
                 type="number"
                 min={MIN_NUMBER_VALUE}
                 max={MAX_NUMBER_VALUE}
-                errorMsg={intl.formatMessage(messages.weightOfTotalGradeErrorMessage)}
+                errorMsg={messages.weightOfTotalGradeErrorMessage.defaultMessage}
                 name={weight}
                 value={gradeField.weight}
                 onChange={(e) => handleAssignmentChange(e, gradeField.id)}
@@ -109,11 +109,11 @@ const AssignmentSection = ({
               />
               <AssignmentItem
                 className="course-grading-assignment-total-number"
-                title={intl.formatMessage(messages.totalNumberTitle)}
-                descriptions={intl.formatMessage(messages.totalNumberDescription)}
+                title={messages.totalNumberTitle.defaultMessage}
+                descriptions={messages.totalNumberDescription.defaultMessage}
                 type="number"
                 min={1}
-                errorMsg={intl.formatMessage(messages.totalNumberErrorMessage)}
+                errorMsg={messages.totalNumberErrorMessage.defaultMessage}
                 name={minCount}
                 value={gradeField.minCount}
                 onChange={(e) => handleAssignmentChange(e, gradeField.id)}
@@ -121,11 +121,11 @@ const AssignmentSection = ({
               />
               <AssignmentItem
                 className="course-grading-assignment-number-droppable"
-                title={intl.formatMessage(messages.numberOfDroppableTitle)}
-                descriptions={intl.formatMessage(messages.numberOfDroppableDescription)}
+                title={messages.numberOfDroppableTitle.defaultMessage}
+                descriptions={messages.numberOfDroppableDescription.defaultMessage}
                 type="number"
                 min={MIN_NUMBER_VALUE}
-                errorMsg={intl.formatMessage(messages.numberOfDroppableErrorMessage)}
+                errorMsg={messages.numberOfDroppableErrorMessage.defaultMessage}
                 name={dropCount}
                 gradeField={gradeField}
                 value={gradeField.dropCount}
@@ -165,7 +165,7 @@ const AssignmentSection = ({
                 title={intl.formatMessage(messages.assignmentAlertWarningTitle, { type: gradeField.type })}
                 description={(
                   <span className="course-grading-assignment-item-alert-warning-list-label">
-                    {intl.formatMessage(messages.assignmentAlertWarningDescription)}
+                    {messages.assignmentAlertWarningDescription.defaultMessage}
                   </span>
                 )}
                 aria-hidden="true"
@@ -186,7 +186,7 @@ const AssignmentSection = ({
               size="sm"
               onClick={() => handleRemoveAssignment(gradeField.id)}
             >
-              {intl.formatMessage(messages.assignmentDeleteButton)}
+              {messages.assignmentDeleteButton.defaultMessage}
             </Button>
           </div>
         );

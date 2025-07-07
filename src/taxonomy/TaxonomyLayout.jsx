@@ -30,7 +30,7 @@ const TaxonomyLayout = () => {
             data-testid="taxonomy-alert"
             className="mb-0"
             dismissible
-            closeLabel={intl.formatMessage(messages.taxonomyDismissLabel)}
+            closeLabel={messages.taxonomyDismissLabel.defaultMessage}
             onClose={() => setAlertProps(null)}
             {...alertProps}
           />

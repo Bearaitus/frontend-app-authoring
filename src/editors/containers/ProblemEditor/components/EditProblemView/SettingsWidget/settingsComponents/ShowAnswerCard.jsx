@@ -72,7 +72,7 @@ const ShowAnswerCard = ({
             min={0}
             value={showAnswer.afterAttempts}
             onChange={handleAttemptsChange}
-            floatingLabel={intl.formatMessage(messages.showAnswerAttemptsInputLabel)}
+            floatingLabel={messages.showAnswerAttemptsInputLabel.defaultMessage}
           />
         </Form.Group>
         )}
@@ -81,7 +81,7 @@ const ShowAnswerCard = ({
 
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.showAnswerSettingsTitle)}
+      title={messages.showAnswerSettingsTitle.defaultMessage}
       summary={intl.formatMessage(ShowAnswerTypes[currentShowAnswer])}
     >
       {showAnswerSection}

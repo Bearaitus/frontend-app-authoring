@@ -15,8 +15,8 @@ const HideAfterDueMessage = ({ isSelfPaced }) => {
       <Icon className="mr-1" size="sm" src={HideIcon} />
       <span className="status-hide-after-due-value">
         {isSelfPaced
-          ? intl.formatMessage(messages.hiddenAfterEndDate)
-          : intl.formatMessage(messages.hiddenAfterDueDate)}
+          ? messages.hiddenAfterEndDate.defaultMessage
+          : messages.hiddenAfterDueDate.defaultMessage}
       </span>
     </div>
   );

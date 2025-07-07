@@ -15,10 +15,10 @@ const WikiSettings = ({ intl, onClose }) => {
   return (
     <AppSettingsModal
       appId="wiki"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableWikiHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableWikiLabel)}
-      learnMoreText={intl.formatMessage(messages.enableWikiLink)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableWikiHelp.defaultMessage}
+      enableAppLabel={messages.enableWikiLabel.defaultMessage}
+      learnMoreText={messages.enableWikiLink.defaultMessage}
       onClose={onClose}
       initialValues={{ enablePublicWiki }}
       validationSchema={{ enablePublicWiki: Yup.boolean() }}
@@ -29,8 +29,8 @@ const WikiSettings = ({ intl, onClose }) => {
           <FormSwitchGroup
             id="enable-public-wiki"
             name="enablePublicWiki"
-            label={intl.formatMessage(messages.enablePublicWikiLabel)}
-            helpText={intl.formatMessage(messages.enablePublicWikiHelp)}
+            label={messages.enablePublicWikiLabel.defaultMessage}
+            helpText={messages.enablePublicWikiHelp.defaultMessage}
             onChange={handleChange}
             onBlue={handleBlur}
             checked={values.enablePublicWiki}

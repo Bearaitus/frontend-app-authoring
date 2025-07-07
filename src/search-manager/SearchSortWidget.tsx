@@ -20,43 +20,43 @@ export const SearchSortWidget = ({ iconOnly = false }: { iconOnly?: boolean }) =
     () => [
       {
         id: 'search-sort-option-most-relevant',
-        name: intl.formatMessage(messages.searchSortMostRelevant),
+        name: messages.searchSortMostRelevant.defaultMessage,
         value: SearchSortOption.RELEVANCE,
         show: (defaultSearchSortOrder === SearchSortOption.RELEVANCE),
       },
       {
         id: 'search-sort-option-recently-modified',
-        name: intl.formatMessage(messages.searchSortRecentlyModified),
+        name: messages.searchSortRecentlyModified.defaultMessage,
         value: SearchSortOption.RECENTLY_MODIFIED,
         show: true,
       },
       {
         id: 'search-sort-option-recently-published',
-        name: intl.formatMessage(messages.searchSortRecentlyPublished),
+        name: messages.searchSortRecentlyPublished.defaultMessage,
         value: SearchSortOption.RECENTLY_PUBLISHED,
         show: true,
       },
       {
         id: 'search-sort-option-title-az',
-        name: intl.formatMessage(messages.searchSortTitleAZ),
+        name: messages.searchSortTitleAZ.defaultMessage,
         value: SearchSortOption.TITLE_AZ,
         show: true,
       },
       {
         id: 'search-sort-option-title-za',
-        name: intl.formatMessage(messages.searchSortTitleZA),
+        name: messages.searchSortTitleZA.defaultMessage,
         value: SearchSortOption.TITLE_ZA,
         show: true,
       },
       {
         id: 'search-sort-option-newest',
-        name: intl.formatMessage(messages.searchSortNewest),
+        name: messages.searchSortNewest.defaultMessage,
         value: SearchSortOption.NEWEST,
         show: true,
       },
       {
         id: 'search-sort-option-oldest',
-        name: intl.formatMessage(messages.searchSortOldest),
+        name: messages.searchSortOldest.defaultMessage,
         value: SearchSortOption.OLDEST,
         show: true,
       },
@@ -64,7 +64,7 @@ export const SearchSortWidget = ({ iconOnly = false }: { iconOnly?: boolean }) =
     [intl, defaultSearchSortOrder],
   );
 
-  const menuHeader = intl.formatMessage(messages.searchSortWidgetLabel);
+  const menuHeader = messages.searchSortWidgetLabel.defaultMessage;
   const defaultSortOption = menuItems.find(
     ({ value }) => (value === defaultSearchSortOrder),
   );
@@ -80,8 +80,8 @@ export const SearchSortWidget = ({ iconOnly = false }: { iconOnly?: boolean }) =
     <Dropdown id="search-sort-dropdown">
       <Dropdown.Toggle
         id="search-sort-toggle"
-        title={intl.formatMessage(messages.searchSortWidgetAltTitle)}
-        alt={intl.formatMessage(messages.searchSortWidgetAltTitle)}
+        title={messages.searchSortWidgetAltTitle.defaultMessage}
+        alt={messages.searchSortWidgetAltTitle.defaultMessage}
         variant="outline-primary"
         className={classNames('dropdown-toggle-menu-items d-flex', {
           'border-0': iconOnly,

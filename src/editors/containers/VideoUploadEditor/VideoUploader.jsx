@@ -20,8 +20,8 @@ const URLUploader = () => {
         <Icon src={FileUpload} className="text-muted" style={{ height: '2rem', width: '2rem' }} />
       </div>
       <div className="d-flex align-self-center justify-content-center flex-wrap flex-column pt-3">
-        <span>{intl.formatMessage(messages.dropVideoFileHere)}</span>
-        <span className="x-small align-self-center pt-2">{intl.formatMessage(messages.info)}</span>
+        <span>{messages.dropVideoFileHere.defaultMessage}</span>
+        <span className="x-small align-self-center pt-2">{messages.info.defaultMessage}</span>
       </div>
       <div className="small align-self-center justify-content-center mx-2 text-dark font-weight-normal pt-3">
         OR
@@ -30,8 +30,8 @@ const URLUploader = () => {
         <InputGroup>
           <FormControl
             className="m-0"
-            placeholder={intl.formatMessage(messages.pasteURL)}
-            aria-label={intl.formatMessage(messages.pasteURL)}
+            placeholder={messages.pasteURL.defaultMessage}
+            aria-label={messages.pasteURL.defaultMessage}
             aria-describedby="basic-addon2"
             borderless
             onClick={(event) => { event.stopPropagation(); }}
@@ -39,7 +39,7 @@ const URLUploader = () => {
             trailingElement={(
               <IconButton
                 className="url-submit-button"
-                alt={intl.formatMessage(messages.submitButtonAltText)}
+                alt={messages.submitButtonAltText.defaultMessage}
                 src={ArrowForward}
                 iconAs={Icon}
                 size="inline"
@@ -76,7 +76,7 @@ export const VideoUploader = ({ setLoading }) => {
       <div className="d-flex justify-content-end flex-row">
         <IconButton
           className="position-absolute mr-2 mt-2"
-          alt={intl.formatMessage(messages.closeButtonAltText)}
+          alt={messages.closeButtonAltText.defaultMessage}
           src={Close}
           iconAs={Icon}
           onClick={goBack}

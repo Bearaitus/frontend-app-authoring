@@ -51,7 +51,7 @@ const HandoutWidget = ({
     <CollapsibleFormWidget
       fontSize="x-small"
       isError={Object.keys(error).length !== 0}
-      title={intl.formatMessage(messages.titleLabel)}
+      title={messages.titleLabel.defaultMessage}
       subtitle={handoutName}
     >
       <ErrorAlert

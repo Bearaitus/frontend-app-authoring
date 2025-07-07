@@ -57,14 +57,14 @@ const SelectTypeWrapper: React.FC<Props> = ({
           <ActionRow>
             <ActionRow.Spacer />
             <Button
-              aria-label={intl.formatMessage(messages.cancelButtonAriaLabel)}
+              aria-label={messages.cancelButtonAriaLabel.defaultMessage}
               variant="tertiary"
               onClick={handleCancel}
             >
               <FormattedMessage {...messages.cancelButtonLabel} />
             </Button>
             <Button
-              aria-label={intl.formatMessage(messages.selectButtonAriaLabel)}
+              aria-label={messages.selectButtonAriaLabel.defaultMessage}
               onClick={hooks.onSelect({
                 selected,
                 updateField,

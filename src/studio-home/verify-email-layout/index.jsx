@@ -23,7 +23,7 @@ const VerifyEmailLayout = () => {
           <h3>{intl.formatMessage(messages.headingTitle, { username })}</h3>
           <Card variant="muted">
             <Card.Section
-              title={intl.formatMessage(messages.bannerTitle)}
+              title={messages.bannerTitle.defaultMessage}
               className="small"
             >
               {intl.formatMessage(messages.bannerDescription, { email })}
@@ -34,10 +34,10 @@ const VerifyEmailLayout = () => {
       <Layout.Element>
         <HelpSidebar>
           <h4 className="help-sidebar-about-title">
-            {intl.formatMessage(messages.sidebarTitle)}
+            {messages.sidebarTitle.defaultMessage}
           </h4>
           <p className="help-sidebar-about-descriptions">
-            {intl.formatMessage(messages.sidebarDescription)}
+            {messages.sidebarDescription.defaultMessage}
           </p>
         </HelpSidebar>
       </Layout.Element>

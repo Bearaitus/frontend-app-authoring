@@ -132,7 +132,7 @@ const TranscriptTab = ({
           className="text-primary-500 justify-content-start pl-0 pt-3"
           onClick={handleAddEmptyTranscript}
         >
-          {intl.formatMessage(messages.uploadButtonLabel)}
+          {messages.uploadButtonLabel.defaultMessage}
         </Button>
       </div>
     </Stack>

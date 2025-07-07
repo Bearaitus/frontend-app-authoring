@@ -8,7 +8,7 @@ const CertificateWithoutModes = () => {
   return (
     <Card>
       <Card.Section className="d-flex justify-content-center">
-        <span className="small">{intl.formatMessage(messages.withoutModesText)}</span>
+        <span className="small">{messages.withoutModesText.defaultMessage}</span>
       </Card.Section>
     </Card>
   );

@@ -31,40 +31,40 @@ const validateScheduleAndDetails = (courseDetails, canShowCertificateAvailableDa
   } = courseDetails;
 
   if (!startDate) {
-    errors.startDate = intl.formatMessage(messages.errorMessage7);
+    errors.startDate = messages.errorMessage7.defaultMessage;
   }
 
   if (isDateBeforeOrEqual(certificateAvailableDate, endDate) && canShowCertificateAvailableDate) {
-    errors.certificateAvailableDate = intl.formatMessage(messages.errorMessage6);
+    errors.certificateAvailableDate = messages.errorMessage6.defaultMessage;
   }
 
   if (isDateBeforeOrEqual(endDate, startDate)) {
-    errors.endDate = intl.formatMessage(messages.errorMessage5);
+    errors.endDate = messages.errorMessage5.defaultMessage;
   }
 
   if (isDateBeforeOrEqual(startDate, enrollmentStart, true)) {
-    errors.enrollmentStart = intl.formatMessage(messages.errorMessage4);
+    errors.enrollmentStart = messages.errorMessage4.defaultMessage;
   }
 
   if (isDateBeforeOrEqual(enrollmentEnd, enrollmentStart)) {
-    errors.enrollmentStart = intl.formatMessage(messages.errorMessage3);
+    errors.enrollmentStart = messages.errorMessage3.defaultMessage;
   }
 
   if (isDateBeforeOrEqual(endDate, enrollmentEnd, true)) {
-    errors.enrollmentEnd = intl.formatMessage(messages.errorMessage2);
+    errors.enrollmentEnd = messages.errorMessage2.defaultMessage;
   }
 
   if (
     certificatesDisplayBehavior === CERTIFICATE_DISPLAY_BEHAVIOR.endWithDate
     && !certificateAvailableDate
   ) {
-    errors.certificateAvailableDate = intl.formatMessage(messages.errorMessage1);
+    errors.certificateAvailableDate = messages.errorMessage1.defaultMessage;
   }
 
   if (entranceExamMinimumScorePct) {
     const number = Number(entranceExamMinimumScorePct);
     if (Number.isNaN(number) || number < 1 || number > 100) {
-      errors.entranceExamMinimumScorePct = intl.formatMessage(messages.errorMessage8);
+      errors.entranceExamMinimumScorePct = messages.errorMessage8.defaultMessage;
     }
   }
 

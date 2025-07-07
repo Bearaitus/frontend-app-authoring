@@ -23,7 +23,7 @@ const TypeCard = ({
 
   return (
     <SettingsOption
-      title={intl.formatMessage(messages.typeSettingTitle)}
+      title={messages.typeSettingTitle.defaultMessage}
       summary={ProblemTypes[problemType].title}
     >
       {problemTypeKeysArray.map((typeKey, i) => (

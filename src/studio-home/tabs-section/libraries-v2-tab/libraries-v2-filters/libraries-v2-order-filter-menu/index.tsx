@@ -15,22 +15,22 @@ const LibrariesV2OrderFilterMenu: React.FC<{
     () => [
       {
         id: 'sort-libraries-v2-az',
-        name: intl.formatMessage(messages.librariesV2OrderFilterMenuAscendantLibrariesV2),
+        name: messages.librariesV2OrderFilterMenuAscendantLibrariesV2.defaultMessage,
         value: 'sortLibrariesV2AZ',
       },
       {
         id: 'sort-libraries-v2-za',
-        name: intl.formatMessage(messages.librariesV2OrderFilterMenuDescendantLibrariesV2),
+        name: messages.librariesV2OrderFilterMenuDescendantLibrariesV2.defaultMessage,
         value: 'sortLibrariesV2ZA',
       },
       {
         id: 'sort-libraries-v2-newest',
-        name: intl.formatMessage(messages.librariesV2OrderFilterMenuNewestLibrariesV2),
+        name: messages.librariesV2OrderFilterMenuNewestLibrariesV2.defaultMessage,
         value: 'sortLibrariesV2Newest',
       },
       {
         id: 'sort-libraries-v2-oldest',
-        name: intl.formatMessage(messages.librariesV2OrderFilterMenuOldestLibrariesV2),
+        name: messages.librariesV2OrderFilterMenuOldestLibrariesV2.defaultMessage,
         value: 'sortLibrariesV2Oldest',
       },
     ],
@@ -46,7 +46,7 @@ const LibrariesV2OrderFilterMenu: React.FC<{
       id="dropdown-toggle-libraries-v2-order-menu"
       menuItems={libraryV2Orders}
       onItemMenuSelected={handleLibraryV2OrderSelected}
-      defaultItemSelectedText={intl.formatMessage(messages.librariesV2OrderFilterMenuAscendantLibrariesV2)}
+      defaultItemSelectedText={messages.librariesV2OrderFilterMenuAscendantLibrariesV2.defaultMessage}
       isFiltered={isFiltered}
     />
   );

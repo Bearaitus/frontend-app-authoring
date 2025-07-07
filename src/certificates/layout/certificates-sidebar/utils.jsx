@@ -1,29 +1,29 @@
 // eslint-disable-next-line import/prefer-default-export
 export const getSidebarData = ({ messages, intl }) => [
   {
-    title: intl.formatMessage(messages.workingWithCertificatesTitle),
+    title: messages.workingWithCertificatesTitle.defaultMessage,
     paragraphs: [
-      intl.formatMessage(messages.workingWithCertificatesFirstParagraph),
+      messages.workingWithCertificatesFirstParagraph.defaultMessage,
       intl.formatMessage(
         messages.workingWithCertificatesSecondParagraph,
-        { strongText: <strong>{intl.formatMessage(messages.workingWithCertificatesSecondParagraph_strong)}</strong> },
+        { strongText: <strong>{messages.workingWithCertificatesSecondParagraph_strong.defaultMessage}</strong> },
       ),
       intl.formatMessage(
         messages.workingWithCertificatesThirdParagraph,
-        { strongText: <strong>{intl.formatMessage(messages.workingWithCertificatesThirdParagraph_strong)}</strong> },
+        { strongText: <strong>{messages.workingWithCertificatesThirdParagraph_strong.defaultMessage}</strong> },
       ),
     ],
   },
   {
-    title: intl.formatMessage(messages.issuingCertificatesTitle),
+    title: messages.issuingCertificatesTitle.defaultMessage,
     paragraphs: [
       intl.formatMessage(
         messages.issuingCertificatesFirstParagraph,
-        { strongText: <strong>{intl.formatMessage(messages.issuingCertificatesFirstParagraph_strong)}</strong> },
+        { strongText: <strong>{messages.issuingCertificatesFirstParagraph_strong.defaultMessage}</strong> },
       ),
       intl.formatMessage(
         messages.issuingCertificatesSecondParagraph,
-        { strongText: <strong>{intl.formatMessage(messages.issuingCertificatesSecondParagraph_strong)}</strong> },
+        { strongText: <strong>{messages.issuingCertificatesSecondParagraph_strong.defaultMessage}</strong> },
       ),
     ],
   },

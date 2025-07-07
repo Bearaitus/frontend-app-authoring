@@ -74,7 +74,7 @@ const HeaderActions = () => {
         variant="outline-primary rounded-0"
         onClick={handleOnClickInfoSidebar}
       >
-        {intl.formatMessage(messages.libraryInfoButton)}
+        {messages.libraryInfoButton.defaultMessage}
       </Button>
       {!componentPickerMode && (
         <Button
@@ -84,7 +84,7 @@ const HeaderActions = () => {
           onClick={openAddContentSidebar}
           disabled={readOnly}
         >
-          {intl.formatMessage(messages.newContentButton)}
+          {messages.newContentButton.defaultMessage}
         </Button>
       )}
     </div>
@@ -104,7 +104,7 @@ const SubHeaderTitle = ({ title }: { title: string }) => {
       {showReadOnlyBadge && (
         <div>
           <Badge variant="primary" style={{ fontSize: '50%' }}>
-            {intl.formatMessage(messages.readOnlyBadge)}
+            {messages.readOnlyBadge.defaultMessage}
           </Badge>
         </div>
       )}
@@ -165,7 +165,7 @@ const LibraryAuthoringPage = ({ returnToLibrarySelection }: LibraryAuthoringPage
   if (!isLoadingStudioHome && (!librariesV2Enabled || isFailedLoadingStudioHome)) {
     return (
       <Alert variant="danger">
-        {intl.formatMessage(messages.librariesV2DisabledError)}
+        {messages.librariesV2DisabledError.defaultMessage}
       </Alert>
     );
   }
@@ -197,7 +197,7 @@ const LibraryAuthoringPage = ({ returnToLibrarySelection }: LibraryAuthoringPage
           to: '',
         },
         {
-          label: intl.formatMessage(messages.returnToLibrarySelection),
+          label: messages.returnToLibrarySelection.defaultMessage,
           onClick: returnToLibrarySelection,
         },
       ]}
@@ -241,7 +241,7 @@ const LibraryAuthoringPage = ({ returnToLibrarySelection }: LibraryAuthoringPage
           >
             <SubHeader
               title={<SubHeaderTitle title={libraryData.title} />}
-              subtitle={!componentPickerMode ? intl.formatMessage(messages.headingSubtitle) : undefined}
+              subtitle={!componentPickerMode ? messages.headingSubtitle.defaultMessage : undefined}
               breadcrumbs={breadcumbs}
               headerActions={<HeaderActions />}
             />
@@ -259,9 +259,9 @@ const LibraryAuthoringPage = ({ returnToLibrarySelection }: LibraryAuthoringPage
               onSelect={handleTabChange}
               className="my-3"
             >
-              <Tab eventKey={ContentType.home} title={intl.formatMessage(messages.homeTab)} />
-              <Tab eventKey={ContentType.components} title={intl.formatMessage(messages.componentsTab)} />
-              <Tab eventKey={ContentType.collections} title={intl.formatMessage(messages.collectionsTab)} />
+              <Tab eventKey={ContentType.home} title={messages.homeTab.defaultMessage} />
+              <Tab eventKey={ContentType.components} title={messages.componentsTab.defaultMessage} />
+              <Tab eventKey={ContentType.collections} title={messages.collectionsTab.defaultMessage} />
             </Tabs>
             <LibraryContent contentType={activeKey} />
           </SearchContextProvider>

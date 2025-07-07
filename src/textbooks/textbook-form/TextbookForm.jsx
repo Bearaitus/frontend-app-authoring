@@ -66,15 +66,15 @@ const TextbookForm = ({
           <>
             <Form.Group size="sm" className="form-field">
               <Form.Label size="sm" className="font-weight-bold form-main-label text-black">
-                {intl.formatMessage(messages.tabTitleLabel)} *
+                {messages.tabTitleLabel.defaultMessage} *
               </Form.Label>
               <FormikControl
                 name="tab_title"
                 value={values.tab_title}
-                placeholder={intl.formatMessage(messages.tabTitlePlaceholder)}
+                placeholder={messages.tabTitlePlaceholder.defaultMessage}
               />
               <Form.Control.Feedback className="form-helper-text">
-                {intl.formatMessage(messages.tabTitleHelperText)}
+                {messages.tabTitleHelperText.defaultMessage}
               </Form.Control.Feedback>
             </Form.Group>
             <FieldArray
@@ -85,7 +85,7 @@ const TextbookForm = ({
                     <div className="form-chapters-fields" data-testid="form-chapters-fields">
                       <Form.Group size="sm" className="form-field">
                         <Form.Label size="sm" className="form-label font-weight-bold required text-black">
-                          {intl.formatMessage(messages.chapterTitleLabel)} *
+                          {messages.chapterTitleLabel.defaultMessage} *
                         </Form.Label>
                         <FormikControl
                           name={`chapters[${index}].title`}
@@ -93,42 +93,42 @@ const TextbookForm = ({
                           placeholder={intl.formatMessage(messages.chapterTitlePlaceholder, { value: index + 1 })}
                         />
                         <Form.Control.Feedback className="form-helper-text">
-                          {intl.formatMessage(messages.chapterTitleHelperText)}
+                          {messages.chapterTitleHelperText.defaultMessage}
                         </Form.Control.Feedback>
                       </Form.Group>
                       <Form.Group size="sm" className="form-field">
                         <div className="d-flex align-items-center mb-1">
                           <Form.Label size="sm" className="font-weight-bold mb-0 text-black">
-                            {intl.formatMessage(messages.chapterUrlLabel)} *
+                            {messages.chapterUrlLabel.defaultMessage} *
                           </Form.Label>
                           <IconButtonWithTooltip
                             size="sm"
                             className="ml-auto field-icon-button"
-                            tooltipContent={intl.formatMessage(messages.uploadButtonTooltip)}
+                            tooltipContent={messages.uploadButtonTooltip.defaultMessage}
                             src={UploadIcon}
                             iconAs={Icon}
                             data-testid="chapter-upload-button"
-                            alt={intl.formatMessage(messages.uploadButtonAlt)}
+                            alt={messages.uploadButtonAlt.defaultMessage}
                             onClick={() => onUploadButtonClick(index)}
                           />
                           <IconButtonWithTooltip
                             size="sm"
                             className="field-icon-button"
-                            tooltipContent={intl.formatMessage(messages.deleteButtonTooltip)}
+                            tooltipContent={messages.deleteButtonTooltip.defaultMessage}
                             src={DeleteIcon}
                             iconAs={Icon}
                             data-testid="chapter-delete-button"
-                            alt={intl.formatMessage(messages.deleteButtonAlt)}
+                            alt={messages.deleteButtonAlt.defaultMessage}
                             onClick={() => arrayHelpers.remove(index)}
                           />
                         </div>
                         <FormikControl
                           name={`chapters[${index}].url`}
                           value={url}
-                          placeholder={intl.formatMessage(messages.chapterUrlPlaceholder)}
+                          placeholder={messages.chapterUrlPlaceholder.defaultMessage}
                         />
                         <Form.Control.Feedback className="form-helper-text">
-                          {intl.formatMessage(messages.chapterUrlHelperText)}
+                          {messages.chapterUrlHelperText.defaultMessage}
                         </Form.Control.Feedback>
                       </Form.Group>
                     </div>
@@ -136,7 +136,7 @@ const TextbookForm = ({
                   <div>
                     {!values.chapters.length && (
                       <Form.Control.Feedback className="pgn__form-text-invalid mb-2">
-                        {intl.formatMessage(messages.addChapterHelperText)}
+                        {messages.addChapterHelperText.defaultMessage}
                       </Form.Control.Feedback>
                     )}
                     <Button
@@ -145,7 +145,7 @@ const TextbookForm = ({
                       iconBefore={AddIcon}
                       onClick={() => arrayHelpers.push({ title: '', url: '' })}
                     >
-                      {intl.formatMessage(messages.addChapterButton)}
+                      {messages.addChapterButton.defaultMessage}
                     </Button>
                   </div>
                 </>
@@ -153,10 +153,10 @@ const TextbookForm = ({
             />
             <ActionRow>
               <Button variant="tertiary" onClick={closeTextbookForm} data-testid="cancel-button">
-                {intl.formatMessage(messages.cancelButton)}
+                {messages.cancelButton.defaultMessage}
               </Button>
               <Button onClick={handleSubmit} disabled={!isValid} type="submit">
-                {intl.formatMessage(messages.saveButton)}
+                {messages.saveButton.defaultMessage}
               </Button>
             </ActionRow>
             <ModalDropzone
@@ -166,8 +166,8 @@ const TextbookForm = ({
               onChange={(value) => setFieldValue(`chapters[${currentTextbookIndex}].url`, value)}
               fileTypes={['pdf']}
               modalTitle={intl.formatMessage(messages.uploadModalTitle, { courseName: courseTitle })}
-              imageDropzoneText={intl.formatMessage(messages.uploadModalDropzoneText)}
-              imageHelpText={intl.formatMessage(messages.uploadModalHelperText)}
+              imageDropzoneText={messages.uploadModalDropzoneText.defaultMessage}
+              imageHelpText={messages.uploadModalHelperText.defaultMessage}
               onSavingStatus={onSavingStatus}
               invalidFileSizeMore={intl.formatMessage(
                 messages.uploadModalFileInvalidSizeText,

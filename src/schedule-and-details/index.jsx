@@ -53,7 +53,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
     || loadingSettingsStatus === RequestStatus.IN_PROGRESS;
 
   const course = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(course?.name, intl.formatMessage(messages.headingTitle));
+  document.title = getPageHeadTitle(course?.name, messages.headingTitle.defaultMessage);
 
   const {
     platformName,
@@ -158,18 +158,18 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
   const hasErrors = !!Object.keys(errorFields).length;
   const updateValuesButtonState = {
     labels: {
-      default: intl.formatMessage(messages.buttonSaveText),
-      pending: intl.formatMessage(messages.buttonSavingText),
+      default: messages.buttonSaveText.defaultMessage,
+      pending: messages.buttonSavingText.defaultMessage,
     },
     disabledStates: [STATEFUL_BUTTON_STATES.pending],
   };
   const alertWhileSavingTitle = hasErrors
-    ? intl.formatMessage(messages.alertWarningOnSaveWithError)
-    : intl.formatMessage(messages.alertWarning);
+    ? messages.alertWarningOnSaveWithError.defaultMessage
+    : messages.alertWarning.defaultMessage;
 
   const alertWhileSavingDescription = hasErrors
-    ? intl.formatMessage(messages.alertWarningDescriptionsOnSaveWithError)
-    : intl.formatMessage(messages.alertWarningDescriptions);
+    ? messages.alertWarningDescriptionsOnSaveWithError.defaultMessage
+    : messages.alertWarningDescriptions.defaultMessage;
 
   return (
     <>
@@ -179,7 +179,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
             show={showSuccessfulAlert}
             variant="success"
             icon={CheckCircleIcon}
-            title={intl.formatMessage(messages.alertSuccess)}
+            title={messages.alertSuccess.defaultMessage}
             aria-hidden="true"
             aria-labelledby={intl.formatMessage(
               messages.alertSuccessAriaLabelledby,
@@ -192,7 +192,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
             show={showLoadFailedAlert}
             variant="danger"
             icon={ErrorOutlineIcon}
-            title={intl.formatMessage(messages.alertLoadFail)}
+            title={messages.alertLoadFail.defaultMessage}
             aria-hidden="true"
             aria-labelledby={intl.formatMessage(
               messages.alertFailAriaLabelledby,
@@ -205,7 +205,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
             show={showFailedAlert}
             variant="danger"
             icon={ErrorOutlineIcon}
-            title={intl.formatMessage(messages.alertFail)}
+            title={messages.alertFail.defaultMessage}
             aria-hidden="true"
             aria-labelledby={intl.formatMessage(
               messages.alertFailAriaLabelledby,
@@ -216,10 +216,10 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
           />
           <header>
             <span className="small text-gray-700">
-              {intl.formatMessage(messages.headingSubtitle)}
+              {messages.headingSubtitle.defaultMessage}
             </span>
             <h2 className="mb-4 pb-1">
-              {intl.formatMessage(messages.headingTitle)}
+              {messages.headingTitle.defaultMessage}
             </h2>
           </header>
         </div>
@@ -365,7 +365,7 @@ const ScheduleAndDetails = ({ intl, courseId }) => {
                 variant="tertiary"
                 onClick={handleResetValues}
               >
-                {intl.formatMessage(messages.buttonCancelText)}
+                {messages.buttonCancelText.defaultMessage}
               </Button>
             ),
             <StatefulButton

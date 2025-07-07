@@ -8,7 +8,7 @@ import messages from './messages';
 
 const PluginLoadFailedError = () => {
   const intl = useIntl();
-  return <ErrorAlert isError>{intl.formatMessage(messages.errorShowingConfiguration)}</ErrorAlert>;
+  return <ErrorAlert isError>{messages.errorShowingConfiguration.defaultMessage}</ErrorAlert>;
 };
 
 const SettingsComponent = ({ url }) => {

@@ -34,7 +34,7 @@ const ConfirmModal = ({
   const intl = useIntl();
   return (
     <AlertModal
-      title={intl.formatMessage(messages.confirmUnassignTitle)}
+      title={messages.confirmUnassignTitle.defaultMessage}
       isOpen={isOpen}
       onClose={onClose}
       variant="warning"
@@ -42,10 +42,10 @@ const ConfirmModal = ({
       footerNode={(
         <ActionRow>
           <Button variant="tertiary" onClick={onClose}>
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <Button variant="primary" onClick={confirm}>
-            {intl.formatMessage(messages.continueButton)}
+            {messages.continueButton.defaultMessage}
           </Button>
         </ActionRow>
       )}
@@ -98,7 +98,7 @@ const ManageOrgsModal = ({
           allOrgs,
         });
         if (setToastMessage) {
-          setToastMessage(intl.formatMessage(messages.assignOrgsSuccess));
+          setToastMessage(messages.assignOrgsSuccess.defaultMessage);
         }
       } catch (error) {
         // ToDo: display the error to the user
@@ -149,7 +149,7 @@ const ManageOrgsModal = ({
     <Container onClick={(e) => e.stopPropagation() /* This prevents calling onClick handler from the parent */}>
       <ModalDialog
         className="manage-orgs"
-        title={intl.formatMessage(messages.headerTitle)}
+        title={messages.headerTitle.defaultMessage}
         isOpen={isOpen}
         onClose={onClose}
         size="lg"
@@ -163,7 +163,7 @@ const ManageOrgsModal = ({
 
         <ModalDialog.Header>
           <ModalDialog.Title>
-            {intl.formatMessage(messages.headerTitle)}
+            {messages.headerTitle.defaultMessage}
           </ModalDialog.Title>
         </ModalDialog.Header>
 
@@ -172,9 +172,9 @@ const ManageOrgsModal = ({
         <ModalDialog.Body>
           <Form.Group>
             <Stack>
-              <div className="pb-5">{intl.formatMessage(messages.bodyText)}</div>
+              <div className="pb-5">{messages.bodyText.defaultMessage}</div>
               <Form.Label>
-                <div>{intl.formatMessage(messages.currentAssignments)}</div>
+                <div>{messages.currentAssignments.defaultMessage}</div>
               </Form.Label>
               <div className="col-9 d-inline-box overflow-auto">
                 {selectedOrgs.length ? selectedOrgs.map((org) => (
@@ -187,16 +187,16 @@ const ManageOrgsModal = ({
                   >
                     {org}
                   </Chip>
-                )) : <span className="text-muted">{intl.formatMessage(messages.noOrganizationAssigned)}</span> }
+                )) : <span className="text-muted">{messages.noOrganizationAssigned.defaultMessage}</span> }
               </div>
             </Stack>
           </Form.Group>
           <Form.Group>
             <Form.Label>
-              {intl.formatMessage(messages.addOrganizations)}
+              {messages.addOrganizations.defaultMessage}
             </Form.Label>
             <Form.Autosuggest
-              placeholder={intl.formatMessage(messages.searchOrganizations)}
+              placeholder={messages.searchOrganizations.defaultMessage}
               onChange={({ selectionValue }) => {
                 if (selectionValue) {
                   setSelectedOrgs([...selectedOrgs, selectionValue]);
@@ -210,7 +210,7 @@ const ManageOrgsModal = ({
             </Form.Autosuggest>
           </Form.Group>
           <Form.Checkbox checked={allOrgs} onChange={(e) => setAllOrgs(e.target.checked)}>
-            {intl.formatMessage(messages.assignAll)}
+            {messages.assignAll.defaultMessage}
           </Form.Checkbox>
         </ModalDialog.Body>
 
@@ -219,10 +219,10 @@ const ManageOrgsModal = ({
         <ModalDialog.Footer>
           <ActionRow>
             <ModalDialog.CloseButton onClick={onClose} variant="tertiary">
-              {intl.formatMessage(messages.cancelButton)}
+              {messages.cancelButton.defaultMessage}
             </ModalDialog.CloseButton>
             <Button variant="primary" onClick={confirmSave}>
-              {intl.formatMessage(messages.saveButton)}
+              {messages.saveButton.defaultMessage}
             </Button>
           </ActionRow>
         </ModalDialog.Footer>

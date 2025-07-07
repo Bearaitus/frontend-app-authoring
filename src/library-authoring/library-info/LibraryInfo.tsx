@@ -14,24 +14,24 @@ const LibraryInfo = () => {
       <LibraryPublishStatus />
       <Stack gap={3} direction="vertical">
         <span className="font-weight-bold">
-          {intl.formatMessage(messages.organizationSectionTitle)}
+          {messages.organizationSectionTitle.defaultMessage}
         </span>
         <span>
           {libraryData?.org}
         </span>
         {!readOnly && (
           <Button variant="outline-primary" onClick={openLibraryTeamModal}>
-            {intl.formatMessage(messages.libraryTeamButtonTitle)}
+            {messages.libraryTeamButtonTitle.defaultMessage}
           </Button>
         )}
       </Stack>
       <Stack gap={3}>
         <span className="font-weight-bold">
-          {intl.formatMessage(messages.libraryHistorySectionTitle)}
+          {messages.libraryHistorySectionTitle.defaultMessage}
         </span>
         <Stack gap={1}>
           <span className="small text-gray-500">
-            {intl.formatMessage(messages.lastModifiedLabel)}
+            {messages.lastModifiedLabel.defaultMessage}
           </span>
           <span className="small">
             <FormattedDate
@@ -44,7 +44,7 @@ const LibraryInfo = () => {
         </Stack>
         <Stack gap={1}>
           <span className="small text-gray-500">
-            {intl.formatMessage(messages.createdLabel)}
+            {messages.createdLabel.defaultMessage}
           </span>
           <span className="small">
             <FormattedDate

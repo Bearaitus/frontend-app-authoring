@@ -54,7 +54,7 @@ const CreateOrRerunCourseForm = ({
 
   const newCourseFields = [
     {
-      label: intl.formatMessage(messages.courseDisplayNameLabel),
+      label: messages.courseDisplayNameLabel.defaultMessage,
       helpText: intl.formatMessage(
         isCreateNewCourse
           ? messages.courseDisplayNameCreateHelpText
@@ -62,22 +62,22 @@ const CreateOrRerunCourseForm = ({
       ),
       name: 'displayName',
       value: values.displayName,
-      placeholder: intl.formatMessage(messages.courseDisplayNamePlaceholder),
+      placeholder: messages.courseDisplayNamePlaceholder.defaultMessage,
       disabled: false,
       ref: displayNameFieldReference,
     },
     {
-      label: intl.formatMessage(messages.courseOrgLabel),
+      label: messages.courseOrgLabel.defaultMessage,
       helpText: isCreateNewCourse
         ? intl.formatMessage(messages.courseOrgCreateHelpText, {
-          strong: <strong>{intl.formatMessage(messages.courseNoteOrgNameIsPartStrong)}</strong>,
+          strong: <strong>{messages.courseNoteOrgNameIsPartStrong.defaultMessage}</strong>,
         })
         : intl.formatMessage(messages.courseOrgRerunHelpText, {
           strong: (
             <>
               <br />
               <strong>
-                {intl.formatMessage(messages.courseNoteNoSpaceAllowedStrong)}
+                {messages.courseNoteNoSpaceAllowedStrong.defaultMessage}
               </strong>
             </>
           ),
@@ -85,32 +85,32 @@ const CreateOrRerunCourseForm = ({
       name: 'org',
       value: values.org,
       options: organizations,
-      placeholder: intl.formatMessage(messages.courseOrgPlaceholder),
+      placeholder: messages.courseOrgPlaceholder.defaultMessage,
       disabled: false,
     },
     {
-      label: intl.formatMessage(messages.courseNumberLabel),
+      label: messages.courseNumberLabel.defaultMessage,
       helpText: isCreateNewCourse
         ? intl.formatMessage(messages.courseNumberCreateHelpText, {
           strong: (
             <strong>
-              {intl.formatMessage(messages.courseNotePartCourseURLRequireStrong)}
+              {messages.courseNotePartCourseURLRequireStrong.defaultMessage}
             </strong>
           ),
         })
-        : intl.formatMessage(messages.courseNumberRerunHelpText),
+        : messages.courseNumberRerunHelpText.defaultMessage,
       name: 'number',
       value: values.number,
-      placeholder: intl.formatMessage(messages.courseNumberPlaceholder),
+      placeholder: messages.courseNumberPlaceholder.defaultMessage,
       disabled: !isCreateNewCourse,
     },
     {
-      label: intl.formatMessage(messages.courseRunLabel),
+      label: messages.courseRunLabel.defaultMessage,
       helpText: isCreateNewCourse
         ? intl.formatMessage(messages.courseRunCreateHelpText, {
           strong: (
             <strong>
-              {intl.formatMessage(messages.courseNotePartCourseURLRequireStrong)}
+              {messages.courseNotePartCourseURLRequireStrong.defaultMessage}
             </strong>
           ),
         })
@@ -119,14 +119,14 @@ const CreateOrRerunCourseForm = ({
             <>
               <br />
               <strong>
-                {intl.formatMessage(messages.courseNoteNoSpaceAllowedStrong)}
+                {messages.courseNoteNoSpaceAllowedStrong.defaultMessage}
               </strong>
             </>
           ),
         }),
       name: 'run',
       value: values.run,
-      placeholder: intl.formatMessage(messages.courseRunPlaceholder),
+      placeholder: messages.courseRunPlaceholder.defaultMessage,
       disabled: false,
       ref: runFieldReference,
     },
@@ -169,7 +169,7 @@ const CreateOrRerunCourseForm = ({
       placeholder={field.placeholder}
       handleBlur={handleCustomBlurForDropdown}
       handleChange={(value) => setFieldValue(field.name, value)}
-      noOptionsMessage={intl.formatMessage(messages.courseOrgNoOptions)}
+      noOptionsMessage={messages.courseOrgNoOptions.defaultMessage}
       helpMessage=""
       errorMessage=""
       floatingLabel=""
@@ -177,7 +177,7 @@ const CreateOrRerunCourseForm = ({
   ) : (
     <Dropdown className="mr-2">
       <Dropdown.Toggle id={`${field.name}-dropdown`} variant="outline-primary">
-        {field.value || intl.formatMessage(messages.courseOrgNoOptions)}
+        {field.value || messages.courseOrgNoOptions.defaultMessage}
       </Dropdown.Toggle>
       <Dropdown.Menu>
         {field.options?.map((value) => (
@@ -258,7 +258,7 @@ const CreateOrRerunCourseForm = ({
             variant="outline-primary"
             onClick={handleOnClickCancel}
           >
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <StatefulButton
             key="save-button"

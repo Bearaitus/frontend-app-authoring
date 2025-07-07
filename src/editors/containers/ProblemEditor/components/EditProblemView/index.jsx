@@ -65,8 +65,8 @@ const EditProblemView = ({
     >
       <AlertModal
         title={isAdvancedProblemType ? (
-          intl.formatMessage(messages.olxSettingDiscrepancyTitle)
-        ) : intl.formatMessage(messages.noAnswerTitle)}
+          messages.olxSettingDiscrepancyTitle.defaultMessage
+        ) : messages.noAnswerTitle.defaultMessage}
         isOpen={isSaveWarningModalOpen}
         onClose={closeSaveWarningModal}
         footerNode={(

@@ -25,7 +25,7 @@ const CourseTeam = ({ courseId }) => {
   const intl = useIntl();
 
   const courseDetails = useModel('courseDetails', courseId);
-  document.title = getPageHeadTitle(courseDetails?.name, intl.formatMessage(messages.headingTitle));
+  document.title = getPageHeadTitle(courseDetails?.name, messages.headingTitle.defaultMessage);
 
   const {
     modalType,
@@ -75,8 +75,8 @@ const CourseTeam = ({ courseId }) => {
               <article>
                 <div>
                   <SubHeader
-                    title={intl.formatMessage(messages.headingTitle)}
-                    subtitle={intl.formatMessage(messages.headingSubtitle)}
+                    title={messages.headingTitle.defaultMessage}
+                    subtitle={messages.headingSubtitle.defaultMessage}
                     headerActions={isAllowActions && (
                       <Button
                         variant="primary"
@@ -85,7 +85,7 @@ const CourseTeam = ({ courseId }) => {
                         onClick={openForm}
                         disabled={isFormVisible}
                       >
-                        {intl.formatMessage(messages.addNewMemberButton)}
+                        {messages.addNewMemberButton.defaultMessage}
                       </Button>
                     )}
                   />

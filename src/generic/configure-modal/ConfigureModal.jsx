@@ -116,17 +116,17 @@ const ConfigureModal = ({
     prereqUsageKey: Yup.string().nullable(true),
     prereqMinScore: Yup.number().min(
       0,
-      intl.formatMessage(messages.minScoreError),
+      messages.minScoreError.defaultMessage,
     ).max(
       100,
-      intl.formatMessage(messages.minScoreError),
+      messages.minScoreError.defaultMessage,
     ).nullable(true),
     prereqMinCompletion: Yup.number().min(
       0,
-      intl.formatMessage(messages.minScoreError),
+      messages.minScoreError.defaultMessage,
     ).max(
       100,
-      intl.formatMessage(messages.minScoreError),
+      messages.minScoreError.defaultMessage,
     ).nullable(true),
     selectedPartitionIndex: Yup.number().integer(),
     selectedGroups: Yup.array().of(Yup.string()),
@@ -184,7 +184,7 @@ const ConfigureModal = ({
       case COURSE_BLOCK_NAMES.chapter.id:
         return (
           <Tabs>
-            <Tab eventKey="basic" title={intl.formatMessage(messages.basicTabTitle)}>
+            <Tab eventKey="basic" title={messages.basicTabTitle.defaultMessage}>
               <BasicTab
                 values={values}
                 setFieldValue={setFieldValue}
@@ -193,7 +193,7 @@ const ConfigureModal = ({
                 isSelfPaced={isSelfPaced}
               />
             </Tab>
-            <Tab eventKey="visibility" title={intl.formatMessage(messages.visibilityTabTitle)}>
+            <Tab eventKey="visibility" title={messages.visibilityTabTitle.defaultMessage}>
               <VisibilityTab
                 values={values}
                 setFieldValue={setFieldValue}
@@ -207,7 +207,7 @@ const ConfigureModal = ({
       case COURSE_BLOCK_NAMES.sequential.id:
         return (
           <Tabs>
-            <Tab eventKey="basic" title={intl.formatMessage(messages.basicTabTitle)}>
+            <Tab eventKey="basic" title={messages.basicTabTitle.defaultMessage}>
               <BasicTab
                 values={values}
                 setFieldValue={setFieldValue}
@@ -216,7 +216,7 @@ const ConfigureModal = ({
                 isSelfPaced={isSelfPaced}
               />
             </Tab>
-            <Tab eventKey="visibility" title={intl.formatMessage(messages.visibilityTabTitle)}>
+            <Tab eventKey="visibility" title={messages.visibilityTabTitle.defaultMessage}>
               <VisibilityTab
                 values={values}
                 setFieldValue={setFieldValue}
@@ -225,7 +225,7 @@ const ConfigureModal = ({
                 showWarning={visibilityState === VisibilityTypes.STAFF_ONLY}
               />
             </Tab>
-            <Tab eventKey="advanced" title={intl.formatMessage(messages.advancedTabTitle)}>
+            <Tab eventKey="advanced" title={messages.advancedTabTitle.defaultMessage}>
               <AdvancedTab
                 values={values}
                 setFieldValue={setFieldValue}
@@ -292,13 +292,13 @@ const ConfigureModal = ({
               <ModalDialog.Footer className="pt-1">
                 <ActionRow>
                   <ModalDialog.CloseButton variant="tertiary">
-                    {intl.formatMessage(messages.cancelButton)}
+                    {messages.cancelButton.defaultMessage}
                   </ModalDialog.CloseButton>
                   <Button
                     data-testid="configure-save-button"
                     onClick={handleSubmit}
                   >
-                    {intl.formatMessage(messages.saveButton)}
+                    {messages.saveButton.defaultMessage}
                   </Button>
                 </ActionRow>
               </ModalDialog.Footer>

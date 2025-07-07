@@ -22,8 +22,8 @@ const SearchResults: React.FC<Record<never, never>> = () => {
   } = useSearchContext();
 
   const labels = {
-    default: intl.formatMessage(messages.showMoreResults),
-    pending: intl.formatMessage(messages.loadingMoreResults),
+    default: messages.showMoreResults.defaultMessage,
+    pending: messages.loadingMoreResults.defaultMessage,
   };
 
   return (

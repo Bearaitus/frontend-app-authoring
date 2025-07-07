@@ -52,7 +52,7 @@ const SequenceNavigation = ({
   };
 
   const renderPreviousButton = () => {
-    const buttonText = intl.formatMessage(messages.prevBtnText);
+    const buttonText = messages.prevBtnText.defaultMessage;
     const prevArrow = isRtl(getLocale()) ? ChevronRightIcon : ChevronLeftIcon;
 
     if (!isFirstUnit) {
@@ -73,7 +73,7 @@ const SequenceNavigation = ({
   };
 
   const renderNextButton = () => {
-    const buttonText = intl.formatMessage(messages.nextBtnText);
+    const buttonText = messages.nextBtnText.defaultMessage;
     const nextArrow = isRtl(getLocale()) ? ChevronLeftIcon : ChevronRightIcon;
 
     if (!isLastUnit) {

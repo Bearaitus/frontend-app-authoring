@@ -37,16 +37,16 @@ const TopicItem = ({
     if (isGeneralTopic && isOpen) {
       return (
         <div className="h4 py-2 mr-auto">
-          {intl.formatMessage(messages.renameGeneralTopic)}
+          {messages.renameGeneralTopic.defaultMessage}
           <div className="small text-muted mt-2">
-            {intl.formatMessage(messages.generalTopicHelp)}
+            {messages.generalTopicHelp.defaultMessage}
           </div>
         </div>
       );
     } if (isOpen) {
       return (
         <span className="h4 py-2 mr-auto">
-          {intl.formatMessage(messages.configureAdditionalTopic)}
+          {messages.configureAdditionalTopic.defaultMessage}
         </span>
       );
     }
@@ -73,23 +73,23 @@ const TopicItem = ({
     <Card className="rounded mb-3 px-1">
       <Card.Header
         className="text-primary-500"
-        title={intl.formatMessage(messages.discussionTopicDeletionLabel)}
+        title={messages.discussionTopicDeletionLabel.defaultMessage}
         size="sm"
       />
       <Card.Body>
         <Card.Section className="text-justify text-muted pt-2 pb-3">
-          {intl.formatMessage(messages.discussionTopicDeletionHelp)}
+          {messages.discussionTopicDeletionHelp.defaultMessage}
         </Card.Section>
         <Card.Footer>
           <Button variant="tertiary" onClick={() => setShowDeletePopup(false)}>
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <Button
             variant="outline-brand"
             className="ml-2"
             onClick={onDelete}
           >
-            {intl.formatMessage(messages.deleteButton)}
+            {messages.deleteButton.defaultMessage}
           </Button>
         </Card.Footer>
       </Card.Body>
@@ -104,9 +104,9 @@ const TopicItem = ({
         onToggle={handleToggle}
         title={getHeading(collapseIsOpen)}
         onDelete={isGeneralTopic ? null : deleteDiscussionTopic}
-        expandAlt={intl.formatMessage(messages.expandAltText)}
-        collapseAlt={intl.formatMessage(messages.collapseAltText)}
-        deleteAlt={intl.formatMessage(messages.deleteAltText)}
+        expandAlt={messages.expandAltText.defaultMessage}
+        collapseAlt={messages.collapseAltText.defaultMessage}
+        deleteAlt={messages.deleteAltText.defaultMessage}
         data-testid={id}
       >
         <Form.Group
@@ -125,7 +125,7 @@ const TopicItem = ({
           <FieldFeedback
             errorCondition={hasError && !inFocus}
             feedbackCondition={inFocus}
-            feedbackMessage={intl.formatMessage(messages.addTopicHelpText)}
+            feedbackMessage={messages.addTopicHelpText.defaultMessage}
             errorMessage={errors?.discussionTopics?.[index]?.name || ''}
             transitionClasses="mt-1"
           />

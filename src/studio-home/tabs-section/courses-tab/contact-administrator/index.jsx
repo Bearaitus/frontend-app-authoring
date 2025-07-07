@@ -19,14 +19,14 @@ const ContactAdministrator = ({
         title={intl.formatMessage(messages.defaultSection_1_Title, { studioShortName })}
         className="small"
       >
-        {intl.formatMessage(messages.defaultSection_1_Description)}
+        {messages.defaultSection_1_Description.defaultMessage}
       </Card.Section>
       {hasAbilityToCreateCourse && (
         <>
           <Card.Divider />
           <Card.Section
             className="small"
-            title={intl.formatMessage(messages.defaultSection_2_Title)}
+            title={messages.defaultSection_2_Title.defaultMessage}
             actions={(
               <Button
                 iconBefore={AddIcon}
@@ -35,11 +35,11 @@ const ContactAdministrator = ({
                 disabled={!hasAbilityToCreateCourse || showNewCourseContainer}
                 onClick={onClickNewCourse}
               >
-                {intl.formatMessage(messages.btnAddNewCourseText)}
+                {messages.btnAddNewCourseText.defaultMessage}
               </Button>
             )}
           >
-            {intl.formatMessage(messages.defaultSection_2_Description)}
+            {messages.defaultSection_2_Description.defaultMessage}
           </Card.Section>
         </>
       )}

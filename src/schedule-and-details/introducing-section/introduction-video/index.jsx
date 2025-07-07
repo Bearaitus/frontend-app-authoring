@@ -13,13 +13,13 @@ const IntroductionVideo = ({ intl, introVideo, onChange }) => {
   return (
     <Form.Group className="form-group-custom">
       <Form.Label>
-        {intl.formatMessage(messages.courseIntroductionVideoLabel)}
+        {messages.courseIntroductionVideoLabel.defaultMessage}
       </Form.Label>
       <Card>
         <Card.Body className="embed-video-container">
           <div className="introduction-video">
             <iframe
-              title={intl.formatMessage(messages.courseIntroductionVideoLabel)}
+              title={messages.courseIntroductionVideoLabel.defaultMessage}
               width="618"
               height="350"
               src={embedVideoUrl}
@@ -32,7 +32,7 @@ const IntroductionVideo = ({ intl, introVideo, onChange }) => {
         <Card.Footer className="p-2.5">
           <Form.Control
             value={introVideo || ''}
-            placeholder={intl.formatMessage(messages.courseIntroductionVideoPlaceholder)}
+            placeholder={messages.courseIntroductionVideoPlaceholder.defaultMessage}
             onChange={(e) => onChange(e.target.value, 'introVideo')}
           />
           <Button
@@ -40,12 +40,12 @@ const IntroductionVideo = ({ intl, introVideo, onChange }) => {
             onClick={() => onChange('', 'introVideo')}
             disabled={!introVideo}
           >
-            {intl.formatMessage(messages.courseIntroductionVideoDelete)}
+            {messages.courseIntroductionVideoDelete.defaultMessage}
           </Button>
         </Card.Footer>
       </Card>
       <Form.Control.Feedback>
-        {intl.formatMessage(messages.courseIntroductionVideoHelpText)}
+        {messages.courseIntroductionVideoHelpText.defaultMessage}
       </Form.Control.Feedback>
     </Form.Group>
   );

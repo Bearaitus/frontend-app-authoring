@@ -45,9 +45,9 @@ const CollectionsSelectableBox = ({ usageKey, collections, onClose }: Collection
   const handleConfirmation = () => {
     setBtnState('pending');
     updateCollectionsMutation.mutateAsync(selectedCollections).then(() => {
-      showToast(intl.formatMessage(messages.manageCollectionsToComponentSuccess));
+      showToast(messages.manageCollectionsToComponentSuccess.defaultMessage);
     }).catch(() => {
-      showToast(intl.formatMessage(messages.manageCollectionsToComponentFailed));
+      showToast(messages.manageCollectionsToComponentFailed.defaultMessage);
     }).finally(() => {
       setBtnState('default');
       onClose();
@@ -65,7 +65,7 @@ const CollectionsSelectableBox = ({ usageKey, collections, onClose }: Collection
           onChange={handleChange}
           name="selectedCollections"
           columns={1}
-          ariaLabelledby={intl.formatMessage(messages.manageCollectionsSelectionLabel)}
+          ariaLabelledby={messages.manageCollectionsSelectionLabel.defaultMessage}
         >
           {hits.map((collectionHit) => (
             <SelectableBox
@@ -90,7 +90,7 @@ const CollectionsSelectableBox = ({ usageKey, collections, onClose }: Collection
           className="font-weight-bold"
           variant="tertiary"
         >
-          {intl.formatMessage(messages.manageCollectionsToComponentCancelBtn)}
+          {messages.manageCollectionsToComponentCancelBtn.defaultMessage}
         </Button>
         <StatefulButton
           onClick={handleConfirmation}
@@ -98,7 +98,7 @@ const CollectionsSelectableBox = ({ usageKey, collections, onClose }: Collection
           variant="primary"
           state={btnState}
           labels={{
-            default: intl.formatMessage(messages.manageCollectionsToComponentConfirmBtn),
+            default: messages.manageCollectionsToComponentConfirmBtn.defaultMessage,
           }}
         />
       </Stack>
@@ -123,7 +123,7 @@ const AddToCollectionsDrawer = ({ usageKey, collections, onClose }: CollectionsD
         <Stack gap={1} direction="horizontal">
           <SearchKeywordsField
             className="flex-grow-1"
-            placeholder={intl.formatMessage(messages.manageCollectionsSearchPlaceholder)}
+            placeholder={messages.manageCollectionsSearchPlaceholder.defaultMessage}
           />
           <SearchSortWidget iconOnly />
         </Stack>
@@ -157,7 +157,7 @@ const ComponentCollections = ({ collections, onManageClick }: {
             onClick={onManageClick}
             variant="primary"
           >
-            {intl.formatMessage(messages.manageCollectionsAddBtnText)}
+            {messages.manageCollectionsAddBtnText.defaultMessage}
           </Button>
         )}
       </Stack>
@@ -182,7 +182,7 @@ const ComponentCollections = ({ collections, onManageClick }: {
           onClick={onManageClick}
           variant="outline-primary"
         >
-          {intl.formatMessage(messages.manageCollectionsText)}
+          {messages.manageCollectionsText.defaultMessage}
         </Button>
       )}
     </Stack>

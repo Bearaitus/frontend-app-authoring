@@ -56,7 +56,7 @@ const CollectionInfo = () => {
             variant="outline-primary"
             className="m-1 text-nowrap flex-grow-1"
           >
-            {intl.formatMessage(messages.openCollectionButton)}
+            {messages.openCollectionButton.defaultMessage}
           </Button>
         </div>
       )}
@@ -65,13 +65,13 @@ const CollectionInfo = () => {
         className="my-3 d-flex justify-content-around"
         defaultActiveKey="manage"
       >
-        <Tab eventKey="manage" title={intl.formatMessage(messages.manageTabTitle)}>
+        <Tab eventKey="manage" title={messages.manageTabTitle.defaultMessage}>
           <ContentTagsDrawer
             id={collectionUsageKey}
             variant="component"
           />
         </Tab>
-        <Tab eventKey="details" title={intl.formatMessage(messages.detailsTabTitle)}>
+        <Tab eventKey="details" title={messages.detailsTabTitle.defaultMessage}>
           <CollectionDetails />
         </Tab>
       </Tabs>

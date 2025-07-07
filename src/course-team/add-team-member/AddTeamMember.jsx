@@ -12,8 +12,8 @@ const AddTeamMember = ({ onFormOpen, isButtonDisable }) => {
   return (
     <div className="add-team-member bg-gray-100" data-testid="add-team-member">
       <div className="add-team-member-info">
-        <h3 className="add-team-member-title font-weight-bold">{intl.formatMessage(messages.title)}</h3>
-        <span className="text-gray-500 small">{intl.formatMessage(messages.description)}</span>
+        <h3 className="add-team-member-title font-weight-bold">{messages.title.defaultMessage}</h3>
+        <span className="text-gray-500 small">{messages.description.defaultMessage}</span>
       </div>
       <Button
         variant="primary"
@@ -21,7 +21,7 @@ const AddTeamMember = ({ onFormOpen, isButtonDisable }) => {
         onClick={onFormOpen}
         disabled={isButtonDisable}
       >
-        {intl.formatMessage(messages.button)}
+        {messages.button.defaultMessage}
       </Button>
     </div>
   );

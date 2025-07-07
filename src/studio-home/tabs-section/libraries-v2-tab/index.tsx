@@ -54,7 +54,7 @@ const LibrariesV2Tab: React.FC<Props> = () => {
   // TODO: update this link when tutorial is ready.
   const librariesTutorialLink = (
     <Alert.Link href="https://docs.openedx.org">
-      {intl.formatMessage(messages.librariesV2TabBetaTutorialLinkText)}
+      {messages.librariesV2TabBetaTutorialLinkText.defaultMessage}
     </Alert.Link>
   );
 
@@ -73,7 +73,7 @@ const LibrariesV2Tab: React.FC<Props> = () => {
           description={(
             <Row className="m-0 align-items-center">
               <Icon src={Error} className="text-danger-500 mr-1" />
-              <span>{intl.formatMessage(messages.librariesTabErrorMessage)}</span>
+              <span>{messages.librariesTabErrorMessage.defaultMessage}</span>
             </Row>
           )}
         />
@@ -113,13 +113,13 @@ const LibrariesV2Tab: React.FC<Props> = () => {
             )) : isFiltered && !isLoading && (
               <Alert className="mt-4">
                 <Alert.Heading>
-                  {intl.formatMessage(messages.librariesV2TabLibraryNotFoundAlertTitle)}
+                  {messages.librariesV2TabLibraryNotFoundAlertTitle.defaultMessage}
                 </Alert.Heading>
                 <p>
-                  {intl.formatMessage(messages.librariesV2TabLibraryNotFoundAlertMessage)}
+                  {messages.librariesV2TabLibraryNotFoundAlertMessage.defaultMessage}
                 </p>
                 <Button variant="primary" onClick={handleClearFilters}>
-                  {intl.formatMessage(messages.coursesTabCourseNotFoundAlertCleanFiltersButton)}
+                  {messages.coursesTabCourseNotFoundAlertCleanFiltersButton.defaultMessage}
                 </Button>
               </Alert>
             )}

@@ -25,12 +25,12 @@ const CompareChangesWidget = ({ usageKey, oldVersion = 'published', newVersion =
   return (
     <div>
       <Tabs variant="tabs" defaultActiveKey="new" id="preview-version-toggle">
-        <Tab eventKey="old" title={intl.formatMessage(messages.oldVersionTitle)}>
+        <Tab eventKey="old" title={messages.oldVersionTitle.defaultMessage}>
           <div className="p-2 bg-white">
             <LibraryBlock usageKey={usageKey} version={oldVersion} />
           </div>
         </Tab>
-        <Tab eventKey="new" title={intl.formatMessage(messages.newVersionTitle)}>
+        <Tab eventKey="new" title={messages.newVersionTitle.defaultMessage}>
           <div className="p-2 bg-white">
             <LibraryBlock usageKey={usageKey} version={newVersion} />
           </div>

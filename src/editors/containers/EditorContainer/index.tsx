@@ -39,7 +39,7 @@ export const EditorModalWrapper: React.FC<WrapperProps & { onClose: () => void }
       </div>
     );
   }
-  const title = intl.formatMessage(messages.modalTitle);
+  const title = messages.modalTitle.defaultMessage;
   return (
     <ModalDialog isOpen size="xl" isOverflowVisible={false} onClose={onClose} title={title}>{children}</ModalDialog>
   );
@@ -137,7 +137,7 @@ const EditorContainer: React.FC<Props> = ({
         close={() => {
           closeCancelConfirmModal();
         }}
-        title={intl.formatMessage(messages.cancelConfirmTitle)}
+        title={messages.cancelConfirmTitle.defaultMessage}
       >
         <FormattedMessage {...messages.cancelConfirmDescription} />
       </BaseModal>
@@ -150,7 +150,7 @@ const EditorContainer: React.FC<Props> = ({
             src={Close}
             iconAs={Icon}
             onClick={confirmCancelIfDirty}
-            alt={intl.formatMessage(messages.exitButtonAlt)}
+            alt={messages.exitButtonAlt.defaultMessage}
           />
         </div>
       </ModalDialog.Header>
@@ -161,14 +161,14 @@ const EditorContainer: React.FC<Props> = ({
         <ModalDialog.Footer className="shadow-sm">
           <ActionRow>
             <Button
-              aria-label={intl.formatMessage(messages.cancelButtonAriaLabel)}
+              aria-label={messages.cancelButtonAriaLabel.defaultMessage}
               variant="tertiary"
               onClick={confirmCancelIfDirty}
             >
               <FormattedMessage {...messages.cancelButtonLabel} />
             </Button>
             <Button
-              aria-label={intl.formatMessage(messages.saveButtonAriaLabel)}
+              aria-label={messages.saveButtonAriaLabel.defaultMessage}
               onClick={onSave}
               disabled={disableSave}
             >

@@ -58,8 +58,8 @@ const EditorContainer: React.FC<Props> = ({
         show={upstreamLibRef}
         variant="warning"
         icon={WarningIcon}
-        title={intl.formatMessage(messages.libraryBlockEditWarningTitle)}
-        description={intl.formatMessage(messages.libraryBlockEditWarningDescription)}
+        title={messages.libraryBlockEditWarningTitle.defaultMessage}
+        description={messages.libraryBlockEditWarningDescription.defaultMessage}
         actions={[
           <Button
             destination={getLibraryBlockUrl()}
@@ -68,7 +68,7 @@ const EditorContainer: React.FC<Props> = ({
             showLaunchIcon
             as={Hyperlink}
           >
-            {intl.formatMessage(messages.libraryBlockEditWarningLink)}
+            {messages.libraryBlockEditWarningLink.defaultMessage}
           </Button>,
         ]}
       />

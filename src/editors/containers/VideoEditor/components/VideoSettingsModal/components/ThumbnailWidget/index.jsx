@@ -55,17 +55,17 @@ const ThumbnailWidget = ({
   const getSubtitle = () => {
     if (edxVideo) {
       if (thumbnail) {
-        return intl.formatMessage(messages.yesSubtitle);
+        return messages.yesSubtitle.defaultMessage;
       }
-      return intl.formatMessage(messages.noneSubtitle);
+      return messages.noneSubtitle.defaultMessage;
     }
-    return intl.formatMessage(messages.unavailableSubtitle);
+    return messages.unavailableSubtitle.defaultMessage;
   };
   return (!isLibrary && edxVideo ? (
     <CollapsibleFormWidget
       fontSize="x-small"
       isError={Object.keys(error).length !== 0}
-      title={intl.formatMessage(messages.title)}
+      title={messages.title.defaultMessage}
       subtitle={getSubtitle()}
     >
       <ErrorAlert
@@ -88,12 +88,12 @@ const ThumbnailWidget = ({
             className="w-75"
             ref={imgRef}
             src={thumbnailSrc || thumbnail}
-            alt={intl.formatMessage(messages.thumbnailAltText)}
+            alt={messages.thumbnailAltText.defaultMessage}
           />
           {allowThumbnailUpload && (
             <IconButtonWithTooltip
               tooltipPlacement="top"
-              tooltipContent={intl.formatMessage(messages.deleteThumbnail)}
+              tooltipContent={messages.deleteThumbnail.defaultMessage}
               iconAs={Icon}
               src={DeleteOutline}
               onClick={deleteThumbnail}

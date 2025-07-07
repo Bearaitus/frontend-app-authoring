@@ -31,9 +31,9 @@ const LibraryInfoHeader = () => {
         id: library.id,
         title: newTitle,
       }).then(() => {
-        showToast(intl.formatMessage(messages.updateLibrarySuccessMsg));
+        showToast(messages.updateLibrarySuccessMsg.defaultMessage);
       }).catch(() => {
-        showToast(intl.formatMessage(messages.updateLibraryErrorMsg));
+        showToast(messages.updateLibraryErrorMsg.defaultMessage);
       });
     }
     setIsActive(false);
@@ -75,7 +75,7 @@ const LibraryInfoHeader = () => {
               <IconButton
                 src={Edit}
                 iconAs={Icon}
-                alt={intl.formatMessage(messages.editNameButtonAlt)}
+                alt={messages.editNameButtonAlt.defaultMessage}
                 onClick={handleClick}
                 className="mt-1 ml-2"
                 size="inline"

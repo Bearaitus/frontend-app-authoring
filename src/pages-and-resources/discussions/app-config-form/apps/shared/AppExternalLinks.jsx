@@ -24,7 +24,7 @@ const AppExternalLinks = ({
         ? (
           <>
             <AppConfigFormDivider />
-            <h4 className="pt-4">{intl.formatMessage(messages.linkTextHeading)}</h4>
+            <h4 className="pt-4">{messages.linkTextHeading.defaultMessage}</h4>
             {linkTypes.map((type) => (
               <div key={type}>
                 <Hyperlink

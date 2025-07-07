@@ -62,15 +62,15 @@ const Textbooks = ({ courseId }) => {
     <>
       <Helmet>
         <title>
-          {`${courseDetails?.name} | ${intl.formatMessage(messages.headingTitle)}`}
+          {`${courseDetails?.name} | ${messages.headingTitle.defaultMessage}`}
         </title>
       </Helmet>
       <Container size="xl" className="px-4">
         <section className="mb-4 mt-5">
           <SubHeader
-            title={intl.formatMessage(messages.headingTitle)}
+            title={messages.headingTitle.defaultMessage}
             breadcrumbs={(
-              <Breadcrumb ariaLabel={intl.formatMessage(messages.breadcrumbAriaLabel)} links={breadcrumbs} />
+              <Breadcrumb ariaLabel={messages.breadcrumbAriaLabel.defaultMessage} links={breadcrumbs} />
             )}
             headerActions={(
               <Button
@@ -78,7 +78,7 @@ const Textbooks = ({ courseId }) => {
                 onClick={openTextbookForm}
                 disabled={isTextbookFormOpen}
               >
-                {intl.formatMessage(messages.newTextbookButton)}
+                {messages.newTextbookButton.defaultMessage}
               </Button>
             )}
           />

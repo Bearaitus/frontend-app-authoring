@@ -71,10 +71,10 @@ const DeleteConfirmationModal = ({
       footerNode={(
         <ActionRow>
           <Button variant="tertiary" onClick={closeDeleteConfirmation}>
-            {intl.formatMessage(messages.cancelButtonLabel)}
+            {messages.cancelButtonLabel.defaultMessage}
           </Button>
           <Button onClick={handleBulkDelete}>
-            {intl.formatMessage(messages.deleteFileButtonLabel)}
+            {messages.deleteFileButtonLabel.defaultMessage}
           </Button>
         </ActionRow>
       )}

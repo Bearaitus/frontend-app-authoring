@@ -16,7 +16,7 @@ const AccessColumn = ({
       placement="top"
       overlay={(
         <Tooltip id="access-tooltip-description">
-          {intl.formatMessage(messages.lockFileTooltipContent)}
+          {messages.lockFileTooltipContent.defaultMessage}
         </Tooltip>
       )}
     >

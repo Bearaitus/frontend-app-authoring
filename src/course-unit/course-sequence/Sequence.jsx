@@ -40,7 +40,7 @@ const Sequence = ({
   const isLoading = sequenceStatus === IN_PROGRESS || (sequenceStatus === FAILED && sequenceMightBeUnit);
   if (isLoading) {
     if (!sequenceId) {
-      return (<div>{intl.formatMessage(messages.sequenceNoContent)}</div>);
+      return (<div>{messages.sequenceNoContent.defaultMessage}</div>);
     }
 
     return <Loading />;
@@ -53,7 +53,7 @@ const Sequence = ({
   // sequence status 'failed' and any other unexpected sequence status.
   return (
     <p className="sequence-load-failure-msg text-center py-5 mx-auto">
-      {intl.formatMessage(messages.sequenceLoadFailure)}
+      {messages.sequenceLoadFailure.defaultMessage}
     </p>
   );
 };

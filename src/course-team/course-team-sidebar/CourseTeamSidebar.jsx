@@ -19,16 +19,16 @@ const CourseTeamSideBar = ({ courseId, isOwnershipHint, isShowInitialSidebar }) 
         showOtherSettings={false}
       >
         <h4 className="help-sidebar-about-title">
-          {intl.formatMessage(messages.sidebarTitle)}
+          {messages.sidebarTitle.defaultMessage}
         </h4>
         <p className="help-sidebar-about-descriptions">
-          {intl.formatMessage(messages.sidebarAbout_1)}
+          {messages.sidebarAbout_1.defaultMessage}
         </p>
         <p className="help-sidebar-about-descriptions">
-          {intl.formatMessage(messages.sidebarAbout_2)}
+          {messages.sidebarAbout_2.defaultMessage}
         </p>
         <p className="help-sidebar-about-descriptions">
-          {intl.formatMessage(messages.sidebarAbout_3)}
+          {messages.sidebarAbout_3.defaultMessage}
         </p>
       </HelpSidebar>
       {isOwnershipHint && (
@@ -40,12 +40,12 @@ const CourseTeamSideBar = ({ courseId, isOwnershipHint, isShowInitialSidebar }) 
             showOtherSettings={false}
           >
             <h4 className="help-sidebar-about-title">
-              {intl.formatMessage(messages.ownershipTitle)}
+              {messages.ownershipTitle.defaultMessage}
             </h4>
             <p className="help-sidebar-about-descriptions">
               {intl.formatMessage(
                 messages.ownershipDescription,
-                { strong: <strong>{intl.formatMessage(messages.addAdminAccess)}</strong> },
+                { strong: <strong>{messages.addAdminAccess.defaultMessage}</strong> },
               )}
             </p>
           </HelpSidebar>

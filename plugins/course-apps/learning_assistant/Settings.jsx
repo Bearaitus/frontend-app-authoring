@@ -26,7 +26,7 @@ const LearningAssistantSettings = ({ onClose }) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {intl.formatMessage(messages.learningAssistantOpenAIDataPrivacyLink)}
+              {messages.learningAssistantOpenAIDataPrivacyLink.defaultMessage}
             </Hyperlink>
           )}
           {appInfo.documentationLinks?.learnMoreOpenai && (
@@ -36,7 +36,7 @@ const LearningAssistantSettings = ({ onClose }) => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              {intl.formatMessage(messages.learningAssistantOpenAILink)}
+              {messages.learningAssistantOpenAILink.defaultMessage}
             </Hyperlink>
           )}
         </div>
@@ -47,9 +47,9 @@ const LearningAssistantSettings = ({ onClose }) => {
   return (
     <AppSettingsModal
       appId={appId}
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableLearningAssistantHelp)}
-      enableAppLabel={intl.formatMessage(messages.enableLearningAssistantLabel)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableLearningAssistantHelp.defaultMessage}
+      enableAppLabel={messages.enableLearningAssistantLabel.defaultMessage}
       bodyChildren={bodyChildren}
       onClose={onClose}
     />

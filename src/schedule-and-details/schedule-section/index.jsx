@@ -37,22 +37,22 @@ const ScheduleSection = ({
     {
       value: startDate,
       labels: [
-        intl.formatMessage(messages.scheduleCourseStartDateLabel),
-        intl.formatMessage(messages.scheduleCourseStartTimeLabel),
+        messages.scheduleCourseStartDateLabel.defaultMessage,
+        messages.scheduleCourseStartTimeLabel.defaultMessage,
       ],
       rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: intl.formatMessage(messages.scheduleCourseStartDateHelpText),
+      helpText: messages.scheduleCourseStartDateHelpText.defaultMessage,
       controlName: 'startDate',
       errorFeedback: errorFields?.startDate,
     },
     {
       labels: [
-        intl.formatMessage(messages.scheduleCourseEndDateLabel),
-        intl.formatMessage(messages.scheduleCourseEndTimeLabel),
+        messages.scheduleCourseEndDateLabel.defaultMessage,
+        messages.scheduleCourseEndTimeLabel.defaultMessage,
       ],
       value: endDate,
       rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: intl.formatMessage(messages.scheduleCourseEndDateHelpText),
+      helpText: messages.scheduleCourseEndDateHelpText.defaultMessage,
       controlName: 'endDate',
       errorFeedback: errorFields?.endDate,
     },
@@ -67,19 +67,19 @@ const ScheduleSection = ({
     },
     {
       labels: [
-        intl.formatMessage(messages.scheduleEnrollmentStartDateLabel),
-        intl.formatMessage(messages.scheduleEnrollmentStartTimeLabel),
+        messages.scheduleEnrollmentStartDateLabel.defaultMessage,
+        messages.scheduleEnrollmentStartTimeLabel.defaultMessage,
       ],
       value: enrollmentStart,
       rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: intl.formatMessage(messages.scheduleEnrollmentStartDateHelpText),
+      helpText: messages.scheduleEnrollmentStartDateHelpText.defaultMessage,
       controlName: 'enrollmentStart',
       errorFeedback: errorFields?.enrollmentStart,
     },
     {
       labels: [
-        intl.formatMessage(messages.scheduleEnrollmentEndDateLabel),
-        intl.formatMessage(messages.scheduleEnrollmentEndTimeLabel),
+        messages.scheduleEnrollmentEndDateLabel.defaultMessage,
+        messages.scheduleEnrollmentEndTimeLabel.defaultMessage,
       ],
       value: enrollmentEnd,
       rowType: SCHEDULE_ROW_TYPES.datetime,
@@ -91,8 +91,8 @@ const ScheduleSection = ({
     {
       skip: !upgradeDeadline,
       labels: [
-        intl.formatMessage(messages.scheduleUpgradeDeadlineDateLabel),
-        intl.formatMessage(messages.scheduleUpgradeDeadlineTimeLabel),
+        messages.scheduleUpgradeDeadlineDateLabel.defaultMessage,
+        messages.scheduleUpgradeDeadlineTimeLabel.defaultMessage,
       ],
       value: upgradeDeadline,
       rowType: SCHEDULE_ROW_TYPES.datetime,
@@ -111,8 +111,8 @@ const ScheduleSection = ({
   return (
     <section className="section-container schedule-section" id="schedule">
       <SectionSubHeader
-        title={intl.formatMessage(messages.scheduleTitle)}
-        description={intl.formatMessage(messages.scheduleDescription)}
+        title={messages.scheduleTitle.defaultMessage}
+        description={messages.scheduleDescription.defaultMessage}
       />
       <ul className="schedule-date-list">
         {propsForScheduleFields

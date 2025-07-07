@@ -42,30 +42,30 @@ const SignatoryForm = ({
 
   const formData = [
     {
-      labelText: intl.formatMessage(messages.nameLabel),
+      labelText: messages.nameLabel.defaultMessage,
       value: name,
       name: `signatories[${index}].name`,
-      placeholder: intl.formatMessage(messages.namePlaceholder),
-      feedback: intl.formatMessage(messages.nameDescription),
+      placeholder: messages.namePlaceholder.defaultMessage,
+      feedback: messages.nameDescription.defaultMessage,
       onChange: handleChange,
       onBlur: handleBlur,
     },
     {
       as: 'textarea',
-      labelText: intl.formatMessage(messages.titleLabel),
+      labelText: messages.titleLabel.defaultMessage,
       value: title,
       name: `signatories[${index}].title`,
-      placeholder: intl.formatMessage(messages.titlePlaceholder),
-      feedback: intl.formatMessage(messages.titleDescription),
+      placeholder: messages.titlePlaceholder.defaultMessage,
+      feedback: messages.titleDescription.defaultMessage,
       onChange: handleChange,
       onBlur: handleBlur,
     },
     {
-      labelText: intl.formatMessage(messages.organizationLabel),
+      labelText: messages.organizationLabel.defaultMessage,
       value: organization,
       name: `signatories[${index}].organization`,
-      placeholder: intl.formatMessage(messages.organizationPlaceholder),
-      feedback: intl.formatMessage(messages.organizationDescription),
+      placeholder: messages.organizationPlaceholder.defaultMessage,
+      feedback: messages.organizationDescription.defaultMessage,
       onChange: handleChange,
       onBlur: handleBlur,
     },
@@ -75,15 +75,15 @@ const SignatoryForm = ({
     messages.uploadImageButton,
     {
       uploadText: signatureImagePath
-        ? intl.formatMessage(messages.uploadModalReplace)
-        : intl.formatMessage(messages.uploadModal),
+        ? messages.uploadModalReplace.defaultMessage
+        : messages.uploadModal.defaultMessage,
     },
   );
 
   return (
     <div className="bg-light-200 p-2.5 signatory-form" data-testid="signatory-form">
       <Stack className="justify-content-between mb-4" direction="horizontal">
-        <h3 className="section-title">{`${intl.formatMessage(messages.signatoryTitle)} ${index + 1}`}</h3>
+        <h3 className="section-title">{`${messages.signatoryTitle.defaultMessage} ${index + 1}`}</h3>
         <Stack direction="horizontal" gap="2">
           {showDeleteButton && (
             <IconButtonWithTooltip
@@ -108,12 +108,12 @@ const SignatoryForm = ({
           </Form.Group>
         ))}
         <Form.Group className="m-0">
-          <FormLabel> {intl.formatMessage(messages.imageLabel)}</FormLabel>
+          <FormLabel> {messages.imageLabel.defaultMessage}</FormLabel>
           {signatureImagePath && (
             <Image
               src={`${getConfig().STUDIO_BASE_URL}${signatureImagePath}`}
               fluid
-              alt={intl.formatMessage(messages.imageLabel)}
+              alt={messages.imageLabel.defaultMessage}
               className="signatory__image"
             />
           )}
@@ -123,10 +123,10 @@ const SignatoryForm = ({
                 readOnly
                 value={signatureImagePath}
                 name={`signatories[${index}].signatureImagePath`}
-                placeholder={intl.formatMessage(messages.imagePlaceholder)}
+                placeholder={messages.imagePlaceholder.defaultMessage}
               />
               <Form.Control.Feedback>
-                <span className="x-small">{intl.formatMessage(messages.imageDescription)}</span>
+                <span className="x-small">{messages.imageDescription.defaultMessage}</span>
               </Form.Control.Feedback>
             </Stack>
             <Button onClick={open}>{uploadReplaceText}</Button>
@@ -154,13 +154,13 @@ const SignatoryForm = ({
         onChange={handleImageUpload}
         fileTypes={['png']}
         onSavingStatus={handleSavingStatusDispatch}
-        imageHelpText={intl.formatMessage(messages.imageDescription)}
+        imageHelpText={messages.imageDescription.defaultMessage}
         modalTitle={uploadReplaceText}
       />
       <ModalNotification
         isOpen={isConfirmOpen}
         title={intl.formatMessage(messages.deleteSignatoryConfirmation, { name })}
-        message={intl.formatMessage(messages.deleteSignatoryConfirmationMessage)}
+        message={messages.deleteSignatoryConfirmationMessage.defaultMessage}
         actionButtonText={intl.formatMessage(commonMessages.deleteTooltip)}
         cancelButtonText={intl.formatMessage(commonMessages.cardCancel)}
         handleCancel={confirmClose}

@@ -56,7 +56,7 @@ const ComponentDeleter = ({ usageKey, ...props }: Props) => {
 
   return (
     <AlertModal
-      title={intl.formatMessage(messages.deleteComponentWarningTitle)}
+      title={messages.deleteComponentWarningTitle.defaultMessage}
       isOpen
       onClose={props.cancelDelete}
       variant="warning"

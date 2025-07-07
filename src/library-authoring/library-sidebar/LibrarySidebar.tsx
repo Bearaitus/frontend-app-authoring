@@ -57,7 +57,7 @@ const LibrarySidebar = () => {
           className="mt-1"
           src={Close}
           iconAs={Icon}
-          alt={intl.formatMessage(messages.closeButtonAlt)}
+          alt={messages.closeButtonAlt.defaultMessage}
           onClick={closeLibrarySidebar}
           size="inline"
         />

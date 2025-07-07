@@ -93,7 +93,7 @@ const FileInfoModalSidebar = ({
         <IconButtonWithTooltip
           key="lock-file-info"
           tooltipPlacement="top"
-          tooltipContent={intl.formatMessage(messages.lockFileTooltipContent)}
+          tooltipContent={messages.lockFileTooltipContent.defaultMessage}
           src={InfoOutline}
           iconAs={Icon}
           alt="Info"

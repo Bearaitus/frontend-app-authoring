@@ -132,9 +132,9 @@ const CollectionDetails = () => {
     updateMutation.mutateAsync({
       description: newDescription,
     }).then(() => {
-      showToast(intl.formatMessage(messages.updateCollectionSuccessMsg));
+      showToast(messages.updateCollectionSuccessMsg.defaultMessage);
     }).catch(() => {
-      showToast(intl.formatMessage(messages.updateCollectionErrorMsg));
+      showToast(messages.updateCollectionErrorMsg.defaultMessage);
     });
   };
 
@@ -144,7 +144,7 @@ const CollectionDetails = () => {
     >
       <div>
         <h3 className="h5">
-          {intl.formatMessage(messages.detailsTabDescriptionTitle)}
+          {messages.detailsTabDescriptionTitle.defaultMessage}
         </h3>
         {!readOnly ? (
           <textarea
@@ -157,14 +157,14 @@ const CollectionDetails = () => {
       </div>
       <div>
         <h3 className="h5">
-          {intl.formatMessage(messages.detailsTabStatsTitle)}
+          {messages.detailsTabStatsTitle.defaultMessage}
         </h3>
         <CollectionStatsWidget />
       </div>
       <hr className="w-100" />
       <div>
         <h3 className="h5">
-          {intl.formatMessage(messages.detailsTabHistoryTitle)}
+          {messages.detailsTabHistoryTitle.defaultMessage}
         </h3>
         <HistoryWidget
           created={collection.created ? new Date(collection.created) : null}

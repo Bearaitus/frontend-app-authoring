@@ -32,7 +32,7 @@ const CertificatesSidebar = ({ courseId }) => {
         href={learnMoreCertificates}
         variant="outline-primary"
       >
-        {intl.formatMessage(messages.learnMoreBtn)}
+        {messages.learnMoreBtn.defaultMessage}
       </Button>
     </HelpSidebar>
   );

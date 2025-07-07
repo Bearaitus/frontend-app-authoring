@@ -26,13 +26,13 @@ const XpertUnitSummarySettings = ({ intl }) => {
   return (
     <SettingsModal
       appId="xpert-unit-summary"
-      title={intl.formatMessage(messages.heading)}
-      enableAppHelp={intl.formatMessage(messages.enableXpertUnitSummaryHelp)}
-      helpPrivacyText={intl.formatMessage(messages.enableXpertUnitSummaryHelpPrivacyLink)}
-      enableAppLabel={intl.formatMessage(messages.enableXpertUnitSummaryLabel)}
-      learnMoreText={intl.formatMessage(messages.enableXpertUnitSummaryLink)}
-      allUnitsEnabledText={intl.formatMessage(messages.allUnitsEnabledByDefault)}
-      noUnitsEnabledText={intl.formatMessage(messages.noUnitsEnabledByDefault)}
+      title={messages.heading.defaultMessage}
+      enableAppHelp={messages.enableXpertUnitSummaryHelp.defaultMessage}
+      helpPrivacyText={messages.enableXpertUnitSummaryHelpPrivacyLink.defaultMessage}
+      enableAppLabel={messages.enableXpertUnitSummaryLabel.defaultMessage}
+      learnMoreText={messages.enableXpertUnitSummaryLink.defaultMessage}
+      allUnitsEnabledText={messages.allUnitsEnabledByDefault.defaultMessage}
+      noUnitsEnabledText={messages.noUnitsEnabledByDefault.defaultMessage}
       onClose={handleClose}
     />
   );

@@ -75,13 +75,13 @@ const SelectLibrary = ({ selectedLibrary, setSelectedLibrary }: SelectLibraryPro
   return (
     <Stack gap={2} className="p-5">
       <small className="text-primary-700">
-        {intl.formatMessage(messages.selectLibraryInfo)}
+        {messages.selectLibraryInfo.defaultMessage}
       </small>
       <SearchField
         onSubmit={handleSearch}
         onChange={handleSearch}
         value={searchQuery}
-        placeholder={intl.formatMessage(messages.selectLibrarySearchPlaceholder)}
+        placeholder={messages.selectLibrarySearchPlaceholder.defaultMessage}
       />
       {data.results.length === 0 ? (<EmptyState hasSearchQuery={!!searchQuery} />) : (
         <>
@@ -113,7 +113,7 @@ const SelectLibrary = ({ selectedLibrary, setSelectedLibrary }: SelectLibraryPro
             ))}
           </Form.RadioSet>
           <Pagination
-            paginationLabel={intl.formatMessage(messages.selectLibraryPaginationLabel)}
+            paginationLabel={messages.selectLibraryPaginationLabel.defaultMessage}
             pageCount={data!.numPages}
             currentPage={data!.currentPage}
             onPageSelect={setCurrentPage}

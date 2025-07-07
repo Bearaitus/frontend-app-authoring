@@ -21,7 +21,7 @@ const EnableHighlightsModal = ({
 
   return (
     <AlertModal
-      title={intl.formatMessage(messages.title)}
+      title={messages.title.defaultMessage}
       variant="default"
       size="lg"
       isOpen={isOpen}
@@ -29,24 +29,24 @@ const EnableHighlightsModal = ({
       footerNode={(
         <ActionRow>
           <Button variant="tertiary" onClick={close}>
-            {intl.formatMessage(messages.cancelButton)}
+            {messages.cancelButton.defaultMessage}
           </Button>
           <Button onClick={onEnableHighlightsSubmit}>
-            {intl.formatMessage(messages.submitButton)}
+            {messages.submitButton.defaultMessage}
           </Button>
         </ActionRow>
       )}
     >
-      <p className="small">{intl.formatMessage(messages.description_1)}</p>
+      <p className="small">{messages.description_1.defaultMessage}</p>
       <p className="small">
-        {intl.formatMessage(messages.description_2)}
+        {messages.description_2.defaultMessage}
         <Hyperlink
           className="small ml-2 text-decoration-none"
           destination={contentHighlightsUrl}
           target="_blank"
           showLaunchIcon={false}
         >
-          {intl.formatMessage(messages.link)}
+          {messages.link.defaultMessage}
         </Hyperlink>
       </p>
     </AlertModal>

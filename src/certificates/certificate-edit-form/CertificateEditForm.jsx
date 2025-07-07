@@ -79,8 +79,8 @@ const CertificateEditForm = ({ courseId }) => {
               </Form>
               <ModalNotification
                 isOpen={isConfirmOpen}
-                title={intl.formatMessage(messages.deleteCertificateConfirmationTitle)}
-                message={intl.formatMessage(messages.deleteCertificateMessage)}
+                title={messages.deleteCertificateConfirmationTitle.defaultMessage}
+                message={messages.deleteCertificateMessage.defaultMessage}
                 actionButtonText={intl.formatMessage(commonMessages.deleteTooltip)}
                 cancelButtonText={intl.formatMessage(commonMessages.cardCancel)}
                 handleCancel={() => confirmClose()}

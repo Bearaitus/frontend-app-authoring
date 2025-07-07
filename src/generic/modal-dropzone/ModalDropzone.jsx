@@ -56,7 +56,7 @@ const ModalDropzone = ({
       {previewComponent || (
         <Image
           src={previewUrl}
-          alt={intl.formatMessage(messages.uploadImageDropzoneAlt)}
+          alt={messages.uploadImageDropzoneAlt.defaultMessage}
           fluid
         />
       )}
@@ -68,10 +68,10 @@ const ModalDropzone = ({
         src={FileUploadIcon}
         iconAs={Icon}
         variant="secondary"
-        alt={intl.formatMessage(messages.uploadImageDropzoneAlt)}
+        alt={messages.uploadImageDropzoneAlt.defaultMessage}
         className="mb-3"
       />
-      <p>{imageDropzoneText || intl.formatMessage(messages.uploadImageDropzoneText)}</p>
+      <p>{imageDropzoneText || messages.uploadImageDropzoneText.defaultMessage}</p>
       <p className="x-small text-center mt-1.5">{imageHelpText}</p>
     </>
   );
@@ -114,10 +114,10 @@ const ModalDropzone = ({
       <ModalDialog.Footer>
         <ActionRow>
           <ModalDialog.CloseButton variant="tertiary" onClick={handleCancel}>
-            {intl.formatMessage(messages.cancelModal)}
+            {messages.cancelModal.defaultMessage}
           </ModalDialog.CloseButton>
           <Button onClick={handleUpload} disabled={disabledUploadBtn}>
-            {intl.formatMessage(messages.uploadModal)}
+            {messages.uploadModal.defaultMessage}
           </Button>
         </ActionRow>
       </ModalDialog.Footer>

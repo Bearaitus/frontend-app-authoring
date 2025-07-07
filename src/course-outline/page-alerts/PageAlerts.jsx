@@ -68,8 +68,8 @@ const PageAlerts = ({
 
     return (
       <AlertMessage
-        title={intl.formatMessage(messages.configurationErrorTitle)}
-        description={intl.formatMessage(messages.configurationErrorText)}
+        title={messages.configurationErrorTitle.defaultMessage}
+        description={messages.configurationErrorText.defaultMessage}
         dismissible
         show={showConfigAlert}
         icon={CampaignIcon}
@@ -108,12 +108,12 @@ const PageAlerts = ({
           variant="warning"
         >
           <Alert.Heading>
-            {intl.formatMessage(messages.deprecationWarningTitle)}
+            {messages.deprecationWarningTitle.defaultMessage}
           </Alert.Heading>
           {blocks?.length > 0 && (
             <>
               <div>
-                {intl.formatMessage(messages.deprecationWarningBlocksText)}
+                {messages.deprecationWarningBlocksText.defaultMessage}
               </div>
               <ul>
                 {blocks.map(([parentUrl, name]) => (
@@ -121,7 +121,7 @@ const PageAlerts = ({
                     <Hyperlink
                       destination={parentUrl}
                     >
-                      {name || intl.formatMessage(messages.deprecatedComponentName)}
+                      {name || messages.deprecatedComponentName.defaultMessage}
                     </Hyperlink>
                   </li>
                 ))}
@@ -176,7 +176,7 @@ const PageAlerts = ({
           aria-describedby={intl.formatMessage(advancedSettingsMessages.alertProctoringDescribedby)}
         >
           <Alert.Heading>
-            {intl.formatMessage(messages.proctoringErrorTitle)}
+            {messages.proctoringErrorTitle.defaultMessage}
           </Alert.Heading>
           <div className="mb-2">
             {mfeProctoredExamSettingsUrl
@@ -245,7 +245,7 @@ const PageAlerts = ({
               as={Link}
               to={getAssetsUrl()}
             >
-              {intl.formatMessage(messages.newFileAlertAction)}
+              {messages.newFileAlertAction.defaultMessage}
             </Button>,
           ]}
         />
@@ -262,7 +262,7 @@ const PageAlerts = ({
     if (errorFiles?.length) {
       return (
         <AlertMessage
-          title={intl.formatMessage(messages.errorFileAlertTitle)}
+          title={messages.errorFileAlertTitle.defaultMessage}
           description={intl.formatMessage(
             messages.errorFileAlertDesc,
             { errorFilesLen: errorFiles.length, errorFilesStr: errorFiles.join(', ') },
@@ -304,7 +304,7 @@ const PageAlerts = ({
               as={Link}
               to={getAssetsUrl()}
             >
-              {intl.formatMessage(messages.newFileAlertAction)}
+              {messages.newFileAlertAction.defaultMessage}
             </Button>,
           ]}
         />
@@ -319,14 +319,14 @@ const PageAlerts = ({
         case API_ERROR_TYPES.serverError:
           return {
             key: k,
-            desc: v.data || intl.formatMessage(messages.serverErrorAlertBody),
-            title: intl.formatMessage(messages.serverErrorAlert),
+            desc: v.data || messages.serverErrorAlertBody.defaultMessage,
+            title: messages.serverErrorAlert.defaultMessage,
             dismissible: v.dismissible,
           };
         case API_ERROR_TYPES.networkError:
           return {
             key: k,
-            title: intl.formatMessage(messages.networkErrorAlert),
+            title: messages.networkErrorAlert.defaultMessage,
             dismissible: v.dismissible,
           };
         default:
