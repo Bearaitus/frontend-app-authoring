@@ -7,23 +7,23 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.import.heading.title',
-    defaultMessage: 'Course import',
+    defaultMessage: 'Импорт курса',
   },
   headingSubtitle: {
     id: 'course-authoring.import.heading.subtitle',
-    defaultMessage: 'Tools',
+    defaultMessage: 'Инструменты',
   },
   description1: {
     id: 'course-authoring.import.description1',
-    defaultMessage: 'Be sure you want to import a course before continuing. The contents of the imported course will replace the contents of the existing course. You cannot undo a course import. Before you proceed, we recommend that you export the current course, so that you have a backup copy of it.',
+    defaultMessage: 'Убедитесь, что вы хотите импортировать курс, прежде чем продолжить. Содержимое импортированного курса заменит содержимое существующего курса. Импорт курса нельзя отменить. Перед продолжением мы рекомендуем вам экспортировать текущий курс, чтобы иметь резервную копию.',
   },
   description2: {
     id: 'course-authoring.import.description2',
-    defaultMessage: 'The course that you import must be in a .tar.gz file (that is, a .tar file compressed with GNU Zip). This .tar.gz file must contain a course.xml file. It may also contain other files.',
+    defaultMessage: 'Курс, который вы импортируете, должен быть в файле .tar.gz (т.е. файл .tar, сжатый с помощью GNU Zip). Этот файл .tar.gz должен содержать файл course.xml. Он также может содержать другие файлы.',
   },
   description3: {
     id: 'course-authoring.import.description3',
-    defaultMessage: 'The import process has five stages. During the first two stages, you must stay on this page. You can leave this page after the unpacking stage has completed. We recommend, however, that you don\'t make important changes to your course until the import operation has completed.',
+    defaultMessage: 'Процесс импорта состоит из пяти этапов. На протяжении первых двух этапов вы должны оставаться на этой странице. Вы можете покинуть эту страницу после завершения этапа распаковки. Однако мы рекомендуем вам не вносить важные изменения в ваш курс до завершения операции импорта.',
   },
 });
 

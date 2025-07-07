@@ -7,27 +7,27 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.export.heading.title',
-    defaultMessage: 'Course export',
+    defaultMessage: 'Экспорт курса',
   },
   headingSubtitle: {
     id: 'course-authoring.export.heading.subtitle',
-    defaultMessage: 'Tools',
+    defaultMessage: 'Инструменты',
   },
   description1: {
     id: 'course-authoring.export.description1',
-    defaultMessage: 'You can export courses and edit them outside of {studioShortName}. The exported file is a .tar.gz file (that is, a .tar file compressed with GNU Zip) that contains the course structure and content. You can also re-import courses that you\'ve exported.',
+    defaultMessage: 'Вы можете экспортировать курсы и редактировать их вне {studioShortName}. Экспортированный файл является файлом .tar.gz (т.е. файлом .tar, сжатым с помощью GNU Zip), который содержит структуру и содержимое курса. Вы также можете повторно импортировать курсы, которые вы экспортировали.',
   },
   description2: {
     id: 'course-authoring.export.description2',
-    defaultMessage: 'Caution: When you export a course, information such as MATLAB API keys, LTI passports, annotation secret token strings, and annotation storage URLs are included in the exported data. If you share your exported files, you may also be sharing sensitive or license-specific information.',
+    defaultMessage: 'Осторожно: при экспорте курса, информация такая как ключи API MATLAB, паспорта LTI, секретные токены аннотаций и URL-адреса хранилища аннотаций включаются в экспортированные данные. Если вы делитесь экспортированными файлами, вы также можете делиться конфиденциальной или лицензионной информацией.',
   },
   titleUnderButton: {
     id: 'course-authoring.export.title-under-button',
-    defaultMessage: 'Export my course content',
+    defaultMessage: 'Экспортировать содержимое моего курса',
   },
   buttonTitle: {
     id: 'course-authoring.export.button.title',
-    defaultMessage: 'Export course content',
+    defaultMessage: 'Экспортировать содержимое курса',
   },
 });
 
