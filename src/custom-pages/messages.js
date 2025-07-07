@@ -3,107 +3,103 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.custom-pages.heading',
-    defaultMessage: 'Custom Pages',
+    defaultMessage: 'Пользовательские страницы',
   },
   errorAlertMessage: {
     id: 'course-authoring.custom-pages.errorAlert.message',
-    defaultMessage: 'Unable to {actionName} page. Please try again.',
+    defaultMessage: 'Невозможно {actionName} страницу. Пожалуйста, попробуйте снова.',
   },
   note: {
     id: 'course-authoring.custom-pages.note',
-    defaultMessage: `Note: Pages are publicly visible. If users know the URL
-      of a page, they can view the page even if they are not registered for
-      or logged in to your course.`,
+    defaultMessage: `Примечание: Страницы доступны публично. Если пользователи знают URL страницы, они могут просмотреть страницу, даже если они не зарегистрированы или не авторизованы в вашем курсе.`,
   },
   addPageHeaderLabel: {
     id: 'course-authoring.custom-pages.header.addPage.label',
-    defaultMessage: 'New page',
+    defaultMessage: 'Новая страница',
   },
   viewLiveLabel: {
     id: 'course-authoring.custom-pages.header.viewLive.label',
-    defaultMessage: 'View live',
+    defaultMessage: 'Просмотреть вживую',
   },
   pageExplanationHeader: {
     id: 'course-authoring.custom-pages.pageExplanation.header',
-    defaultMessage: 'What are pages?',
+    defaultMessage: 'Что такое страницы?',
   },
   pageExplanationBody: {
     id: 'course-authoring.custom-pages.pageExplanation.body',
-    defaultMessage: `Pages are listed horizontally at the top of your course. Default pages (Home, Course, Discussion, Wiki, and Progress)
-      are followed by textbooks and custom pages that you create.`,
+    defaultMessage: `Страницы перечислены горизонтально в верхней части вашего курса. Стандартные страницы (Главная, Курс, Обсуждение, Вики и Прогресс) следуют за учебниками и пользовательскими страницами, которые вы создаете.`,
   },
   customPagesExplanationHeader: {
     id: 'course-authoring.custom-pages.customPagesExplanation.header',
-    defaultMessage: 'Custom pages',
+    defaultMessage: 'Пользовательские страницы',
   },
   customPagesExplanationBody: {
     id: 'course-authoring.custom-pages.customPagesExplanation.body',
-    defaultMessage: `You can create and edit custom pages to probide students with additional course content. For example, you can create
-      pages for the grading policy, course slide, and a course calendar.`,
+    defaultMessage: `Вы можете создавать и редактировать пользовательские страницы, чтобы предоставить студентам дополнительный контент курса. Например, вы можете создать страницы для политики оценки, слайда курса и календаря курса.`,
   },
   studentViewExplanationHeader: {
     id: 'course-authoring.custom-pages.studentViewExplanation.header',
-    defaultMessage: 'How do pages look to students in my course?',
+    defaultMessage: 'Как страницы выглядят для студентов в моем курсе?',
   },
   studentViewExplanationBody: {
     id: 'course-authoring.custom-pages.studentViewExplanation.body',
-    defaultMessage: 'Students see the default and custom pages at the top of your course and use the links to navigate.',
+    defaultMessage: 'Студенты видят стандартные и пользовательские страницы в верхней части вашего курса и используют ссылки для навигации.',
   },
   studentViewExampleButton: {
     id: 'course-authoring.custom-pages.studentViewExampleButton.label',
-    defaultMessage: 'See an example',
+    defaultMessage: 'Посмотреть пример',
   },
   studentViewModalTitle: {
     id: 'course-authoring.custom-pages.studentViewModal.title',
-    defaultMessage: 'Pages in Your Course',
+    defaultMessage: 'Страницы в вашем курсе',
   },
   studentViewModalBody: {
     id: 'course-authoring.custom-pages.studentViewModal.Body',
-    defaultMessage: "Pages appear in your course's top navigation bar. The default pages (Home, Course, Discussion, Wiki, and Progress) are followed by textbooks and custom pages.",
+    defaultMessage: "Страницы появляются в верхней навигационной панели вашего курса. Стандартные страницы (Главная, Курс, Обсуждение, Вики и Прогресс) следуют за учебниками и пользовательскими страницами.",
   },
   newPageTitle: {
     id: 'course-authoring.custom-pages.page.newPage.title',
-    defaultMessage: 'Empty',
+    defaultMessage: 'Пустая',
   },
   editTooltipContent: {
     id: 'course-authoring.custom-pages.editTooltip.content',
-    defaultMessage: 'Edit',
+    defaultMessage: 'Редактировать',
   },
   deleteTooltipContent: {
     id: 'course-authoring.custom-pages.deleteTooltip.content',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Удалить',
   },
   visibilityTooltipContent: {
     id: 'course-authoring.custom-pages.visibilityTooltip.content',
-    defaultMessage: 'Hide/show page from learners',
+    defaultMessage: 'Скрыть/показать страницу для учащихся',
   },
   addPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addPage.label',
-    defaultMessage: 'Add a new page',
+    defaultMessage: 'Добавить новую страницу',
   },
   addingPageBodyLabel: {
     id: 'course-authoring.custom-pages.body.addingPage.label',
-    defaultMessage: 'Adding a new page',
+    defaultMessage: 'Добавление новой страницы',
   },
   deleteConfirmationTitle: {
     id: 'course-authoring.custom-pages..deleteConfirmation.title',
-    defaultMessage: 'Delete Page Confirmation',
+    defaultMessage: 'Подтверждение удаления страницы',
   },
   deleteConfirmationMessage: {
     id: 'course-authoring.custom-pages..deleteConfirmation.message',
-    defaultMessage: 'Are you sure you want to delete this page? This action cannot be undone.',
+    defaultMessage: 'Вы уверены, что хотите удалить эту страницу? Это действие нельзя отменить.',
   },
   deletePageLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.deletePage.label',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Удалить',
   },
   deletingPageBodyLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.deletingPage.label',
-    defaultMessage: 'Deleting',
+    defaultMessage: 'Удаление',
   },
   cancelButtonLabel: {
     id: 'course-authoring.custom-pages.deleteConfirmation.cancelButton.label',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
 });
 
