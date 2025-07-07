@@ -3,48 +3,48 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   fileSizeError: {
     id: 'course-authoriong.video-uploads.file-info.transcript.error.fileSizeError',
-    defaultMessage: 'Transcript file size exeeds the maximum. Please try again.',
-    description: 'Message presented to user when transcript file size is too large',
+    defaultMessage: 'Размер файла транскрипта превышает максимально допустимый. Пожалуйста, попробуйте снова.',
+    description: 'Сообщение, отображаемое пользователю, когда размер файла транскрипта слишком большой',
   },
   deleteTranscript: {
     id: 'course-authoriong.video-uploads.file-info.transcript.deleteTranscript',
-    defaultMessage: 'Delete',
-    description: 'Message Presented To user for action to delete transcript',
+    defaultMessage: 'Удалить',
+    description: 'Сообщение, отображаемое пользователю для действия удаления транскрипта',
   },
   replaceTranscript: {
     id: 'course-authoriong.video-uploads.file-info.transcript.replaceTranscript',
-    defaultMessage: 'Replace',
-    description: 'Message Presented To user for action to replace transcript',
+    defaultMessage: 'Заменить',
+    description: 'Сообщение, отображаемое пользователю для действия замены транскрипта',
   },
   downloadTranscript: {
     id: 'course-authoriong.video-uploads.file-info.transcript.downloadTranscript',
-    defaultMessage: 'Download',
-    description: 'Message Presented To user for action to download transcript',
+    defaultMessage: 'Скачать',
+    description: 'Сообщение, отображаемое пользователю для действия скачивания транскрипта',
   },
   languageSelectPlaceholder: {
     id: 'course-authoriong.video-uploads.file-info.transcripts.languageSelectPlaceholder',
-    defaultMessage: 'Select language',
-    description: 'Placeholder For Dropdown, which allows users to set the language associtated with a transcript',
+    defaultMessage: 'Выберите язык',
+    description: 'Плейсхолдер для выпадающего списка, который позволяет пользователям задать язык, связанный с транскриптом',
   },
   cancelDeleteLabel: {
     id: 'course-authoriong.video-uploads.file-info.transcripts.cancelDeleteLabel',
-    defaultMessage: 'Cancel',
-    description: 'Label For Button, which allows users to stop the process of deleting a transcript',
+    defaultMessage: 'Отмена',
+    description: 'Метка для кнопки, которая позволяет пользователям остановить процесс удаления транскрипта',
   },
   confirmDeleteLabel: {
     id: 'course-authoriong.video-uploads.file-info.transcripts.confirmDeleteLabel',
-    defaultMessage: 'Delete',
-    description: 'Label For Button, which allows users to confirm the process of deleting a transcript',
+    defaultMessage: 'Удалить',
+    description: 'Метка для кнопки, которая позволяет пользователям подтвердить процесс удаления транскрипта',
   },
   deleteConfirmationMessage: {
     id: 'course-authoriong.video-uploads.file-info.transcripts.deleteConfirmationMessage',
-    defaultMessage: 'Are you sure you want to delete this transcript?',
-    description: 'Warning which allows users to select next step in the process of deleting a transcript',
+    defaultMessage: 'Вы уверены, что хотите удалить этот транскрипт?',
+    description: 'Предупреждение, которое позволяет пользователям выбрать следующий шаг в процессе удаления транскрипта',
   },
   deleteConfirmationHeader: {
     id: 'course-authoriong.video-uploads.file-info.transcripts.deleteConfirmationTitle',
-    defaultMessage: 'Delete this transcript?',
-    description: 'Title for Warning which allows users to select next step in the process of deleting a transcript',
+    defaultMessage: 'Удалить этот транскрипт?',
+    description: 'Заголовок для предупреждения, которое позволяет пользователям выбрать следующий шаг в процессе удаления транскрипта',
   },
 });
 

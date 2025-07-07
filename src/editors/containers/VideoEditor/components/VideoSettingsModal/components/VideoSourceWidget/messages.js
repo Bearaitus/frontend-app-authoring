@@ -4,87 +4,78 @@ const messages = defineMessages({
 
   titleLabel: {
     id: 'authoring.videoeditor.videoSource.title.label',
-    defaultMessage: 'Video source',
-    description: 'Title for the video source widget',
+    defaultMessage: 'Источник видео',
+    description: 'Название для виджета источника видео',
   },
   videoIdLabel: {
     id: 'authoring.videoeditor.videoSource.videoId.label',
-    defaultMessage: 'Video ID',
-    description: 'Label for video ID field',
+    defaultMessage: 'ID видео',
+    description: 'Метка для поля ID видео',
   },
   videoIdFeedback: {
     id: 'authoring.videoeditor.videoSource.videoId.feedback',
-    defaultMessage: 'If you were assigned a video ID by edX, enter the ID here.',
-    description: 'Feedback for video ID field',
+    defaultMessage: 'Если вам был присвоен ID видео от edX, введите его здесь.',
+    description: 'Помощный текст для поля ID видео',
   },
   videoUrlLabel: {
     id: 'authoring.videoeditor.videoSource.videoUrl.label',
-    defaultMessage: 'Video URL',
-    description: 'Label for video URL field',
+    defaultMessage: 'URL видео',
+    description: 'Метка для поля URL видео',
   },
   videoUrlFeedback: {
     id: 'authoring.videoeditor.videoSource.videoUrl.feedback',
-    defaultMessage: `The URL for your video. This can be a YouTube URL, or a link
-    to an .mp4, .ogg, or .webm video file hosted elsewhere on the internet.`,
-    description: 'Feedback for video URL field',
+    defaultMessage: `URL вашего видео. Это может быть URL YouTube или ссылка на файл видео .mp4, .ogg или .webm, размещенный в другом месте в интернете.`,
+    description: 'Помощный текст для поля URL видео',
   },
   videoIdChangeAlert: {
     id: 'authoring.videoeditor.videoIdChangeAlert.message',
-    defaultMessage: 'The Video ID field has changed, please check the Video URL and fallback URL values and update them if necessary.',
-    description: 'Body message for the alert that appears when the video id has been changed.',
+    defaultMessage: 'Поле ID видео было изменено, пожалуйста, проверьте значения URL видео и запасного URL и обновите их, если необходимо.',
+    description: 'Сообщение для предупреждения, которое появляется при изменении ID видео',
   },
   fallbackVideoTitle: {
     id: 'authoring.videoeditor.videoSource.fallbackVideo.title',
-    defaultMessage: 'Fallback videos',
-    description: 'Title for the fallback videos section',
+    defaultMessage: 'Запасные видео',
+    description: 'Название для раздела запасных видео',
   },
   fallbackVideoMessage: {
     id: 'authoring.videoeditor.videoSource.fallbackVideo.message',
-    defaultMessage: `To be sure all learners can access the video, edX
-    recommends providing additional videos in both .mp4 and
-    .webm formats.  The first listed video compatible with the
-    learner's device will play.`,
-    description: 'Test explaining reason for fallback videos',
+    defaultMessage: `Чтобы гарантировать, что все учащиеся могут получить доступ к видео, edX рекомендует предоставлять дополнительные видео в форматах .mp4 и .webm. Первое перечисленное видео, совместимое с устройством учащегося, будет проигрываться.`,
+    description: 'Текст, объясняющий причину запасных видео',
   },
   fallbackVideoLabel: {
     id: 'authoring.videoeditor.videoSource.fallbackVideo.label',
-    defaultMessage: 'Video URL',
-    description: 'Label for fallback video url field',
+    defaultMessage: 'URL видео',
+    description: 'Метка для поля URL запасного видео',
   },
   deleteFallbackVideo: {
     id: 'authoring.videoeditor.videoSource.deleteFallbackVideo',
-    defaultMessage: 'Delete',
-    description: 'Message Presented To user for action to delete fallback video',
+    defaultMessage: 'Удалить',
+    description: 'Сообщение, отображаемое пользователю для действия удаления запасного видео',
   },
   allowDownloadCheckboxLabel: {
     id: 'authoring.videoeditor.videoSource.allowDownloadCheckboxLabel',
-    defaultMessage: 'Allow video downloads',
-    description: 'Label for allow video downloads checkbox',
+    defaultMessage: 'Разрешить скачивание видео',
+    description: 'Метка для чекбокса разрешения скачивания видео',
   },
   allowDownloadTooltipMessage: {
     id: 'authoring.videoeditor.videoSource.allowDownloadTooltipMessage',
-    defaultMessage: `Allow learners to download versions of this video in
-    different formats if they cannot use the edX video player or do not have
-    access to YouTube.`,
-    description: 'Message for allow video downloads checkbox',
+    defaultMessage: `Разрешить учащимся скачивать версии этого видео в разных форматах, если они не могут использовать проигрыватель видео edX или не имеют доступа к YouTube.`,
+    description: 'Сообщение для чекбокса разрешения скачивания видео',
   },
   allowVideoSharingCheckboxLabel: {
     id: 'authoring.videoeditor.videoSource.allowVideoSharingCheckboxLabel',
-    defaultMessage: 'Allow this video to be shared on social media.',
-    description: 'Label for allow shareable video checkbox',
+    defaultMessage: 'Разрешить делиться этим видео в социальных сетях.',
+    description: 'Метка для чекбокса разрешения делиться видео',
   },
   allowVideoSharingTooltipMessage: {
     id: 'authoring.videoeditor.videoSource.allowVideoSharingTooltipMessage',
-    defaultMessage: `Allow learners to share this video publicly on social media.
-    The video will be viewable by anyone, they will not need to enroll in the course
-    or even have an edX account. Links to the course about page and to enroll in the 
-    course will appear alongside the video.`,
-    description: 'Message for allow shareable video checkbox',
+    defaultMessage: `Разрешить учащимся делиться этим видео публично в социальных сетях. Видео будет доступно для всех, им не нужно будет записываться на курс или даже иметь аккаунт edX. Ссылки на страницу курса и на запись в курс будут отображаться рядом с видео.`,
+    description: 'Сообщение для чекбокса разрешения делиться видео',
   },
   addButtonLabel: {
     id: 'authoring.videoeditor.videoSource.fallbackVideo.addButtonLabel',
-    defaultMessage: 'Add a video URL',
-    description: 'Label for add a video URL button',
+    defaultMessage: 'Добавить URL видео',
+    description: 'Метка для кнопки добавления URL видео',
   },
 });
 

@@ -3,39 +3,39 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   deleteModalTitle: {
     id: 'course-authoring.course-team.member.button.remove',
-    defaultMessage: 'Delete course team member',
+    defaultMessage: 'Удалить участника команды курса',
   },
   deleteModalMessage: {
     id: 'course-authoring.course-team.delete-modal.message',
-    defaultMessage: 'Are you sure you want to delete {email} from the course team for “{courseName}”?',
+    defaultMessage: 'Вы уверены, что хотите удалить {email} из команды курса для "{courseName}"?',
   },
   deleteModalDeleteButton: {
     id: 'course-authoring.course-team.delete-modal.button.delete',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Удалить',
   },
   deleteModalCancelButton: {
     id: 'course-authoring.course-team.delete-modal.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   errorModalTitle: {
     id: 'course-authoring.course-team.error-modal.title',
-    defaultMessage: 'Error adding user',
+    defaultMessage: 'Ошибка добавления пользователя',
   },
   errorModalOkButton: {
     id: 'course-authoring.course-team.error-modal.button.ok',
-    defaultMessage: 'Ok',
+    defaultMessage: 'Ок',
   },
   warningModalTitle: {
     id: 'course-authoring.course-team.warning-modal.title',
-    defaultMessage: 'Already a course team member',
+    defaultMessage: 'Уже является участником команды курса',
   },
   warningModalMessage: {
     id: 'course-authoring.course-team.warning-modal.message',
-    defaultMessage: '{email} is already on the {courseName} team. Recheck the email address if you want to add a new member.',
+    defaultMessage: '{email} уже является участником команды {courseName}. Проверьте адрес электронной почты, если вы хотите добавить нового участника.',
   },
   warningModalReturnButton: {
     id: 'course-authoring.course-team.warning-modal.button.return',
-    defaultMessage: 'Return to team listing',
+    defaultMessage: 'Вернуться к списку команды',
   },
 });
 

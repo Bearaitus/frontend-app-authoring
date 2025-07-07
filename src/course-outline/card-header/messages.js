@@ -3,79 +3,79 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   expandTooltip: {
     id: 'course-authoring.course-outline.card.expandTooltip',
-    defaultMessage: 'Collapse/Expand this card',
+    defaultMessage: 'Свернуть/Развернуть эту карточку',
   },
   statusBadgeLive: {
     id: 'course-authoring.course-outline.card.status-badge.live',
-    defaultMessage: 'Live',
+    defaultMessage: 'Активно',
   },
   statusBadgeGated: {
     id: 'course-authoring.course-outline.card.status-badge.gated',
-    defaultMessage: 'Gated',
+    defaultMessage: 'Ограничено',
   },
   statusBadgePublishedNotLive: {
     id: 'course-authoring.course-outline.card.status-badge.published-not-live',
-    defaultMessage: 'Published not live',
+    defaultMessage: 'Опубликовано, но не активно',
   },
   statusBadgeStaffOnly: {
     id: 'course-authoring.course-outline.card.status-badge.staff-only',
-    defaultMessage: 'Staff only',
+    defaultMessage: 'Только для персонала',
   },
   statusBadgeDraft: {
     id: 'course-authoring.course-outline.card.status-badge.draft',
-    defaultMessage: 'Draft',
+    defaultMessage: 'Черновик',
   },
   statusBadgeUnpublishedChanges: {
     id: 'course-authoring.course-outline.card.status-badge.draft-unpublished-changes',
-    defaultMessage: 'Draft (Unpublished changes)',
+    defaultMessage: 'Черновик (Непубликованные изменения)',
   },
   altButtonEdit: {
     id: 'course-authoring.course-outline.card.button.edit.alt',
-    defaultMessage: 'Edit',
+    defaultMessage: 'Редактировать',
   },
   menuPublish: {
     id: 'course-authoring.course-outline.card.menu.publish',
-    defaultMessage: 'Publish',
+    defaultMessage: 'Опубликовать',
   },
   menuConfigure: {
     id: 'course-authoring.course-outline.card.menu.configure',
-    defaultMessage: 'Configure',
+    defaultMessage: 'Настроить',
   },
   menuDuplicate: {
     id: 'course-authoring.course-outline.card.menu.duplicate',
-    defaultMessage: 'Duplicate',
+    defaultMessage: 'Дублировать',
   },
   menuMoveUp: {
     id: 'course-authoring.course-outline.card.menu.moveup',
-    defaultMessage: 'Move up',
+    defaultMessage: 'Переместить вверх',
   },
   menuMoveDown: {
     id: 'course-authoring.course-outline.card.menu.movedown',
-    defaultMessage: 'Move down',
+    defaultMessage: 'Переместить вниз',
   },
   menuDelete: {
     id: 'course-authoring.course-outline.card.menu.delete',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Удалить',
   },
   menuCopy: {
     id: 'course-authoring.course-outline.card.menu.copy',
-    defaultMessage: 'Copy to clipboard',
+    defaultMessage: 'Скопировать в буфер обмена',
   },
   menuProctoringLinkText: {
     id: 'course-authoring.course-outline.card.menu.proctoring-settings',
-    defaultMessage: 'Proctoring settings',
+    defaultMessage: 'Настройки прокторинга',
   },
   proctoringLinkTooltip: {
     id: 'course-authoring.course-outline.card.menu.proctoring-settings-tooltip',
-    defaultMessage: 'Proctoring settings',
+    defaultMessage: 'Настройки прокторинга',
   },
   discussionEnabledBadgeText: {
     id: 'course-authoring.course-outline.card.badge.discussionEnabled',
-    defaultMessage: 'Discussions enabled',
+    defaultMessage: 'Обсуждения включены',
   },
   menuManageTags: {
     id: 'course-authoring.course-outline.card.menu.manageTags',
-    defaultMessage: 'Manage tags',
+    defaultMessage: 'Управлять тегами',
   },
 });
 
