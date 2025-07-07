@@ -3,19 +3,19 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   courseIntroductionVideoLabel: {
     id: 'course-authoring.schedule-section.introducing.introduction-video.label',
-    defaultMessage: 'Course introduction video',
+    defaultMessage: 'Видео-интродукция курса',
   },
   courseIntroductionVideoDelete: {
     id: 'course-authoring.schedule-section.introducing.introduction-video.delete',
-    defaultMessage: 'Delete current video',
+    defaultMessage: 'Удалить текущее видео',
   },
   courseIntroductionVideoHelpText: {
     id: 'course-authoring.schedule-section.introducing.introduction-video.help-text',
-    defaultMessage: 'Enter your YouTube video\'s ID (along with any restriction parameters)',
+    defaultMessage: 'Введите ID вашего видео на YouTube (вместе с любыми параметрами ограничения)',
   },
   courseIntroductionVideoPlaceholder: {
     id: 'course-authoring.schedule-section.introducing.introduction-video.placeholder',
-    defaultMessage: 'YouTube video ID',
+    defaultMessage: 'ID видео на YouTube',
   },
 });
 
