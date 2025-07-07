@@ -3,27 +3,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   itemInProgressFooterText: {
     id: 'course-authoring.studio-home.processing.course-item.footer.in-progress',
-    defaultMessage: 'The new course will be added to your course list in 5-10 minutes. Return to this page or {refresh} to update the course list. The new course will need some manual configuration.',
+    defaultMessage: 'Новый курс будет добавлен в ваш список курсов в течение 5-10 минут. Вернитесь на эту страницу или {refresh}, чтобы обновить список курсов. Новый курс потребует некоторой ручной настройки.',
   },
   itemInProgressFooterHyperlink: {
     id: 'course-authoring.studio-home.processing.course-item.footer.in-progress.hyperlink',
-    defaultMessage: 'refresh it',
+    defaultMessage: 'обновить его',
   },
   itemInProgressActionText: {
     id: 'course-authoring.studio-home.processing.course-item.action.in-progress',
-    defaultMessage: 'Configuring as re-run',
+    defaultMessage: 'Настройка как повторный запуск',
   },
   itemIsFailedActionText: {
     id: 'course-authoring.studio-home.processing.course-item.action.failed',
-    defaultMessage: 'Configuration error',
+    defaultMessage: 'Ошибка настройки',
   },
   itemFailedFooterText: {
     id: 'course-authoring.studio-home.processing.course-item.footer.failed',
-    defaultMessage: 'A system error occurred while your course was being processed. Please go to the original course to try the re-run again, or contact your PM for assistance.',
+    defaultMessage: 'Произошла системная ошибка при обработке вашего курса. Пожалуйста, перейдите к исходному курсу, чтобы повторить попытку, или обратитесь к вашему менеджеру проекта за помощью.',
   },
   itemFailedFooterButton: {
     id: 'course-authoring.studio-home.processing.course-item.footer.failed.button',
-    defaultMessage: 'Dismiss',
+    defaultMessage: 'Отменить',
   },
 });
 
