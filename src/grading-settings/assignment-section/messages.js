@@ -3,91 +3,91 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   assignmentTypeNameTitle: {
     id: 'course-authoring.grading-settings.assignment.type-name.title',
-    defaultMessage: 'Assignment type name',
+    defaultMessage: 'Название типа задания',
   },
   assignmentTypeNameDescription: {
     id: 'course-authoring.grading-settings.assignment.type-name.description',
-    defaultMessage: 'The general category for this type of assignment, for example, Homework or Midterm Exam. This name is visible to learners.',
+    defaultMessage: 'Общая категория для этого типа задания, например, Домашнее задание или Экзамен в середине семестра. Это название видно учащимся.',
   },
   assignmentTypeNameErrorMessage1: {
     id: 'course-authoring.grading-settings.assignment.type-name.error.message-1',
-    defaultMessage: 'The assignment type must have a name.',
+    defaultMessage: 'Тип задания должен иметь название.',
   },
   assignmentTypeNameErrorMessage2: {
     id: 'course-authoring.grading-settings.assignment.type-name.error.message-2',
-    defaultMessage: 'For grading to work, you must change all {initialAssignmentName} subsections to {value}.',
+    defaultMessage: 'Чтобы оценка работала, вы должны изменить все подразделы {initialAssignmentName} на {value}.',
   },
   assignmentTypeNameErrorMessage3: {
     id: 'course-authoring.grading-settings.assignment.type-name.error.message-3',
-    defaultMessage: "There's already another assignment type with this name.",
+    defaultMessage: 'Уже существует другой тип задания с этим названием.',
   },
   abbreviationTitle: {
     id: 'course-authoring.grading-settings.assignment.abbreviation.title',
-    defaultMessage: 'Abbreviation',
+    defaultMessage: 'Аббревиатура',
   },
   abbreviationDescription: {
     id: 'course-authoring.grading-settings.assignment.abbreviation.description',
-    defaultMessage: "This short name for the assignment type (for example, HW or Midterm) appears next to assignments on a learner's Progress page.",
+    defaultMessage: 'Это короткое название для типа задания (например, ДЗ или Экзамен) появляется рядом с заданиями на странице прогресса учащегося.',
   },
   weightOfTotalGradeTitle: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.title',
-    defaultMessage: 'Weight of total grade',
+    defaultMessage: 'Вес в общей оценке',
   },
   weightOfTotalGradeDescription: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.description',
-    defaultMessage: 'The weight of all assignments of this type as a percentage of the total grade, for example, 40. Do not include the percent symbol.',
+    defaultMessage: 'Вес всех заданий этого типа как процент от общей оценки, например, 40. Не включайте символ процента.',
   },
   weightOfTotalGradeErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.error.message',
-    defaultMessage: 'Please enter an integer between 0 and 100.',
+    defaultMessage: 'Пожалуйста, введите целое число между 0 и 100.',
   },
   totalNumberTitle: {
     id: 'course-authoring.grading-settings.assignment.total-number.title',
-    defaultMessage: 'Total number',
+    defaultMessage: 'Общее количество',
   },
   totalNumberDescription: {
     id: 'course-authoring.grading-settings.assignment.total-number.description',
-    defaultMessage: 'The number of subsections in the course that contain problems of this assignment type.',
+    defaultMessage: 'Количество подразделов в курсе, содержащих задания этого типа.',
   },
   totalNumberErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.total-number.error.message',
-    defaultMessage: 'Please enter an integer greater than 0.',
+    defaultMessage: 'Пожалуйста, введите целое число больше 0.',
   },
   numberOfDroppableTitle: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.title',
-    defaultMessage: 'Number of droppable',
+    defaultMessage: 'Количество отбрасываемых',
   },
   numberOfDroppableDescription: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.description',
-    defaultMessage: 'The number of assignments of this type that will be dropped. The lowest scoring assignments are dropped first.',
+    defaultMessage: 'Количество заданий этого типа, которые будут отброшены. Самые низкие оценки отбрасываются первыми.',
   },
   numberOfDroppableErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.error.message',
-    defaultMessage: 'Please enter non-negative integer.',
+    defaultMessage: 'Пожалуйста, введите неотрицательное целое число.',
   },
   numberOfDroppableSecondErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.second.error.message',
-    defaultMessage: 'Cannot drop more {type} assignments than are assigned.',
+    defaultMessage: 'Нельзя отбросить больше {type} заданий, чем назначено.',
   },
   assignmentAlertWarningTitle: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.title',
-    defaultMessage: 'Warning: The number of {type} assignments defined here does not match the current number of {type} assignments in the course:',
+    defaultMessage: 'Предупреждение: Количество {type} заданий, определенное здесь, не соответствует текущему количеству {type} заданий в курсе:',
   },
   assignmentAlertWarningDescription: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.description',
-    defaultMessage: 'There are no assignments of this type in the course.',
+    defaultMessage: 'В курсе нет заданий этого типа.',
   },
   assignmentAlertWarningUsageTitle: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.usage.title',
-    defaultMessage: 'Warning: The number of {type} assignments defined here does not match the current number of {type} assignments in the course:',
+    defaultMessage: 'Предупреждение: Количество {type} заданий, определенное здесь, не соответствует текущему количеству {type} заданий в курсе:',
   },
   assignmentAlertWarningSuccess: {
     id: 'course-authoring.grading-settings.assignment.alert.success.title',
-    defaultMessage: 'The number of {type} assignments in the course matches the number defined here.',
+    defaultMessage: 'Количество {type} заданий в курсе соответствует количеству, определённому здесь.',
   },
   assignmentDeleteButton: {
     id: 'course-authoring.grading-settings.assignment.delete.button',
-    defaultMessage: 'Delete',
+    defaultMessage: 'Удалить',
   },
 });
 
