@@ -31,7 +31,7 @@ const ImportStepper = ({ intl, courseId }) => {
     || loadingStatus === RequestStatus.FAILED
     || savingStatus === RequestStatus.FAILED
     || hasError;
-  const formattedErrorMessage = hasError ? errorMessage || intl.formatMessage(messages.defaultErrorMessage) : '';
+  const formattedErrorMessage = hasError ? errorMessage || messages.defaultErrorMessage.defaultMessage : '';
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -44,7 +44,7 @@ const ImportStepper = ({ intl, courseId }) => {
     return () => clearInterval(id);
   });
 
-  let successTitle = intl.formatMessage(messages.stepperSuccessTitle);
+  let successTitle = messages.stepperSuccessTitle.defaultMessage;
   const localizedSuccessDate = successDate ? (
     <FormattedDate
       value={successDate}
@@ -68,31 +68,31 @@ const ImportStepper = ({ intl, courseId }) => {
 
   const steps = [
     {
-      title: intl.formatMessage(messages.stepperUploadingTitle),
-      description: intl.formatMessage(messages.stepperUploadingDescription),
+      title: messages.stepperUploadingTitle.defaultMessage,
+      description: messages.stepperUploadingDescription.defaultMessage,
       key: IMPORT_STAGES.UPLOADING,
     }, {
-      title: intl.formatMessage(messages.stepperUnpackingTitle),
-      description: intl.formatMessage(messages.stepperUnpackingDescription),
+      title: messages.stepperUnpackingTitle.defaultMessage,
+      description: messages.stepperUnpackingDescription.defaultMessage,
       key: IMPORT_STAGES.UNPACKING,
     }, {
-      title: intl.formatMessage(messages.stepperVerifyingTitle),
-      description: intl.formatMessage(messages.stepperVerifyingDescription),
+      title: messages.stepperVerifyingTitle.defaultMessage,
+      description: messages.stepperVerifyingDescription.defaultMessage,
       key: IMPORT_STAGES.VERIFYING,
     }, {
-      title: intl.formatMessage(messages.stepperUpdatingTitle),
-      description: intl.formatMessage(messages.stepperUpdatingDescription),
+      title: messages.stepperUpdatingTitle.defaultMessage,
+      description: messages.stepperUpdatingDescription.defaultMessage,
       key: IMPORT_STAGES.UPDATING,
     }, {
       title: successTitle,
-      description: intl.formatMessage(messages.stepperSuccessDescription),
+      description: messages.stepperSuccessDescription.defaultMessage,
       key: IMPORT_STAGES.SUCCESS,
     },
   ];
 
   return (
     <section>
-      <h3 className="mt-4">{intl.formatMessage(messages.stepperHeaderTitle)}</h3>
+      <h3 className="mt-4">{messages.stepperHeaderTitle.defaultMessage}</h3>
       <CourseStepper
         courseId={courseId}
         percent={currentStage === IMPORT_STAGES.UPLOADING ? progress : null}
@@ -102,7 +102,7 @@ const ImportStepper = ({ intl, courseId }) => {
         errorMessage={formattedErrorMessage}
       />
       {currentStage === IMPORT_STAGES.SUCCESS && (
-        <Button className="ml-5.5 mt-n2.5" onClick={handleRedirectCourseOutline}>{intl.formatMessage(messages.viewOutlineButton)}</Button>
+        <Button className="ml-5.5 mt-n2.5" onClick={handleRedirectCourseOutline}>{messages.viewOutlineButton.defaultMessage}</Button>
       )}
     </section>
   );
