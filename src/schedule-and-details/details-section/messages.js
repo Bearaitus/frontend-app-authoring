@@ -3,23 +3,23 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   detailsTitle: {
     id: 'course-authoring.schedule-section.details.title',
-    defaultMessage: 'Course details',
+    defaultMessage: 'Детали курса',
   },
   detailsDescription: {
     id: 'course-authoring.schedule-section.details.description',
-    defaultMessage: 'Provide useful information about your course',
+    defaultMessage: 'Предоставьте полезную информацию о вашем курсе',
   },
   dropdownLabel: {
     id: 'course-authoring.schedule-section.details.dropdown.label',
-    defaultMessage: 'Course language',
+    defaultMessage: 'Язык курса',
   },
   dropdownHelpText: {
     id: 'course-authoring.schedule-section.details.dropdown.help-text',
-    defaultMessage: 'Identify the course language here. This is used to assist users find courses that are taught in a specific language. It is also used to localize the \'From:\' field in bulk emails.',
+    defaultMessage: 'Определите язык курса здесь. Это используется для помощи пользователям найти курсы, которые преподаются на определенном языке. Это также используется для локализации поля \'От:\' в массовых электронных письмах.',
   },
   dropdownEmpty: {
     id: 'course-authoring.schedule-section.details.dropdown.empty',
-    defaultMessage: 'Select language',
+    defaultMessage: 'Выберите язык',
   },
 });
 

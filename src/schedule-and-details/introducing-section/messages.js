@@ -3,67 +3,67 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   introducingTitle: {
     id: 'course-authoring.schedule-section.introducing.title',
-    defaultMessage: 'Introducing your course',
+    defaultMessage: 'Представление вашего курса',
   },
   introducingDescription: {
     id: 'course-authoring.schedule-section.introducing.description',
-    defaultMessage: 'Information for prospective students',
+    defaultMessage: 'Информация для потенциальных студентов',
   },
   courseShortDescriptionLabel: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.label',
-    defaultMessage: 'Course short description',
+    defaultMessage: 'Краткое описание курса',
   },
   courseShortDescriptionAriaLabel: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.aria-label',
-    defaultMessage: 'Show course short description',
+    defaultMessage: 'Показать краткое описание курса',
   },
   courseShortDescriptionHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.help-text',
-    defaultMessage: 'Appears on the course catalog page when students roll over the course name. Limit to ~150 characters',
+    defaultMessage: 'Отображается на странице каталога курсов, когда студенты наводят курсор на название курса. Ограничение ~150 символов',
   },
   courseOverviewLabel: {
     id: 'course-authoring.schedule-section.introducing.course-overview.label',
-    defaultMessage: 'Course overview',
+    defaultMessage: 'Обзор курса',
   },
   courseOverviewHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-overview.help-text',
-    defaultMessage: 'Introductions, prerequisites, FAQs that are used on {hyperlink} (formatted in HTML)',
+    defaultMessage: 'Введение, предварительные требования, FAQ, используемые на {hyperlink} (форматировано в HTML)',
   },
   courseAboutHyperlink: {
     id: 'course-authoring.schedule-section.introducing.course-about.hyperlink',
-    defaultMessage: 'your course summary page',
+    defaultMessage: 'страницу суммирования вашего курса',
   },
   courseAboutSidebarLabel: {
     id: 'course-authoring.schedule-section.introducing.course-about-sidebar.label',
-    defaultMessage: 'Course about sidebar HTML',
+    defaultMessage: 'HTML-боковая панель курса',
   },
   courseAboutSidebarHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-about-sidebar.help-text',
-    defaultMessage: 'Custom sidebar content for {hyperlink} (formatted in HTML)',
+    defaultMessage: 'Пользовательский контент боковой панели для {hyperlink} (форматировано в HTML)',
   },
   courseCardImageLabel: {
     id: 'course-authoring.schedule-section.introducing.course-card-image.label',
-    defaultMessage: 'Course card image',
+    defaultMessage: 'Изображение карточки курса',
   },
   courseCardImageIdentifierText: {
     id: 'course-authoring.schedule-section.introducing.course-card-image.identifier-text',
-    defaultMessage: 'course image',
+    defaultMessage: 'изображение курса',
   },
   courseBannerImageLabel: {
     id: 'course-authoring.schedule-section.introducing.course-banner-image.label',
-    defaultMessage: 'Course banner image',
+    defaultMessage: 'Изображение баннера курса',
   },
   courseBannerImageInsertText: {
     id: 'course-authoring.schedule-section.introducing.course-banner-image.insert-banner',
-    defaultMessage: 'banner image',
+    defaultMessage: 'изображение баннера',
   },
   courseVideoThumbnailLabel: {
     id: 'course-authoring.schedule-section.introducing.video-thumbnail-image.label',
-    defaultMessage: 'Course video thumbnail image',
+    defaultMessage: 'Миниатюра видео курса',
   },
   courseVideoThumbnailInsertText: {
     id: 'course-authoring.schedule-section.introducing.video-thumbnail-image.insert-card',
-    defaultMessage: 'video thumbnail image',
+    defaultMessage: 'миниатюра видео',
   },
 });
 

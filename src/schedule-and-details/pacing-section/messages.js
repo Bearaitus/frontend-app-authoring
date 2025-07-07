@@ -3,32 +3,32 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   pacingTitle: {
     id: 'course-authoring.schedule.pacing.title',
-    defaultMessage: 'Course pacing',
+    defaultMessage: 'Темп курса',
   },
   pacingDescription: {
     id: 'course-authoring.schedule.pacing.description',
-    defaultMessage: 'Set the pacing for this course',
+    defaultMessage: 'Установите темп для этого курса',
   },
   pacingRestriction: {
     id: 'course-authoring.schedule.pacing.restriction',
-    defaultMessage: 'Course pacing cannot be changed once a course has started',
+    defaultMessage: 'Темп курса не может быть изменен после начала курса',
   },
   pacingTypeInstructorLabel: {
     id: 'course-authoring.schedule.pacing.radio.instructor.label',
-    defaultMessage: 'Instructor-paced',
+    defaultMessage: 'Курс с темпом, установленным преподавателем',
   },
   pacingTypeInstructorDescription: {
     id: 'course-authoring.schedule.pacing.radio.instructor.description',
     defaultMessage:
-      'Instructor-paced courses progress at the pace that the course author sets. You can configure release dates for course content and due dates for assignments.',
+      'Курсы с темпом, установленным преподавателем, проходят в темпе, который устанавливает автор курса. Вы можете настроить даты выпуска контента курса и сроки выполнения заданий.',
   },
   pacingTypeSelfLabel: {
     id: 'course-authoring.schedule.pacing.radio.self-paced.label',
-    defaultMessage: 'Self-paced',
+    defaultMessage: 'Самостоятельный курс',
   },
   pacingTypeSelfDescription: {
     id: 'course-authoring.schedule.pacing.radio.self-paced.description',
-    defaultMessage: 'Self-paced courses offer suggested due dates for assignments or exams based on the learner’s enrollment date and the expected course duration. These courses offer learners flexibility to modify the assignment dates as needed.',
+    defaultMessage: 'Самостоятельные курсы предлагают рекомендуемые сроки выполнения заданий или экзаменов на основе даты зачисления учащегося и ожидаемой продолжительности курса. Эти курсы предлагают учащимся гибкость для изменения сроков заданий по мере необходимости.',
   },
 });
 

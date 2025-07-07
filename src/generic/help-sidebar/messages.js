@@ -3,37 +3,37 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   sidebarTitleOther: {
     id: 'course-authoring.help-sidebar.other.title',
-    defaultMessage: 'Other course settings',
+    defaultMessage: 'Другие настройки курса',
   },
   sidebarLinkToScheduleAndDetails: {
     id: 'course-authoring.help-sidebar.links.schedule-and-details',
-    defaultMessage: 'Schedule & details',
-    description: 'Link to Studio Schedule & Details page',
+    defaultMessage: 'Расписание и детали',
+    description: 'Ссылка на страницу Расписание и детали в Studio',
   },
   sidebarLinkToGrading: {
     id: 'course-authoring.help-sidebar.links.grading',
-    defaultMessage: 'Grading',
-    description: 'Link to Studio Grading page',
+    defaultMessage: 'Оценка',
+    description: 'Ссылка на страницу Оценка в Studio',
   },
   sidebarLinkToCourseTeam: {
     id: 'course-authoring.help-sidebar.links.course-team',
-    defaultMessage: 'Course team',
-    description: 'Link to Studio Course Team page',
+    defaultMessage: 'Команда курса',
+    description: 'Ссылка на страницу Команда курса в Studio',
   },
   sidebarLinkToGroupConfigurations: {
     id: 'course-authoring.help-sidebar.links.group-configurations',
-    defaultMessage: 'Group configurations',
-    description: 'Link to Studio Group Configurations page',
+    defaultMessage: 'Настройки групп',
+    description: 'Ссылка на страницу Настройки групп в Studio',
   },
   sidebarLinkToProctoredExamSettings: {
     id: 'course-authoring.help-sidebar.links.proctored-exam-settings',
-    defaultMessage: 'Proctored exam settings',
-    description: 'Link to Proctored exam settings page',
+    defaultMessage: 'Настройки экзамена с прокторингом',
+    description: 'Ссылка на страницу Настройки экзамена с прокторингом',
   },
   sidebarLinkToAdvancedSettings: {
     id: 'course-authoring.help-sidebar.links.advanced-settings',
-    defaultMessage: 'Advanced settings',
-    description: 'Link to Advanced Settings',
+    defaultMessage: 'Расширенные настройки',
+    description: 'Ссылка на страницу Расширенные настройки',
   },
 });
 

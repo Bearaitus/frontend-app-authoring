@@ -3,23 +3,23 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.schedule.heading.title',
-    defaultMessage: 'Schedule & details',
+    defaultMessage: 'Расписание и детали',
   },
   headingSubtitle: {
     id: 'course-authoring.schedule.heading.subtitle',
-    defaultMessage: 'Settings',
+    defaultMessage: 'Настройки',
   },
   buttonSaveText: {
     id: 'course-authoring.schedule.alert.button.save',
-    defaultMessage: 'Save changes',
+    defaultMessage: 'Сохранить изменения',
   },
   buttonSavingText: {
     id: 'course-authoring.schedule.alert.button.saving',
-    defaultMessage: 'Saving',
+    defaultMessage: 'Сохранение',
   },
   buttonCancelText: {
     id: 'course-authoring.schedule.alert.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   alertWarningAriaLabelledby: {
     id: 'course-authoring.schedule.alert.warning.aria.labelledby',
@@ -31,19 +31,19 @@ const messages = defineMessages({
   },
   alertWarning: {
     id: 'course-authoring.schedule.alert.warning',
-    defaultMessage: 'You\'ve made some changes',
+    defaultMessage: 'Вы внесли некоторые изменения',
   },
   alertWarningOnSaveWithError: {
     id: 'course-authoring.schedule.alert.warning.save.error',
-    defaultMessage: 'You\'ve made some changes, but there are some errors',
+    defaultMessage: 'Вы внесли некоторые изменения, но есть некоторые ошибки',
   },
   alertWarningDescriptions: {
     id: 'course-authoring.schedule.alert.warning.descriptions',
-    defaultMessage: 'Your changes will not take effect until you save your progress.',
+    defaultMessage: 'Ваши изменения не будут иметь эффекта до тех пор, пока вы не сохраните прогресс.',
   },
   alertWarningDescriptionsOnSaveWithError: {
     id: 'course-authoring.schedule.alert.warning.save.descriptions.error',
-    defaultMessage: 'Please address the errors on this page first, and then save your progress.',
+    defaultMessage: 'Пожалуйста, устраните ошибки на этой странице сначала, и затем сохраните прогресс.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.schedule.alert.success.aria.labelledby',
@@ -55,7 +55,7 @@ const messages = defineMessages({
   },
   alertSuccess: {
     id: 'course-authoring.schedule.alert.success',
-    defaultMessage: 'Your changes have been saved.',
+    defaultMessage: 'Ваши изменения были сохранены.',
   },
   alertLoadFailAriaLabelledby: {
     id: 'course-authoring.schedule.alert.load.fail.aria.labelledby',
@@ -67,7 +67,7 @@ const messages = defineMessages({
   },
   alertLoadFail: {
     id: 'course-authoring.schedule.alert.load.fail',
-    defaultMessage: 'We encountered an error when loading your settings.',
+    defaultMessage: 'Мы столкнулись с ошибкой при загрузке ваших настроек.',
   },
   alertFailAriaLabelledby: {
     id: 'course-authoring.schedule.alert.fail.aria.labelledby',
@@ -79,39 +79,39 @@ const messages = defineMessages({
   },
   alertFail: {
     id: 'course-authoring.schedule.alert.fail',
-    defaultMessage: 'We encountered an error when saving your changes.',
+    defaultMessage: 'Мы столкнулись с ошибкой при сохранении ваших изменений.',
   },
   errorMessage1: {
     id: 'course-authoring.schedule.schedule-section.error-message-1',
-    defaultMessage: 'The certificates display behavior must be \'A date after the course end date\' if certificate available date is set.',
+    defaultMessage: 'Поведение отображения сертификатов должно быть \'Дата после окончания курса\' если дата доступности сертификата установлена.',
   },
   errorMessage2: {
     id: 'course-authoring.schedule.schedule-section.error-message-2',
-    defaultMessage: 'The enrollment end date cannot be after the course end date.',
+    defaultMessage: 'Дата окончания регистрации не может быть после даты окончания курса.',
   },
   errorMessage3: {
     id: 'course-authoring.schedule.schedule-section.error-message-3',
-    defaultMessage: 'The enrollment start date cannot be after the enrollment end date.',
+    defaultMessage: 'Дата начала регистрации не может быть после даты окончания регистрации.',
   },
   errorMessage4: {
     id: 'course-authoring.schedule.schedule-section.error-message-4',
-    defaultMessage: 'The course start date must be later than the enrollment start date.',
+    defaultMessage: 'Дата начала курса должна быть позже даты начала регистрации.',
   },
   errorMessage5: {
     id: 'course-authoring.schedule.schedule-section.error-message-5',
-    defaultMessage: 'The course end date must be later than the course start date.',
+    defaultMessage: 'Дата окончания курса должна быть позже даты начала курса.',
   },
   errorMessage6: {
     id: 'course-authoring.schedule.schedule-section.error-message-6',
-    defaultMessage: 'The certificate available date must be later than the course end date.',
+    defaultMessage: 'Дата доступности сертификата должна быть позже даты окончания курса.',
   },
   errorMessage7: {
     id: 'course-authoring.schedule.schedule-section.error-message-7',
-    defaultMessage: 'The course must have an assigned start date.',
+    defaultMessage: 'Курс должен иметь назначенную дату начала.',
   },
   errorMessage8: {
     id: 'course-authoring.schedule.schedule-section.error-message-8',
-    defaultMessage: 'Please enter an integer between %(min)s and %(max)s.',
+    defaultMessage: 'Пожалуйста, введите целое число между %(min)s и %(max)s.',
   },
 });
 
