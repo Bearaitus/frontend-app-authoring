@@ -4,123 +4,123 @@ import { MAX_TOTAL_LENGTH } from '../../data/constants';
 const messages = defineMessages({
   courseDisplayNameLabel: {
     id: 'course-authoring.create-or-rerun-course.display-name.label',
-    defaultMessage: 'Course name',
+    defaultMessage: 'Название курса',
   },
   courseDisplayNamePlaceholder: {
     id: 'course-authoring.create-or-rerun-course.display-name.placeholder',
-    defaultMessage: 'e.g. Introduction to Computer Science',
+    defaultMessage: 'например, Введение в информатику',
   },
   courseDisplayNameCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.display-name.help-text',
-    defaultMessage: 'The public display name for your course. This cannot be changed, but you can set a different display name in advanced settings later.',
+    defaultMessage: 'Публичное название курса. Его нельзя изменить, но позже можно установить другое название в расширенных настройках.',
   },
   courseDisplayNameRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.display-name.help-text',
-    defaultMessage: 'The public display name for the new course. (This name is often the same as the original course name.)',
+    defaultMessage: 'Публичное название нового курса. (Это название часто совпадает с оригинальным названием курса.)',
   },
   courseOrgLabel: {
     id: 'course-authoring.create-or-rerun-course.org.label',
-    defaultMessage: 'Organization',
+    defaultMessage: 'Организация',
   },
   courseOrgPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.org.placeholder',
-    defaultMessage: 'e.g. UniversityX or OrganizationX',
+    defaultMessage: 'например, Positive Technologies',
   },
   courseOrgNoOptions: {
     id: 'course-authoring.create-or-rerun-course.org.no-options',
-    defaultMessage: 'No options',
+    defaultMessage: 'Нет вариантов',
   },
   courseOrgCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.org.help-text',
-    defaultMessage: 'The name of the organization sponsoring the course. {strong} This cannot be changed, but you can set a different display name in advanced settings later.',
+    defaultMessage: 'Название организации, спонсирующей курс. {strong} Его нельзя изменить, но позже можно установить другое название в расширенных настройках.',
   },
   courseOrgRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.org.help-text',
-    defaultMessage: 'The name of the organization sponsoring the new course. (This name is often the same as the original organization name.) {strong}',
+    defaultMessage: 'Название организации, спонсирующей новый курс. (Это название часто совпадает с оригинальным названием организации.) {strong}',
   },
   courseNoteNoSpaceAllowedStrong: {
     id: 'course-authoring.create-or-rerun-course.no-space-allowed.strong',
-    defaultMessage: 'Note: No spaces or special characters are allowed.',
+    defaultMessage: 'Примечание: не допускаются пробелы или специальные символы.',
   },
   courseNoteOrgNameIsPartStrong: {
     id: 'course-authoring.create-or-rerun-course.org.help-text.strong',
-    defaultMessage: 'Note: The organization name is part of the course URL.',
+    defaultMessage: 'Примечание: название организации является частью URL-адреса курса.',
   },
   courseNumberLabel: {
     id: 'course-authoring.create-or-rerun-course.number.label',
-    defaultMessage: 'Course number',
+    defaultMessage: 'Номер курса',
   },
   courseNumberPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.number.placeholder',
-    defaultMessage: 'e.g. CS101',
+    defaultMessage: 'например, CS101',
   },
   courseNumberCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.number.help-text',
-    defaultMessage: 'The unique number that identifies your course within your organization. {strong}',
+    defaultMessage: 'Уникальный номер, идентифицирующий курс в вашей организации. {strong}',
   },
   courseNumberRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.rerun.number.help-text',
-    defaultMessage: 'The unique number that identifies the new course within the organization. (This number will be the same as the original course number and cannot be changed.)',
+    defaultMessage: 'Уникальный номер, идентифицирующий новый курс в организации. (Этот номер будет таким же, как оригинальный номер курса, и его нельзя изменить.)',
   },
   courseNotePartCourseURLRequireStrong: {
     id: 'course-authoring.create-or-rerun-course.number.help-text.strong',
-    defaultMessage: 'Note: This is part of your course URL, so no spaces or special characters are allowed and it cannot be changed.',
+    defaultMessage: 'Примечание: это часть URL-адреса курса, поэтому не допускаются пробелы или специальные символы, и его нельзя изменить.',
   },
   courseRunLabel: {
     id: 'course-authoring.create-or-rerun-course.run.label',
-    defaultMessage: 'Course run',
+    defaultMessage: 'Запуск курса',
   },
   courseRunPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.run.placeholder',
-    defaultMessage: 'e.g. 2025_T1',
+    defaultMessage: 'например, 2025_T1',
   },
   courseRunCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.run.help-text',
-    defaultMessage: 'The term in which your course will run. {strong}',
+    defaultMessage: 'Семестр, в котором будет проводиться курс. {strong}',
   },
   courseRunRerunHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.rerun.help-text',
-    defaultMessage: 'The term in which the new course will run. (This value is often different than the original course run value.){strong}',
+    defaultMessage: 'Семестр, в котором будет проводиться новый курс. (Это значение часто отличается от оригинального значения запуска курса.){strong}',
   },
   defaultPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.default-placeholder',
-    defaultMessage: 'Label',
+    defaultMessage: 'Метка',
   },
   createButton: {
     id: 'course-authoring.create-or-rerun-course.create.button.create',
-    defaultMessage: 'Create',
+    defaultMessage: 'Создать',
   },
   rerunCreateButton: {
     id: 'course-authoring.create-or-rerun-course.rerun.button.create',
-    defaultMessage: 'Create re-run',
+    defaultMessage: 'Создать повторный запуск',
   },
   creatingButton: {
     id: 'course-authoring.create-or-rerun-course.button.creating',
-    defaultMessage: 'Creating',
+    defaultMessage: 'Создание',
   },
   rerunningCreateButton: {
     id: 'course-authoring.create-or-rerun-course.rerun.button.rerunning',
-    defaultMessage: 'Processing re-run request',
+    defaultMessage: 'Обработка запроса на повторный запуск',
   },
   cancelButton: {
     id: 'course-authoring.create-or-rerun-course.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   requiredFieldError: {
     id: 'course-authoring.create-or-rerun-course.required.error',
-    defaultMessage: 'Required field.',
+    defaultMessage: 'Обязательное поле.',
   },
   disallowedCharsError: {
     id: 'course-authoring.create-or-rerun-course.disallowed-chars.error',
-    defaultMessage: 'Please do not use any spaces or special characters in this field.',
+    defaultMessage: 'Пожалуйста, не используйте пробелы или специальные символы в этом поле.',
   },
   noSpaceError: {
     id: 'course-authoring.create-or-rerun-course.no-space.error',
-    defaultMessage: 'Please do not use any spaces in this field.',
+    defaultMessage: 'Пожалуйста, не используйте пробелы в этом поле.',
   },
   totalLengthError: {
     id: 'course-authoring.create-or-rerun-course.total-length-error.error',
-    defaultMessage: `The combined length of the organization, course number and course run fields cannot be more than ${MAX_TOTAL_LENGTH} characters.`,
+    defaultMessage: `Общая длина полей организации, номера курса и запуска курса не может превышать ${MAX_TOTAL_LENGTH} символов.`,
   },
   alertErrorExistsAriaLabelledBy: {
     id: 'course-authoring.create-or-rerun-course.error.already-exists.labelledBy',

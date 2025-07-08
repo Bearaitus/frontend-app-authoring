@@ -3,71 +3,71 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.studio-home.heading.title',
-    defaultMessage: '{studioShortName} home',
+    defaultMessage: 'Домашняя страница {studioShortName}',
   },
   addNewCourseBtnText: {
     id: 'course-authoring.studio-home.add-new-course.btn.text',
-    defaultMessage: 'New course',
+    defaultMessage: 'Новый курс',
   },
   addNewLibraryBtnText: {
     id: 'course-authoring.studio-home.add-new-library.btn.text',
-    defaultMessage: 'New library',
+    defaultMessage: 'Новая библиотека',
   },
   homePageLoadFailedMessage: {
     id: 'course-authoring.studio-home.page-load.failed.message',
-    defaultMessage: 'Failed to load Studio home. Please try again later.',
+    defaultMessage: 'Не удалось загрузить домашнюю страницу Studio. Пожалуйста, попробуйте позже.',
   },
   emailStaffBtnText: {
     id: 'course-authoring.studio-home.email-staff.btn.text',
-    defaultMessage: 'Email staff to create course',
+    defaultMessage: 'Отправить письмо сотрудникам для создания курса',
   },
   defaultSection_1_Title: {
     id: 'course-authoring.studio-home.default-section-1.title',
-    defaultMessage: 'Are you staff on an existing {studioShortName} course?',
+    defaultMessage: 'Вы сотрудник существующего курса {studioShortName}?',
   },
   defaultSection_1_Description: {
     id: 'course-authoring.studio-home.default-section-1.description',
-    defaultMessage: 'The course creator must give you access to the course. Contact the course creator or administrator for the course you are helping to author.',
+    defaultMessage: 'Создатель курса должен предоставить вам доступ к курсу. Свяжитесь с создателем курса или администратором курса, над которым вы помогаете.',
   },
   defaultSection_2_Title: {
     id: 'course-authoring.studio-home.default-section-2.title',
-    defaultMessage: 'Create your first course',
+    defaultMessage: 'Создайте свой первый курс',
   },
   defaultSection_2_Description: {
     id: 'course-authoring.studio-home.default-section-2.description',
-    defaultMessage: 'Your new course is just a click away!',
+    defaultMessage: 'Ваш новый курс всего лишь в одном клике!',
   },
   btnAddNewCourseText: {
     id: 'course-authoring.studio-home.btn.add-new-course.text',
-    defaultMessage: 'Create your first course',
+    defaultMessage: 'Создайте свой первый курс',
   },
   btnReRunText: {
     id: 'course-authoring.studio-home.btn.re-run.text',
-    defaultMessage: 'Re-run course',
+    defaultMessage: 'Перезапустить курс',
   },
   viewLiveBtnText: {
     id: 'course-authoring.studio-home.btn.view-live.text',
-    defaultMessage: 'View live',
+    defaultMessage: 'Просмотреть онлайн',
   },
   organizationTitle: {
     id: 'course-authoring.studio-home.organization.title',
-    defaultMessage: 'Organization and library settings',
+    defaultMessage: 'Настройки организации и библиотеки',
   },
   organizationLabel: {
     id: 'course-authoring.studio-home.organization.label',
-    defaultMessage: 'Show all courses in organization:',
+    defaultMessage: 'Показать все курсы в организации:',
   },
   organizationSubmitBtnText: {
     id: 'course-authoring.studio-home.organization.btn.submit.text',
-    defaultMessage: 'Submit',
+    defaultMessage: 'Отправить',
   },
   organizationInputPlaceholder: {
     id: 'course-authoring.studio-home.organization.input.placeholder',
-    defaultMessage: 'For example, MITx',
+    defaultMessage: 'Например, MITx',
   },
   organizationInputNoOptions: {
     id: 'course-authoring.studio-home.organization.input.no-options',
-    defaultMessage: 'No options',
+    defaultMessage: 'Нет вариантов',
   },
 });
 
