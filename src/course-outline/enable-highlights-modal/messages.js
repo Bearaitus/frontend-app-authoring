@@ -3,27 +3,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   title: {
     id: 'course-authoring.course-outline.status-bar.modal.title',
-    defaultMessage: 'Enable course highlight emails',
+    defaultMessage: 'Включить электронные письма с выделением курса',
   },
   description_1: {
     id: 'course-authoring.course-outline.status-bar.modal.description-1',
-    defaultMessage: 'When you enable course highlight emails, learners automatically receive email messages for each section that has highlights. You cannot disable highlights after you start sending them.',
+    defaultMessage: 'Когда вы включите электронные письма с выделением курса, учащиеся автоматически получат электронные сообщения для каждого раздела, который имеет выделение. Вы не сможете отключить выделение после начала отправки писем.',
   },
   description_2: {
     id: 'course-authoring.course-outline.status-bar.modal.description-2',
-    defaultMessage: 'Are you sure you want to enable course highlight emails?',
+    defaultMessage: 'Вы уверены, что хотите включить электронные письма с выделением курса?',
   },
   link: {
     id: 'course-authoring.course-outline.status-bar.modal.link',
-    defaultMessage: 'Learn more',
+    defaultMessage: 'Узнать больше',
   },
   cancelButton: {
     id: 'course-authoring.course-outline.status-bar.modal.cancelButton',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   submitButton: {
     id: 'course-authoring.course-outline.status-bar.modal.submitButton',
-    defaultMessage: 'Enable',
+    defaultMessage: 'Включить',
   },
 });
 

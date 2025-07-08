@@ -3,63 +3,60 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   title: {
     id: 'course-authoring.course-unit.add.component.title',
-    defaultMessage: 'Add a new component',
+    defaultMessage: 'Добавить новый компонент',
   },
   buttonText: {
     id: 'course-authoring.course-unit.add.component.button.text',
-    defaultMessage: 'Add Component:',
+    defaultMessage: 'Добавить компонент:',
   },
   modalBtnText: {
     id: 'course-authoring.course-unit.modal.button.text',
-    defaultMessage: 'Select',
+    defaultMessage: 'Выбрать',
   },
   modalContainerTitle: {
     id: 'course-authoring.course-unit.modal.container.title',
-    defaultMessage: 'Add {componentTitle} component',
+    defaultMessage: 'Добавить компонент {componentTitle}',
   },
   modalContainerCancelBtnText: {
     id: 'course-authoring.course-unit.modal.container.cancel.button.text',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   modalComponentSupportLabelFullySupported: {
     id: 'course-authoring.course-unit.modal.component.support.label.fully-supported',
-    defaultMessage: 'Fully supported',
-    description: 'Label for advance problem type\'s support status with full platform support',
+    defaultMessage: 'Полностью поддерживается',
+    description: 'Метка для статуса поддержки расширенного типа задач с полной поддержкой платформы',
   },
   modalComponentSupportLabelProvisionallySupported: {
     id: 'course-authoring.course-unit.modal.component.support.label.provisionally-support',
-    defaultMessage: 'Provisionally supported',
-    description: 'Label for advance problem type\'s support status with provisional platform support',
+    defaultMessage: 'Ограниченно поддерживается',
+    description: 'Метка для статуса поддержки расширенного типа задач с ограниченной поддержкой платформы',
   },
   modalComponentSupportLabelNotSupported: {
     id: 'course-authoring.course-unit.modal.component.support.label.not-supported',
-    defaultMessage: 'Not supported',
-    description: 'Label for advance problem type\'s support status with no platform support',
+    defaultMessage: 'Не поддерживается',
+    description: 'Метка для статуса поддержки расширенного типа задач без поддержки платформы',
   },
   modalComponentSupportTooltipFullySupported: {
     id: 'course-authoring.course-unit.modal.component.support.tooltip.fully-supported',
-    defaultMessage: 'Fully supported tools and features are available on edX, are '
-      + 'fully tested, have user interfaces where applicable, and are documented in the '
-      + 'official edX guides that are available on docs.edx.org.',
-    description: 'Message for support status tooltip for modules with full platform support',
+    defaultMessage: 'Полностью поддерживаемые инструменты и функции доступны на edX, полностью протестированы, '
+      + 'имеют пользовательские интерфейсы, где применимо, и документированы в официальных руководствах edX, '
+      + 'доступных на docs.edx.org.',
+    description: 'Сообщение для подсказки статуса поддержки для модулей с полной поддержкой платформы',
   },
   modalComponentSupportTooltipNotSupported: {
     id: 'course-authoring.course-unit.modal.component.support.tooltip.not-supported',
-    defaultMessage: 'Tools with no support are not maintained by edX, and might be '
-      + 'deprecated in the future. They are not recommended for use in courses due to '
-      + 'non-compliance with one or more of the base requirements, such as testing, '
-      + 'accessibility, internationalization, and documentation.',
-    description: 'Message for support status tooltip for modules which is not supported',
+    defaultMessage: 'Инструменты без поддержки не обслуживаются edX и могут быть устаревшими в будущем. '
+      + 'Их не рекомендуется использовать в курсах из-за несоответствия одному или нескольким базовым требованиям, '
+      + 'таким как тестирование, доступность, интернационализация и документация.',
+    description: 'Сообщение для подсказки статуса поддержки для модулей, которые не поддерживаются',
   },
   modalComponentSupportTooltipProvisionallySupported: {
     id: 'course-authoring.course-unit.modal.component.support.tooltip.provisionally-support',
-    defaultMessage: 'Provisionally supported tools might lack the robustness of functionality '
-      + 'that your courses require. edX does not have control over the quality of the software, '
-      + 'or of the content that can be provided using these tools. Test these tools thoroughly '
-      + 'before using them in your course, especially in graded sections. Complete documentation '
-      + 'might not be available for provisionally supported tools, or documentation might be '
-      + 'available from sources other than edX.',
-    description: 'Message for support status tooltip for modules with provisional platform support',
+    defaultMessage: 'Ограниченно поддерживаемые инструменты могут не иметь необходимой функциональности для ваших курсов. '
+      + 'edX не имеет контроля над качеством программного обеспечения или содержимым, которое можно предоставить с помощью этих инструментов. '
+      + 'Тщательно протестируйте эти инструменты перед использованием их в вашем курсе, особенно в оценочных разделах. '
+      + 'Полная документация может быть недоступна для ограниченно поддерживаемых инструментов или может быть доступна из источников, отличных от edX.',
+    description: 'Сообщение для подсказки статуса поддержки для модулей с ограниченной поддержкой платформы',
   },
 });
 

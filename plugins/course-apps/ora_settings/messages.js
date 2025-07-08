@@ -3,51 +3,51 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.pages-resources.ora.heading',
-    defaultMessage: 'Configure Flexible Peer Grading',
-    description: 'Title for the modal dialog header',
+    defaultMessage: 'Настройка гибкой системы оценки работ',
+    description: 'Заголовок для заголовка модального диалога',
   },
   ORASettingsHelpLink: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.link',
-    defaultMessage: 'Learn more about open response assessment settings',
-    description: 'Descriptive text for the hyperlink to the docs site',
+    defaultMessage: 'Узнать больше о настройках оценки открытых ответов',
+    description: 'Описательный текст для гиперссылки на сайт документации',
   },
   enableFlexPeerGradeLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.label',
-    defaultMessage: 'Flex Peer Grading',
-    description: 'Label for form switch',
+    defaultMessage: 'Гибкая система оценки работ',
+    description: 'Метка для переключателя формы',
   },
   enableFlexPeerGradeHelp: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.help',
-    defaultMessage: 'Turn on Flexible Peer Grading for all open response assessments in the course with peer grading.',
-    description: 'Help text describing what happens when the switch is enabled',
+    defaultMessage: 'Включить гибкую систему оценки работ для всех оценок открытых ответов в курсе с оценкой со стороны сверстников.',
+    description: 'Текст помощи, описывающий, что происходит, когда переключатель включен',
   },
   enabledBadgeLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.enabled-badge.label',
-    defaultMessage: 'Enabled',
-    description: 'Label for badge that show users that a setting is enabled',
+    defaultMessage: 'Включено',
+    description: 'Метка для значка, показывающего пользователям, что настройка включена',
   },
   cancelLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.cancel-button.label',
-    defaultMessage: 'Cancel',
-    description: 'Label for button that cancels user changes',
+    defaultMessage: 'Отмена',
+    description: 'Метка для кнопки, отменяющей изменения пользователя',
   },
   saveLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-button.label',
-    defaultMessage: 'Save',
-    description: 'Label for button that saves user changes',
+    defaultMessage: 'Сохранить',
+    description: 'Метка для кнопки, сохраняющей изменения пользователя',
   },
   pendingSaveLabel: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.pending-save-button.label',
-    defaultMessage: 'Saving',
-    description: 'Label for button that has pending api save calls',
+    defaultMessage: 'Сохранение',
+    description: 'Метка для кнопки, имеющей_pending запросы на сохранение API',
   },
   errorSavingTitle: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-error.title',
-    defaultMessage: 'We couldn\'t apply your changes.',
+    defaultMessage: 'Не удалось применить ваши изменения.',
   },
   errorSavingMessage: {
     id: 'course-authoring.pages-resources.ora.flex-peer-grading.save-error.message',
-    defaultMessage: 'Please check your entries and try again.',
+    defaultMessage: 'Пожалуйста, проверьте ваши записи и попробуйте еще раз.',
   },
 });
 
