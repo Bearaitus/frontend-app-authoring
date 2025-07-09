@@ -1,43 +1,39 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   saveWarningModalCancelButtonLabel: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.cancelButton.label',
-    defaultMessage: 'Cancel',
-    description: 'Label for cancel button in the save warning modal',
+    defaultMessage: 'Отмена',
+    description: 'Текст для кнопки отмены в модальном окне предупреждения о сохранении',
   },
   saveWarningModalSaveButtonLabel: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.saveButton.label',
-    defaultMessage: 'Ok',
-    description: 'Label for save button in the save warning modal',
+    defaultMessage: 'ОК',
+    description: 'Текст для кнопки сохранения в модальном окне предупреждения о сохранении',
   },
   saveWarningModalBodyQuestion: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.body.question',
-    defaultMessage: 'Are you sure you want to exit the editor?',
-    description: 'Question in body of save warning modal',
+    defaultMessage: 'Вы уверены, что хотите выйти из редактора?',
+    description: 'Вопрос в теле модального окна предупреждения о сохранении',
   },
   noAnswerTitle: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.noAnswer.title',
-    defaultMessage: 'No answer specified',
-    description: 'Title for no answer modal',
+    defaultMessage: 'Ответ не указан',
+    description: 'Заголовок модального окна об отсутствии ответа',
   },
   noAnswerBodyExplanation: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.noAnswer.body.explanation',
-    defaultMessage: 'No correct answer has been specified.',
-    description: 'Explanation in body of no answer modal',
+    defaultMessage: 'Правильный ответ не указан.',
+    description: 'Пояснение в теле модального окна об отсутствии ответа',
   },
   olxSettingDiscrepancyTitle: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.olxSettingDiscrepancy.title',
-    defaultMessage: 'OLX settings discrepancy',
-    description: 'Title for mismatched settings modal',
+    defaultMessage: 'Несоответствие настроек OLX',
+    description: 'Заголовок модального окна о несоответствии настроек',
   },
   olxSettingDiscrepancyBodyExplanation: {
     id: 'authoring.problemEditor.editProblemView.saveWarningModal.olxSettingDiscrepancy.body.explanation',
-    defaultMessage: `A discrepancy was found between the settings defined in the OLX's problem tag and the
-      settings selected in the sidebar. The settings defined in the OLX's problem tag will be saved and
-      corresponding values in the sidebar will be discarded.`,
-    description: 'Explanation in body of mismatched settings modal',
+    defaultMessage: `Обнаружено несоответствие между настройками, определенными в теге problem OLX, и настройками, выбранными на боковой панели. Настройки, определенные в теге problem OLX, будут сохранены, а соответствующие значения на боковой панели будут отменены.`,
+    description: 'Пояснение в теле модального окна о несоответствии настроек',
   },
 });
-
 export default messages;

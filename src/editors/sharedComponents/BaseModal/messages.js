@@ -4,7 +4,7 @@ const messages = defineMessages({
 
   cancelButtonLabel: {
     id: 'authoring.baseModal.cancelButtonLabel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отменить',
     description: 'Label for cancel button.',
   },
 });

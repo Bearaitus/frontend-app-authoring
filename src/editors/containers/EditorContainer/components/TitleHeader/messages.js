@@ -1,32 +1,29 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   loading: {
     id: 'authoring.texteditor.title.loading',
-    defaultMessage: 'Loading...',
-    description: 'Message displayed while loading content',
+    defaultMessage: 'Загрузка...',
+    description: 'Сообщение, отображаемое во время загрузки контента',
   },
   cancelChangesLabel: {
     id: 'authoring.texteditor.header.cancelChangesLabel',
-    defaultMessage: 'Cancel Changes and Return to Learning Context',
-    description: 'Screen reader label title for icon button to return to learning context',
+    defaultMessage: 'Отменить изменения и вернуться к обучению',
+    description: 'Текст для скринридера для иконки кнопки возврата к контексту обучения',
   },
   editTitleLabel: {
     id: 'authoring.texteditor.header.editTitleLabel',
-    defaultMessage: 'Edit Title',
-    description: 'Screen reader label title for icon button to edit the xblock title',
+    defaultMessage: 'Редактировать заголовок',
+    description: 'Текст для скринридера для иконки кнопки редактирования заголовка блока',
   },
   cancelTitleEdit: {
     id: 'authoring.texteditor.header.cancelTitleEdit',
-    defaultMessage: 'Cancel',
-    description: 'Screen reader label title for icon button to edit the xblock title',
+    defaultMessage: 'Отмена',
+    description: 'Текст для скринридера для иконки кнопки отмены редактирования заголовка блока',
   },
   saveTitleEdit: {
     id: 'authoring.texteditor.header.saveTitleEdit',
-    defaultMessage: 'Save',
-    description: 'Screen reader label title for icon button to edit the xblock title',
+    defaultMessage: 'Сохранить',
+    description: 'Текст для скринридера для иконки кнопки сохранения редактирования заголовка блока',
   },
 });
-
 export default messages;

@@ -1,125 +1,123 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   heading: {
     id: 'course-authoring.files-and-uploads.heading',
-    defaultMessage: 'Files',
-    description: 'Title for the page',
+    defaultMessage: 'Файлы',
+    description: 'Заголовок страницы',
   },
   thumbnailAltMessage: {
     id: 'course-authoring.files-and-uploads.thumbnail.alt',
-    defaultMessage: '{displayName} file preview',
-    description: 'Alternative text for thumbnail',
+    defaultMessage: 'Предварительный просмотр файла {displayName}',
+    description: 'Альтернативный текст для миниатюры',
   },
   copyStudioUrlTitle: {
     id: 'course-authoring.files-and-uploads.file-info.copyStudioUrl.title',
-    defaultMessage: 'Copy Studio Url',
-    description: 'Label for Copy Studio URL button in info modal',
+    defaultMessage: 'URL Copy Studio',
+    description: 'Подпись для кнопки URL Copy Studio в информационном модальном окне',
   },
   copyWebUrlTitle: {
     id: 'course-authoring.files-and-uploads.file-info.copyWebUrl.title',
-    defaultMessage: 'Copy Web Url',
-    description: 'Label for Copy Web URL button in info modal',
+    defaultMessage: 'URL в сети',
+    description: 'Подпись для кнопки URL в сети в информационном модальном окне',
   },
   dateAddedTitle: {
     id: 'course-authoring.files-and-uploads.file-info.dateAdded.title',
-    defaultMessage: 'Date added',
-    description: 'Title for date added section in info modal',
+    defaultMessage: 'Дата добавления',
+    description: 'Заголовок раздела с датой добавления в информационном модальном окне',
   },
   fileSizeTitle: {
     id: 'course-authoring.files-and-uploads.file-info.fileSize.title',
-    defaultMessage: 'File size',
-    description: 'Title for file size section in info modal',
+    defaultMessage: 'Размер файла',
+    description: 'Заголовок раздела с размером файла в информационном модальном окне',
   },
   studioUrlTitle: {
     id: 'course-authoring.files-and-uploads.file-info.studioUrl.title',
-    defaultMessage: 'Studio URL',
-    description: 'Title for studio url section in info modal',
+    defaultMessage: 'URL Studio',
+    description: 'Заголовок раздела с URL Studio в информационном модальном окне',
   },
   webUrlTitle: {
     id: 'course-authoring.files-and-uploads.file-info.webUrl.title',
     defaultMessage: 'Web URL',
-    description: 'Title for web url section in info modal',
+    description: 'Заголовок раздела с web URL в информационном модальном окне',
   },
   lockFileTitle: {
     id: 'course-authoring.files-and-uploads.file-info.lockFile.title',
-    defaultMessage: 'Lock file',
-    description: 'Label for lock file checkbox in info modal',
+    defaultMessage: 'Заблокировать файл',
+    description: 'Подпись для флажка «Заблокировать файл» в информационном модальном окне',
   },
   activeCheckboxLabel: {
     id: 'course-authoring.files-and-videos.file-info.activeCheckbox.label',
-    defaultMessage: 'Active',
-    description: 'Label for active checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Активные',
+    description: 'Подпись для флажка «Активные» в разделе фильтра модального окна сортировки и фильтрации',
   },
   inactiveCheckboxLabel: {
     id: 'course-authoring.files-and-videos.file-info.inactiveCheckbox.label',
-    defaultMessage: 'Inactive',
-    description: 'Label for inactive checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Неактивные',
+    description: 'Подпись для флажка «Неактивные» в разделе фильтра модального окна сортировки и фильтрации',
   },
   lockedCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.lockedCheckbox.label',
-    defaultMessage: 'Locked',
-    description: 'Label for locked checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Заблокированные',
+    description: 'Подпись для флажка «Заблокированные» в разделе фильтра модального окна сортировки и фильтрации',
   },
   publicCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.publicCheckbox.label',
-    defaultMessage: 'Public',
-    description: 'Label for public checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Публичные',
+    description: 'Подпись для флажка «Публичные» в разделе фильтра модального окна сортировки и фильтрации',
   },
   codeCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.codeCheckbox.label',
-    defaultMessage: 'Code',
-    description: 'Label for code checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Код',
+    description: 'Подпись для флажка «Код» в разделе фильтра модального окна сортировки и фильтрации',
   },
   imageCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.imageCheckbox.label',
-    defaultMessage: 'Images',
-    description: 'Label for images checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Изображения',
+    description: 'Подпись для флажка «Изображения» в разделе фильтра модального окна сортировки и фильтрации',
   },
   documentCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.documentCheckbox.label',
-    defaultMessage: 'Documents',
-    description: 'Label for documents checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Документы',
+    description: 'Подпись для флажка «Документы» в разделе фильтра модального окна сортировки и фильтрации',
   },
   audioCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.audioCheckbox.label',
-    defaultMessage: 'Audio',
-    description: 'Label for audio checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Аудио',
+    description: 'Подпись для флажка «Аудио» в разделе фильтра модального окна сортировки и фильтрации',
   },
   otherCheckboxLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filter.otherCheckbox.label',
-    defaultMessage: 'Other',
-    description: 'Label for other checkbox in filter section of sort and filter modal',
+    defaultMessage: 'Другое',
+    description: 'Подпись для флажка «Другое» в разделе фильтра модального окна сортировки и фильтрации',
   },
   overwriteConfirmMessage: {
     id: 'course-authoring.files-and-videos.overwrite.modal.confirmation-message',
-    defaultMessage: 'Some of the uploaded files already exist in this course. Do you want to overwrite the following files?',
-    description: 'The message displayed in the modal shown when uploading files with pre-existing names',
+    defaultMessage: 'Некоторые загруженные файлы уже существуют в этом курсе. Вы хотите перезаписать следующие файлы?',
+    description: 'Сообщение, отображаемое в модальном окне при загрузке файлов с существующими именами',
   },
   overwriteModalTitle: {
     id: 'course-authoring.files-and-videos.overwrite.modal.title',
-    defaultMessage: 'Overwrite files',
-    description: 'The title of the modal to confirm overwriting the files',
+    defaultMessage: 'Перезаписать файлы',
+    description: 'Заголовок модального окна для подтверждения перезаписи файлов',
   },
   confirmOverwriteButtonLabel: {
     id: 'course-authoring.files-and-videos.overwrite.modal.overwrite-button.label',
-    defaultMessage: 'Overwrite',
-    description: 'The message displayed in the button to confirm overwriting the files',
+    defaultMessage: 'Перезаписать',
+    description: 'Сообщение, отображаемое в кнопке для подтверждения перезаписи файлов',
   },
   cancelOverwriteButtonLabel: {
     id: 'course-authoring.files-and-videos.overwrite.modal.cancel-button.label',
-    defaultMessage: 'Cancel',
-    description: 'The message displayed in the button to confirm cancelling the upload',
+    defaultMessage: 'Отмена',
+    description: 'Сообщение, отображаемое в кнопке для отмены загрузки',
   },
   lockFileTooltipContent: {
     id: 'course-authoring.files-and-uploads.file-info.lockFile.tooltip.content',
-    defaultMessage: `By default, anyone can access a file you upload if
-      they know the web URL, even if they are not enrolled in your course.
-      You can prevent outside access to a file by locking the file. When
-      you lock a file, the web URL only allows learners who are enrolled
-      in your course and signed in to access the file.`,
-    description: 'Tooltip message for the lock icon in the table view of files',
+    defaultMessage: `По умолчанию любой пользователь может получить доступ к загруженному вами файлу,
+      если он знает URL в сети, даже если он не зачислен на ваш курс.
+      Вы можете предотвратить внешний доступ к файлу, заблокировав его. При
+      блокировке файла URL в сети позволит получить доступ к файлу только учащимся,
+      зачисленным на ваш курс и прошедшим авторизацию.`,
+    description: 'Всплывающая подсказка для значка замка в таблице файлов',
   },
 });
-
 export default messages;

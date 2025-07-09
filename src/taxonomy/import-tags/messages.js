@@ -1,160 +1,154 @@
 // @ts-check
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   importWizardButtonCancel: {
     id: 'course-authoring.import-tags.wizard.button.cancel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отмена',
   },
   importWizardButtonNext: {
     id: 'course-authoring.import-tags.wizard.button.next',
-    defaultMessage: 'Next',
+    defaultMessage: 'Далее',
   },
   importWizardButtonPrevious: {
     id: 'course-authoring.import-tags.wizard.button.previous',
-    defaultMessage: 'Previous',
+    defaultMessage: 'Назад',
   },
   importWizardButtonImport: {
     id: 'course-authoring.import-tags.wizard.button.import',
-    defaultMessage: 'Import',
+    defaultMessage: 'Импортировать',
   },
   importWizardButtonContinue: {
     id: 'course-authoring.import-tags.wizard.button.continue',
-    defaultMessage: 'Continue',
+    defaultMessage: 'Продолжить',
   },
   importWizardButtonConfirm: {
     id: 'course-authoring.import-tags.wizard.button.confirm',
-    defaultMessage: 'Yes, import file',
+    defaultMessage: 'Да, импортировать файл',
   },
   importWizardStepExportTitle: {
     id: 'course-authoring.import-tags.wizard.step-export.title',
-    defaultMessage: 'Update "{name}"',
+    defaultMessage: 'Обновить "{name}"',
   },
   importWizardStepExportBody: {
     id: 'course-authoring.import-tags.wizard.step-export.body',
-    defaultMessage: 'To update this taxonomy you need to import a new CSV or JSON file. The current taxonomy will '
-      + 'be completely replaced by the contents of the imported file (e.g. if a tag in the current taxonomy is not '
-      + 'present in the imported file, it will be removed - both from the taxonomy and from any tagged course '
-      + 'content).'
-      + '{br}You may wish to export the taxonomy in its current state before importing the new file.',
+    defaultMessage: 'Чтобы обновить эту таксономию, необходимо импортировать новый CSV или JSON файл. Текущая таксономия будет полностью заменена содержимым импортированного файла (например, если метки в текущей таксономии нет в импортированном файле, она будет удалена - как из таксономии, так и из любого контента курса, к которому она была применена).'
+      + '{br}Возможно, вам захочется экспортировать таксономию в текущем состоянии перед импортом нового файла.',
   },
   importWizardStepExportCSVButton: {
     id: 'course-authoring.import-tags.wizard.step-export.button-csv',
-    defaultMessage: 'CSV file',
+    defaultMessage: 'CSV файл',
   },
   importWizardStepExportJSONButton: {
     id: 'course-authoring.import-tags.wizard.step-export.button-json',
-    defaultMessage: 'JSON file',
+    defaultMessage: 'JSON файл',
   },
   importWizardStepUploadTitle: {
     id: 'course-authoring.import-tags.wizard.step-upload.title',
-    defaultMessage: 'Upload file',
+    defaultMessage: 'Загрузить файл',
   },
   importWizardStepUploadClearFile: {
     id: 'course-authoring.import-tags.wizard.step-upload.clear-file',
-    defaultMessage: 'Clear file',
+    defaultMessage: 'Очистить файл',
   },
   importWizardStepUploadBody: {
     id: 'course-authoring.import-tags.wizard.step-upload.body',
-    defaultMessage: 'You can upload a CSV or JSON file to create a new taxonomy. You may use any spreadsheet tool '
-    + '(for CSV files), or any text editor (for JSON files) to create the file that you wish to import. '
-    + 'For an example of the required format, download the {csvTemplateUrl} or {jsonTemplateUrl}.'
-    + '{br}Once the file is ready to be imported, drag and drop it into the box below, or click to upload.',
+    defaultMessage: 'Вы можете загрузить CSV или JSON файл для создания новой таксономии. Для создания файла, который вы хотите импортировать, вы можете использовать любой инструмент для работы с электронными таблицами (для CSV файлов) или любой текстовый редактор (для JSON файлов).'
+    + '{br}Для примера требуемого формата загрузите {csvTemplateUrl} или {jsonTemplateUrl}.'
+    + '{br}Как только файл будет готов к импорту, перетащите его в область ниже или нажмите, чтобы загрузить.',
   },
   importWizardStepReuploadBody: {
     id: 'course-authoring.import-tags.wizard.step-reupload.body',
-    defaultMessage: 'You may use any spreadsheet tool (for CSV files), or any text editor (for JSON files) to create '
-    + 'the file that you wish to import.'
-    + '{br}Once the file is ready to be imported, drag and drop it into the box below, or click to upload.',
+    defaultMessage: 'Вы можете использовать любой инструмент для работы с электронными таблицами (для CSV файлов) или любой текстовый редактор (для JSON файлов) для создания '
+    + 'файла, который вы хотите импортировать.'
+    + '{br}Как только файл будет готов к импорту, перетащите его в область ниже или нажмите, чтобы загрузить.',
   },
   csvTemplateTitle: {
     id: 'course-authoring.import-tags.wizard.step-upload.csv-template',
-    defaultMessage: 'CSV template',
+    defaultMessage: 'Шаблон CSV',
   },
   jsonTemplateTitle: {
     id: 'course-authoring.import-tags.wizard.step-upload.json-template',
-    defaultMessage: 'JSON template',
+    defaultMessage: 'Шаблон JSON',
   },
   importWizardStepPopulateTitle: {
     id: 'course-authoring.import-tags.wizard.step-populate.title',
-    defaultMessage: 'Populate Taxonomy Information',
+    defaultMessage: 'Заполнить информацию о таксономии',
   },
   importWizardStepPopulateTaxonomyName: {
     id: 'course-authoring.import-tags.wizard.step-populate.name',
-    defaultMessage: 'Taxonomy Name',
+    defaultMessage: 'Название таксономии',
   },
   importWizardStepPopulateTaxonomyDesc: {
     id: 'course-authoring.import-tags.wizard.step-populate.desc',
-    defaultMessage: 'Taxonomy Description',
+    defaultMessage: 'Описание таксономии',
   },
   importWizardStepPlanTitle: {
     id: 'course-authoring.import-tags.wizard.step-plan.title',
-    defaultMessage: 'Differences between files',
+    defaultMessage: 'Изменения в файлах',
   },
   importWizardStepPlanBody: {
     id: 'course-authoring.import-tags.wizard.step-plan.body',
-    defaultMessage: 'Importing this file will make {changeCount} updates to the existing taxonomy. '
-    + 'The content of the imported file will replace any existing values that do not match the new values.'
-    + '{br}Importing this file will cause the following updates:',
+    defaultMessage: 'Импорт этого файла внесет {changeCount} изменений в существующую таксономию. '
+    + 'Содержимое импортированного файла заменит все существующие значения, которые не соответствуют новым значениям.'
+    + '{br}Импорт этого файла приведет к следующим обновлениям:',
   },
   importWizardStepPlanNoChanges: {
     id: 'course-authoring.import-tags.wizard.step-plan.no-changes',
-    defaultMessage: 'No changes',
+    defaultMessage: 'Нет изменений',
   },
   importWizardStepConfirmTitle: {
     id: 'course-authoring.import-tags.wizard.step-confirm.title',
-    defaultMessage: 'Import and replace tags',
+    defaultMessage: 'Импорт и заменить теги',
   },
   importWizardStepConfirmBody: {
     id: 'course-authoring.import-tags.wizard.step-confirm.body',
-    defaultMessage: 'Warning! You are about to make {changeCount} changes to the existing taxonomy. Any tags applied '
-    + 'to course content will be updated or removed. This cannot be undone.'
-    + '{br}Are you sure you want to continue importing this file?',
+    defaultMessage: 'Внимание! Вы собираетесь внести {changeCount} изменений в существующую таксономию. Любые теги, примененные '
+    + 'к контенту курса, будут обновлены или удалены. Это действие нельзя отменить.'
+    + '{br}Вы уверены, что хотите продолжить импорт этого файла?',
   },
   promptTaxonomyName: {
     id: 'course-authoring.import-tags.prompt.taxonomy-name',
-    defaultMessage: 'Enter a name for the new taxonomy',
+    defaultMessage: 'Введите название для новой таксономии',
   },
   promptTaxonomyNameRequired: {
     id: 'course-authoring.import-tags.prompt.taxonomy-name.required',
-    defaultMessage: 'You must enter a name for the new taxonomy',
+    defaultMessage: 'Вы должны ввести название для новой таксономии',
   },
   promptTaxonomyExportId: {
     id: 'course-authoring.import-tags.prompt.taxonomy-export-id',
-    defaultMessage: "Enter a Export ID for the new taxonomy. Should only contain alphanumeric characters or '_' '-' '.'",
+    defaultMessage: "Введите ID экспорта для новой таксономии. Должны использоваться только буквенно-цифровые символы или '_' '-' '.'",
   },
   promptTaxonomyExportIdRequired: {
     id: 'course-authoring.import-tags.prompt.taxonomy-export-id.required',
-    defaultMessage: 'You must enter an Export ID for the new taxonomy.',
+    defaultMessage: 'Вы должны ввести ID экспорта для новой таксономии.',
   },
   promptTaxonomyExportIdInvalid: {
     id: 'course-authoring.import-tags.prompt.taxonomy-export-id.invalid',
-    defaultMessage: "Invalid Export ID. Should only contain alphanumeric characters or '_' '-' '.'",
+    defaultMessage: "Некорректный ID экспорта. Должны использоваться только буквенно-цифровые символы или '_' '-' '.'",
   },
   promptTaxonomyDescription: {
     id: 'course-authoring.import-tags.prompt.taxonomy-description',
-    defaultMessage: 'Enter a description for the new taxonomy',
+    defaultMessage: 'Введите описание для новой таксономии',
   },
   importTaxonomySuccess: {
     id: 'course-authoring.import-tags.success',
-    defaultMessage: 'Taxonomy imported successfully',
+    defaultMessage: 'Таксономия успешно импортирована',
   },
   importTaxonomyError: {
     id: 'course-authoring.import-tags.error',
-    defaultMessage: 'Import failed - see details in the browser console',
+    defaultMessage: 'Импорт не удался - ознакомьтесь с подробностями в консоли браузера',
   },
   importNewTaxonomyToast: {
     id: 'course-authoring.import-tags.new.toast.success',
-    defaultMessage: '"{name}" imported',
+    defaultMessage: '"{name}" импортирована',
   },
   importTaxonomyToast: {
     id: 'course-authoring.import-tags.toast.success',
-    defaultMessage: '"{name}" updated',
+    defaultMessage: '"{name}" обновлена',
   },
   importTaxonomyErrorAlert: {
     id: 'course-authoring.import-tags.error-alert.title',
-    defaultMessage: 'Import error',
+    defaultMessage: 'Ошибка импорта',
   },
 });
-
 export default messages;
