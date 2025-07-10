@@ -29,7 +29,7 @@ const AccessibilityPage = ({
         <AccessibilityBody {...{ email, communityAccessibilityLink }} />
         <AccessibilityForm accessibilityEmail={email} />
       </Container>
-      <StudioFooter />
+      
     </>
   );
 };

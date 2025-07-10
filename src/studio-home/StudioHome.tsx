@@ -180,7 +180,7 @@ const StudioHome = () => {
           isQueryPending={anyQueryIsPending}
         />
       </div>
-      <StudioFooter />
+      
     </>
   );
 };

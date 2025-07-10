@@ -266,7 +266,6 @@ const LibraryAuthoringPage = ({ returnToLibrarySelection }: LibraryAuthoringPage
             <LibraryContent contentType={activeKey} />
           </SearchContextProvider>
         </Container>
-        {!componentPickerMode && <StudioFooter containerProps={{ size: undefined }} />}
       </div>
       {!!sidebarComponentInfo?.type && (
         <div className="library-authoring-sidebar box-shadow-left-1 bg-white" data-testid="library-sidebar">

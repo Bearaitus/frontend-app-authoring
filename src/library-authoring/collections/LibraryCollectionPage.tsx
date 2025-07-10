@@ -218,7 +218,7 @@ const LibraryCollectionPage = () => {
             <LibraryCollectionComponents />
           </SearchContextProvider>
         </Container>
-        <StudioFooter />
+        
       </div>
       {!!sidebarComponentInfo?.type && (
         <div className="library-authoring-sidebar box-shadow-left-1 bg-white" data-testid="library-sidebar">
