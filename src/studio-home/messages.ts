@@ -35,7 +35,7 @@ const messages = defineMessages({
   },
   defaultSection_2_Description: {
     id: 'course-authoring.studio-home.default-section-2.description',
-    defaultMessage: 'Просто нажмите на кнопку справа',
+    defaultMessage: 'От созданного курса вас отделяет всего 1 кнопка... Просто нажмите её!',
   },
   btnAddNewCourseText: {
     id: 'course-authoring.studio-home.btn.add-new-course.text',
