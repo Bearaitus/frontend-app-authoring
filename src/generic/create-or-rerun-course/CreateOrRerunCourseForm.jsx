@@ -22,6 +22,7 @@ import { updatePostErrors } from '../data/slice';
 import { updateCreateOrRerunCourseQuery } from '../data/thunks';
 import { useCreateOrRerunCourse } from './hooks';
 import messages from './messages';
+
 const CreateOrRerunCourseForm = ({
   title,
   isCreateNewCourse,
@@ -34,7 +35,6 @@ const CreateOrRerunCourseForm = ({
   const runFieldReference = useRef(null);
   const displayNameFieldReference = useRef(null);
   const {
-    intl,
     errors,
     values,
     postErrors,
@@ -48,6 +48,7 @@ const CreateOrRerunCourseForm = ({
     hasErrorField,
     setFieldValue,
   } = useCreateOrRerunCourse(initialValues);
+
   const newCourseFields = [
     {
       label: messages.courseDisplayNameLabel.defaultMessage,
@@ -81,28 +82,33 @@ const CreateOrRerunCourseForm = ({
       ref: runFieldReference,
     },
   ];
+
   const errorMessage = errors[TOTAL_LENGTH_KEY] || postErrors?.errMsg;
+
   const createButtonState = {
     labels: {
-      default: intl.formatMessage(isCreateNewCourse ? messages.createButton : messages.rerunCreateButton),
-      pending: intl.formatMessage(isCreateNewCourse ? messages.creatingButton : messages.rerunningCreateButton),
+      default: isCreateNewCourse ? messages.createButton.defaultMessage : messages.rerunCreateButton.defaultMessage,
+      pending: isCreateNewCourse ? messages.creatingButton.defaultMessage : messages.rerunningCreateButton.defaultMessage,
     },
     disabledStates: [STATEFUL_BUTTON_STATES.pending],
   };
+
   const handleOnClickCreate = () => {
     const courseData = isCreateNewCourse ? values : { ...values, sourceCourseKey: courseId };
     dispatch(updateCreateOrRerunCourseQuery(courseData));
   };
+
   const handleOnClickCancel = () => {
     dispatch(updatePostErrors({}));
     onClickCancel();
   };
+
   const handleCustomBlurForDropdown = (e) => {
-    // it needs to correct handleOnChange Form.Autosuggest
     const { value, name } = e.target;
     setFieldValue(name, value);
     handleBlur(e);
   };
+
   const renderOrgField = (field) => (allowToCreateNewOrg ? (
     <TypeaheadDropdown
       readOnly={false}
@@ -135,14 +141,15 @@ const CreateOrRerunCourseForm = ({
       </Dropdown.Menu>
     </Dropdown>
   ));
+
   useEffect(() => {
-    // it needs to display the initial focus for the field depending on the current page
     if (!isCreateNewCourse) {
       runFieldReference?.current?.focus();
     } else {
       displayNameFieldReference?.current?.focus();
     }
   }, []);
+
   return (
     <div className="create-or-rerun-course-form">
       <TransitionReplace>
@@ -152,12 +159,8 @@ const CreateOrRerunCourseForm = ({
             icon={InfoIcon}
             title={errorMessage}
             aria-hidden="true"
-            aria-labelledby={intl.formatMessage(
-              messages.alertErrorExistsAriaLabelledBy,
-            )}
-            aria-describedby={intl.formatMessage(
-              messages.alertErrorExistsAriaDescribedBy,
-            )}
+            aria-labelledby={messages.alertErrorExistsAriaLabelledBy.defaultMessage}
+            aria-describedby={messages.alertErrorExistsAriaDescribedBy.defaultMessage}
           />
         ) : null}
       </TransitionReplace>
@@ -218,10 +221,12 @@ const CreateOrRerunCourseForm = ({
     </div>
   );
 };
+
 CreateOrRerunCourseForm.defaultProps = {
   title: '',
   isCreateNewCourse: false,
 };
+
 CreateOrRerunCourseForm.propTypes = {
   title: PropTypes.string,
   initialValues: PropTypes.shape({
@@ -233,4 +238,5 @@ CreateOrRerunCourseForm.propTypes = {
   isCreateNewCourse: PropTypes.bool,
   onClickCancel: PropTypes.func.isRequired,
 };
+
 export default CreateOrRerunCourseForm;
