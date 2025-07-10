@@ -19,7 +19,7 @@ const messages = defineMessages({
   },
   courseShortDescriptionHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.help-text',
-    defaultMessage: 'Отображается на странице каталога курсов, когда студенты наводят курсор на название курса. Ограничение ~150 символов',
+    defaultMessage: 'Отображается на странице каталога курсов, когда пользователи наводят курсор на название курса. Ограничение ~150 символов',
   },
   courseOverviewLabel: {
     id: 'course-authoring.schedule-section.introducing.course-overview.label',

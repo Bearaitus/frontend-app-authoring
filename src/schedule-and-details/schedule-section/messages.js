@@ -39,7 +39,7 @@ const messages = defineMessages({
   },
   scheduleEnrollmentStartDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-start.help-text',
-    defaultMessage: 'Первый день, когда студенты могут зарегистрироваться',
+    defaultMessage: 'Первый день, когда пользователи могут зарегистрироваться',
   },
   scheduleEnrollmentStartTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.enrollment-start.time.label',
@@ -51,7 +51,7 @@ const messages = defineMessages({
   },
   scheduleEnrollmentEndDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.date.help-text',
-    defaultMessage: 'Последний день, когда студенты могут зарегистрироваться.',
+    defaultMessage: 'Последний день, когда пользователи могут зарегистрироваться.',
   },
   scheduleEnrollmentEndDateRestrictedHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.date.restricted.help-text',
@@ -67,7 +67,7 @@ const messages = defineMessages({
   },
   scheduleUpgradeDeadlineDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.upgrade-deadline.date.help-text',
-    defaultMessage: 'Последний день, когда студенты могут апгрейдить до верифицированной регистрации. Свяжитесь с вашим менеджером партнеров {platformName}, чтобы обновить эти настройки.',
+    defaultMessage: 'Последний день, когда пользователи могут апгрейдить до верифицированной регистрации. Свяжитесь с вашим менеджером партнеров {platformName}, чтобы обновить эти настройки.',
   },
   scheduleUpgradeDeadlineTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.upgrade-deadline.time.label',

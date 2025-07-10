@@ -43,7 +43,7 @@ const messages = defineMessages({
   },
   studentViewExplanationBody: {
     id: 'course-authoring.custom-pages.studentViewExplanation.body',
-    defaultMessage: 'Студенты видят стандартные и пользовательские страницы в верхней части вашего курса и используют ссылки для навигации.',
+    defaultMessage: 'Пользователи видят стандартные и пользовательские страницы в верхней части вашего курса и используют ссылки для навигации.',
   },
   studentViewExampleButton: {
     id: 'course-authoring.custom-pages.studentViewExampleButton.label',

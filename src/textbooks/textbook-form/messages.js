@@ -11,7 +11,7 @@ const descriptions = {
   },
   tabTitleHelperText: {
     id: 'course-authoring.textbooks.form.tab-title.helper-text',
-    defaultMessage: 'предоставьте название учебника, как вы хотите, чтобы ваши студенты его видели',
+    defaultMessage: 'предоставьте название учебника, как вы хотите, чтобы ваши пользователи его видели',
     description: 'Справочная информация для поля названия учебника в форме',
   },
   tabTitleValidationText: {

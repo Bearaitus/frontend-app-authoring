@@ -4,11 +4,11 @@ const messages = defineMessages({
   configurationChangeConsequence: {
     id: 'authoring.discussions.configurationChangeConsequences',
     defaultMessage:
-      'Студенты потеряют доступ к любым активным или предыдущим'
+      'Пользователи потеряют доступ к любым активным или предыдущим'
       + ' обсуждениям в вашем курсе.',
     description:
       'Описывает, что в результате изменения конфигурации'
-      + ' студенты потеряют доступ к постам на курсе.',
+      + ' пользователи потеряют доступ к постам на курсе.',
   },
   configureApp: {
     id: 'authoring.discussions.configure.app',

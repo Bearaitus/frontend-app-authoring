@@ -23,7 +23,7 @@ const messages = defineMessages({
   },
   dropdownHelpText: {
     id: 'course-authoring.schedule-section.requirements.dropdown.help-text',
-    defaultMessage: 'Курс, который студенты должны пройти перед началом этого курса',
+    defaultMessage: 'Курс, который пользователи должны пройти перед началом этого курса',
   },
   dropdownEmptyText: {
     id: 'course-authoring.schedule-section.requirements.dropdown.empty-text',

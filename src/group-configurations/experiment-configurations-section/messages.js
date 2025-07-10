@@ -58,7 +58,7 @@ const messages = defineMessages({
   },
   experimentConfigurationGroupsFeedback: {
     id: 'course-authoring.group-configurations.experiment-configuration.container.groups.feedback',
-    defaultMessage: 'Название групп, к которым будут присвоены студенты, например, Контроль, Видео, Задачи. Вы должны иметь две или более группы.',
+    defaultMessage: 'Название групп, к которым будут присвоены пользователи, например, Контроль, Видео, Задачи. Вы должны иметь две или более группы.',
     description: 'Сообщение обратной связи для раздела групп конфигурации группы эксперимента.',
   },
   experimentConfigurationGroupsNameRequired: {
