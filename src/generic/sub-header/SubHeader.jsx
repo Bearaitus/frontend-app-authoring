@@ -16,9 +16,7 @@ const SubHeader = ({
 }) => (
   <div className={`${!hideBorder && 'border-bottom border-light-400'} mb-3`}>
     <header className="sub-header">
-      <h2 className="sub-header-title">Панель ментора
-
-      </h2>
+      <h2 className="sub-header-title">Панель ментора</h2>
       {headerActions && (
         <ActionRow className="ml-auto flex-shrink-0 sub-header-actions">
           {headerActions}
