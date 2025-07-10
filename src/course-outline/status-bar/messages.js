@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   startDateTitle: {
     id: 'course-authoring.course-outline.status-bar.start-date',
-    defaultMessage: 'Дата начала',
+    defaultMessage: 'Детальные настройки курса',
   },
   pacingTypeTitle: {
     id: 'course-authoring.course-outline.status-bar.pacing-type',

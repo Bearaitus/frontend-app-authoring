@@ -99,22 +99,6 @@ const StatusBar = ({
             ) : courseReleaseDate}
           </Hyperlink>
         </StatusBarItem>
-        <StatusBarItem title={messages.pacingTypeTitle.defaultMessage}>
-          <span className="small">
-            {isSelfPaced
-              ? messages.pacingTypeSelfPaced.defaultMessage
-              : messages.pacingTypeInstructorPaced.defaultMessage}
-          </span>
-        </StatusBarItem>
-        <StatusBarItem title={messages.checklistTitle.defaultMessage}>
-          <Hyperlink
-            className="small"
-            destination={checklistDestination()}
-            showLaunchIcon={false}
-          >
-            {checkListTitle} {messages.checklistCompleted.defaultMessage}
-          </Hyperlink>
-        </StatusBarItem>
         {videoSharingEnabled && (
           <Form.Group
             size="sm"
