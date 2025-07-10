@@ -20,15 +20,15 @@ const messages = defineMessages({
   },
   releaseDateAndTime: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-date-and-time',
-    defaultMessage: 'Дата и время выпуска',
+    defaultMessage: 'Дата и время открытия курса',
   },
   releaseDate: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-date',
-    defaultMessage: 'Дата выпуска:',
+    defaultMessage: 'Дата открытия:',
   },
   releaseTimeUTC: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-time-UTC',
-    defaultMessage: 'Время выпуска в UTC:',
+    defaultMessage: 'Время открытия в UTC:',
   },
   visibilityTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.title',

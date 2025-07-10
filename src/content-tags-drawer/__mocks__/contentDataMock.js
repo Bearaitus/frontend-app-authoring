@@ -11,7 +11,7 @@ module.exports = {
   releaseDate: null,
   visibilityState: 'needs_attention',
   hasExplicitStaffLock: false,
-  start: '2030-01-01T00:00:00Z',
+  start: '2025-01-01T00:00:00Z',
   graded: false,
   dueDate: '',
   due: null,

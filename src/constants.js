@@ -10,8 +10,8 @@ export const STATEFUL_BUTTON_STATES = {
 };
 
 export const USER_ROLES = {
-  admin: 'instructor',
-  staff: 'staff',
+  admin: 'admin',
+  staff: 'mentor',
 };
 
 export const BADGE_STATES = {
@@ -53,19 +53,19 @@ export const DECODED_ROUTES = {
 export const UPLOAD_FILE_MAX_SIZE = 20 * 1024 * 1024; // 100mb
 
 export const COURSE_BLOCK_NAMES = ({
-  chapter: { id: 'chapter', name: 'Section' },
-  sequential: { id: 'sequential', name: 'Subsection' },
-  vertical: { id: 'vertical', name: 'Unit' },
-  component: { id: 'component', name: 'Component' },
+  chapter: { id: 'chapter', name: 'Модуль' },
+  sequential: { id: 'sequential', name: 'Часть' },
+  vertical: { id: 'vertical', name: 'Страница' },
+  component: { id: 'component', name: 'Блок' },
 });
 
 export const STUDIO_CLIPBOARD_CHANNEL = 'studio_clipboard_channel';
 
 export const CLIPBOARD_STATUS = {
-  loading: 'loading',
-  ready: 'ready',
-  expired: 'expired',
-  error: 'error',
+  loading: 'загрузка',
+  ready: 'готов',
+  expired: 'занят',
+  error: 'ошибка',
 };
 
 export const STRUCTURAL_XBLOCK_TYPES = ['vertical', 'sequential', 'chapter', 'course'];

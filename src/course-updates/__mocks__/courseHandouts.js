@@ -11,7 +11,7 @@ module.exports = {
   release_date: null,
   visibility_state: 'unscheduled',
   has_explicit_staff_lock: false,
-  start: '2030-01-01T00:00:00Z',
+  start: '2025-01-01T00:00:00Z',
   graded: false,
   due_date: '',
   due: null,
