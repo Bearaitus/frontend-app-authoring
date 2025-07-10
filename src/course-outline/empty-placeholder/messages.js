@@ -7,11 +7,11 @@ const messages = defineMessages({
   },
   button: {
     id: 'course-authoring.course-outline.empty-placeholder.button.new-section',
-    defaultMessage: 'Новый раздел',
+    defaultMessage: 'Новый модуль',
   },
   tooltip: {
     id: 'course-authoring.course-outline.empty-placeholder.button.tooltip',
-    defaultMessage: 'Нажмите, чтобы добавить новый раздел',
+    defaultMessage: 'Нажмите, чтобы добавить новый модуль',
   },
 });
 

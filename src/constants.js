@@ -20,16 +20,16 @@ export const BADGE_STATES = {
 };
 
 export const NOTIFICATION_MESSAGES = {
-  adding: 'Adding',
-  saving: 'Saving',
-  duplicating: 'Duplicating',
-  deleting: 'Deleting',
-  copying: 'Copying',
-  pasting: 'Pasting',
-  discardChanges: 'Discarding changes',
-  publishing: 'Publishing',
-  hidingFromStudents: 'Hiding from students',
-  makingVisibleToStudents: 'Making visible to students',
+  adding: 'Добавление',
+  saving: 'Сохранение',
+  duplicating: 'Дублирование',
+  deleting: 'Удаление',
+  copying: 'Копирование',
+  pasting: 'Добавление',
+  discardChanges: 'Отменить изменение',
+  publishing: 'Публикация',
+  hidingFromStudents: 'Скрыть от пользователей',
+  makingVisibleToStudents: 'Сделать видимым для пользователей',
   empty: '',
 };
 
