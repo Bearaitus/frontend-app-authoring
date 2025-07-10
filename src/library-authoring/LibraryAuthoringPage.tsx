@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import classNames from 'classnames';
-import { StudioFooter } from '@edx/frontend-component-footer';
+
 import { useIntl } from '@edx/frontend-platform/i18n';
 import {
   Alert,
