@@ -108,7 +108,7 @@ const messages = defineMessages({
   },
   requiredFieldError: {
     id: 'course-authoring.create-or-rerun-course.required.error',
-    defaultMessage: 'Обязательное поле.',
+    defaultMessage: 'Обязательно для заполнения!',
   },
   disallowedCharsError: {
     id: 'course-authoring.create-or-rerun-course.disallowed-chars.error',

@@ -61,7 +61,7 @@ const CreateOrRerunCourseForm = ({
     {
       label: messages.courseOrgLabel.defaultMessage,
       name: 'org',
-      value: "Positive_Technologies",
+      value: values.org,
       options: organizations,
       placeholder: messages.courseOrgPlaceholder.defaultMessage,
       disabled: false,
