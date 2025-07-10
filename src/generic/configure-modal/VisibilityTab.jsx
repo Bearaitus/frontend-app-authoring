@@ -71,18 +71,18 @@ const VisibilityTab = ({
                 {messages.showEntireSubsection.defaultMessage}
               </Form.Radio>
               <Form.Text>{messages.showEntireSubsectionDescription.defaultMessage}</Form.Text>
-              <Form.Text><FormattedMessage {...messages.hideContentAfterDueDescription} /></Form.Text>
+              <Form.Text>{messages.hideContentAfterDueDescription.defaultMessage}</Form.Text>
               <Form.Radio value="hide">
-                <FormattedMessage {...messages.hideEntireSubsection} />
+                {messages.hideEntireSubsection.defaultMessage}
               </Form.Radio>
-              <Form.Text><FormattedMessage {...messages.hideEntireSubsectionDescription} /></Form.Text>
+              <Form.Text>{messages.hideEntireSubsectionDescription.defaultMessage}</Form.Text>
             </Form.RadioSet>
             {showWarning && (
               <Alert className="mt-2" variant="warning">
-                <FormattedMessage {...messages.subsectionVisibilityWarning} />
+                {messages.subsectionVisibilityWarning.defaultMessage}
               </Alert>
             )}
-            <h5 className="mt-4 text-gray-700"><FormattedMessage {...messages.assessmentResultsVisibility} /></h5>
+            <h5 className="mt-4 text-gray-700">{messages.assessmentResultsVisibility.defaultMessage}</h5>
             <Form.RadioSet
               name="assessmentResultsVisibility"
               onChange={correctnessChanged}
