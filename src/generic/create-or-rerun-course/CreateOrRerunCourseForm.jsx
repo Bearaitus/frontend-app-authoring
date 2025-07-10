@@ -62,7 +62,6 @@ const CreateOrRerunCourseForm = ({
       label: messages.courseOrgLabel.defaultMessage,
       name: 'org',
       value: values.org,
-      options: organizations,
       placeholder: messages.courseOrgPlaceholder.defaultMessage,
       disabled: false,
     },
