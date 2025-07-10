@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   expandTooltip: {
     id: 'course-authoring.course-outline.card.expandTooltip',
-    defaultMessage: 'Свернуть/Развернуть эту карточку',
+    defaultMessage: 'Свернуть/Развернуть',
   },
   statusBadgeLive: {
     id: 'course-authoring.course-outline.card.status-badge.live',
