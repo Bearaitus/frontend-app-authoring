@@ -1,66 +1,64 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   searchAllCourses: {
     id: 'course-authoring.course-search.searchAllCourses',
-    defaultMessage: 'All courses',
-    description: 'Option to get search results from all courses.',
+    defaultMessage: 'Все курсы',
+    description: 'Опция для получения результатов поиска по всем курсам.',
   },
   searchThisCourse: {
     id: 'course-authoring.course-search.searchThisCourse',
-    defaultMessage: 'This course',
-    description: 'Option to limit search results to the current course only.',
+    defaultMessage: 'Только этот курс',
+    description: 'Опция для ограничения результатов поиска только текущим курсом.',
   },
   title: {
     id: 'course-authoring.course-search.title',
-    defaultMessage: 'Search',
-    description: 'Title for the course search dialog',
+    defaultMessage: 'Поиск',
+    description: 'Заголовок диалогового окна поиска по курсу',
   },
   showMore: {
     id: 'course-authoring.course-search.showMore',
-    defaultMessage: 'Show more',
-    description: 'Show more tags / filter options',
+    defaultMessage: 'Показать больше',
+    description: 'Показать больше тегов / опций фильтрации',
   },
   showMoreResults: {
     id: 'course-authoring.course-search.showMoreResults',
-    defaultMessage: 'Show more results',
-    description: 'Show more results - a button to add to the list of results by loading more from the server',
+    defaultMessage: 'Показать больше результатов',
+    description: 'Показать больше результатов - кнопка для добавления в список результатов путем загрузки дополнительных данных с сервера',
   },
   loadingMoreResults: {
     id: 'course-authoring.course-search.loadingMoreResults',
-    defaultMessage: 'Loading more results',
-    description: 'Loading more results - the button displays this message while more results are loading',
+    defaultMessage: 'Загрузка дополнительных результатов',
+    description: 'Загрузка дополнительных результатов - кнопка показывает это сообщение во время загрузки дополнительных результатов',
   },
   emptySearchTitle: {
     id: 'course-authoring.course-search.emptySearchTitle',
-    defaultMessage: 'Start searching to find content',
-    description: 'Title shown when the user has not yet entered a keyword',
+    defaultMessage: 'Начните поиск, чтобы найти контент',
+    description: 'Заголовок, отображаемый, когда пользователь еще не ввел ключевое слово',
   },
   emptySearchSubtitle: {
     id: 'course-authoring.course-search.emptySearchSubtitle',
-    defaultMessage: 'Find sections, subsections, units and components',
-    description: 'Subtitle shown when the user has not yet entered a keyword',
+    defaultMessage: 'Найдите разделы, подразделы, модули и компоненты',
+    description: 'Подзаголовок, отображаемый, когда пользователь еще не ввел ключевое слово',
   },
   noResultsTitle: {
     id: 'course-authoring.course-search.noResultsTitle',
-    defaultMessage: 'We didn\'t find anything matching your search',
-    description: 'Title shown when the search returned no results',
+    defaultMessage: 'По вашему запросу ничего не найдено',
+    description: 'Заголовок, отображаемый, когда поиск не дал результатов',
   },
   noResultsSubtitle: {
     id: 'course-authoring.course-search.noResultsSubtitle',
-    defaultMessage: 'Please try a different search term or filter',
-    description: 'Subtitle shown when the search returned no results',
+    defaultMessage: 'Пожалуйста, попробуйте другой поисковый запрос или фильтр',
+    description: 'Подзаголовок, отображаемый, когда поиск не дал результатов',
   },
   openInNewWindow: {
     id: 'course-authoring.course-search.openInNewWindow',
-    defaultMessage: 'Open in new window',
-    description: 'Alt text for the button that opens the search result in a new window',
+    defaultMessage: 'Открыть в новом окне',
+    description: 'Alt текст для кнопки, которая открывает результат поиска в новом окне',
   },
   searchError: {
     id: 'course-authoring.course-search.searchError',
-    defaultMessage: 'An error occurred. Unable to load search results.',
-    description: 'Error message shown when search is not working.',
+    defaultMessage: 'Произошла ошибка. Не удалось загрузить результаты поиска.',
+    description: 'Сообщение об ошибке, отображаемое, когда поиск не работает.',
   },
 });
-
 export default messages;
