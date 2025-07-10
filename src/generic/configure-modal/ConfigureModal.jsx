@@ -225,20 +225,6 @@ const ConfigureModal = ({
                 showWarning={visibilityState === VisibilityTypes.STAFF_ONLY}
               />
             </Tab>
-            <Tab eventKey="advanced" title={messages.advancedTabTitle.defaultMessage}>
-              <AdvancedTab
-                values={values}
-                setFieldValue={setFieldValue}
-                prereqs={prereqs}
-                releasedToStudents={releasedToStudents}
-                wasExamEverLinkedWithExternal={wasExamEverLinkedWithExternal}
-                enableProctoredExams={enableProctoredExams}
-                supportsOnboarding={supportsOnboarding}
-                showReviewRules={showReviewRules}
-                wasProctoredExam={isProctoredExam}
-                onlineProctoringRules={onlineProctoringRules}
-              />
-            </Tab>
           </Tabs>
         );
       case COURSE_BLOCK_NAMES.vertical.id:
