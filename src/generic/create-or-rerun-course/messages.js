@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   courseDisplayNamePlaceholder: {
     id: 'course-authoring.create-or-rerun-course.display-name.placeholder',
-    defaultMessage: 'например, Белый хакер',
+    defaultMessage: 'например, Анализ событий безопасности с помощью MaxPatrol SIEM',
   },
   courseDisplayNameCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.display-name.help-text',
@@ -52,7 +52,7 @@ const messages = defineMessages({
   },
   courseNumberPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.number.placeholder',
-    defaultMessage: 'например, CS101',
+    defaultMessage: 'например, SIEM-IIS',
   },
   courseNumberCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.number.help-text',
