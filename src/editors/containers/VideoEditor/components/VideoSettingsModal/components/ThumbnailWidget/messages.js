@@ -35,7 +35,7 @@ const messages = defineMessages({
   },
   addThumbnail: {
     id: 'authoring.videoeditor.thumbnail.upload.message',
-    defaultMessage: 'Загрузите изображение, которое учащиеся увидят перед воспроизведением видео.',
+    defaultMessage: 'Загрузите изображение, которое пользователи увидят перед воспроизведением видео.',
     description: 'Сообщение для добавления миниатюры',
   },
   aspectRequirements: {

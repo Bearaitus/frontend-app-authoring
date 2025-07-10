@@ -126,7 +126,7 @@ const messages = defineMessages({
   },
   divideByCohortsHelp: {
     id: 'authoring.discussions.builtIn.divideByCohorts.help',
-    defaultMessage: 'Учащиеся смогут просматривать и отвечать только на обсуждения, опубликованные членами их когорты.',
+    defaultMessage: 'Пользователи смогут просматривать и отвечать только на обсуждения, опубликованные членами их когорты.',
     description: 'Справочная информация для переключателя, который включает разделение обсуждений по когортам.',
   },
   divideCourseTopicsByCohortsLabel: {
@@ -179,7 +179,7 @@ const messages = defineMessages({
   },
   groupInContextSubsectionHelp: {
     id: 'authoring.discussions.builtIn.groupInContextSubsection.help',
-    defaultMessage: 'Учащиеся смогут просматривать любой пост в подразделе, независимо от страницы единицы, которую они просматривают. Хотя это не рекомендуется, если ваш курс имеет короткие последовательности обучения или низкую нагрузку, группировка может увеличить вовлеченность.',
+    defaultMessage: 'Пользователи смогут просматривать любой пост в подразделе, независимо от страницы единицы, которую они просматривают. Хотя это не рекомендуется, если ваш курс имеет короткие последовательности обучения или низкую нагрузку, группировка может увеличить вовлеченность.',
   },
 
   // Anonymous posting fields
@@ -193,7 +193,7 @@ const messages = defineMessages({
   },
   allowAnonymousPostsHelp: {
     id: 'authoring.discussions.builtIn.allowAnonymous.help',
-    defaultMessage: 'Если включено, учащиеся смогут создавать посты, которые будут анонимны для всех пользователей.',
+    defaultMessage: 'Если включено, пользователи смогут создавать посты, которые будут анонимны для всех пользователей.',
   },
   allowAnonymousPostsPeersLabel: {
     id: 'authoring.discussions.builtIn.allowAnonymousPeers.label',
@@ -201,7 +201,7 @@ const messages = defineMessages({
   },
   allowAnonymousPostsPeersHelp: {
     id: 'authoring.discussions.builtIn.allowAnonymousPeers.help',
-    defaultMessage: 'Учащиеся смогут размещать посты анонимно для других однокурсников, но все посты будут видны для персонала курса.',
+    defaultMessage: 'Пользователи смогут размещать посты анонимно для других однокурсников, но все посты будут видны для персонала курса.',
   },
 
   // Reported Email Notifications
@@ -311,11 +311,11 @@ const messages = defineMessages({
   },
   discussionRestrictionHelp: {
     id: 'authoring.discussions.discussionRestriction.help',
-    defaultMessage: 'Если включено, учащиеся не смогут размещать посты в обсуждениях.',
+    defaultMessage: 'Если включено, пользователи не смогут размещать посты в обсуждениях.',
   },
   discussionRestrictionDatesHelp: {
     id: 'authoring.discussions.discussionRestrictionDates.help',
-    defaultMessage: 'Если добавлено, учащиеся не смогут размещать посты в обсуждениях между этими датами.',
+    defaultMessage: 'Если добавлено, пользователи не смогут размещать посты в обсуждениях между этими датами.',
   },
   addRestrictedDatesButton: {
     id: 'authoring.discussions.addRestrictedDatesButton',
@@ -332,7 +332,7 @@ const messages = defineMessages({
   },
   activeRestrictedDatesDeletionHelp: {
     id: 'authoring.discussions.activeRestrictedDatesDeletion.help',
-    defaultMessage: 'Эти ограниченные даты в настоящее время активны. Если удалены, учащиеся смогут размещать посты в обсуждениях в эти даты. Вы уверены, что хотите продолжить?',
+    defaultMessage: 'Эти ограниченные даты в настоящее время активны. Если удалены, пользователи смогут размещать посты в обсуждениях в эти даты. Вы уверены, что хотите продолжить?',
     description: 'Справочная информация для удаления активных ограниченных дат из раздела ограниченных дат.',
   },
   completeRestrictedDatesDeletionHelp: {
@@ -347,20 +347,20 @@ const messages = defineMessages({
   },
   restrictedDatesDeletionHelp: {
     id: 'authoring.discussions.restrictedDatesDeletion.help',
-    defaultMessage: 'Если удалены, учащиеся смогут размещать посты в обсуждениях в эти даты.',
+    defaultMessage: 'Если удалены, пользователи смогут размещать посты в обсуждениях в эти даты.',
     description: 'Справочная информация для удаления предстоящих ограниченных дат из раздела ограниченных дат.',
   },
   discussionRestrictionOffLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionOff.label',
-    defaultMessage: 'Если включено, учащиеся смогут размещать посты в обсуждениях',
+    defaultMessage: 'Если включено, пользователи смогут размещать посты в обсуждениях',
   },
   discussionRestrictionOnLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionOn.label',
-    defaultMessage: 'Если включено, учащиеся не смогут размещать посты в обсуждениях',
+    defaultMessage: 'Если включено, пользователи не смогут размещать посты в обсуждениях',
   },
   discussionRestrictionScheduledLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionScheduled.label',
-    defaultMessage: 'Если добавлено, учащиеся не смогут размещать посты в обсуждениях между этими датами.',
+    defaultMessage: 'Если добавлено, пользователи не смогут размещать посты в обсуждениях между этими датами.',
   },
   enableRestrictedDatesConfirmationLabel: {
     id: 'authoring.discussions.enableRestrictedDatesConfirmation.label',
@@ -368,7 +368,7 @@ const messages = defineMessages({
   },
   enableRestrictedDatesConfirmationHelp: {
     id: 'authoring.discussions.enableRestrictedDatesConfirmation.help',
-    defaultMessage: 'Учащиеся не смогут размещать посты в обсуждениях.',
+    defaultMessage: 'Пользователи не смогут размещать посты в обсуждениях.',
   },
   deleteAltText: {
     id: 'authoring.topics.delete',

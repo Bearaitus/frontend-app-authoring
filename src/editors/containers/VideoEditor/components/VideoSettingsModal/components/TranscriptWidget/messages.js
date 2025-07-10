@@ -29,7 +29,7 @@ const messages = defineMessages({
   },
   tooltipMessage: {
     id: 'authoring.videoeditor.transcripts.upload.allowDownloadTooltipMessage',
-    defaultMessage: 'Учащиеся увидят ссылку на скачивание транскрипта ниже видео.',
+    defaultMessage: 'Пользователи увидят ссылку на скачивание транскрипта ниже видео.',
     description: 'Сообщение для чекбокса показа по умолчанию',
   },
   transcriptTypeError: {

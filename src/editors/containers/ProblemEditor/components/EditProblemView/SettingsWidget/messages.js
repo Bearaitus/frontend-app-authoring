@@ -129,7 +129,7 @@ const messages = defineMessages({
   },
   showAnswerSettingText: {
     id: 'authoring.problemeditor.settings.showAnswer.text',
-    defaultMessage: 'Определите, когда учащиеся могут видеть правильный ответ.',
+    defaultMessage: 'Определите, когда пользователи могут видеть правильный ответ.',
     description: 'Текст настроек показа ответа',
   },
   timerSettingsTitle: {

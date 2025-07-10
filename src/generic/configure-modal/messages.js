@@ -68,7 +68,7 @@ const messages = defineMessages({
   },
   sectionVisibilityWarning: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.section-visibility-warning',
-    defaultMessage: 'Если вы сделаете этот раздел видимым для учащихся, учащиеся смогут увидеть его содержимое после истечения срока выпуска и после публикации раздела. Только блоки, которые явно скрыты от учащихся, останутся скрытыми после того, как вы очистите эту опцию для раздела.',
+    defaultMessage: 'Если вы сделаете этот раздел видимым для учащихся, пользователи смогут увидеть его содержимое после истечения срока выпуска и после публикации раздела. Только блоки, которые явно скрыты от учащихся, останутся скрытыми после того, как вы очистите эту опцию для раздела.',
   },
   unitVisibilityWarning: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-visibility-warning',
@@ -93,7 +93,7 @@ const messages = defineMessages({
   },
   unitAllLearnersAndStaff: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-all-learners-staff',
-    defaultMessage: 'Все учащиеся и персонал',
+    defaultMessage: 'Все пользователи и персонал',
   },
   cancelButton: {
     id: 'course-authoring.course-outline.configure-modal.button.cancel',
@@ -137,7 +137,7 @@ const messages = defineMessages({
   },
   hideContentAfterDueDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-content-after-due-description',
-    defaultMessage: 'После истечения срока сдачи подраздела учащиеся больше не могут получить доступ к его содержимому. Подраздел не включается в расчет оценок.',
+    defaultMessage: 'После истечения срока сдачи подраздела пользователи больше не могут получить доступ к его содержимому. Подраздел не включается в расчет оценок.',
   },
   hideEntireSubsection: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-entire-subsection',
@@ -145,7 +145,7 @@ const messages = defineMessages({
   },
   hideEntireSubsectionDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-entire-subsection-description',
-    defaultMessage: 'Учащиеся не видят подраздел в плане курса. Подраздел не включается в расчет оценок.',
+    defaultMessage: 'Пользователи не видят подраздел в плане курса. Подраздел не включается в расчет оценок.',
   },
   assessmentResultsVisibility: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.assessment-results-visibility',
@@ -157,7 +157,7 @@ const messages = defineMessages({
   },
   alwaysShowAssessmentResultsDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.always-show-assessment-results-description',
-    defaultMessage: 'Когда учащиеся подают ответ на оценку, они сразу видят, правильный ли ответ или нет, и полученную оценку.',
+    defaultMessage: 'Когда пользователи подают ответ на оценку, они сразу видят, правильный ли ответ или нет, и полученную оценку.',
   },
   neverShowAssessmentResults: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.never-show-assessment-results',
@@ -165,7 +165,7 @@ const messages = defineMessages({
   },
   neverShowAssessmentResultsDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.never-show-assessment-results-description',
-    defaultMessage: 'Учащиеся никогда не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку.',
+    defaultMessage: 'Пользователи никогда не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку.',
   },
   showAssessmentResultsPastDue: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-assessment-results-past-due',
@@ -173,7 +173,7 @@ const messages = defineMessages({
   },
   showAssessmentResultsPastDueDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-assessment-results-past-due-description',
-    defaultMessage: 'Учащиеся не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку, пока не истечет срок сдачи подраздела. Если подраздел не имеет срока сдачи, учащиеся всегда видят свои оценки, когда подают ответы на оценки.',
+    defaultMessage: 'Пользователи не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку, пока не истечет срок сдачи подраздела. Если подраздел не имеет срока сдачи, пользователи всегда видят свои оценки, когда подают ответы на оценки.',
   },
   setSpecialExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.set-special-exam',
@@ -189,7 +189,7 @@ const messages = defineMessages({
   },
   timedDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.timed-description',
-    defaultMessage: 'Используйте экзамен с ограничением по времени, чтобы ограничить время, которое учащиеся могут потратить на задачи в этом подразделе. Учащиеся должны подать ответы до истечения времени. Вы можете разрешить дополнительное время для отдельных учащихся через панель инструктора.',
+    defaultMessage: 'Используйте экзамен с ограничением по времени, чтобы ограничить время, которое пользователи могут потратить на задачи в этом подразделе. Пользователи должны подать ответы до истечения времени. Вы можете разрешить дополнительное время для отдельных учащихся через панель инструктора.',
   },
   proctoredExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctoredExam',
@@ -197,7 +197,7 @@ const messages = defineMessages({
   },
   proctoredExamDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctored-exam-description',
-    defaultMessage: 'Экзамены с прокторингом являются экзаменами с ограничением по времени и записывают видео каждого учащегося, проходящего экзамен. Видео затем проверяются, чтобы убедиться, что учащиеся следуют всем правилам экзамена. Пожалуйста, обратите внимание, что установка этого экзамена как экзамена с прокторингом изменит настройки видимости на "Скрыть содержимое после срока сдачи".',
+    defaultMessage: 'Экзамены с прокторингом являются экзаменами с ограничением по времени и записывают видео каждого учащегося, проходящего экзамен. Видео затем проверяются, чтобы убедиться, что пользователи следуют всем правилам экзамена. Пожалуйста, обратите внимание, что установка этого экзамена как экзамена с прокторингом изменит настройки видимости на "Скрыть содержимое после срока сдачи".',
   },
   onboardingExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.onboardingExam',
@@ -205,7 +205,7 @@ const messages = defineMessages({
   },
   onboardingExamDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.onboarding-exam-description',
-    defaultMessage: 'Используйте Onboarding, чтобы познакомить учащихся с прокторингом, проверить их личность и создать профиль Onboarding. Учащиеся должны завершить шаг создания профиля Onboarding до того, как они смогут пройти экзамен с прокторингом. Проверка профилей занимает 2+ рабочих дня.',
+    defaultMessage: 'Используйте Onboarding, чтобы познакомить учащихся с прокторингом, проверить их личность и создать профиль Onboarding. Пользователи должны завершить шаг создания профиля Onboarding до того, как они смогут пройти экзамен с прокторингом. Проверка профилей занимает 2+ рабочих дня.',
   },
   practiceExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.practiceExam',

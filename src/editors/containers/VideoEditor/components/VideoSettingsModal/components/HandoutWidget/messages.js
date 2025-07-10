@@ -14,7 +14,7 @@ const messages = defineMessages({
   },
   addHandoutMessage: {
     id: 'authoring.videoeditor.handout.upload.addHandoutMessage',
-    defaultMessage: `Добавьте материалы к этому видео. Учащиеся могут скачать
+    defaultMessage: `Добавьте материалы к этому видео. Пользователи могут скачать
     этот файл, нажав "Скачать материалы" ниже видео.`,
     description: 'Сообщение, отображаемое при загрузке материалов',
   },
@@ -30,7 +30,7 @@ const messages = defineMessages({
   },
   handoutHelpMessage: {
     id: 'authoring.videoeditor.handout.handoutHelpMessage',
-    defaultMessage: 'Учащиеся могут скачать этот файл, нажав "Скачать материалы" ниже видео.',
+    defaultMessage: 'Пользователи могут скачать этот файл, нажав "Скачать материалы" ниже видео.',
     description: 'Сообщение, отображаемое пользователю при наличии материалов',
   },
   deleteHandout: {

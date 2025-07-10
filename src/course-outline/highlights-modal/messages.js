@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   description: {
     id: 'course-authoring.course-outline.highlights-modal.description',
-    defaultMessage: 'Введите 3-5 выделений, чтобы включить их в электронное сообщение, которое учащиеся получат для этого раздела (лимит 250 символов). Для получения более подробной информации и примера шаблона электронного письма прочитайте нашу {documentation}.',
+    defaultMessage: 'Введите 3-5 выделений, чтобы включить их в электронное сообщение, которое пользователи получат для этого раздела (лимит 250 символов). Для получения более подробной информации и примера шаблона электронного письма прочитайте нашу {documentation}.',
   },
   documentationLink: {
     id: 'course-authoring.course-outline.highlights-modal.documentation-link',

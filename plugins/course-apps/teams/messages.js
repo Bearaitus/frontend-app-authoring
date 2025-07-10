@@ -47,7 +47,7 @@ const messages = defineMessages({
   },
   groupsHelp: {
     id: 'authoring.pagesAndResources.teams.groups.help',
-    defaultMessage: 'Группы - это пространства, где учащиеся могут создавать или присоединяться к командам.',
+    defaultMessage: 'Группы - это пространства, где пользователи могут создавать или присоединяться к командам.',
   },
   configureGroup: {
     id: 'authoring.pagesAndResources.teams.configureGroup.heading',
@@ -99,11 +99,11 @@ const messages = defineMessages({
   },
   groupTypeOpenManagedDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.open_managed.description',
-    defaultMessage: 'Только персонал курса может создавать команды. Учащиеся могут видеть, присоединяться и покидать команды.',
+    defaultMessage: 'Только персонал курса может создавать команды. Пользователи могут видеть, присоединяться и покидать команды.',
   },
   groupTypeOpenDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.open.description',
-    defaultMessage: 'Учащиеся могут создавать, присоединяться, покидать и видеть другие команды',
+    defaultMessage: 'Пользователи могут создавать, присоединяться, покидать и видеть другие команды',
   },
   groupTypePublicManaged: {
     id: 'authoring.pagesAndResources.teams.group.types.public_managed',
@@ -111,7 +111,7 @@ const messages = defineMessages({
   },
   groupTypePublicManagedDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.public_managed.description',
-    defaultMessage: 'Только персонал курса может контролировать команды и членство. Учащиеся могут видеть другие команды.',
+    defaultMessage: 'Только персонал курса может контролировать команды и членство. Пользователи могут видеть другие команды.',
   },
   groupTypePrivateManaged: {
     id: 'authoring.pagesAndResources.teams.group.types.private_managed',
@@ -160,7 +160,7 @@ const messages = defineMessages({
   groupDeleteBody: {
     id: 'authoring.pagesAndResources.teams.deleteGroup.body',
     defaultMessage: `edX рекомендует не удалять группы после начала курса.
-    Ваша группа больше не будет видна в LMS, и учащиеся не смогут покинуть команды, связанные с ней.
+    Ваша группа больше не будет видна в LMS, и пользователи не смогут покинуть команды, связанные с ней.
     Пожалуйста, удалите учащихся из команд перед удалением связанной группы.`,
     description: 'Сообщение, отображаемое администраторам при удалении группы. Убедитесь, что включили разрывы строк, чтобы окончательный текст был отображен правильно.',
   },
