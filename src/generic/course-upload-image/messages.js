@@ -1,38 +1,36 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   uploadImageHelpText: {
     id: 'course-authoring.schedule-section.introducing.upload-image.help-text',
-    defaultMessage: 'Please provide a valid path and name to your {identifierFieldText} (Note: only JPEG or PNG format supported)',
+    defaultMessage: 'Пожалуйста, укажите правильный путь и имя вашего {identifierFieldText} (Примечание: поддерживаются только форматы JPEG или PNG)',
   },
   uploadImageFilesAndUploads: {
     id: 'course-authoring.schedule-section.introducing.upload-image.file-and-uploads',
-    defaultMessage: 'files and uploads',
+    defaultMessage: 'файлы и загрузки',
   },
   uploadImageDropzoneText: {
     id: 'course-authoring.schedule-section.introducing.upload-image.dropzone-text',
-    defaultMessage: 'Drag and drop your {identifierFieldText} here or click to upload.',
+    defaultMessage: 'Перетащите ваш {identifierFieldText} сюда или нажмите для загрузки.',
   },
   uploadImageDropzoneAlt: {
     id: 'course-authoring.schedule-section.introducing.upload-image.dropzone-alt',
-    defaultMessage: 'Uploaded image for course',
+    defaultMessage: 'Загруженное изображение для курса',
   },
   uploadImageEmpty: {
     id: 'course-authoring.schedule-section.introducing.upload-image.empty',
-    defaultMessage: 'Your course currently does not have an image. Please upload one (JPEG or PNG format, and minimum suggested dimensions are 375px wide by 200px tall)',
+    defaultMessage: 'У вашего курса в настоящее время нет изображения. Пожалуйста, загрузите его (формат JPEG или PNG, рекомендуемые минимальные размеры — 375px в ширину и 200px в высоту)',
   },
   uploadImageIconAlt: {
     id: 'course-authoring.schedule-section.introducing.upload-image.icon-alt',
-    defaultMessage: 'File upload icon',
+    defaultMessage: 'Иконка загрузки файла',
   },
   uploadImageBodyFilled: {
     id: 'course-authoring.schedule-section.introducing.upload-image.manage',
-    defaultMessage: 'You can manage this image along with all of your other {hyperlink}',
+    defaultMessage: 'Вы можете управлять этим изображением вместе со всеми другими вашими {hyperlink}',
   },
   uploadImageInputPlaceholder: {
     id: 'course-authoring.schedule-section.introducing.upload-image.input.placeholder',
-    defaultMessage: 'Your {identifierFieldText} URL',
+    defaultMessage: 'URL вашего {identifierFieldText}',
   },
 });
-
 export default messages;
