@@ -109,38 +109,40 @@ const CreateOrRerunCourseForm = ({
     handleBlur(e);
   };
 
-  // const renderOrgField = (field) => (allowToCreateNewOrg ? (
-  //   <TypeaheadDropdown
-  //     readOnly={false}
-  //     name={field.name}
-  //     value={field.value}
-  //     controlClassName={classNames({ 'is-invalid': hasErrorField(field.name) })}
-  //     options={field.options}
-  //     placeholder={field.placeholder}
-  //     handleBlur={handleCustomBlurForDropdown}
-  //     handleChange={(value) => setFieldValue(field.name, value)}
-  //     noOptionsMessage={messages.courseOrgNoOptions.defaultMessage}
-  //     helpMessage=""
-  //     errorMessage=""
-  //     floatingLabel=""
-  //   />
-  // ) : (
-  //   <Dropdown className="mr-2">
-  //     <Dropdown.Toggle id={`${field.name}-dropdown`} variant="outline-primary">
-  //       {field.value || messages.courseOrgNoOptions.defaultMessage}
-  //     </Dropdown.Toggle>
-  //     <Dropdown.Menu>
-  //       {field.options?.map((value) => (
-  //         <Dropdown.Item
-  //           key={value}
-  //           onClick={() => setFieldValue(field.name, value)}
-  //         >
-  //           {value}
-  //         </Dropdown.Item>
-  //       ))}
-  //     </Dropdown.Menu>
-  //   </Dropdown>
-  // ));
+  const renderOrgField = (field) => (allowToCreateNewOrg ? (
+    // <TypeaheadDropdown
+    //   readOnly={false}
+    //   name={field.name}
+    //   value={field.value}
+    //   controlClassName={classNames({ 'is-invalid': hasErrorField(field.name) })}
+    //   options={field.options}
+    //   placeholder={field.placeholder}
+    //   handleBlur={handleCustomBlurForDropdown}
+    //   handleChange={(value) => setFieldValue(field.name, value)}
+    //   noOptionsMessage={messages.courseOrgNoOptions.defaultMessage}
+    //   helpMessage=""
+    //   errorMessage=""
+    //   floatingLabel=""
+    // />
+    null
+  ) : (
+    null
+    // <Dropdown className="mr-2">
+    //   <Dropdown.Toggle id={`${field.name}-dropdown`} variant="outline-primary">
+    //     {field.value || messages.courseOrgNoOptions.defaultMessage}
+    //   </Dropdown.Toggle>
+    //   <Dropdown.Menu>
+    //     {field.options?.map((value) => (
+    //       <Dropdown.Item
+    //         key={value}
+    //         onClick={() => setFieldValue(field.name, value)}
+    //       >
+    //         {value}
+    //       </Dropdown.Item>
+    //     ))}
+    //   </Dropdown.Menu>
+    // </Dropdown>
+  ));
 
   useEffect(() => {
     if (!isCreateNewCourse) {
