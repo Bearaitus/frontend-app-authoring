@@ -11,11 +11,11 @@ const messages = defineMessages({
   },
   reindexButton: {
     id: 'course-authoring.course-outline.header-navigations.button.reindex',
-    defaultMessage: 'Переиндексация',
+    defaultMessage: 'Обновление',
   },
   reindexButtonTooltip: {
     id: 'course-authoring.course-outline.header-navigations.button.reindex.tooltip',
-    defaultMessage: 'Переиндексировать текущий курс',
+    defaultMessage: 'Обновить текущий курс',
   },
   expandAllButton: {
     id: 'course-authoring.course-outline.header-navigations.button.expand-all',
