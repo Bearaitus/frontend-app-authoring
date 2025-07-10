@@ -12,7 +12,7 @@ const messages = defineMessages({
   },
   basicTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.title',
-    defaultMessage: 'Базовые',
+    defaultMessage: 'Базовые настройки',
   },
   notGradedTypeOption: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.notGradedTypeOption',
@@ -217,7 +217,7 @@ const messages = defineMessages({
   },
   advancedTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.title',
-    defaultMessage: 'Расширенные',
+    defaultMessage: 'Расширенные настройки',
   },
   timeAllotted: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.time-allotted',
