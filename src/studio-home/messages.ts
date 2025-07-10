@@ -31,15 +31,15 @@ const messages = defineMessages({
   },
   defaultSection_2_Title: {
     id: 'course-authoring.studio-home.default-section-2.title',
-    defaultMessage: 'Создайте свой первый курс',
+    defaultMessage: 'Создайте первый курс',
   },
   defaultSection_2_Description: {
     id: 'course-authoring.studio-home.default-section-2.description',
-    defaultMessage: 'Ваш новый курс всего лишь в одном клике!',
+    defaultMessage: 'Просто нажмите на кнопку справа',
   },
   btnAddNewCourseText: {
     id: 'course-authoring.studio-home.btn.add-new-course.text',
-    defaultMessage: 'Создайте свой первый курс',
+    defaultMessage: 'Создать курс',
   },
   btnReRunText: {
     id: 'course-authoring.studio-home.btn.re-run.text',

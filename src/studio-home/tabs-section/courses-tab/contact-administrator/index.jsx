@@ -15,12 +15,6 @@ const ContactAdministrator = ({
 
   return (
     <Card variant="muted">
-      <Card.Section
-        title={intl.formatMessage(messages.defaultSection_1_Title, { studioShortName })}
-        className="small"
-      >
-        {messages.defaultSection_1_Description.defaultMessage}
-      </Card.Section>
       {hasAbilityToCreateCourse && (
         <>
           <Card.Divider />
