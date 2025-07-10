@@ -13,7 +13,6 @@ import {
 } from '@openedx/paragon';
 import { Info as InfoIcon } from '@openedx/paragon/icons';
 import TypeaheadDropdown from '../../editors/sharedComponents/TypeaheadDropdown';
-
 import AlertMessage from '../alert-message';
 import { STATEFUL_BUTTON_STATES } from '../../constants';
 import { RequestStatus, TOTAL_LENGTH_KEY } from '../../data/constants';
@@ -23,7 +22,6 @@ import { updatePostErrors } from '../data/slice';
 import { updateCreateOrRerunCourseQuery } from '../data/thunks';
 import { useCreateOrRerunCourse } from './hooks';
 import messages from './messages';
-
 const CreateOrRerunCourseForm = ({
   title,
   isCreateNewCourse,
@@ -35,7 +33,6 @@ const CreateOrRerunCourseForm = ({
   const { allowToCreateNewOrg } = useSelector(getStudioHomeData);
   const runFieldReference = useRef(null);
   const displayNameFieldReference = useRef(null);
-
   const {
     intl,
     errors,
@@ -51,15 +48,9 @@ const CreateOrRerunCourseForm = ({
     hasErrorField,
     setFieldValue,
   } = useCreateOrRerunCourse(initialValues);
-
   const newCourseFields = [
     {
       label: messages.courseDisplayNameLabel.defaultMessage,
-      helpText: intl.formatMessage(
-        isCreateNewCourse
-          ? messages.courseDisplayNameCreateHelpText
-          : messages.courseDisplayNameRerunHelpText,
-      ),
       name: 'displayName',
       value: values.displayName,
       placeholder: messages.courseDisplayNamePlaceholder.defaultMessage,
@@ -68,20 +59,6 @@ const CreateOrRerunCourseForm = ({
     },
     {
       label: messages.courseOrgLabel.defaultMessage,
-      helpText: isCreateNewCourse
-        ? intl.formatMessage(messages.courseOrgCreateHelpText, {
-          strong: <strong>{messages.courseNoteOrgNameIsPartStrong.defaultMessage}</strong>,
-        })
-        : intl.formatMessage(messages.courseOrgRerunHelpText, {
-          strong: (
-            <>
-              <br />
-              <strong>
-                {messages.courseNoteNoSpaceAllowedStrong.defaultMessage}
-              </strong>
-            </>
-          ),
-        }),
       name: 'org',
       value: values.org,
       options: organizations,
@@ -90,15 +67,6 @@ const CreateOrRerunCourseForm = ({
     },
     {
       label: messages.courseNumberLabel.defaultMessage,
-      helpText: isCreateNewCourse
-        ? intl.formatMessage(messages.courseNumberCreateHelpText, {
-          strong: (
-            <strong>
-              {messages.courseNotePartCourseURLRequireStrong.defaultMessage}
-            </strong>
-          ),
-        })
-        : messages.courseNumberRerunHelpText.defaultMessage,
       name: 'number',
       value: values.number,
       placeholder: messages.courseNumberPlaceholder.defaultMessage,
@@ -106,24 +74,6 @@ const CreateOrRerunCourseForm = ({
     },
     {
       label: messages.courseRunLabel.defaultMessage,
-      helpText: isCreateNewCourse
-        ? intl.formatMessage(messages.courseRunCreateHelpText, {
-          strong: (
-            <strong>
-              {messages.courseNotePartCourseURLRequireStrong.defaultMessage}
-            </strong>
-          ),
-        })
-        : intl.formatMessage(messages.courseRunRerunHelpText, {
-          strong: (
-            <>
-              <br />
-              <strong>
-                {messages.courseNoteNoSpaceAllowedStrong.defaultMessage}
-              </strong>
-            </>
-          ),
-        }),
       name: 'run',
       value: values.run,
       placeholder: messages.courseRunPlaceholder.defaultMessage,
@@ -131,9 +81,7 @@ const CreateOrRerunCourseForm = ({
       ref: runFieldReference,
     },
   ];
-
   const errorMessage = errors[TOTAL_LENGTH_KEY] || postErrors?.errMsg;
-
   const createButtonState = {
     labels: {
       default: intl.formatMessage(isCreateNewCourse ? messages.createButton : messages.rerunCreateButton),
@@ -141,24 +89,20 @@ const CreateOrRerunCourseForm = ({
     },
     disabledStates: [STATEFUL_BUTTON_STATES.pending],
   };
-
   const handleOnClickCreate = () => {
     const courseData = isCreateNewCourse ? values : { ...values, sourceCourseKey: courseId };
     dispatch(updateCreateOrRerunCourseQuery(courseData));
   };
-
   const handleOnClickCancel = () => {
     dispatch(updatePostErrors({}));
     onClickCancel();
   };
-
   const handleCustomBlurForDropdown = (e) => {
     // it needs to correct handleOnChange Form.Autosuggest
     const { value, name } = e.target;
     setFieldValue(name, value);
     handleBlur(e);
   };
-
   const renderOrgField = (field) => (allowToCreateNewOrg ? (
     <TypeaheadDropdown
       readOnly={false}
@@ -191,7 +135,6 @@ const CreateOrRerunCourseForm = ({
       </Dropdown.Menu>
     </Dropdown>
   ));
-
   useEffect(() => {
     // it needs to display the initial focus for the field depending on the current page
     if (!isCreateNewCourse) {
@@ -200,7 +143,6 @@ const CreateOrRerunCourseForm = ({
       displayNameFieldReference?.current?.focus();
     }
   }, []);
-
   return (
     <div className="create-or-rerun-course-form">
       <TransitionReplace>
@@ -241,7 +183,6 @@ const CreateOrRerunCourseForm = ({
                 ref={field?.ref}
               />
             ) : renderOrgField(field)}
-            <Form.Text>{field.helpText}</Form.Text>
             {hasErrorField(field.name) && (
               <Form.Control.Feedback
                 className="feedback-error"
@@ -277,12 +218,10 @@ const CreateOrRerunCourseForm = ({
     </div>
   );
 };
-
 CreateOrRerunCourseForm.defaultProps = {
   title: '',
   isCreateNewCourse: false,
 };
-
 CreateOrRerunCourseForm.propTypes = {
   title: PropTypes.string,
   initialValues: PropTypes.shape({
@@ -294,5 +233,4 @@ CreateOrRerunCourseForm.propTypes = {
   isCreateNewCourse: PropTypes.bool,
   onClickCancel: PropTypes.func.isRequired,
 };
-
 export default CreateOrRerunCourseForm;
