@@ -87,26 +87,6 @@ const IntroducingSection = ({
           onChange={onChange}
         />
       )}
-      {shortDescriptionEditable && (
-        <Form.Group className="form-group-custom">
-          <Form.Label>
-            {messages.courseShortDescriptionLabel.defaultMessage}
-          </Form.Label>
-          <Form.Control
-            as="textarea"
-            value={shortDescription}
-            name="shortDescription"
-            onChange={(e) => onChange(e.target.value, 'shortDescription')}
-            aria-label={intl.formatMessage(
-              messages.courseShortDescriptionAriaLabel,
-            )}
-            maxLength={150}
-          />
-          <Form.Control.Feedback>
-            {messages.courseShortDescriptionHelpText.defaultMessage}
-          </Form.Control.Feedback>
-        </Form.Group>
-      )}
       {aboutPageEditable && (
         <>
           <Form.Group className="form-group-custom">
