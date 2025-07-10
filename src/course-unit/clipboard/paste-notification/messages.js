@@ -1,52 +1,44 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   hasConflictingErrorsTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.title',
-    defaultMessage: 'Files need to be updated manually.',
-    description: 'Title for a notification indicating that files need manual updates '
-      + 'due to a conflict in the clipboard.',
+    defaultMessage: 'Файлы необходимо обновить вручную.',
+    description: 'Заголовок для уведомления, указывающего, что файлы необходимо обновить вручную из-за конфликта в буфере обмена.',
   },
   hasConflictingErrorsDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.description',
-    defaultMessage: 'The following files must be updated manually for components to work as intended:',
-    description: 'Description for the notification indicating which files need manual '
-      + 'updates due to a clipboard conflict.',
+    defaultMessage: 'Следующие файлы необходимо обновить вручную, чтобы компоненты работали должным образом:',
+    description: 'Описание уведомления, указывающего, какие файлы необходимо обновить вручную из-за конфликта в буфере обмена.',
   },
   hasConflictingErrorsButtonText: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.button.text',
-    defaultMessage: 'Upload files',
-    description: 'Button text prompting users to upload files to resolve a clipboard conflict.',
+    defaultMessage: 'Загрузить файлы',
+    description: 'Текст кнопки, предлагающий пользователям загрузить файлы для устранения конфликта в буфере обмена.',
   },
   hasErrorsTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-errors.title',
-    defaultMessage: 'Some errors occurred',
-    description: 'Title for a notification indicating that some errors occurred, likely '
-      + 'related to file conflicts.',
+    defaultMessage: 'Произошли некоторые ошибки',
+    description: 'Заголовок для уведомления, указывающего, что произошли некоторые ошибки, вероятно, связанные с конфликтами файлов.',
   },
   hasErrorsDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-errors.description',
-    defaultMessage: 'The following required files could not be added to the course:',
-    description: 'Description for the notification indicating which required files '
-      + 'couldn\'t be added to the course due to errors.',
+    defaultMessage: 'Следующие необходимые файлы не удалось добавить в курс:',
+    description: 'Описание уведомления, указывающего, какие необходимые файлы не удалось добавить в курс из-за ошибок.',
   },
   hasNewFilesTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.title',
-    defaultMessage: 'New file(s) added to Files & Uploads.',
-    description: 'Title for a notification indicating that new files have been added to '
-      + 'the Files & Uploads section.',
+    defaultMessage: 'Новый файл(ы) добавлен(ы) в Файлы и загрузки.',
+    description: 'Заголовок для уведомления, указывающего, что новые файлы были добавлены в раздел Файлы и загрузки.',
   },
   hasNewFilesDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.description',
-    defaultMessage: 'The following required files were imported to this course:',
-    description: 'Description for the notification indicating which required files '
-      + 'were imported to the course.',
+    defaultMessage: 'Следующие необходимые файлы были импортированы в этот курс:',
+    description: 'Описание уведомления, указывающего, какие необходимые файлы были импортированы в курс.',
   },
   hasNewFilesButtonText: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.button.text',
-    defaultMessage: 'View files',
-    description: 'Button text prompting users to view new files imported to the course.',
+    defaultMessage: 'Посмотреть файлы',
+    description: 'Текст кнопки, предлагающий пользователям просмотреть новые файлы, импортированные в курс.',
   },
 });
-
 export default messages;
