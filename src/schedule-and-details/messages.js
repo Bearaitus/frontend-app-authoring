@@ -39,7 +39,7 @@ const messages = defineMessages({
   },
   alertWarningDescriptions: {
     id: 'course-authoring.schedule.alert.warning.descriptions',
-    defaultMessage: 'Ваши изменения не будут иметь эффекта до тех пор, пока вы не сохраните прогресс.',
+    defaultMessage: 'Ваши изменения не будут видны до тех пор, пока вы не сохраните изменения.',
   },
   alertWarningDescriptionsOnSaveWithError: {
     id: 'course-authoring.schedule.alert.warning.save.descriptions.error',

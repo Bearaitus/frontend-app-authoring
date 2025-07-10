@@ -23,7 +23,7 @@ const messages = defineMessages({
   },
   alertWarningDescriptions: {
     id: 'course-authoring.grading-settings.alert.warning.descriptions',
-    defaultMessage: 'Ваши изменения не будут иметь эффекта до тех пор, пока вы не сохраните прогресс. Будьте осторожны с форматированием ключей и значений, поскольку валидация не реализована.',
+    defaultMessage: 'Ваши изменения не будут видны до тех пор, пока вы не сохраните изменения. Будьте осторожны с форматированием ключей и значений, поскольку валидация не реализована.',
   },
   alertSuccess: {
     id: 'course-authoring.grading-settings.alert.success',
