@@ -8,7 +8,7 @@ const messages = defineMessages({
   },
   courseDisplayNamePlaceholder: {
     id: 'course-authoring.create-or-rerun-course.display-name.placeholder',
-    defaultMessage: 'например, Введение в информатику',
+    defaultMessage: 'например, Белый хакер',
   },
   courseDisplayNameCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.display-name.help-text',
@@ -20,7 +20,7 @@ const messages = defineMessages({
   },
   courseOrgLabel: {
     id: 'course-authoring.create-or-rerun-course.org.label',
-    defaultMessage: 'Организация',
+    defaultMessage: 'Компания-разработчик курса',
   },
   courseOrgPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.org.placeholder',
@@ -48,7 +48,7 @@ const messages = defineMessages({
   },
   courseNumberLabel: {
     id: 'course-authoring.create-or-rerun-course.number.label',
-    defaultMessage: 'Номер курса',
+    defaultMessage: 'Идентификатор курса',
   },
   courseNumberPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.number.placeholder',
@@ -68,11 +68,11 @@ const messages = defineMessages({
   },
   courseRunLabel: {
     id: 'course-authoring.create-or-rerun-course.run.label',
-    defaultMessage: 'Запуск курса',
+    defaultMessage: 'Направление в кибербезопасности',
   },
   courseRunPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.run.placeholder',
-    defaultMessage: 'например, 2025_T1',
+    defaultMessage: 'например, Blue_Team',
   },
   courseRunCreateHelpText: {
     id: 'course-authoring.create-or-rerun-course.create.run.help-text',
