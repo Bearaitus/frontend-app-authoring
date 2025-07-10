@@ -88,14 +88,10 @@ const VisibilityTab = ({
               onChange={correctnessChanged}
               value={showCorrectness}
             >
-              <Form.Radio value="always">
-                <FormattedMessage {...messages.alwaysShowAssessmentResults} />
-              </Form.Radio>
-              <Form.Text><FormattedMessage {...messages.alwaysShowAssessmentResultsDescription} /></Form.Text>
-              <Form.Radio value="never">
-                <FormattedMessage {...messages.neverShowAssessmentResults} />
-              </Form.Radio>
-              <Form.Text><FormattedMessage {...messages.neverShowAssessmentResultsDescription} /></Form.Text>
+              <Form.Radio value="always">{messages.alwaysShowAssessmentResults.defaultMessage}</Form.Radio>
+              <Form.Text>{messages.alwaysShowAssessmentResultsDescription.defaultMessage}</Form.Text>
+              <Form.Radio value="never">{messages.neverShowAssessmentResults.defaultMessage}</Form.Radio>
+              <Form.Text>{messages.neverShowAssessmentResultsDescription.defaultMessage}</Form.Text>
             </Form.RadioSet>
           </>
         ) : (
