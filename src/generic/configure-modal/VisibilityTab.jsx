@@ -71,9 +71,6 @@ const VisibilityTab = ({
                 <FormattedMessage {...messages.showEntireSubsection} />
               </Form.Radio>
               <Form.Text><FormattedMessage {...messages.showEntireSubsectionDescription} /></Form.Text>
-              <Form.Radio value="hideDue">
-                <FormattedMessage {...messages.hideContentAfterDue} />
-              </Form.Radio>
               <Form.Text><FormattedMessage {...messages.hideContentAfterDueDescription} /></Form.Text>
               <Form.Radio value="hide">
                 <FormattedMessage {...messages.hideEntireSubsection} />

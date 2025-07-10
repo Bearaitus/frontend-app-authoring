@@ -129,7 +129,7 @@ const messages = defineMessages({
   },
   showEntireSubsectionDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-entire-subsection-description',
-    defaultMessage: 'Учащиеся видят опубликованный подраздел и могут получить доступ к его содержимому',
+    defaultMessage: 'Пользователи видят опубликованную часть',
   },
   hideContentAfterDue: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-content-after-due',
