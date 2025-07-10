@@ -269,9 +269,6 @@ const ConfigureModal = ({
     >
       <div data-testid="configure-modal">
         <ModalDialog.Header className="configure-modal__header">
-          <ModalDialog.Title>
-            {dialogTitle}
-          </ModalDialog.Title>
         </ModalDialog.Header>
         <Formik
           initialValues={initialValues}
