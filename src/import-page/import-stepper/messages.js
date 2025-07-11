@@ -3,15 +3,15 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   stepperUploadingTitle: {
     id: 'course-authoring.import.stepper.title.uploading',
-    defaultMessage: 'Загрузка',
+    defaultMessage: 'Загрузка архива',
   },
   stepperUnpackingTitle: {
     id: 'course-authoring.import.stepper.title.unpacking',
-    defaultMessage: 'Распаковка',
+    defaultMessage: 'Распаковка архива',
   },
   stepperVerifyingTitle: {
     id: 'course-authoring.import.stepper.title.verifying',
-    defaultMessage: 'Проверка',
+    defaultMessage: 'Проверка файлов в архиве',
   },
   stepperUpdatingTitle: {
     id: 'course-authoring.import.stepper.title.updating',
@@ -19,15 +19,15 @@ const messages = defineMessages({
   },
   stepperSuccessTitle: {
     id: 'course-authoring.import.stepper.title.success',
-    defaultMessage: 'Успех',
+    defaultMessage: 'Импортировано',
   },
   stepperUploadingDescription: {
     id: 'course-authoring.import.stepper.description.uploading',
-    defaultMessage: 'Передача вашего файла на наши серверы',
+    defaultMessage: 'Загрузка курса на тренажер PT EdTechLab',
   },
   stepperUnpackingDescription: {
     id: 'course-authoring.import.stepper.description.unpacking',
-    defaultMessage: 'Распаковка и подготовка структуры папок/файлов (Вы можете безопасно покинуть эту страницу, но избегайте внесения значительных изменений в содержимое до завершения импорта)',
+    defaultMessage: 'Распаковка и подготовка структуры папок/файлов',
   },
   stepperVerifyingDescription: {
     id: 'course-authoring.import.stepper.description.verifying',
@@ -35,15 +35,15 @@ const messages = defineMessages({
   },
   stepperUpdatingDescription: {
     id: 'course-authoring.import.stepper.description.updating',
-    defaultMessage: 'Интеграция импортированного содержимого в этот курс. Этот процесс может занять больше времени для более крупных курсов.',
+    defaultMessage: 'Интеграция импортированного содержимого в этот курс',
   },
   stepperSuccessDescription: {
     id: 'course-authoring.import.stepper.description.success',
-    defaultMessage: 'Импортированное содержимое теперь интегрировано в этот курс',
+    defaultMessage: 'Импортирование курса завершено успешно',
   },
   viewOutlineButton: {
     id: 'course-authoring.import.stepper.button.outline',
-    defaultMessage: 'Просмотреть обновленный план',
+    defaultMessage: 'Перейти к курсу',
   },
   defaultErrorMessage: {
     id: 'course-authoring.import.stepper.error.default',
