@@ -16,7 +16,6 @@ import { handleProcessUpload } from '../data/thunks';
 
 const FileSection = ({ intl, courseId }) => {
   const dispatch = useDispatch();
-  const importTriggered = useSelector(getImportTriggered);
   const currentStage = useSelector(getCurrentStage);
   const fileName = useSelector(getFileName);
   const { hasError } = useSelector(getError);

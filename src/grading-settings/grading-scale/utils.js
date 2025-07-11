@@ -41,7 +41,7 @@ export const getSortedGrades = (gradeValues) => gradeValues.reduce((sortedArray,
  * @returns {string} - Segment display name.
  */
 export const getLettersOnLongScale = (idx, letters, gradingSegments) => {
-  const END_OF_SCALE_NAME = 'F';
+  const END_OF_SCALE_NAME = '0';
 
   if (idx === 0) {
     return letters[0];

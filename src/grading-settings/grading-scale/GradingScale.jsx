@@ -9,7 +9,7 @@ import messages from './messages';
 import { convertGradeData, MAXIMUM_SCALE_LENGTH } from './utils';
 import { GradingScaleTicks, GradingScaleHandle, GradingScaleSegment } from './components';
 
-const DEFAULT_LETTERS = ['A', 'B', 'C', 'D'];
+const DEFAULT_LETTERS = ['5', '4', '3', '2'];
 const getDefaultPassText = intl => messages.defaultPassText.defaultMessage;
 
 const GradingScale = ({

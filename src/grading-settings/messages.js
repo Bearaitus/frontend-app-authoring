@@ -11,11 +11,11 @@ const messages = defineMessages({
   },
   policy: {
     id: 'course-authoring.grading-settings.policies.title',
-    defaultMessage: 'Общий диапазон оценок',
+    defaultMessage: 'Оценочная шкала',
   },
   policiesDescription: {
     id: 'course-authoring.grading-settings.policies.description',
-    defaultMessage: 'Ваша общая шкала оценок для окончательных оценок студентов',
+    defaultMessage: '',
   },
   alertWarning: {
     id: 'course-authoring.grading-settings.alert.warning',
