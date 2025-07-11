@@ -35,7 +35,7 @@ const messages = defineMessages({
   },
   weightOfTotalGradeDescription: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.description',
-    defaultMessage: 'Вес всех заданий этого типа как процент от общей оценки, например, 40. Не включайте символ процента.',
+    defaultMessage: '',
   },
   weightOfTotalGradeErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.error.message',
@@ -47,7 +47,7 @@ const messages = defineMessages({
   },
   totalNumberDescription: {
     id: 'course-authoring.grading-settings.assignment.total-number.description',
-    defaultMessage: 'Количество подразделов в курсе, содержащих задания этого типа.',
+    defaultMessage: '',
   },
   totalNumberErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.total-number.error.message',
@@ -55,11 +55,11 @@ const messages = defineMessages({
   },
   numberOfDroppableTitle: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.title',
-    defaultMessage: 'Количество отбрасываемых заданий',
+    defaultMessage: 'Рассчётный параметр',
   },
   numberOfDroppableDescription: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.description',
-    defaultMessage: 'Количество заданий этого типа, которые будут отброшены. Самые низкие оценки отбрасываются первыми.',
+    defaultMessage: '',
   },
   numberOfDroppableErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.error.message',
@@ -75,7 +75,7 @@ const messages = defineMessages({
   },
   assignmentAlertWarningDescription: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.description',
-    defaultMessage: 'В курсе нет заданий этого типа.',
+    defaultMessage: 'В данном курсе нет такого типа заданий.',
   },
   assignmentAlertWarningUsageTitle: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.usage.title',
