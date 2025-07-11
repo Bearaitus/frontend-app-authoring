@@ -2,27 +2,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   stepperPreparingTitle: {
     id: 'course-authoring.export.stepper.title.preparing',
-    defaultMessage: 'Подготовка',
+    defaultMessage: 'Подготовка курса',
   },
   stepperExportingTitle: {
     id: 'course-authoring.export.stepper.title.exporting',
-    defaultMessage: 'Экспорт',
+    defaultMessage: 'Сборка файлов курса',
   },
   stepperCompressingTitle: {
     id: 'course-authoring.export.stepper.title.compressing',
-    defaultMessage: 'Сжатие',
+    defaultMessage: 'Сжатие собранных файлов',
   },
   stepperSuccessTitle: {
     id: 'course-authoring.export.stepper.title.success',
-    defaultMessage: 'Успешно',
+    defaultMessage: 'Экспортировано',
   },
   stepperPreparingDescription: {
     id: 'course-authoring.export.stepper.description.preparing',
-    defaultMessage: 'Подготовка к началу экспорта',
+    defaultMessage: 'Подготовка к началу экспорта курса',
   },
   stepperExportingDescription: {
     id: 'course-authoring.export.stepper.description.exporting',
-    defaultMessage: 'Создание файлов экспорта (Вы можете безопасно покинуть эту страницу, но избегайте внесения существенных изменений в контент до завершения экспорта)',
+    defaultMessage: 'Создание файлов экспорта',
   },
   stepperCompressingDescription: {
     id: 'course-authoring.export.stepper.description.compressing',
@@ -30,7 +30,7 @@ const messages = defineMessages({
   },
   stepperSuccessDescription: {
     id: 'course-authoring.export.stepper.description.success',
-    defaultMessage: 'Ваш экспортированный курс теперь можно загрузить',
+    defaultMessage: 'Ваш экспортированный курс теперь можно скачать',
   },
   downloadCourseButtonTitle: {
     id: 'course-authoring.export.stepper.download.button.title',
