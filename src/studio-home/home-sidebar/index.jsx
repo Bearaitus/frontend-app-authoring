@@ -1,16 +1,11 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { MailtoLink } from '@openedx/paragon';
-import { useIntl } from '@edx/frontend-platform/i18n';
-
-import { COURSE_CREATOR_STATES } from '../../constants';
 import { useHelpUrls } from '../../help-urls/hooks';
 import { HelpSidebar, HelpSidebarLink } from '../../generic/help-sidebar';
 import { getStudioHomeData } from '../data/selectors';
 import messages from './messages';
-
 const HomeSidebar = () => {
-  const intl = useIntl();
   const {
     studioName,
     platformName,
@@ -21,7 +16,6 @@ const HomeSidebar = () => {
   } = useSelector(getStudioHomeData);
   const { home: aboutHomeLink } = useHelpUrls(['home']);
 
-  // eslint-disable-next-line max-len
   const isShowMailToGetInstruction = courseCreatorStatus === COURSE_CREATOR_STATES.disallowedForThisSite
     && !!studioRequestEmail;
   const isShowUnrequestedInstruction = courseCreatorStatus === COURSE_CREATOR_STATES.unrequested;
@@ -30,29 +24,28 @@ const HomeSidebar = () => {
   return (
     <HelpSidebar>
       <h4 className="help-sidebar-about-title">
-        {intl.formatMessage(messages.aboutTitle, { studioName })}
+        {messages.aboutTitle.defaultMessage({ studioName })}
       </h4>
       <p className="help-sidebar-about-descriptions">
-        {intl.formatMessage(messages.aboutDescription, { studioShortName })}
+        {messages.aboutDescription.defaultMessage({ studioShortName })}
       </p>
       <HelpSidebarLink
         as="span"
         pathToPage={aboutHomeLink || ''}
-        title={intl.formatMessage(messages.studioHomeLinkToGettingStarted, { studioName })}
+        title={messages.studioHomeLinkToGettingStarted.defaultMessage({ studioName })}
       />
       {isShowMailToGetInstruction && (
         <>
           <hr />
           <h4 className="help-sidebar-about-title">
-            {intl.formatMessage(messages.sidebarHeader2, { studioName })}
+            {messages.sidebarHeader2.defaultMessage({ studioName })}
           </h4>
           <p className="help-sidebar-about-descriptions">
-            {intl.formatMessage(messages.sidebarDescription2, {
+            {messages.sidebarDescription2.defaultMessage({
               studioName,
               mailTo: (
-                <MailtoLink to={studioRequestEmail}>{
-                  intl.formatMessage(messages.sidebarDescription2MailTo, { platformName })
-                }
+                <MailtoLink to={studioRequestEmail}>
+                  {messages.sidebarDescription2MailTo.defaultMessage({ platformName })}
                 </MailtoLink>
               ),
             })}
@@ -63,10 +56,10 @@ const HomeSidebar = () => {
         <>
           <hr />
           <h4 className="help-sidebar-about-title">
-            {intl.formatMessage(messages.sidebarHeader3, { studioName })}
+            {messages.sidebarHeader3.defaultMessage({ studioName })}
           </h4>
           <p className="help-sidebar-about-descriptions">
-            {intl.formatMessage(messages.sidebarDescription3, { studioName })}
+            {messages.sidebarDescription3.defaultMessage({ studioName })}
           </p>
         </>
       )}
@@ -74,15 +67,14 @@ const HomeSidebar = () => {
         <>
           <hr />
           <h4 className="help-sidebar-about-title">
-            {intl.formatMessage(messages.sidebarHeader4, { studioName })}
+            {messages.sidebarHeader4.defaultMessage({ studioName })}
           </h4>
           <p className="help-sidebar-about-descriptions">
-            {intl.formatMessage(messages.sidebarDescription4, {
+            {messages.sidebarDescription4.defaultMessage({
               studioName,
               mailTo: (
-                <MailtoLink to={techSupportEmail}>{
-                  intl.formatMessage(messages.sidebarDescription4MailTo, { platformName })
-                }
+                <MailtoLink to={techSupportEmail}>
+                  {messages.sidebarDescription4MailTo.defaultMessage({ platformName })}
                 </MailtoLink>
               ),
             })}
@@ -92,5 +84,4 @@ const HomeSidebar = () => {
     </HelpSidebar>
   );
 };
-
 export default HomeSidebar;

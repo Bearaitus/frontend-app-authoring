@@ -166,7 +166,7 @@ const StudioHome = () => {
           <article className="studio-home-sub-header">
             <section>
               <SubHeader
-                title={intl.formatMessage(messages.headingTitle, { studioShortName: studioShortName || 'Studio' })}
+                title={messages.headingTitle.defaultMessage}
                 headerActions={headerButtons}
               />
             </section>

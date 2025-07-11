@@ -69,9 +69,7 @@ const CourseImportPage = ({ intl, courseId }) => {
                   title={messages.headingTitle.defaultMessage}
                   subtitle={messages.headingSubtitle.defaultMessage}
                 />
-                <p className="small">{messages.description1.defaultMessage}</p>
                 <p className="small">{messages.description2.defaultMessage}</p>
-                <p className="small">{messages.description3.defaultMessage}</p>
                 <FileSection courseId={courseId} />
                 {importTriggered && <ImportStepper courseId={courseId} />}
               </article>

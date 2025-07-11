@@ -1,50 +1,48 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   aboutTitle: {
     id: 'course-authoring.studio-home.sidebar.about.title',
-    defaultMessage: 'New to {studioName}?',
+    defaultMessage: 'Новичок в {studioName}?',
   },
   aboutDescription: {
     id: 'course-authoring.studio-home.sidebar.about.description',
-    defaultMessage: 'Click "Looking for help with Studio" at the bottom of the page to access our continually updated documentation and other {studioShortName} resources.',
+    defaultMessage: 'Нажмите "Нужна помощь со Studio" внизу страницы, чтобы получить доступ к нашей постоянно обновляемой документации и другим ресурсам {studioShortName}.',
   },
   studioHomeLinkToGettingStarted: {
     id: 'course-authoring.studio-home.sidebar.about.getting-started',
-    defaultMessage: 'Getting started with {studioName}',
+    defaultMessage: 'Начало работы с {studioName}',
   },
   sidebarHeader2: {
     id: 'course-authoring.studio-home.sidebar.about.header-2',
-    defaultMessage: 'Can I create courses in {studioName}?',
+    defaultMessage: 'Могу ли я создавать курсы в {studioName}?',
   },
   sidebarDescription2: {
     id: 'course-authoring.studio-home.sidebar.about.description-2',
-    defaultMessage: 'In order to create courses in {studioName}, you must {mailTo}',
+    defaultMessage: 'Для создания курсов в {studioName} вам необходимо {mailTo}.',
   },
   sidebarDescription2MailTo: {
     id: 'course-authoring.studio-home.sidebar.about.description-2.mail-to',
-    defaultMessage: 'contact {platformName} staff to help you create a course.',
+    defaultMessage: 'связаться с сотрудниками {platformName}, чтобы они помогли вам создать курс.',
   },
   sidebarHeader3: {
     id: 'course-authoring.studio-home.sidebar.about.header-3',
-    defaultMessage: 'Can I create courses in {studioName}?',
+    defaultMessage: 'Могу ли я создавать курсы в {studioName}?',
   },
   sidebarDescription3: {
     id: 'course-authoring.studio-home.sidebar.about.description-3',
-    defaultMessage: 'In order to create courses in {studioName}, you must have course creator privileges to create your own course.',
+    defaultMessage: 'Для создания курсов в {studioName} вам нужны права создателя курсов, чтобы создать свой собственный курс.',
   },
   sidebarHeader4: {
     id: 'course-authoring.studio-home.sidebar.about.header-4',
-    defaultMessage: 'Can I create courses in {studioName}?',
+    defaultMessage: 'Могу ли я создавать курсы в {studioName}?',
   },
   sidebarDescription4: {
     id: 'course-authoring.studio-home.sidebar.about.description-4',
-    defaultMessage: 'Your request to author courses in {studioName} has been denied. Please {mailTo}.',
+    defaultMessage: 'Ваша просьба об авторизации для создания курсов в {studioName} отклонена. Пожалуйста, {mailTo}.',
   },
   sidebarDescription4MailTo: {
     id: 'course-authoring.studio-home.sidebar.about.description-4.mail-to',
-    defaultMessage: 'contact {platformName} staff with further questions',
+    defaultMessage: 'свяжитесь с сотрудниками {platformName} для получения дополнительных вопросов.',
   },
 });
-
 export default messages;
