@@ -23,7 +23,7 @@ const messages = defineMessages({
   },
   alertWarningDescriptions: {
     id: 'course-authoring.grading-settings.alert.warning.descriptions',
-    defaultMessage: 'Ваши изменения не будут видны до тех пор, пока вы не сохраните изменения. Будьте осторожны с форматированием ключей и значений, поскольку валидация не реализована.',
+    defaultMessage: 'Ваши изменения не будут видны до тех пор, пока вы не сохраните изменения.',
   },
   alertSuccess: {
     id: 'course-authoring.grading-settings.alert.success',
@@ -67,7 +67,7 @@ const messages = defineMessages({
   },
   gradingRulesPoliciesSectionTitle: {
     id: 'course-authoring.grading-settings.grading-rules-policies.title',
-    defaultMessage: 'Правила и политики оценки',
+    defaultMessage: 'Оценивание',
   },
   gradingRulesPoliciesSectionDescription: {
     id: 'course-authoring.grading-settings.grading-rules-policies.description',
