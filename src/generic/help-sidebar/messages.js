@@ -7,23 +7,23 @@ const messages = defineMessages({
   },
   sidebarLinkToScheduleAndDetails: {
     id: 'course-authoring.help-sidebar.links.schedule-and-details',
-    defaultMessage: 'Расписание и детали',
-    description: 'Ссылка на страницу Расписание и детали в Studio',
+    defaultMessage: 'Детальные настройки',
+    description: 'Ссылка на страницу Расписание и детали в PT EdTechLab',
   },
   sidebarLinkToGrading: {
     id: 'course-authoring.help-sidebar.links.grading',
     defaultMessage: 'Оценка',
-    description: 'Ссылка на страницу Оценка в Studio',
+    description: 'Ссылка на страницу Оценка в PT EdTechLab',
   },
   sidebarLinkToCourseTeam: {
     id: 'course-authoring.help-sidebar.links.course-team',
     defaultMessage: 'Команда курса',
-    description: 'Ссылка на страницу Команда курса в Studio',
+    description: 'Ссылка на страницу Команда курса в PT EdTechLab',
   },
   sidebarLinkToGroupConfigurations: {
     id: 'course-authoring.help-sidebar.links.group-configurations',
     defaultMessage: 'Настройки групп',
-    description: 'Ссылка на страницу Настройки групп в Studio',
+    description: 'Ссылка на страницу Настройки групп в PT EdTechLab',
   },
   sidebarLinkToProctoredExamSettings: {
     id: 'course-authoring.help-sidebar.links.proctored-exam-settings',
