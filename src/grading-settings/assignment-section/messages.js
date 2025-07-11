@@ -55,7 +55,7 @@ const messages = defineMessages({
   },
   numberOfDroppableTitle: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.title',
-    defaultMessage: 'Рассчётный параметр',
+    defaultMessage: 'Расчётный параметр',
   },
   numberOfDroppableDescription: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.description',
