@@ -188,17 +188,6 @@ const GradingScale = ({
 
   return (
     <div className="grading-scale">
-      <IconButtonWithTooltip
-        tooltipPlacement="top"
-        tooltipContent={messages.addNewSegmentButtonAltText.defaultMessage}
-        disabled={gradingSegments.length >= 5}
-        data-testid="grading-scale-btn-add-segment"
-        className="mr-3"
-        src={IconAdd}
-        iconAs={Icon}
-        alt={messages.addNewSegmentButtonAltText.defaultMessage}
-        onClick={addNewGradingSegment}
-      />
       <div className="grading-scale-segments-and-ticks" {...getTrackProps()}>
         {ticks.map(({ value, getTickProps }) => (
           <GradingScaleTicks key={value} value={value} getTickProps={getTickProps} />
