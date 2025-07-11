@@ -23,7 +23,6 @@ import { startExportingCourse } from './data/thunks';
 import { EXPORT_STAGES, LAST_EXPORT_COOKIE_NAME } from './data/constants';
 import { updateExportTriggered, updateSavingStatus, updateSuccessDate } from './data/slice';
 import ExportModalError from './export-modal-error/ExportModalError';
-import ExportFooter from './export-footer/ExportFooter';
 import ExportStepper from './export-stepper/ExportStepper';
 
 const CourseExportPage = ({ intl, courseId }) => {
@@ -75,7 +74,6 @@ const CourseExportPage = ({ intl, courseId }) => {
                   subtitle={messages.headingSubtitle.defaultMessage}
                 />
                 <p className="small">{intl.formatMessage(messages.description1, { studioShortName: getConfig().STUDIO_SHORT_NAME })}</p>
-                <p className="small">{messages.description2.defaultMessage}</p>
                 <Card>
                   <Card.Header
                     className="h3 px-3 text-black mb-4"
@@ -96,7 +94,6 @@ const CourseExportPage = ({ intl, courseId }) => {
                   )}
                 </Card>
                 {exportTriggered && <ExportStepper courseId={courseId} />}
-                <ExportFooter />
               </article>
             </Layout.Element>
             <Layout.Element>

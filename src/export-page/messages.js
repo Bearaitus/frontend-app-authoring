@@ -15,11 +15,11 @@ const messages = defineMessages({
   },
   description1: {
     id: 'course-authoring.export.description1',
-    defaultMessage: 'Вы можете экспортировать курсы и редактировать их вне {studioShortName}. Экспортированный файл является файлом .tar.gz (т.е. файлом .tar, сжатым с помощью GNU Zip), который содержит структуру и содержимое курса. Вы также можете повторно импортировать курсы, которые вы экспортировали.',
+    defaultMessage: 'Вы можете экспортировать курс в формате .tar.gz (экспортированный файл будет содержать всю структуру и содержание курса).',
   },
   description2: {
     id: 'course-authoring.export.description2',
-    defaultMessage: 'Осторожно: при экспорте курса, информация такая как ключи API MATLAB, паспорта LTI, секретные токены аннотаций и URL-адреса хранилища аннотаций включаются в экспортированные данные. Если вы делитесь экспортированными файлами, вы также можете делиться конфиденциальной или лицензионной информацией.',
+    defaultMessage: '',
   },
   titleUnderButton: {
     id: 'course-authoring.export.title-under-button',
