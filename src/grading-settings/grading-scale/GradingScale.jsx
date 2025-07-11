@@ -24,6 +24,14 @@ const GradingScale = ({
   setOverrideInternetConnectionAlert,
   setEligibleGrade,
 }) => {
+  // TEST
+  console.log("intl object:", intl); // Проверка объекта intl
+  console.log("Current locale:", intl.locale); // Проверка текущей локали
+  console.log("messages.defaultPassText:", messages.defaultPassText);
+  const message = intl.formatMessage(messages.defaultPassText);
+  // END TEST
+
+  console.log("Formatted message:", message);
   const [gradingSegments, setGradingSegments] = useState(sortedGrades);
   const [letters, setLetters] = useState(gradeLetters);
   const [convertedResult, setConvertedResult] = useState({});
