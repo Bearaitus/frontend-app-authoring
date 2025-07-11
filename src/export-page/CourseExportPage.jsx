@@ -75,10 +75,6 @@ const CourseExportPage = ({ intl, courseId }) => {
                 />
                 <p className="small">{intl.formatMessage(messages.description1, { studioShortName: getConfig().STUDIO_SHORT_NAME })}</p>
                 <Card>
-                  <Card.Header
-                    className="h3 px-3 text-black mb-4"
-                    title={messages.titleUnderButton.defaultMessage}
-                  />
                   {isShowExportButton && (
                     <Card.Section className="px-3 py-1">
                       <Button

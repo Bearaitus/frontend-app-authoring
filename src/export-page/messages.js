@@ -23,11 +23,11 @@ const messages = defineMessages({
   },
   titleUnderButton: {
     id: 'course-authoring.export.title-under-button',
-    defaultMessage: 'Экспортировать содержимое моего курса',
+    defaultMessage: 'Экспортировать',
   },
   buttonTitle: {
     id: 'course-authoring.export.button.title',
-    defaultMessage: 'Экспортировать содержимое курса',
+    defaultMessage: 'Экспортировать курс',
   },
 });
 
