@@ -73,7 +73,7 @@ const CourseExportPage = ({ intl, courseId }) => {
                   title={messages.headingTitle.defaultMessage}
                   subtitle={messages.headingSubtitle.defaultMessage}
                 />
-                <p className="small">{intl.formatMessage(messages.description1, { studioShortName: getConfig().STUDIO_SHORT_NAME })}</p>
+                <p className="small">{messages.description1.defaultMessage}</p>
                 <Card>
                   {isShowExportButton && (
                     <Card.Section className="px-3 py-1">
