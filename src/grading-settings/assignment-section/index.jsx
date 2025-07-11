@@ -130,9 +130,7 @@ const AssignmentSection = ({
                 gradeField={gradeField}
                 value={gradeField.dropCount}
                 onChange={(e) => handleAssignmentChange(e, gradeField.id)}
-                secondErrorMsg={intl.formatMessage(messages.numberOfDroppableSecondErrorMessage, {
-                  type: gradeField.type,
-                })}
+                secondErrorMsg={messages.numberOfDroppableSecondErrorMessage.defaultMessage}
                 errorEffort={errorList[`${dropCount}-${gradeField.id}`]}
               />
             </ol>
@@ -141,7 +139,7 @@ const AssignmentSection = ({
                 className="course-grading-assignment-item-alert-warning"
                 variant="warning"
                 icon={Warning}
-                title={intl.formatMessage(messages.assignmentAlertWarningUsageTitle, { type: gradeField.type })}
+                title={messages.assignmentAlertWarningUsageTitle.defaultMessage}
                 description={(
                   <>
                     <span className="course-grading-assignment-item-alert-warning-list-label">
@@ -162,7 +160,7 @@ const AssignmentSection = ({
                 className="course-grading-assignment-item-alert-warning"
                 variant="warning"
                 icon={Warning}
-                title={intl.formatMessage(messages.assignmentAlertWarningTitle, { type: gradeField.type })}
+                title={messages.assignmentAlertWarningTitle.defaultMessages}
                 description={(
                   <span className="course-grading-assignment-item-alert-warning-list-label">
                     {messages.assignmentAlertWarningDescription.defaultMessage}
@@ -176,7 +174,7 @@ const AssignmentSection = ({
                 className="course-grading-assignment-item-alert-success"
                 variant="success"
                 icon={CheckCircle}
-                title={intl.formatMessage(messages.assignmentAlertWarningSuccess, { type: gradeField.type })}
+                title={messages.assignmentAlertWarningSuccess.defaultMessage}
                 aria-hidden="true"
               />
             )}

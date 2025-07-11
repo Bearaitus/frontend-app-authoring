@@ -3,11 +3,11 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   assignmentTypeNameTitle: {
     id: 'course-authoring.grading-settings.assignment.type-name.title',
-    defaultMessage: 'Название типа задания',
+    defaultMessage: 'Тип задания',
   },
   assignmentTypeNameDescription: {
     id: 'course-authoring.grading-settings.assignment.type-name.description',
-    defaultMessage: 'Общая категория для этого типа задания, например, Домашнее задание или Экзамен в середине семестра. Это название видно учащимся.',
+    defaultMessage: '',
   },
   assignmentTypeNameErrorMessage1: {
     id: 'course-authoring.grading-settings.assignment.type-name.error.message-1',
@@ -23,15 +23,15 @@ const messages = defineMessages({
   },
   abbreviationTitle: {
     id: 'course-authoring.grading-settings.assignment.abbreviation.title',
-    defaultMessage: 'Аббревиатура',
+    defaultMessage: 'Сокращенное название',
   },
   abbreviationDescription: {
     id: 'course-authoring.grading-settings.assignment.abbreviation.description',
-    defaultMessage: 'Это короткое название для типа задания (например, ДЗ или Экзамен) появляется рядом с заданиями на странице прогресса учащегося.',
+    defaultMessage: '',
   },
   weightOfTotalGradeTitle: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.title',
-    defaultMessage: 'Вес в общей оценке',
+    defaultMessage: 'Доля модуля в курсе',
   },
   weightOfTotalGradeDescription: {
     id: 'course-authoring.grading-settings.assignment.weight-of-total-grade.description',
@@ -43,7 +43,7 @@ const messages = defineMessages({
   },
   totalNumberTitle: {
     id: 'course-authoring.grading-settings.assignment.total-number.title',
-    defaultMessage: 'Общее количество',
+    defaultMessage: 'Общее количество заданий',
   },
   totalNumberDescription: {
     id: 'course-authoring.grading-settings.assignment.total-number.description',
@@ -67,11 +67,11 @@ const messages = defineMessages({
   },
   numberOfDroppableSecondErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.second.error.message',
-    defaultMessage: 'Нельзя отбросить больше {type} заданий, чем назначено.',
+    defaultMessage: 'Нельзя отбросить больше  заданий, чем назначено.',
   },
   assignmentAlertWarningTitle: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.title',
-    defaultMessage: 'Предупреждение: Количество {type} заданий, определенное здесь, не соответствует текущему количеству {type} заданий в курсе:',
+    defaultMessage: 'Предупреждение: Количество  заданий, определенное здесь, не соответствует текущему количеству  заданий в курсе:',
   },
   assignmentAlertWarningDescription: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.description',
@@ -79,11 +79,11 @@ const messages = defineMessages({
   },
   assignmentAlertWarningUsageTitle: {
     id: 'course-authoring.grading-settings.assignment.alert.warning.usage.title',
-    defaultMessage: 'Предупреждение: Количество {type} заданий, определенное здесь, не соответствует текущему количеству {type} заданий в курсе:',
+    defaultMessage: 'Предупреждение: Количество  заданий, определенное здесь, не соответствует текущему количеству  заданий в курсе:',
   },
   assignmentAlertWarningSuccess: {
     id: 'course-authoring.grading-settings.assignment.alert.success.title',
-    defaultMessage: 'Количество {type} заданий в курсе соответствует количеству, определённому здесь.',
+    defaultMessage: 'Количество  заданий в курсе соответствует количеству, определённому здесь.',
   },
   assignmentDeleteButton: {
     id: 'course-authoring.grading-settings.assignment.delete.button',

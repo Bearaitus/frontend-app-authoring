@@ -75,11 +75,11 @@ const messages = defineMessages({
   },
   assignmentTypeSectionTitle: {
     id: 'course-authoring.grading-settings.assignment-type.title',
-    defaultMessage: 'Типы заданий',
+    defaultMessage: 'Оценивание и типы заданий',
   },
   assignmentTypeSectionDescription: {
     id: 'course-authoring.grading-settings.assignment-type.description',
-    defaultMessage: 'Категории и метки для любых упражнений, которые можно оценить',
+    defaultMessage: '',
   },
   addNewAssignmentTypeBtn: {
     id: 'course-authoring.grading-settings.add-new-assignment-type.btn',
