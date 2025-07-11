@@ -173,18 +173,7 @@ const GradingSettings = ({ intl, courseId }) => {
                       />
                     </section>
                   )}
-                  <section>
-                    <SectionSubHeader
-                      title={messages.gradingRulesPoliciesSectionTitle.defaultMessage}
-                      description={messages.gradingRulesPoliciesSectionDescription.defaultMessage}
-                    />
-                    <DeadlineSection
-                      setShowSavePrompt={setShowSavePrompt}
-                      gracePeriod={gracePeriod}
-                      setGradingData={setGradingData}
-                      setShowSuccessAlert={setShowSuccessAlert}
-                    />
-                  </section>
+
                   <section>
                     <header className="row justify-content-between align-items-center mt-4 mx-0 mb-2">
                       <h2 className="lead">
