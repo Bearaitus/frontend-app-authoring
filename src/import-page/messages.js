@@ -23,7 +23,7 @@ const messages = defineMessages({
   },
   description3: {
     id: 'course-authoring.import.description3',
-    defaultMessage: '/',
+    defaultMessage: '',
   },
 });
 
