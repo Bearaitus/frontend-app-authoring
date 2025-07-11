@@ -10,7 +10,7 @@ import { convertGradeData, MAXIMUM_SCALE_LENGTH } from './utils';
 import { GradingScaleTicks, GradingScaleHandle, GradingScaleSegment } from './components';
 
 const DEFAULT_LETTERS = ['5', '4', '3', '2'];
-const getDefaultPassText = intl => messages.defaultPassText.defaultMessage;
+const getDefaultPassText = messages.defaultPassText.defaultMessage;
 
 const GradingScale = ({
   intl,
@@ -145,7 +145,7 @@ const GradingScale = ({
       const updatedLetters = [...prevLetters];
       updatedLetters.splice(updatedLetters.length - 1, 1);
 
-      return updatedLetters.length === 1 ? [getDefaultPassText(intl)] : updatedLetters;
+      return updatedLetters.length === 1 ? [getDefaultPassText] : updatedLetters;
     });
   };
 
