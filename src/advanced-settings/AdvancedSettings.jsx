@@ -166,20 +166,10 @@ const AdvancedSettings = ({ intl, courseId }) => {
             xl={[{ span: 9 }, { span: 3 }]}
           >
             <Layout.Element>
-              <SubHeader
-                subtitle={messages.headingSubtitle.defaultMessage}
-                title={messages.headingTitle.defaultMessage}
-                contentTitle={messages.policy.defaultMessage}
-              />
               <article>
                 <div>
                   <section className="setting-items-policies">
                     <div className="small">
-                      <FormattedMessage
-                        id="course-authoring.advanced-settings.policies.description"
-                        defaultMessage="{notice} Do not modify these policies unless you are familiar with their purpose."
-                        values={{ notice: <strong>Предупреждение:  </strong> }}
-                      />
                     </div>
                     <div className="setting-items-deprecated-setting">
                       <Button
@@ -187,15 +177,6 @@ const AdvancedSettings = ({ intl, courseId }) => {
                         onClick={() => setShowDeprecated(!showDeprecated)}
                         size="sm"
                       >
-                        <FormattedMessage
-                          id="course-authoring.advanced-settings.deprecated.button.text"
-                          defaultMessage="{visibility} deprecated settings"
-                          values={{
-                            visibility:
-                                    showDeprecated ? messages.deprecatedButtonHideText.defaultMessage
-                                      : messages.deprecatedButtonShowText.defaultMessage,
-                          }}
-                        />
                       </Button>
                     </div>
                     <ul className="setting-items-list p-0">
