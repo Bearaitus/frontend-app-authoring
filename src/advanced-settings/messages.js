@@ -3,11 +3,11 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.advanced-settings.heading.title',
-    defaultMessage: 'Расширенные настройки',
+    defaultMessage: 'Панель ментора',
   },
   headingSubtitle: {
     id: 'course-authoring.advanced-settings.heading.subtitle',
-    defaultMessage: 'Настройки',
+    defaultMessage: 'Расширенные настройки',
   },
   policy: {
     id: 'course-authoring.advanced-settings.policies.title',

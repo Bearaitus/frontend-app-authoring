@@ -166,6 +166,10 @@ const AdvancedSettings = ({ intl, courseId }) => {
             xl={[{ span: 9 }, { span: 3 }]}
           >
             <Layout.Element>
+              <SubHeader
+                subtitle={messages.headingSubtitle.defaultMessage}
+                title={messages.headingTitle.defaultMessage}
+              />
               <article>
                 <div>
                   <section className="setting-items-policies">
