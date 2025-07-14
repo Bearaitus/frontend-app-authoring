@@ -1,11 +1,8 @@
 import React from 'react';
-import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { StudioHeader } from '@edx/frontend-component-header';
-import { type Container, useToggle } from '@openedx/paragon';
-import { generatePath, useHref } from 'react-router-dom';
+import { type Container } from '@openedx/paragon';
 
-import { SearchModal } from '../search-modal';
 import { useContentMenuItems, useSettingMenuItems, useToolsMenuItems } from './hooks';
 import messages from './messages';
 
@@ -31,16 +28,11 @@ const Header = ({
   containerProps = {},
 }: HeaderProps) => {
   const intl = useIntl();
-  const libraryHref = useHref('/library/:libraryId');
-
-  const [isShowSearchModalOpen, openSearchModal, closeSearchModal] = useToggle(false);
-
-  const studioBaseUrl = getConfig().STUDIO_BASE_URL;
-  const meiliSearchEnabled = [true, 'true'].includes(getConfig().MEILISEARCH_ENABLED);
 
   const contentMenuItems = useContentMenuItems(contextId);
   const settingMenuItems = useSettingMenuItems(contextId);
   const toolsMenuItems = useToolsMenuItems(contextId);
+
   const mainMenuDropdowns = !isLibrary ? [
     {
       id: `${intl.formatMessage(messages['header.links.content'])}-dropdown-menu`,
@@ -59,10 +51,6 @@ const Header = ({
     },
   ] : [];
 
-  const outlineLink = !isLibrary
-    ? `${studioBaseUrl}/course/${contextId}`
-    : generatePath(libraryHref, { libraryId: contextId });
-
   return (
     <>
       <StudioHeader
@@ -71,17 +59,15 @@ const Header = ({
         title={title}
         isHiddenMainMenu={isHiddenMainMenu}
         mainMenuDropdowns={mainMenuDropdowns}
-        outlineLink={outlineLink}
-        searchButtonAction={meiliSearchEnabled ? openSearchModal : undefined}
         containerProps={containerProps}
       />
-      {meiliSearchEnabled && (
-        <SearchModal
-          isOpen={isShowSearchModalOpen}
-          courseId={isLibrary ? undefined : contextId}
-          onClose={closeSearchModal}
-        />
-      )}
+      <style>
+        {`
+          #user-dropdown-menu {
+            display: none !important;
+          }
+        `}
+      </style>
     </>
   );
 };
