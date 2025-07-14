@@ -1,18 +1,16 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   modalErrorTitle: {
     id: 'course-authoring.advanced-settings.modal.error.title',
-    defaultMessage: 'Validation error while saving',
+    defaultMessage: 'Ошибка сохранения',
   },
   modalErrorButtonChangeManually: {
     id: 'course-authoring.advanced-settings.modal.error.btn.change-manually',
-    defaultMessage: 'Change manually',
+    defaultMessage: 'Изменить вручную',
   },
   modalErrorButtonUndoChanges: {
     id: 'course-authoring.advanced-settings.modal.error.btn.undo-changes',
-    defaultMessage: 'Undo changes',
+    defaultMessage: 'Отменить изменения',
   },
 });
-
 export default messages;

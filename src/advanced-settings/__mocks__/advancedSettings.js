@@ -1,15 +1,15 @@
 module.exports = {
   advancedModules: {
     deprecated: false,
-    displayName: 'Advanced Module List',
-    help: 'Enter the names of the advanced modules to use in your course.',
+    displayName: 'Список расширенных модулей',
+    help: 'Введите названия расширенных модулей, которые будут использоваться в вашем курсе.',
     hideOnEnabledPublisher: false,
     value: [],
   },
   certHtmlViewEnabled: {
     deprecated: true,
-    display_name: 'Certificate web/html view enabled',
-    help: 'If true, certificate Web/HTML views are enabled for the course.',
+    display_name: 'Включен веб/HTML-просмотр сертификата',
+    help: 'Если установлено значение true, веб/HTML-просмотры сертификатов включены для курса.',
     hide_on_enabled_publisher: false,
     value: true,
   },
