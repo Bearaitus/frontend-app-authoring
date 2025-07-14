@@ -119,20 +119,6 @@ const AssignmentSection = ({
                 onChange={(e) => handleAssignmentChange(e, gradeField.id)}
                 errorEffort={errorList[`${minCount}-${gradeField.id}`]}
               />
-              <AssignmentItem
-                className="course-grading-assignment-number-droppable"
-                title={messages.numberOfDroppableTitle.defaultMessage}
-                descriptions={messages.numberOfDroppableDescription.defaultMessage}
-                type="number"
-                min={MIN_NUMBER_VALUE}
-                errorMsg={messages.numberOfDroppableErrorMessage.defaultMessage}
-                name={dropCount}
-                gradeField={gradeField}
-                value={gradeField.dropCount}
-                onChange={(e) => handleAssignmentChange(e, gradeField.id)}
-                secondErrorMsg={messages.numberOfDroppableSecondErrorMessage.defaultMessage}
-                errorEffort={errorList[`${dropCount}-${gradeField.id}`]}
-              />
             </ol>
             {showDefinedCaseAlert && (
               <AlertMessage

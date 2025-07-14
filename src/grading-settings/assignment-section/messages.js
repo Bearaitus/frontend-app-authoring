@@ -59,7 +59,7 @@ const messages = defineMessages({
   },
   numberOfDroppableDescription: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.description',
-    defaultMessage: '',
+    defaultMessage: 'Если вы не знаете, за что отвечает данный параметр, пожалуйста, не изменяйте его',
   },
   numberOfDroppableErrorMessage: {
     id: 'course-authoring.grading-settings.assignment.number-of-droppable.error.message',
