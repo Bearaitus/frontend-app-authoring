@@ -11,7 +11,7 @@ const messages = defineMessages({
   },
   policy: {
     id: 'course-authoring.advanced-settings.policies.title',
-    defaultMessage: 'Ручное определение политики',
+    defaultMessage: 'Расширенные настройки',
   },
   alertWarning: {
     id: 'course-authoring.advanced-settings.alert.warning',

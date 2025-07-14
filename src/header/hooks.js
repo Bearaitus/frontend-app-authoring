@@ -45,7 +45,7 @@ export const useSettingMenuItems = courseId => {
     ...(canAccessAdvancedSettings === true
       ? [{
         href: `${studioBaseUrl}/settings/advanced/${courseId}`,
-        title: 'Дополнительные настройки',
+        title: 'Расширенные настройки',
       }] : []
     ),
   ];

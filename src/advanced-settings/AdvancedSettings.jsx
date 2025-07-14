@@ -169,6 +169,7 @@ const AdvancedSettings = ({ intl, courseId }) => {
               <SubHeader
                 subtitle={messages.headingSubtitle.defaultMessage}
                 title={messages.headingTitle.defaultMessage}
+                contentTitle={messages.policy.defaultMessage}
               />
               <article>
                 <div>
