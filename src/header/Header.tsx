@@ -62,11 +62,11 @@ const Header = ({
         containerProps={containerProps}
       />
       <style>
-      {`
-        #user-dropdown-menu a:not([href*="/logout"]) {
-          display: none !important;
-        }
-      `}
+        {`
+          #user-dropdown-menu {
+            display: none !important;
+          }
+        `}
       </style>
     </>
   );
