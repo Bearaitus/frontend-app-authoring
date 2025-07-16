@@ -24,17 +24,17 @@ const messages = defineMessages({
   },
   hintSettingTitle: {
     id: 'authoring.problemeditor.settings.hint.title',
-    defaultMessage: 'Советы',
+    defaultMessage: 'Подсказка',
     description: 'Название настроек совета',
   },
   hintInputLabel: {
     id: 'authoring.problemeditor.settings.hint.inputLabel',
-    defaultMessage: 'Совет',
+    defaultMessage: 'Подсказка',
     description: 'Метка для поля ввода совета',
   },
   addHintButtonText: {
     id: 'authoring.problemeditor.settings.hint.addHintButton',
-    defaultMessage: 'Добавить совет',
+    defaultMessage: 'Добавить подсказку',
     description: 'Текст кнопки для добавления совета',
   },
   noHintSummary: {
