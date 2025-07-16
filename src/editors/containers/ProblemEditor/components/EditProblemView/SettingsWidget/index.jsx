@@ -100,20 +100,6 @@ const SettingsWidget = ({
         />
       </div>
       {feedbackCard()}
-      <div>
-        <Collapsible.Advanced open={!isAdvancedCardsVisible}>
-          <Collapsible.Body className="collapsible-body small">
-            <Button
-              className="my-3 px-0 text-info-500"
-              variant="link"
-              size="inline"
-              onClick={showAdvancedCards}
-            >
-              <FormattedMessage {...messages.showAdvanceSettingsButtonText} />
-            </Button>
-          </Collapsible.Body>
-        </Collapsible.Advanced>
-      </div>
 
       <Collapsible.Advanced open={isAdvancedCardsVisible}>
         <Collapsible.Body className="collapsible-body">

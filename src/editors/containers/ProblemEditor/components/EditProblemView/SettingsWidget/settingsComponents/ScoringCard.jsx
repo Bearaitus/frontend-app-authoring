@@ -83,11 +83,6 @@ const ScoringCard = ({
           </div>
         </Form.Checkbox>
       </Form.Group>
-      {!isLibrary && (
-        <Hyperlink destination={`${studioEndpointUrl}/settings/advanced/${learningContextId}#max_attempts`} target="_blank">
-          <FormattedMessage {...messages.advancedSettingsLinkText} />
-        </Hyperlink>
-      )}
     </SettingsOption>
   );
 };
