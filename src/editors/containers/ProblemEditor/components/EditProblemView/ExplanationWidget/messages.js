@@ -4,17 +4,17 @@ const messages = defineMessages({
 
   solutionWidgetTitle: {
     id: 'authoring.problemEditor.explanationwidget.explanationWidgetTitle',
-    defaultMessage: 'Explanation',
+    defaultMessage: 'Решение',
     description: 'Explanation Title',
   },
   solutionDescriptionText: {
     id: 'authoring.problemEditor.explanationwidget.solutionDescriptionText',
-    defaultMessage: 'Provide an explanation for the correct answer',
+    defaultMessage: '',
     description: 'Description of the solution widget',
   },
   placeholder: {
     id: 'authoring.problemEditor.explanationwidget.placeholder',
-    defaultMessage: 'Enter your explanation',
+    defaultMessage: 'Поле ввода',
     description: 'Placeholder text for tinyMCE editor',
   },
 });
