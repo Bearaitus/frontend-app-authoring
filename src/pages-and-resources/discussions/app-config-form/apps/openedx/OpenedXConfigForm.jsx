@@ -56,32 +56,32 @@ const OpenedXConfigForm = ({
     restrictedDates: Yup.array(
       Yup.object().shape({
         startDate: Yup.string()
-          .checkFormat(messages.restrictedStartDateInValidFormat.defaultMessage, 'date')
-          .required(messages.restrictedStartDateRequired.defaultMessage),
+          .checkFormat(messages.restrictedStartDateInValidFormat, 'date')
+          .required(messages.restrictedStartDateRequired),
         endDate: Yup.string()
-          .checkFormat(messages.restrictedEndDateInValidFormat.defaultMessage, 'date')
-          .required(messages.restrictedEndDateRequired.defaultMessage)
+          .checkFormat(messages.restrictedEndDateInValidFormat, 'date')
+          .required(messages.restrictedEndDateRequired)
           .when('startDate', {
             is: (startDate) => startDate,
-            then: Yup.string().compare(messages.restrictedEndDateInPast.defaultMessage, 'date'),
+            then: Yup.string().compare(messages.restrictedEndDateInPast, 'date'),
           }),
         startTime: Yup.string().checkFormat(
-          messages.restrictedStartTimeInValidFormat.defaultMessage,
+          messages.restrictedStartTimeInValidFormat,
           'time',
         ),
         endTime: Yup.string()
-          .checkFormat(messages.restrictedEndTimeInValidFormat.defaultMessage, 'time')
+          .checkFormat(messages.restrictedEndTimeInValidFormat, 'time')
           .when('startTime', {
             is: (startTime) => startTime,
-            then: Yup.string().compare(messages.restrictedEndTimeInPast.defaultMessage, 'time'),
+            then: Yup.string().compare(messages.restrictedEndTimeInPast, 'time'),
           }),
       }),
     ),
     // eslint-disable-next-line react/forbid-prop-types
     discussionTopics: Yup.array(
       Yup.object({
-        name: Yup.string().required(messages.discussionTopicRequired.defaultMessage),
-      }).uniqueObjectProperty('name', messages.discussionTopicNameAlreadyExist.defaultMessage),
+        name: Yup.string().required(messages.discussionTopicRequired),
+      }).uniqueObjectProperty('name', messages.discussionTopicNameAlreadyExist),
     ),
     ...additionalFields,
   });
