@@ -4,27 +4,27 @@ const messages = defineMessages({
 
   selectTypeTitle: {
     id: 'authoring.problemEditor.selectType.title',
-    defaultMessage: 'Select problem type',
+    defaultMessage: 'Выбор типа вопроса',
     description: 'Title for select problem type modal',
   },
   cancelButtonLabel: {
     id: 'authoring.problemeditor.selecttype.cancelButton.label',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отменить',
     description: 'Label for cancel button.',
   },
   cancelButtonAriaLabel: {
     id: 'authoring.problemeditor.selecttype.cancelButton.ariaLabel',
-    defaultMessage: 'Cancel',
+    defaultMessage: 'Отменить',
     description: 'Screen reader label for cancel button.',
   },
   selectButtonLabel: {
     id: 'authoring.problemeditor.selecttype.selectButton.label',
-    defaultMessage: 'Select',
+    defaultMessage: 'Сохранить',
     description: 'Label for select button.',
   },
   selectButtonAriaLabel: {
     id: 'authoring.problemeditor.selecttype.selectButton.ariaLabel',
-    defaultMessage: 'Select',
+    defaultMessage: 'Сохранить',
     description: 'Screen reader label for select button.',
   },
 });
