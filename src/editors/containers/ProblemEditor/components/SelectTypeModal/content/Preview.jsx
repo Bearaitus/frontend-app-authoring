@@ -32,12 +32,6 @@ const Preview = ({
       <div className="mb-3">
         {intl.formatMessage(messages.previewDescription, { previewDescription: data.previewDescription })}
       </div>
-      <Hyperlink
-        destination={data.helpLink}
-        target="_blank"
-      >
-        <FormattedMessage {...messages.learnMoreButtonLabel} />
-      </Hyperlink>
     </Container>
   );
 };
