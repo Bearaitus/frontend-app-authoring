@@ -21,11 +21,6 @@ const RawEditor = ({
 
   return (
     <div>
-      {lang === 'xml' ? null : (
-        <Alert variant="danger">
-          You are using the raw {lang} editor.
-        </Alert>
-      )}
       { value ? (
         <CodeEditor
           innerRef={editorRef}
