@@ -1,57 +1,54 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   cancelConfirmTitle: {
     id: 'authoring.editorContainer.cancelConfirm.title',
-    defaultMessage: 'Exit the editor?',
-    description: 'Label for modal confirming cancellation',
+    defaultMessage: 'Выйти из редактора?',
+    description: 'Заголовок модального окна подтверждения выхода',
   },
   cancelConfirmDescription: {
     id: 'authoring.editorContainer.cancelConfirm.description',
-    defaultMessage: 'Are you sure you want to exit the editor? Any unsaved changes will be lost.',
-    description: 'Description text for modal confirming cancellation',
+    defaultMessage: 'Вы уверены, что хотите выйти из редактора? Все несохраненные изменения будут потеряны.',
+    description: 'Текст описания для модального окна подтверждения выхода',
   },
   exitButtonAlt: {
     id: 'authoring.editorContainer.exitButton.alt',
-    defaultMessage: 'Exit the editor',
-    description: 'Alt text for the Exit button',
+    defaultMessage: 'Выйти из редактора',
+    description: 'Alt текст для кнопки «Выйти»',
   },
   okButtonLabel: {
     id: 'authoring.editorContainer.okButton.label',
     defaultMessage: 'OK',
-    description: 'Label for OK button',
+    description: 'Текст для кнопки «OK»',
   },
   modalTitle: {
     id: 'authoring.editorContainer.accessibleTitle',
-    defaultMessage: 'Editor Dialog',
-    description: 'Text that labels the the editor modal dialog for non-visual users',
+    defaultMessage: 'Диалоговое окно редактора',
+    description: 'Текст, отображаемый для незрячих пользователей для обозначения модального окна редактора',
   },
   contentSaveFailed: {
     id: 'authoring.editorfooter.save.error',
-    defaultMessage: 'Error: Content save failed. Please check recent changes and try again later.',
-    description: 'Error message displayed when content fails to save.',
+    defaultMessage: 'Ошибка: не удалось сохранить контент. Пожалуйста, проверьте последние изменения и попробуйте еще раз.',
+    description: 'Сообщение об ошибке, отображаемое при неудачной попытке сохранения контента.',
   },
   cancelButtonAriaLabel: {
     id: 'authoring.editorfooter.cancelButton.ariaLabel',
-    defaultMessage: 'Discard changes and return to learning context',
-    description: 'Screen reader label for cancel button',
+    defaultMessage: 'Отменить изменения и вернуться к учебному контексту',
+    description: 'Текст для скринридера для кнопки «Отменить»',
   },
   cancelButtonLabel: {
     id: 'authoring.editorfooter.cancelButton.label',
-    defaultMessage: 'Cancel',
-    description: 'Label for cancel button',
+    defaultMessage: 'Отменить',
+    description: 'Текст для кнопки «Отменить»',
   },
   saveButtonAriaLabel: {
     id: 'authoring.editorfooter.savebutton.ariaLabel',
-    defaultMessage: 'Save changes and return to learning context',
-    description: 'Screen reader label for save button',
+    defaultMessage: 'Сохранить изменения и вернуться к учебному контексту',
+    description: 'Текст для скринридера для кнопки «Сохранить»',
   },
   saveButtonLabel: {
     id: 'authoring.editorfooter.savebutton.label',
-    defaultMessage: 'Save',
-    description: 'Label for Save button',
+    defaultMessage: 'Сохранить',
+    description: 'Текст для кнопки «Сохранить»',
   },
 });
-
 export default messages;
