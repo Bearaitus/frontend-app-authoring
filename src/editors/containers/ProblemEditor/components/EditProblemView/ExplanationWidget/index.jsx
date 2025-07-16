@@ -30,9 +30,7 @@ const ExplanationWidget = ({
       <div className="h4 mb-3">
         <FormattedMessage {...messages.solutionWidgetTitle} />
       </div>
-      <div className="small mb-3">
-        <FormattedMessage {...messages.solutionDescriptionText} />
-      </div>
+
       <TinyMceWidget
         id="solution"
         editorType="solution"
