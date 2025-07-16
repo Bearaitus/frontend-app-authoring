@@ -17,7 +17,7 @@ export const ProblemTypeKeys = StrictDict({
 export type ProblemType = typeof ProblemTypeKeys[keyof typeof ProblemTypeKeys];
 export const ProblemTypes = StrictDict({
   [ProblemTypeKeys.SINGLESELECT]: {
-    title: 'Выбор с одним ответом',
+    title: 'Выбор одного ответа',
     preview: singleSelect,
     previewDescription: 'Пользователям необходимо выбрать правильный ответ из списка возможных вариантов.',
     description: 'Введите ваши ответы для выбора одного варианта и выберите правильные варианты. Пользователи должны выбрать только один правильный ответ.',
@@ -27,7 +27,7 @@ export const ProblemTypes = StrictDict({
     template: basicOlxTemplates.singleSelect,
   },
   [ProblemTypeKeys.MULTISELECT]: {
-    title: 'Выбор с многими ответами',
+    title: 'Выбор нескольких ответов',
     preview: multiSelect,
     previewDescription: 'Пользователям необходимо выбрать все правильные ответы из списка возможных вариантов.',
     description: 'Введите ваши ответы для множественного выбора и выберите правильные варианты. Пользователи должны выбрать все правильные ответы.',
