@@ -94,17 +94,6 @@ const VideoSourceWidget = ({
           </Form.Control.Feedback>
         </Form.Group>
       </div>
-      
-      <div className="my-4 border-primary-100 border-bottom" />
-      <Button
-        className="text-primary-500 font-weight-bold pl-0"
-        size="sm"
-        iconBefore={Add}
-        variant="link"
-        onClick={() => addFallbackVideo()}
-      >
-        <FormattedMessage {...messages.addButtonLabel} />
-      </Button>
     </CollapsibleFormWidget>
   );
 };
