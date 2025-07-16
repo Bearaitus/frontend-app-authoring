@@ -51,16 +51,6 @@ export const VideoPreviewWidget = ({
               // Since content libraries v2 don't support static assets yet, we can't include transcripts.
               <LanguageNamesWidget transcripts={transcripts} />
             )}
-            {videoType && (
-              <Hyperlink
-                className="text-primary x-small"
-                destination={videoSource}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {videoType}
-              </Hyperlink>
-            )}
           </Stack>
         </div>
       </Collapsible.Body>
