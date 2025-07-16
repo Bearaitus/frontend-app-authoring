@@ -51,9 +51,6 @@ const ProblemTypeSelect: React.FC<Props> = ({
             : null
         ))}
       </SelectableBox.Set>
-      <Button variant="link" className="pl-0 mt-2" onClick={handleClick}>
-        <FormattedMessage {...messages.advanceProblemButtonLabel} />
-      </Button>
     </Container>
   );
 };
