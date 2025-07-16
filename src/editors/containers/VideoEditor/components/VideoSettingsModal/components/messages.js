@@ -1,85 +1,82 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   expandAltText: {
     id: 'authoring.videoeditor.expand',
-    defaultMessage: 'Expand',
+    defaultMessage: 'Развернуть',
   },
   collapseAltText: {
     id: 'authoring.videoeditor.collapse',
-    defaultMessage: 'Collapse',
+    defaultMessage: 'Свернуть',
   },
   validateErrorTitle: {
     id: 'authoring.videoeditor.validate.error.title',
-    defaultMessage: 'We couldn\'t add your video.',
-    description: 'Title of validation error.',
+    defaultMessage: 'Не удалось добавить видео.',
+    description: 'Заголовок ошибки валидации.',
   },
   validateErrorBody: {
     id: 'authoring.videoeditor.validate.error.body',
-    defaultMessage: 'Please check your entries and try again.',
-    description: 'Body of validation error.',
+    defaultMessage: 'Пожалуйста, проверьте введенные данные и попробуйте еще раз.',
+    description: 'Текст ошибки валидации.',
   },
   durationTitle: {
     id: 'authoring.videoeditor.duration.title',
-    defaultMessage: 'Duration',
-    description: 'Title of Duration widget',
+    defaultMessage: 'Длительность',
+    description: 'Заголовок виджета "Длительность".',
   },
   durationDescription: {
     id: 'authoring.videoeditor.duration.description',
-    defaultMessage: 'Set a specific section of the video to play.',
-    description: 'Description of Duration widget',
+    defaultMessage: 'Укажите определенный фрагмент видео для воспроизведения.',
+    description: 'Описание виджета "Длительность".',
   },
   startTimeLabel: {
     id: 'authoring.videoeditor.duration.startTime.label',
-    defaultMessage: 'Start time',
-    description: 'Label of start time input field',
+    defaultMessage: 'Начальное время',
+    description: 'Подпись поля ввода начального времени.',
   },
   stopTimeLabel: {
     id: 'authoring.videoeditor.duration.stopTime.label',
-    defaultMessage: 'Stop time',
-    description: 'Label of stop time input field',
+    defaultMessage: 'Конечное время',
+    description: 'Подпись поля ввода конечного времени.',
   },
   durationHint: {
     id: 'authoring.videoeditor.duration.hint',
-    defaultMessage: 'Enter time as HH:MM:SS',
-    description: 'Hint text for start and stop time input fields',
+    defaultMessage: 'Введите время в формате ЧЧ:ММ:СС',
+    description: 'Всплывающая подсказка для полей ввода начального и конечного времени.',
   },
   fullVideoLength: {
     id: 'authoring.videoeditor.duration.fullVideoLength',
-    defaultMessage: 'Full video length',
-    description: 'Text describing a video with neither custom start time nor custom stop time',
+    defaultMessage: 'Полная длина видео',
+    description: 'Текст, описывающий видео без указания начального или конечного времени.',
   },
   startsAt: {
     id: 'authoring.videoeditor.duration.startsAt',
-    defaultMessage: 'Starts at {startTime}',
-    description: 'Text describing a video with custom start time and default stop time',
+    defaultMessage: 'Начинается с {startTime}',
+    description: 'Текст, описывающий видео с указанным начальным временем и стандартным конечным.',
   },
   total: {
     id: 'authoring.videoeditor.duration.total',
-    defaultMessage: 'Total: {total}',
-    description: 'Text describing a video with custom start time and custom stop time, or just a custom stop time',
+    defaultMessage: 'Всего: {total}',
+    description: 'Текст, описывающий видео с указанным начальным и конечным временем или только конечным временем.',
   },
   custom: {
     id: 'authoring.videoeditor.duration.custom',
-    defaultMessage: 'Custom: {total}',
-    description: 'Text describing a video with custom start time and custom stop time, or just a custom stop time for a collapsed widget',
+    defaultMessage: 'Настраиваемое: {total}',
+    description: 'Текст, описывающий видео с указанным начальным и конечным временем или только конечным временем для свернутого виджета.',
   },
   noTranscriptsAdded: {
     id: 'authoring.videoeditor.transcripts.empty',
-    defaultMessage: 'No transcripts added',
-    description: 'Message shown when the user has not selected any transcripts for the video.',
+    defaultMessage: 'Транскрипты не добавлены',
+    description: 'Сообщение, показываемое, когда пользователь не выбрал транскрипты для видео.',
   },
   videoTypeYoutube: {
     id: 'authoring.videoeditor.videotype.youtube',
-    defaultMessage: 'YouTube video',
-    description: 'Shown on the preview card if the video is from youtube.com.',
+    defaultMessage: 'Видео с YouTube',
+    description: 'Отображается на превью-карточке, если видео с youtube.com.',
   },
   videoTypeOther: {
     id: 'authoring.videoeditor.videotype.other',
-    defaultMessage: 'Other video',
-    description: 'Shown on the preview card if the video source could not be identified.',
+    defaultMessage: 'Другое видео',
+    description: 'Отображается на превью-карточке, если источник видео не удалось определить.',
   },
 });
-
 export default messages;

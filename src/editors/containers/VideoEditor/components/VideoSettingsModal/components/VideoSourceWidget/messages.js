@@ -14,8 +14,8 @@ const messages = defineMessages({
   },
   videoIdFeedback: {
     id: 'authoring.videoeditor.videoSource.videoId.feedback',
-    defaultMessage: 'Если вам был присвоен ID видео от edX, введите его здесь.',
-    description: 'Помощный текст для поля ID видео',
+    defaultMessage: 'Если вам был присвоен ID видео, введите его здесь.',
+    description: 'Вспомогательный текст для поля ID видео',
   },
   videoUrlLabel: {
     id: 'authoring.videoeditor.videoSource.videoUrl.label',
@@ -25,7 +25,7 @@ const messages = defineMessages({
   videoUrlFeedback: {
     id: 'authoring.videoeditor.videoSource.videoUrl.feedback',
     defaultMessage: `URL вашего видео. Это может быть URL YouTube или ссылка на файл видео .mp4, .ogg или .webm, размещенный в другом месте в интернете.`,
-    description: 'Помощный текст для поля URL видео',
+    description: 'Вспомогательный текст для поля URL видео',
   },
   videoIdChangeAlert: {
     id: 'authoring.videoeditor.videoIdChangeAlert.message',
@@ -39,7 +39,7 @@ const messages = defineMessages({
   },
   fallbackVideoMessage: {
     id: 'authoring.videoeditor.videoSource.fallbackVideo.message',
-    defaultMessage: `Чтобы гарантировать, что все пользователи могут получить доступ к видео, edX рекомендует предоставлять дополнительные видео в форматах .mp4 и .webm. Первое перечисленное видео, совместимое с устройством учащегося, будет проигрываться.`,
+    defaultMessage: `Чтобы гарантировать, что все пользователи могут получить доступ к видео, мы рекомендуем предоставлять дополнительные видео в форматах .mp4 и .webm. Первое перечисленное видео, совместимое с устройством учащегося, будет проигрываться.`,
     description: 'Текст, объясняющий причину запасных видео',
   },
   fallbackVideoLabel: {
@@ -59,7 +59,7 @@ const messages = defineMessages({
   },
   allowDownloadTooltipMessage: {
     id: 'authoring.videoeditor.videoSource.allowDownloadTooltipMessage',
-    defaultMessage: `Разрешить учащимся скачивать версии этого видео в разных форматах, если они не могут использовать проигрыватель видео edX или не имеют доступа к YouTube.`,
+    defaultMessage: `Разрешить учащимся скачивать версии этого видео в разных форматах, если они не могут использовать проигрыватель видео или не имеют доступа к YouTube.`,
     description: 'Сообщение для чекбокса разрешения скачивания видео',
   },
   allowVideoSharingCheckboxLabel: {
@@ -69,7 +69,7 @@ const messages = defineMessages({
   },
   allowVideoSharingTooltipMessage: {
     id: 'authoring.videoeditor.videoSource.allowVideoSharingTooltipMessage',
-    defaultMessage: `Разрешить учащимся делиться этим видео публично в социальных сетях. Видео будет доступно для всех, им не нужно будет записываться на курс или даже иметь аккаунт edX. Ссылки на страницу курса и на запись в курс будут отображаться рядом с видео.`,
+    defaultMessage: `Разрешить учащимся делиться этим видео публично в социальных сетях. Видео будет доступно для всех. Ссылки на страницу курса и на запись в курс будут отображаться рядом с видео.`,
     description: 'Сообщение для чекбокса разрешения делиться видео',
   },
   addButtonLabel: {
