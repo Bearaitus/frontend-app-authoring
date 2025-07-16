@@ -23,25 +23,9 @@ interface Props {
 }
 
 const VideoSettingsModal: React.FC<Props> = ({
-  onReturn,
   isLibrary,
 }) => (
   <>
-    {!isLibrary && (
-      <Button
-        variant="link"
-        className="text-primary-500"
-        size="sm"
-        onClick={onReturn}
-        style={{
-          textDecoration: 'none',
-          marginLeft: '3px',
-        }}
-      >
-        <Icon src={ArrowBackIos} style={{ height: '13px' }} />
-        <FormattedMessage {...messages.replaceVideoButtonLabel} />
-      </Button>
-    )}
     <ErrorSummary />
     <ConnectedVideoPreviewWidget />
     <VideoSourceWidget />
