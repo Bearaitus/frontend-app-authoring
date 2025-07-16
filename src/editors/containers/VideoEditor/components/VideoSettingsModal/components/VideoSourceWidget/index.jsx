@@ -94,59 +94,7 @@ const VideoSourceWidget = ({
           </Form.Control.Feedback>
         </Form.Group>
       </div>
-      <div className="mt-4">
-        <FormattedMessage {...messages.fallbackVideoTitle} />
-      </div>
-      <div className="mt-3">
-        <FormattedMessage {...messages.fallbackVideoMessage} />
-      </div>
-      {fallbackVideos.formValue.length > 0 ? fallbackVideos.formValue.map((videoUrl, index) => (
-        <Form.Row className="mt-3.5 mx-0 flex-nowrap">
-          <Form.Group>
-            <Form.Control
-              floatingLabel={messages.fallbackVideoLabel.defaultMessage}
-              onChange={fallbackVideos.onChange(index)}
-              value={fallbackVideos.local[index]}
-              onBlur={fallbackVideos.onBlur(index)}
-            />
-            <IconButtonWithTooltip
-              key={`top-delete-${videoUrl}`}
-              tooltipPlacement="top"
-              tooltipContent={messages.deleteFallbackVideo.defaultMessage}
-              src={DeleteOutline}
-              iconAs={Icon}
-              alt={messages.deleteFallbackVideo.defaultMessage}
-              onClick={() => deleteFallbackVideo(videoUrl)}
-            />
-          </Form.Group>
-        </Form.Row>
-      )) : null}
-      <ActionRow className="mt-4.5">
-        <Form.Group>
-          <Form.Checkbox
-            checked={allowDownload.local}
-            className="decorative-control-label"
-            onChange={allowDownload.onCheckedChange}
-          >
-            <div className="small text-gray-700">
-              <FormattedMessage {...messages.allowDownloadCheckboxLabel} />
-            </div>
-          </Form.Checkbox>
-          <OverlayTrigger
-            key="top"
-            placement="top"
-            overlay={(
-              <Tooltip id="tooltip-top">
-                <FormattedMessage {...messages.allowDownloadTooltipMessage} />
-              </Tooltip>
-            )}
-          >
-            <Icon src={InfoOutline} style={{ height: '16px', width: '16px' }} />
-          </OverlayTrigger>
-        </Form.Group>
-        <ActionRow.Spacer />
-      </ActionRow>
-
+      
       <div className="my-4 border-primary-100 border-bottom" />
       <Button
         className="text-primary-500 font-weight-bold pl-0"
