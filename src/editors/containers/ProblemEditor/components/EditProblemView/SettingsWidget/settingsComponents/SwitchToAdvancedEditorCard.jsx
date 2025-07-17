@@ -36,14 +36,6 @@ const SwitchToAdvancedEditorCard = ({
       >
         <FormattedMessage {...messages.ConfirmSwitchMessage} />
       </BaseModal>
-      <Button
-        className="my-3 ml-2 py-0"
-        variant="link"
-        size="sm"
-        onClick={() => { setConfirmOpen(true); }}
-      >
-        <FormattedMessage {...messages.SwitchButtonLabel} />
-      </Button>
     </Card>
   );
 };
