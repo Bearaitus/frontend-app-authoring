@@ -15,34 +15,7 @@ const GroupFeedbackCard = ({
   intl,
 }) => {
   const { summary, handleAdd } = groupFeedbackCardHooks(groupFeedbacks, updateSettings, answers);
-  return (
-    <SettingsOption
-      title={messages.groupFeedbackSettingTitle.defaultMessage}
-      summary={intl.formatMessage(summary.message, { ...summary.values })}
-      none={!groupFeedbacks.length}
-      hasExpandableTextArea
-    >
-      <div className="pb-3">
-        <FormattedMessage {...messages.groupFeedbackInputLabel} />
-      </div>
-      {groupFeedbacks.map((groupFeedback) => (
-        <GroupFeedbackRow
-          key={groupFeedback.id}
-          id={groupFeedback.id}
-          value={groupFeedback}
-          answers={answers}
-          {...groupFeedbackRowHooks({ id: groupFeedback.id, groupFeedbacks, updateSettings })}
-        />
-      ))}
-      <Button
-        className="m-0 p-0 font-weight-bold"
-        variant="add"
-        onClick={handleAdd}
-        size="sm"
-      >
-        <FormattedMessage {...messages.addGroupFeedbackButtonText} />
-      </Button>
-    </SettingsOption>
+  return (null
   );
 };
 
