@@ -99,7 +99,7 @@ const messages = defineMessages({
   },
   weightSummary: {
     id: 'authoring.problemeditor.settings.scoring.weight',
-    defaultMessage: '{weight, plural, =1 {балл} other {# балла}}',
+    defaultMessage: '{weight, plural, =1 {б.} other {# б.}}',
     description: 'Текст суммирования для веса оценки',
   },
   scoringSettingsLabel: {
