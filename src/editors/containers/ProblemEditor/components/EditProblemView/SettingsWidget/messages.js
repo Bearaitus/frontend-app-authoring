@@ -24,7 +24,7 @@ const messages = defineMessages({
   },
   hintSettingTitle: {
     id: 'authoring.problemeditor.settings.hint.title',
-    defaultMessage: 'Подсказка (будет видна пользователю сразу)',
+    defaultMessage: 'Подсказка (будет сразу видна пользователю)',
     description: 'Название настроек совета',
   },
   hintInputLabel: {
