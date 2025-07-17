@@ -57,18 +57,6 @@ const ShowAnswerCard = ({
           })}
         </Form.Control>
       </Form.Group>
-      {showAttempts
-        && (
-        <Form.Group className="pb-0 mb-0 mt-4">
-          <Form.Control
-            type="number"
-            min={0}
-            value={showAnswer.afterAttempts}
-            onChange={handleAttemptsChange}
-            floatingLabel={messages.showAnswerAttemptsInputLabel.defaultMessage}
-          />
-        </Form.Group>
-        )}
     </>
   );
 
