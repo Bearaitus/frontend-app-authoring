@@ -35,13 +35,6 @@ const ShowAnswerCard = ({
           <FormattedMessage {...messages.showAnswerSettingText} />
         </span>
       </div>
-      {!isLibrary && (
-        <div className="pb-4">
-          <Hyperlink destination={`${studioEndpointUrl}/settings/advanced/${learningContextId}#showanswer`} target="_blank">
-            <FormattedMessage {...messages.advancedSettingsLinkText} />
-          </Hyperlink>
-        </div>
-      )}
       <Form.Group className="pb-0 mb-0">
         <Form.Control
           as="select"
