@@ -46,7 +46,7 @@ export const ProblemTypes = StrictDict({
     template: basicOlxTemplates.dropdown,
   },
   [ProblemTypeKeys.TEXTINPUT]: {
-    title: 'Текстовый ввод',
+    title: 'Вопрос с текстовым ответом',
     preview: textInput,
     previewDescription: 'Укажите один или несколько правильных текстовых ответов, включая числа и специальные символы, вводимые в поле ответа.',
     description: 'Введите ваши ответы для текстового ввода и выберите правильные варианты. Пользователи должны ввести только один правильный ответ.',
@@ -113,67 +113,17 @@ export const AdvanceProblems = StrictDict({
   },
 } as const);
 export const ShowAnswerTypesKeys = StrictDict({
-  ALWAYS: 'always',
-  ANSWERED: 'answered',
-  ATTEMPTED: 'attempted',
-  CLOSED: 'closed',
-  FINISHED: 'finished',
-  CORRECT_OR_PAST_DUE: 'correct_or_past_due',
-  PAST_DUE: 'past_due',
   NEVER: 'never',
-  AFTER_SOME_NUMBER_OF_ATTEMPTS: 'after_attempts',
-  AFTER_ALL_ATTEMPTS: 'after_all_attempts',
   AFTER_ALL_ATTEMPTS_OR_CORRECT: 'after_all_attempts_or_correct',
-  ATTEMPTED_NO_PAST_DUE: 'attempted_no_past_due',
 } as const);
 export const ShowAnswerTypes = StrictDict({
-  [ShowAnswerTypesKeys.ALWAYS]: {
-    id: 'authoring.problemeditor.settings.showanswertype.always',
-    defaultMessage: 'Всегда',
-  },
-  [ShowAnswerTypesKeys.ANSWERED]: {
-    id: 'authoring.problemeditor.settings.showanswertype.answered',
-    defaultMessage: 'Отвечено',
-  },
-  [ShowAnswerTypesKeys.ATTEMPTED]: {
-    id: 'authoring.problemeditor.settings.showanswertype.attempted',
-    defaultMessage: 'Попытка или просрочено',
-  },
-  [ShowAnswerTypesKeys.CLOSED]: {
-    id: 'authoring.problemeditor.settings.showanswertype.closed',
-    defaultMessage: 'Закрыто',
-  },
-  [ShowAnswerTypesKeys.FINISHED]: {
-    id: 'authoring.problemeditor.settings.showanswertype.finished',
-    defaultMessage: 'Завершено',
-  },
-  [ShowAnswerTypesKeys.CORRECT_OR_PAST_DUE]: {
-    id: 'authoring.problemeditor.settings.showanswertype.correct_or_past_due',
-    defaultMessage: 'Правильно или просрочено',
-  },
-  [ShowAnswerTypesKeys.PAST_DUE]: {
-    id: 'authoring.problemeditor.settings.showanswertype.past_due',
-    defaultMessage: 'Просрочено',
-  },
   [ShowAnswerTypesKeys.NEVER]: {
     id: 'authoring.problemeditor.settings.showanswertype.never',
-    defaultMessage: 'Никогда',
-  },
-  [ShowAnswerTypesKeys.AFTER_SOME_NUMBER_OF_ATTEMPTS]: {
-    id: 'authoring.problemeditor.settings.showanswertype.after_attempts',
-    defaultMessage: 'После некоторого количества попыток',
-  },
-  [ShowAnswerTypesKeys.AFTER_ALL_ATTEMPTS]: {
-    id: 'authoring.problemeditor.settings.showanswertype.after_all_attempts',
-    defaultMessage: 'После всех попыток',
+    defaultMessage: 'Никогда не показывается',
   },
   [ShowAnswerTypesKeys.AFTER_ALL_ATTEMPTS_OR_CORRECT]: {
     id: 'authoring.problemeditor.settings.showanswertype.after_all_attempts_or_correct',
     defaultMessage: 'После всех попыток или правильно',
-  },
-  [ShowAnswerTypesKeys.ATTEMPTED_NO_PAST_DUE]: {
-    id: 'authoring.problemeditor.settings.showanswertype.attempted_no_past_due',
-    defaultMessage: 'Попытка',
   },
 } as const);
 export const RandomizationTypesKeys = StrictDict({
