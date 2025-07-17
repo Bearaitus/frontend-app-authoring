@@ -104,17 +104,17 @@ const messages = defineMessages({
   },
   scoringSettingsLabel: {
     id: 'authoring.problemeditor.settings.scoring.label',
-    defaultMessage: 'Укажите вес оценки и количество попыток ответа',
+    defaultMessage: 'Укажите количество баллов и попыток ответа',
     description: 'Описательный текст для настроек оценки',
   },
   attemptsHint: {
     id: 'authoring.problemeditor.settings.scoring.attempts.hint',
-    defaultMessage: 'Если значение по умолчанию не установлено в расширенных настройках, разрешается неограниченное количество попыток',
+    defaultMessage: 'Если значение по умолчанию выставлено в расширенных настройках, то данное поле ввода будет пустым',
     description: 'Текст суммирования для веса оценки',
   },
   weightHint: {
     id: 'authoring.problemeditor.settings.scoring.weight.hint',
-    defaultMessage: 'Если значение не установлено, задача стоит одного балла',
+    defaultMessage: 'Если значение не установлено, задача стоит 1 балл',
     description: 'Текст суммирования для веса оценки',
   },
   showAnswerSettingsTitle: {
