@@ -9,7 +9,6 @@ import basicOlxTemplates from './basicOlxTemplates';
 export const ProblemTypeKeys = StrictDict({
   SINGLESELECT: 'multiplechoiceresponse',
   MULTISELECT: 'choiceresponse',
-  DROPDOWN: 'optionresponse',
   TEXTINPUT: 'stringresponse',
   ADVANCED: 'advanced',
 } as const);
@@ -35,24 +34,14 @@ export const ProblemTypes = StrictDict({
     prev: ProblemTypeKeys.SINGLESELECT,
     template: basicOlxTemplates.multiSelect,
   },
-  [ProblemTypeKeys.DROPDOWN]: {
-    title: 'Выпадающий список',
-    preview: dropdown,
-    previewDescription: 'Пользователям необходимо выбрать правильный ответ из списка возможных вариантов.',
-    description: 'Введите ваши ответы для выпадающего списка и выберите правильный вариант. Пользователи должны выбрать только один правильный ответ.',
-    helpLink: '',
-    next: ProblemTypeKeys.TEXTINPUT,
-    prev: ProblemTypeKeys.MULTISELECT,
-    template: basicOlxTemplates.dropdown,
-  },
   [ProblemTypeKeys.TEXTINPUT]: {
     title: 'Вопрос с текстовым ответом',
     preview: textInput,
     previewDescription: 'Укажите один или несколько правильных текстовых ответов, включая числа и специальные символы, вводимые в поле ответа.',
     description: 'Введите ваши ответы для текстового ввода и выберите правильные варианты. Пользователи должны ввести только один правильный ответ.',
     helpLink: '',
-    prev: ProblemTypeKeys.DROPDOWN,
-    next: ProblemTypeKeys.SINGLESELECT,
+    prev: ProblemTypeKeys.MULTISELECT,
+    next: ProblemTypeKeys.ADVANCED,
     template: basicOlxTemplates.textInput,
   },
   [ProblemTypeKeys.ADVANCED]: {
