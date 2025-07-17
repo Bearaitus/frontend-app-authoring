@@ -44,7 +44,7 @@ const ShowAnswerCard = ({
           {Object.values(ShowAnswerTypesKeys).map((answerType) => {
             let optionDisplayName = ShowAnswerTypes[answerType];
             if (answerType === defaultValue) {
-              optionDisplayName = { ...optionDisplayName, defaultMessage: `${optionDisplayName.defaultMessage} (Default)` };
+              optionDisplayName = { ...optionDisplayName, defaultMessage: `${optionDisplayName.defaultMessage}` };
             }
             return (
               <option
