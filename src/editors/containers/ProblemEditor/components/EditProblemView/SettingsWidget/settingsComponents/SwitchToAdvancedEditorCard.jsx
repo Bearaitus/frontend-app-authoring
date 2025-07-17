@@ -18,25 +18,7 @@ const SwitchToAdvancedEditorCard = ({
 
   if (problemType === ProblemTypeKeys.ADVANCED) { return null; }
 
-  return (
-    <Card className="border border-light-700 shadow-none">
-      <BaseModal
-        isOpen={isConfirmOpen}
-        close={() => { setConfirmOpen(false); }}
-        title={(<FormattedMessage {...messages.ConfirmSwitchMessageTitle} />)}
-        confirmAction={(
-          <Button
-            onClick={() => confirmSwitchToAdvancedEditor({ switchToAdvancedEditor, setConfirmOpen })}
-            variant="primary"
-          >
-            <FormattedMessage {...messages.ConfirmSwitchButtonLabel} />
-          </Button>
-        )}
-        size="md"
-      >
-        <FormattedMessage {...messages.ConfirmSwitchMessage} />
-      </BaseModal>
-    </Card>
+  return (null
   );
 };
 
