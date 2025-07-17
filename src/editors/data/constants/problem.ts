@@ -119,11 +119,11 @@ export const ShowAnswerTypesKeys = StrictDict({
 export const ShowAnswerTypes = StrictDict({
   [ShowAnswerTypesKeys.NEVER]: {
     id: 'authoring.problemeditor.settings.showanswertype.never',
-    defaultMessage: 'Никогда не показывается',
+    defaultMessage: 'Никогда не показывать',
   },
   [ShowAnswerTypesKeys.AFTER_ALL_ATTEMPTS_OR_CORRECT]: {
     id: 'authoring.problemeditor.settings.showanswertype.after_all_attempts_or_correct',
-    defaultMessage: 'После всех попыток или правильно',
+    defaultMessage: 'Показать после правильной или всех попыток',
   },
 } as const);
 export const RandomizationTypesKeys = StrictDict({
