@@ -47,7 +47,7 @@ const messages = defineMessages({
   },
   previewTitle: {
     id: 'authoring.problemEditor.preview.title',
-    defaultMessage: '{previewTitle} problem',
+    defaultMessage: '{previewTitle}',
     description: 'Title for the problem preview column',
   },
   previewAltText: {
