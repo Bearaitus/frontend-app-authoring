@@ -19,35 +19,7 @@ const ResetCard = ({
   const { setResetTrue, setResetFalse } = resetCardHooks(updateSettings);
   const advancedSettingsLink = `${useSelector(selectors.app.studioEndpointUrl)}/settings/advanced/${useSelector(selectors.app.learningContextId)}#show_reset_button`;
   const currentResetButton = showResetButton !== null ? showResetButton : defaultValue;
-  return (
-    <SettingsOption
-      title={messages.resetSettingsTitle.defaultMessage}
-      summary={currentResetButton
-        ? messages.resetSettingsTrue.defaultMessage : messages.resetSettingsFalse.defaultMessage}
-      className="resetCard"
-    >
-      <div className="halfSpacedMessage">
-        <span>
-          <FormattedMessage {...messages.resetSettingText} />
-        </span>
-      </div>
-      {!isLibrary && (
-        <div className="spacedMessage">
-          <Hyperlink destination={advancedSettingsLink} target="_blank">
-            <FormattedMessage {...messages.advancedSettingsLinkText} />
-          </Hyperlink>
-        </div>
-      )}
-      <ButtonGroup size="sm" className="resetSettingsButtons mb-2">
-        <Button variant={currentResetButton ? 'outline-primary' : 'primary'} size="sm" onClick={setResetFalse}>
-          <FormattedMessage {...messages.resetSettingsFalse} />
-        </Button>
-        <Button variant={currentResetButton ? 'primary' : 'outline-primary'} size="sm" onClick={setResetTrue}>
-          <FormattedMessage {...messages.resetSettingsTrue} />
-        </Button>
-      </ButtonGroup>
-    </SettingsOption>
-  );
+  return (null);
 };
 
 ResetCard.propTypes = {
