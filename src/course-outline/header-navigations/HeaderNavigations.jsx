@@ -59,7 +59,7 @@ const HeaderNavigations = ({
             variant="outline-primary"
             disabled={isDisabledReindexButton}
           >
-            Обновить курс
+            Обновить индексы курса
           </Button>
         </OverlayTrigger>
       )}
