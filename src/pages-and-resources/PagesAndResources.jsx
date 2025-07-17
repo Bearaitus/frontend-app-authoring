@@ -72,14 +72,6 @@ const PagesAndResources = ({ courseId, intl }) => {
       <main className="container container-mw-md px-3">
         <div className="d-flex justify-content-between my-4 my-md-5 align-items-center">
           <h3 className="m-0">{messages.heading.defaultMessage}</h3>
-          <Hyperlink
-            destination={learningCourseURL}
-            target="_blank"
-            rel="noopener noreferrer"
-            showLaunchIcon={false}
-          >
-            <Button variant="outline-primary" className="p-2"> {messages.viewLiveButton.defaultMessage}</Button>
-          </Hyperlink>
         </div>
 
         <Routes>

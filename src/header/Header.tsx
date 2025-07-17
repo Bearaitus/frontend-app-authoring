@@ -36,7 +36,7 @@ const Header = ({
   const mainMenuDropdowns = !isLibrary ? [
     {
       id: `${intl.formatMessage(messages['header.links.content'])}-dropdown-menu`,
-      buttonTitle: 'Файлы и дополнительные страницы',
+      buttonTitle: 'Дополнительные файлы',
       items: contentMenuItems,
     },
     {

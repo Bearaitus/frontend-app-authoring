@@ -12,12 +12,8 @@ export const useContentMenuItems = courseId => {
   const items = [
 
     {
-      href: getPagePath(courseId, 'true', 'tabs'),
-      title: 'Дополнительные страницы',
-    },
-    {
       href: `${studioBaseUrl}/assets/${courseId}`,
-      title: 'Обновлённые файлы',
+      title: 'Дополнительные файлы',
     },
   ];
   if (getConfig().ENABLE_VIDEO_UPLOAD_PAGE_LINK_IN_CONTENT_DROPDOWN === 'true') {
