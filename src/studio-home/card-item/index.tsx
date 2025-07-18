@@ -84,47 +84,6 @@ const CardItem: React.FC<Props> = ({
           <span className="card-item-title">{displayName}</span>
         )}
         subtitle={subtitle}
-        actions={showActions && (
-          isPaginated ? (
-            <Dropdown>
-              <Dropdown.Toggle
-                as={IconButton}
-                iconAs={MoreHoriz}
-                variant="primary"
-                data-testid="toggle-dropdown"
-              />
-              <Dropdown.Menu>
-                {isShowRerunLink && (
-                  <Dropdown.Item href={trimSlashes(rerunLink ?? '')}>
-                    Перезапустить курс
-                  </Dropdown.Item>
-                )}
-                <Dropdown.Item href={lmsLink}>
-                  {messages.viewLiveBtnText.defaultMessage}
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-          ) : (
-            <ActionRow>
-              {isShowRerunLink && (
-                <Hyperlink
-                  className="small"
-                  destination={trimSlashes(rerunLink ?? '')}
-                  key={`action-row-rerunLink-${courseKey}`}
-                >
-                  {messages.btnReRunText.defaultMessage}
-                </Hyperlink>
-              )}
-              <Hyperlink
-                className="small ml-3"
-                destination={lmsLink ?? ''}
-                key={`action-row-lmsLink-${courseKey}`}
-              >
-                {messages.viewLiveBtnText.defaultMessage}
-              </Hyperlink>
-            </ActionRow>
-          )
-        )}
       />
     </Card>
   );
