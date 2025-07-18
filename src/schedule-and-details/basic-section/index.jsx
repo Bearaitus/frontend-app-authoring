@@ -91,37 +91,7 @@ const BasicSection = ({
     </PageBanner>
   );
 
-  const renderCoursePromotion = () => (
-    <Card>
-      <Card.Header
-        className="h4 px-3 text-gray-500"
-        title={promotionTitle}
-        size="sm"
-      />
-      <Card.Section className="px-3 py-1">
-        <Hyperlink
-          destination={lmsLinkForAboutPage}
-          className="lead info-500 small text-decoration-none"
-          target="_blank"
-          showLaunchIcon={false}
-        >
-          {lmsLinkForAboutPage}
-        </Hyperlink>
-      </Card.Section>
-      <Card.Divider />
-      <Card.Footer className="p-3 justify-content-start">
-        <MailtoLink
-          to={process.env.INVITE_STUDENTS_EMAIL_TO}
-          subject={emailSubject}
-          body={emailBody}
-          data-testid={INVITE_STUDENTS_LINK_ID}
-        >
-          <Button variant="outline-primary" iconBefore={EmailIcon} size="sm">
-            {messages.basicPromotionButton.defaultMessage}
-          </Button>
-        </MailtoLink>
-      </Card.Footer>
-    </Card>
+  const renderCoursePromotion = () => (null
   );
 
   return (
