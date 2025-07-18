@@ -94,7 +94,6 @@ const IntroducingSection = ({
               initialValue={overview}
               onChange={(value) => onChange(value, 'overview')}
             />
-            <Form.Control.Feedback>{overviewHelpText}</Form.Control.Feedback>
           </Form.Group>
           {sidebarHtmlEnabled && (
             <Form.Group className="form-group-custom">
