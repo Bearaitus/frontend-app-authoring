@@ -82,26 +82,7 @@ const CourseUploadImage = ({
   );
 
   const cardImageTextBody = assetImagePath ? (
-    <span className="x-small text-gray-700">
-      <FormattedMessage
-        {...messages.uploadImageBodyFilled}
-        values={{
-          hyperlink: (
-            <Hyperlink
-              destination={assetsUrl().href}
-              target="_blank"
-              showLaunchIcon={false}
-            >
-              {messages.uploadImageFilesAndUploads.defaultMessage}
-            </Hyperlink>
-          ),
-        }}
-      />
-    </span>
-  ) : (
-    <span className="x-small text-gray-700">
-      {messages.uploadImageEmpty.defaultMessage}
-    </span>
+    null
   );
 
   return (
