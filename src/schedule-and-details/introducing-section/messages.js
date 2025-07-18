@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   introducingDescription: {
     id: 'course-authoring.schedule-section.introducing.description',
-    defaultMessage: 'Информация для потенциальных студентов',
+    defaultMessage: '',
   },
   courseShortDescriptionLabel: {
     id: 'course-authoring.schedule-section.introducing.course-short-description.label',
@@ -23,11 +23,11 @@ const messages = defineMessages({
   },
   courseOverviewLabel: {
     id: 'course-authoring.schedule-section.introducing.course-overview.label',
-    defaultMessage: 'Обзор курса',
+    defaultMessage: '',
   },
   courseOverviewHelpText: {
     id: 'course-authoring.schedule-section.introducing.course-overview.help-text',
-    defaultMessage: 'Введение, предварительные требования, FAQ, используемые на {hyperlink} (форматировано в HTML)',
+    defaultMessage: '',
   },
   courseAboutHyperlink: {
     id: 'course-authoring.schedule-section.introducing.course-about.hyperlink',
