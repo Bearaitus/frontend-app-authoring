@@ -4,40 +4,22 @@ import { useSelector } from 'react-redux';
 import { getPagePath } from '../utils';
 import { getStudioHomeData } from '../studio-home/data/selectors';
 import messages from './messages';
-
 export const useContentMenuItems = courseId => {
-  const intl = useIntl();
-  const studioBaseUrl = getConfig().STUDIO_BASE_URL;
-
-  const items = [
-
-    {
-      href: `${studioBaseUrl}/assets/${courseId}`,
-      title: 'Дополнительные файлы',
-    },
-  ];
-  if (getConfig().ENABLE_VIDEO_UPLOAD_PAGE_LINK_IN_CONTENT_DROPDOWN === 'true') {
-    items.push({
-      href: `${studioBaseUrl}/videos/${courseId}`,
-      title: intl.formatMessage(messages['header.links.videoUploads']),
-    });
-  }
-
-  return items;
+  return [];
 };
-
 export const useSettingMenuItems = courseId => {
   const intl = useIntl();
   const studioBaseUrl = getConfig().STUDIO_BASE_URL;
   const { canAccessAdvancedSettings } = useSelector(getStudioHomeData);
-
   const items = [
-
     {
       href: `${studioBaseUrl}/settings/grading/${courseId}`,
       title: 'Оценка',
     },
-
+    {
+      href: `${studioBaseUrl}/assets/${courseId}`,
+      title: 'Дополнительные файлы',
+    },
     ...(canAccessAdvancedSettings === true
       ? [{
         href: `${studioBaseUrl}/settings/advanced/${courseId}`,
@@ -45,14 +27,11 @@ export const useSettingMenuItems = courseId => {
       }] : []
     ),
   ];
-
   return items;
 };
-
 export const useToolsMenuItems = courseId => {
   const intl = useIntl();
   const studioBaseUrl = getConfig().STUDIO_BASE_URL;
-
   const items = [
     {
       href: `${studioBaseUrl}/import/${courseId}`,
@@ -62,7 +41,6 @@ export const useToolsMenuItems = courseId => {
       href: `${studioBaseUrl}/export/${courseId}`,
       title: 'Экспорт курса',
     },
-
   ];
   return items;
 };
