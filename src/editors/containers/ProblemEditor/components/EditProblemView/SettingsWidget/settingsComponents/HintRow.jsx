@@ -5,6 +5,7 @@ import {
   Container,
   Icon,
   IconButton,
+  TextArea,
 } from '@openedx/paragon';
 import { DeleteOutline } from '@openedx/paragon/icons';
 import PropTypes from 'prop-types';
@@ -24,7 +25,7 @@ const HintRow = ({
 }) => (
   <ActionRow className="mb-4">
     <Container fluid className="p-0">
-      <ExpandableTextArea
+      <TextArea
         value={value}
         setContent={handleChange}
         placeholder={messages.hintInputLabel.defaultMessage}

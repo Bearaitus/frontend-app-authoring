@@ -38,7 +38,7 @@ const messages = defineMessages({
   },
   addFilesButtonLabel: {
     id: 'course-authoring.files-and-upload.addFiles.button.label',
-    defaultMessage: 'Добавить {fileType}s',
+    defaultMessage: 'Добавить файл',
     description: 'Метка для кнопки добавления файлов, название меняется в зависимости от страницы',
   },
   actionsButtonLabel: {
