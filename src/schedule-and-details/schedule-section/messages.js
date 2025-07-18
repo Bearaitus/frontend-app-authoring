@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   scheduleDescription: {
     id: 'course-authoring.schedule.schedule-section.description',
-    defaultMessage: 'Даты, которые контролируют, когда ваш курс может быть просмотрен',
+    defaultMessage: '',
   },
   scheduleCourseStartDateLabel: {
     id: 'course-authoring.schedule.schedule-section.course-start.date.label',
