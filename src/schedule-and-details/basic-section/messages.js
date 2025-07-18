@@ -19,11 +19,11 @@ const messages = defineMessages({
   },
   courseNumber: {
     id: 'course-authoring.schedule.basic.course-number',
-    defaultMessage: 'Номер курса',
+    defaultMessage: 'Идентификатор курса',
   },
   courseRun: {
     id: 'course-authoring.schedule.basic.course-run',
-    defaultMessage: 'Запуск курса',
+    defaultMessage: 'Направление в кибербезопасности',
   },
   basicBannerTitle: {
     id: 'course-authoring.schedule.basic.banner.title',
