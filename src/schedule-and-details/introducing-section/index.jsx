@@ -75,7 +75,6 @@ const IntroducingSection = ({
       {aboutPageEditable && (
         <SectionSubHeader
           title={messages.introducingTitle.defaultMessage}
-          description={messages.introducingDescription.defaultMessage}
         />
       )}
       {enableExtendedCourseDetails && (
