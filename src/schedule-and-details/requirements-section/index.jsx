@@ -63,23 +63,7 @@ const RequirementsSection = ({
     <section className="section-container requirements-section">
       <SectionSubHeader
         title={messages.requirementsTitle.defaultMessage}
-        description={messages.requirementsDescription.defaultMessage}
       />
-      {aboutPageEditable && (
-        <Form.Group className="form-group-custom">
-          <Form.Label>
-            {messages.timepickerLabel.defaultMessage}
-          </Form.Label>
-          <Form.Control
-            value={effort || ''}
-            placeholder={TIME_FORMAT.toUpperCase()}
-            onChange={(e) => onChange(e.target.value, 'effort')}
-          />
-          <Form.Control.Feedback>
-            {messages.timepickerHelpText.defaultMessage}
-          </Form.Control.Feedback>
-        </Form.Group>
-      )}
       {isPrerequisiteCoursesEnabled && renderPrerequisiteDropdown()}
       {isEntranceExamsEnabled && (
         <EntranceExam
