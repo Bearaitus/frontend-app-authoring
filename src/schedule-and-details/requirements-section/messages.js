@@ -3,7 +3,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   requirementsTitle: {
     id: 'course-authoring.schedule-section.requirements.title',
-    defaultMessage: 'Требования',
+    defaultMessage: 'Предварительный курс',
   },
   requirementsDescription: {
     id: 'course-authoring.schedule-section.requirements.description',
