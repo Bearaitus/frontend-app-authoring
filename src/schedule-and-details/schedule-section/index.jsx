@@ -45,67 +45,6 @@ const ScheduleSection = ({
       controlName: 'startDate',
       errorFeedback: errorFields?.startDate,
     },
-    {
-      labels: [
-        messages.scheduleCourseEndDateLabel.defaultMessage,
-        messages.scheduleCourseEndTimeLabel.defaultMessage,
-      ],
-      value: endDate,
-      rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: messages.scheduleCourseEndDateHelpText.defaultMessage,
-      controlName: 'endDate',
-      errorFeedback: errorFields?.endDate,
-    },
-    {
-      skip: !canShowCertificateAvailableDateField,
-      key: 'certificate-display-row',
-      rowType: SCHEDULE_ROW_TYPES.dropdown,
-      certificateAvailableDate,
-      availableDateErrorFeedback: errorFields?.certificateAvailableDate,
-      certificatesDisplayBehavior,
-      displayBehaviorErrorFeedback: errorFields?.certificatesDisplayBehavior,
-    },
-    {
-      labels: [
-        messages.scheduleEnrollmentStartDateLabel.defaultMessage,
-        messages.scheduleEnrollmentStartTimeLabel.defaultMessage,
-      ],
-      value: enrollmentStart,
-      rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: messages.scheduleEnrollmentStartDateHelpText.defaultMessage,
-      controlName: 'enrollmentStart',
-      errorFeedback: errorFields?.enrollmentStart,
-    },
-    {
-      labels: [
-        messages.scheduleEnrollmentEndDateLabel.defaultMessage,
-        messages.scheduleEnrollmentEndTimeLabel.defaultMessage,
-      ],
-      value: enrollmentEnd,
-      rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: computedEnrollmentEndHelpText,
-      readonly: !enrollmentEndEditable,
-      controlName: 'enrollmentEnd',
-      errorFeedback: errorFields?.enrollmentEnd,
-    },
-    {
-      skip: !upgradeDeadline,
-      labels: [
-        messages.scheduleUpgradeDeadlineDateLabel.defaultMessage,
-        messages.scheduleUpgradeDeadlineTimeLabel.defaultMessage,
-      ],
-      value: upgradeDeadline,
-      rowType: SCHEDULE_ROW_TYPES.datetime,
-      helpText: intl.formatMessage(
-        messages.scheduleUpgradeDeadlineDateHelpText,
-        {
-          platformName,
-        },
-      ),
-      readonly: true,
-      controlName: 'upgradeDeadline',
-      errorFeedback: errorFields?.upgradeDeadline,
-    },
   ];
 
   return (
