@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   rerunCourseDescriptionStrong: {
     id: 'course-authoring.course-rerun.form.description.strong',
-    defaultMessage: 'Примечание: Вместе организация, номер курса и запуск курса должны уникально идентифицировать этот новый экземпляр курса.',
+    defaultMessage: 'Примечание: Вместе Компания-разработчик курса, номер курса и запуск курса должны уникально идентифицировать этот новый экземпляр курса.',
   },
 });
 

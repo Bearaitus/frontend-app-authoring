@@ -15,7 +15,7 @@ const messages = defineMessages({
   },
   courseOrganization: {
     id: 'course-authoring.schedule.basic.organization',
-    defaultMessage: 'Организация',
+    defaultMessage: 'Компания-разработчик курса',
   },
   courseNumber: {
     id: 'course-authoring.schedule.basic.course-number',

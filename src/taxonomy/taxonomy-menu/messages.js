@@ -16,7 +16,7 @@ const messages = defineMessages({
   },
   manageOrgsMenu: {
     id: 'course-authoring.taxonomy-menu.assign-orgs.label',
-    defaultMessage: 'Управлять организациями',
+    defaultMessage: 'Управлять Компания-разработчик курсами',
   },
   exportMenu: {
     id: 'course-authoring.taxonomy-menu.export.label',

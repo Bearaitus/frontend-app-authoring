@@ -3,11 +3,11 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headerTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.header.title',
-    defaultMessage: 'Назначить организациям',
+    defaultMessage: 'Назначить Компания-разработчик курсам',
   },
   bodyText: {
     id: 'course-authoring.taxonomy-manage-orgs.body.text',
-    defaultMessage: 'Управляйте тем, какие организации могут получить доступ к таксономии, назначая их в меню ниже. Вы также можете назначить таксономию всем организациям.',
+    defaultMessage: 'Управляйте тем, какие организации могут получить доступ к таксономии, назначая их в меню ниже. Вы также можете назначить таксономию всем Компания-разработчик курсам.',
   },
   assignOrgs: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-orgs',
@@ -31,7 +31,7 @@ const messages = defineMessages({
   },
   assignAll: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-all',
-    defaultMessage: 'Назначить всем организациям',
+    defaultMessage: 'Назначить всем Компания-разработчик курсам',
   },
   cancelButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.cancel',

@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   headingSubtitle: {
     id: 'course-authoring.schedule.heading.subtitle',
-    defaultMessage: 'Настройки',
+    defaultMessage: '',
   },
   buttonSaveText: {
     id: 'course-authoring.schedule.alert.button.save',

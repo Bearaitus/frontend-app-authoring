@@ -58,17 +58,17 @@ const messages = defineMessages({
   },
   organizationLabel: {
     id: 'course-authoring.certificates.signatories.organization.label',
-    defaultMessage: 'Организация',
-    description: 'Метка для поля ввода, где вводится организация подписанта',
+    defaultMessage: 'Компания-разработчик курса',
+    description: 'Метка для поля ввода, где вводится Компания-разработчик курса подписанта',
   },
   organizationPlaceholder: {
     id: 'course-authoring.certificates.signatories.organization.placeholder',
-    defaultMessage: 'Организация подписанта',
+    defaultMessage: 'Компания-разработчик курса подписанта',
     description: 'Плейсхолдер для поля ввода организации подписанта',
   },
   organizationDescription: {
     id: 'course-authoring.certificates.signatories.organization.description',
-    defaultMessage: 'Организация, к которой принадлежит этот подписант, как она должна появиться на сертификатах.',
+    defaultMessage: 'Компания-разработчик курса, к которой принадлежит этот подписант, как она должна появиться на сертификатах.',
     description: 'Помощный текст под полем ввода организации',
   },
   imageLabel: {

@@ -27,7 +27,7 @@ const messages = defineMessages({
   },
   instructorOrganizationLabel: {
     id: 'course-authoring.schedule-section.instructor.organization.label',
-    defaultMessage: 'Организация',
+    defaultMessage: 'Компания-разработчик курса',
   },
   instructorOrganizationHelpText: {
     id: 'course-authoring.schedule-section.instructor.organization.help-text',
@@ -35,7 +35,7 @@ const messages = defineMessages({
   },
   instructorOrganizationInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.organization.input.placeholder',
-    defaultMessage: 'Организация преподавателя',
+    defaultMessage: 'Компания-разработчик курса преподавателя',
   },
   instructorBioLabel: {
     id: 'course-authoring.schedule-section.instructor.bio.label',
