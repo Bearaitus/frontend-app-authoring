@@ -7,7 +7,7 @@ const messages = defineMessages({
   },
   basicDescription: {
     id: 'course-authoring.schedule.basic.description',
-    defaultMessage: 'Основные детали курса',
+    defaultMessage: '',
   },
   basicEmailIcon: {
     id: 'course-authoring.schedule.basic.email-icon',
