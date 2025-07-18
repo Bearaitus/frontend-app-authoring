@@ -35,13 +35,9 @@ const TableActions = ({
 
   return (
     <>
-      <Button variant="outline-primary" onClick={openSort} iconBefore={Tune} className='mx-2'>
-        <FormattedMessage {...messages.sortButtonLabel} />
-      </Button>
       <Button iconBefore={Add} onClick={fileInputControl.click}>
         Добавить файл
       </Button>
-      <SortAndFilterModal {...{ isSortOpen, closeSort, handleSort }} />
     </>
   );
 };
