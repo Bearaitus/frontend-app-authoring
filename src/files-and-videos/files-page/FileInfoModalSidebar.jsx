@@ -62,12 +62,6 @@ const FileInfoModalSidebar = ({
           </Truncate>
         </div>
         <ActionRow.Spacer />
-        <IconButton
-          src={ContentCopy}
-          iconAs={Icon}
-          alt={messages.copyStudioUrlTitle.defaultMessage}
-          onClick={() => navigator.clipboard.writeText(asset?.portableUrl)}
-        />
       </ActionRow>
       <div className="font-weight-bold mt-3">
         <FormattedMessage {...messages.webUrlTitle} />

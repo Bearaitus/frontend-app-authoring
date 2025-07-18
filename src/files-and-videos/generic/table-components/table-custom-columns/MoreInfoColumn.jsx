@@ -105,13 +105,6 @@ const MoreInfoColumn = ({
           >
             {messages.downloadTitle.defaultMessage}
           </MenuItem>
-          <MenuItem
-            as={Button}
-            variant="tertiary"
-            onClick={() => handleOpenFileInfo(row.original)}
-          >
-            {messages.infoTitle.defaultMessage}
-          </MenuItem>
           <hr className="my-2" />
           <MenuItem
             as={Button}

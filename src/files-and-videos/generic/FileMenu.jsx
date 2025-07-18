@@ -41,11 +41,6 @@ const FileMenu = ({
       ) : (
         <>
           <Dropdown.Item
-            onClick={() => navigator.clipboard.writeText(portableUrl)}
-          >
-            {messages.copyStudioUrlTitle.defaultMessage}
-          </Dropdown.Item>
-          <Dropdown.Item
             onClick={() => navigator.clipboard.writeText(externalUrl)}
           >
             {messages.copyWebUrlTitle.defaultMessage}
@@ -57,9 +52,6 @@ const FileMenu = ({
       )}
       <Dropdown.Item onClick={onDownload}>
         {messages.downloadTitle.defaultMessage}
-      </Dropdown.Item>
-      <Dropdown.Item onClick={openAssetInfo}>
-        {messages.infoTitle.defaultMessage}
       </Dropdown.Item>
       <Dropdown.Divider />
       <Dropdown.Item
