@@ -35,7 +35,7 @@ const TableActions = ({
 
   return (
     <>
-      <Button variant="outline-primary" onClick={openSort} iconBefore={Tune}>
+      <Button variant="outline-primary" onClick={openSort} iconBefore={Tune} className='mx-2'>
         <FormattedMessage {...messages.sortButtonLabel} />
       </Button>
       <Button iconBefore={Add} onClick={fileInputControl.click}>
