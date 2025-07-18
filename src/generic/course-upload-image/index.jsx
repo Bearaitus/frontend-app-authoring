@@ -82,7 +82,9 @@ const CourseUploadImage = ({
   );
 
   const cardImageTextBody = assetImagePath ? (
-    null
+null
+  ) : (
+null
   );
 
   return (
