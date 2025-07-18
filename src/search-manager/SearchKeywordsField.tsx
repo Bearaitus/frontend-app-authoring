@@ -13,23 +13,7 @@ const SearchKeywordsField: React.FC<{ className?: string, placeholder?: string }
   const defaultPlaceholder = usageKey ? messages.clearUsageKeyToSearch : messages.inputPlaceholder;
   const { placeholder = intl.formatMessage(defaultPlaceholder) } = props;
 
-  return (
-    <SearchField.Advanced
-      onSubmit={setSearchKeywords}
-      onChange={setSearchKeywords}
-      onClear={() => setSearchKeywords('')}
-      value={searchKeywords}
-      className={props.className}
-      disabled={!!usageKey}
-    >
-      <SearchField.Label />
-      <SearchField.Input
-        autoFocus
-        placeholder={placeholder}
-      />
-      <SearchField.ClearButton />
-      <SearchField.SubmitButton />
-    </SearchField.Advanced>
+  return (null
   );
 };
 
