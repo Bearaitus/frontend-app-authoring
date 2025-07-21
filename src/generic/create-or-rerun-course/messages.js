@@ -24,7 +24,7 @@ const messages = defineMessages({
   },
   courseOrgPlaceholder: {
     id: 'course-authoring.create-or-rerun-course.org.placeholder',
-    defaultMessage: 'например, Positive Technologies',
+    defaultMessage: 'например, Positive_Technologies',
   },
   courseOrgNoOptions: {
     id: 'course-authoring.create-or-rerun-course.org.no-options',
