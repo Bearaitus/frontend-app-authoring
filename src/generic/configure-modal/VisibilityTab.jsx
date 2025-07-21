@@ -96,7 +96,7 @@ const VisibilityTab = ({
           </>
         ) : (
           <Form.Checkbox checked={isVisibleToStaffOnly} onChange={handleChange} data-testid="visibility-checkbox">
-            <FormattedMessage {...messages.hideFromLearners} />
+            {messages.hideFromLearners.defaultMessage}
           </Form.Checkbox>
         )
       }
