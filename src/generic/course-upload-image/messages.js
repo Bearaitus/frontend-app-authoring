@@ -2,7 +2,7 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   uploadImageHelpText: {
     id: 'course-authoring.schedule-section.introducing.upload-image.help-text',
-    defaultMessage: 'Please provide the correct path and name of your {identifierFieldText} (Note: only JPEG or PNG formats are supported)',
+    defaultMessage: 'Please provide the correct path and name of your image (Note: only JPEG or PNG formats are supported)',
   },
   uploadImageFilesAndUploads: {
     id: 'course-authoring.schedule-section.introducing.upload-image.file-and-uploads',

@@ -115,11 +115,7 @@ null
           />
         </Card.Footer>
       </Card>
-      <Form.Control.Feedback>
-        {customHelpText
-          || intl.formatMessage(messages.uploadImageHelpText, {
-            identifierFieldText,
-          })}
+      <Form.Control.Feedback>{messages.uploadImageHelpText.defaultMessage}
       </Form.Control.Feedback>
     </Form.Group>
   );
