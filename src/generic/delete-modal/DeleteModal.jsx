@@ -18,8 +18,8 @@ const DeleteModal = ({
   btnDefaultLabel,
   btnPendingLabel,
 }) => {
-  const modalTitle = title || messages.title({ category });
-  const modalDescription = description || messages.description({ category });
+  const modalTitle = title || messages.title.defaultMessage;
+  const modalDescription = description || messages.description.defaultMessage;
   const defaultBtnLabel = btnDefaultLabel || messages.deleteButton.defaultMessage;
   const pendingBtnLabel = btnPendingLabel || messages.pendingDeleteButton.defaultMessage;
   return (
