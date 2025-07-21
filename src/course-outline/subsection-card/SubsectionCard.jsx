@@ -231,7 +231,7 @@ const SubsectionCard = ({
                   block
                   onClick={handleNewButtonClick}
                 >
-                  New page
+                  New Page
                 </Button>
                 {enableCopyPasteUnits && showPasteUnit && (
                   <PasteComponent
