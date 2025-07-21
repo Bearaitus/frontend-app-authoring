@@ -35,7 +35,7 @@ const messages = defineMessages({
   },
   visibilitySectionTitle: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.section-visibility',
-    defaultMessage: '{visibilityTitle} Visibility',
+    defaultMessage: 'Visibility',
   },
   unitVisibility: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.unit-visibility',
@@ -124,7 +124,7 @@ const messages = defineMessages({
   },
   showEntireSubsection: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-entire-subsection',
-    defaultMessage: 'Show Entire SubSection',
+    defaultMessage: 'Show Entire Subsection',
   },
   showEntireSubsectionDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-entire-subsection-description',

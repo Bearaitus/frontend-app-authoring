@@ -56,7 +56,7 @@ const VisibilityTab = ({
   return (
     <>
       <h5 className="mt-4 text-gray-700">
-        {intl.formatMessage(messages.visibilitySectionTitle, { visibilityTitle })}
+        {messages.visibilitySectionTitle.defaultMessage}
       </h5>
       <hr />
       {

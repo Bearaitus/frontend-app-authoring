@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import { Stack, Form } from '@openedx/paragon';
 import { FormattedMessage, injectIntl, useIntl } from '@edx/frontend-platform/i18n';
-
 import { DatepickerControl, DATEPICKER_TYPES } from '../datepicker-control';
 import messages from './messages';
-
 const BasicTab = ({
   values,
   setFieldValue,
@@ -13,19 +11,15 @@ const BasicTab = ({
   isSelfPaced,
 }) => {
   const intl = useIntl();
-
   const {
     releaseDate,
     graderType,
     dueDate,
   } = values;
-
   const onChangeGraderType = (e) => setFieldValue('graderType', e.target.value);
-
   const createOptions = () => courseGraders.map((option) => (
     <option key={option} value={option}> {option} </option>
   ));
-
   return (
     <>
       {!isSelfPaced && (
@@ -58,7 +52,7 @@ const BasicTab = ({
             <h5 className="mt-4 text-gray-700"><FormattedMessage {...messages.grading} /></h5>
             <hr />
             <Form.Group>
-              <Form.Label><FormattedMessage {...messages.gradeAs} /></Form.Label>
+              <Form.Label>{messages.gradeAs.defaultMessage}</Form.Label>
               <Form.Control
                 as="select"
                 defaultValue={graderType}
@@ -98,7 +92,6 @@ const BasicTab = ({
     </>
   );
 };
-
 BasicTab.propTypes = {
   isSubsection: PropTypes.bool.isRequired,
   values: PropTypes.shape({
@@ -110,5 +103,4 @@ BasicTab.propTypes = {
   setFieldValue: PropTypes.func.isRequired,
   isSelfPaced: PropTypes.bool.isRequired,
 };
-
 export default injectIntl(BasicTab);
