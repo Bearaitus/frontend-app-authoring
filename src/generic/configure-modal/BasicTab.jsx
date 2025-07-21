@@ -24,7 +24,7 @@ const BasicTab = ({
     <>
       {!isSelfPaced && (
         <>
-          <h5 className="mt-4 text-gray-700"><FormattedMessage {...messages.releaseDateAndTime} /></h5>
+          <h5 className="mt-4 text-gray-700">{messages.releaseDateAndTime.defaultMessage}</h5>
           <hr />
           <div data-testid="release-date-stack">
             <Stack className="mt-3" direction="horizontal" gap={5}>
@@ -49,7 +49,7 @@ const BasicTab = ({
       {
         isSubsection && (
           <div>
-            <h5 className="mt-4 text-gray-700"><FormattedMessage {...messages.grading} /></h5>
+            <h5 className="mt-4 text-gray-700">{messages.grading.defaultMessage}</h5>
             <hr />
             <Form.Group>
               <Form.Label>{messages.gradeAs.defaultMessage}</Form.Label>
