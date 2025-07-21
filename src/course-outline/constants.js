@@ -19,7 +19,7 @@ export const CHECKLIST_FILTERS = /** @type {const} */ ({
 
 export const COURSE_BLOCK_NAMES = /** @type {const} */ ({
   chapter: { id: 'chapter', name: 'Module' },
-  sequential: { id: 'sequential', name: 'Section' },
+  sequential: { id: 'sequential', name: 'Part' },
   vertical: { id: 'vertical', name: 'Page' },
 });
 
