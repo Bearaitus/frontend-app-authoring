@@ -5,10 +5,7 @@ import {
   AlertModal,
   StatefulButton,
 } from '@openedx/paragon';
-import { useIntl } from '@edx/frontend-platform/i18n';
-
 import messages from './messages';
-
 const DeleteModal = ({
   category,
   isOpen,
@@ -21,13 +18,10 @@ const DeleteModal = ({
   btnDefaultLabel,
   btnPendingLabel,
 }) => {
-  const intl = useIntl();
-
-  const modalTitle = title || intl.formatMessage(messages.title, { category });
-  const modalDescription = description || intl.formatMessage(messages.description, { category });
+  const modalTitle = title || messages.title({ category });
+  const modalDescription = description || messages.description({ category });
   const defaultBtnLabel = btnDefaultLabel || messages.deleteButton.defaultMessage;
   const pendingBtnLabel = btnPendingLabel || messages.pendingDeleteButton.defaultMessage;
-
   return (
     <AlertModal
       title={modalTitle}
@@ -66,7 +60,6 @@ const DeleteModal = ({
     </AlertModal>
   );
 };
-
 DeleteModal.defaultProps = {
   category: '',
   title: '',
@@ -76,7 +69,6 @@ DeleteModal.defaultProps = {
   btnDefaultLabel: '',
   btnPendingLabel: '',
 };
-
 DeleteModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   close: PropTypes.func.isRequired,
@@ -89,5 +81,4 @@ DeleteModal.propTypes = {
   btnDefaultLabel: PropTypes.string,
   btnPendingLabel: PropTypes.string,
 };
-
 export default DeleteModal;
