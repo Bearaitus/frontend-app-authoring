@@ -1,56 +1,54 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   detailsSectionTitle: {
     id: 'course-authoring.certificates.details.section.title',
-    defaultMessage: 'Детали сертификата',
-    description: 'Название раздела',
+    defaultMessage: 'Certificate Details',
+    description: 'Section Title',
   },
   detailsCourseTitle: {
     id: 'course-authoring.certificates.details.course.title',
-    defaultMessage: 'Название курса',
-    description: 'Метка для отображения официального названия курса в разделе деталей сертификата',
+    defaultMessage: 'Course Title',
+    description: 'Label for displaying the official course title in the certificate details section',
   },
   detailsCourseTitleOverride: {
     id: 'course-authoring.certificates.details.course.title.override',
-    defaultMessage: 'Переопределение названия курса',
-    description: 'Метка для поля ввода переопределения названия курса',
+    defaultMessage: 'Course Title Override',
+    description: 'Label for the course title override input field',
   },
   detailsCourseTitleOverrideDescription: {
     id: 'course-authoring.certificates.details.course.title.override.description',
-    defaultMessage: 'Укажите альтернативу официальному названию курса для отображения на сертификатах. Оставьте поле пустым, чтобы использовать официальное название курса.',
-    description: 'Помощный текст под полем ввода переопределения названия курса',
+    defaultMessage: 'Provide an alternative to the official course title to display on certificates. Leave blank to use the official course title.',
+    description: 'Helper text below the course title override input field',
   },
   detailsCourseNumber: {
     id: 'course-authoring.certificates.details.course.number',
-    defaultMessage: 'Номер курса',
-    description: 'Метка для отображения официального номера курса в разделе деталей сертификата',
+    defaultMessage: 'Course Number',
+    description: 'Label for displaying the official course number in the certificate details section',
   },
   detailsCourseNumberOverride: {
     id: 'course-authoring.certificates.details.course.number.override',
-    defaultMessage: 'Переопределение номера курса',
-    description: 'Метка для поля ввода переопределения номера курса',
+    defaultMessage: 'Course Number Override',
+    description: 'Label for the course number override input field',
   },
   deleteCertificateConfirmationTitle: {
     id: 'course-authoring.certificates.details.confirm-modal',
-    defaultMessage: 'Удалить этот сертификат?',
-    description: 'Название модального окна подтверждения при попытке удаления сертификата',
+    defaultMessage: 'Delete this certificate?',
+    description: 'Title of the confirmation modal when attempting to delete a certificate',
   },
   deleteCertificateMessage: {
     id: 'course-authoring.certificates.details.confirm-modal.message',
-    defaultMessage: 'Удаление этого сертификата является постоянным и не может быть отменено.',
-    description: 'Предупреждающее сообщение внутри модального окна подтверждения, подчеркивающее постоянный характер действия',
+    defaultMessage: 'Deleting this certificate is permanent and cannot be undone.',
+    description: 'Warning message inside the confirmation modal, emphasizing the permanent nature of the action',
   },
   editCertificateConfirmationTitle: {
     id: 'course-authoring.certificates.details.confirm.edit',
-    defaultMessage: 'Редактировать этот сертификат?',
-    description: 'Название модального окна подтверждения при попытке редактирования уже активированного (живого) сертификата',
+    defaultMessage: 'Edit this certificate?',
+    description: 'Title of the confirmation modal when attempting to edit an already activated (live) certificate',
   },
   editCertificateMessage: {
     id: 'course-authoring.certificates.details.confirm.edit.message',
-    defaultMessage: 'Этот сертификат уже был активирован и находится в живом режиме. Вы уверены, что хотите продолжить редактирование?',
-    description: 'Сообщение, предупреждающее пользователей о последствиях редактирования сертификата, который уже жив, и запрашивающее подтверждение',
+    defaultMessage: 'This certificate has already been activated and is live. Are you sure you want to continue editing?',
+    description: 'Message warning users about the consequences of editing a certificate that is already live and requesting confirmation',
   },
 });
-
 export default messages;

@@ -1,5 +1,4 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   pageTitle: {
     id: 'course-authoring.import.page.title',
@@ -7,11 +6,11 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.import.heading.title',
-    defaultMessage: 'Импорт курса',
+    defaultMessage: 'Import Course',
   },
   headingSubtitle: {
     id: 'course-authoring.import.heading.subtitle',
-    defaultMessage: 'Инструменты',
+    defaultMessage: 'Tools',
   },
   description1: {
     id: 'course-authoring.import.description1',
@@ -19,12 +18,11 @@ const messages = defineMessages({
   },
   description2: {
     id: 'course-authoring.import.description2',
-    defaultMessage: 'Курс должен быть в формате .tar.gz. Импорт курса будет занимать определённое количество времени. Пока курс не будет импортирован, со страницы выходить нельзя (так как процесс загрузки прервется). Во время импорта курса запрещено вносить изменения в сам курс, а также проходить обучение на EdTech Academy, так как во время процесса импорта учебная платформа тренажера может подвиснуть.',
+    defaultMessage: 'The course must be in .tar.gz format. Importing a course will take a considerable amount of time.  Please do not navigate away from the page until the import is complete, as this will interrupt the process.  During the import, it is prohibited to make changes to the course itself or to engage in learning activities on EdTech Academy, as the training platform may become unresponsive.',
   },
   description3: {
     id: 'course-authoring.import.description3',
     defaultMessage: '',
   },
 });
-
 export default messages;

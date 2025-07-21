@@ -1,59 +1,57 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   headerTitle: {
     id: 'course-authoring.taxonomy-list.header.title',
-    defaultMessage: 'Таксономии',
+    defaultMessage: 'Taxonomies',
   },
   downloadTemplateButtonLabel: {
     id: 'course-authoring.taxonomy-list.button.download-template.label',
-    defaultMessage: 'Скачать шаблон',
+    defaultMessage: 'Download Template',
   },
   downloadTemplateButtonCSVLabel: {
     id: 'course-authoring.taxonomy-list.button.download-template.csv.label',
-    defaultMessage: 'Шаблон CSV',
+    defaultMessage: 'CSV Template',
   },
   downloadTemplateButtonJSONLabel: {
     id: 'course-authoring.taxonomy-list.button.download-template.json.label',
-    defaultMessage: 'Шаблон JSON',
+    defaultMessage: 'JSON Template',
   },
   downloadTemplateButtonHint: {
     id: 'course-authoring.taxonomy-list.button.download-template.hint',
-    defaultMessage: 'Скачать пример таксономии',
+    defaultMessage: 'Download sample taxonomy',
   },
   importButtonLabel: {
     id: 'course-authoring.taxonomy-list.button.import.label',
-    defaultMessage: 'Импорт',
+    defaultMessage: 'Import',
   },
   orgInputSelectDefaultValue: {
     id: 'course-authoring.taxonomy-list.select.org.default',
-    defaultMessage: 'Все таксономии',
+    defaultMessage: 'All Taxonomies',
   },
   orgAllValue: {
     id: 'course-authoring.taxonomy-list.select.org.all',
-    defaultMessage: 'Все',
+    defaultMessage: 'All',
   },
   orgUnassignedValue: {
     id: 'course-authoring.taxonomy-list.select.org.unassigned',
-    defaultMessage: 'Не назначено',
+    defaultMessage: 'Unassigned',
   },
   usageLoadingMessage: {
     id: 'course-authoring.taxonomy-list.spinner.loading',
-    defaultMessage: 'Загрузка',
+    defaultMessage: 'Loading',
   },
   taxonomyDeleteToast: {
     id: 'course-authoring.taxonomy-list.toast.delete',
-    defaultMessage: '"{name}" удалено',
+    defaultMessage: '"{name}" deleted',
   },
   taxonomyDismissLabel: {
     id: 'course-authoring.taxonomy-list.alert.dismiss',
-    defaultMessage: 'Отменить',
+    defaultMessage: 'Dismiss',
   },
   importInProgressAlertDescription: {
     id: 'course-authoring.import-tags.prompt.in-progress',
-    defaultMessage: 'Пожалуйста, оставьте это окно открытым. Мы сообщим вам, когда всё будет готово.',
-    description: 'Сообщение об ошибке, когда импорт таксономии находится в процессе.',
+    defaultMessage: 'Please keep this window open. We’ll notify you when it’s finished.',
+    description: 'Error message when taxonomy import is in progress.',
   },
 });
-
 export default messages;

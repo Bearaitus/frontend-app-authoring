@@ -1,22 +1,20 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   addNewSegmentButtonAltText: {
     id: 'course-authoring.grading-settings.add-new-segment.btn.text',
-    defaultMessage: 'Добавить новую оценку',
+    defaultMessage: 'Add New Segment',
   },
   removeSegmentButtonText: {
     id: 'course-authoring.grading-settings.remove-segment.btn.text',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Remove',
   },
   segmentFailGradingText: {
     id: 'course-authoring.grading-settings.fail-segment.text',
-    defaultMessage: 'Не пройдено',
+    defaultMessage: 'Failed',
   },
   defaultPassText: {
     id: 'course-authoring.grading-settings.default.pass.text',
-    defaultMessage: 'Пройдено',
+    defaultMessage: 'Pass',
   },
 });
-
 export default messages;

@@ -1,9 +1,8 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   scheduleTitle: {
     id: 'course-authoring.schedule.schedule-section.title',
-    defaultMessage: 'Расписание курса',
+    defaultMessage: 'Course Schedule',
   },
   scheduleDescription: {
     id: 'course-authoring.schedule.schedule-section.description',
@@ -11,68 +10,67 @@ const messages = defineMessages({
   },
   scheduleCourseStartDateLabel: {
     id: 'course-authoring.schedule.schedule-section.course-start.date.label',
-    defaultMessage: 'Дата начала курса',
+    defaultMessage: 'Course Start Date',
   },
   scheduleCourseStartDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.course-start.date.help-text',
-    defaultMessage: 'Первый день начала курса',
+    defaultMessage: 'First day the course begins',
   },
   scheduleCourseStartTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.course-start.time.label',
-    defaultMessage: 'Время начала курса',
+    defaultMessage: 'Course Start Time',
   },
   scheduleCourseEndDateLabel: {
     id: 'course-authoring.schedule.schedule-section.course-end.date.label',
-    defaultMessage: 'Дата окончания курса',
+    defaultMessage: 'Course End Date',
   },
   scheduleCourseEndDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.course-end.date.help-text',
-    defaultMessage: 'Последний день активности курса',
+    defaultMessage: 'Last day of course activity',
   },
   scheduleCourseEndTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.course-end.time.label',
-    defaultMessage: 'Время окончания курса',
+    defaultMessage: 'Course End Time',
   },
   scheduleEnrollmentStartDateLabel: {
     id: 'course-authoring.schedule.schedule-section.enrollment-start.date.label',
-    defaultMessage: 'Дата начала регистрации',
+    defaultMessage: 'Enrollment Start Date',
   },
   scheduleEnrollmentStartDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-start.help-text',
-    defaultMessage: 'Первый день, когда пользователи могут зарегистрироваться',
+    defaultMessage: 'First day users can enroll',
   },
   scheduleEnrollmentStartTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.enrollment-start.time.label',
-    defaultMessage: 'Время начала регистрации',
+    defaultMessage: 'Enrollment Start Time',
   },
   scheduleEnrollmentEndDateLabel: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.date.label',
-    defaultMessage: 'Дата окончания регистрации',
+    defaultMessage: 'Enrollment End Date',
   },
   scheduleEnrollmentEndDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.date.help-text',
-    defaultMessage: 'Последний день, когда пользователи могут зарегистрироваться.',
+    defaultMessage: 'Last day users can enroll.',
   },
   scheduleEnrollmentEndDateRestrictedHelpText: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.date.restricted.help-text',
-    defaultMessage: 'Свяжитесь с вашим менеджером партнеров {platformName}, чтобы обновить эти настройки.',
+    defaultMessage: 'Contact your partner manager {platformName} to update these settings.',
   },
   scheduleEnrollmentEndTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.enrollment-end.time.label',
-    defaultMessage: 'Время окончания регистрации',
+    defaultMessage: 'Enrollment End Time',
   },
   scheduleUpgradeDeadlineDateLabel: {
     id: 'course-authoring.schedule.schedule-section.upgrade-deadline.date.label',
-    defaultMessage: 'Дата крайнего срока апгрейда',
+    defaultMessage: 'Upgrade Deadline Date',
   },
   scheduleUpgradeDeadlineDateHelpText: {
     id: 'course-authoring.schedule.schedule-section.upgrade-deadline.date.help-text',
-    defaultMessage: 'Последний день, когда пользователи могут апгрейдить до верифицированной регистрации. Свяжитесь с вашим менеджером партнеров {platformName}, чтобы обновить эти настройки.',
+    defaultMessage: 'Last day users can upgrade to a verified track. Contact your partner manager {platformName} to update these settings.',
   },
   scheduleUpgradeDeadlineTimeLabel: {
     id: 'course-authoring.schedule.schedule-section.upgrade-deadline.time.label',
-    defaultMessage: 'Время крайнего срока апгрейда',
+    defaultMessage: 'Upgrade Deadline Time',
   },
 });
-
 export default messages;

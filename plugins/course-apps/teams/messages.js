@@ -1,179 +1,175 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   heading: {
     id: 'authoring.pagesAndResources.teams.heading',
-    defaultMessage: 'Настройка команд',
+    defaultMessage: 'Team Settings',
   },
   enableTeamsLabel: {
     id: 'authoring.pagesAndResources.teams.enableTeams.label',
-    defaultMessage: 'Команды',
+    defaultMessage: 'Teams',
   },
   enableTeamsHelp: {
     id: 'authoring.pagesAndResources.teams.enableTeams.help',
-    defaultMessage: 'Разрешить учащимся работать вместе над конкретными проектами или занятиями.',
+    defaultMessage: 'Allow learners to collaborate on specific projects or assignments.',
   },
   enableTeamsLink: {
     id: 'authoring.pagesAndResources.teams.enableTeams.link',
-    defaultMessage: 'Узнать больше о командах',
+    defaultMessage: 'Learn more about teams',
   },
   teamSize: {
     id: 'authoring.pagesAndResources.teams.teamSize.heading',
-    defaultMessage: 'Размер команды',
+    defaultMessage: 'Team Size',
   },
   maxTeamSize: {
     id: 'authoring.pagesAndResources.teams.teamSize.maxTeamSize',
-    defaultMessage: 'Максимальный размер команды',
+    defaultMessage: 'Maximum Team Size',
   },
   maxTeamSizeHelp: {
     id: 'authoring.pagesAndResources.teams.teamSize.maxTeamSizeHelp',
-    defaultMessage: 'Максимальное количество учащихся, которые могут присоединиться к команде',
+    defaultMessage: 'The maximum number of learners who can join a team.',
   },
   maxTeamSizeEmpty: {
     id: 'authoring.pagesAndResources.teams.teamSize.maxTeamSizeEmpty',
-    defaultMessage: 'Введите максимальный размер команды',
+    defaultMessage: 'Enter the maximum team size',
   },
   maxTeamSizeInvalid: {
     id: 'authoring.pagesAndResources.teams.teamSize.maxTeamSizeInvalid',
-    defaultMessage: 'Максимальный размер команды должен быть положительным числом, большим чем ноль.',
+    defaultMessage: 'Maximum team size must be a positive number greater than zero.',
   },
   maxTeamSizeTooHigh: {
     id: 'authoring.pagesAndResources.teams.teamSize.maxTeamSizeTooHigh',
-    defaultMessage: 'Максимальный размер команды не может быть больше {max}',
+    defaultMessage: 'Maximum team size cannot be greater than {max}.',
   },
   groups: {
     id: 'authoring.pagesAndResources.teams.groups.heading',
-    defaultMessage: 'Группы',
+    defaultMessage: 'Groups',
   },
   groupsHelp: {
     id: 'authoring.pagesAndResources.teams.groups.help',
-    defaultMessage: 'Группы - это пространства, где пользователи могут создавать или присоединяться к командам.',
+    defaultMessage: 'Groups are spaces where users can create or join teams.',
   },
   configureGroup: {
     id: 'authoring.pagesAndResources.teams.configureGroup.heading',
-    defaultMessage: 'Настройка группы',
+    defaultMessage: 'Configure Group',
   },
   groupFormNameLabel: {
     id: 'authoring.pagesAndResources.teams.group.name.label',
-    defaultMessage: 'Название',
+    defaultMessage: 'Name',
   },
   groupFormNameHelp: {
     id: 'authoring.pagesAndResources.teams.group.name.help',
-    defaultMessage: 'Выберите уникальное название для этой группы',
+    defaultMessage: 'Choose a unique name for this group.',
   },
   groupFormNameEmpty: {
     id: 'authoring.pagesAndResources.teams.group.name.error.empty',
-    defaultMessage: 'Введите уникальное название для этой группы',
+    defaultMessage: 'Enter a unique name for this group.',
   },
   groupFormNameExists: {
     id: 'authoring.pagesAndResources.teams.group.name.error.exists',
-    defaultMessage: 'Похоже, это название уже используется',
+    defaultMessage: 'It looks like that name is already taken.',
   },
   groupFormDescriptionLabel: {
     id: 'authoring.pagesAndResources.teams.group.description.label',
-    defaultMessage: 'Описание',
+    defaultMessage: 'Description',
   },
   groupFormDescriptionHelp: {
     id: 'authoring.pagesAndResources.teams.group.description.help',
-    defaultMessage: 'Введите подробности о этой группе',
+    defaultMessage: 'Enter details about this group.',
   },
   groupFormDescriptionError: {
     id: 'authoring.pagesAndResources.teams.group.description.error',
-    defaultMessage: 'Введите описание для этой группы',
+    defaultMessage: 'Enter a description for this group.',
   },
   groupFormTypeLabel: {
     id: 'authoring.pagesAndResources.teams.group.type.label',
-    defaultMessage: 'Тип',
+    defaultMessage: 'Type',
   },
   groupFormTypeHelp: {
     id: 'authoring.pagesAndResources.teams.group.type.help',
-    defaultMessage: 'Контролируйте, кто может видеть, создавать и присоединяться к командам',
+    defaultMessage: 'Control who can see, create, and join teams.',
   },
   groupTypeOpen: {
     id: 'authoring.pagesAndResources.teams.group.types.open',
-    defaultMessage: 'Открытая',
+    defaultMessage: 'Open',
   },
   groupTypeOpenManaged: {
     id: 'authoring.pagesAndResources.teams.group.types.open_managed',
-    defaultMessage: 'Открытая с управлением',
+    defaultMessage: 'Open (Managed)',
   },
   groupTypeOpenManagedDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.open_managed.description',
-    defaultMessage: 'Только персонал курса может создавать команды. Пользователи могут видеть, присоединяться и покидать команды.',
+    defaultMessage: 'Only course staff can create teams. Users can see, join, and leave teams.',
   },
   groupTypeOpenDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.open.description',
-    defaultMessage: 'Пользователи могут создавать, присоединяться, покидать и видеть другие команды',
+    defaultMessage: 'Users can create, join, leave, and see other teams.',
   },
   groupTypePublicManaged: {
     id: 'authoring.pagesAndResources.teams.group.types.public_managed',
-    defaultMessage: 'Публичная с управлением',
+    defaultMessage: 'Public (Managed)',
   },
   groupTypePublicManagedDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.public_managed.description',
-    defaultMessage: 'Только персонал курса может контролировать команды и членство. Пользователи могут видеть другие команды.',
+    defaultMessage: 'Only course staff can control teams and membership. Users can see other teams.',
   },
   groupTypePrivateManaged: {
     id: 'authoring.pagesAndResources.teams.group.types.private_managed',
-    defaultMessage: 'Частная с управлением',
+    defaultMessage: 'Private (Managed)',
   },
   groupTypePrivateManagedDescription: {
     id: 'authoring.pagesAndResources.teams.group.types.private_managed.description',
-    defaultMessage: 'Только персонал курса может контролировать команды, членство и видеть другие команды',
+    defaultMessage: 'Only course staff can control teams, membership, and see other teams.',
   },
   groupFormMaxSizeLabel: {
     id: 'authoring.pagesAndResources.teams.group.maxSize.label',
-    defaultMessage: 'Максимальный размер команды (необязательно)',
+    defaultMessage: 'Maximum Team Size (Optional)',
   },
   groupFormMaxSizeHelp: {
     id: 'authoring.pagesAndResources.teams.group.maxSize.help',
-    defaultMessage: 'Переопределить глобальный максимальный размер команды',
+    defaultMessage: 'Override the global maximum team size.',
   },
   addGroup: {
     id: 'authoring.pagesAndResources.teams.addGroup.button',
-    defaultMessage: 'Добавить группу',
+    defaultMessage: 'Add Group',
   },
   deleteAlt: {
     id: 'authoring.pagesAndResources.teams.group.delete',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Delete',
   },
   expandAlt: {
     id: 'authoring.pagesAndResources.teams.group.expand',
-    defaultMessage: 'Расширить редактор группы',
+    defaultMessage: 'Expand Group Editor',
   },
   collapseAlt: {
     id: 'authoring.pagesAndResources.teams.group.collapse',
-    defaultMessage: 'Закрыть редактор группы',
+    defaultMessage: 'Collapse Group Editor',
   },
   delete: {
     id: 'authoring.pagesAndResources.teams.deleteGroup.initiateDelete',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Delete',
   },
   cancel: {
     id: 'authoring.pagesAndResources.teams.deleteGroup.cancel-delete.button',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   groupDeleteHeading: {
     id: 'authoring.pagesAndResources.teams.deleteGroup.heading',
-    defaultMessage: 'Удалить эту группу?',
+    defaultMessage: 'Delete this Group?',
   },
   groupDeleteBody: {
     id: 'authoring.pagesAndResources.teams.deleteGroup.body',
-    defaultMessage: `edX рекомендует не удалять группы после начала курса.
-    Ваша группа больше не будет видна в LMS, и пользователи не смогут покинуть команды, связанные с ней.
-    Пожалуйста, удалите учащихся из команд перед удалением связанной группы.`,
-    description: 'Сообщение, отображаемое администраторам при удалении группы. Убедитесь, что включили разрывы строк, чтобы окончательный текст был отображен правильно.',
+    defaultMessage: ``,
+    description: 'Message displayed to administrators when deleting a group.  Ensure line breaks are included for proper rendering of the final text.',
   },
   noGroupsErrorTitle: {
     id: 'authoring.pagesAndResources.teams.enableGroups.error.noGroupsFound.title',
-    defaultMessage: 'Нет групп',
-    description: 'Название сообщения об ошибке, отображаемого, когда пользователь пытается включить команды, но нет определенной группы.',
+    defaultMessage: 'No Groups',
+    description: 'Title of error message shown when a user tries to enable teams but no groups are defined.',
   },
   noGroupsErrorMessage: {
     id: 'authoring.pagesAndResources.teams.enableGroups.error.noGroupsFound.message',
-    defaultMessage: 'Добавьте одну или несколько групп, чтобы включить команды.',
-    description: 'Текст сообщения об ошибке, отображаемого, когда пользователь пытается включить команды, но нет определенной группы.',
+    defaultMessage: 'Add one or more groups to enable teams.',
+    description: 'Error message text shown when a user tries to enable teams but no groups are defined.',
   },
 });
-
 export default messages;

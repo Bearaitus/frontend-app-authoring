@@ -15,39 +15,39 @@ export const ProblemTypeKeys = StrictDict({
 export type ProblemType = typeof ProblemTypeKeys[keyof typeof ProblemTypeKeys];
 export const ProblemTypes = StrictDict({
   [ProblemTypeKeys.SINGLESELECT]: {
-    title: 'Выбор одного ответа',
+    title: 'Single Choice',
     preview: singleSelect,
-    previewDescription: 'Пользователям необходимо выбрать правильный ответ из списка возможных вариантов.',
-    description: 'Введите ваши ответы для выбора одного варианта и выберите правильные варианты. Пользователи должны выбрать только один правильный ответ.',
+    previewDescription: 'Users must select the correct answer from a list of possible options.',
+    description: 'Enter your answers for a single-choice question and select the correct option. Users must select only one correct answer.',
     helpLink: '',
     prev: ProblemTypeKeys.TEXTINPUT,
     next: ProblemTypeKeys.MULTISELECT,
     template: basicOlxTemplates.singleSelect,
   },
   [ProblemTypeKeys.MULTISELECT]: {
-    title: 'Выбор нескольких ответов',
+    title: 'Multiple Choice',
     preview: multiSelect,
-    previewDescription: 'Пользователям необходимо выбрать все правильные ответы из списка возможных вариантов.',
-    description: 'Введите ваши ответы для множественного выбора и выберите правильные варианты. Пользователи должны выбрать все правильные ответы.',
+    previewDescription: 'Users must select all the correct answers from a list of possible options.',
+    description: 'Enter your answers for a multiple-choice question and select the correct option. Users must select all correct answers.',
     helpLink: '',
     next: ProblemTypeKeys.DROPDOWN,
     prev: ProblemTypeKeys.SINGLESELECT,
     template: basicOlxTemplates.multiSelect,
   },
   [ProblemTypeKeys.TEXTINPUT]: {
-    title: 'Вопрос с текстовым ответом',
+    title: 'Text Input Question',
     preview: textInput,
-    previewDescription: 'Укажите один или несколько правильных текстовых ответов, включая числа и специальные символы (кроме знака &), вводимые в поле ответа.',
-    description: 'Введите ваши ответы для текстового ввода и выберите правильные варианты. Пользователи должны ввести только один правильный ответ.',
+    previewDescription: 'Enter one or more correct text answers, including numbers and special characters (except the & symbol), to be entered in the answer field.',
+    description: 'Enter your answers for text input and select the correct option. Users must enter only one correct answer.',
     helpLink: '',
     prev: ProblemTypeKeys.MULTISELECT,
     next: ProblemTypeKeys.ADVANCED,
     template: basicOlxTemplates.textInput,
   },
   [ProblemTypeKeys.ADVANCED]: {
-    title: 'Продвинутая задача',
+    title: 'Advanced Problem',
     preview: ('<div />'),
-    description: 'Продвинутый тип задачи',
+    description: 'Advanced question type',
     helpLink: '',
   },
 });
@@ -66,38 +66,38 @@ export function isAdvancedProblemType(pt: ProblemType | AdvancedProblemType): pt
 }
 export const AdvanceProblems = StrictDict({
   [AdvanceProblemKeys.BLANK]: {
-    title: 'Пустая задача',
+    title: 'Blank Problem',
     status: '',
     template: '<problem></problem>',
   },
   [AdvanceProblemKeys.CIRCUITSCHEMATIC]: {
-    title: 'Создатель электрических схем',
-    status: 'Не поддерживается',
+    title: 'Circuit Schematic Builder',
+    status: 'Not Supported',
     template: advancedOlxTemplates.circuitSchematic,
   },
   [AdvanceProblemKeys.JSINPUT]: {
-    title: 'Настраиваемый JavaScript-отображение и оценка',
+    title: 'Custom JavaScript Rendering and Grading',
     status: '',
     template: advancedOlxTemplates.jsInputResponse,
   },
   [AdvanceProblemKeys.CUSTOMGRADER]: {
-    title: 'Пользовательская оценка на Python',
-    status: 'Предварительная версия',
+    title: 'Custom Grading in Python',
+    status: 'Preview',
     template: advancedOlxTemplates.customGrader,
   },
   [AdvanceProblemKeys.IMAGE]: {
-    title: 'Ввод с картой изображения',
-    status: 'Не поддерживается',
+    title: 'Image Mapping Input',
+    status: 'Not Supported',
     template: advancedOlxTemplates.imageResponse,
   },
   [AdvanceProblemKeys.FORMULA]: {
-    title: 'Ввод математических выражений',
+    title: 'Mathematical Expression Input',
     status: '',
     template: advancedOlxTemplates.formulaResponse,
   },
   [AdvanceProblemKeys.PROBLEMWITHHINT]: {
-    title: 'Задача с адаптивной подсказкой',
-    status: 'Не поддерживается',
+    title: 'Problem with Adaptive Hint',
+    status: 'Not Supported',
     template: advancedOlxTemplates.problemWithHint,
   },
 } as const);
@@ -108,11 +108,11 @@ export const ShowAnswerTypesKeys = StrictDict({
 export const ShowAnswerTypes = StrictDict({
   [ShowAnswerTypesKeys.NEVER]: {
     id: 'authoring.problemeditor.settings.showanswertype.never',
-    defaultMessage: 'Никогда не показывать',
+    defaultMessage: 'Never Show',
   },
   [ShowAnswerTypesKeys.AFTER_ALL_ATTEMPTS_OR_CORRECT]: {
     id: 'authoring.problemeditor.settings.showanswertype.after_all_attempts_or_correct',
-    defaultMessage: 'Показать после правильной или всех попыток',
+    defaultMessage: 'Show After All Attempts or Correct',
   },
 } as const);
 export const RandomizationTypesKeys = StrictDict({
@@ -124,19 +124,19 @@ export const RandomizationTypesKeys = StrictDict({
 export const RandomizationTypes = StrictDict({
   [RandomizationTypesKeys.ALWAYS]: {
     id: 'authoring.problemeditor.settings.RandomizationTypes.always',
-    defaultMessage: 'Всегда',
+    defaultMessage: 'Always',
   },
   [RandomizationTypesKeys.NEVER]: {
     id: 'authoring.problemeditor.settings.RandomizationTypes.never',
-    defaultMessage: 'Никогда',
+    defaultMessage: 'Never',
   },
   [RandomizationTypesKeys.ONRESET]: {
     id: 'authoring.problemeditor.settings.RandomizationTypes.onreset',
-    defaultMessage: 'При сбросе',
+    defaultMessage: 'On Reset',
   },
   [RandomizationTypesKeys.PERSTUDENT]: {
     id: 'authoring.problemeditor.settings.RandomizationTypes.perstudent',
-    defaultMessage: 'Для каждого пользователя',
+    defaultMessage: 'Per Student',
   },
 } as const);
 export const RichTextProblems = [ProblemTypeKeys.SINGLESELECT, ProblemTypeKeys.MULTISELECT] as const;
@@ -150,7 +150,7 @@ export const settingsOlxAttributes = [
   '@_attempts_before_showanswer_button',
 ] as const;
 export const ignoredOlxAttributes = [
-  // '@_markdown',  // Не уверен, что безопасно игнорировать это; некоторые тесты показывают, что это не так.
+  // '@_markdown',  // Not sure if it's safe to ignore this; some tests show that it's not.
   '@_url_name',
   '@_x-is-pointer-node',
 ] as const;

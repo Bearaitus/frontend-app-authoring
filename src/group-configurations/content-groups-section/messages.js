@@ -1,86 +1,84 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   addNewGroup: {
     id: 'course-authoring.group-configurations.content-groups.add-new-group',
-    defaultMessage: 'Новая группа контента',
-    description: 'Метка для добавления новой группы контента.',
+    defaultMessage: 'New Content Group',
+    description: 'Label for adding a new content group.',
   },
   newGroupHeader: {
     id: 'course-authoring.group-configurations.content-groups.new-group.header',
-    defaultMessage: 'Название группы контента *',
-    description: 'Заголовок текста для поля ввода для ввода названия новой группы контента.',
+    defaultMessage: 'Content Group Name *',
+    description: 'Text header for the input field to enter the name of the new content group.',
   },
   newGroupInputPlaceholder: {
     id: 'course-authoring.group-configurations.content-groups.new-group.input.placeholder',
-    defaultMessage: 'Это название группы',
-    description: 'Плейсхолдер текста для поля ввода, где вводится название новой группы контента.',
+    defaultMessage: 'This group name',
+    description: 'Placeholder text for the input field where the name of the new content group is entered.',
   },
   invalidMessage: {
     id: 'course-authoring.group-configurations.content-groups.new-group.invalid-message',
-    defaultMessage: 'Все группы должны иметь уникальное название.',
-    description: 'Сообщение об ошибке, отображаемое, когда название новой группы контента не уникально.',
+    defaultMessage: 'All groups must have a unique name.',
+    description: 'Error message displayed when the name of the new content group is not unique.',
   },
   cancelButton: {
     id: 'course-authoring.group-configurations.content-groups.new-group.cancel',
-    defaultMessage: 'Отмена',
-    description: 'Метка для кнопки отмены при создании новой группы контента.',
+    defaultMessage: 'Cancel',
+    description: 'Label for the cancel button when creating a new content group.',
   },
   deleteButton: {
     id: 'course-authoring.group-configurations.content-groups.edit-group.delete',
-    defaultMessage: 'Удалить',
-    description: 'Метка для кнопки удаления при редактировании группы контента.',
+    defaultMessage: 'Delete',
+    description: 'Label for the delete button when editing a content group.',
   },
   createButton: {
     id: 'course-authoring.group-configurations.content-groups.new-group.create',
-    defaultMessage: 'Создать',
-    description: 'Метка для кнопки создания при создании новой группы контента.',
+    defaultMessage: 'Create',
+    description: 'Label for the create button when creating a new content group.',
   },
   saveButton: {
     id: 'course-authoring.group-configurations.content-groups.edit-group.save',
-    defaultMessage: 'Сохранить',
-    description: 'Метка для кнопки сохранения при редактировании группы контента.',
+    defaultMessage: 'Save',
+    description: 'Label for the save button when editing a content group.',
   },
   requiredError: {
     id: 'course-authoring.group-configurations.content-groups.new-group.required-error',
-    defaultMessage: 'Название группы обязательно',
-    description: 'Сообщение об ошибке, отображаемое, когда название группы контента обязательно, но не предоставлено.',
+    defaultMessage: 'Group name is required',
+    description: 'Error message displayed when a content group name is required but not provided.',
   },
   alertGroupInUsage: {
     id: 'course-authoring.group-configurations.content-groups.edit-group.alert-group-in-usage',
-    defaultMessage: 'Эта группа контента используется в одной или нескольких единицах.',
-    description: 'Сообщение предупреждения, отображаемое при попытке удалить группу контента, которая в настоящее время используется одной или несколькими единицами.',
+    defaultMessage: 'This content group is in use in one or more units.',
+    description: 'Warning message displayed when trying to delete a content group that is currently in use by one or more units.',
   },
   deleteRestriction: {
     id: 'course-authoring.group-configurations.content-groups.delete-restriction',
-    defaultMessage: 'Нельзя удалить, если используется в единице',
-    description: 'Сообщение, указывающее, что группу контента нельзя удалить, потому что она в настоящее время используется единицей.',
+    defaultMessage: 'Cannot delete if in use by a unit',
+    description: 'Message indicating that a content group cannot be deleted because it is currently in use by a unit.',
   },
   emptyContentGroups: {
     id: 'course-authoring.group-configurations.container.empty-content-groups',
-    defaultMessage: 'В {outlineComponentLink}, используйте эту группу для контроля доступа к компоненту.',
-    description: 'Сообщение, отображаемое, когда нет доступных групп контента, предлагающее, как использовать их в плане курса.',
+    defaultMessage: 'In {outlineComponentLink}, use a group to control access to the content.',
+    description: 'Message displayed when there are no content groups available, suggesting how to use them in the course outline.',
   },
   courseOutline: {
     id: 'course-authoring.group-configurations.container.course-outline',
-    defaultMessage: 'План курса',
-    description: 'Метка для ссылки на план курса.',
+    defaultMessage: 'Course Outline',
+    description: 'Label for the course outline link.',
   },
   actionEdit: {
     id: 'course-authoring.group-configurations.container.action.edit',
-    defaultMessage: 'Редактировать',
-    description: 'Метка для действия редактирования в контейнере.',
+    defaultMessage: 'Edit',
+    description: 'Label for the edit action in the container.',
   },
   actionDelete: {
     id: 'course-authoring.group-configurations.container.action.delete',
-    defaultMessage: 'Удалить',
-    description: 'Метка для действия удаления в контейнере.',
+    defaultMessage: 'Delete',
+    description: 'Label for the delete action in the container.',
   },
   subtitleModalDelete: {
     id: 'course-authoring.group-configurations.container.delete-modal.subtitle',
-    defaultMessage: 'группа контента',
-    description: 'Подстрока для модального окна удаления, указывающая тип сущности, которая удаляется.',
+    defaultMessage: 'content group',
+    description: 'Subtext for the delete modal, indicating the type of entity being deleted.',
   },
 });
-
 export default messages;

@@ -1,18 +1,16 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.course-team.headingTitle',
-    defaultMessage: 'Команда курса',
+    defaultMessage: 'Course Team',
   },
   headingSubtitle: {
     id: 'course-authoring.course-team.subTitle',
-    defaultMessage: 'Настройки',
+    defaultMessage: 'Settings',
   },
   addNewMemberButton: {
     id: 'course-authoring.course-team.button.new-team-member',
-    defaultMessage: 'Новый член команды',
+    defaultMessage: 'New Team Member',
   },
 });
-
 export default messages;

@@ -1,62 +1,60 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.certificates.heading.title',
-    defaultMessage: 'Сертификаты',
+    defaultMessage: 'Certificates',
   },
   headingTitleTabText: {
     id: 'course-authoring.certificates.heading.title.tab.text',
-    defaultMessage: 'Сертификаты курса',
+    defaultMessage: 'Course Certificates',
   },
   headingSubtitle: {
     id: 'course-authoring.certificates.heading.subtitle',
-    defaultMessage: 'Настройки',
+    defaultMessage: 'Settings',
   },
   headingActionsPreview: {
     id: 'course-authoring.certificates.heading.action.button.preview',
-    defaultMessage: 'Просмотр сертификата',
+    defaultMessage: 'Preview Certificate',
   },
   headingActionsDeactivate: {
     id: 'course-authoring.certificates.heading.action.button.deactivate',
-    defaultMessage: 'Деактивировать',
+    defaultMessage: 'Deactivate',
   },
   headingActionsActivate: {
     id: 'course-authoring.certificates.heading.action.button.activate',
-    defaultMessage: 'Активировать',
+    defaultMessage: 'Activate',
   },
   noCertificatesText: {
     id: 'course-authoring.certificates.nocertificate.text',
-    defaultMessage: 'Вы ещё не добавили ни одного сертификата к этому курсу.',
+    defaultMessage: 'You have not added any certificates to this course yet.',
   },
   setupCertificateBtn: {
     id: 'course-authoring.certificates.setup.certificate.button',
-    defaultMessage: 'Добавить первый сертификат',
+    defaultMessage: 'Add First Certificate',
   },
   withoutModesText: {
     id: 'course-authoring.certificates.without.modes.text',
-    defaultMessage: 'Этот курс не использует режим, который предлагает сертификаты.',
+    defaultMessage: 'This course does not use a mode that offers certificates.',
   },
   cardCreate: {
     id: 'course-authoring.certificates.create',
-    defaultMessage: 'Создать',
+    defaultMessage: 'Create',
   },
   cardCancel: {
     id: 'course-authoring.certificates.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   deleteTooltip: {
     id: 'course-authoring.certificates.signatories.delete.tooltip',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Delete',
   },
   editTooltip: {
     id: 'course-authoring.certificates.signatories.edit.tooltip',
-    defaultMessage: 'Редактировать',
+    defaultMessage: 'Edit',
   },
   saveTooltip: {
     id: 'course-authoring.certificates.signatories.save.tooltip',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
 });
-
 export default messages;

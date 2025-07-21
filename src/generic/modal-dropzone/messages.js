@@ -2,33 +2,33 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   uploadImageDropzoneText: {
     id: 'course-authoring.certificates.modal-dropzone.text',
-    defaultMessage: 'Перетащите изображение сюда или нажмите для загрузки',
-    description: 'Описание блока перетаскивания',
+    defaultMessage: 'Drag an image here or click to upload',
+    description: 'Dropzone block description',
   },
   uploadImageDropzoneAlt: {
     id: 'course-authoring.certificates.modal-dropzone.dropzone-alt',
-    defaultMessage: 'Загруженное изображение для сертификата курса',
-    description: 'Описание загруженного изображения',
+    defaultMessage: 'Uploaded course certificate image',
+    description: 'Description of the uploaded image',
   },
   uploadImageValidationText: {
     id: 'course-authoring.certificates.modal-dropzone.validation.text',
-    defaultMessage: 'Можно загружать только файлы типов {types}. Пожалуйста, выберите файл с расширением {extensions} для загрузки.',
-    description: 'Сообщение об ошибке при выборе неверного типа файла',
+    defaultMessage: 'Only {types} files can be uploaded. Please select a file with extensions {extensions} to upload.',
+    description: 'Error message when choosing the wrong file type',
   },
   cancelModal: {
     id: 'course-authoring.certificates.modal-dropzone.cancel.modal',
-    defaultMessage: 'Отмена',
-    description: 'Текст для кнопки отмены в модальном окне',
+    defaultMessage: 'Cancel',
+    description: 'Text for the cancel button in the modal',
   },
   uploadModal: {
     id: 'course-authoring.certificates.modal-dropzone.upload.modal',
-    defaultMessage: 'Загрузить',
-    description: 'Текст для кнопки загрузки в модальном окне',
+    defaultMessage: 'Upload',
+    description: 'Text for the upload button in the modal',
   },
   uploadImageDropzoneInvalidSizeMore: {
     id: 'course-authoring.certificates.modal-dropzone.validation.invalid-size-more',
-    defaultMessage: 'Размер изображения должен быть меньше {maxSize}MB.',
-    description: 'Сообщение об ошибке, когда размер загружаемого изображения превышает лимит',
+    defaultMessage: 'The image size must be less than {maxSize}MB.',
+    description: 'Error message when the uploaded image size exceeds the limit',
   },
 });
 export default messages;

@@ -1,9 +1,8 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   basicTitle: {
     id: 'course-authoring.schedule.basic.title',
-    defaultMessage: 'Базовая информация',
+    defaultMessage: 'Basic Information',
   },
   basicDescription: {
     id: 'course-authoring.schedule.basic.description',
@@ -11,32 +10,31 @@ const messages = defineMessages({
   },
   basicEmailIcon: {
     id: 'course-authoring.schedule.basic.email-icon',
-    defaultMessage: 'Иконка электронной почты для приглашения студентов',
+    defaultMessage: 'Email icon for inviting students',
   },
   courseOrganization: {
     id: 'course-authoring.schedule.basic.organization',
-    defaultMessage: 'Компания-разработчик курса',
+    defaultMessage: 'Course-Offering Organization',
   },
   courseNumber: {
     id: 'course-authoring.schedule.basic.course-number',
-    defaultMessage: 'Идентификатор курса',
+    defaultMessage: 'Course Identifier',
   },
   courseRun: {
     id: 'course-authoring.schedule.basic.course-run',
-    defaultMessage: 'Направление в кибербезопасности',
+    defaultMessage: 'Cybersecurity Run',
   },
   basicBannerTitle: {
     id: 'course-authoring.schedule.basic.banner.title',
-    defaultMessage: 'Продвижение вашего курса с помощью edX',
+    defaultMessage: 'Promote Your Course with edX',
   },
   basicBannerText: {
     id: 'course-authoring.schedule.basic.banner.text',
-    defaultMessage: 'Страница суммирования вашего курса не будет доступна для просмотра до тех пор, пока ваш курс не будет объявлен. Чтобы предоставить контент для страницы и просмотреть ее, следуйте инструкциям, предоставленным вашим менеджером программы. Пожалуйста, обратите внимание, что изменения здесь могут занять до рабочего дня, чтобы появиться на странице суммирования вашего курса.',
+    defaultMessage: 'Your course summary page will not be visible until your course is published. To provide content for the page and view it, please follow the instructions provided by your Program Manager. Please note that changes here may take up to a business day to appear on your course summary page.',
   },
   basicPromotionButton: {
     id: 'course-authoring.schedule.basic.promotion.button',
-    defaultMessage: 'Пригласить ваших студентов',
+    defaultMessage: 'Invite Your Students',
   },
 });
-
 export default messages;

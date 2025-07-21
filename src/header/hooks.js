@@ -14,16 +14,16 @@ export const useSettingMenuItems = courseId => {
   const items = [
     {
       href: `${studioBaseUrl}/settings/grading/${courseId}`,
-      title: 'Оценка',
+      title: 'Grading',
     },
     {
       href: `${studioBaseUrl}/assets/${courseId}`,
-      title: 'Дополнительные файлы',
+      title: 'Additional Files',
     },
     ...(canAccessAdvancedSettings === true
       ? [{
         href: `${studioBaseUrl}/settings/advanced/${courseId}`,
-        title: 'Расширенные настройки',
+        title: 'Advanced Settings',
       }] : []
     ),
   ];
@@ -35,11 +35,11 @@ export const useToolsMenuItems = courseId => {
   const items = [
     {
       href: `${studioBaseUrl}/import/${courseId}`,
-      title: 'Импорт курса',
+      title: 'Import Course',
     },
     {
       href: `${studioBaseUrl}/export/${courseId}`,
-      title: 'Экспорт курса',
+      title: 'Export Course',
     },
   ];
   return items;

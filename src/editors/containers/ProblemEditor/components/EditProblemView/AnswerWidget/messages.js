@@ -1,76 +1,74 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   answerWidgetTitle: {
     id: 'authoring.answerwidget.answer.answerWidgetTitle',
-    defaultMessage: 'Ответы',
-    description: 'Основное название для виджета ответов',
+    defaultMessage: 'Answers',
+    description: 'Main title for the answer widget',
   },
   answerHelperText: {
     id: 'authoring.problemEditor.answerWidget.answer.answerHelperText',
     defaultMessage: '{helperText}',
-    description: 'Помощный текст, описывающий, как пользователь должен вводить ответы',
+    description: 'Helper text describing how the user should enter answers',
   },
   addAnswerButtonText: {
     id: 'authoring.answerwidget.answer.addAnswerButton',
-    defaultMessage: 'Добавить ответ',
-    description: 'Текст кнопки для добавления ответа',
+    defaultMessage: 'Add Answer',
+    description: 'Text for the button to add an answer',
   },
   answerTextboxPlaceholder: {
     id: 'authoring.answerwidget.answer.placeholder',
-    defaultMessage: 'Введите ответ',
-    description: 'Плейсхолдер для текстового поля ответа',
+    defaultMessage: 'Enter answer',
+    description: 'Placeholder for the answer textbox',
   },
   feedbackPlaceholder: {
     id: 'authoring.answerwidget.feedback.placeholder',
-    defaultMessage: 'Сообщение обратной связи',
-    description: 'Плейсхолдер для текста обратной связи',
+    defaultMessage: 'Feedback Message',
+    description: 'Placeholder for the feedback text',
   },
   feedbackToggleIconAltText: {
     id: 'authoring.answerwidget.feedback.icon.alt',
-    defaultMessage: 'Переключить обратную связь',
-    description: 'Альтернативный текст для иконки переключения обратной связи',
+    defaultMessage: 'Toggle Feedback',
+    description: 'Alt text for the feedback toggle icon',
   },
   answerDeleteIconAltText: {
     id: 'authoring.answerwidget.answer.delete.icon.alt',
-    defaultMessage: 'Удалить ответ',
-    description: 'Альтернативный текст для иконки удаления ответа',
+    defaultMessage: 'Delete Answer',
+    description: 'Alt text for the delete answer icon',
   },
   selectedFeedbackLabel: {
     id: 'authoring.answerwidget.feedback.selected.label',
-    defaultMessage: 'Показать следующую обратную связь, когда {answerId} {boldunderline}:',
-    description: 'Метка для обратной связи, если вариант выбран',
+    defaultMessage: 'Show following feedback when {answerId} {boldunderline}:',
+    description: 'Label for feedback if the variant is selected',
   },
   selectedFeedbackLabelBoldUnderlineText: {
     id: 'authoring.answerwidget.feedback.selected.label.boldunderline',
-    defaultMessage: 'выбран',
-    description: 'Жирный и подчеркнутый текст для обратной связи, если вариант выбран',
+    defaultMessage: 'is selected',
+    description: 'Bold and underlined text for feedback if the variant is selected',
   },
   unSelectedFeedbackLabel: {
     id: 'authoring.answerwidget.feedback.unselected.label',
-    defaultMessage: 'Показать следующую обратную связь, когда {answerId} {boldunderline}:',
-    description: 'Метка для обратной связи, если вариант не выбран',
+    defaultMessage: 'Show following feedback when {answerId} {boldunderline}:',
+    description: 'Label for feedback if the variant is not selected',
   },
   unSelectedFeedbackLabelBoldUnderlineText: {
     id: 'authoring.answerwidget.feedback.unselected.label.boldunderline',
-    defaultMessage: 'не выбран',
-    description: 'Жирный и подчеркнутый текст для обратной связи, если вариант не выбран',
+    defaultMessage: 'is not selected',
+    description: 'Bold and underlined text for feedback if the variant is not selected',
   },
   addAnswerRangeButtonText: {
     id: 'authoring.answerwidget.answer.addAnswerRangeButton',
-    defaultMessage: 'Добавить диапазон ответов',
-    description: 'Текст кнопки для добавления диапазона ответов',
+    defaultMessage: 'Add Answer Range',
+    description: 'Text for the button to add an answer range',
   },
   answerRangeTextboxPlaceholder: {
     id: 'authoring.answerwidget.answer.answerRangeTextboxPlaceholder',
-    defaultMessage: 'Введите диапазон ответов',
-    description: 'Текст для подсказки пользователя о добавлении диапазона ответов в текстовое поле',
+    defaultMessage: 'Enter answer range',
+    description: 'Text to prompt user to add a range of answers in the textbox',
   },
   answerRangeHelperText: {
     id: 'authoring.answerwidget.answer.answerRangeHelperText',
-    defaultMessage: 'Введите минимальное и максимальное значения, разделенные запятой. Используйте скобку, чтобы включить число рядом с ним в диапазон, или круглую скобку, чтобы исключить число. Например, чтобы определить правильные ответы как 5, 6 или 7, но не 8, укажите [5,8).',
-    description: 'Помощный текст, описывающий использование диапазонов ответов',
+    defaultMessage: 'Enter the minimum and maximum values separated by a comma. Use a bracket to include the number next to it in the range, or a parenthesis to exclude the number. For example, to define correct answers as 5, 6, or 7, but not 8, enter [5,8).',
+    description: 'Helper text describing how to use answer ranges',
   },
 });
-
 export default messages;

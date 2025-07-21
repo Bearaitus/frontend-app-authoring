@@ -82,7 +82,7 @@ const StudioHome = () => {
           disabled={showNewCourseContainer}
           onClick={() => setShowNewCourseContainer(true)}
         >
-          Новый курс
+          New Course
         </Button>,
       );
     }

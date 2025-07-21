@@ -1,14 +1,12 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   rerunCourseDescription: {
     id: 'course-authoring.course-rerun.form.description',
-    defaultMessage: 'Укажите идентифицирующую информацию для этого повторного запуска курса. Оригинальный курс не затрагивается никаким образом повторным запуском. {strong}',
+    defaultMessage: 'Provide identifying information for this course rerun. The original course is not affected in any way by the rerun. {strong}',
   },
   rerunCourseDescriptionStrong: {
     id: 'course-authoring.course-rerun.form.description.strong',
-    defaultMessage: 'Примечание: Вместе Компания-разработчик курса, номер курса и запуск курса должны уникально идентифицировать этот новый экземпляр курса.',
+    defaultMessage: 'Note: Together, the Course Affiliation, Course Number, and Course Run must uniquely identify this new instance of the course.',
   },
 });
-
 export default messages;

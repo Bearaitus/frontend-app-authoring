@@ -1,142 +1,140 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   sidebarTitleDraftNeverPublished: {
     id: 'course-authoring.course-unit.sidebar.title.draft.never-published',
-    defaultMessage: 'Черновик (никогда не публиковался)',
+    defaultMessage: 'Draft (Never Published)',
   },
   sidebarTitleVisibleToStaffOnly: {
     id: 'course-authoring.course-unit.sidebar.title.visible.to-staff-only',
-    defaultMessage: 'Видимый только для персонала',
+    defaultMessage: 'Visible to Staff Only',
   },
   sidebarTitlePublishedAndLive: {
     id: 'course-authoring.course-unit.sidebar.title.published.live',
-    defaultMessage: 'Опубликовано и доступно',
+    defaultMessage: 'Published & Live',
   },
   sidebarTitleDraftUnpublishedChanges: {
     id: 'course-authoring.course-unit.sidebar.title.draft.unpublished',
-    defaultMessage: 'Черновик (неопубликованные изменения)',
+    defaultMessage: 'Draft (Unpublished Changes)',
   },
   sidebarTitlePublishedNotYetReleased: {
     id: 'course-authoring.course-unit.sidebar.title.published.not-yet-released',
-    defaultMessage: 'Опубликовано (еще не выпущено)',
+    defaultMessage: 'Published (Not Yet Released)',
   },
   sidebarHeaderUnitLocationTitle: {
     id: 'course-authoring.course-unit.sidebar.header.unit-location.title',
-    defaultMessage: 'Местоположение блока',
+    defaultMessage: 'Unit Location',
   },
   sidebarBodyNote: {
     id: 'course-authoring.course-unit.sidebar.body.note',
-    defaultMessage: 'Примечание: Не скрывайте оценочные задания после их выпуска.',
+    defaultMessage: 'Note: Do not hide graded assignments after they are released.',
   },
   publishInfoPreviouslyPublished: {
     id: 'course-authoring.course-unit.publish.info.previously-published',
-    defaultMessage: 'Ранее опубликовано',
+    defaultMessage: 'Previously Published',
   },
   publishInfoDraftSaved: {
     id: 'course-authoring.course-unit.publish.info.draft.saved',
-    defaultMessage: 'Черновик сохранен {editedOn} пользователем {editedBy}',
+    defaultMessage: 'Draft saved by {editedBy} on {editedOn}',
   },
   publishLastPublished: {
     id: 'course-authoring.course-unit.publish.info.last.published',
-    defaultMessage: 'Последний раз опубликовано {publishedOn} пользователем {publishedBy}',
+    defaultMessage: 'Last Published by {publishedBy} on {publishedOn}',
   },
   releaseInfoUnscheduled: {
     id: 'course-authoring.course-unit.release.info.unscheduled',
-    defaultMessage: 'Не запланировано',
+    defaultMessage: 'Unscheduled',
   },
   releaseInfoWithSection: {
     id: 'course-authoring.course-unit.release.info.with-unit',
-    defaultMessage: 'с блоком {sectionName}',
+    defaultMessage: 'with unit {sectionName}',
   },
   visibilityIsVisibleToTitle: {
     id: 'course-authoring.course-unit.visibility.is-visible-to.title',
-    defaultMessage: 'ВИДИМ ДЛЯ',
+    defaultMessage: 'VISIBLE TO',
   },
   visibilityWillBeVisibleToTitle: {
     id: 'course-authoring.course-unit.visibility.will-be-visible-to.title',
-    defaultMessage: 'БУДЕТ ВИДИМ ДЛЯ',
+    defaultMessage: 'WILL BE VISIBLE TO',
   },
   unitLocationTitle: {
     id: 'course-authoring.course-unit.unit-location.title',
-    defaultMessage: 'ИДЕНТИФИКАТОР МЕСТОПОЛОЖЕНИЯ',
+    defaultMessage: 'UNIT LOCATION IDENTIFIER',
   },
   unitLocationDescription: {
     id: 'course-authoring.course-unit.unit-location.description',
-    defaultMessage: 'Чтобы создать ссылку на этот блок из компонента HTML в этом курсе, введите /jump_to_id/{id} как значение URL',
+    defaultMessage: 'To create a link to this unit from an HTML component in this course, enter /jump_to_id/{id} as the URL value',
   },
   visibilityCheckboxTitle: {
     id: 'course-authoring.course-unit.visibility.checkbox.title',
-    defaultMessage: 'Скрыть от учащихся',
+    defaultMessage: 'Hide from Learners',
   },
   visibilityStaffOnlyTitle: {
     id: 'course-authoring.course-unit.visibility.staff-only.title',
-    defaultMessage: 'Только для персонала',
+    defaultMessage: 'Staff Only',
   },
   visibilityStaffAndLearnersTitle: {
     id: 'course-authoring.course-unit.visibility.staff-and-learners.title',
-    defaultMessage: 'Для персонала и учащихся',
+    defaultMessage: 'Staff and Learners',
   },
   visibilityHasExplicitStaffLockText: {
     id: 'course-authoring.course-unit.visibility.has-explicit-staff-lock.text',
-    defaultMessage: 'с блоком {sectionName}',
+    defaultMessage: 'with unit {sectionName}',
   },
   actionButtonPublishTitle: {
     id: 'course-authoring.course-unit.action-buttons.publish.title',
-    defaultMessage: 'Опубликовать',
+    defaultMessage: 'Publish',
   },
   actionButtonDiscardChangesTitle: {
     id: 'course-authoring.course-unit.action-button.discard-changes.title',
-    defaultMessage: 'Отменить изменения',
+    defaultMessage: 'Discard Changes',
   },
   actionButtonCopyUnitTitle: {
     id: 'course-authoring.course-unit.action-button.copy-unit.title',
-    defaultMessage: 'Копировать блок',
+    defaultMessage: 'Copy Unit',
   },
   releaseStatusTitle: {
     id: 'course-authoring.course-unit.status.release.title',
-    defaultMessage: 'ВЫПУСК',
+    defaultMessage: 'RELEASE',
   },
   releasedStatusTitle: {
     id: 'course-authoring.course-unit.status.released.title',
-    defaultMessage: 'ВЫПУЩЕНО',
+    defaultMessage: 'RELEASED',
   },
   scheduledStatusTitle: {
     id: 'course-authoring.course-unit.status.scheduled.title',
-    defaultMessage: 'ЗАПЛАНИРОВАНО',
+    defaultMessage: 'SCHEDULED',
   },
   modalDiscardUnitChangesTitle: {
     id: 'course-authoring.course-unit.modal.discard-unit-changes.title',
-    defaultMessage: 'Отменить изменения',
+    defaultMessage: 'Discard Changes?',
   },
   modalDiscardUnitChangesActionButtonText: {
     id: 'course-authoring.course-unit.modal.discard-unit-changes.btn.action.text',
-    defaultMessage: 'Отменить изменения',
+    defaultMessage: 'Discard Changes',
   },
   modalDiscardUnitChangesCancelButtonText: {
     id: 'course-authoring.course-unit.modal.discard-unit-changes.btn.cancel.text',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   modalDiscardUnitChangesDescription: {
     id: 'course-authoring.course-unit.modal.discard-unit-changes.description',
-    defaultMessage: 'Вы уверены, что хотите вернуться к последней опубликованной версии блока? Это действие нельзя отменить.',
+    defaultMessage: 'Are you sure you want to revert to the last published version of the unit? This action cannot be undone.',
   },
   modalMakeVisibilityTitle: {
     id: 'course-authoring.course-unit.modal.make-visibility.title',
-    defaultMessage: 'Сделать видимым для студентов',
+    defaultMessage: 'Make Visible to Students',
   },
   modalMakeVisibilityActionButtonText: {
     id: 'course-authoring.course-unit.modal.make-visibility.btn.action.text',
-    defaultMessage: 'Сделать видимым для студентов',
+    defaultMessage: 'Make Visible to Students',
   },
   modalMakeVisibilityCancelButtonText: {
     id: 'course-authoring.course-unit.modal.make-visibility.btn.cancel.text',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   modalMakeVisibilityDescription: {
     id: 'course-authoring.course-unit.modal.make-visibility.description',
-    defaultMessage: 'Если блок ранее был опубликован и выпущен для студентов, любые изменения, которые вы внесли в блок, когда он был скрыт, теперь будут видны студентам. Вы уверены, что хотите продолжить?',
+    defaultMessage: 'If the unit was previously published and released to students, any changes you’ve made to the unit while it was hidden will now be visible to students. Are you sure you want to continue?',
   },
 });
-
 export default messages;

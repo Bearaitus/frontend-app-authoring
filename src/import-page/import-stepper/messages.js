@@ -1,58 +1,56 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   stepperUploadingTitle: {
     id: 'course-authoring.import.stepper.title.uploading',
-    defaultMessage: 'Загрузка архива',
+    defaultMessage: 'Uploading Archive',
   },
   stepperUnpackingTitle: {
     id: 'course-authoring.import.stepper.title.unpacking',
-    defaultMessage: 'Распаковка архива',
+    defaultMessage: 'Unpacking Archive',
   },
   stepperVerifyingTitle: {
     id: 'course-authoring.import.stepper.title.verifying',
-    defaultMessage: 'Проверка файлов в архиве',
+    defaultMessage: 'Verifying Archive Files',
   },
   stepperUpdatingTitle: {
     id: 'course-authoring.import.stepper.title.updating',
-    defaultMessage: 'Обновление курса',
+    defaultMessage: 'Updating Course',
   },
   stepperSuccessTitle: {
     id: 'course-authoring.import.stepper.title.success',
-    defaultMessage: 'Импортировано',
+    defaultMessage: 'Imported',
   },
   stepperUploadingDescription: {
     id: 'course-authoring.import.stepper.description.uploading',
-    defaultMessage: 'Загрузка курса на тренажер PT EdTechLab',
+    defaultMessage: 'Uploading course to the PT EdTechLab platform.',
   },
   stepperUnpackingDescription: {
     id: 'course-authoring.import.stepper.description.unpacking',
-    defaultMessage: 'Распаковка и подготовка структуры папок/файлов',
+    defaultMessage: 'Unpacking and preparing the folder/file structure.',
   },
   stepperVerifyingDescription: {
     id: 'course-authoring.import.stepper.description.verifying',
-    defaultMessage: 'Проверка семантики, синтаксиса и обязательных данных',
+    defaultMessage: 'Verifying semantics, syntax, and required data.',
   },
   stepperUpdatingDescription: {
     id: 'course-authoring.import.stepper.description.updating',
-    defaultMessage: 'Интеграция импортированного содержимого в этот курс',
+    defaultMessage: 'Integrating the imported content into this course.',
   },
   stepperSuccessDescription: {
     id: 'course-authoring.import.stepper.description.success',
-    defaultMessage: 'Импортирование курса завершено успешно',
+    defaultMessage: 'Course import completed successfully.',
   },
   viewOutlineButton: {
     id: 'course-authoring.import.stepper.button.outline',
-    defaultMessage: 'Перейти к курсу',
+    defaultMessage: 'Navigate to Course',
   },
   defaultErrorMessage: {
     id: 'course-authoring.import.stepper.error.default',
-    defaultMessage: 'Ошибка импорта курса',
+    defaultMessage: 'Course Import Error',
   },
   stepperHeaderTitle: {
     id: 'course-authoring.import.stepper.header.title',
-    defaultMessage: 'Статус импорта курса',
+    defaultMessage: 'Course Import Status',
   },
 });
-
 export default messages;

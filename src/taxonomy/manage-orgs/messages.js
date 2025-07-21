@@ -3,64 +3,64 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headerTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.header.title',
-    defaultMessage: 'Назначить Компания-разработчик курсам',
+    defaultMessage: 'Assign Organizations to Taxonomy',
   },
   bodyText: {
     id: 'course-authoring.taxonomy-manage-orgs.body.text',
-    defaultMessage: 'Управляйте тем, какие организации могут получить доступ к таксономии, назначая их в меню ниже. Вы также можете назначить таксономию всем Компания-разработчик курсам.',
+    defaultMessage: 'Manage which organizations can access the taxonomy by assigning them in the menu below. You can also assign the taxonomy to all Organizations.',
   },
   assignOrgs: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-orgs',
-    defaultMessage: 'Назначить организации',
+    defaultMessage: 'Assign Organizations',
   },
   currentAssignments: {
     id: 'course-authoring.taxonomy-manage-orgs.current-assignments',
-    defaultMessage: 'В настоящее время назначено:',
+    defaultMessage: 'Currently Assigned:',
   },
   addOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.add-orgs',
-    defaultMessage: 'Добавить другую организацию:',
+    defaultMessage: 'Add Another Organization:',
   },
   searchOrganizations: {
     id: 'course-authoring.taxonomy-manage-orgs.search-orgs',
-    defaultMessage: 'Найти организацию',
+    defaultMessage: 'Search for Organization',
   },
   noOrganizationAssigned: {
     id: 'course-authoring.taxonomy-manage-orgs.no-orgs',
-    defaultMessage: 'Организации не назначены',
+    defaultMessage: 'No Organizations Assigned',
   },
   assignAll: {
     id: 'course-authoring.taxonomy-manage-orgs.assign-all',
-    defaultMessage: 'Назначить всем Компания-разработчик курсам',
+    defaultMessage: 'Assign to All Organizations',
   },
   cancelButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   saveButton: {
     id: 'course-authoring.taxonomy-manage-orgs.button.save',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
   confirmUnassignTitle: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.title',
-    defaultMessage: 'Отменить назначение таксономии',
+    defaultMessage: 'Unassign Taxonomy',
   },
   confirmUnassignText: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.text',
-    defaultMessage: 'Авторы контента из отмененных организаций не смогут добавлять теги к контенту курса с помощью {taxonomyName}. Вы уверены, что хотите продолжить?',
+    defaultMessage: 'Content authors from the unassigned organizations will no longer be able to add tags to course content using {taxonomyName}. Are you sure you want to proceed?',
   },
   continueButton: {
     id: 'course-authoring.taxonomy-manage-orgs.confirm-dialog.button.continue',
-    defaultMessage: 'Продолжить',
+    defaultMessage: 'Continue',
   },
   assignOrgsSuccess: {
     id: 'course-authoring.taxonomy-manage-orgs.toast.assign-orgs-success',
-    defaultMessage: 'Назначение организаций обновлено',
+    defaultMessage: 'Organization assignments updated',
   },
   removeOrg: {
     id: 'course-authoring.taxonomy-manage-orgs.remove-org',
-    defaultMessage: 'Удалить {org}',
-    description: 'Кнопка для удаления определенной организации из таксономии',
+    defaultMessage: 'Remove {org}',
+    description: 'Button to remove a specific organization from the taxonomy',
   },
 });
 export default messages;

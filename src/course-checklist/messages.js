@@ -1,5 +1,4 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   pageTitle: {
     id: 'course-authoring.export.page.title',
@@ -7,43 +6,42 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.course-checklist.heading.title',
-    defaultMessage: 'Чек-листы',
-    description: 'Текст заголовка для страницы Чек-листа',
+    defaultMessage: 'Checklists',
+    description: 'Heading text for the Checklist page',
   },
   headingSubtitle: {
     id: 'course-authoring.course-checklist.heading.subtitle',
-    defaultMessage: 'Инструменты',
+    defaultMessage: 'Tools',
   },
   launchChecklistLabel: {
     id: 'launchChecklistLabel',
-    defaultMessage: 'Чек-лист запуска',
-    description: 'Текст заголовка для чек-листа, описывающего действия, которые необходимо выполнить перед запуском курса',
+    defaultMessage: 'Launch Checklist',
+    description: 'Heading text for the checklist describing actions to take before launching a course',
   },
   bestPracticesChecklistLabel: {
     id: 'bestPracticesChecklistLabel',
-    defaultMessage: 'Чек-лист лучших практик',
-    description: 'Текст заголовка для чек-листа, описывающего лучшие практики для курса',
+    defaultMessage: 'Best Practices Checklist',
+    description: 'Heading text for the checklist describing best practices for a course',
   },
   launchChecklistLoadingLabel: {
     id: 'doneLoadingChecklistStatusLabel',
-    defaultMessage: 'Данные Чек-листа запуска загружаются',
-    description: 'Метка, сообщающая пользователю, что Чек-лист запуска загружается',
+    defaultMessage: 'Loading Launch Checklist data',
+    description: 'Label informing the user that the Launch Checklist is loading',
   },
   launchChecklistDoneLoadingLabel: {
     id: 'launchChecklistDoneLoadingLabel',
-    defaultMessage: 'Данные Чек-листа запуска загружены',
-    description: 'Метка, сообщающая пользователю, что Чек-лист запуска загружен',
+    defaultMessage: 'Launch Checklist data loaded',
+    description: 'Label informing the user that the Launch Checklist has loaded',
   },
   bestPracticesChecklistLoadingLabel: {
     id: 'bestPracticesChecklistLoadingLabel',
-    defaultMessage: 'Данные Чек-листа лучших практик загружаются',
-    description: 'Метка, сообщающая пользователю, что Чек-лист лучших практик загружается',
+    defaultMessage: 'Loading Best Practices Checklist data',
+    description: 'Label informing the user that the Best Practices Checklist is loading',
   },
   bestPracticesChecklistDoneLoadingLabel: {
     id: 'bestPracticesChecklistDoneLoadingLabel',
-    defaultMessage: 'Данные Чек-листа лучших практик загружены',
-    description: 'Метка, сообщающая пользователю, что Чек-лист лучших практик загружен',
+    defaultMessage: 'Best Practices Checklist data loaded',
+    description: 'Label informing the user that the Best Practices Checklist has loaded',
   },
 });
-
 export default messages;

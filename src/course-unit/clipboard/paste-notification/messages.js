@@ -2,43 +2,43 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   hasConflictingErrorsTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.title',
-    defaultMessage: 'Файлы необходимо обновить вручную.',
-    description: 'Заголовок для уведомления, указывающего, что файлы необходимо обновить вручную из-за конфликта в буфере обмена.',
+    defaultMessage: 'Files Need Manual Updates',
+    description: 'Title for the notification indicating that files need to be manually updated due to a paste conflict.',
   },
   hasConflictingErrorsDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.description',
-    defaultMessage: 'Следующие файлы необходимо обновить вручную, чтобы компоненты работали должным образом:',
-    description: 'Описание уведомления, указывающего, какие файлы необходимо обновить вручную из-за конфликта в буфере обмена.',
+    defaultMessage: 'The following files need to be manually updated for components to function properly:',
+    description: 'Description of the notification indicating which files need to be manually updated due to a paste conflict.',
   },
   hasConflictingErrorsButtonText: {
     id: 'course-authoring.course-unit.paste-notification.has-conflicting-errors.button.text',
-    defaultMessage: 'Загрузить файлы',
-    description: 'Текст кнопки, предлагающий пользователям загрузить файлы для устранения конфликта в буфере обмена.',
+    defaultMessage: 'Upload Files',
+    description: 'Button text offering users to upload files to resolve the paste conflict.',
   },
   hasErrorsTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-errors.title',
-    defaultMessage: 'Произошли некоторые ошибки',
-    description: 'Заголовок для уведомления, указывающего, что произошли некоторые ошибки, вероятно, связанные с конфликтами файлов.',
+    defaultMessage: 'Some Errors Occurred',
+    description: 'Title for the notification indicating that some errors occurred, likely related to file conflicts.',
   },
   hasErrorsDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-errors.description',
-    defaultMessage: 'Следующие необходимые файлы не удалось добавить в курс:',
-    description: 'Описание уведомления, указывающего, какие необходимые файлы не удалось добавить в курс из-за ошибок.',
+    defaultMessage: 'The following required files failed to be added to the course:',
+    description: 'Description of the notification indicating which required files failed to be added to the course due to errors.',
   },
   hasNewFilesTitle: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.title',
-    defaultMessage: 'Новый файл(ы) добавлен(ы) в Файлы и загрузки.',
-    description: 'Заголовок для уведомления, указывающего, что новые файлы были добавлены в раздел Файлы и загрузки.',
+    defaultMessage: 'New File(s) Added to Files & Uploads',
+    description: 'Title for the notification indicating that new files were added to the Files & Uploads section.',
   },
   hasNewFilesDescription: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.description',
-    defaultMessage: 'Следующие необходимые файлы были импортированы в этот курс:',
-    description: 'Описание уведомления, указывающего, какие необходимые файлы были импортированы в курс.',
+    defaultMessage: 'The following required files were imported into this course:',
+    description: 'Description of the notification indicating which required files were imported into the course.',
   },
   hasNewFilesButtonText: {
     id: 'course-authoring.course-unit.paste-notification.has-new-files.button.text',
-    defaultMessage: 'Посмотреть файлы',
-    description: 'Текст кнопки, предлагающий пользователям просмотреть новые файлы, импортированные в курс.',
+    defaultMessage: 'View Files',
+    description: 'Button text offering users to view the new files imported into the course.',
   },
 });
 export default messages;

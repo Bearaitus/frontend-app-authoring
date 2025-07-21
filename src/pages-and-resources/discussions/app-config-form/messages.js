@@ -1,407 +1,389 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   configurationChangeConsequence: {
     id: 'authoring.discussions.configurationChangeConsequences',
     defaultMessage:
-      'Пользователи потеряют доступ к любым активным или предыдущим'
-      + ' обсуждениям в вашем курсе.',
+      'Users will lose access to any active or previous'
+      + ' discussions in your course.',
     description:
-      'Описывает, что в результате изменения конфигурации'
-      + ' пользователи потеряют доступ к постам на курсе.',
+      'Describes that as a result of the configuration change'
+      + ' users will lose access to posts in the course.',
   },
   configureApp: {
     id: 'authoring.discussions.configure.app',
-    defaultMessage: 'Настроить {name}',
+    defaultMessage: 'Configure {name}',
   },
   configure: {
     id: 'authoring.discussions.configure',
-    defaultMessage: 'Настроить обсуждения',
+    defaultMessage: 'Configure Discussions',
   },
   ok: {
     id: 'authoring.discussions.ok',
-    defaultMessage: 'ОК',
-    description: 'Кнопка, позволяющая пользователю подтвердить изменение провайдера.',
+    defaultMessage: 'OK',
+    description: 'Button allowing the user to confirm the provider change.',
   },
   cancel: {
     id: 'authoring.discussions.cancel',
-    defaultMessage: 'Отмена',
-    description: 'Кнопка, позволяющая пользователю вернуться к конфигурациям провайдера обсуждений.',
+    defaultMessage: 'Cancel',
+    description: 'Button allowing the user to return to the discussion provider configurations.',
   },
   confirm: {
     id: 'authoring.discussions.confirm',
-    defaultMessage: 'Подтвердить',
-    description: 'Кнопка, позволяющая пользователю подтвердить подтверждение.',
+    defaultMessage: 'Confirm',
+    description: 'Button allowing the user to confirm the confirmation.',
   },
   confirmConfigurationChange: {
     id: 'authoring.discussions.confirmConfigurationChange',
-    defaultMessage: 'Вы уверены, что хотите изменить настройки обсуждений?',
-    description: 'Спрашивает пользователя, действительно ли он хочет изменить настройки.',
+    defaultMessage: 'Are you sure you want to change the discussion settings?',
+    description: 'Asks the user if they really want to change the settings.',
   },
   confirmEnableDiscussionsLabel: {
     id: 'authoring.discussions.confirmEnableDiscussionsLabel',
-    defaultMessage: 'Включить обсуждения на единицах в оцененных подразделах?',
-    description: 'Спрашивает пользователя, действительно ли он хочет включить обсуждения на единицах в оцененных подразделах.',
+    defaultMessage: 'Enable discussions on units in graded sub-sections?',
+    description: 'Asks the user if they really want to enable discussions on units in graded sub-sections.',
   },
   cancelEnableDiscussionsLabel: {
     id: 'authoring.discussions.cancelEnableDiscussionsLabel',
-    defaultMessage: 'Отключить обсуждения на единицах в оцененных подразделах?',
-    description: 'Спрашивает пользователя, действительно ли он хочет отключить обсуждения на единицах в оцененных подразделах.',
+    defaultMessage: 'Disable discussions on units in graded sub-sections?',
+    description: 'Asks the user if they really want to disable discussions on units in graded sub-sections.',
   },
   confirmEnableDiscussions: {
     id: 'authoring.discussions.confirmEnableDiscussions',
-    defaultMessage: 'Включение этого переключателя автоматически включит обсуждение на всех единицах в оцененных подразделах, которые не являются экзаменами с ограничением по времени.',
-    description: 'Спрашивает пользователя, действительно ли он хочет включить обсуждения на единицах в оцененных подразделах.',
+    defaultMessage: 'Enabling this toggle will automatically enable discussion on all units in graded sub-sections that are not timed exams.',
+    description: 'Asks the user if they really want to enable discussions on units in graded sub-sections.',
   },
   cancelEnableDiscussions: {
     id: 'authoring.discussions.cancelEnableDiscussions',
-    defaultMessage: 'Отключение этого переключателя автоматически отключит обсуждение на всех единицах в оцененных подразделах. Темы обсуждений, содержащие хотя бы один поток, будут перечислены и доступны в разделе «Архив» на странице обсуждений.',
-    description: 'Спрашивает пользователя, действительно ли он хочет отключить обсуждения на единицах в оцененных подразделах.',
+    defaultMessage: 'Disabling this toggle will automatically disable discussion on all units in graded sub-sections. Discussion topics containing at least one thread will be listed and available in the “Archive” section of the discussion page.',
+    description: 'Asks the user if they really want to disable discussions on units in graded sub-sections.',
   },
   backButton: {
     id: 'authoring.discussions.backButton',
-    defaultMessage: 'Назад',
-    description: 'Кнопка, позволяющая пользователю вернуться к выбору приложения для обсуждений.',
+    defaultMessage: 'Back',
+    description: 'Button allowing the user to return to the discussion application selection.',
   },
   saveButton: {
     id: 'authoring.discussions.saveButton',
-    defaultMessage: 'Сохранить',
-    description: 'Кнопка, позволяющая пользователю отправить свою конфигурацию обсуждений.',
+    defaultMessage: 'Save',
+    description: 'Button allowing the user to submit their discussion configuration.',
   },
   savingButton: {
     id: 'authoring.discussions.savingButton',
-    defaultMessage: 'Сохранение',
-    description: 'Метка кнопки при отправке конфигурации обсуждений.',
+    defaultMessage: 'Saving',
+    description: 'Button label while submitting the discussion configuration.',
   },
   savedButton: {
     id: 'authoring.discussions.savedButton',
-    defaultMessage: 'Сохранено',
-    description: 'Метка кнопки при успешной отправке конфигурации обсуждений.',
+    defaultMessage: 'Saved',
+    description: 'Button label when the discussion configuration has been successfully submitted.',
   },
-
   // App names
   'appName-piazza': {
     id: 'authoring.discussions.appConfigForm.appName-piazza',
     defaultMessage: 'Piazza',
-    description: 'Название приложения Piazza.',
+    description: 'Piazza application name.',
   },
   'appName-yellowdig': {
     id: 'authoring.discussions.appConfigForm.appName-yellowdig',
     defaultMessage: 'Yellowdig',
-    description: 'Название приложения yellowdig.',
+    description: 'Yellowdig application name.',
   },
   'appName-inscribe': {
     id: 'authoring.discussions.appConfigForm.appName-inscribe',
     defaultMessage: 'InScribe',
-    description: 'Название приложения inscribe.',
+    description: 'Inscribe application name.',
   },
   'appName-discourse': {
     id: 'authoring.discussions.appConfigForm.appName-discourse',
     defaultMessage: 'Discourse',
-    description: 'Название приложения discourse.',
+    description: 'Discourse application name.',
   },
   'appName-ed-discuss': {
     id: 'authoring.discussions.appConfigForm.appName-ed-discuss',
     defaultMessage: 'Ed Discussion',
-    description: 'Название приложения Ed Discussion.',
+    description: 'Ed Discussion application name.',
   },
   'appName-legacy': {
     id: 'authoring.discussions.appConfigForm.appName-legacy',
     defaultMessage: 'edX',
-    description: 'Название приложения Legacy edX Discussions.',
+    description: 'Legacy edX Discussions application name.',
   },
   'appName-openedx': {
     id: 'authoring.discussions.appConfigForm.appName-openedx',
-    defaultMessage: 'edX (новое)',
-    description: 'Название приложения нового edX Discussions.',
+    defaultMessage: 'edX (new)',
+    description: 'New edX Discussions application name.',
   },
   divisionByGroup: {
     id: 'authoring.discussions.builtIn.divisionByGroup',
-    defaultMessage: 'Когорты',
+    defaultMessage: 'Cohorts',
   },
   divideByCohortsLabel: {
     id: 'authoring.discussions.builtIn.divideByCohorts.label',
-    defaultMessage: 'Разделить обсуждения по когортам',
-    description: 'Метка для переключателя, который включает разделение обсуждений по когортам.  allowDivisionByUnit, divideCourseWideTopics, divideGeneralTopic, и divideQuestionsForTAs используются только если это настройка установлена в true.',
+    defaultMessage: 'Divide discussions by cohorts',
+    description: 'Label for the toggle that enables dividing discussions by cohorts. allowDivisionByUnit, divideCourseWideTopics, divideGeneralTopic, and divideQuestionsForTAs are only used if this setting is set to true.',
   },
   divideByCohortsHelp: {
     id: 'authoring.discussions.builtIn.divideByCohorts.help',
-    defaultMessage: 'Пользователи смогут просматривать и отвечать только на обсуждения, опубликованные членами их когорты.',
-    description: 'Справочная информация для переключателя, который включает разделение обсуждений по когортам.',
+    defaultMessage: 'Users will only be able to view and respond to discussions posted by members of their cohort.',
+    description: 'Help information for the toggle that enables dividing discussions by cohorts.',
   },
   divideCourseTopicsByCohortsLabel: {
     id: 'authoring.discussions.builtIn.divideCourseTopicsByCohorts.label',
-    defaultMessage: 'Разделить темы курса',
-    description: 'Метка для переключателя, который включает разделение тем курса по когортам.',
+    defaultMessage: 'Divide course topics by cohorts',
+    description: 'Label for the toggle that enables dividing course topics by cohorts.',
   },
   divideCourseTopicsByCohortsHelp: {
     id: 'authoring.discussions.builtIn.divideCourseTopicsByCohorts.help',
-    defaultMessage: 'Выберите, какие из ваших общих тем курса вы хотите разделить по когортам.',
-    description: 'Справочная информация, запрашивающая у пользователя выбор тем курса, которые должны быть разделены по когортам.',
+    defaultMessage: 'Select which of your general course topics you want to divide by cohort.',
+    description: 'Help information asking the user to select which course topics to divide by cohorts.',
   },
   divideGeneralTopic: {
     id: 'authoring.discussions.builtIn.divideGeneralTopic.label',
-    defaultMessage: 'Общее',
-    description: 'Метка для флажка, который позволяет пользователю разделить общую тему курса по когортам.',
+    defaultMessage: 'General',
   },
   divideQuestionsForTAsTopic: {
     id: 'authoring.discussions.builtIn.divideQuestionsForTAsTopic.label',
-    defaultMessage: 'Вопросы для преподавателей',
-    description: 'Метка для флажка, который позволяет пользователю разделить тему "Вопросы для преподавателей" по когортам.',
+    defaultMessage: 'Questions for TAs',
   },
   cohortsEnabled: {
     id: 'authoring.discussions.builtIn.cohortsEnabled.label',
-    defaultMessage: 'Чтобы настроить эти настройки, включите когорты на '
-    + 'панели управления преподавателем',
-    description: 'Метка текста, информирующая пользователя о включении когорт',
+    defaultMessage: 'To configure these settings, enable cohorts on the',
+    description: 'Label text informing the user about enabling cohorts',
   },
   instructorDashboard: {
     id: 'authoring.discussions.builtIn.instructorDashboard.label',
-    defaultMessage: 'панели управления преподавателем',
-    description: 'Метка текста для панели управления преподавателем',
+    defaultMessage: 'instructor dashboard',
+    description: 'Label text for the instructor dashboard',
   },
   // In-context discussion fields
   visibilityInContext: {
     id: 'authoring.discussions.builtIn.visibilityInContext',
-    defaultMessage: 'Видимость обсуждений в контексте',
+    defaultMessage: 'Visibility of discussions in context',
   },
   gradedUnitPagesLabel: {
     id: 'authoring.discussions.builtIn.gradedUnitPages.label',
-    defaultMessage: 'Включить обсуждения на единицах в оцененных подразделах',
+    defaultMessage: 'Enable discussions on units in graded sub-sections',
   },
   gradedUnitPagesHelp: {
     id: 'authoring.discussions.builtIn.gradedUnitPages.help',
-    defaultMessage: 'Позволять учащимся взаимодействовать с обсуждениями на всех страницах оцененных единиц, кроме экзаменов с ограничением по времени.',
+    defaultMessage: 'Allow learners to interact with discussions on all graded unit pages, excluding timed exams.',
   },
   groupInContextSubsectionLabel: {
     id: 'authoring.discussions.builtIn.groupInContextSubsection.label',
-    defaultMessage: 'Группировать обсуждения в контексте на уровне подраздела',
+    defaultMessage: 'Group discussions in context at the sub-section level',
   },
   groupInContextSubsectionHelp: {
     id: 'authoring.discussions.builtIn.groupInContextSubsection.help',
-    defaultMessage: 'Пользователи смогут просматривать любой пост в подразделе, независимо от страницы единицы, которую они просматривают. Хотя это не рекомендуется, если ваш курс имеет короткие последовательности обучения или низкую нагрузку, группировка может увеличить вовлеченность.',
+    defaultMessage: 'Users will be able to view any post in the sub-section, regardless of the unit page they are viewing. While not recommended, if your course has short learning sequences or low engagement, grouping can increase participation.',
   },
-
   // Anonymous posting fields
   anonymousPosting: {
     id: 'authoring.discussions.builtIn.anonymousPosting',
-    defaultMessage: 'Анонимное размещение',
+    defaultMessage: 'Anonymous Posting',
   },
   allowAnonymousPostsLabel: {
     id: 'authoring.discussions.builtIn.allowAnonymous.label',
-    defaultMessage: 'Разрешить анонимные посты в обсуждениях',
+    defaultMessage: 'Allow anonymous posts in discussions',
   },
   allowAnonymousPostsHelp: {
     id: 'authoring.discussions.builtIn.allowAnonymous.help',
-    defaultMessage: 'Если включено, пользователи смогут создавать посты, которые будут анонимны для всех пользователей.',
+    defaultMessage: 'If enabled, users will be able to create posts that are anonymous to all users.',
   },
   allowAnonymousPostsPeersLabel: {
     id: 'authoring.discussions.builtIn.allowAnonymousPeers.label',
-    defaultMessage: 'Разрешить анонимные посты в обсуждениях для однокурсников',
+    defaultMessage: 'Allow anonymous posts in discussions for peers',
   },
   allowAnonymousPostsPeersHelp: {
     id: 'authoring.discussions.builtIn.allowAnonymousPeers.help',
-    defaultMessage: 'Пользователи смогут размещать посты анонимно для других однокурсников, но все посты будут видны для персонала курса.',
+    defaultMessage: 'Users will be able to post anonymously to other peers, however, all posts will be visible to course staff.',
   },
-
   // Reported Email Notifications
   reportedContentEmailNotifications: {
     id: 'authoring.discussions.builtIn.reportedContentEmailNotifications',
-    defaultMessage: 'Уведомления',
+    defaultMessage: 'Notifications',
   },
   reportedContentEmailNotificationsLabel: {
     id: 'authoring.discussions.builtIn.reportedContentEmailNotifications.label',
-    defaultMessage: 'Электронные уведомления о сообщенных контентах',
+    defaultMessage: 'Email notifications of reported content',
   },
   reportedContentEmailNotificationsHelp: {
     id: 'authoring.discussions.builtIn.reportedContentEmailNotifications.help',
-    defaultMessage: 'Администраторы обсуждений, модераторы, преподаватели и групповые преподаватели (только для своей когорты) получат электронное уведомление, когда контент будет сообщен.',
+    defaultMessage: 'Discussion administrators, moderators, instructors, and group instructors (only for their cohort) will receive an email notification when content is reported.',
   },
-
   // Discussion Topics
   discussionTopics: {
     id: 'authoring.discussions.discussionTopics',
-    defaultMessage: 'Темы обсуждений',
+    defaultMessage: 'Discussion Topics',
   },
   discussionTopicsLabel: {
     id: 'authoring.discussions.discussionTopics.label',
-    defaultMessage: 'Общие темы обсуждений',
-    description: 'Метка для раздела тем обсуждений, позволяющая пользователю добавить новую тему.',
+    defaultMessage: 'General discussion topics',
+    description: 'Label for the section to add a new topic',
   },
   discussionTopicsHelp: {
     id: 'authoring.discussions.discussionTopics.help',
-    defaultMessage: 'Обсуждения могут включать общие темы, не связанные с структурой курса. Все курсы имеют общую тему по умолчанию.',
-    description: 'Справочная информация для добавления новых тем обсуждений в общем разделе тем обсуждений.',
+    defaultMessage: 'Discussions can include general topics that are not linked to the course structure. All courses have a default general topic.',
+    description: 'Help information for adding new discussion topics in the general topic section.',
   },
   discussionTopicRequired: {
     id: 'authoring.discussions.discussionTopic.required',
-    defaultMessage: 'Название темы является обязательным полем',
-    description: 'Сообщает пользователю, что поле темы обсуждения является обязательным и должно иметь значение.',
+    defaultMessage: 'Topic name is a required field',
+    description: 'Informs the user that the topic name field is required and must have a value.',
   },
   discussionTopicNameAlreadyExist: {
     id: 'authoring.discussions.discussionTopic.alreadyExistError',
-    defaultMessage: 'Похоже, что это название уже используется',
-    description: 'Сообщает пользователю, что название темы обсуждения уже используется и должно быть уникальным.',
+    defaultMessage: 'It appears that name is already taken',
+    description: 'Informs the user that the discussion topic name is already in use and must be unique.',
   },
   addTopicButton: {
     id: 'authoring.discussions.addTopicButton',
-    defaultMessage: 'Добавить тему',
-    description: 'Метка кнопки при добавлении новой темы обсуждения.',
+    defaultMessage: 'Add Topic',
+    description: 'Label for the button when adding a new discussion topic.',
   },
   deleteButton: {
     id: 'authoring.discussions.deleteButton',
-    defaultMessage: 'Удалить',
-    description: 'Метка кнопки при удалении темы обсуждения из подтверждающей карточки.',
+    defaultMessage: 'Delete',
+    description: 'Label for the button when deleting a discussion topic in the confirmation card.',
   },
   cancelButton: {
     id: 'authoring.discussions.cancelButton',
-    defaultMessage: 'Отмена',
-    description: 'Метка кнопки при отмене удаления темы обсуждения.',
+    defaultMessage: 'Cancel',
+    description: 'Label for the button when canceling the deletion of a discussion topic.',
   },
   discussionTopicDeletionHelp: {
     id: 'authoring.discussions.discussionTopicDeletion.help',
-    defaultMessage: 'edX рекомендует не удалять темы обсуждений после начала курса.',
-    description: 'Справочная информация для удаления темы обсуждения из раздела тем обсуждений.',
+    defaultMessage: 'edX recommends that you do not delete discussion topics after the course has started.',
+    description: 'Help information for deleting a discussion topic from the discussion topics section.',
   },
   discussionTopicDeletionLabel: {
     id: 'authoring.discussions.discussionTopicDeletion.label',
-    defaultMessage: 'Удалить эту тему?',
-    description: 'Метка для подтверждающей карточки удаления темы обсуждения, позволяющая пользователю удалить тему.',
+    defaultMessage: 'Delete this topic?',
+    description: 'Label for the confirmation card to delete a discussion topic, allowing the user to delete the topic.',
   },
   renameGeneralTopic: {
     id: 'authoring.discussions.builtIn.renameGeneralTopic.label',
-    defaultMessage: 'Переименовать общую тему',
-    description: 'Метка для темы по умолчанию, позволяющая пользователю переименовать общую тему.',
+    defaultMessage: 'Rename general topic',
+    description: 'Label for the default topic, allowing the user to rename the general topic.',
   },
   generalTopicHelp: {
     id: 'authoring.discussions.generalTopicHelp.help',
-    defaultMessage: 'Это тема обсуждения по умолчанию для вашего курса.',
-    description: 'Справочная информация для общей темы обсуждения в сворачиваемой карточке.',
+    defaultMessage: 'This is the default discussion topic for your course.',
+    description: 'Help information for the general discussion topic in the collapsible card.',
   },
   configureAdditionalTopic: {
     id: 'authoring.discussions.builtIn.configureAdditionalTopic.label',
-    defaultMessage: 'Настроить тему',
-    description: 'Метка для дополнительной темы, позволяющая пользователю настроить дополнительную тему.',
+    defaultMessage: 'Configure topic',
+    description: 'Label for the additional topic, allowing the user to configure the additional topic.',
   },
   addTopicHelpText: {
     id: 'authoring.discussions.addTopicHelpText',
-    defaultMessage: 'Выберите уникальное название для вашей темы',
-    description: 'Справочная информация для поля ввода при добавлении темы обсуждения.',
+    defaultMessage: 'Choose a unique name for your topic',
+    description: 'Help information for the input field when adding a discussion topic.',
   },
   // Restricted dates
   restrictedStartDateHelp: {
-    id: 'authoring.discussions.restrictedStartDate.help',
-    defaultMessage: 'Введите дату начала, например, 12/10/2023',
-  },
-  restrictedEndDateHelp: {
-    id: 'authoring.discussions.restrictedEndDate.help',
-    defaultMessage: 'Введите дату окончания, например, 12/17/2023',
+    id: 'authoring.restrictedDates.start.date',
+    defaultMessage: 'Enter the start date, e.g., 12/10/2023',
   },
   restrictedStartTimeHelp: {
-    id: 'authoring.discussions.restrictedStartTime.help',
-    defaultMessage: 'Введите время начала, например, 09:00',
+    id: 'authoring.restrictedDates.start.time',
+    defaultMessage: 'Enter the start time, e.g., 09:00',
+  },
+  restrictedEndDateHelp: {
+    id: 'authoring.restrictedDates.end.date',
+    defaultMessage: 'Enter the end date, e.g., 12/17/2023',
   },
   restrictedEndTimeHelp: {
-    id: 'authoring.discussions.restrictedEndTime.help',
-    defaultMessage: 'Введите время окончания, например, 17:00',
+    id: 'authoring.restrictedDates.end.time',
+    defaultMessage: 'Enter the end time, e.g., 17:00',
   },
   discussionRestrictionLabel: {
     id: 'authoring.discussions.builtIn.discussionRestriction.label',
-    defaultMessage: 'Ограничения обсуждений',
+    defaultMessage: 'Discussion restrictions',
   },
   discussionRestrictionHelp: {
-    id: 'authoring.discussions.discussionRestriction.help',
-    defaultMessage: 'Если включено, пользователи не смогут размещать посты в обсуждениях.',
+    id: 'authoring.discussions.builtIn.discussionRestriction.help',
+    defaultMessage: 'If enabled, users will not be able to post in discussions.',
   },
   discussionRestrictionDatesHelp: {
-    id: 'authoring.discussions.discussionRestrictionDates.help',
-    defaultMessage: 'Если добавлено, пользователи не смогут размещать посты в обсуждениях между этими датами.',
+    id: 'authoring.discussions.builtIn.discussionRestrictionDates.help',
+    defaultMessage: 'If added, users will not be able to post in discussions between these dates.',
   },
   addRestrictedDatesButton: {
     id: 'authoring.discussions.addRestrictedDatesButton',
-    defaultMessage: 'Добавить ограниченные даты',
+    defaultMessage: 'Add restricted dates',
   },
   configureRestrictedDates: {
     id: 'authoring.discussions.builtIn.configureRestrictedDates.label',
-    defaultMessage: 'Настроить ограниченный диапазон дат',
+    defaultMessage: 'Configure restricted date range',
   },
   activeRestrictedDatesDeletionLabel: {
     id: 'authoring.discussions.activeRestrictedDatesDeletion.label',
-    defaultMessage: 'Удалить активные ограниченные даты?',
-    description: 'Метка для подтверждающей карточки удаления активных ограниченных дат, позволяющая пользователю удалить ограниченный диапазон дат.',
+    defaultMessage: 'Delete active restricted dates?',
   },
   activeRestrictedDatesDeletionHelp: {
     id: 'authoring.discussions.activeRestrictedDatesDeletion.help',
-    defaultMessage: 'Эти ограниченные даты в настоящее время активны. Если удалены, пользователи смогут размещать посты в обсуждениях в эти даты. Вы уверены, что хотите продолжить?',
-    description: 'Справочная информация для удаления активных ограниченных дат из раздела ограниченных дат.',
+    defaultMessage: 'These restricted dates are currently active. If deleted, users will be able to post to discussions during these dates. Are you sure you want to continue?',
   },
   completeRestrictedDatesDeletionHelp: {
     id: 'authoring.discussions.completeRestrictedDatesDeletion.help',
-    defaultMessage: 'Вы уверены, что хотите удалить эти ограниченные даты?',
-    description: 'Справочная информация для удаления завершенных ограниченных дат из раздела ограниченных дат.',
+    defaultMessage: 'Are you sure you’d like to delete these restricted dates?',
   },
   restrictedDatesDeletionLabel: {
     id: 'authoring.discussions.restrictedDatesDeletion.label',
-    defaultMessage: 'Удалить ограниченные даты?',
-    description: 'Метка для подтверждающей карточки удаления ограниченных дат, позволяющая пользователю удалить ограниченный диапазон дат.',
+    defaultMessage: 'Delete restricted dates?',
   },
   restrictedDatesDeletionHelp: {
     id: 'authoring.discussions.restrictedDatesDeletion.help',
-    defaultMessage: 'Если удалены, пользователи смогут размещать посты в обсуждениях в эти даты.',
-    description: 'Справочная информация для удаления предстоящих ограниченных дат из раздела ограниченных дат.',
+    defaultMessage: 'If deleted, users will be able to post to discussions during these dates.',
   },
   discussionRestrictionOffLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionOff.label',
-    defaultMessage: 'Если включено, пользователи смогут размещать посты в обсуждениях',
+    defaultMessage: 'If enabled, users will be able to post in discussions',
   },
   discussionRestrictionOnLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionOn.label',
-    defaultMessage: 'Если включено, пользователи не смогут размещать посты в обсуждениях',
+    defaultMessage: 'If enabled, users will not be able to post in discussions',
   },
   discussionRestrictionScheduledLabelHelpText: {
     id: 'authoring.discussions.discussionRestrictionScheduled.label',
-    defaultMessage: 'Если добавлено, пользователи не смогут размещать посты в обсуждениях между этими датами.',
+    defaultMessage: 'If added, users will not be able to post in discussions between these dates.',
   },
   enableRestrictedDatesConfirmationLabel: {
     id: 'authoring.discussions.enableRestrictedDatesConfirmation.label',
-    defaultMessage: 'Включить ограниченные даты?',
+    defaultMessage: 'Enable restricted dates?',
   },
   enableRestrictedDatesConfirmationHelp: {
     id: 'authoring.discussions.enableRestrictedDatesConfirmation.help',
-    defaultMessage: 'Пользователи не смогут размещать посты в обсуждениях.',
+    defaultMessage: 'Users will not be able to post to discussions.',
   },
   deleteAltText: {
     id: 'authoring.topics.delete',
-    defaultMessage: 'Удалить тему',
+    defaultMessage: 'Delete topic',
   },
   expandAltText: {
     id: 'authoring.topics.expand',
-    defaultMessage: 'Развернуть',
+    defaultMessage: 'Expand',
   },
   collapseAltText: {
     id: 'authoring.topics.collapse',
-    defaultMessage: 'Свернуть',
+    defaultMessage: 'Collapse',
   },
   startDateLabel: {
     id: 'authoring.restrictedDates.start.date',
-    defaultMessage: 'Дата начала',
-    description: 'Метка для поля даты начала',
+    defaultMessage: 'Start Date',
   },
   startTimeLabel: {
     id: 'authoring.restrictedDates.start.time',
-    defaultMessage: 'Время начала (необязательно)',
-    description: 'Метка для поля времени начала',
+    defaultMessage: 'Start Time (optional)',
   },
   endDateLabel: {
     id: 'authoring.restrictedDates.end.date',
-    defaultMessage: 'Дата окончания',
-    description: 'Метка для поля даты окончания',
+    defaultMessage: 'End Date',
   },
   endTimeLabel: {
     id: 'authoring.restrictedDates.end.time',
-    defaultMessage: 'Время окончания (необязательно)',
-    description: 'Метка для поля времени окончания',
+    defaultMessage: 'End Time (optional)',
   },
 });
-
 export default messages;

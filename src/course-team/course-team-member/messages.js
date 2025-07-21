@@ -1,34 +1,32 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   roleAdmin: {
     id: 'course-authoring.course-team.member.role.admin',
-    defaultMessage: 'Администратор',
+    defaultMessage: 'Admin',
   },
   roleStaff: {
     id: 'course-authoring.course-team.member.role.staff',
-    defaultMessage: 'Персонал',
+    defaultMessage: 'Staff',
   },
   roleYou: {
     id: 'course-authoring.course-team.member.role.you',
-    defaultMessage: 'Вы!',
+    defaultMessage: 'You!',
   },
   hint: {
     id: 'course-authoring.course-team.member.hint',
-    defaultMessage: 'Повысьте другого участника до администратора, чтобы удалить свои права администратора',
+    defaultMessage: 'Promote another member to admin to relinquish your admin rights',
   },
   addButton: {
     id: 'course-authoring.course-team.member.button.add',
-    defaultMessage: 'Добавить доступ администратора',
+    defaultMessage: 'Add Admin Access',
   },
   removeButton: {
     id: 'course-authoring.course-team.member.button.remove-admin-access',
-    defaultMessage: 'Удалить доступ администратора',
+    defaultMessage: 'Remove Admin Access',
   },
   deleteUserButton: {
     id: 'course-authoring.course-team.member.button.delete',
-    defaultMessage: 'Удалить пользователя',
+    defaultMessage: 'Delete User',
   },
 });
-
 export default messages;

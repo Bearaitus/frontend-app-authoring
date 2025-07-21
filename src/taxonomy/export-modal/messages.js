@@ -2,27 +2,27 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   exportModalTitle: {
     id: 'course-authoring.taxonomy-list.modal.export.title',
-    defaultMessage: 'Выберите формат для экспорта',
+    defaultMessage: 'Select a Format to Export',
   },
   exportModalBodyDescription: {
     id: 'course-authoring.taxonomy-list.modal.export.body',
-    defaultMessage: 'Выберите формат файла, в котором вы хотите экспортировать таксономию:',
+    defaultMessage: 'Select a file format to export the taxonomy:',
   },
   exportModalSubmitButtonLabel: {
     id: 'course-authoring.taxonomy-list.modal.export.submit.label',
-    defaultMessage: 'Экспорт',
+    defaultMessage: 'Export',
   },
   taxonomyCSVFormat: {
     id: 'course-authoring.taxonomy-list.csv-format',
-    defaultMessage: 'CSV файл',
+    defaultMessage: 'CSV File',
   },
   taxonomyJSONFormat: {
     id: 'course-authoring.taxonomy-list.json-format',
-    defaultMessage: 'JSON файл',
+    defaultMessage: 'JSON File',
   },
   taxonomyModalsCancelLabel: {
     id: 'course-authoring.taxonomy-list.modal.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
 });
 export default messages;

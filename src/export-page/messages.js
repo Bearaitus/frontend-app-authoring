@@ -1,5 +1,4 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   pageTitle: {
     id: 'course-authoring.export.page.title',
@@ -7,15 +6,15 @@ const messages = defineMessages({
   },
   headingTitle: {
     id: 'course-authoring.export.heading.title',
-    defaultMessage: 'Экспорт курса',
+    defaultMessage: 'Course Export',
   },
   headingSubtitle: {
     id: 'course-authoring.export.heading.subtitle',
-    defaultMessage: 'Инструменты',
+    defaultMessage: 'Tools',
   },
   description1: {
     id: 'course-authoring.export.description1',
-    defaultMessage: 'Вы можете экспортировать курс в формате .tar.gz (экспортированный файл будет содержать всю структуру и содержание курса).',
+    defaultMessage: 'You can export the course in a .tar.gz format. (The exported file will include the entire course structure and content).',
   },
   description2: {
     id: 'course-authoring.export.description2',
@@ -23,12 +22,11 @@ const messages = defineMessages({
   },
   titleUnderButton: {
     id: 'course-authoring.export.title-under-button',
-    defaultMessage: 'Экспортировать',
+    defaultMessage: 'Export',
   },
   buttonTitle: {
     id: 'course-authoring.export.button.title',
-    defaultMessage: 'Экспортировать курс',
+    defaultMessage: 'Export Course',
   },
 });
-
 export default messages;

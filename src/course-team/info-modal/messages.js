@@ -1,42 +1,40 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   deleteModalTitle: {
     id: 'course-authoring.course-team.member.button.remove',
-    defaultMessage: 'Удалить участника команды курса',
+    defaultMessage: 'Remove Course Team Member',
   },
   deleteModalMessage: {
     id: 'course-authoring.course-team.delete-modal.message',
-    defaultMessage: 'Вы уверены, что хотите удалить {email} из команды курса для "{courseName}"?',
+    defaultMessage: 'Are you sure you want to remove {email} from the course team for "{courseName}"?',
   },
   deleteModalDeleteButton: {
     id: 'course-authoring.course-team.delete-modal.button.delete',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Delete',
   },
   deleteModalCancelButton: {
     id: 'course-authoring.course-team.delete-modal.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   errorModalTitle: {
     id: 'course-authoring.course-team.error-modal.title',
-    defaultMessage: 'Ошибка добавления пользователя',
+    defaultMessage: 'Error Adding User',
   },
   errorModalOkButton: {
     id: 'course-authoring.course-team.error-modal.button.ok',
-    defaultMessage: 'Ок',
+    defaultMessage: 'OK',
   },
   warningModalTitle: {
     id: 'course-authoring.course-team.warning-modal.title',
-    defaultMessage: 'Уже является участником команды курса',
+    defaultMessage: 'Already on Course Team',
   },
   warningModalMessage: {
     id: 'course-authoring.course-team.warning-modal.message',
-    defaultMessage: '{email} уже является участником команды {courseName}. Проверьте адрес электронной почты, если вы хотите добавить нового участника.',
+    defaultMessage: '{email} is already a member of the {courseName} team. Double-check the email address if you wish to add a new member.',
   },
   warningModalReturnButton: {
     id: 'course-authoring.course-team.warning-modal.button.return',
-    defaultMessage: 'Вернуться к списку команды',
+    defaultMessage: 'Return to Team List',
   },
 });
-
 export default messages;

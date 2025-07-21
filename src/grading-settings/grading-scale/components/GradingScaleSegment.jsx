@@ -18,7 +18,7 @@ const GradingScaleSegment = ({
 
   const translatedLetters = letters.map(letter => {
     if (letter === 'Pass') {
-      return 'Пройдено';
+      return 'Pass';
     }
     return letter;
   });

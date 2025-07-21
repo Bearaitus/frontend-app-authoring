@@ -36,7 +36,7 @@ const TableActions = ({
   return (
     <>
       <Button iconBefore={Add} onClick={fileInputControl.click}>
-        Добавить файл
+        Add File
       </Button>
     </>
   );

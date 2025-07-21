@@ -2,51 +2,51 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   modalTitle: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.title',
-    defaultMessage: 'Сортировка и фильтрация',
+    defaultMessage: 'Sort & Filter',
   },
   sortByHeader: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.sortBySection.header',
-    defaultMessage: 'Сортировать по',
+    defaultMessage: 'Sort By',
   },
   filterByHeader: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.filterBySection.header',
-    defaultMessage: 'Фильтровать по',
+    defaultMessage: 'Filter By',
   },
   clearAllButtonLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.clearAllButton.label',
-    defaultMessage: 'Сбросить все',
+    defaultMessage: 'Clear All',
   },
   cancelButtonLabel: {
     id: 'course-authoring.files-and-videos.sort-and-filter.modal.cancelButton.label',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   sortByNameAscending: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortByNameAscendingButton.label',
-    defaultMessage: 'Имя (А-Я)',
+    defaultMessage: 'Name (A-Z)',
   },
   sortByNewest: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortByNewestButton.label',
-    defaultMessage: 'Новейшие',
+    defaultMessage: 'Newest',
   },
   sortBySizeDescending: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortBySizeDescendingButton.label',
-    defaultMessage: 'Размер файла (от большего к меньшему)',
+    defaultMessage: 'File Size (Largest to Smallest)',
   },
   sortByNameDescending: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortByNameDescendingButton.label',
-    defaultMessage: 'Имя (Я-А)',
+    defaultMessage: 'Name (Z-A)',
   },
   sortByOldest: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortByOldestButton.label',
-    defaultMessage: 'Старейшие',
+    defaultMessage: 'Oldest',
   },
   sortBySizeAscending: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.sortBySizeAscendingButton.label',
-    defaultMessage: 'Размер файла (от меньшего к большему)',
+    defaultMessage: 'File Size (Smallest to Largest)',
   },
   applySortButton: {
     id: 'course-authoring..files-and-videos.sort-and-filter.modal.applyySortButton.label',
-    defaultMessage: 'Применить',
+    defaultMessage: 'Apply',
   },
 });
 export default messages;

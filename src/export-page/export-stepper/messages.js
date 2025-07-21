@@ -2,43 +2,43 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   stepperPreparingTitle: {
     id: 'course-authoring.export.stepper.title.preparing',
-    defaultMessage: 'Подготовка курса',
+    defaultMessage: 'Preparing Course',
   },
   stepperExportingTitle: {
     id: 'course-authoring.export.stepper.title.exporting',
-    defaultMessage: 'Сборка файлов курса',
+    defaultMessage: 'Assembling Course Files',
   },
   stepperCompressingTitle: {
     id: 'course-authoring.export.stepper.title.compressing',
-    defaultMessage: 'Сжатие собранных файлов',
+    defaultMessage: 'Compressing Assembled Files',
   },
   stepperSuccessTitle: {
     id: 'course-authoring.export.stepper.title.success',
-    defaultMessage: 'Экспортировано',
+    defaultMessage: 'Exported',
   },
   stepperPreparingDescription: {
     id: 'course-authoring.export.stepper.description.preparing',
-    defaultMessage: 'Подготовка к началу экспорта курса',
+    defaultMessage: 'Preparing to start the course export.',
   },
   stepperExportingDescription: {
     id: 'course-authoring.export.stepper.description.exporting',
-    defaultMessage: 'Создание файлов экспорта',
+    defaultMessage: 'Creating export files.',
   },
   stepperCompressingDescription: {
     id: 'course-authoring.export.stepper.description.compressing',
-    defaultMessage: 'Сжатие экспортированных данных и подготовка их к загрузке',
+    defaultMessage: 'Compressing exported data and preparing it for download.',
   },
   stepperSuccessDescription: {
     id: 'course-authoring.export.stepper.description.success',
-    defaultMessage: 'Ваш экспортированный курс теперь можно скачать',
+    defaultMessage: 'Your exported course is now available for download.',
   },
   downloadCourseButtonTitle: {
     id: 'course-authoring.export.stepper.download.button.title',
-    defaultMessage: 'Скачать экспортированный курс',
+    defaultMessage: 'Download Exported Course',
   },
   stepperHeaderTitle: {
     id: 'course-authoring.export.stepper.header.title',
-    defaultMessage: 'Статус экспорта курса',
+    defaultMessage: 'Course Export Status',
   },
 });
 export default messages;

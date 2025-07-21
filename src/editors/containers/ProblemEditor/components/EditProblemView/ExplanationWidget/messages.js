@@ -1,10 +1,8 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   solutionWidgetTitle: {
     id: 'authoring.problemEditor.explanationwidget.explanationWidgetTitle',
-    defaultMessage: 'Решение',
+    defaultMessage: 'Solution',
     description: 'Explanation Title',
   },
   solutionDescriptionText: {
@@ -14,9 +12,8 @@ const messages = defineMessages({
   },
   placeholder: {
     id: 'authoring.problemEditor.explanationwidget.placeholder',
-    defaultMessage: 'Поле ввода',
+    defaultMessage: 'Input field',
     description: 'Placeholder text for tinyMCE editor',
   },
 });
-
 export default messages;

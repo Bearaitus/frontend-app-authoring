@@ -1,40 +1,38 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   sidebarTitleOther: {
     id: 'course-authoring.help-sidebar.other.title',
-    defaultMessage: 'Другие настройки курса',
+    defaultMessage: 'Other Course Settings',
   },
   sidebarLinkToScheduleAndDetails: {
     id: 'course-authoring.help-sidebar.links.schedule-and-details',
-    defaultMessage: 'Детальные настройки',
-    description: 'Ссылка на страницу Расписание и детали в PT EdTechLab',
+    defaultMessage: 'Schedule and Details',
+    description: 'Link to the Schedule and Details page in PT EdTechLab',
   },
   sidebarLinkToGrading: {
     id: 'course-authoring.help-sidebar.links.grading',
-    defaultMessage: 'Оценка',
-    description: 'Ссылка на страницу Оценка в PT EdTechLab',
+    defaultMessage: 'Grading',
+    description: 'Link to the Grading page in PT EdTechLab',
   },
   sidebarLinkToCourseTeam: {
     id: 'course-authoring.help-sidebar.links.course-team',
-    defaultMessage: 'Команда курса',
-    description: 'Ссылка на страницу Команда курса в PT EdTechLab',
+    defaultMessage: 'Course Team',
+    description: 'Link to the Course Team page in PT EdTechLab',
   },
   sidebarLinkToGroupConfigurations: {
     id: 'course-authoring.help-sidebar.links.group-configurations',
-    defaultMessage: 'Настройки групп',
-    description: 'Ссылка на страницу Настройки групп в PT EdTechLab',
+    defaultMessage: 'Group Configurations',
+    description: 'Link to the Group Configurations page in PT EdTechLab',
   },
   sidebarLinkToProctoredExamSettings: {
     id: 'course-authoring.help-sidebar.links.proctored-exam-settings',
-    defaultMessage: 'Настройки экзамена с прокторингом',
-    description: 'Ссылка на страницу Настройки экзамена с прокторингом',
+    defaultMessage: 'Proctored Exam Settings',
+    description: 'Link to the Proctored Exam Settings page',
   },
   sidebarLinkToAdvancedSettings: {
     id: 'course-authoring.help-sidebar.links.advanced-settings',
-    defaultMessage: 'Расширенные настройки',
-    description: 'Ссылка на страницу Расширенные настройки',
+    defaultMessage: 'Advanced Settings',
+    description: 'Link to the Advanced Settings page',
   },
 });
-
 export default messages;

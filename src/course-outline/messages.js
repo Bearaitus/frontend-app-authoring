@@ -2,19 +2,19 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.course-outline.headingTitle',
-    defaultMessage: 'Структура курса',
+    defaultMessage: 'Course Structure',
   },
   headingSubtitle: {
     id: 'course-authoring.course-outline.subTitle',
-    defaultMessage: 'Контент',
+    defaultMessage: 'Content',
   },
   alertSuccessTitle: {
     id: 'course-authoring.course-outline.reindex.alert.success.title',
-    defaultMessage: 'Обновление курса',
+    defaultMessage: 'Course Reindexed',
   },
   alertSuccessDescription: {
     id: 'course-authoring.course-outline.reindex.alert.success.description',
-    defaultMessage: 'Курс успешно обновлен.',
+    defaultMessage: 'Course reindexing completed successfully.',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.course-outline.reindex.alert.success.aria.labelledby',
@@ -26,22 +26,22 @@ const messages = defineMessages({
   },
   newSectionButton: {
     id: 'course-authoring.course-outline.section-list.button.new-section',
-    defaultMessage: 'Новый раздел',
+    defaultMessage: 'New Section',
   },
   exportTagsCreatingToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.creating.message',
-    defaultMessage: 'Пожалуйста, подождите. Создается файл экспорта тегов курса...',
-    description: 'Сообщение о ходе выполнения в всплывающем уведомлении при экспорте тегов курса',
+    defaultMessage: 'Please wait. Creating course tag export file...',
+    description: 'Progress message in a toast notification while exporting course tags',
   },
   exportTagsSuccessToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.success.message',
-    defaultMessage: 'Теги курса успешно экспортированы',
-    description: 'Сообщение об успехе во всплывающем уведомлении при экспорте тегов курса',
+    defaultMessage: 'Course tags exported successfully',
+    description: 'Success message in a toast notification when exporting course tags',
   },
   exportTagsErrorToastMessage: {
     id: 'course-authoring.course-outline.export-tags.toast.error.message',
-    defaultMessage: 'Произошла ошибка при создании файла',
-    description: 'Сообщение об ошибке во всплывающем уведомлении при экспорте тегов курса',
+    defaultMessage: 'An error occurred while creating the file',
+    description: 'Error message in a toast notification when exporting course tags',
   },
 });
 export default messages;

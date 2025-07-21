@@ -2,43 +2,43 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   updateFormDate: {
     id: 'course-authoring.course-updates.update-form.date',
-    defaultMessage: 'Дата',
+    defaultMessage: 'Date',
   },
   updateFormInValid: {
     id: 'course-authoring.course-updates.update-form.inValid',
-    defaultMessage: 'Необходимо: Введите корректную дату.',
+    defaultMessage: 'Required: Enter a valid date.',
   },
   updateFormCalendarAltText: {
     id: 'course-authoring.course-updates.update-form.calendar-alt-text',
-    defaultMessage: 'Календарь для выбора даты',
+    defaultMessage: 'Calendar to select date',
   },
   updateFormErrorAltText: {
     id: 'course-authoring.course-updates.update-form.error-alt-text',
-    defaultMessage: 'Иконка ошибки',
+    defaultMessage: 'Error icon',
   },
   addNewUpdateTitle: {
     id: 'course-authoring.course-updates.update-form.new-update-title',
-    defaultMessage: 'Добавить обновление',
+    defaultMessage: 'Add Update',
   },
   editUpdateTitle: {
     id: 'course-authoring.course-updates.update-form.edit-update-title',
-    defaultMessage: 'Редактировать обновление',
+    defaultMessage: 'Edit Update',
   },
   editHandoutsTitle: {
     id: 'course-authoring.course-updates.update-form.edit-handouts-title',
-    defaultMessage: 'Редактировать раздаточные материалы',
+    defaultMessage: 'Edit Handouts',
   },
   saveButton: {
     id: 'course-authoring.course-updates.actions.save',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
   postButton: {
     id: 'course-authoring.course-updates.actions.post',
-    defaultMessage: 'Опубликовать',
+    defaultMessage: 'Post',
   },
   cancelButton: {
     id: 'course-authoring.course-updates.actions.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
 });
 export default messages;

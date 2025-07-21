@@ -2,28 +2,28 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   loading: {
     id: 'authoring.texteditor.title.loading',
-    defaultMessage: 'Загрузка...',
-    description: 'Сообщение, отображаемое во время загрузки контента',
+    defaultMessage: 'Loading...',
+    description: 'Message displayed while content is loading',
   },
   cancelChangesLabel: {
     id: 'authoring.texteditor.header.cancelChangesLabel',
-    defaultMessage: 'Отменить изменения и вернуться к обучению',
-    description: 'Текст для скринридера для иконки кнопки возврата к контексту обучения',
+    defaultMessage: 'Discard changes and return to learning',
+    description: 'Text for screen readers for the return to learning context button icon',
   },
   editTitleLabel: {
     id: 'authoring.texteditor.header.editTitleLabel',
-    defaultMessage: 'Редактировать заголовок',
-    description: 'Текст для скринридера для иконки кнопки редактирования заголовка блока',
+    defaultMessage: 'Edit Title',
+    description: 'Text for screen readers for the block title edit button icon',
   },
   cancelTitleEdit: {
     id: 'authoring.texteditor.header.cancelTitleEdit',
-    defaultMessage: 'Отмена',
-    description: 'Текст для скринридера для иконки кнопки отмены редактирования заголовка блока',
+    defaultMessage: 'Cancel',
+    description: 'Text for screen readers for the block title edit cancel button icon',
   },
   saveTitleEdit: {
     id: 'authoring.texteditor.header.saveTitleEdit',
-    defaultMessage: 'Сохранить',
-    description: 'Текст для скринридера для иконки кнопки сохранения редактирования заголовка блока',
+    defaultMessage: 'Save',
+    description: 'Text for screen readers for the block title edit save button icon',
   },
 });
 export default messages;

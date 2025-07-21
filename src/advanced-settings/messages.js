@@ -1,86 +1,84 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.advanced-settings.heading.title',
-    defaultMessage: 'Панель ментора',
+    defaultMessage: 'Mentor Panel',
   },
   headingSubtitle: {
     id: 'course-authoring.advanced-settings.heading.subtitle',
-    defaultMessage: 'Расширенные настройки',
+    defaultMessage: 'Advanced Settings',
   },
   policy: {
     id: 'course-authoring.advanced-settings.policies.title',
-    defaultMessage: 'Расширенные настройки',
+    defaultMessage: 'Advanced Settings',
   },
   alertWarning: {
     id: 'course-authoring.advanced-settings.alert.warning',
-    defaultMessage: 'Вы внесли некоторые изменения',
+    defaultMessage: 'You have made some changes',
   },
   alertWarningDescriptions: {
     id: 'course-authoring.advanced-settings.alert.warning.descriptions',
-    defaultMessage: 'Ваши изменения не вступят в силу до тех пор, пока вы не сохраните прогресс. Будьте осторожны с форматированием ключей и значений, поскольку проверка не реализована.',
+    defaultMessage: 'Your changes will not take effect until you save your progress. Be careful with key and value formatting, as validation is not implemented.',
   },
   alertSuccess: {
     id: 'course-authoring.advanced-settings.alert.success',
-    defaultMessage: 'Ваши изменения политики сохранены.',
+    defaultMessage: 'Your policy changes have been saved.',
   },
   alertSuccessDescriptions: {
     id: 'course-authoring.advanced-settings.alert.success.descriptions',
-    defaultMessage: 'Нет проверки ключей политики или пар значений. Если у вас возникли трудности, проверьте форматирование.',
+    defaultMessage: 'There is no validation of policy keys or value pairs. If you encounter difficulties, double-check the formatting.',
   },
   alertProctoringError: {
     id: 'course-authoring.advanced-settings.alert.proctoring.error',
-    defaultMessage: 'В этом курсе есть защищенные настройки экзамена, которые являются незавершенными или недействительными.',
+    defaultMessage: 'This course has protected exam settings that are incomplete or invalid.',
   },
   alertProctoringErrorDescriptions: {
     id: 'course-authoring.advanced-settings.alert.proctoring.error.descriptions',
-    defaultMessage: 'Вы не сможете вносить изменения до тех пор, пока следующие настройки не будут обновлены на странице ниже.',
+    defaultMessage: 'You will not be able to make changes until the following settings are updated on the page below.',
   },
   buttonSaveText: {
     id: 'course-authoring.advanced-settings.alert.button.save',
-    defaultMessage: 'Сохранить изменения',
+    defaultMessage: 'Save Changes',
   },
   buttonSavingText: {
     id: 'course-authoring.advanced-settings.alert.button.saving',
-    defaultMessage: 'Сохранение',
+    defaultMessage: 'Saving',
   },
   buttonCancelText: {
     id: 'course-authoring.advanced-settings.alert.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   deprecatedButtonShowText: {
     id: 'course-authoring.advanced-settings.deprecated.button.show',
-    defaultMessage: 'Показать',
+    defaultMessage: 'Show',
   },
   deprecatedButtonHideText: {
     id: 'course-authoring.advanced-settings.deprecated.button.hide',
-    defaultMessage: 'Скрыть',
+    defaultMessage: 'Hide',
   },
   alertWarningAriaLabelledby: {
     id: 'course-authoring.advanced-settings.alert.warning.aria.labelledby',
-    defaultMessage: 'уведомление-предупреждение-заголовок',
+    defaultMessage: 'notification-warning-title',
   },
   alertWarningAriaDescribedby: {
     id: 'course-authoring.advanced-settings.alert.warning.aria.describedby',
-    defaultMessage: 'уведомление-предупреждение-описание',
+    defaultMessage: 'notification-warning-description',
   },
   alertSuccessAriaLabelledby: {
     id: 'course-authoring.advanced-settings.alert.success.aria.labelledby',
-    defaultMessage: 'уведомление-подтверждение-заголовок',
+    defaultMessage: 'notification-success-title',
   },
   alertSuccessAriaDescribedby: {
     id: 'course-authoring.advanced-settings.alert.success.aria.describedby',
-    defaultMessage: 'уведомление-подтверждение-описание',
+    defaultMessage: 'notification-success-description',
   },
   alertProctoringAriaLabelledby: {
     id: 'course-authoring.advanced-settings.alert.proctoring.error.aria.labelledby',
-    defaultMessage: 'уведомление-опасность-заголовок',
+    defaultMessage: 'notification-danger-title',
   },
   alertProctoringDescribedby: {
     id: 'course-authoring.advanced-settings.alert.proctoring.error.aria.describedby',
-    defaultMessage: 'уведомление-опасность-описание',
+    defaultMessage: 'notification-danger-description',
   },
 });
-
 export default messages;

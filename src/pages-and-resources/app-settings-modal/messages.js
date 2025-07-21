@@ -2,39 +2,39 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   cancel: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   save: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.save',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
   saving: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.saving',
-    defaultMessage: 'Сохранение...',
+    defaultMessage: 'Saving...',
   },
   saved: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.saved',
-    defaultMessage: 'Сохранено',
+    defaultMessage: 'Saved',
   },
   retry: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.retry',
-    defaultMessage: 'Повторить',
+    defaultMessage: 'Retry',
   },
   enabled: {
     id: 'course-authoring.pages-resources.app-settings-modal.badge.enabled',
-    defaultMessage: 'Включено',
+    defaultMessage: 'Enabled',
   },
   disabled: {
     id: 'course-authoring.pages-resources.app-settings-modal.badge.disabled',
-    defaultMessage: 'Отключено',
+    defaultMessage: 'Disabled',
   },
   errorSavingTitle: {
     id: 'course-authoring.pages-resources.app-settings-modal.save-error.title',
-    defaultMessage: 'Не удалось применить изменения.',
+    defaultMessage: 'Failed to Apply Changes.',
   },
   errorSavingMessage: {
     id: 'course-authoring.pages-resources.app-settings-modal.save-error.message',
-    defaultMessage: 'Пожалуйста, проверьте введенные данные и повторите попытку.',
+    defaultMessage: 'Please verify the entered data and try again.',
   },
 });
 export default messages;

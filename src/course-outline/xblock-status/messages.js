@@ -1,78 +1,76 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   unscheduledLabel: {
     id: 'course-authoring.course-outline.xblock-status.unscheduled.label',
-    defaultMessage: 'Не запланировано',
+    defaultMessage: 'Unscheduled',
   },
   releasedLabel: {
     id: 'course-authoring.course-outline.xblock-status.released.label',
-    defaultMessage: 'Опубликовано: ',
+    defaultMessage: 'Released: ',
   },
   scheduledLabel: {
     id: 'course-authoring.course-outline.xblock-status.scheduled.label',
-    defaultMessage: 'Запланировано: ',
+    defaultMessage: 'Scheduled: ',
   },
   onboardingExam: {
     id: 'course-authoring.course-outline.xblock-status.onboardingExam.value',
-    defaultMessage: 'Экзамен на борту',
+    defaultMessage: 'Onboarding Exam',
   },
   practiceProctoredExam: {
     id: 'course-authoring.course-outline.xblock-status.practiceProctoredExam.value',
-    defaultMessage: 'Практический прокторный экзамен',
+    defaultMessage: 'Practice Proctored Exam',
   },
   proctoredExam: {
     id: 'course-authoring.course-outline.xblock-status.proctoredExam.value',
-    defaultMessage: 'Прокторный экзамен',
+    defaultMessage: 'Proctored Exam',
   },
   timedExam: {
     id: 'course-authoring.course-outline.xblock-status.timedExam.value',
-    defaultMessage: 'Экзамен с ограничением по времени',
+    defaultMessage: 'Timed Exam',
   },
   releaseStatusScreenReaderTitle: {
     id: 'course-authoring.course-outline.xblock-status.releaseStatusScreenReader.title',
-    defaultMessage: 'Статус публикации: ',
+    defaultMessage: 'Release status: ',
   },
   gradedAsScreenReaderLabel: {
     id: 'course-authoring.course-outline.xblock-status.gradedAsScreenReader.label',
-    defaultMessage: 'Оценено как: ',
+    defaultMessage: 'Graded as: ',
   },
   ungradedText: {
     id: 'course-authoring.course-outline.xblock-status.ungraded.text',
-    defaultMessage: 'Не оценено',
+    defaultMessage: 'Ungraded',
   },
   dueLabel: {
     id: 'course-authoring.course-outline.xblock-status.due.label',
-    defaultMessage: 'Срок: ',
+    defaultMessage: 'Due: ',
   },
   customDueDateLabel: {
     id: 'course-authoring.course-outline.xblock-status.custom-due-date.label',
-    defaultMessage: 'Индивидуальный срок: {relativeWeeksDue, plural, one {# неделя} other {# недель}} от зачисления',
+    defaultMessage: 'Custom due date: {relativeWeeksDue, plural, one {# week} other {# weeks}} from enrollment',
   },
   prerequisiteLabel: {
     id: 'course-authoring.course-outline.xblock-status.prerequisite.label',
-    defaultMessage: 'Предварительное требование: {prereqDisplayName}',
+    defaultMessage: 'Prerequisite: {prereqDisplayName}',
   },
   restrictedUnitAccess: {
     id: 'course-authoring.course-outline.xblock-status.restrictedUnitAccess.text',
-    defaultMessage: 'Доступ к этому разделу ограничен для: {selectedGroupsLabel}',
+    defaultMessage: 'Access to this section is restricted to: {selectedGroupsLabel}',
   },
   restrictedUnitAccessToSomeContent: {
     id: 'course-authoring.course-outline.xblock-status.restrictedUnitAccessToSomeContent.text',
-    defaultMessage: 'Доступ к некоторому контенту в этом разделе ограничен для определенных групп учащихся',
+    defaultMessage: 'Access to some content in this section is restricted to specific learner groups',
   },
   gradingPolicyMismatchText: {
     id: 'course-authoring.course-outline.xblock-status.gradingPolicyMismatch.text',
-    defaultMessage: 'Этот подраздел настроен как "{gradingType}", который не существует в текущей политике оценки.',
+    defaultMessage: 'This subsection is configured as "{gradingType}", which does not exist in the current grading policy.',
   },
   hiddenAfterEndDate: {
     id: 'course-authoring.course-outline.xblock-status.hiddenAfterEndDate.text',
-    defaultMessage: 'Подраздел скрыт после даты окончания курса',
+    defaultMessage: 'Subsection is hidden after the course end date',
   },
   hiddenAfterDueDate: {
     id: 'course-authoring.course-outline.xblock-status.hiddenAfterDueDate.text',
-    defaultMessage: 'Подраздел скрыт после срока',
+    defaultMessage: 'Subsection is hidden after the due date',
   },
 });
-
 export default messages;

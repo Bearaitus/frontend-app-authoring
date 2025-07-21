@@ -1,55 +1,53 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   blockAltButtonEdit: {
     id: 'course-authoring.course-unit.xblock.button.edit.alt',
-    defaultMessage: 'Редактировать',
-    description: 'Текст кнопки редактирования xblock',
+    defaultMessage: 'Edit',
+    description: 'Edit button text for xblock',
   },
   blockActionsDropdownAlt: {
     id: 'course-authoring.course-unit.xblock.button.actions.alt',
-    defaultMessage: 'Действия',
-    description: 'Альтернативный текст выпадающего меню xblock',
+    defaultMessage: 'Actions',
+    description: 'Alternative text for the xblock dropdown menu',
   },
   blockLabelButtonCopy: {
     id: 'course-authoring.course-unit.xblock.button.copy.label',
-    defaultMessage: 'Копировать',
-    description: 'Текст кнопки копирования xblock',
+    defaultMessage: 'Copy',
+    description: 'Copy button text for xblock',
   },
   blockLabelButtonDuplicate: {
     id: 'course-authoring.course-unit.xblock.button.duplicate.label',
-    defaultMessage: 'Дублировать',
-    description: 'Текст кнопки дублирования xblock',
+    defaultMessage: 'Duplicate',
+    description: 'Duplicate button text for xblock',
   },
   blockLabelButtonMove: {
     id: 'course-authoring.course-unit.xblock.button.move.label',
-    defaultMessage: 'Переместить',
-    description: 'Текст кнопки перемещения xblock',
+    defaultMessage: 'Move',
+    description: 'Move button text for xblock',
   },
   blockLabelButtonCopyToClipboard: {
     id: 'course-authoring.course-unit.xblock.button.copyToClipboard.label',
-    defaultMessage: 'Копировать в буфер обмена',
+    defaultMessage: 'Copy to Clipboard',
   },
   blockLabelButtonManageAccess: {
     id: 'course-authoring.course-unit.xblock.button.manageAccess.label',
-    defaultMessage: 'Управлять доступом',
-    description: 'Текст кнопки управления доступом xblock',
+    defaultMessage: 'Manage Access',
+    description: 'Manage access button text for xblock',
   },
   blockLabelButtonDelete: {
     id: 'course-authoring.course-unit.xblock.button.delete.label',
-    defaultMessage: 'Удалить',
-    description: 'Текст кнопки удаления xblock',
+    defaultMessage: 'Delete',
+    description: 'Delete button text for xblock',
   },
   visibilityMessage: {
     id: 'course-authoring.course-unit.xblock.visibility.message',
-    defaultMessage: 'Доступ ограничен для: {selectedGroupsLabel}',
-    description: 'Текст доступности видимости группы для xblock',
+    defaultMessage: 'Access is restricted to: {selectedGroupsLabel}',
+    description: 'Group visibility message for xblock',
   },
   validationSummary: {
     id: 'course-authoring.course-unit.xblock.validation.summary',
-    defaultMessage: 'Этот компонент имеет проблемы с валидацией.',
-    description: 'Текст предупреждения о проблемах с валидацией видимости',
+    defaultMessage: 'This component has validation issues.',
+    description: 'Validation warning text',
   },
 });
-
 export default messages;

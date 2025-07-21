@@ -1,65 +1,62 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   title: {
     id: 'authoring.videoeditor.thumbnail.title',
-    defaultMessage: 'Миниатюра',
-    description: 'Название для виджета миниатюры',
+    defaultMessage: 'Thumbnail',
+    description: 'Title for the thumbnail widget',
   },
   unavailableSubtitle: {
     id: 'authoring.videoeditor.thumbnail.unavailable.subtitle',
-    defaultMessage: 'Недоступно',
-    description: 'Подзаголовок для недоступного виджета миниатюры',
+    defaultMessage: 'Unavailable',
+    description: 'Subtitle for the unavailable thumbnail widget',
   },
   noneSubtitle: {
     id: 'authoring.videoeditor.thumbnail.none.subtitle',
-    defaultMessage: 'Нет',
-    description: 'Подзаголовок для отсутствия миниатюры в виджете',
+    defaultMessage: 'None',
+    description: 'Subtitle for no thumbnail in the widget',
   },
   yesSubtitle: {
     id: 'authoring.videoeditor.thumbnail.yes.subtitle',
-    defaultMessage: 'Да',
-    description: 'Подзаголовок для наличия миниатюры в виджете',
+    defaultMessage: 'Yes',
+    description: 'Subtitle for a thumbnail existing in the widget',
   },
   unavailableMessage: {
     id: 'authoring.videoeditor.thumbnail.unavailable.message',
     defaultMessage:
-      'Выберите видео из вашей библиотеки, чтобы включить эту функцию (применимо только к курсам, которые проходят на сайте edx.org).',
-    description: 'Сообщение для недоступного виджета миниатюры',
+      'Select a video from your library to enable this feature (only applies to courses hosted on edx.org).',
+    description: 'Message for the unavailable thumbnail widget',
   },
   uploadButtonLabel: {
     id: 'authoring.videoeditor.thumbnail.upload.label',
-    defaultMessage: 'Загрузить миниатюру',
-    description: 'Метка для кнопки загрузки',
+    defaultMessage: 'Upload Thumbnail',
+    description: 'Label for the upload button',
   },
   addThumbnail: {
     id: 'authoring.videoeditor.thumbnail.upload.message',
-    defaultMessage: 'Загрузите изображение, которое пользователи увидят перед воспроизведением видео.',
-    description: 'Сообщение для добавления миниатюры',
+    defaultMessage: 'Upload an image that users will see before playing the video.',
+    description: 'Message for adding a thumbnail',
   },
   aspectRequirements: {
     id: 'authoring.videoeditor.thumbnail.upload.aspectRequirements',
-    defaultMessage: 'Изображения должны иметь соотношение сторон 16:9 (рекомендуется 1280x720 пикселей)',
-    description: 'Сообщение для требований миниатюры',
+    defaultMessage: 'Images should be 16:9 aspect ratio (1280x720 pixels recommended)',
+    description: 'Message for thumbnail requirements',
   },
   thumbnailAltText: {
     id: 'authoring.videoeditor.thumbnail.altText',
-    defaultMessage: 'Изображение, используемое в качестве миниатюры для видео',
-    description: 'Альтернативный текст для миниатюры',
+    defaultMessage: 'Image used as a thumbnail for the video',
+    description: 'Alt text for the thumbnail',
   },
   deleteThumbnail: {
     id: 'authoring.videoeditor.thumbnail.deleteThumbnail',
-    defaultMessage: 'Удалить',
-    description: 'Сообщение, отображаемое пользователю для действия удаления миниатюры',
+    defaultMessage: 'Delete',
+    description: 'Message displayed to the user for the delete thumbnail action',
   },
   fileSizeError: {
     id: 'authoring.videoeditor.thumbnail.error.fileSizeError',
     defaultMessage:
-      'Размер файла для миниатюр должен быть больше 2 КБ или меньше 2 МБ. Пожалуйста, уменьшите размер изображения и попробуйте снова.',
+      'Thumbnail file size must be greater than 2KB and less than 2MB. Please reduce the image size and try again.',
     description:
-      'Сообщение, отображаемое пользователю при размере файла изображения меньше 2 КБ или больше 2 МБ',
+      'Message displayed to the user when the image file size is less than 2KB or greater than 2MB',
   },
 });
-
 export default messages;

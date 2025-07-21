@@ -1,22 +1,20 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   title: {
     id: 'course-authoring.course-outline.publish-modal.title',
-    defaultMessage: 'Опубликовать {title}',
+    defaultMessage: 'Publish {title}',
   },
   description: {
     id: 'course-authoring.course-outline.publish-modal.description',
-    defaultMessage: 'Опубликовать все неопубликованные изменения для этого {category}?',
+    defaultMessage: 'Publish all unpublished changes for this {category}?',
   },
   cancelButton: {
     id: 'course-authoring.course-outline.publish-modal.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   publishButton: {
     id: 'course-authoring.course-outline.publish-modal.button.label',
-    defaultMessage: 'Опубликовать',
+    defaultMessage: 'Publish',
   },
 });
-
 export default messages;

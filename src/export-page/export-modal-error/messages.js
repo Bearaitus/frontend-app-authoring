@@ -2,31 +2,31 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   errorTitle: {
     id: 'course-authoring.export.modal.error.title',
-    defaultMessage: 'Произошла ошибка при экспорте.',
+    defaultMessage: 'An error occurred during export.',
   },
   errorDescriptionNotUnit: {
     id: 'course-authoring.export.modal.error.description.not.unit',
-    defaultMessage: 'Курс не удалось экспортировать в XML. Недостаточно информации для определения неисправного компонента. Проверьте свой курс, чтобы найти проблемные компоненты, и попробуйте еще раз. Исходное сообщение об ошибке: {errorMessage}',
+    defaultMessage: 'The course could not be exported to XML. There is not enough information to determine the faulty component. Please review your course to find problematic components and try again. Original error message: {errorMessage}',
   },
   errorDescriptionUnit: {
     id: 'course-authoring.export.modal.error.description.unit',
-    defaultMessage: 'При экспорте в XML хотя бы одного компонента произошла ошибка. Рекомендуется перейти на страницу редактирования и исправить ошибку перед повторной попыткой экспорта. Убедитесь, что все компоненты на странице действительны и не отображают никаких сообщений об ошибках. Исходное сообщение об ошибке: {errorMessage}',
+    defaultMessage: 'An error occurred during XML export for at least one component. It is recommended to go to the edit page and fix the error before retrying the export. Make sure all components on the page are valid and do not display any error messages. Original error message: {errorMessage}',
   },
   errorCancelButtonUnit: {
     id: 'course-authoring.export.modal.error.button.cancel.unit',
-    defaultMessage: 'Вернуться к экспорту',
+    defaultMessage: 'Return to Export',
   },
   errorCancelButtonNotUnit: {
     id: 'course-authoring.export.modal.error.button.cancel.not.unit',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   errorActionButtonNotUnit: {
     id: 'course-authoring.export.modal.error.button.action.not.unit',
-    defaultMessage: 'Перейти на главную страницу курса',
+    defaultMessage: 'Go to Course Homepage',
   },
   errorActionButtonUnit: {
     id: 'course-authoring.export.modal.error.button.action.unit',
-    defaultMessage: 'Исправить неисправный компонент',
+    defaultMessage: 'Fix Faulty Component',
   },
 });
 export default messages;

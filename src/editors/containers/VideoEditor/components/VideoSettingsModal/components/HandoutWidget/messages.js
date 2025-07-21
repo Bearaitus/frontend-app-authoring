@@ -1,53 +1,50 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   titleLabel: {
     id: 'authoring.videoeditor.handout.title.label',
-    defaultMessage: 'Материалы',
-    description: 'Название для виджета материалов',
+    defaultMessage: 'Materials',
+    description: 'Title for the handouts widget',
   },
   uploadButtonLabel: {
     id: 'authoring.videoeditor.handout.upload.label',
-    defaultMessage: 'Загрузить материалы',
-    description: 'Метка для кнопки загрузки',
+    defaultMessage: 'Upload Materials',
+    description: 'Label for the upload button',
   },
   addHandoutMessage: {
     id: 'authoring.videoeditor.handout.upload.addHandoutMessage',
-    defaultMessage: `Добавьте материалы к этому видео. Пользователи могут скачать
-    этот файл, нажав "Скачать материалы" ниже видео.`,
-    description: 'Сообщение, отображаемое при загрузке материалов',
+    defaultMessage: `Add materials to this video. Users can download
+    this file by clicking “Download Materials” below the video.`,
+    description: 'Message displayed when uploading materials',
   },
   uploadHandoutError: {
     id: 'authoring.videoeditor.handout.error.uploadHandoutError',
-    defaultMessage: 'Не удалось загрузить материалы. Пожалуйста, попробуйте снова.',
-    description: 'Сообщение, отображаемое пользователю при неудачной загрузке материалов',
+    defaultMessage: 'Failed to upload materials. Please try again.',
+    description: 'Message displayed to the user when materials upload fails',
   },
   fileSizeError: {
     id: 'authoring.videoeditor.handout.error.fileSizeError',
-    defaultMessage: 'Файлы материалов должны быть 20 МБ или меньше. Пожалуйста, уменьшите размер файла и попробуйте снова.',
-    description: 'Сообщение, отображаемое пользователю при превышении размера файла материалов',
+    defaultMessage: 'Handout files must be 20MB or less. Please reduce the file size and try again.',
+    description: 'Message displayed to the user when the handout file size is too large',
   },
   handoutHelpMessage: {
     id: 'authoring.videoeditor.handout.handoutHelpMessage',
-    defaultMessage: 'Пользователи могут скачать этот файл, нажав "Скачать материалы" ниже видео.',
-    description: 'Сообщение, отображаемое пользователю при наличии материалов',
+    defaultMessage: 'Users can download this file by clicking “Download Materials” below the video.',
+    description: 'Message displayed to the user when handouts are available',
   },
   deleteHandout: {
     id: 'authoring.videoeditor.handout.deleteHandout',
-    defaultMessage: 'Удалить',
-    description: 'Сообщение, отображаемое пользователю для действия удаления материалов',
+    defaultMessage: 'Delete',
+    description: 'Message displayed to the user for the delete action',
   },
   replaceHandout: {
     id: 'authoring.videoeditor.handout.replaceHandout',
-    defaultMessage: 'Заменить',
-    description: 'Сообщение, отображаемое пользователю для действия замены материалов',
+    defaultMessage: 'Replace',
+    description: 'Message displayed to the user for the replace action',
   },
   downloadHandout: {
     id: 'authoring.videoeditor.handout.downloadHandout',
-    defaultMessage: 'Скачать',
-    description: 'Сообщение, отображаемое пользователю для действия скачивания материалов',
+    defaultMessage: 'Download',
+    description: 'Message displayed to the user for the download action',
   },
 });
-
 export default messages;

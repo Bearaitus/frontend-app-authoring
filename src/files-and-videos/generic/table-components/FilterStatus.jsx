@@ -25,7 +25,7 @@ const FilterStatus = ({
     <div className={className}>
       <RowStatusComponent />
       <Row className="m-0 align-items-center">
-        <span className="mr-2">Применён фильтр</span>
+        <span className="mr-2">Filter Applied</span>
         {filters.map(({ name, value }) => (
           <Chip
             key={value}

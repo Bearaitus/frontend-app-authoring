@@ -1,70 +1,68 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   instructorNameLabel: {
     id: 'course-authoring.schedule-section.instructor.name.label',
-    defaultMessage: 'Имя',
+    defaultMessage: 'Name',
   },
   instructorNameHelpText: {
     id: 'course-authoring.schedule-section.instructor.name.help-text',
-    defaultMessage: 'Пожалуйста, добавьте имя преподавателя',
+    defaultMessage: 'Please add the instructor’s name',
   },
   instructorNameInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.name.input.placeholder',
-    defaultMessage: 'Имя преподавателя',
+    defaultMessage: 'Instructor Name',
   },
   instructorTitleLabel: {
     id: 'course-authoring.schedule-section.instructor.title.label',
-    defaultMessage: 'Должность',
+    defaultMessage: 'Title',
   },
   instructorTitleHelpText: {
     id: 'course-authoring.schedule-section.instructor.title.help-text',
-    defaultMessage: 'Пожалуйста, добавьте должность преподавателя',
+    defaultMessage: 'Please add the instructor’s title',
   },
   instructorTitleInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.title.input.placeholder',
-    defaultMessage: 'Должность преподавателя',
+    defaultMessage: 'Instructor Title',
   },
   instructorOrganizationLabel: {
     id: 'course-authoring.schedule-section.instructor.organization.label',
-    defaultMessage: 'Компания-разработчик курса',
+    defaultMessage: 'Course-Offering Organization',
   },
   instructorOrganizationHelpText: {
     id: 'course-authoring.schedule-section.instructor.organization.help-text',
-    defaultMessage: 'Пожалуйста, добавьте институт, с которым связан преподаватель',
+    defaultMessage: 'Please add the institution associated with the instructor',
   },
   instructorOrganizationInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.organization.input.placeholder',
-    defaultMessage: 'Компания-разработчик курса преподавателя',
+    defaultMessage: 'Instructor’s Course-Offering Organization',
   },
   instructorBioLabel: {
     id: 'course-authoring.schedule-section.instructor.bio.label',
-    defaultMessage: 'Биография',
+    defaultMessage: 'Bio',
   },
   instructorBioHelpText: {
     id: 'course-authoring.schedule-section.instructor.bio.help-text',
-    defaultMessage: 'Пожалуйста, добавьте биографию преподавателя',
+    defaultMessage: 'Please add the instructor’s biography',
   },
   instructorBioInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.bio.input.placeholder',
-    defaultMessage: 'Биография преподавателя',
+    defaultMessage: 'Instructor Biography',
   },
   instructorPhotoLabel: {
     id: 'course-authoring.schedule-section.instructor.photo.label',
-    defaultMessage: 'Фото',
+    defaultMessage: 'Photo',
   },
   instructorPhotoHelpText: {
     id: 'course-authoring.schedule-section.instructor.photo.help-text',
-    defaultMessage: 'Пожалуйста, добавьте фото преподавателя (Примечание: поддерживаются только форматы JPEG или PNG)',
+    defaultMessage: 'Please add the instructor’s photo (Note: only JPEG or PNG formats are supported)',
   },
   instructorPhotoInputPlaceholder: {
     id: 'course-authoring.schedule-section.instructor.photo.input.placeholder',
-    defaultMessage: 'URL фото преподавателя',
+    defaultMessage: 'Instructor Photo URL',
   },
   instructorDelete: {
     id: 'course-authoring.schedule-section.instructor.delete',
-    defaultMessage: 'Удалить',
+    defaultMessage: 'Delete',
   },
 });
-
 export default messages;

@@ -1,17 +1,16 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   headingTitle: {
     id: 'course-authoring.grading-settings.heading.title',
-    defaultMessage: 'Оценка',
+    defaultMessage: 'Grading',
   },
   headingSubtitle: {
     id: 'course-authoring.grading-settings.heading.subtitle',
-    defaultMessage: 'Настройки',
+    defaultMessage: 'Settings',
   },
   policy: {
     id: 'course-authoring.grading-settings.policies.title',
-    defaultMessage: 'Оценочная шкала',
+    defaultMessage: 'Grading Scale',
   },
   policiesDescription: {
     id: 'course-authoring.grading-settings.policies.description',
@@ -19,27 +18,27 @@ const messages = defineMessages({
   },
   alertWarning: {
     id: 'course-authoring.grading-settings.alert.warning',
-    defaultMessage: 'Вы внесли некоторые изменения',
+    defaultMessage: 'You have made some changes',
   },
   alertWarningDescriptions: {
     id: 'course-authoring.grading-settings.alert.warning.descriptions',
-    defaultMessage: 'Ваши изменения не будут видны до тех пор, пока вы не сохраните изменения.',
+    defaultMessage: 'Your changes will not be visible until you save them.',
   },
   alertSuccess: {
     id: 'course-authoring.grading-settings.alert.success',
-    defaultMessage: 'Ваши изменения были сохранены.',
+    defaultMessage: 'Your changes have been saved.',
   },
   buttonSaveText: {
     id: 'course-authoring.grading-settings.alert.button.save',
-    defaultMessage: 'Сохранить изменения',
+    defaultMessage: 'Save Changes',
   },
   buttonSavingText: {
     id: 'course-authoring.grading-settings.alert.button.saving',
-    defaultMessage: 'Сохранение',
+    defaultMessage: 'Saving',
   },
   buttonCancelText: {
     id: 'course-authoring.grading-settings.alert.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   alertWarningAriaLabelledby: {
     id: 'course-authoring.grading-settings.alert.warning.aria.labelledby',
@@ -59,23 +58,23 @@ const messages = defineMessages({
   },
   creditEligibilitySectionTitle: {
     id: 'course-authoring.grading-settings.credit-eligibility.title',
-    defaultMessage: 'Право на зачет',
+    defaultMessage: 'Credit Eligibility',
   },
   creditEligibilitySectionDescription: {
     id: 'course-authoring.grading-settings.credit-eligibility.description',
-    defaultMessage: 'Настройки для права на зачет',
+    defaultMessage: 'Settings for credit eligibility',
   },
   gradingRulesPoliciesSectionTitle: {
     id: 'course-authoring.grading-settings.grading-rules-policies.title',
-    defaultMessage: 'Оценивание',
+    defaultMessage: 'Grading Rules and Policies',
   },
   gradingRulesPoliciesSectionDescription: {
     id: 'course-authoring.grading-settings.grading-rules-policies.description',
-    defaultMessage: 'Сроки, требования и логистика вокруг оценки работ студентов',
+    defaultMessage: 'Timelines, requirements, and logistics around student work evaluation',
   },
   assignmentTypeSectionTitle: {
     id: 'course-authoring.grading-settings.assignment-type.title',
-    defaultMessage: 'Оценивание и типы заданий',
+    defaultMessage: 'Grading and Assignment Types',
   },
   assignmentTypeSectionDescription: {
     id: 'course-authoring.grading-settings.assignment-type.description',
@@ -83,8 +82,7 @@ const messages = defineMessages({
   },
   addNewAssignmentTypeBtn: {
     id: 'course-authoring.grading-settings.add-new-assignment-type.btn',
-    defaultMessage: 'Новый тип задания',
+    defaultMessage: 'New Assignment Type',
   },
 });
-
 export default messages;

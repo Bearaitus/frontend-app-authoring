@@ -1,32 +1,29 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
-
   selectTypeTitle: {
     id: 'authoring.problemEditor.selectType.title',
-    defaultMessage: 'Выбор типа вопроса',
+    defaultMessage: 'Select Question Type',
     description: 'Title for select problem type modal',
   },
   cancelButtonLabel: {
     id: 'authoring.problemeditor.selecttype.cancelButton.label',
-    defaultMessage: 'Отменить',
+    defaultMessage: 'Cancel',
     description: 'Label for cancel button.',
   },
   cancelButtonAriaLabel: {
     id: 'authoring.problemeditor.selecttype.cancelButton.ariaLabel',
-    defaultMessage: 'Отменить',
+    defaultMessage: 'Cancel',
     description: 'Screen reader label for cancel button.',
   },
   selectButtonLabel: {
     id: 'authoring.problemeditor.selecttype.selectButton.label',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
     description: 'Label for select button.',
   },
   selectButtonAriaLabel: {
     id: 'authoring.problemeditor.selecttype.selectButton.ariaLabel',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
     description: 'Screen reader label for select button.',
   },
 });
-
 export default messages;

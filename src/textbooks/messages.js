@@ -1,29 +1,28 @@
 const descriptions = {
   headingTitle: {
     id: 'course-authoring.textbooks.header.title',
-    defaultMessage: 'Учебники',
-    description: 'Заголовок для раздела учебников',
+    defaultMessage: 'Textbooks',
+    description: 'Heading for the textbook section',
   },
   breadcrumbContent: {
     id: 'course-authoring.textbooks.header.breadcrumb.content',
-    defaultMessage: 'Контент',
-    description: 'Хлебные крошки для контента',
+    defaultMessage: 'Content',
+    description: 'Breadcrumbs for content',
   },
   breadcrumbPagesAndResources: {
     id: 'course-authoring.textbooks.header.breadcrumb.pages-and-resources',
-    defaultMessage: 'Страницы и ресурсы',
-    description: 'Хлебные крошки для страниц и ресурсов',
+    defaultMessage: 'Pages & Resources',
+    description: 'Breadcrumbs for pages and resources',
   },
   breadcrumbAriaLabel: {
     id: 'course-authoring.textbooks.header.breadcrumb.aria-label',
-    defaultMessage: 'Хлебные крошки учебника',
-    description: 'Метка Aria для хлебных крошек учебника',
+    defaultMessage: 'Textbook breadcrumbs',
+    description: 'Aria label for textbook breadcrumbs',
   },
   newTextbookButton: {
     id: 'course-authoring.textbooks.header.new-textbook',
-    defaultMessage: 'Новый учебник',
-    description: 'Текст для кнопки создания нового учебника',
+    defaultMessage: 'New Textbook',
+    description: 'Text for the button to create a new textbook',
   },
 };
-
 export default descriptions;

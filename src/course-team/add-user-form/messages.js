@@ -1,30 +1,28 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   formTitle: {
     id: 'course-authoring.course-team.form.title',
-    defaultMessage: 'Добавить пользователя в команду курса',
+    defaultMessage: 'Add User to Course Team',
   },
   formLabel: {
     id: 'course-authoring.course-team.form.label',
-    defaultMessage: 'Адрес электронной почты пользователя',
+    defaultMessage: 'User Email Address',
   },
   formPlaceholder: {
     id: 'course-authoring.course-team.form.placeholder',
-    defaultMessage: 'например: {email}',
+    defaultMessage: 'e.g., {email}',
   },
   formHelperText: {
     id: 'course-authoring.course-team.form.helperText',
-    defaultMessage: 'Укажите адрес электронной почты пользователя, которого вы хотите добавить в качестве персонала',
+    defaultMessage: 'Enter the email address of the user you want to add as staff.',
   },
   addUserButton: {
     id: 'course-authoring.course-team.form.button.addUser',
-    defaultMessage: 'Добавить пользователя',
+    defaultMessage: 'Add User',
   },
   cancelButton: {
     id: 'course-authoring.course-team.form.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
 });
-
 export default messages;

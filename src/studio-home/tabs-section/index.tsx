@@ -88,7 +88,7 @@ const TabsSection = ({
       <Tab
         key={TABS_LIST.courses}
         eventKey={TABS_LIST.courses}
-        title='Курсы'
+        title='Courses'
       >
         <CoursesTab
           coursesDataItems={courses}

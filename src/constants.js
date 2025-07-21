@@ -20,16 +20,16 @@ export const BADGE_STATES = {
 };
 
 export const NOTIFICATION_MESSAGES = {
-  adding: 'Добавление',
-  saving: 'Сохранение',
-  duplicating: 'Дублирование',
-  deleting: 'Удаление',
-  copying: 'Копирование',
-  pasting: 'Добавление',
-  discardChanges: 'Отменить изменение',
-  publishing: 'Публикация',
-  hidingFromStudents: 'Скрыть от пользователей',
-  makingVisibleToStudents: 'Сделать видимым для пользователей',
+  adding: 'Adding',
+  saving: 'Saving',
+  duplicating: 'Duplicating',
+  deleting: 'Deleting',
+  copying: 'Copying',
+  pasting: 'Pasting',
+  discardChanges: 'Discarding Changes',
+  publishing: 'Publishing',
+  hidingFromStudents: 'Hiding from Students',
+  makingVisibleToStudents: 'Making Visible to Students',
   empty: '',
 };
 
@@ -53,19 +53,19 @@ export const DECODED_ROUTES = {
 export const UPLOAD_FILE_MAX_SIZE = 20 * 1024 * 1024; // 100mb
 
 export const COURSE_BLOCK_NAMES = ({
-  chapter: { id: 'chapter', name: 'Модуль' },
-  sequential: { id: 'sequential', name: 'Часть' },
-  vertical: { id: 'vertical', name: 'Страница' },
-  component: { id: 'component', name: 'Блок' },
+  chapter: { id: 'chapter', name: 'Module' },
+  sequential: { id: 'sequential', name: 'Section' },
+  vertical: { id: 'vertical', name: 'Page' },
+  component: { id: 'component', name: 'Block' },
 });
 
 export const STUDIO_CLIPBOARD_CHANNEL = 'studio_clipboard_channel';
 
 export const CLIPBOARD_STATUS = {
-  loading: 'загрузка',
-  ready: 'готов',
-  expired: 'занят',
-  error: 'ошибка',
+  loading: 'loading',
+  ready: 'ready',
+  expired: 'busy',
+  error: 'error',
 };
 
 export const STRUCTURAL_XBLOCK_TYPES = ['vertical', 'sequential', 'chapter', 'course'];

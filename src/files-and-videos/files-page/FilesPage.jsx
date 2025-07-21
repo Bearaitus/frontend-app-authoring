@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { injectIntl, FormattedMessage, intlShape } from '@edx/frontend-platform/i18n';
 import { CheckboxFilter, Container } from '@openedx/paragon';
 import Placeholder from '../../editors/Placeholder';
-
 import { RequestStatus } from '../../data/constants';
 import { useModels, useModel } from '../../generic/model-store';
 import {
@@ -32,7 +31,6 @@ import { getFileSizeToClosestByte } from '../../utils';
 import FileThumbnail from './FileThumbnail';
 import FileInfoModalSidebar from './FileInfoModalSidebar';
 import FileValidationModal from './FileValidationModal';
-
 const FilesPage = ({
   courseId,
   // injected
@@ -41,11 +39,9 @@ const FilesPage = ({
   const dispatch = useDispatch();
   const courseDetails = useModel('courseDetails', courseId);
   document.title = getPageHeadTitle(courseDetails?.name, messages.heading.defaultMessage);
-
   useEffect(() => {
     dispatch(fetchAssets(courseId));
   }, [courseId]);
-
   const {
     assetIds,
     loadingStatus,
@@ -55,7 +51,6 @@ const FilesPage = ({
     usageStatus: usagePathStatus,
     errors: errorMessages,
   } = useSelector(state => state.assets);
-
   const handleErrorReset = (error) => dispatch(resetErrors(error));
   const handleDeleteFile = (id) => dispatch(deleteAssetFile(courseId, id));
   const handleDownloadFile = (selectedRows) => dispatch(fetchAssetDownload({ selectedRows, courseId }));
@@ -75,13 +70,11 @@ const FilesPage = ({
   const handleFileOrder = ({ newFileIdOrder, sortType }) => {
     dispatch(updateAssetOrder(courseId, newFileIdOrder, sortType));
   };
-
   const thumbnailPreview = (props) => FileThumbnail(props);
   const infoModalSidebar = (asset) => FileInfoModalSidebar({
     asset,
     handleLockedAsset: handleLockFile,
   });
-
   const assets = useModels('assets', assetIds);
   const data = {
     fileIds: assetIds,
@@ -91,10 +84,9 @@ const FilesPage = ({
     fileType: 'file',
   };
   const maxFileSize = 20 * 1048576;
-
   const activeColumn = {
     id: 'activeStatus',
-    Header: 'Использование',
+    Header: 'Usage',
     accessor: 'activeStatus',
     Cell: ({ row }) => ActiveColumn({ row, pageLoadStatus: loadingStatus }),
     Filter: CheckboxFilter,
@@ -106,7 +98,7 @@ const FilesPage = ({
   };
   const accessColumn = {
     id: 'lockStatus',
-    Header: 'Доступность',
+    Header: 'Accessibility',
     accessor: 'lockStatus',
     Cell: ({ row }) => AccessColumn({ row }),
     Filter: CheckboxFilter,
@@ -122,23 +114,22 @@ const FilesPage = ({
   };
   const fileSizeColumn = {
     id: 'fileSize',
-    Header: 'Размер',
+    Header: 'Size',
     accessor: 'fileSize',
     Cell: ({ row }) => {
       const { fileSize } = row.original;
       return getFileSizeToClosestByte(fileSize);
     },
   };
-
   const tableColumns = [
     { ...thumbnailColumn },
     {
-      Header: 'Имя файла',
+      Header: 'File Name',
       accessor: 'displayName',
     },
     { ...fileSizeColumn },
     {
-      Header: 'Тип',
+      Header: 'Type',
       accessor: 'wrapperType',
       Filter: CheckboxFilter,
       filter: 'includesValue',
@@ -168,7 +159,6 @@ const FilesPage = ({
     { ...activeColumn },
     { ...accessColumn },
   ];
-
   if (loadingStatus === RequestStatus.DENIED) {
     return (
       <div data-testid="under-construction-placeholder" className="row justify-contnt-center m-6">
@@ -176,7 +166,6 @@ const FilesPage = ({
       </div>
     );
   }
-
   return (
     <FilesPageProvider courseId={courseId}>
       <Container size="xl" className="p-4 pt-4.5">
@@ -218,11 +207,9 @@ const FilesPage = ({
     </FilesPageProvider>
   );
 };
-
 FilesPage.propTypes = {
   courseId: PropTypes.string.isRequired,
   // injected
   intl: intlShape.isRequired,
 };
-
 export default injectIntl(FilesPage);

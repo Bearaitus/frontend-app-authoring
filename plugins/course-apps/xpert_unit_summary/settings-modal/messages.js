@@ -1,58 +1,56 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   cancel: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   save: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.save',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
   saving: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.saving',
-    defaultMessage: 'Сохранение',
+    defaultMessage: 'Saving...',
   },
   saved: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.saved',
-    defaultMessage: 'Сохранено',
+    defaultMessage: 'Saved',
   },
   retry: {
     id: 'course-authoring.pages-resources.app-settings-modal.button.retry',
-    defaultMessage: 'Повторить',
+    defaultMessage: 'Retry',
   },
   enabled: {
     id: 'course-authoring.pages-resources.app-settings-modal.badge.enabled',
-    defaultMessage: 'Включено',
+    defaultMessage: 'Enabled',
   },
   disabled: {
     id: 'course-authoring.pages-resources.app-settings-modal.badge.disabled',
-    defaultMessage: 'Выключено',
+    defaultMessage: 'Disabled',
   },
   resetAllUnits: {
     id: 'course-authoring.pages-resources.app-settings-modal.reset-all-units',
-    defaultMessage: 'Сбросить все блоки',
+    defaultMessage: 'Reset All Units',
   },
   resetAllUnitsTooltipChecked: {
     id: 'course-authoring.pages-resources.app-settings-modal.reset-all-units-tooltip.checked',
-    defaultMessage: 'Немедленно сбросить любые изменения на уровне блоков и включить "Включить сводки" для всех блоков.',
+    defaultMessage: 'Immediately reset any unit-level changes and enable "Enable Summaries" for all units.',
   },
   resetAllUnitsTooltipUnchecked: {
     id: 'course-authoring.pages-resources.app-settings-modal.reset-all-units-tooltip.unchecked',
-    defaultMessage: 'Немедленно сбросить любые изменения на уровне блоков и выключить "Включить сводки" для всех блоков.',
+    defaultMessage: 'Immediately reset any unit-level changes and disable "Enable Summaries" for all units.',
   },
   reset: {
     id: 'course-authoring.pages-resources.app-settings-modal.reset',
-    defaultMessage: 'Сбросить',
+    defaultMessage: 'Reset',
   },
   errorSavingTitle: {
     id: 'course-authoring.pages-resources.app-settings-modal.save-error.title',
-    defaultMessage: 'Не удалось применить ваши изменения.',
+    defaultMessage: 'Failed to apply your changes.',
   },
   errorSavingMessage: {
     id: 'course-authoring.pages-resources.app-settings-modal.save-error.message',
-    defaultMessage: 'Пожалуйста, проверьте ваши записи и попробуйте еще раз.',
+    defaultMessage: 'Please check your entries and try again.',
   },
 });
-
 export default messages;

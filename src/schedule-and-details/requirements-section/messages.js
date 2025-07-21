@@ -1,34 +1,32 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   requirementsTitle: {
     id: 'course-authoring.schedule-section.requirements.title',
-    defaultMessage: 'Предварительный курс',
+    defaultMessage: 'Course Prerequisites',
   },
   requirementsDescription: {
     id: 'course-authoring.schedule-section.requirements.description',
-    defaultMessage: 'Ожидания от студентов, проходящих этот курс',
+    defaultMessage: 'Expectations of students taking this course',
   },
   timepickerLabel: {
     id: 'course-authoring.schedule-section.requirements.timepicker.label',
-    defaultMessage: 'Часов усилий в неделю',
+    defaultMessage: 'Hours of Effort Per Week',
   },
   timepickerHelpText: {
     id: 'course-authoring.schedule-section.requirements.timepicker.help-text',
-    defaultMessage: 'Время, потраченное на все работы курса',
+    defaultMessage: 'Time spent on all course work',
   },
   dropdownLabel: {
     id: 'course-authoring.schedule-section.requirements.dropdown.label',
-    defaultMessage: 'Предварительный курс',
+    defaultMessage: 'Prerequisite Course',
   },
   dropdownHelpText: {
     id: 'course-authoring.schedule-section.requirements.dropdown.help-text',
-    defaultMessage: 'Курс, который пользователи должны пройти перед началом этого курса',
+    defaultMessage: 'Course that users must complete before starting this course',
   },
   dropdownEmptyText: {
     id: 'course-authoring.schedule-section.requirements.dropdown.empty-text',
-    defaultMessage: 'Нет',
+    defaultMessage: 'None',
   },
 });
-
 export default messages;

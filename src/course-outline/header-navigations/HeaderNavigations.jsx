@@ -40,7 +40,7 @@ const HeaderNavigations = ({
             onClick={handleNewSection}
             disabled={errors?.outlineIndexApi}
           >
-            Новый модуль
+            New module
           </Button>
         </OverlayTrigger>
       )}
@@ -59,7 +59,7 @@ const HeaderNavigations = ({
             variant="outline-primary"
             disabled={isDisabledReindexButton}
           >
-            Обновить индексы курса
+            Reindex Course
           </Button>
         </OverlayTrigger>
       )}

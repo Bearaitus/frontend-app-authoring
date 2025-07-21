@@ -30,12 +30,12 @@ const Header = ({
   const mainMenuDropdowns = !isLibrary ? [
     {
       id: `${intl.formatMessage(messages['header.links.settings'])}-dropdown-menu`,
-      buttonTitle: 'Настройки',
+      buttonTitle: 'Settings',
       items: settingMenuItems,
     },
     {
       id: `${intl.formatMessage(messages['header.links.tools'])}-dropdown-menu`,
-      buttonTitle: 'Импорт/Экспорт курса',
+      buttonTitle: 'Import/Export course',
       items: toolsMenuItems,
     },
   ] : [];

@@ -47,7 +47,7 @@ const BasicSection = ({
       id="course-authoring.schedule.basic.promotion.title"
       defaultMessage="Course summary page {smallText}"
       values={{
-        smallText: <small>(для зачисления студентов и предоставления доступа)</small>,
+        smallText: <small>(for enrolling students and granting access)</small>,
       }}
     />
   );
