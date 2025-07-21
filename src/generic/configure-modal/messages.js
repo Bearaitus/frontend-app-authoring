@@ -1,203 +1,202 @@
 import { defineMessages } from '@edx/frontend-platform/i18n';
-
 const messages = defineMessages({
   title: {
     id: 'course-authoring.course-outline.configure-modal.title',
-    defaultMessage: '{title} настройки',
+    defaultMessage: '{title} Settings',
   },
   componentTitle: {
     id: 'course-authoring.course-outline.configure-modal.component.title',
-    defaultMessage: 'Редактирование доступа для: {title}',
-    description: 'Название модального окна видимости для блока',
+    defaultMessage: 'Edit Access For: {title}',
+    description: 'Title of the visibility modal for a block',
   },
   basicTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.title',
-    defaultMessage: 'Базовые настройки',
+    defaultMessage: 'Basic Settings',
   },
   notGradedTypeOption: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.notGradedTypeOption',
-    defaultMessage: 'Не оценивается',
+    defaultMessage: 'Not Graded',
   },
   releaseDateAndTime: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-date-and-time',
-    defaultMessage: 'Дата и время открытия курса',
+    defaultMessage: 'Course Release Date and Time',
   },
   releaseDate: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-date',
-    defaultMessage: 'Дата открытия:',
+    defaultMessage: 'Release Date:',
   },
   releaseTimeUTC: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.release-time-UTC',
-    defaultMessage: 'Время открытия в UTC:',
+    defaultMessage: 'Release Time (UTC):',
   },
   visibilityTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.title',
-    defaultMessage: 'Видимость',
+    defaultMessage: 'Visibility',
   },
   visibilitySectionTitle: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.section-visibility',
-    defaultMessage: '{visibilityTitle} видимость',
+    defaultMessage: '{visibilityTitle} Visibility',
   },
   unitVisibility: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.unit-visibility',
-    defaultMessage: 'Видимость блока',
+    defaultMessage: 'Block Visibility',
   },
   unitAccess: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.unit-access',
-    defaultMessage: 'Доступ к блоку',
+    defaultMessage: 'Block Access',
   },
   discussionEnabledSectionTitle: {
     id: 'course-authoring.course-outline.configure-modal.discussion-enabled.section-title',
-    defaultMessage: 'Обсуждение',
+    defaultMessage: 'Discussion',
   },
   discussionEnabledCheckbox: {
     id: 'course-authoring.course-outline.configure-modal.discussion-enabled.checkbox',
-    defaultMessage: 'Включить обсуждение',
+    defaultMessage: 'Enable Discussion',
   },
   discussionEnabledDescription: {
     id: 'course-authoring.course-outline.configure-modal.discussion-enabled.description',
-    defaultMessage: 'Темы для неопубликованных блоков не будут созданы',
+    defaultMessage: 'Topics will not be created for unpublished blocks.',
   },
   hideFromLearners: {
     id: 'course-authoring.course-outline.configure-modal.visibility.hide-from-learners',
-    defaultMessage: 'Скрыть от учащихся',
+    defaultMessage: 'Hide From Learners',
   },
   restrictAccessTo: {
     id: 'course-authoring.course-outline.configure-modal.visibility.restrict-access-to',
-    defaultMessage: 'Ограничить доступ к',
+    defaultMessage: 'Restrict Access To',
   },
   sectionVisibilityWarning: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.section-visibility-warning',
-    defaultMessage: 'Если вы сделаете этот раздел видимым для учащихся, пользователи смогут увидеть его содержимое после истечения срока выпуска и после публикации раздела. Только блоки, которые явно скрыты от учащихся, останутся скрытыми после того, как вы очистите эту опцию для раздела.',
+    defaultMessage: 'If you make this section visible to learners, users will be able to see its content after the release date and after the section is published. Only blocks that are explicitly hidden from learners will remain hidden after you clear this option for the section.',
   },
   unitVisibilityWarning: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-visibility-warning',
-    defaultMessage: 'Если блок ранее был опубликован и выпущен для учащихся, любые изменения, которые вы внесли в блок, когда он был скрыт, теперь будут видны для учащихся.',
+    defaultMessage: 'If the block was previously published and released to learners, any changes you made to the block while it was hidden will now be visible to learners.',
   },
   subsectionVisibilityWarning: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.subsection-visibility-warning',
-    defaultMessage: 'Если вы выберете опцию, отличную от "Скрыть весь подраздел", опубликованные блоки в этом подразделе станут доступны для учащихся, если они не будут явно скрыты.',
+    defaultMessage: 'If you select an option other than "Hide Entire SubSection", published blocks in this subSection will become available to learners unless they are explicitly hidden.',
   },
   unitSelectGroup: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-select-group',
-    defaultMessage: 'Выберите одну или несколько групп:',
+    defaultMessage: 'Select one or more groups:',
   },
   unitSelectGroupType: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-select-group-type',
-    defaultMessage: 'Выберите тип группы',
+    defaultMessage: 'Select group type',
   },
   unitSelectDeletedGroupErrorMessage: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-select-group-deleted-error-message',
-    defaultMessage: 'Эта группа больше не существует. Выберите другую группу или удалите ограничение доступа.',
-    description: 'Текст предупреждения о недоступной группе',
+    defaultMessage: 'This group no longer exists. Select a different group or remove the access restriction.',
+    description: 'Error message for unavailable group',
   },
   unitAllLearnersAndStaff: {
     id: 'course-authoring.course-outline.configure-modal.unit-tab.unit-all-learners-staff',
-    defaultMessage: 'Все пользователи и персонал',
+    defaultMessage: 'All learners and staff',
   },
   cancelButton: {
     id: 'course-authoring.course-outline.configure-modal.button.cancel',
-    defaultMessage: 'Отмена',
+    defaultMessage: 'Cancel',
   },
   saveButton: {
     id: 'course-authoring.course-outline.configure-modal.button.label',
-    defaultMessage: 'Сохранить',
+    defaultMessage: 'Save',
   },
   grading: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.grading',
-    defaultMessage: 'Оценка',
+    defaultMessage: 'Grading',
   },
   gradeAs: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.grade-as',
-    defaultMessage: 'Оценить как:',
+    defaultMessage: 'Grade As:',
   },
   dueDate: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.due-date',
-    defaultMessage: 'Срок сдачи:',
+    defaultMessage: 'Due Date:',
   },
   dueTimeUTC: {
     id: 'course-authoring.course-outline.configure-modal.basic-tab.due-time-UTC',
-    defaultMessage: 'Время сдачи в UTC:',
+    defaultMessage: 'Due Time (UTC):',
   },
   subsectionVisibility: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.subsection-visibility',
-    defaultMessage: 'Видимость подраздела',
+    defaultMessage: 'SubSection Visibility',
   },
   showEntireSubsection: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-entire-subsection',
-    defaultMessage: 'Показать весь подраздел',
+    defaultMessage: 'Show Entire SubSection',
   },
   showEntireSubsectionDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-entire-subsection-description',
-    defaultMessage: 'Пользователи видят опубликованную часть',
+    defaultMessage: 'Users see the published portion',
   },
   hideContentAfterDue: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-content-after-due',
-    defaultMessage: 'Скрыть содержимое после срока сдачи',
+    defaultMessage: 'Hide Content After Due Date',
   },
   hideContentAfterDueDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-content-after-due-description',
-    defaultMessage: 'После истечения срока сдачи подраздела пользователи больше не могут получить доступ к его содержимому. Подраздел не включается в расчет оценок.',
+    defaultMessage: 'After the subSection due date passes, users will no longer be able to access its content. The subSection will not be factored into grades.',
   },
   hideEntireSubsection: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-entire-subsection',
-    defaultMessage: 'Скрыть весь подраздел',
+    defaultMessage: 'Hide Entire SubSection',
   },
   hideEntireSubsectionDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.hide-entire-subsection-description',
-    defaultMessage: 'Пользователи не видят подраздел в плане курса. Подраздел не включается в расчет оценок.',
+    defaultMessage: 'Users will not see the subSection in the course outline. The subSection will not be factored into grades.',
   },
   assessmentResultsVisibility: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.assessment-results-visibility',
-    defaultMessage: 'Видимость результатов оценки',
+    defaultMessage: 'Assessment Results Visibility',
   },
   alwaysShowAssessmentResults: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.always-show-assessment-results',
-    defaultMessage: 'Всегда показывать результаты оценки',
+    defaultMessage: 'Always Show Assessment Results',
   },
   alwaysShowAssessmentResultsDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.always-show-assessment-results-description',
-    defaultMessage: 'Когда пользователи подают ответ на оценку, они сразу видят, правильный ли ответ или нет, и полученную оценку.',
+    defaultMessage: 'When users submit an assessment response, they immediately see whether their answer was correct and their grade.',
   },
   neverShowAssessmentResults: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.never-show-assessment-results',
-    defaultMessage: 'Никогда не показывать результаты оценки',
+    defaultMessage: 'Never Show Assessment Results',
   },
   neverShowAssessmentResultsDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.never-show-assessment-results-description',
-    defaultMessage: 'Пользователи никогда не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку.',
+    defaultMessage: 'Users will never see whether their assessment responses were correct or their grade.',
   },
   showAssessmentResultsPastDue: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-assessment-results-past-due',
-    defaultMessage: 'Показать результаты оценки после срока сдачи',
+    defaultMessage: 'Show Assessment Results Past Due Date',
   },
   showAssessmentResultsPastDueDescription: {
     id: 'course-authoring.course-outline.configure-modal.visibility-tab.show-assessment-results-past-due-description',
-    defaultMessage: 'Пользователи не видят, правильны ли их ответы на оценки или нет, и не видят полученную оценку, пока не истечет срок сдачи подраздела. Если подраздел не имеет срока сдачи, пользователи всегда видят свои оценки, когда подают ответы на оценки.',
+    defaultMessage: 'Users will not see whether their assessment responses were correct or their grade until the subSection due date has passed. If the subSection does not have a due date, users will always see their grades when submitting assessment responses.',
   },
   setSpecialExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.set-special-exam',
-    defaultMessage: 'Установить как специальный экзамен',
+    defaultMessage: 'Set as Special Exam',
   },
   none: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.none',
-    defaultMessage: 'Нет',
+    defaultMessage: 'None',
   },
   timed: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.timed',
-    defaultMessage: 'С ограничением по времени',
+    defaultMessage: 'Timed',
   },
   timedDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.timed-description',
-    defaultMessage: 'Используйте экзамен с ограничением по времени, чтобы ограничить время, которое пользователи могут потратить на задачи в этом подразделе. Пользователи должны подать ответы до истечения времени. Вы можете разрешить дополнительное время для отдельных учащихся через панель инструктора.',
+    defaultMessage: 'Use a timed exam to limit the amount of time users can spend on tasks in this subSection. Users must submit before time runs out. You can provide extra time to individual learners through the instructor dashboard.',
   },
   proctoredExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctoredExam',
-    defaultMessage: 'Прокторинг',
+    defaultMessage: 'Proctored',
   },
   proctoredExamDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctored-exam-description',
-    defaultMessage: 'Экзамены с прокторингом являются экзаменами с ограничением по времени и записывают видео каждого учащегося, проходящего экзамен. Видео затем проверяются, чтобы убедиться, что пользователи следуют всем правилам экзамена. Пожалуйста, обратите внимание, что установка этого экзамена как экзамена с прокторингом изменит настройки видимости на "Скрыть содержимое после срока сдачи".',
+    defaultMessage: 'Proctored exams are timed exams that record video of each learner taking the exam. The video is then reviewed to ensure that learners are following all exam rules. Please note that setting this exam to be a proctored exam will change the visibility settings to “Hide Content After Due Date”.',
   },
   onboardingExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.onboardingExam',
@@ -205,92 +204,91 @@ const messages = defineMessages({
   },
   onboardingExamDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.onboarding-exam-description',
-    defaultMessage: 'Используйте Onboarding, чтобы познакомить учащихся с прокторингом, проверить их личность и создать профиль Onboarding. Пользователи должны завершить шаг создания профиля Onboarding до того, как они смогут пройти экзамен с прокторингом. Проверка профилей занимает 2+ рабочих дня.',
+    defaultMessage: 'Use Onboarding to familiarize learners with proctoring, verify their identity, and create an Onboarding profile. Users must complete the Onboarding profile creation step before they can take a proctored exam. Profile verification takes 2+ business days.',
   },
   practiceExam: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.practiceExam',
-    defaultMessage: 'Практический экзамен с прокторингом',
+    defaultMessage: 'Practice Proctored Exam',
   },
   practiceExamDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.practice-exam-description',
-    defaultMessage: 'Используйте практический экзамен с прокторингом, чтобы познакомить учащихся с инструментами и процессами прокторинга. Результаты практического экзамена не влияют на оценку учащегося.',
+    defaultMessage: 'Use a practice proctored exam to familiarize learners with the tools and processes of proctoring. The results of the practice exam do not contribute to a learner’s grade.',
   },
   advancedTabTitle: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.title',
-    defaultMessage: 'Расширенные настройки',
+    defaultMessage: 'Advanced Settings',
   },
   timeAllotted: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.time-allotted',
-    defaultMessage: 'Выделенное время (ЧЧ:ММ):',
+    defaultMessage: 'Time Allotted (HH:MM):',
   },
   timeLimitDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.time-limit-description',
-    defaultMessage: 'Выберите время, выделенное для экзамена. Если оно превышает 24 часа, введите количество времени. Вы можете предоставить отдельным учащимся дополнительное время для завершения экзамена через панель инструктора.',
+    defaultMessage: 'Select the time allotted for the exam. If it exceeds 24 hours, enter the time amount.  You can provide extra time to individual learners through the instructor dashboard.',
   },
   prereqTitle: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.prereqTitle',
-    defaultMessage: 'Использовать как предварительное требование',
+    defaultMessage: 'Use as Prerequisite',
   },
   prereqCheckboxLabel: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.prereqCheckboxLabel',
-    defaultMessage: 'Сделать этот подраздел доступным как предварительное требование для другого контента',
+    defaultMessage: 'Make this subSection available as a prerequisite for other content',
   },
   limitAccessTitle: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.limitAccessTitle',
-    defaultMessage: 'Ограничить доступ',
+    defaultMessage: 'Limit Access',
   },
   limitAccessDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.limitAccessDescription',
-    defaultMessage: 'Выберите подраздел-предварительное требование и введите минимальный процент оценки и минимальный процент завершения, чтобы ограничить доступ к этому подразделу. Допускаются значения от 0 до 100',
+    defaultMessage: 'Select a prerequisite subSection and enter a minimum grade percentage and minimum completion percentage to restrict access to this subSection. Values from 0 to 100 are allowed',
   },
   noPrerequisiteOption: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.noPrerequisiteOption',
-    defaultMessage: 'Нет предварительного требования',
+    defaultMessage: 'No Prerequisite',
   },
   prerequisiteSelectLabel: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.prerequisiteSelectLabel',
-    defaultMessage: 'Предварительное требование:',
+    defaultMessage: 'Prerequisite:',
   },
   minScoreLabel: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.minScoreLabel',
-    defaultMessage: 'Минимальная оценка:',
+    defaultMessage: 'Minimum Score:',
   },
   minCompletionLabel: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.minCompletionLabel',
-    defaultMessage: 'Минимальное завершение:',
+    defaultMessage: 'Minimum Completion:',
   },
   minScoreError: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.minScoreError',
-    defaultMessage: 'Минимальный процент оценки должен быть целым числом от 0 до 100.',
+    defaultMessage: 'Minimum grade percentage must be an integer from 0 to 100.',
   },
   minCompletionError: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.minCompletionError',
-    defaultMessage: 'Минимальный процент завершения должен быть целым числом от 0 до 100.',
+    defaultMessage: 'Minimum completion percentage must be an integer from 0 to 100.',
   },
   proctoredExamLockedAndisNotProctoredExamAlert: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctoredExamLockedAndisNotProctoredExamAlert',
-    defaultMessage: 'Этот подраздел был выпущен для учащихся как экзамен с прокторингом, но был изменен обратно на базовый или экзамен с ограничением по времени. Вы не можете настроить его как экзамен с прокторингом сейчас. Свяжитесь с поддержкой edX для получения помощи.',
+    defaultMessage: 'This subSection has been released to learners as a proctored exam but has been changed back to basic or timed exam.  You cannot set it as a proctored exam now. Contact edX support for assistance.',
   },
   proctoredExamLockedAndisProctoredExamAlert: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.proctoredExamLockedAndisProctoredExamAlert',
-    defaultMessage: 'Этот экзамен с прокторингом был выпущен для учащихся. Вы не можете преобразовать его в другой тип специального экзамена. Вы можете изменить этот подраздел обратно на базовый экзамен, выбрав "Нет", или на экзамен с ограничением по времени, но вы не сможете настроить его как экзамен с прокторингом в будущем.',
+    defaultMessage: 'This proctored exam has been released to learners. You cannot convert it into another type of special exam. You may change this subSection back to a basic exam by selecting "None", or to a timed exam, but you will not be able to configure it as a proctored exam in the future.',
   },
   reviewRulesLabel: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.reviewRulesLabel',
-    defaultMessage: 'Правила проверки',
+    defaultMessage: 'Review Rules',
   },
   reviewRulesDescription: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.reviewRulesDescription',
-    defaultMessage: 'Укажите любые правила или исключения из правил, которые команда проверки прокторинга должна соблюдать при проверке видео. Например, вы можете указать, что калькуляторы разрешены. Эти указанные правила видны для учащихся до начала экзамена.',
+    defaultMessage: 'Specify any rules or exceptions to the rules that the proctoring review team should follow when reviewing videos. For example, you may state that calculators are allowed. These specified rules are visible to learners before starting the exam.',
   },
   reviewRulesDescriptionWithLink: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.reviewRulesDescriptionWithLink',
-    defaultMessage: 'Укажите любые правила или исключения из правил, которые команда проверки прокторинга должна соблюдать при проверке видео. Например, вы можете указать, что калькуляторы разрешены. Эти указанные правила видны для учащихся до начала экзамена, вместе с {hyperlink}.',
+    defaultMessage: 'Specify any rules or exceptions to the rules that the proctoring review team should follow when reviewing videos. For example, you may state that calculators are allowed. These specified rules are visible to learners before starting the exam, along with {hyperlink}.',
   },
   reviewRulesDescriptionLinkText: {
     id: 'course-authoring.course-outline.configure-modal.advanced-tab.reviewRulesDescriptionLinkText',
-    defaultMessage: 'общие правила экзамена с прокторингом',
+    defaultMessage: 'general proctored exam rules',
   },
 });
-
 export default messages;

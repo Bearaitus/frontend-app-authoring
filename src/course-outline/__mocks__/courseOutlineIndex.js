@@ -1,5 +1,5 @@
 module.exports = {
-  courseReleaseDate: 'Перейти',
+  courseReleaseDate: 'Go to the page',
   courseStructure: {
     id: 'block-v1:edX+DemoX+Demo_Course+type@course+block@course',
     displayName: 'Demonstration Course',

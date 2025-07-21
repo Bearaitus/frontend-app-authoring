@@ -1,5 +1,5 @@
 module.exports = {
-  courseReleaseDate: 'Перейти',
+  courseReleaseDate: 'Go to the page',
   courseStructure: {},
   deprecatedBlocksInfo: {
     deprecatedEnabledBlockTypes: [],
