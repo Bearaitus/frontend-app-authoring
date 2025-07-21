@@ -178,7 +178,7 @@ const FilesPage = ({
           loadingStatus={loadingStatus}
         />
         <div className="h2">
-          <FormattedMessage {...messages.heading} />
+          Files
         </div>
         {loadingStatus !== RequestStatus.FAILED && (
           <>
